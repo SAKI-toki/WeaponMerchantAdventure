@@ -1,0 +1,92 @@
+\hypertarget{class_scene_base}{}\section{Scene\+Base クラス}
+\label{class_scene_base}\index{Scene\+Base@{Scene\+Base}}
+
+
+マネージャーを含むシーンのスーパークラス  
+
+
+
+
+{\ttfamily \#include $<$scene\+\_\+base.\+h$>$}
+
+Scene\+Base の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_scene_base}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_scene_base_a187dd160e5a16909bcc6529851e38318}{$\sim$\+Scene\+Base}} ()
+\item 
+virtual void \mbox{\hyperlink{class_scene_base_a24d7db43c819924dc8b07b436f6d3148}{Init}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_scene_base_ad981674ce731ea267f398e889bbb9dc3}{Render}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_scene_base_a7c5b54020bc519b4dadfe9770d6b27f7}{Destroy}} ()=0
+\end{DoxyCompactItemize}
+\subsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{scene__base_8h_a24cee5343fb9d0706ead6e8601f363be}{S\+C\+E\+NE}} \mbox{\hyperlink{class_scene_base_a18dcdbacfbd98f73099c3cbeb70ae3b8}{my\+\_\+scene}}
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+マネージャーを含むシーンのスーパークラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_scene_base_a187dd160e5a16909bcc6529851e38318}\label{class_scene_base_a187dd160e5a16909bcc6529851e38318}} 
+\index{Scene\+Base@{Scene\+Base}!````~Scene\+Base@{$\sim$\+Scene\+Base}}
+\index{````~Scene\+Base@{$\sim$\+Scene\+Base}!Scene\+Base@{Scene\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+Scene\+Base()}{~SceneBase()}}
+{\footnotesize\ttfamily virtual Scene\+Base\+::$\sim$\+Scene\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_scene_base_a7c5b54020bc519b4dadfe9770d6b27f7}\label{class_scene_base_a7c5b54020bc519b4dadfe9770d6b27f7}} 
+\index{Scene\+Base@{Scene\+Base}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Scene\+Base@{Scene\+Base}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily virtual void Scene\+Base\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_scene_manager_a0e3ad11342e763f0d4108c0b4674a157}{Scene\+Manager}}, \mbox{\hyperlink{class_title_scene_adfbc5f934572ede2e36419b089c88fe8}{Title\+Scene}}で実装されています。
+
+\mbox{\Hypertarget{class_scene_base_a24d7db43c819924dc8b07b436f6d3148}\label{class_scene_base_a24d7db43c819924dc8b07b436f6d3148}} 
+\index{Scene\+Base@{Scene\+Base}!Init@{Init}}
+\index{Init@{Init}!Scene\+Base@{Scene\+Base}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily virtual void Scene\+Base\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_scene_manager_a6c0e84d0e76f23fb3172839dba5f091b}{Scene\+Manager}}, \mbox{\hyperlink{class_title_scene_a3d039e7db0fa1e22e8c36d3cedfbd318}{Title\+Scene}}で実装されています。
+
+\mbox{\Hypertarget{class_scene_base_ad981674ce731ea267f398e889bbb9dc3}\label{class_scene_base_ad981674ce731ea267f398e889bbb9dc3}} 
+\index{Scene\+Base@{Scene\+Base}!Render@{Render}}
+\index{Render@{Render}!Scene\+Base@{Scene\+Base}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Scene\+Base\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_scene_manager_a968ae7a0065b793f139bda6bcc58d106}{Scene\+Manager}}, \mbox{\hyperlink{class_title_scene_af12c59b3bf9458640938c5ca620527ae}{Title\+Scene}}で実装されています。
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_scene_base_a18dcdbacfbd98f73099c3cbeb70ae3b8}\label{class_scene_base_a18dcdbacfbd98f73099c3cbeb70ae3b8}} 
+\index{Scene\+Base@{Scene\+Base}!my\+\_\+scene@{my\+\_\+scene}}
+\index{my\+\_\+scene@{my\+\_\+scene}!Scene\+Base@{Scene\+Base}}
+\subsubsection{\texorpdfstring{my\+\_\+scene}{my\_scene}}
+{\footnotesize\ttfamily \mbox{\hyperlink{scene__base_8h_a24cee5343fb9d0706ead6e8601f363be}{S\+C\+E\+NE}} Scene\+Base\+::my\+\_\+scene\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/scene/base/\mbox{\hyperlink{scene__base_8h}{scene\+\_\+base.\+h}}\end{DoxyCompactItemize}

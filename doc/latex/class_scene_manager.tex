@@ -1,0 +1,93 @@
+\hypertarget{class_scene_manager}{}\section{Scene\+Manager クラス}
+\label{class_scene_manager}\index{Scene\+Manager@{Scene\+Manager}}
+
+
+シーンをマネージャーするクラス  
+
+
+
+
+{\ttfamily \#include $<$scene\+\_\+manager.\+h$>$}
+
+Scene\+Manager の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scene_manager}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_scene_manager_a6c0e84d0e76f23fb3172839dba5f091b}{Init}} () final
+\begin{DoxyCompactList}\small\item\em シーンマネージャーの初期化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a63dcf65832d6a2c190bf496d9a3b00a3}{Update}} ()
+\begin{DoxyCompactList}\small\item\em 保持してるシーンの更新 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a968ae7a0065b793f139bda6bcc58d106}{Render}} () final
+\begin{DoxyCompactList}\small\item\em 保持してるシーンの描画 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a0e3ad11342e763f0d4108c0b4674a157}{Destroy}} () final
+\begin{DoxyCompactList}\small\item\em 保持してるシーンのマネージャーの破棄 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+シーンをマネージャーするクラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_scene_manager_a0e3ad11342e763f0d4108c0b4674a157}\label{class_scene_manager_a0e3ad11342e763f0d4108c0b4674a157}} 
+\index{Scene\+Manager@{Scene\+Manager}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+保持してるシーンのマネージャーの破棄 
+
+
+
+\mbox{\hyperlink{class_scene_base_a7c5b54020bc519b4dadfe9770d6b27f7}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_scene_manager_a6c0e84d0e76f23fb3172839dba5f091b}\label{class_scene_manager_a6c0e84d0e76f23fb3172839dba5f091b}} 
+\index{Scene\+Manager@{Scene\+Manager}!Init@{Init}}
+\index{Init@{Init}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+シーンマネージャーの初期化 
+
+
+
+\mbox{\hyperlink{class_scene_base_a24d7db43c819924dc8b07b436f6d3148}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_scene_manager_a968ae7a0065b793f139bda6bcc58d106}\label{class_scene_manager_a968ae7a0065b793f139bda6bcc58d106}} 
+\index{Scene\+Manager@{Scene\+Manager}!Render@{Render}}
+\index{Render@{Render}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+保持してるシーンの描画 
+
+
+
+\mbox{\hyperlink{class_scene_base_ad981674ce731ea267f398e889bbb9dc3}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_scene_manager_a63dcf65832d6a2c190bf496d9a3b00a3}\label{class_scene_manager_a63dcf65832d6a2c190bf496d9a3b00a3}} 
+\index{Scene\+Manager@{Scene\+Manager}!Update@{Update}}
+\index{Update@{Update}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+保持してるシーンの更新 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/scene/manager/\mbox{\hyperlink{scene__manager_8h}{scene\+\_\+manager.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/scene/manager/\mbox{\hyperlink{scene__manager_8cpp}{scene\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

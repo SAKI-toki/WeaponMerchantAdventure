@@ -1,3 +1,9 @@
+/**
+* @file common.h
+* @brief 定数定義やヘッダのインクルード
+* @author 石山　悠
+* @date 2018/10/02
+*/
 #pragma once
 #include <windows.h>
 

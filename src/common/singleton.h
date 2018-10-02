@@ -1,7 +1,16 @@
+/**
+* @file singleton.h
+* @brief Singletonテンプレートスーパークラスの定義
+* @author 石山　悠
+* @date 2018/10/02
+*/
 #pragma once
 #include <memory>
 
-//シングルトン基底クラス
+/**
+* @brief Singletonテンプレートスーパークラス
+* @details publicで仮引数にそのクラスを入れて継承するとそのクラスがSingletonになる
+*/
 template<typename T>
 class Singleton
 {
@@ -16,6 +25,7 @@ public:
 protected:
 	Singleton() {};
 private:
+	//コピー・ムーブ禁止
 	Singleton(const Singleton&) = delete;
 	Singleton& operator=(const Singleton&) = delete;
 	Singleton(Singleton&&) = delete;

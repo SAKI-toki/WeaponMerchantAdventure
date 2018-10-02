@@ -1,0 +1,125 @@
+\hypertarget{gamepad__input_8h}{}\section{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/input/gamepad/gamepad\+\_\+input.h ファイル}
+\label{gamepad__input_8h}\index{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/input/gamepad/gamepad\+\_\+input.\+h@{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/input/gamepad/gamepad\+\_\+input.\+h}}
+
+
+ゲームパッドのインプットクラスの宣言  
+
+
+{\ttfamily \#include \char`\"{}../../common/common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../common/singleton.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Xinput.\+h$>$}\newline
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gamepad_input}{Gamepad\+Input}}
+\begin{DoxyCompactList}\small\item\em ゲームパッドのインプットクラス \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705}{B\+U\+T\+T\+ON}} \{ \newline
+\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705a7fc56270e7a70fa81a5935b72eacbe29}{B\+U\+T\+T\+O\+N\+::A}}, 
+\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705a9d5ed678fe57bcca610140957afab571}{B\+U\+T\+T\+O\+N\+::B}}, 
+\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705a02129bb861061d1a052c592e2dc6b383}{B\+U\+T\+T\+O\+N\+::X}}, 
+\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705a57cec4137b614c87cb4e24a3d003a3e0}{B\+U\+T\+T\+O\+N\+::Y}}, 
+\newline
+\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705ab078ffd28db767c502ac367053f6e0ac}{B\+U\+T\+T\+O\+N\+::\+S\+T\+A\+RT}}, 
+\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705a1dd26f1f1790f0b56d5752fb0fbecef0}{B\+U\+T\+T\+O\+N\+::\+B\+A\+CK}}, 
+\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705a53f4f819b43470f230aea73335a5f091}{B\+U\+T\+T\+O\+N\+::\+D\+P\+A\+D\+\_\+\+UP}}, 
+\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705aed0ea47a6800b933a16cd91169c338f7}{B\+U\+T\+T\+O\+N\+::\+D\+P\+A\+D\+\_\+\+D\+O\+WN}}, 
+\newline
+\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705a5faad20a625bae1d890868782aae45ba}{B\+U\+T\+T\+O\+N\+::\+D\+P\+A\+D\+\_\+\+R\+I\+G\+HT}}, 
+\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705a2206bf25efcd102b0102f7ff4df45c99}{B\+U\+T\+T\+O\+N\+::\+D\+P\+A\+D\+\_\+\+L\+E\+FT}}, 
+\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705add5661cf7a6db97313a676dd371d7b7a}{B\+U\+T\+T\+O\+N\+::\+S\+T\+I\+C\+K\+\_\+R}}, 
+\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705a9dc54700577a58707c85d7541090bc2c}{B\+U\+T\+T\+O\+N\+::\+S\+T\+I\+C\+K\+\_\+L}}, 
+\newline
+\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705acda522d4353b166cc2dee84673307b4e}{B\+U\+T\+T\+O\+N\+::\+R1}}, 
+\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705a9ec4c0afd450ceac7adb81c3bcfc9732}{B\+U\+T\+T\+O\+N\+::\+L1}}, 
+\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705a0f58d0a217cf9a9d29a9040ffb6b43c8}{B\+U\+T\+T\+O\+N\+::\+B\+U\+T\+T\+O\+N\+\_\+\+E\+ND}}
+ \}
+\begin{DoxyCompactList}\small\item\em ボタンのenum class \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+ゲームパッドのインプットクラスの宣言 
+
+\begin{DoxyAuthor}{著者}
+石山　悠 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日付}
+2018/10/02 
+\end{DoxyDate}
+
+
+\subsection{列挙型詳解}
+\mbox{\Hypertarget{gamepad__input_8h_a739845b0076428add52ca3cec492e705}\label{gamepad__input_8h_a739845b0076428add52ca3cec492e705}} 
+\index{gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}!B\+U\+T\+T\+ON@{B\+U\+T\+T\+ON}}
+\index{B\+U\+T\+T\+ON@{B\+U\+T\+T\+ON}!gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{B\+U\+T\+T\+ON}{BUTTON}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705}{B\+U\+T\+T\+ON}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+ボタンのenum class 
+
+デフォルトの長いマクロを使わず、こっちで管理する \begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A@{A}!gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}}\index{gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}!A@{A}}}\mbox{\Hypertarget{gamepad__input_8h_a739845b0076428add52ca3cec492e705a7fc56270e7a70fa81a5935b72eacbe29}\label{gamepad__input_8h_a739845b0076428add52ca3cec492e705a7fc56270e7a70fa81a5935b72eacbe29}} 
+A&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B@{B}!gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}}\index{gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}!B@{B}}}\mbox{\Hypertarget{gamepad__input_8h_a739845b0076428add52ca3cec492e705a9d5ed678fe57bcca610140957afab571}\label{gamepad__input_8h_a739845b0076428add52ca3cec492e705a9d5ed678fe57bcca610140957afab571}} 
+B&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{X@{X}!gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}}\index{gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}!X@{X}}}\mbox{\Hypertarget{gamepad__input_8h_a739845b0076428add52ca3cec492e705a02129bb861061d1a052c592e2dc6b383}\label{gamepad__input_8h_a739845b0076428add52ca3cec492e705a02129bb861061d1a052c592e2dc6b383}} 
+X&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Y@{Y}!gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}}\index{gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}!Y@{Y}}}\mbox{\Hypertarget{gamepad__input_8h_a739845b0076428add52ca3cec492e705a57cec4137b614c87cb4e24a3d003a3e0}\label{gamepad__input_8h_a739845b0076428add52ca3cec492e705a57cec4137b614c87cb4e24a3d003a3e0}} 
+Y&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+RT@{S\+T\+A\+RT}!gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}}\index{gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}!S\+T\+A\+RT@{S\+T\+A\+RT}}}\mbox{\Hypertarget{gamepad__input_8h_a739845b0076428add52ca3cec492e705ab078ffd28db767c502ac367053f6e0ac}\label{gamepad__input_8h_a739845b0076428add52ca3cec492e705ab078ffd28db767c502ac367053f6e0ac}} 
+S\+T\+A\+RT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+A\+CK@{B\+A\+CK}!gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}}\index{gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}!B\+A\+CK@{B\+A\+CK}}}\mbox{\Hypertarget{gamepad__input_8h_a739845b0076428add52ca3cec492e705a1dd26f1f1790f0b56d5752fb0fbecef0}\label{gamepad__input_8h_a739845b0076428add52ca3cec492e705a1dd26f1f1790f0b56d5752fb0fbecef0}} 
+B\+A\+CK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+P\+A\+D\+\_\+\+UP@{D\+P\+A\+D\+\_\+\+UP}!gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}}\index{gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}!D\+P\+A\+D\+\_\+\+UP@{D\+P\+A\+D\+\_\+\+UP}}}\mbox{\Hypertarget{gamepad__input_8h_a739845b0076428add52ca3cec492e705a53f4f819b43470f230aea73335a5f091}\label{gamepad__input_8h_a739845b0076428add52ca3cec492e705a53f4f819b43470f230aea73335a5f091}} 
+D\+P\+A\+D\+\_\+\+UP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+P\+A\+D\+\_\+\+D\+O\+WN@{D\+P\+A\+D\+\_\+\+D\+O\+WN}!gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}}\index{gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}!D\+P\+A\+D\+\_\+\+D\+O\+WN@{D\+P\+A\+D\+\_\+\+D\+O\+WN}}}\mbox{\Hypertarget{gamepad__input_8h_a739845b0076428add52ca3cec492e705aed0ea47a6800b933a16cd91169c338f7}\label{gamepad__input_8h_a739845b0076428add52ca3cec492e705aed0ea47a6800b933a16cd91169c338f7}} 
+D\+P\+A\+D\+\_\+\+D\+O\+WN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+P\+A\+D\+\_\+\+R\+I\+G\+HT@{D\+P\+A\+D\+\_\+\+R\+I\+G\+HT}!gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}}\index{gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}!D\+P\+A\+D\+\_\+\+R\+I\+G\+HT@{D\+P\+A\+D\+\_\+\+R\+I\+G\+HT}}}\mbox{\Hypertarget{gamepad__input_8h_a739845b0076428add52ca3cec492e705a5faad20a625bae1d890868782aae45ba}\label{gamepad__input_8h_a739845b0076428add52ca3cec492e705a5faad20a625bae1d890868782aae45ba}} 
+D\+P\+A\+D\+\_\+\+R\+I\+G\+HT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+P\+A\+D\+\_\+\+L\+E\+FT@{D\+P\+A\+D\+\_\+\+L\+E\+FT}!gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}}\index{gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}!D\+P\+A\+D\+\_\+\+L\+E\+FT@{D\+P\+A\+D\+\_\+\+L\+E\+FT}}}\mbox{\Hypertarget{gamepad__input_8h_a739845b0076428add52ca3cec492e705a2206bf25efcd102b0102f7ff4df45c99}\label{gamepad__input_8h_a739845b0076428add52ca3cec492e705a2206bf25efcd102b0102f7ff4df45c99}} 
+D\+P\+A\+D\+\_\+\+L\+E\+FT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+I\+C\+K\+\_\+R@{S\+T\+I\+C\+K\+\_\+R}!gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}}\index{gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}!S\+T\+I\+C\+K\+\_\+R@{S\+T\+I\+C\+K\+\_\+R}}}\mbox{\Hypertarget{gamepad__input_8h_a739845b0076428add52ca3cec492e705add5661cf7a6db97313a676dd371d7b7a}\label{gamepad__input_8h_a739845b0076428add52ca3cec492e705add5661cf7a6db97313a676dd371d7b7a}} 
+S\+T\+I\+C\+K\+\_\+R&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+I\+C\+K\+\_\+L@{S\+T\+I\+C\+K\+\_\+L}!gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}}\index{gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}!S\+T\+I\+C\+K\+\_\+L@{S\+T\+I\+C\+K\+\_\+L}}}\mbox{\Hypertarget{gamepad__input_8h_a739845b0076428add52ca3cec492e705a9dc54700577a58707c85d7541090bc2c}\label{gamepad__input_8h_a739845b0076428add52ca3cec492e705a9dc54700577a58707c85d7541090bc2c}} 
+S\+T\+I\+C\+K\+\_\+L&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R1@{R1}!gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}}\index{gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}!R1@{R1}}}\mbox{\Hypertarget{gamepad__input_8h_a739845b0076428add52ca3cec492e705acda522d4353b166cc2dee84673307b4e}\label{gamepad__input_8h_a739845b0076428add52ca3cec492e705acda522d4353b166cc2dee84673307b4e}} 
+R1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L1@{L1}!gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}}\index{gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}!L1@{L1}}}\mbox{\Hypertarget{gamepad__input_8h_a739845b0076428add52ca3cec492e705a9ec4c0afd450ceac7adb81c3bcfc9732}\label{gamepad__input_8h_a739845b0076428add52ca3cec492e705a9ec4c0afd450ceac7adb81c3bcfc9732}} 
+L1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+U\+T\+T\+O\+N\+\_\+\+E\+ND@{B\+U\+T\+T\+O\+N\+\_\+\+E\+ND}!gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}}\index{gamepad\+\_\+input.\+h@{gamepad\+\_\+input.\+h}!B\+U\+T\+T\+O\+N\+\_\+\+E\+ND@{B\+U\+T\+T\+O\+N\+\_\+\+E\+ND}}}\mbox{\Hypertarget{gamepad__input_8h_a739845b0076428add52ca3cec492e705a0f58d0a217cf9a9d29a9040ffb6b43c8}\label{gamepad__input_8h_a739845b0076428add52ca3cec492e705a0f58d0a217cf9a9d29a9040ffb6b43c8}} 
+B\+U\+T\+T\+O\+N\+\_\+\+E\+ND&\\
+\hline
+
+\end{DoxyEnumFields}

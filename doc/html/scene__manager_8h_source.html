@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/scene/manager/scene_manager.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_35781f0e74aa8deac19fa31b37174dc2.html">scene</a></li><li class="navelem"><a class="el" href="dir_7662138e9f22109ab61e4fc5fce080b4.html">manager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">scene_manager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="scene__manager_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../base/scene_base.h&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../scene.h&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../../common/singleton.h&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_scene_manager.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scene_manager.html">SceneManager</a> :<span class="keyword">public</span> <a class="code" href="class_scene_base.html">SceneBase</a>, <span class="keyword">public</span> <a class="code" href="class_singleton.html">Singleton</a>&lt;SceneManager&gt;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    std::unique_ptr&lt;Scene&gt; scene_ptr;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::unique_ptr&lt;Scene&gt; switch_scene(<span class="keyword">const</span> <a class="code" href="scene__base_8h.html#a24cee5343fb9d0706ead6e8601f363be">SCENE</a>)<span class="keyword">const</span>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_scene_manager.html#a6c0e84d0e76f23fb3172839dba5f091b">Init</a>()<span class="keyword">final</span>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3">Update</a>();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_scene_manager.html#a968ae7a0065b793f139bda6bcc58d106">Render</a>()<span class="keyword">final</span>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_scene_manager.html#a0e3ad11342e763f0d4108c0b4674a157">Destroy</a>()<span class="keyword">final</span>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div><div class="ttc" id="class_singleton_html"><div class="ttname"><a href="class_singleton.html">Singleton</a></div><div class="ttdoc">Singletonテンプレートスーパークラス </div><div class="ttdef"><b>Definition:</b> singleton.h:15</div></div>
+<div class="ttc" id="class_scene_manager_html_a968ae7a0065b793f139bda6bcc58d106"><div class="ttname"><a href="class_scene_manager.html#a968ae7a0065b793f139bda6bcc58d106">SceneManager::Render</a></div><div class="ttdeci">void Render() final</div><div class="ttdoc">保持してるシーンの描画 </div><div class="ttdef"><b>Definition:</b> scene_manager.cpp:40</div></div>
+<div class="ttc" id="class_scene_manager_html_a0e3ad11342e763f0d4108c0b4674a157"><div class="ttname"><a href="class_scene_manager.html#a0e3ad11342e763f0d4108c0b4674a157">SceneManager::Destroy</a></div><div class="ttdeci">void Destroy() final</div><div class="ttdoc">保持してるシーンのマネージャーの破棄 </div><div class="ttdef"><b>Definition:</b> scene_manager.cpp:48</div></div>
+<div class="ttc" id="class_scene_manager_html_a6c0e84d0e76f23fb3172839dba5f091b"><div class="ttname"><a href="class_scene_manager.html#a6c0e84d0e76f23fb3172839dba5f091b">SceneManager::Init</a></div><div class="ttdeci">void Init() final</div><div class="ttdoc">シーンマネージャーの初期化 </div><div class="ttdef"><b>Definition:</b> scene_manager.cpp:14</div></div>
+<div class="ttc" id="scene__base_8h_html_a24cee5343fb9d0706ead6e8601f363be"><div class="ttname"><a href="scene__base_8h.html#a24cee5343fb9d0706ead6e8601f363be">SCENE</a></div><div class="ttdeci">SCENE</div><div class="ttdoc">シーン遷移を円滑にするためのenum class </div><div class="ttdef"><b>Definition:</b> scene_base.h:12</div></div>
+<div class="ttc" id="class_scene_manager_html"><div class="ttname"><a href="class_scene_manager.html">SceneManager</a></div><div class="ttdoc">シーンをマネージャーするクラス </div><div class="ttdef"><b>Definition:</b> scene_manager.h:15</div></div>
+<div class="ttc" id="class_scene_base_html"><div class="ttname"><a href="class_scene_base.html">SceneBase</a></div><div class="ttdoc">マネージャーを含むシーンのスーパークラス </div><div class="ttdef"><b>Definition:</b> scene_base.h:17</div></div>
+<div class="ttc" id="class_scene_manager_html_a63dcf65832d6a2c190bf496d9a3b00a3"><div class="ttname"><a href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3">SceneManager::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">保持してるシーンの更新 </div><div class="ttdef"><b>Definition:</b> scene_manager.cpp:24</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>
