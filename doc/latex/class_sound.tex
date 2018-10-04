@@ -1,0 +1,118 @@
+\hypertarget{class_sound}{}\section{Sound クラス}
+\label{class_sound}\index{Sound@{Sound}}
+
+
+　個々のサウンドクラス  
+
+
+
+
+{\ttfamily \#include $<$sound.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sound_a3c8007c8e52bf541fc81adfa4b340b0f}{Init}} (W\+C\+H\+AR $\ast$, bool, bool)
+\begin{DoxyCompactList}\small\item\em サウンドの初期化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sound_ae021b518e93d7d8c6f3ea951cd4b98d8}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_sound_a188de6836d531813da378464e392e813}{Stop}} ()
+\item 
+void \mbox{\hyperlink{class_sound_a4e199b4346519a4977fe94998c4a77e7}{Pause}} ()
+\item 
+void \mbox{\hyperlink{class_sound_a993eee69f61611ca1b4621ea0952e2c8}{Set\+Volume}} (float vol)
+\item 
+void \mbox{\hyperlink{class_sound_a06b9680efb2b6b41b52d9f25ac0264f1}{Set\+Pitch}} (float pit)
+\item 
+void \mbox{\hyperlink{class_sound_a1b066e78405656b1475849139ca24dce}{Set\+Pan}} (float pan)
+\item 
+\mbox{\hyperlink{class_sound_a0907389078bf740be2a5763366ad3376}{$\sim$\+Sound}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ Direct\+X\+::\+Sound\+Effect\+Instance $>$ \& \mbox{\hyperlink{class_sound_a0d79b20f421c0020c53b08c05b6df25b}{operator()}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+　個々のサウンドクラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_sound_a0907389078bf740be2a5763366ad3376}\label{class_sound_a0907389078bf740be2a5763366ad3376}} 
+\index{Sound@{Sound}!````~Sound@{$\sim$\+Sound}}
+\index{````~Sound@{$\sim$\+Sound}!Sound@{Sound}}
+\subsubsection{\texorpdfstring{$\sim$\+Sound()}{~Sound()}}
+{\footnotesize\ttfamily Sound\+::$\sim$\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+デストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_sound_a3c8007c8e52bf541fc81adfa4b340b0f}\label{class_sound_a3c8007c8e52bf541fc81adfa4b340b0f}} 
+\index{Sound@{Sound}!Init@{Init}}
+\index{Init@{Init}!Sound@{Sound}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Sound\+::\+Init (\begin{DoxyParamCaption}\item[{W\+C\+H\+AR $\ast$}]{path,  }\item[{bool}]{loop,  }\item[{bool}]{awake }\end{DoxyParamCaption})}
+
+
+
+サウンドの初期化 
+
+
+\begin{DoxyParams}{引数}
+{\em path} & サウンドのパス \\
+\hline
+{\em loop} & ループするかどうか \\
+\hline
+{\em awake} & 初期化した瞬間から再生するかどうか \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sound_a0d79b20f421c0020c53b08c05b6df25b}\label{class_sound_a0d79b20f421c0020c53b08c05b6df25b}} 
+\index{Sound@{Sound}!operator()@{operator()}}
+\index{operator()@{operator()}!Sound@{Sound}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$Direct\+X\+::\+Sound\+Effect\+Instance$>$\& Sound\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_sound_a4e199b4346519a4977fe94998c4a77e7}\label{class_sound_a4e199b4346519a4977fe94998c4a77e7}} 
+\index{Sound@{Sound}!Pause@{Pause}}
+\index{Pause@{Pause}!Sound@{Sound}}
+\subsubsection{\texorpdfstring{Pause()}{Pause()}}
+{\footnotesize\ttfamily void Sound\+::\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_sound_a1b066e78405656b1475849139ca24dce}\label{class_sound_a1b066e78405656b1475849139ca24dce}} 
+\index{Sound@{Sound}!Set\+Pan@{Set\+Pan}}
+\index{Set\+Pan@{Set\+Pan}!Sound@{Sound}}
+\subsubsection{\texorpdfstring{Set\+Pan()}{SetPan()}}
+{\footnotesize\ttfamily void Sound\+::\+Set\+Pan (\begin{DoxyParamCaption}\item[{float}]{pan }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_sound_a06b9680efb2b6b41b52d9f25ac0264f1}\label{class_sound_a06b9680efb2b6b41b52d9f25ac0264f1}} 
+\index{Sound@{Sound}!Set\+Pitch@{Set\+Pitch}}
+\index{Set\+Pitch@{Set\+Pitch}!Sound@{Sound}}
+\subsubsection{\texorpdfstring{Set\+Pitch()}{SetPitch()}}
+{\footnotesize\ttfamily void Sound\+::\+Set\+Pitch (\begin{DoxyParamCaption}\item[{float}]{pit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_sound_a993eee69f61611ca1b4621ea0952e2c8}\label{class_sound_a993eee69f61611ca1b4621ea0952e2c8}} 
+\index{Sound@{Sound}!Set\+Volume@{Set\+Volume}}
+\index{Set\+Volume@{Set\+Volume}!Sound@{Sound}}
+\subsubsection{\texorpdfstring{Set\+Volume()}{SetVolume()}}
+{\footnotesize\ttfamily void Sound\+::\+Set\+Volume (\begin{DoxyParamCaption}\item[{float}]{vol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_sound_ae021b518e93d7d8c6f3ea951cd4b98d8}\label{class_sound_ae021b518e93d7d8c6f3ea951cd4b98d8}} 
+\index{Sound@{Sound}!Start@{Start}}
+\index{Start@{Start}!Sound@{Sound}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Sound\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_sound_a188de6836d531813da378464e392e813}\label{class_sound_a188de6836d531813da378464e392e813}} 
+\index{Sound@{Sound}!Stop@{Stop}}
+\index{Stop@{Stop}!Sound@{Sound}}
+\subsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void Sound\+::\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/sound/\mbox{\hyperlink{sound_8h}{sound.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/sound/\mbox{\hyperlink{sound_8cpp}{sound.\+cpp}}\end{DoxyCompactItemize}

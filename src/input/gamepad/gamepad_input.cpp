@@ -71,6 +71,7 @@ void GamepadInput::Update()
 			}
 		}
 	}
+	//コントローラー未接続
 	else
 	{
 		controller.bConnected = false;

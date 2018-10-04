@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['my_5fscene',['my_scene',['../class_scene_base.html#a18dcdbacfbd98f73099c3cbeb70ae3b8',1,'SceneBase']]]
+  ['a',['a',['../struct_color.html#a98047aee65fc3d825f88a76da728fd27',1,'Color']]]
 ];

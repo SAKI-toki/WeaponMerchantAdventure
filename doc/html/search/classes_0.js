@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gamepadinput',['GamepadInput',['../class_gamepad_input.html',1,'']]]
+  ['color',['Color',['../struct_color.html',1,'']]]
 ];

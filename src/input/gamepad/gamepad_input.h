@@ -2,7 +2,7 @@
 * @file gamepad_input.h
 * @brief ゲームパッドのインプットクラスの宣言
 * @author 石山　悠
-* @date 2018/10/02
+* @date 2018/10/04
 */
 #pragma once
 #include "../../common/common.h"
@@ -13,9 +13,11 @@
 * @brief ボタンのenum class
 * @details デフォルトの長いマクロを使わず、こっちで管理する
 */
-enum class BUTTON { A, B, X, Y, START, BACK,
-DPAD_UP, DPAD_DOWN, DPAD_RIGHT, DPAD_LEFT,
-STICK_R, STICK_L, R1, L1, BUTTON_END };
+enum class BUTTON {
+	A, B, X, Y, START, BACK,
+	DPAD_UP, DPAD_DOWN, DPAD_RIGHT, DPAD_LEFT,
+	STICK_R, STICK_L, R1, L1, BUTTON_END
+};
 
 /**
 * @brief ゲームパッドのインプットクラス
@@ -35,8 +37,8 @@ class GamepadInput :public Singleton<GamepadInput>
 	bool button_up[14];
 
 	//引数1と引数2の論理積が引数2と完全に一致しているときのみtrue
-	template<typename U1,typename U2>
-	bool perfect_and(U1 u1, U2 u2)
+	template<typename U1, typename U2>
+	bool perfect_and(const U1 u1, const U2 u2)const
 	{
 		return (u1&u2) == u2;
 	}
@@ -54,12 +56,12 @@ public:
 	bool GetButtonUp(BUTTON k)const { return controller.bConnected&&button_up[static_cast<int>(k)]; };
 
 	//トリガーの状態を返す
-	float GetTrigger(bool right)const
+	float GetTrigger(const bool right)const
 	{
 		//つながっていなかったら0を返す
 		if (!controller.bConnected) { return 0; }
 		auto trigger = (right ? controller.state.Gamepad.bRightTrigger : controller.state.Gamepad.bLeftTrigger) / 255.0f;
-		
+
 		if (trigger > TRIGGER_DEAD_ZONE)
 		{
 			return trigger;
@@ -68,7 +70,7 @@ public:
 	};
 
 	//スティックの状態を返す
-	float GetStick(bool right, bool x)const
+	float GetStick(const bool right, const bool x)const
 	{
 		//つながっていなかったら0を返す
 		if (!controller.bConnected) { return 0; }

@@ -69,7 +69,7 @@ void SoundManager::Destroy()
 std::unique_ptr<DirectX::SoundEffect>& SoundManager::GetSound(WCHAR* path)
 {
 	auto itr = soundList.find(path);
-	if (itr == soundList.end())
+	if (itr == end(soundList))
 	{
 		soundList.insert(std::make_pair(path, std::make_unique<DirectX::SoundEffect>(SoundManager::GetInstance()->GetEngine(), path)));
 	}

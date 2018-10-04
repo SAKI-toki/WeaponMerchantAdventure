@@ -8,17 +8,24 @@
 #include "../main/title/title_scene.h"
 #include "../../input/gamepad/gamepad_input.h"
 #include "../../sound/manager/sound_manager.h"
-#include <Windows.h>
+#include "../../rendering/sprite/manager/sprite_manager.h"
 
+#include "../../transform/transform.h"
+
+#include <tchar.h>
 /**
 * @brief シーンマネージャーの初期化
 */
 void SceneManager::Init()
 {
+	SpriteManager::GetInstance()->Init();
 	my_scene = SCENE::TITLE;
 	scene_ptr = switch_scene(my_scene);
 	scene_ptr->Init();
-	sound.Init(L"resources/sample.wav", true,true);
+	sound[0].Init(L"resources/audio/sample1.wav", true, true);
+	sound[1].Init(L"resources/audio/sample2.wav", true, true);
+	sprite[0].Init(L"resources/texture/sample1.png", 100, 100);
+	sprite[1].Init(L"resources/texture/sample2.png", 32, 32);
 }
 
 /**
@@ -27,18 +34,6 @@ void SceneManager::Init()
 void SceneManager::Update()
 {
 	SoundManager::GetInstance()->Update();
-	if (GamepadInput::GetInstance()->GetButtonDown(BUTTON::A))
-	{
-		sound()->SetVolume(2);
-	}
-	if (GamepadInput::GetInstance()->GetButtonDown(BUTTON::B))
-	{
-		sound()->SetVolume(1);
-	}
-	if (GamepadInput::GetInstance()->GetButtonDown(BUTTON::X))
-	{
-		sound()->SetVolume(0.5f);
-	}
 	GamepadInput::GetInstance()->Update();
 	auto next_scene = scene_ptr->Update();
 	if (next_scene != my_scene)
@@ -55,11 +50,12 @@ void SceneManager::Update()
 */
 void SceneManager::Render()
 {
-	if (GamepadInput::GetInstance()->GetTrigger(true) > 0)
-	{
-		MessageBox(NULL, L"", L"", MB_OK);
-	}
+	SpriteManager::GetInstance()->Start();
 	scene_ptr->Render();
+	Transform tt;
+	sprite[0].Render(tt);
+	sprite[1].Render(tt);
+	SpriteManager::GetInstance()->End();
 }
 
 /**

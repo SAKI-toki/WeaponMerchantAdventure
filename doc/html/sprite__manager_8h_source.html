@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/rendering/sprite/manager/sprite_manager.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1243271318b2b38807a3b1d2ca08dd72.html">rendering</a></li><li class="navelem"><a class="el" href="dir_19c665d99e1199c3690bd7c11fa4723d.html">sprite</a></li><li class="navelem"><a class="el" href="dir_5c873dc661a62c38eac06b33d6f061cf.html">manager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">sprite_manager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="sprite__manager_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../../../common/singleton.h&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;SpriteBatch.h&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wrl.h&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="sprite__manager_8h.html#ab0deadee9fd38132a17560766af7fc45">   12</a></span>&#160;<span class="keyword">using</span> <a class="code" href="sprite__manager_8h.html#ab0deadee9fd38132a17560766af7fc45">CP</a> = Microsoft::WRL::ComPtr&lt;T&gt;;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_sprite_manager.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sprite_manager.html">SpriteManager</a> :<span class="keyword">public</span> <a class="code" href="class_singleton.html">Singleton</a>&lt;SpriteManager&gt;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">//必要なもの</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    std::unique_ptr&lt;DirectX::SpriteBatch&gt; m_pSpriteBatch;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//1度読み込んだものは2回読み込まない</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">//パスで管理</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    std::unordered_map &lt; WCHAR*, CP&lt;ID3D11ShaderResourceView&gt;&gt; textureList;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//デバイス</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    ID3D11Device* device;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    ID3D11DeviceContext* deviceContext;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sprite_manager.html#a82941ce284548c762f250220ea58f43c">Init</a>();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="sprite__manager_8h.html#ab0deadee9fd38132a17560766af7fc45">CP&lt;ID3D11ShaderResourceView&gt;</a>&amp; <a class="code" href="class_sprite_manager.html#a64bcc473169d17c3912cff9efe224115">GetTexture</a>(WCHAR*);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_sprite_manager.html#ae01a31b1c80f676604ba55c93b499e1f">~SpriteManager</a>();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_sprite_manager.html#a0b82bacf33d0b558657c8e9841daf9d9">   37</a></span>&#160;    std::unique_ptr&lt;DirectX::SpriteBatch&gt;&amp; <a class="code" href="class_sprite_manager.html#a0b82bacf33d0b558657c8e9841daf9d9">GetSpriteBatch</a>() { <span class="keywordflow">return</span> m_pSpriteBatch; }</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_sprite_manager.html#ac9e2c44cc43775d9802612bd4be9bac3">   42</a></span>&#160;    ID3D11Device*&amp; <a class="code" href="class_sprite_manager.html#ac9e2c44cc43775d9802612bd4be9bac3">GetDevice</a>() { <span class="keywordflow">return</span> device; }</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_sprite_manager.html#a6bad23e380818dbe6b521adc07ab84fa">   47</a></span>&#160;    ID3D11DeviceContext*&amp; <a class="code" href="class_sprite_manager.html#a6bad23e380818dbe6b521adc07ab84fa">GetDeviceContext</a>() { <span class="keywordflow">return</span> deviceContext; }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_sprite_manager.html#a6b387e8736713264f6d590082cd492cb">   52</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sprite_manager.html#a6b387e8736713264f6d590082cd492cb">Start</a>() { m_pSpriteBatch-&gt;Begin(); }</div><div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_sprite_manager.html#afed8a96a6530f67123a4efa1b6d77032">   56</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sprite_manager.html#afed8a96a6530f67123a4efa1b6d77032">End</a>() { m_pSpriteBatch-&gt;End(); }</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div><div class="ttc" id="class_sprite_manager_html_a6bad23e380818dbe6b521adc07ab84fa"><div class="ttname"><a href="class_sprite_manager.html#a6bad23e380818dbe6b521adc07ab84fa">SpriteManager::GetDeviceContext</a></div><div class="ttdeci">ID3D11DeviceContext *&amp; GetDeviceContext()</div><div class="ttdoc">ID3D11DeviceContextのゲッタ </div><div class="ttdef"><b>Definition:</b> sprite_manager.h:47</div></div>
+<div class="ttc" id="class_singleton_html"><div class="ttname"><a href="class_singleton.html">Singleton</a></div><div class="ttdoc">Singletonテンプレートスーパークラス </div><div class="ttdef"><b>Definition:</b> singleton.h:15</div></div>
+<div class="ttc" id="class_sprite_manager_html_a82941ce284548c762f250220ea58f43c"><div class="ttname"><a href="class_sprite_manager.html#a82941ce284548c762f250220ea58f43c">SpriteManager::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">初期化 </div><div class="ttdef"><b>Definition:</b> sprite_manager.cpp:13</div></div>
+<div class="ttc" id="class_sprite_manager_html_ae01a31b1c80f676604ba55c93b499e1f"><div class="ttname"><a href="class_sprite_manager.html#ae01a31b1c80f676604ba55c93b499e1f">SpriteManager::~SpriteManager</a></div><div class="ttdeci">~SpriteManager()</div><div class="ttdoc">デストラクタ </div><div class="ttdef"><b>Definition:</b> sprite_manager.cpp:43</div></div>
+<div class="ttc" id="class_sprite_manager_html_afed8a96a6530f67123a4efa1b6d77032"><div class="ttname"><a href="class_sprite_manager.html#afed8a96a6530f67123a4efa1b6d77032">SpriteManager::End</a></div><div class="ttdeci">void End()</div><div class="ttdoc">描画を終了 </div><div class="ttdef"><b>Definition:</b> sprite_manager.h:56</div></div>
+<div class="ttc" id="class_sprite_manager_html_ac9e2c44cc43775d9802612bd4be9bac3"><div class="ttname"><a href="class_sprite_manager.html#ac9e2c44cc43775d9802612bd4be9bac3">SpriteManager::GetDevice</a></div><div class="ttdeci">ID3D11Device *&amp; GetDevice()</div><div class="ttdoc">ID3D11Deviceのゲッタ </div><div class="ttdef"><b>Definition:</b> sprite_manager.h:42</div></div>
+<div class="ttc" id="sprite__manager_8h_html_ab0deadee9fd38132a17560766af7fc45"><div class="ttname"><a href="sprite__manager_8h.html#ab0deadee9fd38132a17560766af7fc45">CP</a></div><div class="ttdeci">Microsoft::WRL::ComPtr&lt; T &gt; CP</div><div class="ttdef"><b>Definition:</b> sprite_manager.h:12</div></div>
+<div class="ttc" id="class_sprite_manager_html_a0b82bacf33d0b558657c8e9841daf9d9"><div class="ttname"><a href="class_sprite_manager.html#a0b82bacf33d0b558657c8e9841daf9d9">SpriteManager::GetSpriteBatch</a></div><div class="ttdeci">std::unique_ptr&lt; DirectX::SpriteBatch &gt; &amp; GetSpriteBatch()</div><div class="ttdoc">SpriteBatchのゲッタ </div><div class="ttdef"><b>Definition:</b> sprite_manager.h:37</div></div>
+<div class="ttc" id="class_sprite_manager_html_a64bcc473169d17c3912cff9efe224115"><div class="ttname"><a href="class_sprite_manager.html#a64bcc473169d17c3912cff9efe224115">SpriteManager::GetTexture</a></div><div class="ttdeci">CP&lt; ID3D11ShaderResourceView &gt; &amp; GetTexture(WCHAR *)</div><div class="ttdoc">テクスチャを保存し、返す </div><div class="ttdef"><b>Definition:</b> sprite_manager.cpp:23</div></div>
+<div class="ttc" id="class_sprite_manager_html_a6b387e8736713264f6d590082cd492cb"><div class="ttname"><a href="class_sprite_manager.html#a6b387e8736713264f6d590082cd492cb">SpriteManager::Start</a></div><div class="ttdeci">void Start()</div><div class="ttdoc">描画をスタート </div><div class="ttdef"><b>Definition:</b> sprite_manager.h:52</div></div>
+<div class="ttc" id="class_sprite_manager_html"><div class="ttname"><a href="class_sprite_manager.html">SpriteManager</a></div><div class="ttdoc">Sprite関係のデバイスや描画時に経由するものを管理するクラス </div><div class="ttdef"><b>Definition:</b> sprite_manager.h:17</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

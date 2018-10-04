@@ -5,6 +5,7 @@
 
 #include "pch.h"
 #include "DeviceResources.h"
+#include "src/rendering/sprite/manager/sprite_manager.h"
 
 using namespace DirectX;
 using namespace DX;
@@ -239,6 +240,9 @@ void DeviceResources::CreateDeviceResources()
     ThrowIfFailed(device.As(&m_d3dDevice));
     ThrowIfFailed(context.As(&m_d3dContext));
     ThrowIfFailed(context.As(&m_d3dAnnotation));
+
+	SpriteManager::GetInstance()->GetDeviceContext() = GetD3DDeviceContext();
+	SpriteManager::GetInstance()->GetDevice() = GetD3DDevice();
 }
 
 // These resources need to be recreated every time the window size is changed.

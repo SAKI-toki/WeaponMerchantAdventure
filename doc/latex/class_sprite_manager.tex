@@ -1,0 +1,149 @@
+\hypertarget{class_sprite_manager}{}\section{Sprite\+Manager クラス}
+\label{class_sprite_manager}\index{Sprite\+Manager@{Sprite\+Manager}}
+
+
+Sprite関係のデバイスや描画時に経由するものを管理するクラス  
+
+
+
+
+{\ttfamily \#include $<$sprite\+\_\+manager.\+h$>$}
+
+Sprite\+Manager の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sprite_manager}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sprite_manager_a82941ce284548c762f250220ea58f43c}{Init}} ()
+\begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{sprite__manager_8h_ab0deadee9fd38132a17560766af7fc45}{CP}}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ \& \mbox{\hyperlink{class_sprite_manager_a64bcc473169d17c3912cff9efe224115}{Get\+Texture}} (W\+C\+H\+AR $\ast$)
+\begin{DoxyCompactList}\small\item\em テクスチャを保存し、返す \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_manager_ae01a31b1c80f676604ba55c93b499e1f}{$\sim$\+Sprite\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ Direct\+X\+::\+Sprite\+Batch $>$ \& \mbox{\hyperlink{class_sprite_manager_a0b82bacf33d0b558657c8e9841daf9d9}{Get\+Sprite\+Batch}} ()
+\begin{DoxyCompactList}\small\item\em Sprite\+Batchのゲッタ \end{DoxyCompactList}\item 
+I\+D3\+D11\+Device $\ast$\& \mbox{\hyperlink{class_sprite_manager_ac9e2c44cc43775d9802612bd4be9bac3}{Get\+Device}} ()
+\begin{DoxyCompactList}\small\item\em I\+D3\+D11\+Deviceのゲッタ \end{DoxyCompactList}\item 
+I\+D3\+D11\+Device\+Context $\ast$\& \mbox{\hyperlink{class_sprite_manager_a6bad23e380818dbe6b521adc07ab84fa}{Get\+Device\+Context}} ()
+\begin{DoxyCompactList}\small\item\em I\+D3\+D11\+Device\+Contextのゲッタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_manager_a6b387e8736713264f6d590082cd492cb}{Start}} ()
+\begin{DoxyCompactList}\small\item\em 描画をスタート \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_manager_afed8a96a6530f67123a4efa1b6d77032}{End}} ()
+\begin{DoxyCompactList}\small\item\em 描画を終了 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+Sprite関係のデバイスや描画時に経由するものを管理するクラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_sprite_manager_ae01a31b1c80f676604ba55c93b499e1f}\label{class_sprite_manager_ae01a31b1c80f676604ba55c93b499e1f}} 
+\index{Sprite\+Manager@{Sprite\+Manager}!````~Sprite\+Manager@{$\sim$\+Sprite\+Manager}}
+\index{````~Sprite\+Manager@{$\sim$\+Sprite\+Manager}!Sprite\+Manager@{Sprite\+Manager}}
+\subsubsection{\texorpdfstring{$\sim$\+Sprite\+Manager()}{~SpriteManager()}}
+{\footnotesize\ttfamily Sprite\+Manager\+::$\sim$\+Sprite\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+デストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_sprite_manager_afed8a96a6530f67123a4efa1b6d77032}\label{class_sprite_manager_afed8a96a6530f67123a4efa1b6d77032}} 
+\index{Sprite\+Manager@{Sprite\+Manager}!End@{End}}
+\index{End@{End}!Sprite\+Manager@{Sprite\+Manager}}
+\subsubsection{\texorpdfstring{End()}{End()}}
+{\footnotesize\ttfamily void Sprite\+Manager\+::\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+描画を終了 
+
+\mbox{\Hypertarget{class_sprite_manager_ac9e2c44cc43775d9802612bd4be9bac3}\label{class_sprite_manager_ac9e2c44cc43775d9802612bd4be9bac3}} 
+\index{Sprite\+Manager@{Sprite\+Manager}!Get\+Device@{Get\+Device}}
+\index{Get\+Device@{Get\+Device}!Sprite\+Manager@{Sprite\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Device()}{GetDevice()}}
+{\footnotesize\ttfamily I\+D3\+D11\+Device$\ast$\& Sprite\+Manager\+::\+Get\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+I\+D3\+D11\+Deviceのゲッタ 
+
+\begin{DoxyReturn}{戻り値}
+I\+D3\+D11\+Device$\ast$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sprite_manager_a6bad23e380818dbe6b521adc07ab84fa}\label{class_sprite_manager_a6bad23e380818dbe6b521adc07ab84fa}} 
+\index{Sprite\+Manager@{Sprite\+Manager}!Get\+Device\+Context@{Get\+Device\+Context}}
+\index{Get\+Device\+Context@{Get\+Device\+Context}!Sprite\+Manager@{Sprite\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Device\+Context()}{GetDeviceContext()}}
+{\footnotesize\ttfamily I\+D3\+D11\+Device\+Context$\ast$\& Sprite\+Manager\+::\+Get\+Device\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+I\+D3\+D11\+Device\+Contextのゲッタ 
+
+\begin{DoxyReturn}{戻り値}
+I\+D3\+D11\+Device\+Context$\ast$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sprite_manager_a0b82bacf33d0b558657c8e9841daf9d9}\label{class_sprite_manager_a0b82bacf33d0b558657c8e9841daf9d9}} 
+\index{Sprite\+Manager@{Sprite\+Manager}!Get\+Sprite\+Batch@{Get\+Sprite\+Batch}}
+\index{Get\+Sprite\+Batch@{Get\+Sprite\+Batch}!Sprite\+Manager@{Sprite\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Sprite\+Batch()}{GetSpriteBatch()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$Direct\+X\+::\+Sprite\+Batch$>$\& Sprite\+Manager\+::\+Get\+Sprite\+Batch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sprite\+Batchのゲッタ 
+
+\begin{DoxyReturn}{戻り値}
+std\+::unique\+\_\+ptr$<$\+Direct\+X\+::\+Sprite\+Batch$>$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sprite_manager_a64bcc473169d17c3912cff9efe224115}\label{class_sprite_manager_a64bcc473169d17c3912cff9efe224115}} 
+\index{Sprite\+Manager@{Sprite\+Manager}!Get\+Texture@{Get\+Texture}}
+\index{Get\+Texture@{Get\+Texture}!Sprite\+Manager@{Sprite\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Texture()}{GetTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sprite__manager_8h_ab0deadee9fd38132a17560766af7fc45}{CP}}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ \& Sprite\+Manager\+::\+Get\+Texture (\begin{DoxyParamCaption}\item[{W\+C\+H\+AR $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+テクスチャを保存し、返す 
+
+
+\begin{DoxyParams}{引数}
+{\em path} & テクスチャがあるパス \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+C\+P$<$\+I\+D3\+D11\+Shader\+Resource\+View$>$\& テクスチャ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sprite_manager_a82941ce284548c762f250220ea58f43c}\label{class_sprite_manager_a82941ce284548c762f250220ea58f43c}} 
+\index{Sprite\+Manager@{Sprite\+Manager}!Init@{Init}}
+\index{Init@{Init}!Sprite\+Manager@{Sprite\+Manager}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Sprite\+Manager\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+初期化 
+
+\mbox{\Hypertarget{class_sprite_manager_a6b387e8736713264f6d590082cd492cb}\label{class_sprite_manager_a6b387e8736713264f6d590082cd492cb}} 
+\index{Sprite\+Manager@{Sprite\+Manager}!Start@{Start}}
+\index{Start@{Start}!Sprite\+Manager@{Sprite\+Manager}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Sprite\+Manager\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+描画をスタート 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/rendering/sprite/manager/\mbox{\hyperlink{sprite__manager_8h}{sprite\+\_\+manager.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/rendering/sprite/manager/\mbox{\hyperlink{sprite__manager_8cpp}{sprite\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

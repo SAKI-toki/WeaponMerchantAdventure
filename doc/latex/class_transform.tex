@@ -1,0 +1,250 @@
+\hypertarget{class_transform}{}\section{Transform クラス}
+\label{class_transform}\index{Transform@{Transform}}
+
+
+{\ttfamily \#include $<$transform.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transform_aa08ca4266efabc768973cdeea51945ab}{Transform}} ()
+\item 
+\mbox{\hyperlink{class_transform_a14fa5149a8efcc92e3d53d177b6daace}{Transform}} (const float, const float=0, const float=0, const float=0, const float=0, const float=0, const float=0)
+\begin{DoxyCompactList}\small\item\em 一つ一つ値で渡すコンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_transform_a06ab752a6562e1d0de11357525bd55a3}{Transform}} (const \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&\+\_\+pos, const \mbox{\hyperlink{transform_8h_a7e10f09694869ec22cb183f13a59289c}{V\+E\+C3}} \&\+\_\+rot, const \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&\+\_\+scale)
+\begin{DoxyCompactList}\small\item\em 各クラスに対して値を渡すコンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_transform_a7790f3c5dfe2b7fe7997af5f23e2ec7d}{Transform}} (const \mbox{\hyperlink{class_transform}{Transform}} \&t)
+\begin{DoxyCompactList}\small\item\em Transformクラスを渡すコンストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transform_a45772ecb47b60d5b3f110613c3f15984}{Move}} (const float, const float)
+\begin{DoxyCompactList}\small\item\em 一つ一つ値で渡す移動 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transform_a13dbb800ca989856d1f56c03dd9a0ad0}{Move}} (const \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&)
+\begin{DoxyCompactList}\small\item\em 　クラスで渡す移動 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transform_a937193d9bcc7da62e3787060eb8f976b}{Rotate}} (const float, const float, const float)
+\begin{DoxyCompactList}\small\item\em 　一つ一つ値で渡す回転 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transform_a0915250ed0d83c88f1cfb269d7e24276}{Rotate}} (const \mbox{\hyperlink{transform_8h_a7e10f09694869ec22cb183f13a59289c}{V\+E\+C3}} \&)
+\begin{DoxyCompactList}\small\item\em 　クラスで渡す回転 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transform_a6eca2a32da02cc4e6ef9827ea8226cbb}{Scaling}} (const float, const float)
+\begin{DoxyCompactList}\small\item\em 　一つ一つ値で渡す拡大・縮小 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transform_ad98a664586fb6546bdfb02d18c0578cb}{Scaling}} (const \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&)
+\begin{DoxyCompactList}\small\item\em 　クラスで渡す拡大・縮小 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transform_af1a25489903986022218a798e4f40251}{operator=}} (const \mbox{\hyperlink{class_transform}{Transform}} \&)
+\item 
+void \mbox{\hyperlink{class_transform_a3b0aa54a1ca373ec3a7052977b5bf826}{operator+=}} (const \mbox{\hyperlink{class_transform}{Transform}} \&)
+\item 
+void \mbox{\hyperlink{class_transform_a204ee3471c1d08188076e3645c9f3517}{operator-\/=}} (const \mbox{\hyperlink{class_transform}{Transform}} \&)
+\item 
+void \mbox{\hyperlink{class_transform_a3746d6759ca289e8cd4982e889e7ec6b}{operator$\ast$=}} (const \mbox{\hyperlink{class_transform}{Transform}} \&)
+\item 
+void \mbox{\hyperlink{class_transform_ab13378f63abf5bc132841f83423a634d}{operator$\ast$=}} (const float)
+\item 
+void \mbox{\hyperlink{class_transform_aa38455bbe5aed5f9dfd98a8d3b8a24ec}{operator/=}} (const float)
+\item 
+\mbox{\hyperlink{class_transform}{Transform}} \mbox{\hyperlink{class_transform_a8e21c258146adde8ca798878bab9ce9d}{operator+}} (const \mbox{\hyperlink{class_transform}{Transform}} \&) const
+\item 
+\mbox{\hyperlink{class_transform}{Transform}} \mbox{\hyperlink{class_transform_a17493155309aa1650de99ce384f096a6}{operator-\/}} (const \mbox{\hyperlink{class_transform}{Transform}} \&) const
+\item 
+bool \mbox{\hyperlink{class_transform_a0a2d49f8c1b9a2229846534f9bcc63d4}{operator==}} (const \mbox{\hyperlink{class_transform}{Transform}} \&) const
+\item 
+bool \mbox{\hyperlink{class_transform_ae0aed78dcd6aaeb786ec0bdadafa9498}{operator!=}} (const \mbox{\hyperlink{class_transform}{Transform}} \&) const
+\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \mbox{\hyperlink{class_transform_a25bce2389cc280e8adf193bdbb00d94a}{pos}}
+\item 
+\mbox{\hyperlink{transform_8h_a7e10f09694869ec22cb183f13a59289c}{V\+E\+C3}} \mbox{\hyperlink{class_transform_a37866af878aeb2fd7b30a375d2227e68}{rot}}
+\item 
+\mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \mbox{\hyperlink{class_transform_a5dbda48cf294803797eccb79d1f833b7}{scale}}
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+クラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_transform_aa08ca4266efabc768973cdeea51945ab}\label{class_transform_aa08ca4266efabc768973cdeea51945ab}} 
+\index{Transform@{Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Transform\+::\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\+:brief　ゼロで初期化する引数なしコンストラクタ \mbox{\Hypertarget{class_transform_a14fa5149a8efcc92e3d53d177b6daace}\label{class_transform_a14fa5149a8efcc92e3d53d177b6daace}} 
+\index{Transform@{Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{const float}]{posx,  }\item[{const float}]{posy = {\ttfamily 0},  }\item[{const float}]{rotx = {\ttfamily 0},  }\item[{const float}]{roty = {\ttfamily 0},  }\item[{const float}]{rotz = {\ttfamily 0},  }\item[{const float}]{scalex = {\ttfamily 0},  }\item[{const float}]{scaley = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+一つ一つ値で渡すコンストラクタ 
+
+\mbox{\Hypertarget{class_transform_a06ab752a6562e1d0de11357525bd55a3}\label{class_transform_a06ab752a6562e1d0de11357525bd55a3}} 
+\index{Transform@{Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{\+\_\+pos,  }\item[{const \mbox{\hyperlink{transform_8h_a7e10f09694869ec22cb183f13a59289c}{V\+E\+C3}} \&}]{\+\_\+rot,  }\item[{const \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{\+\_\+scale }\end{DoxyParamCaption})}
+
+
+
+各クラスに対して値を渡すコンストラクタ 
+
+\mbox{\Hypertarget{class_transform_a7790f3c5dfe2b7fe7997af5f23e2ec7d}\label{class_transform_a7790f3c5dfe2b7fe7997af5f23e2ec7d}} 
+\index{Transform@{Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_transform}{Transform}} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Transformクラスを渡すコンストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_transform_a45772ecb47b60d5b3f110613c3f15984}\label{class_transform_a45772ecb47b60d5b3f110613c3f15984}} 
+\index{Transform@{Transform}!Move@{Move}}
+\index{Move@{Move}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Move()}{Move()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Transform\+::\+Move (\begin{DoxyParamCaption}\item[{const float}]{x = {\ttfamily 0},  }\item[{const float}]{y = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+一つ一つ値で渡す移動 
+
+\mbox{\Hypertarget{class_transform_a13dbb800ca989856d1f56c03dd9a0ad0}\label{class_transform_a13dbb800ca989856d1f56c03dd9a0ad0}} 
+\index{Transform@{Transform}!Move@{Move}}
+\index{Move@{Move}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Move()}{Move()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Transform\+::\+Move (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+　クラスで渡す移動 
+
+\mbox{\Hypertarget{class_transform_ae0aed78dcd6aaeb786ec0bdadafa9498}\label{class_transform_ae0aed78dcd6aaeb786ec0bdadafa9498}} 
+\index{Transform@{Transform}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Transform\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_transform}{Transform}} \&}]{t }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_transform_a3746d6759ca289e8cd4982e889e7ec6b}\label{class_transform_a3746d6759ca289e8cd4982e889e7ec6b}} 
+\index{Transform@{Transform}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Transform\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_transform}{Transform}} \&}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_transform_ab13378f63abf5bc132841f83423a634d}\label{class_transform_ab13378f63abf5bc132841f83423a634d}} 
+\index{Transform@{Transform}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Transform\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const float}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_transform_a8e21c258146adde8ca798878bab9ce9d}\label{class_transform_a8e21c258146adde8ca798878bab9ce9d}} 
+\index{Transform@{Transform}!operator+@{operator+}}
+\index{operator+@{operator+}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_transform}{Transform}} Transform\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_transform}{Transform}} \&}]{t }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_transform_a3b0aa54a1ca373ec3a7052977b5bf826}\label{class_transform_a3b0aa54a1ca373ec3a7052977b5bf826}} 
+\index{Transform@{Transform}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily void Transform\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_transform}{Transform}} \&}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_transform_a17493155309aa1650de99ce384f096a6}\label{class_transform_a17493155309aa1650de99ce384f096a6}} 
+\index{Transform@{Transform}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_transform}{Transform}} Transform\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_transform}{Transform}} \&}]{t }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_transform_a204ee3471c1d08188076e3645c9f3517}\label{class_transform_a204ee3471c1d08188076e3645c9f3517}} 
+\index{Transform@{Transform}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily void Transform\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_transform}{Transform}} \&}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_transform_aa38455bbe5aed5f9dfd98a8d3b8a24ec}\label{class_transform_aa38455bbe5aed5f9dfd98a8d3b8a24ec}} 
+\index{Transform@{Transform}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}}
+{\footnotesize\ttfamily void Transform\+::operator/= (\begin{DoxyParamCaption}\item[{const float}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_transform_af1a25489903986022218a798e4f40251}\label{class_transform_af1a25489903986022218a798e4f40251}} 
+\index{Transform@{Transform}!operator=@{operator=}}
+\index{operator=@{operator=}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void Transform\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_transform}{Transform}} \&}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_transform_a0a2d49f8c1b9a2229846534f9bcc63d4}\label{class_transform_a0a2d49f8c1b9a2229846534f9bcc63d4}} 
+\index{Transform@{Transform}!operator==@{operator==}}
+\index{operator==@{operator==}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Transform\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_transform}{Transform}} \&}]{t }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_transform_a937193d9bcc7da62e3787060eb8f976b}\label{class_transform_a937193d9bcc7da62e3787060eb8f976b}} 
+\index{Transform@{Transform}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Rotate()}{Rotate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Transform\+::\+Rotate (\begin{DoxyParamCaption}\item[{const float}]{x = {\ttfamily 0},  }\item[{const float}]{y = {\ttfamily 0},  }\item[{const float}]{z = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+　一つ一つ値で渡す回転 
+
+\mbox{\Hypertarget{class_transform_a0915250ed0d83c88f1cfb269d7e24276}\label{class_transform_a0915250ed0d83c88f1cfb269d7e24276}} 
+\index{Transform@{Transform}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Rotate()}{Rotate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Transform\+::\+Rotate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{transform_8h_a7e10f09694869ec22cb183f13a59289c}{V\+E\+C3}} \&}]{\+\_\+rot }\end{DoxyParamCaption})}
+
+
+
+　クラスで渡す回転 
+
+\mbox{\Hypertarget{class_transform_a6eca2a32da02cc4e6ef9827ea8226cbb}\label{class_transform_a6eca2a32da02cc4e6ef9827ea8226cbb}} 
+\index{Transform@{Transform}!Scaling@{Scaling}}
+\index{Scaling@{Scaling}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Scaling()}{Scaling()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Transform\+::\+Scaling (\begin{DoxyParamCaption}\item[{const float}]{x = {\ttfamily 0},  }\item[{const float}]{y = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+　一つ一つ値で渡す拡大・縮小 
+
+\mbox{\Hypertarget{class_transform_ad98a664586fb6546bdfb02d18c0578cb}\label{class_transform_ad98a664586fb6546bdfb02d18c0578cb}} 
+\index{Transform@{Transform}!Scaling@{Scaling}}
+\index{Scaling@{Scaling}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Scaling()}{Scaling()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Transform\+::\+Scaling (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{\+\_\+scale }\end{DoxyParamCaption})}
+
+
+
+　クラスで渡す拡大・縮小 
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_transform_a25bce2389cc280e8adf193bdbb00d94a}\label{class_transform_a25bce2389cc280e8adf193bdbb00d94a}} 
+\index{Transform@{Transform}!pos@{pos}}
+\index{pos@{pos}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} Transform\+::pos}
+
+\mbox{\Hypertarget{class_transform_a37866af878aeb2fd7b30a375d2227e68}\label{class_transform_a37866af878aeb2fd7b30a375d2227e68}} 
+\index{Transform@{Transform}!rot@{rot}}
+\index{rot@{rot}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{rot}{rot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{transform_8h_a7e10f09694869ec22cb183f13a59289c}{V\+E\+C3}} Transform\+::rot}
+
+\mbox{\Hypertarget{class_transform_a5dbda48cf294803797eccb79d1f833b7}\label{class_transform_a5dbda48cf294803797eccb79d1f833b7}} 
+\index{Transform@{Transform}!scale@{scale}}
+\index{scale@{scale}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} Transform\+::scale}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/transform/\mbox{\hyperlink{transform_8h}{transform.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/transform/\mbox{\hyperlink{transform_8cpp}{transform.\+cpp}}\end{DoxyCompactItemize}

@@ -1,18 +1,15 @@
 var searchData=
 [
-  ['scene',['Scene',['../class_scene.html',1,'Scene'],['../scene__base_8h.html#a24cee5343fb9d0706ead6e8601f363be',1,'SCENE():&#160;scene_base.h']]],
-  ['scene_2eh',['scene.h',['../scene_8h.html',1,'']]],
-  ['scene_5fbase_2eh',['scene_base.h',['../scene__base_8h.html',1,'']]],
-  ['scene_5fmanager_2ecpp',['scene_manager.cpp',['../scene__manager_8cpp.html',1,'']]],
-  ['scene_5fmanager_2eh',['scene_manager.h',['../scene__manager_8h.html',1,'']]],
-  ['scenebase',['SceneBase',['../class_scene_base.html',1,'']]],
-  ['scenemanager',['SceneManager',['../class_scene_manager.html',1,'']]],
-  ['select',['SELECT',['../scene__base_8h.html#a24cee5343fb9d0706ead6e8601f363bea63225f19fccb18e7c709f1fa11bc738e',1,'scene_base.h']]],
-  ['singleton',['Singleton',['../class_singleton.html',1,'Singleton&lt; T &gt;'],['../class_singleton.html#a923b995920da9c06590adb170ab2f890',1,'Singleton::Singleton()']]],
-  ['singleton_2eh',['singleton.h',['../singleton_8h.html',1,'']]],
-  ['singleton_3c_20gamepadinput_20_3e',['Singleton&lt; GamepadInput &gt;',['../class_singleton.html',1,'']]],
-  ['singleton_3c_20scenemanager_20_3e',['Singleton&lt; SceneManager &gt;',['../class_singleton.html',1,'']]],
-  ['start',['START',['../gamepad__input_8h.html#a739845b0076428add52ca3cec492e705ab078ffd28db767c502ac367053f6e0ac',1,'gamepad_input.h']]],
-  ['stick_5fl',['STICK_L',['../gamepad__input_8h.html#a739845b0076428add52ca3cec492e705a9dc54700577a58707c85d7541090bc2c',1,'gamepad_input.h']]],
-  ['stick_5fr',['STICK_R',['../gamepad__input_8h.html#a739845b0076428add52ca3cec492e705add5661cf7a6db97313a676dd371d7b7a',1,'gamepad_input.h']]]
+  ['object',['Object',['../class_object.html',1,'']]],
+  ['object_2eh',['object.h',['../object_8h.html',1,'']]],
+  ['operator_21_3d',['operator!=',['../class_transform.html#ae0aed78dcd6aaeb786ec0bdadafa9498',1,'Transform']]],
+  ['operator_28_29',['operator()',['../class_sound.html#a0d79b20f421c0020c53b08c05b6df25b',1,'Sound']]],
+  ['operator_2a_3d',['operator*=',['../class_transform.html#a3746d6759ca289e8cd4982e889e7ec6b',1,'Transform::operator*=(const Transform &amp;)'],['../class_transform.html#ab13378f63abf5bc132841f83423a634d',1,'Transform::operator*=(const float)']]],
+  ['operator_2b',['operator+',['../class_transform.html#a8e21c258146adde8ca798878bab9ce9d',1,'Transform']]],
+  ['operator_2b_3d',['operator+=',['../class_transform.html#a3b0aa54a1ca373ec3a7052977b5bf826',1,'Transform']]],
+  ['operator_2d',['operator-',['../class_transform.html#a17493155309aa1650de99ce384f096a6',1,'Transform']]],
+  ['operator_2d_3d',['operator-=',['../class_transform.html#a204ee3471c1d08188076e3645c9f3517',1,'Transform']]],
+  ['operator_2f_3d',['operator/=',['../class_transform.html#aa38455bbe5aed5f9dfd98a8d3b8a24ec',1,'Transform']]],
+  ['operator_3d',['operator=',['../class_transform.html#af1a25489903986022218a798e4f40251',1,'Transform']]],
+  ['operator_3d_3d',['operator==',['../class_transform.html#a0a2d49f8c1b9a2229846534f9bcc63d4',1,'Transform']]]
 ];

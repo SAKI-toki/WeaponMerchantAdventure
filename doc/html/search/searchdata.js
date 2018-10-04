@@ -1,12 +1,13 @@
 var indexSectionsWithContent =
 {
-  0: "abcdgilmrstuxy~",
-  1: "gst",
-  2: "cgst",
-  3: "dgirsu~",
-  4: "m",
-  5: "bs",
-  6: "abdglrstxy"
+  0: "abcdegilmoprstuvxy~",
+  1: "cgost",
+  2: "cgost",
+  3: "degimoprstu~",
+  4: "abgmprs",
+  5: "cv",
+  6: "bs",
+  7: "abdglrstxy"
 };
 
 var indexSectionNames =
@@ -16,8 +17,9 @@ var indexSectionNames =
   2: "files",
   3: "functions",
   4: "variables",
-  5: "enums",
-  6: "enumvalues"
+  5: "typedefs",
+  6: "enums",
+  7: "enumvalues"
 };
 
 var indexSectionLabels =
@@ -27,7 +29,8 @@ var indexSectionLabels =
   2: "ファイル",
   3: "関数",
   4: "変数",
-  5: "列挙型",
-  6: "列挙値"
+  5: "型定義",
+  6: "列挙型",
+  7: "列挙値"
 };
 

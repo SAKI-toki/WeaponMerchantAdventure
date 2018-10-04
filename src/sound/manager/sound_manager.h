@@ -7,7 +7,7 @@
 #pragma once
 #include "../../common/common.h"
 #include "../../common/singleton.h"
-#include "Audio.h"
+#include <Audio.h>
 
 /**
 * @brief サウンドを管理するクラス
@@ -30,7 +30,7 @@ public:
 	void Destroy();
 
 	//AudioEngineを返す
-	auto GetEngine() { return m_pAudioEngine.get(); }
+	auto GetEngine()const { return m_pAudioEngine.get(); }
 
 	//必要なもの
 	void RetryAudio() { retry_audio = true; }

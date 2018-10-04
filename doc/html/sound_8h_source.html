@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/sound/sound.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_06983a04f4bcdd04d40946e8be932ce3.html">sound</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">sound.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="sound_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;optional&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;Audio.h&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_sound.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sound.html">Sound</a></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    std::unique_ptr&lt;DirectX::SoundEffectInstance&gt; instance_sound;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">bool</span> is_loop;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a3c8007c8e52bf541fc81adfa4b340b0f">Init</a>(WCHAR*, <span class="keywordtype">bool</span>, <span class="keywordtype">bool</span>);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">//再生</span></div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_sound.html#ae021b518e93d7d8c6f3ea951cd4b98d8">   23</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sound.html#ae021b518e93d7d8c6f3ea951cd4b98d8">Start</a>() { instance_sound-&gt;Play(is_loop); }</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//停止</span></div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_sound.html#a188de6836d531813da378464e392e813">   25</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a188de6836d531813da378464e392e813">Stop</a>() { instance_sound-&gt;Stop(); }</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//一時停止</span></div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_sound.html#a4e199b4346519a4977fe94998c4a77e7">   27</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a4e199b4346519a4977fe94998c4a77e7">Pause</a>() { instance_sound-&gt;Pause(); }</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">//ボリューム</span></div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_sound.html#a993eee69f61611ca1b4621ea0952e2c8">   29</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a993eee69f61611ca1b4621ea0952e2c8">SetVolume</a>(<span class="keywordtype">float</span> vol) { instance_sound-&gt;SetVolume(vol); }</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//ピッチ</span></div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_sound.html#a06b9680efb2b6b41b52d9f25ac0264f1">   31</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a06b9680efb2b6b41b52d9f25ac0264f1">SetPitch</a>(<span class="keywordtype">float</span> pit) { instance_sound-&gt;SetPitch(pit); }</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//パン</span></div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_sound.html#a1b066e78405656b1475849139ca24dce">   33</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a1b066e78405656b1475849139ca24dce">SetPan</a>(<span class="keywordtype">float</span> pan) { instance_sound-&gt;SetPan(pan); }</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_sound.html#a0907389078bf740be2a5763366ad3376">~Sound</a>();</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_sound.html#a0d79b20f421c0020c53b08c05b6df25b">   37</a></span>&#160;    std::unique_ptr&lt;DirectX::SoundEffectInstance&gt;&amp; <a class="code" href="class_sound.html#a0d79b20f421c0020c53b08c05b6df25b">operator()</a>()</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> instance_sound;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div><div class="ttc" id="class_sound_html"><div class="ttname"><a href="class_sound.html">Sound</a></div><div class="ttdoc">　個々のサウンドクラス </div><div class="ttdef"><b>Definition:</b> sound.h:15</div></div>
+<div class="ttc" id="class_sound_html_a993eee69f61611ca1b4621ea0952e2c8"><div class="ttname"><a href="class_sound.html#a993eee69f61611ca1b4621ea0952e2c8">Sound::SetVolume</a></div><div class="ttdeci">void SetVolume(float vol)</div><div class="ttdef"><b>Definition:</b> sound.h:29</div></div>
+<div class="ttc" id="class_sound_html_a06b9680efb2b6b41b52d9f25ac0264f1"><div class="ttname"><a href="class_sound.html#a06b9680efb2b6b41b52d9f25ac0264f1">Sound::SetPitch</a></div><div class="ttdeci">void SetPitch(float pit)</div><div class="ttdef"><b>Definition:</b> sound.h:31</div></div>
+<div class="ttc" id="class_sound_html_a0907389078bf740be2a5763366ad3376"><div class="ttname"><a href="class_sound.html#a0907389078bf740be2a5763366ad3376">Sound::~Sound</a></div><div class="ttdeci">~Sound()</div><div class="ttdoc">デストラクタ </div><div class="ttdef"><b>Definition:</b> sound.cpp:26</div></div>
+<div class="ttc" id="class_sound_html_a188de6836d531813da378464e392e813"><div class="ttname"><a href="class_sound.html#a188de6836d531813da378464e392e813">Sound::Stop</a></div><div class="ttdeci">void Stop()</div><div class="ttdef"><b>Definition:</b> sound.h:25</div></div>
+<div class="ttc" id="class_sound_html_a1b066e78405656b1475849139ca24dce"><div class="ttname"><a href="class_sound.html#a1b066e78405656b1475849139ca24dce">Sound::SetPan</a></div><div class="ttdeci">void SetPan(float pan)</div><div class="ttdef"><b>Definition:</b> sound.h:33</div></div>
+<div class="ttc" id="class_sound_html_a4e199b4346519a4977fe94998c4a77e7"><div class="ttname"><a href="class_sound.html#a4e199b4346519a4977fe94998c4a77e7">Sound::Pause</a></div><div class="ttdeci">void Pause()</div><div class="ttdef"><b>Definition:</b> sound.h:27</div></div>
+<div class="ttc" id="class_sound_html_ae021b518e93d7d8c6f3ea951cd4b98d8"><div class="ttname"><a href="class_sound.html#ae021b518e93d7d8c6f3ea951cd4b98d8">Sound::Start</a></div><div class="ttdeci">void Start()</div><div class="ttdef"><b>Definition:</b> sound.h:23</div></div>
+<div class="ttc" id="class_sound_html_a3c8007c8e52bf541fc81adfa4b340b0f"><div class="ttname"><a href="class_sound.html#a3c8007c8e52bf541fc81adfa4b340b0f">Sound::Init</a></div><div class="ttdeci">void Init(WCHAR *, bool, bool)</div><div class="ttdoc">サウンドの初期化 </div><div class="ttdef"><b>Definition:</b> sound.cpp:16</div></div>
+<div class="ttc" id="class_sound_html_a0d79b20f421c0020c53b08c05b6df25b"><div class="ttname"><a href="class_sound.html#a0d79b20f421c0020c53b08c05b6df25b">Sound::operator()</a></div><div class="ttdeci">std::unique_ptr&lt; DirectX::SoundEffectInstance &gt; &amp; operator()()</div><div class="ttdef"><b>Definition:</b> sound.h:37</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

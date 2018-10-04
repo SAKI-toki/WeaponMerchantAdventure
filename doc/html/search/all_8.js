@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['r1',['R1',['../gamepad__input_8h.html#a739845b0076428add52ca3cec492e705acda522d4353b166cc2dee84673307b4e',1,'gamepad_input.h']]],
-  ['render',['Render',['../class_scene_base.html#ad981674ce731ea267f398e889bbb9dc3',1,'SceneBase::Render()'],['../class_title_scene.html#af12c59b3bf9458640938c5ca620527ae',1,'TitleScene::Render()'],['../class_scene_manager.html#a968ae7a0065b793f139bda6bcc58d106',1,'SceneManager::Render()']]]
+  ['move',['Move',['../class_transform.html#a45772ecb47b60d5b3f110613c3f15984',1,'Transform::Move(const float, const float)'],['../class_transform.html#a13dbb800ca989856d1f56c03dd9a0ad0',1,'Transform::Move(const VEC2 &amp;)']]],
+  ['my_5fscene',['my_scene',['../class_scene_base.html#a18dcdbacfbd98f73099c3cbeb70ae3b8',1,'SceneBase']]]
 ];

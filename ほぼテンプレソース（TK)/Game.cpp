@@ -7,6 +7,7 @@
 
 #include "src/sound/manager/sound_manager.h"
 #include "src/scene/manager/scene_manager.h"
+#include "src/rendering/sprite/manager/sprite_manager.h"
 #include "src/common/common.h"
 
 extern void ExitGame();
@@ -17,6 +18,7 @@ using Microsoft::WRL::ComPtr;
 
 Game::Game() noexcept(false)
 {
+
     m_deviceResources = std::make_unique<DX::DeviceResources>();
     m_deviceResources->RegisterDeviceNotify(this);
 }

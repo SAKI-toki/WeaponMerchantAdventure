@@ -2,19 +2,11 @@
 // Main.cpp
 //
 
-#include "pch.h"
-#include "Game.h"
-#include <Dbt.h>
-#include "Audio.h"
-
-#include "src/common/common.h"
+#include "Main.h"
 
 using namespace DirectX;
 
-namespace
-{
-	std::unique_ptr<Game> g_game;
-};
+
 
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 

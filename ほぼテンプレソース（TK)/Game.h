@@ -51,7 +51,6 @@ private:
 
     // Device resources.
     std::unique_ptr<DX::DeviceResources>    m_deviceResources;
-
     // Rendering loop timer.
     DX::StepTimer                           m_timer;
 };

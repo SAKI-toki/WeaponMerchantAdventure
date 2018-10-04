@@ -1,0 +1,64 @@
+\hypertarget{class_sprite}{}\section{Sprite クラス}
+\label{class_sprite}\index{Sprite@{Sprite}}
+
+
+個々の画像を管理するクラス  
+
+
+
+
+{\ttfamily \#include $<$sprite.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sprite_aee98328f5ff843a53c82cbcb0058e2f7}{Init}} (W\+C\+H\+AR $\ast$, const int h, const int w, float=1.\+0f, float=1.\+0f, float=1.\+0f, float=1.\+0f)
+\begin{DoxyCompactList}\small\item\em 各パラメータや画像を読み込む \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_a6bc499c795fc0604d9bdb2336699b8c6}{Render}} (const \mbox{\hyperlink{class_transform}{Transform}} \&)
+\begin{DoxyCompactList}\small\item\em Sprite\+Batchを経由して描画する \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+個々の画像を管理するクラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_sprite_aee98328f5ff843a53c82cbcb0058e2f7}\label{class_sprite_aee98328f5ff843a53c82cbcb0058e2f7}} 
+\index{Sprite@{Sprite}!Init@{Init}}
+\index{Init@{Init}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Sprite\+::\+Init (\begin{DoxyParamCaption}\item[{W\+C\+H\+AR $\ast$}]{path,  }\item[{const int}]{h,  }\item[{const int}]{w,  }\item[{float}]{r = {\ttfamily 1.0f},  }\item[{float}]{g = {\ttfamily 1.0f},  }\item[{float}]{b = {\ttfamily 1.0f},  }\item[{float}]{a = {\ttfamily 1.0f} }\end{DoxyParamCaption})}
+
+
+
+各パラメータや画像を読み込む 
+
+
+\begin{DoxyParams}{引数}
+{\em path} & テクスチャのパス \\
+\hline
+{\em h,w　テクスチャの大きさ} & \\
+\hline
+{\em r,g,b,a} & 色 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_a6bc499c795fc0604d9bdb2336699b8c6}\label{class_sprite_a6bc499c795fc0604d9bdb2336699b8c6}} 
+\index{Sprite@{Sprite}!Render@{Render}}
+\index{Render@{Render}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Sprite\+::\+Render (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_transform}{Transform}} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Sprite\+Batchを経由して描画する 
+
+
+\begin{DoxyParams}{引数}
+{\em t} & 位置や回転、拡大・縮小のクラス \\
+\hline
+\end{DoxyParams}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/rendering/sprite/\mbox{\hyperlink{sprite_8h}{sprite.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/rendering/sprite/\mbox{\hyperlink{sprite_8cpp}{sprite.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/rendering/sprite/sprite.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1243271318b2b38807a3b1d2ca08dd72.html">rendering</a></li><li class="navelem"><a class="el" href="dir_19c665d99e1199c3690bd7c11fa4723d.html">sprite</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">sprite.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="sprite_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;SpriteBatch.h&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../../transform/transform.h&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sprite__manager_8h.html">manager/sprite_manager.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="struct_color.html">   13</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_color.html">Color</a></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="struct_color.html#a3958a556b47d2de3dd45c75aac833c20">   15</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_color.html#a3958a556b47d2de3dd45c75aac833c20">r</a>, <a class="code" href="struct_color.html#a5defbb21620e480e556181772d665f34">g</a>, <a class="code" href="struct_color.html#a33e482be18d6ea31d2b403bee13683b7">b</a>, <a class="code" href="struct_color.html#a98047aee65fc3d825f88a76da728fd27">a</a>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_sprite.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sprite.html">Sprite</a></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="sprite__manager_8h.html#ab0deadee9fd38132a17560766af7fc45">CP&lt;ID3D11ShaderResourceView&gt;</a> texture;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> height, width;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="struct_color.html">Color</a> color;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sprite.html#aee98328f5ff843a53c82cbcb0058e2f7">Init</a>(WCHAR*, <span class="keyword">const</span> <span class="keywordtype">int</span> h, <span class="keyword">const</span> <span class="keywordtype">int</span> w, <span class="keywordtype">float</span> = 1.0f, <span class="keywordtype">float</span> = 1.0f, <span class="keywordtype">float</span> = 1.0f, <span class="keywordtype">float</span> = 1.0f);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sprite.html#a6bc499c795fc0604d9bdb2336699b8c6">Render</a>(<span class="keyword">const</span> <a class="code" href="class_transform.html">Transform</a>&amp;);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div><div class="ttc" id="struct_color_html_a33e482be18d6ea31d2b403bee13683b7"><div class="ttname"><a href="struct_color.html#a33e482be18d6ea31d2b403bee13683b7">Color::b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> sprite.h:15</div></div>
+<div class="ttc" id="struct_color_html"><div class="ttname"><a href="struct_color.html">Color</a></div><div class="ttdef"><b>Definition:</b> sprite.h:13</div></div>
+<div class="ttc" id="class_transform_html"><div class="ttname"><a href="class_transform.html">Transform</a></div><div class="ttdef"><b>Definition:</b> transform.h:15</div></div>
+<div class="ttc" id="struct_color_html_a3958a556b47d2de3dd45c75aac833c20"><div class="ttname"><a href="struct_color.html#a3958a556b47d2de3dd45c75aac833c20">Color::r</a></div><div class="ttdeci">float r</div><div class="ttdef"><b>Definition:</b> sprite.h:15</div></div>
+<div class="ttc" id="class_sprite_html"><div class="ttname"><a href="class_sprite.html">Sprite</a></div><div class="ttdoc">個々の画像を管理するクラス </div><div class="ttdef"><b>Definition:</b> sprite.h:20</div></div>
+<div class="ttc" id="struct_color_html_a98047aee65fc3d825f88a76da728fd27"><div class="ttname"><a href="struct_color.html#a98047aee65fc3d825f88a76da728fd27">Color::a</a></div><div class="ttdeci">float a</div><div class="ttdef"><b>Definition:</b> sprite.h:15</div></div>
+<div class="ttc" id="sprite__manager_8h_html_ab0deadee9fd38132a17560766af7fc45"><div class="ttname"><a href="sprite__manager_8h.html#ab0deadee9fd38132a17560766af7fc45">CP</a></div><div class="ttdeci">Microsoft::WRL::ComPtr&lt; T &gt; CP</div><div class="ttdef"><b>Definition:</b> sprite_manager.h:12</div></div>
+<div class="ttc" id="class_sprite_html_a6bc499c795fc0604d9bdb2336699b8c6"><div class="ttname"><a href="class_sprite.html#a6bc499c795fc0604d9bdb2336699b8c6">Sprite::Render</a></div><div class="ttdeci">void Render(const Transform &amp;)</div><div class="ttdoc">SpriteBatchを経由して描画する </div><div class="ttdef"><b>Definition:</b> sprite.cpp:30</div></div>
+<div class="ttc" id="class_sprite_html_aee98328f5ff843a53c82cbcb0058e2f7"><div class="ttname"><a href="class_sprite.html#aee98328f5ff843a53c82cbcb0058e2f7">Sprite::Init</a></div><div class="ttdeci">void Init(WCHAR *, const int h, const int w, float=1.0f, float=1.0f, float=1.0f, float=1.0f)</div><div class="ttdoc">各パラメータや画像を読み込む </div><div class="ttdef"><b>Definition:</b> sprite.cpp:18</div></div>
+<div class="ttc" id="struct_color_html_a5defbb21620e480e556181772d665f34"><div class="ttname"><a href="struct_color.html#a5defbb21620e480e556181772d665f34">Color::g</a></div><div class="ttdeci">float g</div><div class="ttdef"><b>Definition:</b> sprite.h:15</div></div>
+<div class="ttc" id="sprite__manager_8h_html"><div class="ttname"><a href="sprite__manager_8h.html">sprite_manager.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

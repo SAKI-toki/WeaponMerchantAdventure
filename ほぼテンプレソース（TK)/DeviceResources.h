@@ -76,9 +76,9 @@ namespace DX
         void UpdateColorSpace();
 
         // Direct3D objects.
+		Microsoft::WRL::ComPtr<ID3D11Device1>               m_d3dDevice;
+		Microsoft::WRL::ComPtr<ID3D11DeviceContext1>        m_d3dContext;
         Microsoft::WRL::ComPtr<IDXGIFactory2>               m_dxgiFactory;
-        Microsoft::WRL::ComPtr<ID3D11Device1>               m_d3dDevice;
-        Microsoft::WRL::ComPtr<ID3D11DeviceContext1>        m_d3dContext;
         Microsoft::WRL::ComPtr<IDXGISwapChain1>             m_swapChain;
         Microsoft::WRL::ComPtr<ID3DUserDefinedAnnotation>   m_d3dAnnotation;
 
