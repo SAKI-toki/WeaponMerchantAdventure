@@ -5,6 +5,7 @@
 #include "pch.h"
 #include "Game.h"
 
+#include "src/sound/manager/sound_manager.h"
 #include "src/scene/manager/scene_manager.h"
 #include "src/common/common.h"
 
@@ -37,6 +38,7 @@ void Game::Initialize(HWND window, int width, int height)
     m_timer.SetFixedTimeStep(true);
     m_timer.SetTargetElapsedSeconds(1.0 / 60);
     
+	SoundManager::GetInstance()->Init(window);
 	SceneManager::GetInstance()->Init();
 }
 
@@ -125,6 +127,7 @@ void Game::OnDeactivated()
 void Game::OnSuspending()
 {
     // TODO: Game is being power-suspended (or minimized).
+	SoundManager::GetInstance()->Suspend();
 }
 
 void Game::OnResuming()
@@ -132,6 +135,7 @@ void Game::OnResuming()
     m_timer.ResetElapsedTime();
 
     // TODO: Game is being power-resumed (or returning from minimize).
+	SoundManager::GetInstance()->Resume();
 }
 
 void Game::OnWindowMoved()
@@ -186,4 +190,15 @@ void Game::OnDeviceRestored()
 
     CreateWindowSizeDependentResources();
 }
+
+Game::~Game()
+{
+	SceneManager::GetInstance()->Destroy();
+}
+
+void Game::OnNewAudioDevice()
+{
+	SoundManager::GetInstance()->RetryAudio();
+}
+
 #pragma endregion

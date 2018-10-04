@@ -8,12 +8,15 @@
 #include "../base/scene_base.h"
 #include "../scene.h"
 #include "../../common/singleton.h"
+#include "../../sound/sound.h"	
 #include <memory>
 /**
 * @brief シーンをマネージャーするクラス
 */
 class SceneManager :public SceneBase, public Singleton<SceneManager>
 {
+	Sound sound;
+
 	std::unique_ptr<Scene> scene_ptr;
 	std::unique_ptr<Scene> switch_scene(const SCENE)const;
 public:

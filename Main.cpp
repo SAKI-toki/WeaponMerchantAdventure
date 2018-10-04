@@ -4,6 +4,8 @@
 
 #include "pch.h"
 #include "Game.h"
+#include <Dbt.h>
+#include "Audio.h"
 
 #include "src/common/common.h"
 
@@ -266,6 +268,25 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		// A menu is active and the user presses a key that does not correspond
 		// to any mnemonic or accelerator key. Ignore so we don't produce an error beep.
 		return MAKELRESULT(0, MNC_CLOSE);
+	case WM_DEVICECHANGE:
+		if (wParam == DBT_DEVICEARRIVAL)
+		{
+			auto pDev = reinterpret_cast<PDEV_BROADCAST_HDR>(lParam);
+			if (pDev)
+			{
+				if (pDev->dbch_devicetype == DBT_DEVTYP_DEVICEINTERFACE)
+				{
+					auto pInter = reinterpret_cast<const PDEV_BROADCAST_DEVICEINTERFACE>(pDev);
+					if (pInter->dbcc_classguid == KSCATEGORY_AUDIO)
+					{
+						if (game)
+						{
+							game->OnNewAudioDevice();
+						}
+					}
+				}
+			}
+		}
 	}
 
 	return DefWindowProc(hWnd, message, wParam, lParam);

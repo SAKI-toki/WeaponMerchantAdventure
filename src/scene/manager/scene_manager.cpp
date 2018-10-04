@@ -7,6 +7,8 @@
 #include "scene_manager.h"
 #include "../main/title/title_scene.h"
 #include "../../input/gamepad/gamepad_input.h"
+#include "../../sound/manager/sound_manager.h"
+#include <Windows.h>
 
 /**
 * @brief シーンマネージャーの初期化
@@ -16,6 +18,7 @@ void SceneManager::Init()
 	my_scene = SCENE::TITLE;
 	scene_ptr = switch_scene(my_scene);
 	scene_ptr->Init();
+	sound.Init(L"resources/sample.wav", true,true);
 }
 
 /**
@@ -23,6 +26,19 @@ void SceneManager::Init()
 */
 void SceneManager::Update()
 {
+	SoundManager::GetInstance()->Update();
+	if (GamepadInput::GetInstance()->GetButtonDown(BUTTON::A))
+	{
+		sound()->SetVolume(2);
+	}
+	if (GamepadInput::GetInstance()->GetButtonDown(BUTTON::B))
+	{
+		sound()->SetVolume(1);
+	}
+	if (GamepadInput::GetInstance()->GetButtonDown(BUTTON::X))
+	{
+		sound()->SetVolume(0.5f);
+	}
 	GamepadInput::GetInstance()->Update();
 	auto next_scene = scene_ptr->Update();
 	if (next_scene != my_scene)
@@ -39,6 +55,10 @@ void SceneManager::Update()
 */
 void SceneManager::Render()
 {
+	if (GamepadInput::GetInstance()->GetTrigger(true) > 0)
+	{
+		MessageBox(NULL, L"", L"", MB_OK);
+	}
 	scene_ptr->Render();
 }
 
@@ -48,6 +68,7 @@ void SceneManager::Render()
 void SceneManager::Destroy()
 {
 	scene_ptr->Destroy();
+	SoundManager::GetInstance()->Destroy();
 }
 
 /**

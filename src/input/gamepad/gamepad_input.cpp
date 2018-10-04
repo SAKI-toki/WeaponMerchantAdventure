@@ -31,20 +31,20 @@ void GamepadInput::Update()
 		//ボタンの更新
 		{
 			auto dw_buttons = controller.state.Gamepad.wButtons;
-			bool _button[] = { static_cast<bool>(dw_buttons&XINPUT_GAMEPAD_A),
-								static_cast<bool>(dw_buttons&XINPUT_GAMEPAD_B),
-								static_cast<bool>(dw_buttons&XINPUT_GAMEPAD_X),
-								static_cast<bool>(dw_buttons&XINPUT_GAMEPAD_Y),
-								static_cast<bool>(dw_buttons&XINPUT_GAMEPAD_START),
-								static_cast<bool>(dw_buttons&XINPUT_GAMEPAD_BACK),
-								static_cast<bool>(dw_buttons&XINPUT_GAMEPAD_DPAD_UP) ,
-								static_cast<bool>(dw_buttons&XINPUT_GAMEPAD_DPAD_DOWN),
-								static_cast<bool>(dw_buttons&XINPUT_GAMEPAD_DPAD_RIGHT),
-								static_cast<bool>(dw_buttons&XINPUT_GAMEPAD_DPAD_LEFT),
-								static_cast<bool>(dw_buttons&XINPUT_GAMEPAD_RIGHT_THUMB),
-								static_cast<bool>(dw_buttons&XINPUT_GAMEPAD_LEFT_THUMB),
-								static_cast<bool>(dw_buttons&XINPUT_GAMEPAD_RIGHT_SHOULDER),
-								static_cast<bool>(dw_buttons&XINPUT_GAMEPAD_LEFT_SHOULDER) };
+			bool _button[] = { perfect_and(dw_buttons,XINPUT_GAMEPAD_A),
+								perfect_and(dw_buttons,XINPUT_GAMEPAD_B),
+								perfect_and(dw_buttons,XINPUT_GAMEPAD_X),
+								perfect_and(dw_buttons,XINPUT_GAMEPAD_Y),
+								perfect_and(dw_buttons,XINPUT_GAMEPAD_START),
+								perfect_and(dw_buttons,XINPUT_GAMEPAD_BACK),
+								perfect_and(dw_buttons,XINPUT_GAMEPAD_DPAD_UP) ,
+								perfect_and(dw_buttons,XINPUT_GAMEPAD_DPAD_DOWN),
+								perfect_and(dw_buttons,XINPUT_GAMEPAD_DPAD_RIGHT),
+								perfect_and(dw_buttons,XINPUT_GAMEPAD_DPAD_LEFT),
+								perfect_and(dw_buttons,XINPUT_GAMEPAD_RIGHT_THUMB),
+								perfect_and(dw_buttons,XINPUT_GAMEPAD_LEFT_THUMB),
+								perfect_and(dw_buttons,XINPUT_GAMEPAD_RIGHT_SHOULDER),
+								perfect_and(dw_buttons,XINPUT_GAMEPAD_LEFT_SHOULDER) };
 
 			for (int i = 0; i < 14; ++i)
 			{

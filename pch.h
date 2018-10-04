@@ -6,8 +6,9 @@
 #pragma once
 
 #include <WinSDKVer.h>
-#define _WIN32_WINNT 0x0601
+#define _WIN32_WINNT 0x0602
 #include <SDKDDKVer.h>
+
 
 // Use the C++ standard templated min/max
 #define NOMINMAX

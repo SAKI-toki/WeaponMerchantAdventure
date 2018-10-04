@@ -15,6 +15,8 @@ class Game : public DX::IDeviceNotify
 public:
 
     Game() noexcept(false);
+	~Game();
+	void OnNewAudioDevice();
 
     // Initialization and management
     void Initialize(HWND window, int width, int height);

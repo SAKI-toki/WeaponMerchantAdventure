@@ -34,6 +34,12 @@ class GamepadInput :public Singleton<GamepadInput>
 	bool button[14];
 	bool button_up[14];
 
+	//ˆø”1‚Æˆø”2‚Ì˜_—Ï‚ªˆø”2‚ÆŠ®‘S‚Éˆê’v‚µ‚Ä‚¢‚é‚Æ‚«‚Ì‚İtrue
+	template<typename U1,typename U2>
+	bool perfect_and(U1 u1, U2 u2)
+	{
+		return (u1&u2) == u2;
+	}
 
 public:
 	GamepadInput();
