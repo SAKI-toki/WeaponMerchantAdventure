@@ -2,7 +2,7 @@
 * @file transform.cpp
 * @brief transformクラスのメンバ関数を定義
 * @author 石山　悠
-* @date 2018/10/04
+* @date 2018/10/06
 */
 #include "transform.h"
 
@@ -10,32 +10,59 @@
 * :brief　ゼロで初期化する引数なしコンストラクタ
 */
 Transform::Transform() :
-	pos(VEC2::Zero), rot(VEC3::Zero), scale(VEC2::Zero)
+	pos(VEC2::Zero), rot(0.0f), scale(1.0f)
 {}
 /**
-* @brief 一つ一つ値で渡すコンストラクタ
+* @brief posをそれぞれのパラメータで受け取るコンストラクタ
 */
-Transform::Transform(const float posx, const  float posy, const float rotx, const float roty, const float rotz, const  float scalex, const float scaley)
+Transform::Transform(const float posx, const float posy, const float _rot, const float _scale):
+	pos(VEC2(posx,posy)),rot(_rot),scale(_scale)
+{}
+/**
+* @brief posをVEC2クラスで受け取るコンストラクタ
+*/
+Transform::Transform(const VEC2& _pos, const float _rot, const float _scale):
+	pos(_pos),rot(_rot),scale(_scale)
+{}
+/**
+* @brief コピーコンストラクタ
+*/
+Transform::Transform(const Transform& t)
 {
-	pos = { posx,posy };
-	rot = { rotx,roty,rotz };
-	scale = { scalex,scaley };
+	this->Init(t);
 }
 /**
-* @brief 各クラスに対して値を渡すコンストラクタ
+* @brief 一つ一つ値で渡す初期化
 */
-Transform::Transform(const VEC2& _pos, const VEC3& _rot, const VEC2& _scale) :
-	pos(_pos), rot(_rot), scale(_scale) {}
+void Transform::Init(const float posx, const  float posy, const float _rot, const  float _scale)
+{
+	pos = { posx,posy };
+	rot = _rot;
+	scale = _scale;
+}
 /**
-* @brief Transformクラスを渡すコンストラクタ
+* @brief 各クラスに対して値を渡す初期化
 */
-Transform::Transform(const Transform& t) :
-	pos(t.pos), rot(t.rot), scale(t.scale) {}
+void Transform::Init(const VEC2& _pos, const float _rot, const float _scale)
+{
+	pos = _pos;
+	rot = _rot;
+	scale = _scale;
+}
+/**
+* @brief Transformクラスを渡す初期化
+*/
+void Transform::Init(const Transform& t)
+{
+	this->pos = t.pos;
+	this->rot = t.rot;
+	this->scale = t.scale;
+}
 
 /**
 * @brief 一つ一つ値で渡す移動
 */
-void Transform::Move(const float x = 0, const float y = 0)
+void Transform::Move(const float x, const float y)
 {
 	pos.x += x;
 	pos.y += y;
@@ -49,38 +76,19 @@ void Transform::Move(const VEC2& _pos)
 }
 
 /**
-* @brief　一つ一つ値で渡す回転
+* @brief　回転
 */
-void Transform::Rotate(const float x = 0, const float y = 0, const  float z = 0)
-{
-	rot.x += x;
-	rot.y += y;
-	rot.z += z;
-}
-/**
-* @brief　クラスで渡す回転
-*/
-void Transform::Rotate(const VEC3& _rot)
+void Transform::Rotate(const float _rot)
 {
 	rot += _rot;
 }
-
 /**
-* @brief　一つ一つ値で渡す拡大・縮小
+* @brief　拡大・縮小
 */
-void Transform::Scaling(const float x = 0, const  float y = 0)
-{
-	scale.x += x;
-	scale.y += y;
-}
-/**
-* @brief　クラスで渡す拡大・縮小
-*/
-void Transform::Scaling(const VEC2& _scale)
+void Transform::Scaling(const float _scale)
 {
 	scale += _scale;
 }
-
 //オペレーターに関してはdoxygen省略
 void Transform::operator=(const Transform& t)
 {

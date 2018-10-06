@@ -15,6 +15,7 @@
 class Sound
 {
 	std::unique_ptr<DirectX::SoundEffectInstance> instance_sound;
+	//ƒ‹[ƒv‚·‚é‚©‚Ç‚¤‚©
 	bool is_loop;
 public:
 	void Init(WCHAR*, bool, bool);

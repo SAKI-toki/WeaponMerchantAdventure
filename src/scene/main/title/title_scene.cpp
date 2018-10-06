@@ -5,13 +5,14 @@
 * @date 2018/10/02
 */
 #include "title_scene.h"
-
+#include "../../../common/common.h"
 /**
 * @brief タイトルシーンの初期化
 */
 void TitleScene::Init()
 {
 	my_scene = SCENE::TITLE;
+	player.Init(L"resources/texture/sample3.png", 100, 200, { 500,500 });
 }
 
 /**
@@ -21,7 +22,8 @@ void TitleScene::Init()
 SCENE TitleScene::Update()
 {
 	auto current_scene = my_scene;
-
+	player.Update();
+	player.transform.rot += PI<float> * 2 / 100;
 	return current_scene;
 }
 
@@ -30,7 +32,7 @@ SCENE TitleScene::Update()
 */
 void TitleScene::Render()
 {
-
+	player.Render();
 }
 
 /**

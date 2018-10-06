@@ -10,9 +10,7 @@
 #include "../../sound/manager/sound_manager.h"
 #include "../../rendering/sprite/manager/sprite_manager.h"
 
-#include "../../transform/transform.h"
 
-#include <tchar.h>
 /**
 * @brief シーンマネージャーの初期化
 */
@@ -22,10 +20,6 @@ void SceneManager::Init()
 	my_scene = SCENE::TITLE;
 	scene_ptr = switch_scene(my_scene);
 	scene_ptr->Init();
-	sound[0].Init(L"resources/audio/sample1.wav", true, true);
-	sound[1].Init(L"resources/audio/sample2.wav", true, true);
-	sprite[0].Init(L"resources/texture/sample1.png", 100, 100);
-	sprite[1].Init(L"resources/texture/sample2.png", 32, 32);
 }
 
 /**
@@ -52,9 +46,6 @@ void SceneManager::Render()
 {
 	SpriteManager::GetInstance()->Start();
 	scene_ptr->Render();
-	Transform tt;
-	sprite[0].Render(tt);
-	sprite[1].Render(tt);
 	SpriteManager::GetInstance()->End();
 }
 

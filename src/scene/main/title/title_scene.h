@@ -6,11 +6,13 @@
 */
 #pragma once
 #include "../../scene.h"
+#include "../../../object/character/player/player.h"
 /**
 * @brief タイトルシーンクラス
 */
 class TitleScene :public Scene
 {
+	Player player;
 public:
 	void Init()final;
 	SCENE Update()final;
