@@ -2,19 +2,31 @@
 * @file player.h
 * @brief プレイヤークラスを宣言
 * @author 石山　悠
-* @date 2018/10/07
+* @date 2018/10/10
 */
 #pragma once
-#include "../base/character_base.h"
+#include "../../base/dynamic/dynamic_object.h"
+#include "../../../collider/square/square_collider.h"
 
 /**
 * @brief プレイヤークラス
 */
-class Player :public CharacterBase
+class Player :public DynamicObject
 {
+	//当たり判定
+	SquareCollider collider;
+protected:
+	void InitProcess()final;
+	void UpdateProcess()final;
 public:
-	HRESULT Init(WCHAR* path, const LONG w, const LONG h, VEC2 pos, float rot = 0, float scale = 1)final;
-	void Update()final;
-	void Render()final;
 	void Destroy()final;
+	/**
+	* @brief コンストラクタ
+	*/
+	Player() :collider(this)
+	{
+		object_tag = OBJECT_TAG::PLAYER;
+	}
+
+	void Collision(ObjectBase*,VEC2)final;
 };

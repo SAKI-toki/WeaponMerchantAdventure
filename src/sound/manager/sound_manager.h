@@ -20,10 +20,10 @@ class SoundManager :public Singleton<SoundManager>
 	bool retry_audio;
 
 	//1度読み込んだものは2回読み込まない
-	//パスで管理
-	std::unordered_map<WCHAR*, std::unique_ptr<DirectX::SoundEffect>> soundList;
+	//名前で管理
+	std::unordered_map<std::string, std::unique_ptr<DirectX::SoundEffect>> soundList;
 public:
-	std::unique_ptr<DirectX::SoundEffect>& GetSound(WCHAR*);
+	std::unique_ptr<DirectX::SoundEffect>& GetSound(std::string,WCHAR*);
 
 	void Init(HWND);
 	void Update();

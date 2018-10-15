@@ -1,8 +1,8 @@
 /**
-* @file sprite_manger.h
+* @file sprite_manager.h
 * @brief SpriteManagerクラスの宣言
 * @author 石山　悠
-* @date 2018/10/04
+* @date 2018/10/11
 */
 #pragma once
 #include "../../../common/singleton.h"
@@ -19,14 +19,14 @@ class SpriteManager :public Singleton<SpriteManager>
 	//必要なもの
 	std::unique_ptr<DirectX::SpriteBatch> m_pSpriteBatch;
 	//1度読み込んだものは2回読み込まない
-	//パスで管理
-	std::unordered_map < WCHAR*, CP<ID3D11ShaderResourceView>> textureList;
-	//デバイス
+	//名前で管理
+	std::unordered_map < std::string, CP<ID3D11ShaderResourceView>> textureList;
+	//デバイス関係
 	ID3D11Device* device;
 	ID3D11DeviceContext* deviceContext;
 public:
 	void Init();
-	CP<ID3D11ShaderResourceView>& GetTexture(WCHAR*);
+	CP<ID3D11ShaderResourceView>& GetTexture(std::string, WCHAR*);
 	~SpriteManager();
 
 

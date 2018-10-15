@@ -1,0 +1,93 @@
+\hypertarget{class_static_object}{}\section{Static\+Object クラス}
+\label{class_static_object}\index{Static\+Object@{Static\+Object}}
+
+
+動かないオブジェクトのスーパークラス  
+
+
+
+
+{\ttfamily \#include $<$static\+\_\+object.\+h$>$}
+
+Static\+Object の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_static_object}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_static_object_aac4b963c88ebffb128bcaf5abf09768b}{Destroy}} ()
+\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_static_object_afec57009537695c4715386120a619942}{Render\+Process}} (bool)
+\begin{DoxyCompactList}\small\item\em 描画 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_static_object_ae9563da84f7045d6206c938963d5aecf}{Init\+Process}} ()
+\item 
+void \mbox{\hyperlink{class_static_object_a0dd0ec514aa597a1dd83a1168902a079}{Update\+Process}} ()
+\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+動かないオブジェクトのスーパークラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_static_object_aac4b963c88ebffb128bcaf5abf09768b}\label{class_static_object_aac4b963c88ebffb128bcaf5abf09768b}} 
+\index{Static\+Object@{Static\+Object}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Static\+Object@{Static\+Object}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Static\+Object\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_object_base_a7fa4c548153c3af20f89673ffea809af}{Object\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_static_object_ae9563da84f7045d6206c938963d5aecf}\label{class_static_object_ae9563da84f7045d6206c938963d5aecf}} 
+\index{Static\+Object@{Static\+Object}!Init\+Process@{Init\+Process}}
+\index{Init\+Process@{Init\+Process}!Static\+Object@{Static\+Object}}
+\subsubsection{\texorpdfstring{Init\+Process()}{InitProcess()}}
+{\footnotesize\ttfamily void Static\+Object\+::\+Init\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_object_base_af133f36f2bca1dcfd962e2cfac61ab51}{Object\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_static_object_afec57009537695c4715386120a619942}\label{class_static_object_afec57009537695c4715386120a619942}} 
+\index{Static\+Object@{Static\+Object}!Render\+Process@{Render\+Process}}
+\index{Render\+Process@{Render\+Process}!Static\+Object@{Static\+Object}}
+\subsubsection{\texorpdfstring{Render\+Process()}{RenderProcess()}}
+{\footnotesize\ttfamily void Static\+Object\+::\+Render\+Process (\begin{DoxyParamCaption}\item[{bool}]{camera\+\_\+affected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+描画 
+
+
+\begin{DoxyParams}{引数}
+{\em camera\+\_\+affected} & カメラの位置によって位置を変えるかどうか \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_object_base_aeac51d868beeb7f7fe900407b76b93a2}{Object\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_static_object_a0dd0ec514aa597a1dd83a1168902a079}\label{class_static_object_a0dd0ec514aa597a1dd83a1168902a079}} 
+\index{Static\+Object@{Static\+Object}!Update\+Process@{Update\+Process}}
+\index{Update\+Process@{Update\+Process}!Static\+Object@{Static\+Object}}
+\subsubsection{\texorpdfstring{Update\+Process()}{UpdateProcess()}}
+{\footnotesize\ttfamily void Static\+Object\+::\+Update\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_object_base_a8b5b72b363a419767efde0b0e692ea95}{Object\+Base}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/base/static/\mbox{\hyperlink{static__object_8h}{static\+\_\+object.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/base/static/\mbox{\hyperlink{static__object_8cpp}{static\+\_\+object.\+cpp}}\end{DoxyCompactItemize}

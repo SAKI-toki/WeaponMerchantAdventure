@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/rendering/font/manager/font_manager.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1243271318b2b38807a3b1d2ca08dd72.html">rendering</a></li><li class="navelem"><a class="el" href="dir_5d9ef415e185c6ae6ff72790dd322131.html">font</a></li><li class="navelem"><a class="el" href="dir_5e4bb47f596aef1d7a992fe707b050ee.html">manager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">font_manager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="font__manager_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../../../common/singleton.h&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;SpriteFont.h&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_font_manager.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_font_manager.html">FontManager</a> :<span class="keyword">public</span> <a class="code" href="class_singleton.html">Singleton</a>&lt;FontManager&gt;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">//必要なもの</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    std::unique_ptr&lt;DirectX::SpriteFont&gt; m_pSpriteFont;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_font_manager.html#acabba97ebae69b7b92d2ea4a2e9216e4">Init</a>(ID3D11Device*, WCHAR*);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_font_manager.html#aa190bb023b4cf2ad28e24c69ef57f380">~FontManager</a>();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_font_manager.html#a612a8922fc977b07959406468dec922f">   27</a></span>&#160;    std::unique_ptr&lt;DirectX::SpriteFont&gt;&amp; <a class="code" href="class_font_manager.html#a612a8922fc977b07959406468dec922f">GetSpriteFont</a>() { <span class="keywordflow">return</span> m_pSpriteFont; }</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div><div class="ttc" id="class_font_manager_html_acabba97ebae69b7b92d2ea4a2e9216e4"><div class="ttname"><a href="class_font_manager.html#acabba97ebae69b7b92d2ea4a2e9216e4">FontManager::Init</a></div><div class="ttdeci">void Init(ID3D11Device *, WCHAR *)</div><div class="ttdoc">初期化 </div><div class="ttdef"><b>Definition:</b> font_manager.cpp:14</div></div>
+<div class="ttc" id="class_singleton_html"><div class="ttname"><a href="class_singleton.html">Singleton</a></div><div class="ttdoc">Singletonテンプレートスーパークラス </div><div class="ttdef"><b>Definition:</b> singleton.h:15</div></div>
+<div class="ttc" id="class_font_manager_html"><div class="ttname"><a href="class_font_manager.html">FontManager</a></div><div class="ttdoc">フォントを管理するクラス </div><div class="ttdef"><b>Definition:</b> font_manager.h:14</div></div>
+<div class="ttc" id="class_font_manager_html_a612a8922fc977b07959406468dec922f"><div class="ttname"><a href="class_font_manager.html#a612a8922fc977b07959406468dec922f">FontManager::GetSpriteFont</a></div><div class="ttdeci">std::unique_ptr&lt; DirectX::SpriteFont &gt; &amp; GetSpriteFont()</div><div class="ttdoc">SpriteFontのゲッタ </div><div class="ttdef"><b>Definition:</b> font_manager.h:27</div></div>
+<div class="ttc" id="class_font_manager_html_aa190bb023b4cf2ad28e24c69ef57f380"><div class="ttname"><a href="class_font_manager.html#aa190bb023b4cf2ad28e24c69ef57f380">FontManager::~FontManager</a></div><div class="ttdeci">~FontManager()</div><div class="ttdoc">デストラクタ </div><div class="ttdef"><b>Definition:</b> font_manager.cpp:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

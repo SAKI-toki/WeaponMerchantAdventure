@@ -1,4 +1,16 @@
 var searchData=
 [
-  ['update',['Update',['../class_gamepad_input.html#a3512c0cc4d57534c83db09c4b5377caa',1,'GamepadInput::Update()'],['../class_object.html#a5ee5c17a09981cbd7c469370e210b4ff',1,'Object::Update()'],['../class_title_scene.html#a19f6ee49ca6c8526fb1af2c0a2df9a33',1,'TitleScene::Update()'],['../class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3',1,'SceneManager::Update()'],['../class_scene.html#acb50f8104e5a7cfecbdececa7d5f1b39',1,'Scene::Update()'],['../class_sound_manager.html#aaf241621221cdbefeba78e8b6bc29240',1,'SoundManager::Update()']]]
+  ['scaling',['Scaling',['../class_transform.html#ad6097ddf1d30f5a1023725efbee375fb',1,'Transform']]],
+  ['setpan',['SetPan',['../class_sound.html#a1b066e78405656b1475849139ca24dce',1,'Sound']]],
+  ['setpitch',['SetPitch',['../class_sound.html#a06b9680efb2b6b41b52d9f25ac0264f1',1,'Sound']]],
+  ['setpos',['SetPos',['../class_camera.html#af79aa3fedd030712e7fa122a2ea88b48',1,'Camera']]],
+  ['setsquarecollider',['SetSquareCollider',['../class_collider_manager.html#a9e6c7ca21ae4e79fdf4892982e72bc99',1,'ColliderManager']]],
+  ['setstatus',['SetStatus',['../class_square_collider.html#ab5e57de1f1fddd5a6935e4ed8739b4b2',1,'SquareCollider']]],
+  ['settext',['SetText',['../class_font.html#a2c862120802e9aac650a96f7b4e29081',1,'Font']]],
+  ['setvolume',['SetVolume',['../class_sound.html#a993eee69f61611ca1b4621ea0952e2c8',1,'Sound']]],
+  ['singleton',['Singleton',['../class_singleton.html#a923b995920da9c06590adb170ab2f890',1,'Singleton']]],
+  ['squarecollider',['SquareCollider',['../class_square_collider.html#a002cb3de9da3aa637d46c0819449c31c',1,'SquareCollider']]],
+  ['start',['Start',['../class_sprite_manager.html#a6b387e8736713264f6d590082cd492cb',1,'SpriteManager::Start()'],['../class_sound.html#ae021b518e93d7d8c6f3ea951cd4b98d8',1,'Sound::Start()']]],
+  ['stop',['Stop',['../class_sound.html#a188de6836d531813da378464e392e813',1,'Sound']]],
+  ['suspend',['Suspend',['../class_sound_manager.html#a97d76cb22596fbb3c85766df0dcde757',1,'SoundManager']]]
 ];

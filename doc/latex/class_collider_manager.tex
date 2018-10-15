@@ -1,0 +1,104 @@
+\hypertarget{class_collider_manager}{}\section{Collider\+Manager クラス}
+\label{class_collider_manager}\index{Collider\+Manager@{Collider\+Manager}}
+
+
+コライダを管理するクラス  
+
+
+
+
+{\ttfamily \#include $<$collider\+\_\+manager.\+h$>$}
+
+Collider\+Manager の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_collider_manager}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_collider_manager_a9e6c7ca21ae4e79fdf4892982e72bc99}{Set\+Square\+Collider}} (\mbox{\hyperlink{class_square_collider}{Square\+Collider}} $\ast$, bool is\+\_\+static)
+\begin{DoxyCompactList}\small\item\em コライダを配列に格納する \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collider_manager_af3863143e206b4c86c8b89dd91ff3c8c}{Check\+Collision}} ()
+\begin{DoxyCompactList}\small\item\em 全てのコライダを走査する \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collider_manager_a24df637a6f092602b547c6a2bd773113}{Delete\+Square\+Collider}} (\mbox{\hyperlink{class_square_collider}{Square\+Collider}} $\ast$)
+\begin{DoxyCompactList}\small\item\em 四角形コライダの削除 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_collider_manager_a612f6096ca24702bff6dee04a88a40c3}{Compare\+Square\+Square\+Collision}} (const \mbox{\hyperlink{class_square_collider}{Square\+Collider}} $\ast$, const \mbox{\hyperlink{class_square_collider}{Square\+Collider}} $\ast$)
+\begin{DoxyCompactList}\small\item\em 四角形同士が当たっているかを判定する \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+コライダを管理するクラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_collider_manager_af3863143e206b4c86c8b89dd91ff3c8c}\label{class_collider_manager_af3863143e206b4c86c8b89dd91ff3c8c}} 
+\index{Collider\+Manager@{Collider\+Manager}!Check\+Collision@{Check\+Collision}}
+\index{Check\+Collision@{Check\+Collision}!Collider\+Manager@{Collider\+Manager}}
+\subsubsection{\texorpdfstring{Check\+Collision()}{CheckCollision()}}
+{\footnotesize\ttfamily void Collider\+Manager\+::\+Check\+Collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+全てのコライダを走査する 
+
+\mbox{\Hypertarget{class_collider_manager_a612f6096ca24702bff6dee04a88a40c3}\label{class_collider_manager_a612f6096ca24702bff6dee04a88a40c3}} 
+\index{Collider\+Manager@{Collider\+Manager}!Compare\+Square\+Square\+Collision@{Compare\+Square\+Square\+Collision}}
+\index{Compare\+Square\+Square\+Collision@{Compare\+Square\+Square\+Collision}!Collider\+Manager@{Collider\+Manager}}
+\subsubsection{\texorpdfstring{Compare\+Square\+Square\+Collision()}{CompareSquareSquareCollision()}}
+{\footnotesize\ttfamily bool Collider\+Manager\+::\+Compare\+Square\+Square\+Collision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_square_collider}{Square\+Collider}} $\ast$}]{col1,  }\item[{const \mbox{\hyperlink{class_square_collider}{Square\+Collider}} $\ast$}]{col2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+四角形同士が当たっているかを判定する 
+
+
+\begin{DoxyParams}{引数}
+{\em col1,col2} & 比べる二つの四角形コライダ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+bool 当たっているかどうか 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collider_manager_a24df637a6f092602b547c6a2bd773113}\label{class_collider_manager_a24df637a6f092602b547c6a2bd773113}} 
+\index{Collider\+Manager@{Collider\+Manager}!Delete\+Square\+Collider@{Delete\+Square\+Collider}}
+\index{Delete\+Square\+Collider@{Delete\+Square\+Collider}!Collider\+Manager@{Collider\+Manager}}
+\subsubsection{\texorpdfstring{Delete\+Square\+Collider()}{DeleteSquareCollider()}}
+{\footnotesize\ttfamily void Collider\+Manager\+::\+Delete\+Square\+Collider (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_square_collider}{Square\+Collider}} $\ast$}]{col }\end{DoxyParamCaption})}
+
+
+
+四角形コライダの削除 
+
+
+\begin{DoxyParams}{引数}
+{\em col} & 四角形コライダ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_collider_manager_a9e6c7ca21ae4e79fdf4892982e72bc99}\label{class_collider_manager_a9e6c7ca21ae4e79fdf4892982e72bc99}} 
+\index{Collider\+Manager@{Collider\+Manager}!Set\+Square\+Collider@{Set\+Square\+Collider}}
+\index{Set\+Square\+Collider@{Set\+Square\+Collider}!Collider\+Manager@{Collider\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Square\+Collider()}{SetSquareCollider()}}
+{\footnotesize\ttfamily void Collider\+Manager\+::\+Set\+Square\+Collider (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_square_collider}{Square\+Collider}} $\ast$}]{obj,  }\item[{bool}]{is\+\_\+static }\end{DoxyParamCaption})}
+
+
+
+コライダを配列に格納する 
+
+
+\begin{DoxyParams}{引数}
+{\em obj} & 当たり判定クラス \\
+\hline
+{\em is\+\_\+static} & 静的か動的か \\
+\hline
+\end{DoxyParams}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/collider/manager/\mbox{\hyperlink{collider__manager_8h}{collider\+\_\+manager.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/collider/manager/\mbox{\hyperlink{collider__manager_8cpp}{collider\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

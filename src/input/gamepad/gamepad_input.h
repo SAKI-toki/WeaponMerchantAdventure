@@ -49,7 +49,7 @@ public:
 	void Update();
 
 
-	///--ゲッタ--//
+	///--ゲッタ--
 	//ボタンの状態を返す
 	bool GetButtonDown(BUTTON k)const { return controller.bConnected&&button_down[static_cast<int>(k)]; };
 	bool GetButton(BUTTON k)const { return controller.bConnected&&button[static_cast<int>(k)]; };

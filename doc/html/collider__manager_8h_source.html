@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/collider/manager/collider_manager.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_831f472cf672c235312e7f1d1816ce6c.html">collider</a></li><li class="navelem"><a class="el" href="dir_ea2325de95f3b651464cda6de523e082.html">manager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">collider_manager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="collider__manager_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../../common/singleton.h&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../square/square_collider.h&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_collider_manager.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_collider_manager.html">ColliderManager</a> :<span class="keyword">public</span> <a class="code" href="class_singleton.html">Singleton</a>&lt;ColliderManager&gt;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">//静的オブジェクトの四角形コライダ</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    std::vector&lt;SquareCollider*&gt; staticSquareColliderList;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">//動的オブジェクトの四角形コライダ</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::vector&lt;SquareCollider*&gt; dynamicSquareColliderList;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">//当たっているか判定する関数</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_collider_manager.html#a612f6096ca24702bff6dee04a88a40c3">CompareSquareSquareCollision</a>(<span class="keyword">const</span> <a class="code" href="class_square_collider.html">SquareCollider</a>*, <span class="keyword">const</span> <a class="code" href="class_square_collider.html">SquareCollider</a>*);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//上のstd::vectorにセットする関数</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_collider_manager.html#a9e6c7ca21ae4e79fdf4892982e72bc99">SetSquareCollider</a>(<a class="code" href="class_square_collider.html">SquareCollider</a>*, <span class="keywordtype">bool</span> is_static);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">//全てを走査する関数</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_collider_manager.html#af3863143e206b4c86c8b89dd91ff3c8c">CheckCollision</a>();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//指定した要素を削除</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_collider_manager.html#a24df637a6f092602b547c6a2bd773113">DeleteSquareCollider</a>(<a class="code" href="class_square_collider.html">SquareCollider</a>*);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div><div class="ttc" id="class_collider_manager_html_a612f6096ca24702bff6dee04a88a40c3"><div class="ttname"><a href="class_collider_manager.html#a612f6096ca24702bff6dee04a88a40c3">ColliderManager::CompareSquareSquareCollision</a></div><div class="ttdeci">bool CompareSquareSquareCollision(const SquareCollider *, const SquareCollider *)</div><div class="ttdoc">四角形同士が当たっているかを判定する </div><div class="ttdef"><b>Definition:</b> collider_manager.cpp:85</div></div>
+<div class="ttc" id="class_singleton_html"><div class="ttname"><a href="class_singleton.html">Singleton</a></div><div class="ttdoc">Singletonテンプレートスーパークラス </div><div class="ttdef"><b>Definition:</b> singleton.h:15</div></div>
+<div class="ttc" id="class_collider_manager_html_af3863143e206b4c86c8b89dd91ff3c8c"><div class="ttname"><a href="class_collider_manager.html#af3863143e206b4c86c8b89dd91ff3c8c">ColliderManager::CheckCollision</a></div><div class="ttdeci">void CheckCollision()</div><div class="ttdoc">全てのコライダを走査する </div><div class="ttdef"><b>Definition:</b> collider_manager.cpp:22</div></div>
+<div class="ttc" id="class_collider_manager_html_a24df637a6f092602b547c6a2bd773113"><div class="ttname"><a href="class_collider_manager.html#a24df637a6f092602b547c6a2bd773113">ColliderManager::DeleteSquareCollider</a></div><div class="ttdeci">void DeleteSquareCollider(SquareCollider *)</div><div class="ttdoc">四角形コライダの削除 </div><div class="ttdef"><b>Definition:</b> collider_manager.cpp:117</div></div>
+<div class="ttc" id="class_collider_manager_html"><div class="ttname"><a href="class_collider_manager.html">ColliderManager</a></div><div class="ttdoc">コライダを管理するクラス </div><div class="ttdef"><b>Definition:</b> collider_manager.h:15</div></div>
+<div class="ttc" id="class_square_collider_html"><div class="ttname"><a href="class_square_collider.html">SquareCollider</a></div><div class="ttdoc">四角形コライダクラス </div><div class="ttdef"><b>Definition:</b> square_collider.h:34</div></div>
+<div class="ttc" id="class_collider_manager_html_a9e6c7ca21ae4e79fdf4892982e72bc99"><div class="ttname"><a href="class_collider_manager.html#a9e6c7ca21ae4e79fdf4892982e72bc99">ColliderManager::SetSquareCollider</a></div><div class="ttdeci">void SetSquareCollider(SquareCollider *, bool is_static)</div><div class="ttdoc">コライダを配列に格納する </div><div class="ttdef"><b>Definition:</b> collider_manager.cpp:14</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

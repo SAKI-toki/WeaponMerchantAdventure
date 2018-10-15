@@ -76,9 +76,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a3c8007c8e52bf541fc81adfa4b340b0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound.html#a3c8007c8e52bf541fc81adfa4b340b0f">Init</a> (WCHAR *, bool, bool)</td></tr>
-<tr class="memdesc:a3c8007c8e52bf541fc81adfa4b340b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">サウンドの初期化  <a href="#a3c8007c8e52bf541fc81adfa4b340b0f">[詳解]</a><br /></td></tr>
-<tr class="separator:a3c8007c8e52bf541fc81adfa4b340b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a341bf468ea414e896daf3a5f7937ee12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound.html#a341bf468ea414e896daf3a5f7937ee12">Init</a> (std::string, WCHAR *, bool, bool)</td></tr>
+<tr class="memdesc:a341bf468ea414e896daf3a5f7937ee12"><td class="mdescLeft">&#160;</td><td class="mdescRight">サウンドの初期化  <a href="#a341bf468ea414e896daf3a5f7937ee12">[詳解]</a><br /></td></tr>
+<tr class="separator:a341bf468ea414e896daf3a5f7937ee12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae021b518e93d7d8c6f3ea951cd4b98d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound.html#ae021b518e93d7d8c6f3ea951cd4b98d8">Start</a> ()</td></tr>
 <tr class="separator:ae021b518e93d7d8c6f3ea951cd4b98d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a188de6836d531813da378464e392e813"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound.html#a188de6836d531813da378464e392e813">Stop</a> ()</td></tr>
@@ -120,8 +120,8 @@ $(function() {
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a3c8007c8e52bf541fc81adfa4b340b0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c8007c8e52bf541fc81adfa4b340b0f">&#9670;&nbsp;</a></span>Init()</h2>
+<a id="a341bf468ea414e896daf3a5f7937ee12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a341bf468ea414e896daf3a5f7937ee12">&#9670;&nbsp;</a></span>Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -129,6 +129,12 @@ $(function() {
         <tr>
           <td class="memname">void Sound::Init </td>
           <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">WCHAR *&#160;</td>
           <td class="paramname"><em>path</em>, </td>
         </tr>
@@ -155,6 +161,7 @@ $(function() {
 <p>サウンドの初期化 </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
+    <tr><td class="paramname">name</td><td>mapで管理するためのキー </td></tr>
     <tr><td class="paramname">path</td><td>サウンドのパス </td></tr>
     <tr><td class="paramname">loop</td><td>ループするかどうか </td></tr>
     <tr><td class="paramname">awake</td><td>初期化した瞬間から再生するかどうか </td></tr>

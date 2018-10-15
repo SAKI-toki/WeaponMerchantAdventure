@@ -2,9 +2,10 @@
 * @file transform.h
 * @brief transformクラスを宣言
 * @author 石山　悠
-* @date 2018/10/06
+* @date 2018/10/09
 */
 #pragma once
+#include <d3d11.h>//先にd3d11.hかd3d12.hをインクルードしないとSimplemath.hがエラー出す
 #include <SimpleMath.h>
 using VEC2 = DirectX::SimpleMath::Vector2;
 
@@ -17,13 +18,16 @@ public:
 	VEC2 pos;	//位置
 	float rot;	//回転
 	float scale;//拡大・縮小
+	VEC2 size;
 
 	//コンストラクタ
 	Transform();
 	Transform(const float, const float = 0, const float = 0, const float = 1);
 	Transform(const VEC2& _pos, const float _rot, const float _scale);
+
 	//コピーコンストラクタ
 	Transform(const Transform& t);
+
 	//初期化
 	void Init(const float, const float = 0, const float = 0, const float = 1);
 	void Init(const VEC2& _pos, const float _rot, const float _scale);
@@ -51,6 +55,4 @@ public:
 	//比較用operator
 	bool operator==(const Transform&)const;
 	bool operator!=(const Transform&)const;
-
-
 };

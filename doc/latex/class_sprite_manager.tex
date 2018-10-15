@@ -20,7 +20,7 @@ Sprite\+Manager の継承関係図\begin{figure}[H]
 \item 
 void \mbox{\hyperlink{class_sprite_manager_a82941ce284548c762f250220ea58f43c}{Init}} ()
 \begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
-\mbox{\hyperlink{sprite__manager_8h_ab0deadee9fd38132a17560766af7fc45}{CP}}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ \& \mbox{\hyperlink{class_sprite_manager_a64bcc473169d17c3912cff9efe224115}{Get\+Texture}} (W\+C\+H\+AR $\ast$)
+\mbox{\hyperlink{sprite__manager_8h_ab0deadee9fd38132a17560766af7fc45}{CP}}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ \& \mbox{\hyperlink{class_sprite_manager_abccd80013300704593a7bdc45aeeeb05}{Get\+Texture}} (std\+::string, W\+C\+H\+AR $\ast$)
 \begin{DoxyCompactList}\small\item\em テクスチャを保存し、返す \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_sprite_manager_ae01a31b1c80f676604ba55c93b499e1f}{$\sim$\+Sprite\+Manager}} ()
 \begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
@@ -103,11 +103,11 @@ Sprite\+Batchのゲッタ
 \begin{DoxyReturn}{戻り値}
 std\+::unique\+\_\+ptr$<$\+Direct\+X\+::\+Sprite\+Batch$>$\& 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_sprite_manager_a64bcc473169d17c3912cff9efe224115}\label{class_sprite_manager_a64bcc473169d17c3912cff9efe224115}} 
+\mbox{\Hypertarget{class_sprite_manager_abccd80013300704593a7bdc45aeeeb05}\label{class_sprite_manager_abccd80013300704593a7bdc45aeeeb05}} 
 \index{Sprite\+Manager@{Sprite\+Manager}!Get\+Texture@{Get\+Texture}}
 \index{Get\+Texture@{Get\+Texture}!Sprite\+Manager@{Sprite\+Manager}}
 \subsubsection{\texorpdfstring{Get\+Texture()}{GetTexture()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{sprite__manager_8h_ab0deadee9fd38132a17560766af7fc45}{CP}}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ \& Sprite\+Manager\+::\+Get\+Texture (\begin{DoxyParamCaption}\item[{W\+C\+H\+AR $\ast$}]{path }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{sprite__manager_8h_ab0deadee9fd38132a17560766af7fc45}{CP}}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ \& Sprite\+Manager\+::\+Get\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{W\+C\+H\+AR $\ast$}]{path }\end{DoxyParamCaption})}
 
 
 
@@ -115,6 +115,8 @@ std\+::unique\+\_\+ptr$<$\+Direct\+X\+::\+Sprite\+Batch$>$\&
 
 
 \begin{DoxyParams}{引数}
+{\em name} & mapで管理するためのキー \\
+\hline
 {\em path} & テクスチャがあるパス \\
 \hline
 \end{DoxyParams}

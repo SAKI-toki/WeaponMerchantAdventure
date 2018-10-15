@@ -1,9 +1,4 @@
 var searchData=
 [
-  ['_7eobject',['~Object',['../class_object.html#aa3e791419d84c4c346ef9499513b8e00',1,'Object']]],
-  ['_7escene',['~Scene',['../class_scene.html#aa0a5be58e2ee2d1fdafc5fb46b5e661e',1,'Scene']]],
-  ['_7escenebase',['~SceneBase',['../class_scene_base.html#a187dd160e5a16909bcc6529851e38318',1,'SceneBase']]],
-  ['_7esingleton',['~Singleton',['../class_singleton.html#ad3c93143836479fb3dd96b21b795938c',1,'Singleton']]],
-  ['_7esound',['~Sound',['../class_sound.html#a0907389078bf740be2a5763366ad3376',1,'Sound']]],
-  ['_7espritemanager',['~SpriteManager',['../class_sprite_manager.html#ae01a31b1c80f676604ba55c93b499e1f',1,'SpriteManager']]]
+  ['transform',['Transform',['../class_transform.html#aa08ca4266efabc768973cdeea51945ab',1,'Transform::Transform()'],['../class_transform.html#afdda2868df3ca6b122c5e52f7919a692',1,'Transform::Transform(const float, const float=0, const float=0, const float=1)'],['../class_transform.html#aae9fd575f9e6e4862ea2d9232340e6dd',1,'Transform::Transform(const VEC2 &amp;_pos, const float _rot, const float _scale)'],['../class_transform.html#a7790f3c5dfe2b7fe7997af5f23e2ec7d',1,'Transform::Transform(const Transform &amp;t)']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pos',['pos',['../class_transform.html#a25bce2389cc280e8adf193bdbb00d94a',1,'Transform']]]
+  ['g',['g',['../struct_font_color.html#aee91e6024a40a2bc4a21cc427c9102a6',1,'FontColor::g()'],['../struct_sprite_color.html#ae59c4c99310c60ac72740f83a3073a44',1,'SpriteColor::g()']]]
 ];

@@ -12,7 +12,7 @@
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_sound_a3c8007c8e52bf541fc81adfa4b340b0f}{Init}} (W\+C\+H\+AR $\ast$, bool, bool)
+void \mbox{\hyperlink{class_sound_a341bf468ea414e896daf3a5f7937ee12}{Init}} (std\+::string, W\+C\+H\+AR $\ast$, bool, bool)
 \begin{DoxyCompactList}\small\item\em サウンドの初期化 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_sound_ae021b518e93d7d8c6f3ea951cd4b98d8}{Start}} ()
 \item 
@@ -49,11 +49,11 @@ std\+::unique\+\_\+ptr$<$ Direct\+X\+::\+Sound\+Effect\+Instance $>$ \& \mbox{\h
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_sound_a3c8007c8e52bf541fc81adfa4b340b0f}\label{class_sound_a3c8007c8e52bf541fc81adfa4b340b0f}} 
+\mbox{\Hypertarget{class_sound_a341bf468ea414e896daf3a5f7937ee12}\label{class_sound_a341bf468ea414e896daf3a5f7937ee12}} 
 \index{Sound@{Sound}!Init@{Init}}
 \index{Init@{Init}!Sound@{Sound}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily void Sound\+::\+Init (\begin{DoxyParamCaption}\item[{W\+C\+H\+AR $\ast$}]{path,  }\item[{bool}]{loop,  }\item[{bool}]{awake }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Sound\+::\+Init (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{W\+C\+H\+AR $\ast$}]{path,  }\item[{bool}]{loop,  }\item[{bool}]{awake }\end{DoxyParamCaption})}
 
 
 
@@ -61,6 +61,8 @@ std\+::unique\+\_\+ptr$<$ Direct\+X\+::\+Sound\+Effect\+Instance $>$ \& \mbox{\h
 
 
 \begin{DoxyParams}{引数}
+{\em name} & mapで管理するためのキー \\
+\hline
 {\em path} & サウンドのパス \\
 \hline
 {\em loop} & ループするかどうか \\

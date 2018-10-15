@@ -1,0 +1,114 @@
+\hypertarget{class_camera}{}\section{Camera クラス}
+\label{class_camera}\index{Camera@{Camera}}
+
+
+カメラクラス  
+
+
+
+
+{\ttfamily \#include $<$camera.\+h$>$}
+
+Camera の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_camera}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_camera_a01f94c3543f56ede7af49dc778f19331}{Camera}} ()
+\begin{DoxyCompactList}\small\item\em カメラのゼロ初期化コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_camera_afe282ee51f1f39c041b0e7de9386cc6d}{Camera}} (const \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&)
+\begin{DoxyCompactList}\small\item\em カメラの値を受け取る初期化コンストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a5c6b7ad424d835a3022393099886a90b}{Move}} (const \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&)
+\begin{DoxyCompactList}\small\item\em カメラの移動 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_af79aa3fedd030712e7fa122a2ea88b48}{Set\+Pos}} (const \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&)
+\begin{DoxyCompactList}\small\item\em カメラの位置変更 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \mbox{\hyperlink{class_camera_ac3b4f1248489c0ac0faa521329de71cd}{Get\+Pos}} () const
+\begin{DoxyCompactList}\small\item\em カメラの位置を取得 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+カメラクラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_camera_a01f94c3543f56ede7af49dc778f19331}\label{class_camera_a01f94c3543f56ede7af49dc778f19331}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Camera()}{Camera()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+カメラのゼロ初期化コンストラクタ 
+
+\mbox{\Hypertarget{class_camera_afe282ee51f1f39c041b0e7de9386cc6d}\label{class_camera_afe282ee51f1f39c041b0e7de9386cc6d}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Camera()}{Camera()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{v2 }\end{DoxyParamCaption})}
+
+
+
+カメラの値を受け取る初期化コンストラクタ 
+
+
+\begin{DoxyParams}{引数}
+{\em v2} & 初期化する値 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_camera_ac3b4f1248489c0ac0faa521329de71cd}\label{class_camera_ac3b4f1248489c0ac0faa521329de71cd}} 
+\index{Camera@{Camera}!Get\+Pos@{Get\+Pos}}
+\index{Get\+Pos@{Get\+Pos}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Get\+Pos()}{GetPos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} Camera\+::\+Get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+カメラの位置を取得 
+
+\begin{DoxyReturn}{戻り値}
+V\+E\+C2\+:カメラの位置 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_camera_a5c6b7ad424d835a3022393099886a90b}\label{class_camera_a5c6b7ad424d835a3022393099886a90b}} 
+\index{Camera@{Camera}!Move@{Move}}
+\index{Move@{Move}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void Camera\+::\+Move (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{v2 }\end{DoxyParamCaption})}
+
+
+
+カメラの移動 
+
+
+\begin{DoxyParams}{引数}
+{\em v2} & 移動量 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_af79aa3fedd030712e7fa122a2ea88b48}\label{class_camera_af79aa3fedd030712e7fa122a2ea88b48}} 
+\index{Camera@{Camera}!Set\+Pos@{Set\+Pos}}
+\index{Set\+Pos@{Set\+Pos}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Set\+Pos()}{SetPos()}}
+{\footnotesize\ttfamily void Camera\+::\+Set\+Pos (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{v2 }\end{DoxyParamCaption})}
+
+
+
+カメラの位置変更 
+
+
+\begin{DoxyParams}{引数}
+{\em v2} & 位置 \\
+\hline
+\end{DoxyParams}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/camera/\mbox{\hyperlink{camera_8h}{camera.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/camera/\mbox{\hyperlink{camera_8cpp}{camera.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,117 @@
+\hypertarget{class_font}{}\section{Font クラス}
+\label{class_font}\index{Font@{Font}}
+
+
+フォントクラス  
+
+
+
+
+{\ttfamily \#include $<$font.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_font_a2af6642bc26eebff029c74d7827f5ee5}{Font}} ()=delete
+\item 
+\mbox{\hyperlink{class_font_aa07b69b4e229b2e9efdf0ac49e7a2af1}{Font}} (const \mbox{\hyperlink{class_transform}{Transform}} \&)
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_font_a35fd445e07010a3ad2c74c93dfa33f66}{Init}} (W\+C\+H\+AR $\ast$\+\_\+text, float r=1, float g=1, float b=1, float a=1)
+\begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_font_ad0e36f0066cc8724b6cf6833a15aedbc}{Render}} ()
+\begin{DoxyCompactList}\small\item\em 描画 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_font_a2c862120802e9aac650a96f7b4e29081}{Set\+Text}} (W\+C\+H\+AR $\ast$\+\_\+text)
+\begin{DoxyCompactList}\small\item\em 文字列のセット \end{DoxyCompactList}\item 
+W\+C\+H\+AR $\ast$ \mbox{\hyperlink{class_font_a47be569e73a4ba819bf4370463cf929b}{Get\+Text}} ()
+\begin{DoxyCompactList}\small\item\em テキストを取得する \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+フォントクラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_font_a2af6642bc26eebff029c74d7827f5ee5}\label{class_font_a2af6642bc26eebff029c74d7827f5ee5}} 
+\index{Font@{Font}!Font@{Font}}
+\index{Font@{Font}!Font@{Font}}
+\subsubsection{\texorpdfstring{Font()}{Font()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Font\+::\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_font_aa07b69b4e229b2e9efdf0ac49e7a2af1}\label{class_font_aa07b69b4e229b2e9efdf0ac49e7a2af1}} 
+\index{Font@{Font}!Font@{Font}}
+\index{Font@{Font}!Font@{Font}}
+\subsubsection{\texorpdfstring{Font()}{Font()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Font\+::\+Font (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_transform}{Transform}} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+
+\begin{DoxyParams}{引数}
+{\em t} & Transformの参照 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_font_a47be569e73a4ba819bf4370463cf929b}\label{class_font_a47be569e73a4ba819bf4370463cf929b}} 
+\index{Font@{Font}!Get\+Text@{Get\+Text}}
+\index{Get\+Text@{Get\+Text}!Font@{Font}}
+\subsubsection{\texorpdfstring{Get\+Text()}{GetText()}}
+{\footnotesize\ttfamily W\+C\+H\+AR$\ast$ Font\+::\+Get\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+テキストを取得する 
+
+\begin{DoxyReturn}{戻り値}
+W\+C\+H\+A\+R$\ast$ テキスト 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_font_a35fd445e07010a3ad2c74c93dfa33f66}\label{class_font_a35fd445e07010a3ad2c74c93dfa33f66}} 
+\index{Font@{Font}!Init@{Init}}
+\index{Init@{Init}!Font@{Font}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Font\+::\+Init (\begin{DoxyParamCaption}\item[{W\+C\+H\+AR $\ast$}]{\+\_\+text,  }\item[{float}]{r = {\ttfamily 1},  }\item[{float}]{g = {\ttfamily 1},  }\item[{float}]{b = {\ttfamily 1},  }\item[{float}]{a = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+初期化 
+
+
+\begin{DoxyParams}{引数}
+{\em \+\_\+text} & テキスト \\
+\hline
+{\em r,g,b,a} & 色 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_font_ad0e36f0066cc8724b6cf6833a15aedbc}\label{class_font_ad0e36f0066cc8724b6cf6833a15aedbc}} 
+\index{Font@{Font}!Render@{Render}}
+\index{Render@{Render}!Font@{Font}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Font\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+描画 
+
+\mbox{\Hypertarget{class_font_a2c862120802e9aac650a96f7b4e29081}\label{class_font_a2c862120802e9aac650a96f7b4e29081}} 
+\index{Font@{Font}!Set\+Text@{Set\+Text}}
+\index{Set\+Text@{Set\+Text}!Font@{Font}}
+\subsubsection{\texorpdfstring{Set\+Text()}{SetText()}}
+{\footnotesize\ttfamily void Font\+::\+Set\+Text (\begin{DoxyParamCaption}\item[{W\+C\+H\+AR $\ast$}]{\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+文字列のセット 
+
+
+\begin{DoxyParams}{引数}
+{\em \+\_\+text} & セットする文字列 \\
+\hline
+\end{DoxyParams}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/rendering/font/\mbox{\hyperlink{font_8h}{font.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/rendering/font/\mbox{\hyperlink{font_8cpp}{font.\+cpp}}\end{DoxyCompactItemize}

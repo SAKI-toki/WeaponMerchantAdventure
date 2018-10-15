@@ -1,0 +1,82 @@
+\hypertarget{class_font_manager}{}\section{Font\+Manager クラス}
+\label{class_font_manager}\index{Font\+Manager@{Font\+Manager}}
+
+
+フォントを管理するクラス  
+
+
+
+
+{\ttfamily \#include $<$font\+\_\+manager.\+h$>$}
+
+Font\+Manager の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_font_manager}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_font_manager_acabba97ebae69b7b92d2ea4a2e9216e4}{Init}} (I\+D3\+D11\+Device $\ast$, W\+C\+H\+AR $\ast$)
+\begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_font_manager_aa190bb023b4cf2ad28e24c69ef57f380}{$\sim$\+Font\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ Direct\+X\+::\+Sprite\+Font $>$ \& \mbox{\hyperlink{class_font_manager_a612a8922fc977b07959406468dec922f}{Get\+Sprite\+Font}} ()
+\begin{DoxyCompactList}\small\item\em Sprite\+Fontのゲッタ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+フォントを管理するクラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_font_manager_aa190bb023b4cf2ad28e24c69ef57f380}\label{class_font_manager_aa190bb023b4cf2ad28e24c69ef57f380}} 
+\index{Font\+Manager@{Font\+Manager}!````~Font\+Manager@{$\sim$\+Font\+Manager}}
+\index{````~Font\+Manager@{$\sim$\+Font\+Manager}!Font\+Manager@{Font\+Manager}}
+\subsubsection{\texorpdfstring{$\sim$\+Font\+Manager()}{~FontManager()}}
+{\footnotesize\ttfamily Font\+Manager\+::$\sim$\+Font\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+デストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_font_manager_a612a8922fc977b07959406468dec922f}\label{class_font_manager_a612a8922fc977b07959406468dec922f}} 
+\index{Font\+Manager@{Font\+Manager}!Get\+Sprite\+Font@{Get\+Sprite\+Font}}
+\index{Get\+Sprite\+Font@{Get\+Sprite\+Font}!Font\+Manager@{Font\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Sprite\+Font()}{GetSpriteFont()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$Direct\+X\+::\+Sprite\+Font$>$\& Font\+Manager\+::\+Get\+Sprite\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sprite\+Fontのゲッタ 
+
+\begin{DoxyReturn}{戻り値}
+std\+::unique\+\_\+ptr$<$\+Direct\+X\+::\+Sprite\+Font$>$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_font_manager_acabba97ebae69b7b92d2ea4a2e9216e4}\label{class_font_manager_acabba97ebae69b7b92d2ea4a2e9216e4}} 
+\index{Font\+Manager@{Font\+Manager}!Init@{Init}}
+\index{Init@{Init}!Font\+Manager@{Font\+Manager}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Font\+Manager\+::\+Init (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device $\ast$}]{device,  }\item[{W\+C\+H\+AR $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+初期化 
+
+
+\begin{DoxyParams}{引数}
+{\em device} & I\+D3\+D11\+Device \\
+\hline
+{\em path} & フォントのパス \\
+\hline
+\end{DoxyParams}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/rendering/font/manager/\mbox{\hyperlink{font__manager_8h}{font\+\_\+manager.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/rendering/font/manager/\mbox{\hyperlink{font__manager_8cpp}{font\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

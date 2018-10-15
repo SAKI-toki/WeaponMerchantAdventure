@@ -1,13 +1,5 @@
 var searchData=
 [
-  ['operator_21_3d',['operator!=',['../class_transform.html#ae0aed78dcd6aaeb786ec0bdadafa9498',1,'Transform']]],
-  ['operator_28_29',['operator()',['../class_sound.html#a0d79b20f421c0020c53b08c05b6df25b',1,'Sound']]],
-  ['operator_2a_3d',['operator*=',['../class_transform.html#a3746d6759ca289e8cd4982e889e7ec6b',1,'Transform::operator*=(const Transform &amp;)'],['../class_transform.html#ab13378f63abf5bc132841f83423a634d',1,'Transform::operator*=(const float)']]],
-  ['operator_2b',['operator+',['../class_transform.html#a8e21c258146adde8ca798878bab9ce9d',1,'Transform']]],
-  ['operator_2b_3d',['operator+=',['../class_transform.html#a3b0aa54a1ca373ec3a7052977b5bf826',1,'Transform']]],
-  ['operator_2d',['operator-',['../class_transform.html#a17493155309aa1650de99ce384f096a6',1,'Transform']]],
-  ['operator_2d_3d',['operator-=',['../class_transform.html#a204ee3471c1d08188076e3645c9f3517',1,'Transform']]],
-  ['operator_2f_3d',['operator/=',['../class_transform.html#aa38455bbe5aed5f9dfd98a8d3b8a24ec',1,'Transform']]],
-  ['operator_3d',['operator=',['../class_transform.html#af1a25489903986022218a798e4f40251',1,'Transform']]],
-  ['operator_3d_3d',['operator==',['../class_transform.html#a0a2d49f8c1b9a2229846534f9bcc63d4',1,'Transform']]]
+  ['init',['Init',['../struct_square_status.html#aebaf41dc23d58bdcf75db7d6a4d413b8',1,'SquareStatus::Init()'],['../class_object_base.html#aea82aedc489b0a9d9990aafa06eef514',1,'ObjectBase::Init()'],['../class_font.html#a35fd445e07010a3ad2c74c93dfa33f66',1,'Font::Init()'],['../class_font_manager.html#acabba97ebae69b7b92d2ea4a2e9216e4',1,'FontManager::Init()'],['../class_sprite_manager.html#a82941ce284548c762f250220ea58f43c',1,'SpriteManager::Init()'],['../class_sprite.html#a6d108b11013eeca94c6f283af96a9c9f',1,'Sprite::Init()'],['../class_scene_base.html#a24d7db43c819924dc8b07b436f6d3148',1,'SceneBase::Init()'],['../class_title_scene.html#a3d039e7db0fa1e22e8c36d3cedfbd318',1,'TitleScene::Init()'],['../class_scene_manager.html#a6c0e84d0e76f23fb3172839dba5f091b',1,'SceneManager::Init()'],['../class_sound_manager.html#adab2bc016911756ffd973c7d781b5cfb',1,'SoundManager::Init()'],['../class_sound.html#a341bf468ea414e896daf3a5f7937ee12',1,'Sound::Init()'],['../class_transform.html#a39816379bc1e3a0bbae23fa94db576f1',1,'Transform::Init(const float, const float=0, const float=0, const float=1)'],['../class_transform.html#a0ccfc45e47071b7ebed1a61a14a202c4',1,'Transform::Init(const VEC2 &amp;_pos, const float _rot, const float _scale)'],['../class_transform.html#a2d0cb73aca3f73de81f2bf8463cdb942',1,'Transform::Init(const Transform &amp;t)']]],
+  ['initprocess',['InitProcess',['../class_object_base.html#af133f36f2bca1dcfd962e2cfac61ab51',1,'ObjectBase::InitProcess()'],['../class_static_object.html#ae9563da84f7045d6206c938963d5aecf',1,'StaticObject::InitProcess()'],['../class_player.html#a1051f85c8bf18a256d275d1a1dee5da6',1,'Player::InitProcess()']]]
 ];

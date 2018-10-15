@@ -88,9 +88,9 @@ SpriteManager の継承関係図</div>
 <tr class="memitem:a82941ce284548c762f250220ea58f43c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite_manager.html#a82941ce284548c762f250220ea58f43c">Init</a> ()</td></tr>
 <tr class="memdesc:a82941ce284548c762f250220ea58f43c"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化  <a href="#a82941ce284548c762f250220ea58f43c">[詳解]</a><br /></td></tr>
 <tr class="separator:a82941ce284548c762f250220ea58f43c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64bcc473169d17c3912cff9efe224115"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sprite__manager_8h.html#ab0deadee9fd38132a17560766af7fc45">CP</a>&lt; ID3D11ShaderResourceView &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite_manager.html#a64bcc473169d17c3912cff9efe224115">GetTexture</a> (WCHAR *)</td></tr>
-<tr class="memdesc:a64bcc473169d17c3912cff9efe224115"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャを保存し、返す  <a href="#a64bcc473169d17c3912cff9efe224115">[詳解]</a><br /></td></tr>
-<tr class="separator:a64bcc473169d17c3912cff9efe224115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abccd80013300704593a7bdc45aeeeb05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sprite__manager_8h.html#ab0deadee9fd38132a17560766af7fc45">CP</a>&lt; ID3D11ShaderResourceView &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite_manager.html#abccd80013300704593a7bdc45aeeeb05">GetTexture</a> (std::string, WCHAR *)</td></tr>
+<tr class="memdesc:abccd80013300704593a7bdc45aeeeb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャを保存し、返す  <a href="#abccd80013300704593a7bdc45aeeeb05">[詳解]</a><br /></td></tr>
+<tr class="separator:abccd80013300704593a7bdc45aeeeb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae01a31b1c80f676604ba55c93b499e1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite_manager.html#ae01a31b1c80f676604ba55c93b499e1f">~SpriteManager</a> ()</td></tr>
 <tr class="memdesc:ae01a31b1c80f676604ba55c93b499e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <a href="#ae01a31b1c80f676604ba55c93b499e1f">[詳解]</a><br /></td></tr>
 <tr class="separator:ae01a31b1c80f676604ba55c93b499e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,8 +256,8 @@ SpriteManager の継承関係図</div>
 
 </div>
 </div>
-<a id="a64bcc473169d17c3912cff9efe224115"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64bcc473169d17c3912cff9efe224115">&#9670;&nbsp;</a></span>GetTexture()</h2>
+<a id="abccd80013300704593a7bdc45aeeeb05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abccd80013300704593a7bdc45aeeeb05">&#9670;&nbsp;</a></span>GetTexture()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,9 +265,19 @@ SpriteManager の継承関係図</div>
         <tr>
           <td class="memname"><a class="el" href="sprite__manager_8h.html#ab0deadee9fd38132a17560766af7fc45">CP</a>&lt; ID3D11ShaderResourceView &gt; &amp; SpriteManager::GetTexture </td>
           <td>(</td>
-          <td class="paramtype">WCHAR *&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">WCHAR *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -275,6 +285,7 @@ SpriteManager の継承関係図</div>
 <p>テクスチャを保存し、返す </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
+    <tr><td class="paramname">name</td><td>mapで管理するためのキー </td></tr>
     <tr><td class="paramname">path</td><td>テクスチャがあるパス </td></tr>
   </table>
   </dd>

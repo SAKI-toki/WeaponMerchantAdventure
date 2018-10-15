@@ -1,7 +1,14 @@
 var searchData=
 [
-  ['render',['Render',['../class_object.html#a19d531b9d8086ece15c228899ce456bf',1,'Object::Render()'],['../class_sprite.html#a6bc499c795fc0604d9bdb2336699b8c6',1,'Sprite::Render()'],['../class_scene_base.html#ad981674ce731ea267f398e889bbb9dc3',1,'SceneBase::Render()'],['../class_title_scene.html#af12c59b3bf9458640938c5ca620527ae',1,'TitleScene::Render()'],['../class_scene_manager.html#a968ae7a0065b793f139bda6bcc58d106',1,'SceneManager::Render()']]],
-  ['resume',['Resume',['../class_sound_manager.html#a6107940d2299131fbd7991a4f222491b',1,'SoundManager']]],
-  ['retryaudio',['RetryAudio',['../class_sound_manager.html#acc9fb61509f30c7eb9136386eeeb9f94',1,'SoundManager']]],
-  ['rotate',['Rotate',['../class_transform.html#a937193d9bcc7da62e3787060eb8f976b',1,'Transform::Rotate(const float, const float, const float)'],['../class_transform.html#a0915250ed0d83c88f1cfb269d7e24276',1,'Transform::Rotate(const VEC3 &amp;)']]]
+  ['objectbase',['ObjectBase',['../class_object_base.html#af2c3a18da2d1cd1c0dd5fae168207f0c',1,'ObjectBase']]],
+  ['operator_21_3d',['operator!=',['../class_transform.html#ae0aed78dcd6aaeb786ec0bdadafa9498',1,'Transform']]],
+  ['operator_28_29',['operator()',['../class_sound.html#a0d79b20f421c0020c53b08c05b6df25b',1,'Sound']]],
+  ['operator_2a_3d',['operator*=',['../class_transform.html#a3746d6759ca289e8cd4982e889e7ec6b',1,'Transform::operator*=(const Transform &amp;)'],['../class_transform.html#ab13378f63abf5bc132841f83423a634d',1,'Transform::operator*=(const float)']]],
+  ['operator_2b',['operator+',['../class_transform.html#a8e21c258146adde8ca798878bab9ce9d',1,'Transform']]],
+  ['operator_2b_3d',['operator+=',['../class_transform.html#a3b0aa54a1ca373ec3a7052977b5bf826',1,'Transform']]],
+  ['operator_2d',['operator-',['../class_transform.html#a17493155309aa1650de99ce384f096a6',1,'Transform']]],
+  ['operator_2d_3d',['operator-=',['../class_transform.html#a204ee3471c1d08188076e3645c9f3517',1,'Transform']]],
+  ['operator_2f_3d',['operator/=',['../class_transform.html#aa38455bbe5aed5f9dfd98a8d3b8a24ec',1,'Transform']]],
+  ['operator_3d',['operator=',['../class_transform.html#af1a25489903986022218a798e4f40251',1,'Transform']]],
+  ['operator_3d_3d',['operator==',['../class_transform.html#a0a2d49f8c1b9a2229846534f9bcc63d4',1,'Transform']]]
 ];

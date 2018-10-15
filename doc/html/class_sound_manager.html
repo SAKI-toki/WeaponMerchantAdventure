@@ -85,9 +85,9 @@ SoundManager の継承関係図</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a3ba4b2fe49cdc051f33aa800851f8b98"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; DirectX::SoundEffect &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound_manager.html#a3ba4b2fe49cdc051f33aa800851f8b98">GetSound</a> (WCHAR *)</td></tr>
-<tr class="memdesc:a3ba4b2fe49cdc051f33aa800851f8b98"><td class="mdescLeft">&#160;</td><td class="mdescRight">サウンドを返す  <a href="#a3ba4b2fe49cdc051f33aa800851f8b98">[詳解]</a><br /></td></tr>
-<tr class="separator:a3ba4b2fe49cdc051f33aa800851f8b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab97083f065caec6d4f59c246b1978faf"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; DirectX::SoundEffect &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound_manager.html#ab97083f065caec6d4f59c246b1978faf">GetSound</a> (std::string, WCHAR *)</td></tr>
+<tr class="memdesc:ab97083f065caec6d4f59c246b1978faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">サウンドを返す  <a href="#ab97083f065caec6d4f59c246b1978faf">[詳解]</a><br /></td></tr>
+<tr class="separator:ab97083f065caec6d4f59c246b1978faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adab2bc016911756ffd973c7d781b5cfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound_manager.html#adab2bc016911756ffd973c7d781b5cfb">Init</a> (HWND)</td></tr>
 <tr class="memdesc:adab2bc016911756ffd973c7d781b5cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">サウンドマネージャークラスの初期化  <a href="#adab2bc016911756ffd973c7d781b5cfb">[詳解]</a><br /></td></tr>
 <tr class="separator:adab2bc016911756ffd973c7d781b5cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,8 +165,8 @@ SoundManager の継承関係図</div>
 
 </div>
 </div>
-<a id="a3ba4b2fe49cdc051f33aa800851f8b98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ba4b2fe49cdc051f33aa800851f8b98">&#9670;&nbsp;</a></span>GetSound()</h2>
+<a id="ab97083f065caec6d4f59c246b1978faf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab97083f065caec6d4f59c246b1978faf">&#9670;&nbsp;</a></span>GetSound()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,9 +174,19 @@ SoundManager の継承関係図</div>
         <tr>
           <td class="memname">std::unique_ptr&lt; DirectX::SoundEffect &gt; &amp; SoundManager::GetSound </td>
           <td>(</td>
-          <td class="paramtype">WCHAR *&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">WCHAR *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -184,6 +194,7 @@ SoundManager の継承関係図</div>
 <p>サウンドを返す </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
+    <tr><td class="paramname">name</td><td>mapで管理するためのキー </td></tr>
     <tr><td class="paramname">path</td><td>wavファイルのパス</td></tr>
   </table>
   </dd>

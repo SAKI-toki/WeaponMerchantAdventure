@@ -9,7 +9,8 @@
 #include "../../input/gamepad/gamepad_input.h"
 #include "../../sound/manager/sound_manager.h"
 #include "../../rendering/sprite/manager/sprite_manager.h"
-
+#include "../../collider/manager/collider_manager.h"
+#include "../../object/camera/camera.h"
 
 /**
 * @brief シーンマネージャーの初期化
@@ -37,6 +38,8 @@ void SceneManager::Update()
 		scene_ptr = switch_scene(next_scene);
 		scene_ptr->Init();
 	}
+	ColliderManager::GetInstance()->CheckCollision();
+	Camera::GetInstance()->Update();
 }
 
 /**

@@ -5,6 +5,7 @@
 * @date 2018/10/02
 */
 #include "gamepad_input.h"
+#include <Windows.h>
 
 /**
 * @brief コンストラクタで初期化

@@ -1,5 +1,5 @@
 /**
-* @file sound.h
+* @file sound_manager.cpp
 * @brief サウンドマネージャークラスのメンバ関数を定義
 * @author 石山　悠
 * @date 2018/10/04
@@ -63,16 +63,20 @@ void SoundManager::Destroy()
 
 /**
 * @brief サウンドを返す
+* @param name mapで管理するためのキー
 * @param path wavファイルのパス
 * @details 同じファイルを2度読み込まないようにする
 */
-std::unique_ptr<DirectX::SoundEffect>& SoundManager::GetSound(WCHAR* path)
+std::unique_ptr<DirectX::SoundEffect>& SoundManager::GetSound(std::string name, WCHAR* path)
 {
-	auto itr = soundList.find(path);
+	auto itr = soundList.find(name);
 	if (itr == end(soundList))
 	{
-		soundList.insert(std::make_pair(path, std::make_unique<DirectX::SoundEffect>(SoundManager::GetInstance()->GetEngine(), path)));
+		WCHAR _path[256];
+		wcscpy_s(_path, sound_path);
+		wcscat_s(_path, path);
+		soundList.insert(std::make_pair(name, std::make_unique<DirectX::SoundEffect>(SoundManager::GetInstance()->GetEngine(), _path)));
 	}
-	return soundList.at(path);
+	return soundList.at(name);
 
 }

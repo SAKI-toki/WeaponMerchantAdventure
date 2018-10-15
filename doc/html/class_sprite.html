@@ -76,18 +76,18 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:aee98328f5ff843a53c82cbcb0058e2f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#aee98328f5ff843a53c82cbcb0058e2f7">Init</a> (WCHAR *, const int h, const int w, float=1.0f, float=1.0f, float=1.0f, float=1.0f)</td></tr>
-<tr class="memdesc:aee98328f5ff843a53c82cbcb0058e2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">各パラメータや画像を読み込む  <a href="#aee98328f5ff843a53c82cbcb0058e2f7">[詳解]</a><br /></td></tr>
-<tr class="separator:aee98328f5ff843a53c82cbcb0058e2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bc499c795fc0604d9bdb2336699b8c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a6bc499c795fc0604d9bdb2336699b8c6">Render</a> (const <a class="el" href="class_transform.html">Transform</a> &amp;)</td></tr>
-<tr class="memdesc:a6bc499c795fc0604d9bdb2336699b8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">SpriteBatchを経由して描画する  <a href="#a6bc499c795fc0604d9bdb2336699b8c6">[詳解]</a><br /></td></tr>
-<tr class="separator:a6bc499c795fc0604d9bdb2336699b8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d108b11013eeca94c6f283af96a9c9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a6d108b11013eeca94c6f283af96a9c9f">Init</a> (std::string name, WCHAR *path, const bool _all_render, const LONG w, const LONG h, const float r=1.0f, const float g=1.0f, const float b=1.0f, const float a=1.0f)</td></tr>
+<tr class="memdesc:a6d108b11013eeca94c6f283af96a9c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">各パラメータや画像を読み込む  <a href="#a6d108b11013eeca94c6f283af96a9c9f">[詳解]</a><br /></td></tr>
+<tr class="separator:a6d108b11013eeca94c6f283af96a9c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a936771e0b67adc2f673ac24b03411535"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a936771e0b67adc2f673ac24b03411535">Render</a> (const <a class="el" href="class_transform.html">Transform</a> &amp;, bool=true)</td></tr>
+<tr class="memdesc:a936771e0b67adc2f673ac24b03411535"><td class="mdescLeft">&#160;</td><td class="mdescRight">SpriteBatchを経由して描画する  <a href="#a936771e0b67adc2f673ac24b03411535">[詳解]</a><br /></td></tr>
+<tr class="separator:a936771e0b67adc2f673ac24b03411535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>個々の画像を管理するクラス </p>
 </div><h2 class="groupheader">関数詳解</h2>
-<a id="aee98328f5ff843a53c82cbcb0058e2f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee98328f5ff843a53c82cbcb0058e2f7">&#9670;&nbsp;</a></span>Init()</h2>
+<a id="a6d108b11013eeca94c6f283af96a9c9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d108b11013eeca94c6f283af96a9c9f">&#9670;&nbsp;</a></span>Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -95,43 +95,55 @@ $(function() {
         <tr>
           <td class="memname">void Sprite::Init </td>
           <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">WCHAR *&#160;</td>
           <td class="paramname"><em>path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>_all_render</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const LONG&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const LONG&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
           <td class="paramname"><em>r</em> = <code>1.0f</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const float&#160;</td>
           <td class="paramname"><em>g</em> = <code>1.0f</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const float&#160;</td>
           <td class="paramname"><em>b</em> = <code>1.0f</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const float&#160;</td>
           <td class="paramname"><em>a</em> = <code>1.0f</code>&#160;</td>
         </tr>
         <tr>
@@ -145,8 +157,10 @@ $(function() {
 <p>各パラメータや画像を読み込む </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
+    <tr><td class="paramname">name</td><td>mapで管理するためのキー </td></tr>
     <tr><td class="paramname">path</td><td>テクスチャのパス </td></tr>
     <tr><td class="paramname">h,w　テクスチャの大きさ</td><td></td></tr>
+    <tr><td class="paramname">_all_render</td><td>テクスチャをすべて描画するかどうか（アニメーションがあるかどうかとほぼ同義） </td></tr>
     <tr><td class="paramname">r,g,b,a</td><td>色 </td></tr>
   </table>
   </dd>
@@ -154,8 +168,8 @@ $(function() {
 
 </div>
 </div>
-<a id="a6bc499c795fc0604d9bdb2336699b8c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bc499c795fc0604d9bdb2336699b8c6">&#9670;&nbsp;</a></span>Render()</h2>
+<a id="a936771e0b67adc2f673ac24b03411535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a936771e0b67adc2f673ac24b03411535">&#9670;&nbsp;</a></span>Render()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,8 +178,18 @@ $(function() {
           <td class="memname">void Sprite::Render </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_transform.html">Transform</a> &amp;&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
+          <td class="paramname"><em>transform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>affected_camera</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -173,7 +197,8 @@ $(function() {
 <p>SpriteBatchを経由して描画する </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>位置や回転、拡大・縮小のクラス </td></tr>
+    <tr><td class="paramname">transform</td><td>位置や回転、拡大・縮小 </td></tr>
+    <tr><td class="paramname">affected_camera</td><td>カメラの位置によって描画する位置を変えるかどうか </td></tr>
   </table>
   </dd>
 </dl>

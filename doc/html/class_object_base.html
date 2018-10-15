@@ -1,0 +1,558 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: ObjectBase クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="class_object_base-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">ObjectBase クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>オブジェクトのスーパークラス  
+ <a href="class_object_base.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="object__base_8h_source.html">object_base.h</a>&gt;</code></p>
+<div class="dynheader">
+ObjectBase の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_object_base.png" usemap="#ObjectBase_map" alt=""/>
+  <map id="ObjectBase_map" name="ObjectBase_map">
+<area href="class_dynamic_object.html" title="動くオブジェクトのスーパークラス " alt="DynamicObject" shape="rect" coords="54,56,152,80"/>
+<area href="class_static_object.html" title="動かないオブジェクトのスーパークラス " alt="StaticObject" shape="rect" coords="162,56,260,80"/>
+<area href="class_player.html" title="プレイヤークラス " alt="Player" shape="rect" coords="0,112,98,136"/>
+<area href="class_ui_base.html" alt="UiBase" shape="rect" coords="108,112,206,136"/>
+<area href="class_ui_text.html" alt="UiText" shape="rect" coords="108,168,206,192"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:af2c3a18da2d1cd1c0dd5fae168207f0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#af2c3a18da2d1cd1c0dd5fae168207f0c">ObjectBase</a> ()</td></tr>
+<tr class="memdesc:af2c3a18da2d1cd1c0dd5fae168207f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="#af2c3a18da2d1cd1c0dd5fae168207f0c">[詳解]</a><br /></td></tr>
+<tr class="separator:af2c3a18da2d1cd1c0dd5fae168207f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea82aedc489b0a9d9990aafa06eef514"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#aea82aedc489b0a9d9990aafa06eef514">Init</a> (std::string name, WCHAR *path, const LONG w, const LONG h, <a class="el" href="transform_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a> pos, float rot=0, float scale=1, bool all_render=true)</td></tr>
+<tr class="memdesc:aea82aedc489b0a9d9990aafa06eef514"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化  <a href="#aea82aedc489b0a9d9990aafa06eef514">[詳解]</a><br /></td></tr>
+<tr class="separator:aea82aedc489b0a9d9990aafa06eef514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b5672034139b22235ada326eb16dd3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a5b5672034139b22235ada326eb16dd3e">Update</a> ()</td></tr>
+<tr class="memdesc:a5b5672034139b22235ada326eb16dd3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新するかどうか決める  <a href="#a5b5672034139b22235ada326eb16dd3e">[詳解]</a><br /></td></tr>
+<tr class="separator:a5b5672034139b22235ada326eb16dd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac84be5b56d23b8809ca08e27c0dcb16a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#ac84be5b56d23b8809ca08e27c0dcb16a">Render</a> (bool=true, const <a class="el" href="class_transform.html">Transform</a> &amp;=NULL)</td></tr>
+<tr class="memdesc:ac84be5b56d23b8809ca08e27c0dcb16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画するかどうかを決める  <a href="#ac84be5b56d23b8809ca08e27c0dcb16a">[詳解]</a><br /></td></tr>
+<tr class="separator:ac84be5b56d23b8809ca08e27c0dcb16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa4c548153c3af20f89673ffea809af"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a7fa4c548153c3af20f89673ffea809af">Destroy</a> ()=0</td></tr>
+<tr class="separator:a7fa4c548153c3af20f89673ffea809af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7074bc9389069351c2d0eee6a47e5ee3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a7074bc9389069351c2d0eee6a47e5ee3">~ObjectBase</a> ()</td></tr>
+<tr class="separator:a7074bc9389069351c2d0eee6a47e5ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1991d1c2c214a593feb6b6b24802a8c4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a1991d1c2c214a593feb6b6b24802a8c4">Collision</a> (<a class="el" href="class_object_base.html">ObjectBase</a> *)</td></tr>
+<tr class="separator:a1991d1c2c214a593feb6b6b24802a8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:aff7eb5482ca9bc1cd30b84994d0dad8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0c">OBJECT_TAG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#aff7eb5482ca9bc1cd30b84994d0dad8b">object_tag</a></td></tr>
+<tr class="separator:aff7eb5482ca9bc1cd30b84994d0dad8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade1c868f20653a6fa5236544120eca2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#ade1c868f20653a6fa5236544120eca2b">enabled</a></td></tr>
+<tr class="separator:ade1c868f20653a6fa5236544120eca2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8096c26fe09682da6119208d392dc62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#ac8096c26fe09682da6119208d392dc62">transform</a></td></tr>
+<tr class="separator:ac8096c26fe09682da6119208d392dc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:af133f36f2bca1dcfd962e2cfac61ab51"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#af133f36f2bca1dcfd962e2cfac61ab51">InitProcess</a> ()=0</td></tr>
+<tr class="separator:af133f36f2bca1dcfd962e2cfac61ab51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac51d868beeb7f7fe900407b76b93a2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#aeac51d868beeb7f7fe900407b76b93a2">RenderProcess</a> (bool)=0</td></tr>
+<tr class="separator:aeac51d868beeb7f7fe900407b76b93a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b5b72b363a419767efde0b0e692ea95"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a8b5b72b363a419767efde0b0e692ea95">UpdateProcess</a> ()=0</td></tr>
+<tr class="separator:a8b5b72b363a419767efde0b0e692ea95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:a16415e349623e10f45518fb637f7051b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite.html">Sprite</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a16415e349623e10f45518fb637f7051b">sprite</a></td></tr>
+<tr class="separator:a16415e349623e10f45518fb637f7051b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abedc2ea4baa694611f8822ea6e04b210"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#abedc2ea4baa694611f8822ea6e04b210">worldTransform</a></td></tr>
+<tr class="separator:abedc2ea4baa694611f8822ea6e04b210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>オブジェクトのスーパークラス </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="af2c3a18da2d1cd1c0dd5fae168207f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2c3a18da2d1cd1c0dd5fae168207f0c">&#9670;&nbsp;</a></span>ObjectBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectBase::ObjectBase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+
+</div>
+</div>
+<a id="a7074bc9389069351c2d0eee6a47e5ee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7074bc9389069351c2d0eee6a47e5ee3">&#9670;&nbsp;</a></span>~ObjectBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ObjectBase::~ObjectBase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a1991d1c2c214a593feb6b6b24802a8c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1991d1c2c214a593feb6b6b24802a8c4">&#9670;&nbsp;</a></span>Collision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ObjectBase::Collision </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_object_base.html">ObjectBase</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_player.html#a660421b69afc7cd6d0d97ea9a28251a2">Player</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="a7fa4c548153c3af20f89673ffea809af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fa4c548153c3af20f89673ffea809af">&#9670;&nbsp;</a></span>Destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ObjectBase::Destroy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_player.html#af2cf4936165ef12cce96f7994e0879df">Player</a>, <a class="el" href="class_static_object.html#aac4b963c88ebffb128bcaf5abf09768b">StaticObject</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="aea82aedc489b0a9d9990aafa06eef514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea82aedc489b0a9d9990aafa06eef514">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ObjectBase::Init </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WCHAR *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const LONG&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const LONG&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="transform_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a>&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rot</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>all_render</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初期化 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>mapで管理するためのキー </td></tr>
+    <tr><td class="paramname">path</td><td>テクスチャのパス </td></tr>
+    <tr><td class="paramname">w,h</td><td>テクスチャのサイズ </td></tr>
+    <tr><td class="paramname">pos</td><td>初期位置 </td></tr>
+    <tr><td class="paramname">rot</td><td>回転 </td></tr>
+    <tr><td class="paramname">scale</td><td>サイズ </td></tr>
+    <tr><td class="paramname">テクスチャをすべて描画するかどうか</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af133f36f2bca1dcfd962e2cfac61ab51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af133f36f2bca1dcfd962e2cfac61ab51">&#9670;&nbsp;</a></span>InitProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ObjectBase::InitProcess </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_player.html#a1051f85c8bf18a256d275d1a1dee5da6">Player</a>, <a class="el" href="class_static_object.html#ae9563da84f7045d6206c938963d5aecf">StaticObject</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="ac84be5b56d23b8809ca08e27c0dcb16a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac84be5b56d23b8809ca08e27c0dcb16a">&#9670;&nbsp;</a></span>Render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ObjectBase::Render </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>camera_affected</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_transform.html">Transform</a> &amp;&#160;</td>
+          <td class="paramname"><em>t</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>描画するかどうかを決める </p>
+
+</div>
+</div>
+<a id="aeac51d868beeb7f7fe900407b76b93a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeac51d868beeb7f7fe900407b76b93a2">&#9670;&nbsp;</a></span>RenderProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ObjectBase::RenderProcess </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dynamic_object.html#aa7488e1b4dfd7049447535d93d9d6783">DynamicObject</a>, <a class="el" href="class_static_object.html#afec57009537695c4715386120a619942">StaticObject</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="a5b5672034139b22235ada326eb16dd3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b5672034139b22235ada326eb16dd3e">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ObjectBase::Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>更新するかどうか決める </p>
+
+</div>
+</div>
+<a id="a8b5b72b363a419767efde0b0e692ea95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b5b72b363a419767efde0b0e692ea95">&#9670;&nbsp;</a></span>UpdateProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ObjectBase::UpdateProcess </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_player.html#ab8accc9b83b030f5313f1b4872a7e634">Player</a>, <a class="el" href="class_static_object.html#a0dd0ec514aa597a1dd83a1168902a079">StaticObject</a>で実装されています。</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="ade1c868f20653a6fa5236544120eca2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade1c868f20653a6fa5236544120eca2b">&#9670;&nbsp;</a></span>enabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ObjectBase::enabled</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff7eb5482ca9bc1cd30b84994d0dad8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff7eb5482ca9bc1cd30b84994d0dad8b">&#9670;&nbsp;</a></span>object_tag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0c">OBJECT_TAG</a> ObjectBase::object_tag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16415e349623e10f45518fb637f7051b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16415e349623e10f45518fb637f7051b">&#9670;&nbsp;</a></span>sprite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_sprite.html">Sprite</a> ObjectBase::sprite</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8096c26fe09682da6119208d392dc62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8096c26fe09682da6119208d392dc62">&#9670;&nbsp;</a></span>transform</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_transform.html">Transform</a> ObjectBase::transform</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abedc2ea4baa694611f8822ea6e04b210"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abedc2ea4baa694611f8822ea6e04b210">&#9670;&nbsp;</a></span>worldTransform</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_transform.html">Transform</a> ObjectBase::worldTransform</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/object/base/<a class="el" href="object__base_8h_source.html">object_base.h</a></li>
+<li>C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/object/base/<a class="el" href="object__base_8cpp.html">object_base.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

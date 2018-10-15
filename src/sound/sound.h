@@ -10,7 +10,7 @@
 #include <Audio.h>
 
 /**
-* @brief　個々のサウンドクラス
+* @brief 個々のサウンドクラス
 */
 class Sound
 {
@@ -18,7 +18,7 @@ class Sound
 	//ループするかどうか
 	bool is_loop;
 public:
-	void Init(WCHAR*, bool, bool);
+	void Init(std::string, WCHAR*, bool, bool);
 
 	//再生
 	void Start() { instance_sound->Play(is_loop); }

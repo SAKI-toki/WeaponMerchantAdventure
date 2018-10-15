@@ -7,42 +7,38 @@
 #include "player.h"
 #include "../../../input/gamepad/gamepad_input.h"
 
-/**
-* @brief プレイヤーの初期化
-* @param path テクスチャのパス
-* @param w テクスチャの幅
-* @param h テクスチャの高さ
-* @param pos プレイヤーの初期位置
-* @param rot プレイヤーの初期回転
-* @param scale プレイヤーの初期拡大・縮小
-*/
-HRESULT Player::Init(WCHAR* path, const LONG w, const LONG h, VEC2 pos, float rot, float scale)
-{
-	transform.Init(pos, rot, scale);
-	sprite.Init(path, true, w, h);
-	return S_OK;
-}
 
+/**
+* @brief 初期化
+*/
+void Player::InitProcess()
+{
+	collider.SetStatus(transform.pos, transform.size.x, transform.size.y, transform.rot);
+}
 /**
 * @brief プレイヤーの更新
 */
-void Player::Update()
+void Player::UpdateProcess()
 {
-
+	transform.pos.y += 0.5f;
+	collider.SetStatus(transform.pos, transform.size.x, transform.size.y, transform.rot);
 }
-
-/**
-* @brief プレイヤーの描画
-*/
-void Player::Render()
-{
-	sprite.Render();
-}
-
 /**
 * @brief プレイヤーの破棄
 */
 void Player::Destroy()
 {
+	if (collider.enabled)collider.Destroy();
+}
 
+/**
+* @brief 当たってるときに実行する関数
+*/
+void Player::Collision(ObjectBase* obj,VEC2 vector)
+{
+	if (obj->object_tag == OBJECT_TAG::ENEMY)
+	{
+		//Destroy();
+		//enabled = false;
+	}
 }

@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/object/base/object_base.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_bb043af75e54e1af3032f67529bb720c.html">object</a></li><li class="navelem"><a class="el" href="dir_d49ffbc2e2d98b9b560f900ba71bd1b9.html">base</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">object_base.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="object__base_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Windows.h&gt;</span><span class="comment">//for HRESULT</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../../transform/transform.h&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../../rendering/sprite/sprite.h&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0c">   12</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0c">OBJECT_TAG</a> { <a class="code" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0ca07c80e2a355d91402a00d82b1fa13855">PLAYER</a>, <a class="code" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0cab50339a10e1de285ac99d4c3990b8693">NONE</a> };</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_object_base.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_object_base.html">ObjectBase</a></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">//テクスチャクラス</span></div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_object_base.html#a16415e349623e10f45518fb637f7051b">   20</a></span>&#160;    <a class="code" href="class_sprite.html">Sprite</a> <a class="code" href="class_object_base.html#a16415e349623e10f45518fb637f7051b">sprite</a>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//ワールドでの位置、回転、拡大・縮小</span></div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_object_base.html#abedc2ea4baa694611f8822ea6e04b210">   22</a></span>&#160;    <a class="code" href="class_transform.html">Transform</a> <a class="code" href="class_object_base.html#abedc2ea4baa694611f8822ea6e04b210">worldTransform</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">//子クラスで定義する</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_object_base.html#af133f36f2bca1dcfd962e2cfac61ab51">InitProcess</a>() = 0;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_object_base.html#aeac51d868beeb7f7fe900407b76b93a2">RenderProcess</a>(<span class="keywordtype">bool</span>) = 0;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_object_base.html#a8b5b72b363a419767efde0b0e692ea95">UpdateProcess</a>() = 0;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">//オブジェクトのタグ</span></div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_object_base.html#aff7eb5482ca9bc1cd30b84994d0dad8b">   29</a></span>&#160;    <a class="code" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0c">OBJECT_TAG</a> <a class="code" href="class_object_base.html#aff7eb5482ca9bc1cd30b84994d0dad8b">object_tag</a>;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//更新、描画するかどうか</span></div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_object_base.html#ade1c868f20653a6fa5236544120eca2b">   31</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_object_base.html#ade1c868f20653a6fa5236544120eca2b">enabled</a>;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_object_base.html#af2c3a18da2d1cd1c0dd5fae168207f0c">   35</a></span>&#160;    <a class="code" href="class_object_base.html#af2c3a18da2d1cd1c0dd5fae168207f0c">ObjectBase</a>() :<a class="code" href="class_object_base.html#ade1c868f20653a6fa5236544120eca2b">enabled</a>(true) {}</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//位置、回転、拡大・縮小(ローカル）</span></div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_object_base.html#ac8096c26fe09682da6119208d392dc62">   38</a></span>&#160;    <a class="code" href="class_transform.html">Transform</a> <a class="code" href="class_object_base.html#ac8096c26fe09682da6119208d392dc62">transform</a>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_object_base.html#aea82aedc489b0a9d9990aafa06eef514">Init</a>(std::string name, WCHAR* path, <span class="keyword">const</span> LONG w, <span class="keyword">const</span> LONG h, <a class="code" href="transform_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a> pos,</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">float</span> rot = 0, <span class="keywordtype">float</span> scale = 1, <span class="keywordtype">bool</span> all_render = <span class="keyword">true</span>);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_object_base.html#a5b5672034139b22235ada326eb16dd3e">Update</a>();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_object_base.html#ac84be5b56d23b8809ca08e27c0dcb16a">Render</a>(<span class="keywordtype">bool</span> = <span class="keyword">true</span>, <span class="keyword">const</span> <a class="code" href="class_transform.html">Transform</a>&amp; = NULL);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_object_base.html#a7fa4c548153c3af20f89673ffea809af">Destroy</a>() = 0;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//ポリモーフィズムを利用するときはデストラクタは仮想関数にする</span></div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_object_base.html#a7074bc9389069351c2d0eee6a47e5ee3">   48</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_object_base.html#a7074bc9389069351c2d0eee6a47e5ee3">~ObjectBase</a>() {}</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//当たったときに実行する関数</span></div><div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_object_base.html#a1991d1c2c214a593feb6b6b24802a8c4">   51</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_object_base.html#a1991d1c2c214a593feb6b6b24802a8c4">Collision</a>(<a class="code" href="class_object_base.html">ObjectBase</a>*) {}</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div><div class="ttc" id="class_object_base_html_a8b5b72b363a419767efde0b0e692ea95"><div class="ttname"><a href="class_object_base.html#a8b5b72b363a419767efde0b0e692ea95">ObjectBase::UpdateProcess</a></div><div class="ttdeci">virtual void UpdateProcess()=0</div></div>
+<div class="ttc" id="class_object_base_html_a7074bc9389069351c2d0eee6a47e5ee3"><div class="ttname"><a href="class_object_base.html#a7074bc9389069351c2d0eee6a47e5ee3">ObjectBase::~ObjectBase</a></div><div class="ttdeci">virtual ~ObjectBase()</div><div class="ttdef"><b>Definition:</b> object_base.h:48</div></div>
+<div class="ttc" id="class_object_base_html_a5b5672034139b22235ada326eb16dd3e"><div class="ttname"><a href="class_object_base.html#a5b5672034139b22235ada326eb16dd3e">ObjectBase::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">更新するかどうか決める </div><div class="ttdef"><b>Definition:</b> object_base.cpp:31</div></div>
+<div class="ttc" id="transform_8h_html_afb0c5e21d4133ff4f200992c0b534e1b"><div class="ttname"><a href="transform_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a></div><div class="ttdeci">DirectX::SimpleMath::Vector2 VEC2</div><div class="ttdef"><b>Definition:</b> transform.h:10</div></div>
+<div class="ttc" id="class_object_base_html_af133f36f2bca1dcfd962e2cfac61ab51"><div class="ttname"><a href="class_object_base.html#af133f36f2bca1dcfd962e2cfac61ab51">ObjectBase::InitProcess</a></div><div class="ttdeci">virtual void InitProcess()=0</div></div>
+<div class="ttc" id="object__base_8h_html_a0eff9883ab049ee02773dde19d057c0ca07c80e2a355d91402a00d82b1fa13855"><div class="ttname"><a href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0ca07c80e2a355d91402a00d82b1fa13855">OBJECT_TAG::PLAYER</a></div></div>
+<div class="ttc" id="class_transform_html"><div class="ttname"><a href="class_transform.html">Transform</a></div><div class="ttdef"><b>Definition:</b> transform.h:15</div></div>
+<div class="ttc" id="class_sprite_html"><div class="ttname"><a href="class_sprite.html">Sprite</a></div><div class="ttdoc">個々の画像を管理するクラス </div><div class="ttdef"><b>Definition:</b> sprite.h:19</div></div>
+<div class="ttc" id="object__base_8h_html_a0eff9883ab049ee02773dde19d057c0c"><div class="ttname"><a href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0c">OBJECT_TAG</a></div><div class="ttdeci">OBJECT_TAG</div><div class="ttdef"><b>Definition:</b> object_base.h:12</div></div>
+<div class="ttc" id="class_object_base_html_a16415e349623e10f45518fb637f7051b"><div class="ttname"><a href="class_object_base.html#a16415e349623e10f45518fb637f7051b">ObjectBase::sprite</a></div><div class="ttdeci">Sprite sprite</div><div class="ttdef"><b>Definition:</b> object_base.h:20</div></div>
+<div class="ttc" id="class_object_base_html_ade1c868f20653a6fa5236544120eca2b"><div class="ttname"><a href="class_object_base.html#ade1c868f20653a6fa5236544120eca2b">ObjectBase::enabled</a></div><div class="ttdeci">bool enabled</div><div class="ttdef"><b>Definition:</b> object_base.h:31</div></div>
+<div class="ttc" id="class_object_base_html"><div class="ttname"><a href="class_object_base.html">ObjectBase</a></div><div class="ttdoc">オブジェクトのスーパークラス </div><div class="ttdef"><b>Definition:</b> object_base.h:16</div></div>
+<div class="ttc" id="class_object_base_html_ac84be5b56d23b8809ca08e27c0dcb16a"><div class="ttname"><a href="class_object_base.html#ac84be5b56d23b8809ca08e27c0dcb16a">ObjectBase::Render</a></div><div class="ttdeci">void Render(bool=true, const Transform &amp;=NULL)</div><div class="ttdoc">描画するかどうかを決める </div><div class="ttdef"><b>Definition:</b> object_base.cpp:40</div></div>
+<div class="ttc" id="object__base_8h_html_a0eff9883ab049ee02773dde19d057c0cab50339a10e1de285ac99d4c3990b8693"><div class="ttname"><a href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0cab50339a10e1de285ac99d4c3990b8693">OBJECT_TAG::NONE</a></div></div>
+<div class="ttc" id="class_object_base_html_abedc2ea4baa694611f8822ea6e04b210"><div class="ttname"><a href="class_object_base.html#abedc2ea4baa694611f8822ea6e04b210">ObjectBase::worldTransform</a></div><div class="ttdeci">Transform worldTransform</div><div class="ttdef"><b>Definition:</b> object_base.h:22</div></div>
+<div class="ttc" id="class_object_base_html_aff7eb5482ca9bc1cd30b84994d0dad8b"><div class="ttname"><a href="class_object_base.html#aff7eb5482ca9bc1cd30b84994d0dad8b">ObjectBase::object_tag</a></div><div class="ttdeci">OBJECT_TAG object_tag</div><div class="ttdef"><b>Definition:</b> object_base.h:29</div></div>
+<div class="ttc" id="class_object_base_html_af2c3a18da2d1cd1c0dd5fae168207f0c"><div class="ttname"><a href="class_object_base.html#af2c3a18da2d1cd1c0dd5fae168207f0c">ObjectBase::ObjectBase</a></div><div class="ttdeci">ObjectBase()</div><div class="ttdoc">コンストラクタ </div><div class="ttdef"><b>Definition:</b> object_base.h:35</div></div>
+<div class="ttc" id="class_object_base_html_aea82aedc489b0a9d9990aafa06eef514"><div class="ttname"><a href="class_object_base.html#aea82aedc489b0a9d9990aafa06eef514">ObjectBase::Init</a></div><div class="ttdeci">void Init(std::string name, WCHAR *path, const LONG w, const LONG h, VEC2 pos, float rot=0, float scale=1, bool all_render=true)</div><div class="ttdoc">初期化 </div><div class="ttdef"><b>Definition:</b> object_base.cpp:19</div></div>
+<div class="ttc" id="class_object_base_html_a1991d1c2c214a593feb6b6b24802a8c4"><div class="ttname"><a href="class_object_base.html#a1991d1c2c214a593feb6b6b24802a8c4">ObjectBase::Collision</a></div><div class="ttdeci">virtual void Collision(ObjectBase *)</div><div class="ttdef"><b>Definition:</b> object_base.h:51</div></div>
+<div class="ttc" id="class_object_base_html_aeac51d868beeb7f7fe900407b76b93a2"><div class="ttname"><a href="class_object_base.html#aeac51d868beeb7f7fe900407b76b93a2">ObjectBase::RenderProcess</a></div><div class="ttdeci">virtual void RenderProcess(bool)=0</div></div>
+<div class="ttc" id="class_object_base_html_a7fa4c548153c3af20f89673ffea809af"><div class="ttname"><a href="class_object_base.html#a7fa4c548153c3af20f89673ffea809af">ObjectBase::Destroy</a></div><div class="ttdeci">virtual void Destroy()=0</div></div>
+<div class="ttc" id="class_object_base_html_ac8096c26fe09682da6119208d392dc62"><div class="ttname"><a href="class_object_base.html#ac8096c26fe09682da6119208d392dc62">ObjectBase::transform</a></div><div class="ttdeci">Transform transform</div><div class="ttdef"><b>Definition:</b> object_base.h:38</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

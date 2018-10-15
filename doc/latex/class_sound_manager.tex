@@ -18,7 +18,7 @@ Sound\+Manager の継承関係図\begin{figure}[H]
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-std\+::unique\+\_\+ptr$<$ Direct\+X\+::\+Sound\+Effect $>$ \& \mbox{\hyperlink{class_sound_manager_a3ba4b2fe49cdc051f33aa800851f8b98}{Get\+Sound}} (W\+C\+H\+AR $\ast$)
+std\+::unique\+\_\+ptr$<$ Direct\+X\+::\+Sound\+Effect $>$ \& \mbox{\hyperlink{class_sound_manager_ab97083f065caec6d4f59c246b1978faf}{Get\+Sound}} (std\+::string, W\+C\+H\+AR $\ast$)
 \begin{DoxyCompactList}\small\item\em サウンドを返す \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_sound_manager_adab2bc016911756ffd973c7d781b5cfb}{Init}} (H\+W\+ND)
 \begin{DoxyCompactList}\small\item\em サウンドマネージャークラスの初期化 \end{DoxyCompactList}\item 
@@ -57,11 +57,11 @@ void \mbox{\hyperlink{class_sound_manager_a6107940d2299131fbd7991a4f222491b}{Res
 \subsubsection{\texorpdfstring{Get\+Engine()}{GetEngine()}}
 {\footnotesize\ttfamily auto Sound\+Manager\+::\+Get\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_sound_manager_a3ba4b2fe49cdc051f33aa800851f8b98}\label{class_sound_manager_a3ba4b2fe49cdc051f33aa800851f8b98}} 
+\mbox{\Hypertarget{class_sound_manager_ab97083f065caec6d4f59c246b1978faf}\label{class_sound_manager_ab97083f065caec6d4f59c246b1978faf}} 
 \index{Sound\+Manager@{Sound\+Manager}!Get\+Sound@{Get\+Sound}}
 \index{Get\+Sound@{Get\+Sound}!Sound\+Manager@{Sound\+Manager}}
 \subsubsection{\texorpdfstring{Get\+Sound()}{GetSound()}}
-{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ Direct\+X\+::\+Sound\+Effect $>$ \& Sound\+Manager\+::\+Get\+Sound (\begin{DoxyParamCaption}\item[{W\+C\+H\+AR $\ast$}]{path }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ Direct\+X\+::\+Sound\+Effect $>$ \& Sound\+Manager\+::\+Get\+Sound (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{W\+C\+H\+AR $\ast$}]{path }\end{DoxyParamCaption})}
 
 
 
@@ -69,6 +69,8 @@ void \mbox{\hyperlink{class_sound_manager_a6107940d2299131fbd7991a4f222491b}{Res
 
 
 \begin{DoxyParams}{引数}
+{\em name} & mapで管理するためのキー \\
+\hline
 {\em path} & wavファイルのパス\\
 \hline
 \end{DoxyParams}

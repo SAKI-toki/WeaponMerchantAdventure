@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/object/camera/camera.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_bb043af75e54e1af3032f67529bb720c.html">object</a></li><li class="navelem"><a class="el" href="dir_43019dc382838ca2eebb15d4f65f2512.html">camera</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">camera.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="camera_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../../common/singleton.h&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../../transform/transform.h&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_camera.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_camera.html">Camera</a> :<span class="keyword">public</span> <a class="code" href="class_singleton.html">Singleton</a>&lt;Camera&gt;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="transform_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a> camera_pos;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_camera.html#a01f94c3543f56ede7af49dc778f19331">Camera</a>();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_camera.html#a01f94c3543f56ede7af49dc778f19331">Camera</a>(<span class="keyword">const</span> <a class="code" href="transform_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a>&amp;);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera.html#a5c6b7ad424d835a3022393099886a90b">Move</a>(<span class="keyword">const</span> <a class="code" href="transform_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a>&amp;);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera.html#af79aa3fedd030712e7fa122a2ea88b48">SetPos</a>(<span class="keyword">const</span> <a class="code" href="transform_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a>&amp;);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="transform_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a> <a class="code" href="class_camera.html#ac3b4f1248489c0ac0faa521329de71cd">GetPos</a>()<span class="keyword">const</span>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div><div class="ttc" id="class_singleton_html"><div class="ttname"><a href="class_singleton.html">Singleton</a></div><div class="ttdoc">Singletonテンプレートスーパークラス </div><div class="ttdef"><b>Definition:</b> singleton.h:15</div></div>
+<div class="ttc" id="class_camera_html"><div class="ttname"><a href="class_camera.html">Camera</a></div><div class="ttdoc">カメラクラス </div><div class="ttdef"><b>Definition:</b> camera.h:15</div></div>
+<div class="ttc" id="transform_8h_html_afb0c5e21d4133ff4f200992c0b534e1b"><div class="ttname"><a href="transform_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a></div><div class="ttdeci">DirectX::SimpleMath::Vector2 VEC2</div><div class="ttdef"><b>Definition:</b> transform.h:10</div></div>
+<div class="ttc" id="class_camera_html_ac3b4f1248489c0ac0faa521329de71cd"><div class="ttname"><a href="class_camera.html#ac3b4f1248489c0ac0faa521329de71cd">Camera::GetPos</a></div><div class="ttdeci">VEC2 GetPos() const</div><div class="ttdoc">カメラの位置を取得 </div><div class="ttdef"><b>Definition:</b> camera.cpp:45</div></div>
+<div class="ttc" id="class_camera_html_a01f94c3543f56ede7af49dc778f19331"><div class="ttname"><a href="class_camera.html#a01f94c3543f56ede7af49dc778f19331">Camera::Camera</a></div><div class="ttdeci">Camera()</div><div class="ttdoc">カメラのゼロ初期化コンストラクタ </div><div class="ttdef"><b>Definition:</b> camera.cpp:13</div></div>
+<div class="ttc" id="class_camera_html_af79aa3fedd030712e7fa122a2ea88b48"><div class="ttname"><a href="class_camera.html#af79aa3fedd030712e7fa122a2ea88b48">Camera::SetPos</a></div><div class="ttdeci">void SetPos(const VEC2 &amp;)</div><div class="ttdoc">カメラの位置変更 </div><div class="ttdef"><b>Definition:</b> camera.cpp:36</div></div>
+<div class="ttc" id="class_camera_html_a5c6b7ad424d835a3022393099886a90b"><div class="ttname"><a href="class_camera.html#a5c6b7ad424d835a3022393099886a90b">Camera::Move</a></div><div class="ttdeci">void Move(const VEC2 &amp;)</div><div class="ttdoc">カメラの移動 </div><div class="ttdef"><b>Definition:</b> camera.cpp:28</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>
