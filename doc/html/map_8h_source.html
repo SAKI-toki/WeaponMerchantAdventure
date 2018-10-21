@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/object/map/map.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_bb043af75e54e1af3032f67529bb720c.html">object</a></li><li class="navelem"><a class="el" href="dir_20239ddb789bd6dc60664d21d1b46579.html">map</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">map.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="map_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;../base/static/static_object.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../../collider/square/square_collider.h&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_map_object.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_map_object.html">MapObject</a> :<span class="keyword">public</span> <a class="code" href="class_static_object.html">StaticObject</a></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_square_collider.html">SquareCollider</a> collider;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_map_object.html#a3043cddb8aaad0eab27a076e9bee0284">InitProcess</a>()<span class="keyword">final</span>;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_map_object.html#ab6b8849f15175417eca94b2703945e4b">UpdateProcess</a>()<span class="keyword">final</span>;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_map_object.html#ad4bcfdc33bd945a9aa5e50a57c2704bc">Destroy</a>()<span class="keyword">final</span>;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_map_object.html#a568754515cc72ce0861d30c3040d26d2">   16</a></span>&#160;    <a class="code" href="class_map_object.html#a568754515cc72ce0861d30c3040d26d2">MapObject</a>() :collider(this, true, true)</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_object_base.html#aff7eb5482ca9bc1cd30b84994d0dad8b">object_tag</a> = <a class="code" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0ca5af1a3a285c2bdee4192223e31e1f833">OBJECT_TAG::MAP</a>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_map_object.html#aae3a8a07e453e38a58b01e2eea16a76a">   23</a></span>&#160;    <a class="code" href="class_map_object.html#aae3a8a07e453e38a58b01e2eea16a76a">MapObject</a>(<a class="code" href="class_map_object.html">MapObject</a>&amp;&amp; m) :</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        collider(this, true,true)</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        m.collider.<a class="code" href="class_square_collider.html#a83273e0e63692aa8020b8deedd456886">Destroy</a>();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="class_object_base.html#aff7eb5482ca9bc1cd30b84994d0dad8b">object_tag</a> = <a class="code" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0ca5af1a3a285c2bdee4192223e31e1f833">OBJECT_TAG::MAP</a>;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_map_object.html#a61c2b7e046b76d98adbf23c9e6302918">Collision</a>(<a class="code" href="class_object_base.html">ObjectBase</a>*, <a class="code" href="transform_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a>)<span class="keyword">final</span>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div><div class="ttc" id="transform_8h_html_afb0c5e21d4133ff4f200992c0b534e1b"><div class="ttname"><a href="transform_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a></div><div class="ttdeci">DirectX::SimpleMath::Vector2 VEC2</div><div class="ttdef"><b>Definition:</b> transform.h:10</div></div>
+<div class="ttc" id="class_static_object_html"><div class="ttname"><a href="class_static_object.html">StaticObject</a></div><div class="ttdoc">動かないオブジェクトのスーパークラス </div><div class="ttdef"><b>Definition:</b> static_object.h:12</div></div>
+<div class="ttc" id="class_map_object_html_a61c2b7e046b76d98adbf23c9e6302918"><div class="ttname"><a href="class_map_object.html#a61c2b7e046b76d98adbf23c9e6302918">MapObject::Collision</a></div><div class="ttdeci">void Collision(ObjectBase *, VEC2) final</div><div class="ttdoc">マップが当たってるときに実行する関数 </div><div class="ttdef"><b>Definition:</b> map.cpp:28</div></div>
+<div class="ttc" id="class_map_object_html"><div class="ttname"><a href="class_map_object.html">MapObject</a></div><div class="ttdef"><b>Definition:</b> map.h:5</div></div>
+<div class="ttc" id="class_object_base_html"><div class="ttname"><a href="class_object_base.html">ObjectBase</a></div><div class="ttdoc">オブジェクトのスーパークラス </div><div class="ttdef"><b>Definition:</b> object_base.h:17</div></div>
+<div class="ttc" id="class_map_object_html_a568754515cc72ce0861d30c3040d26d2"><div class="ttname"><a href="class_map_object.html#a568754515cc72ce0861d30c3040d26d2">MapObject::MapObject</a></div><div class="ttdeci">MapObject()</div><div class="ttdoc">コンストラクタ </div><div class="ttdef"><b>Definition:</b> map.h:16</div></div>
+<div class="ttc" id="class_map_object_html_ad4bcfdc33bd945a9aa5e50a57c2704bc"><div class="ttname"><a href="class_map_object.html#ad4bcfdc33bd945a9aa5e50a57c2704bc">MapObject::Destroy</a></div><div class="ttdeci">void Destroy() final</div><div class="ttdoc">マップの破棄 </div><div class="ttdef"><b>Definition:</b> map.cpp:20</div></div>
+<div class="ttc" id="object__base_8h_html_a0eff9883ab049ee02773dde19d057c0ca5af1a3a285c2bdee4192223e31e1f833"><div class="ttname"><a href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0ca5af1a3a285c2bdee4192223e31e1f833">OBJECT_TAG::MAP</a></div></div>
+<div class="ttc" id="class_square_collider_html"><div class="ttname"><a href="class_square_collider.html">SquareCollider</a></div><div class="ttdoc">四角形コライダクラス </div><div class="ttdef"><b>Definition:</b> square_collider.h:16</div></div>
+<div class="ttc" id="class_map_object_html_aae3a8a07e453e38a58b01e2eea16a76a"><div class="ttname"><a href="class_map_object.html#aae3a8a07e453e38a58b01e2eea16a76a">MapObject::MapObject</a></div><div class="ttdeci">MapObject(MapObject &amp;&amp;m)</div><div class="ttdoc">ムーブコンストラクタ </div><div class="ttdef"><b>Definition:</b> map.h:23</div></div>
+<div class="ttc" id="class_object_base_html_aff7eb5482ca9bc1cd30b84994d0dad8b"><div class="ttname"><a href="class_object_base.html#aff7eb5482ca9bc1cd30b84994d0dad8b">ObjectBase::object_tag</a></div><div class="ttdeci">OBJECT_TAG object_tag</div><div class="ttdef"><b>Definition:</b> object_base.h:34</div></div>
+<div class="ttc" id="class_map_object_html_ab6b8849f15175417eca94b2703945e4b"><div class="ttname"><a href="class_map_object.html#ab6b8849f15175417eca94b2703945e4b">MapObject::UpdateProcess</a></div><div class="ttdeci">void UpdateProcess() final</div><div class="ttdoc">マップの更新 </div><div class="ttdef"><b>Definition:</b> map.cpp:13</div></div>
+<div class="ttc" id="class_map_object_html_a3043cddb8aaad0eab27a076e9bee0284"><div class="ttname"><a href="class_map_object.html#a3043cddb8aaad0eab27a076e9bee0284">MapObject::InitProcess</a></div><div class="ttdeci">void InitProcess() final</div><div class="ttdoc">初期化 </div><div class="ttdef"><b>Definition:</b> map.cpp:6</div></div>
+<div class="ttc" id="class_square_collider_html_a83273e0e63692aa8020b8deedd456886"><div class="ttname"><a href="class_square_collider.html#a83273e0e63692aa8020b8deedd456886">SquareCollider::Destroy</a></div><div class="ttdeci">void Destroy()</div><div class="ttdoc">四角形のコライダの破棄 </div><div class="ttdef"><b>Definition:</b> square_collider.cpp:43</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

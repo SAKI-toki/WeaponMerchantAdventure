@@ -27,7 +27,11 @@ void \mbox{\hyperlink{class_camera_a5c6b7ad424d835a3022393099886a90b}{Move}} (co
 void \mbox{\hyperlink{class_camera_af79aa3fedd030712e7fa122a2ea88b48}{Set\+Pos}} (const \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&)
 \begin{DoxyCompactList}\small\item\em カメラの位置変更 \end{DoxyCompactList}\item 
 \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \mbox{\hyperlink{class_camera_ac3b4f1248489c0ac0faa521329de71cd}{Get\+Pos}} () const
-\begin{DoxyCompactList}\small\item\em カメラの位置を取得 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em カメラの位置を取得 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a4a596a3ea1fdc7d244ba4268031a360b}{Update}} ()
+\begin{DoxyCompactList}\small\item\em カメラの更新 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a7336f8f6c9145bee1ce6b1f16f0aaee4}{Set\+Target}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$t)
+\end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
 
 
@@ -106,6 +110,22 @@ V\+E\+C2\+:カメラの位置
 {\em v2} & 位置 \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_camera_a7336f8f6c9145bee1ce6b1f16f0aaee4}\label{class_camera_a7336f8f6c9145bee1ce6b1f16f0aaee4}} 
+\index{Camera@{Camera}!Set\+Target@{Set\+Target}}
+\index{Set\+Target@{Set\+Target}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Set\+Target()}{SetTarget()}}
+{\footnotesize\ttfamily void Camera\+::\+Set\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+brief ターゲットのセット \mbox{\Hypertarget{class_camera_a4a596a3ea1fdc7d244ba4268031a360b}\label{class_camera_a4a596a3ea1fdc7d244ba4268031a360b}} 
+\index{Camera@{Camera}!Update@{Update}}
+\index{Update@{Update}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Camera\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+カメラの更新 
+
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}

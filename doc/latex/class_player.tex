@@ -22,8 +22,8 @@ void \mbox{\hyperlink{class_player_af2cf4936165ef12cce96f7994e0879df}{Destroy}} 
 \begin{DoxyCompactList}\small\item\em プレイヤーの破棄 \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player}} ()
 \begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_player_a660421b69afc7cd6d0d97ea9a28251a2}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_player_a184fbb2c70e34fb6c6a0c2fc7e0f86c9}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}) final
+\begin{DoxyCompactList}\small\item\em 当たってるときに実行する関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{限定公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -51,15 +51,19 @@ void \mbox{\hyperlink{class_player_ab8accc9b83b030f5313f1b4872a7e634}{Update\+Pr
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_player_a660421b69afc7cd6d0d97ea9a28251a2}\label{class_player_a660421b69afc7cd6d0d97ea9a28251a2}} 
+\mbox{\Hypertarget{class_player_a184fbb2c70e34fb6c6a0c2fc7e0f86c9}\label{class_player_a184fbb2c70e34fb6c6a0c2fc7e0f86c9}} 
 \index{Player@{Player}!Collision@{Collision}}
 \index{Collision@{Collision}!Player@{Player}}
 \subsubsection{\texorpdfstring{Collision()}{Collision()}}
-{\footnotesize\ttfamily void Player\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Player\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_object_base_a1991d1c2c214a593feb6b6b24802a8c4}{Object\+Base}}を再実装しています。
+当たってるときに実行する関数 
+
+
+
+\mbox{\hyperlink{class_object_base_ad772d7a42f5e46c39481f5db22ee8193}{Object\+Base}}を再実装しています。
 
 \mbox{\Hypertarget{class_player_af2cf4936165ef12cce96f7994e0879df}\label{class_player_af2cf4936165ef12cce96f7994e0879df}} 
 \index{Player@{Player}!Destroy@{Destroy}}

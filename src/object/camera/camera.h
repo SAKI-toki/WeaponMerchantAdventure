@@ -15,10 +15,10 @@
 */
 class Camera :public Singleton<Camera>
 {
-	VEC2 camera_pos;
-	ObjectBase* target;
+	VEC2 camera_pos = VEC2::Zero;
+	ObjectBase* target = nullptr;
 public:
-	Camera();
+	Camera() {}
 	Camera(const VEC2&);
 	void Move(const VEC2&);
 	void SetPos(const VEC2&);

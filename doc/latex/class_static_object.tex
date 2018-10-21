@@ -12,22 +12,30 @@
 Static\+Object の継承関係図\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_static_object}
+\includegraphics[height=3.000000cm]{class_static_object}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_static_object_aac4b963c88ebffb128bcaf5abf09768b}{Destroy}} ()
+\mbox{\hyperlink{class_static_object_a2a8e918ddfe5c6723b88b9f5c4156472}{Static\+Object}} ()
+\item 
+virtual void \mbox{\hyperlink{class_static_object_a8e9fb321b4f8f12c4bec1bc66853512f}{Destroy}} ()
+\item 
+virtual void \mbox{\hyperlink{class_static_object_abe05f711f0d62319e1a11419813c5d50}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}})
+\item 
+virtual \mbox{\hyperlink{class_static_object_ac27301fc3d8d22aff5664f592c375cd8}{$\sim$\+Static\+Object}} ()
 \end{DoxyCompactItemize}
 \subsection*{限定公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_static_object_afec57009537695c4715386120a619942}{Render\+Process}} (bool)
 \begin{DoxyCompactList}\small\item\em 描画 \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_static_object_ae9563da84f7045d6206c938963d5aecf}{Init\+Process}} ()
+virtual void \mbox{\hyperlink{class_static_object_afa0709f50495338a23c1140062a567af}{Init\+Process}} ()
 \item 
-void \mbox{\hyperlink{class_static_object_a0dd0ec514aa597a1dd83a1168902a079}{Update\+Process}} ()
+virtual void \mbox{\hyperlink{class_static_object_a7fa678c3c4032bb6e9417f93a8bb895c}{Update\+Process}} ()
+\item 
+virtual void \mbox{\hyperlink{class_static_object_ab17d0cb5b2544054022356a7ee4000db}{Collision\+Process}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}})
 \end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
 
@@ -35,26 +43,69 @@ void \mbox{\hyperlink{class_static_object_a0dd0ec514aa597a1dd83a1168902a079}{Upd
 \subsection{詳解}
 動かないオブジェクトのスーパークラス 
 
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_static_object_a2a8e918ddfe5c6723b88b9f5c4156472}\label{class_static_object_a2a8e918ddfe5c6723b88b9f5c4156472}} 
+\index{Static\+Object@{Static\+Object}!Static\+Object@{Static\+Object}}
+\index{Static\+Object@{Static\+Object}!Static\+Object@{Static\+Object}}
+\subsubsection{\texorpdfstring{Static\+Object()}{StaticObject()}}
+{\footnotesize\ttfamily Static\+Object\+::\+Static\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_static_object_ac27301fc3d8d22aff5664f592c375cd8}\label{class_static_object_ac27301fc3d8d22aff5664f592c375cd8}} 
+\index{Static\+Object@{Static\+Object}!````~Static\+Object@{$\sim$\+Static\+Object}}
+\index{````~Static\+Object@{$\sim$\+Static\+Object}!Static\+Object@{Static\+Object}}
+\subsubsection{\texorpdfstring{$\sim$\+Static\+Object()}{~StaticObject()}}
+{\footnotesize\ttfamily virtual Static\+Object\+::$\sim$\+Static\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_static_object_aac4b963c88ebffb128bcaf5abf09768b}\label{class_static_object_aac4b963c88ebffb128bcaf5abf09768b}} 
+\mbox{\Hypertarget{class_static_object_abe05f711f0d62319e1a11419813c5d50}\label{class_static_object_abe05f711f0d62319e1a11419813c5d50}} 
+\index{Static\+Object@{Static\+Object}!Collision@{Collision}}
+\index{Collision@{Collision}!Static\+Object@{Static\+Object}}
+\subsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily virtual void Static\+Object\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{,  }\item[{\mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_object_base_ad772d7a42f5e46c39481f5db22ee8193}{Object\+Base}}を再実装しています。
+
+
+
+\mbox{\hyperlink{class_map_object_a61c2b7e046b76d98adbf23c9e6302918}{Map\+Object}}で再実装されています。
+
+\mbox{\Hypertarget{class_static_object_ab17d0cb5b2544054022356a7ee4000db}\label{class_static_object_ab17d0cb5b2544054022356a7ee4000db}} 
+\index{Static\+Object@{Static\+Object}!Collision\+Process@{Collision\+Process}}
+\index{Collision\+Process@{Collision\+Process}!Static\+Object@{Static\+Object}}
+\subsubsection{\texorpdfstring{Collision\+Process()}{CollisionProcess()}}
+{\footnotesize\ttfamily virtual void Static\+Object\+::\+Collision\+Process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{,  }\item[{\mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_static_object_a8e9fb321b4f8f12c4bec1bc66853512f}\label{class_static_object_a8e9fb321b4f8f12c4bec1bc66853512f}} 
 \index{Static\+Object@{Static\+Object}!Destroy@{Destroy}}
 \index{Destroy@{Destroy}!Static\+Object@{Static\+Object}}
 \subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
-{\footnotesize\ttfamily void Static\+Object\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual void Static\+Object\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
 \mbox{\hyperlink{class_object_base_a7fa4c548153c3af20f89673ffea809af}{Object\+Base}}を実装しています。
 
-\mbox{\Hypertarget{class_static_object_ae9563da84f7045d6206c938963d5aecf}\label{class_static_object_ae9563da84f7045d6206c938963d5aecf}} 
+
+
+\mbox{\hyperlink{class_map_object_ad4bcfdc33bd945a9aa5e50a57c2704bc}{Map\+Object}}で再実装されています。
+
+\mbox{\Hypertarget{class_static_object_afa0709f50495338a23c1140062a567af}\label{class_static_object_afa0709f50495338a23c1140062a567af}} 
 \index{Static\+Object@{Static\+Object}!Init\+Process@{Init\+Process}}
 \index{Init\+Process@{Init\+Process}!Static\+Object@{Static\+Object}}
 \subsubsection{\texorpdfstring{Init\+Process()}{InitProcess()}}
-{\footnotesize\ttfamily void Static\+Object\+::\+Init\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual void Static\+Object\+::\+Init\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
 
 
 \mbox{\hyperlink{class_object_base_af133f36f2bca1dcfd962e2cfac61ab51}{Object\+Base}}を実装しています。
+
+
+
+\mbox{\hyperlink{class_map_object_a3043cddb8aaad0eab27a076e9bee0284}{Map\+Object}}で再実装されています。
 
 \mbox{\Hypertarget{class_static_object_afec57009537695c4715386120a619942}\label{class_static_object_afec57009537695c4715386120a619942}} 
 \index{Static\+Object@{Static\+Object}!Render\+Process@{Render\+Process}}
@@ -75,15 +126,19 @@ void \mbox{\hyperlink{class_static_object_a0dd0ec514aa597a1dd83a1168902a079}{Upd
 
 \mbox{\hyperlink{class_object_base_aeac51d868beeb7f7fe900407b76b93a2}{Object\+Base}}を実装しています。
 
-\mbox{\Hypertarget{class_static_object_a0dd0ec514aa597a1dd83a1168902a079}\label{class_static_object_a0dd0ec514aa597a1dd83a1168902a079}} 
+\mbox{\Hypertarget{class_static_object_a7fa678c3c4032bb6e9417f93a8bb895c}\label{class_static_object_a7fa678c3c4032bb6e9417f93a8bb895c}} 
 \index{Static\+Object@{Static\+Object}!Update\+Process@{Update\+Process}}
 \index{Update\+Process@{Update\+Process}!Static\+Object@{Static\+Object}}
 \subsubsection{\texorpdfstring{Update\+Process()}{UpdateProcess()}}
-{\footnotesize\ttfamily void Static\+Object\+::\+Update\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual void Static\+Object\+::\+Update\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
 
 
 \mbox{\hyperlink{class_object_base_a8b5b72b363a419767efde0b0e692ea95}{Object\+Base}}を実装しています。
+
+
+
+\mbox{\hyperlink{class_map_object_ab6b8849f15175417eca94b2703945e4b}{Map\+Object}}で再実装されています。
 
 
 

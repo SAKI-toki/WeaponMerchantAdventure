@@ -20,9 +20,9 @@ class SquareCollider :public ColliderBase
 	*/
 	struct SquareStatus
 	{
-		VEC2 center_pos;
-		float width, height;
-		float rot;
+		VEC2 center_pos;		//位置
+		float width, height;	//幅、高さ
+		float rot;				//回転
 		/**
 		* @brief 初期化
 		* @param pos 位置
@@ -33,14 +33,30 @@ class SquareCollider :public ColliderBase
 		{
 			center_pos = _pos, width = w, height = h, rot = _rot;
 		}
+		/**
+		* @brief コピー代入演算子
+		*/
+		SquareStatus& operator=(const SquareStatus& other)
+		{
+			if (this != &other)
+			{
+				this->center_pos = other.center_pos;
+				this->width = other.width;
+				this->height = other.height;
+				this->rot = other.rot;
+			}
+			return *this;
+		}
 	};
 	//四角形のステータス
 	SquareStatus status;
+	//静的かどうか
+	bool is_static;
 public:
 	//コンストラクタ
 	SquareCollider(ObjectBase*, bool = false, bool = false);
 	//ステータスをセットする
-	void SetStatus(VEC2 pos, float w, float h, float rot);
+	void SetStatus(const VEC2& pos, const float w, const float h, const float rot, const float scale);
 	//当たったときの押し出し
 	void CollisionExtrusion(const VEC2&);
 	/**
@@ -50,4 +66,6 @@ public:
 	const SquareStatus& GetStatus()const { return status; }
 	//破棄
 	void Destroy();
+
+	SquareCollider& operator=(const SquareCollider& other);
 };

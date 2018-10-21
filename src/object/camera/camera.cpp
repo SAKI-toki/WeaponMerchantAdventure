@@ -8,12 +8,6 @@
 #include "../../common/common.h"
 
 /**
-* @brief カメラのゼロ初期化コンストラクタ
-*/
-Camera::Camera() :
-	camera_pos(VEC2::Zero)
-{}
-/**
 * @brief カメラの値を受け取る初期化コンストラクタ
 * @param v2 初期化する値
 */
@@ -52,5 +46,8 @@ VEC2 Camera::GetPos()const
 */
 void Camera::Update()
 {
-	SetPos(target->transform.pos);
+	if (target != nullptr)
+	{
+		SetPos(target->transform.pos);
+	}
 }

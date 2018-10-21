@@ -15,8 +15,23 @@ protected:
 	void RenderProcess(bool);
 	virtual void InitProcess() {}
 	virtual void UpdateProcess() {}
-	virtual void CollisionProcess(ObjectBase*,VEC2) {}
+	virtual void CollisionProcess(ObjectBase*, VEC2) {}
 public:
+	/**
+	* @brief コンストラクタ
+	*/
+	StaticObject() :ObjectBase(false) {}
+	/**
+	* @brief コピー代入演算子
+	*/
+	StaticObject& operator=(const StaticObject& other)
+	{
+		if (this != &other)
+		{
+			ObjectBase::operator=(other);
+		}
+		return *this;
+	}
 	virtual void Destroy(){}
 	virtual void Collision(ObjectBase*, VEC2) {}
 	

@@ -1,0 +1,119 @@
+\hypertarget{class_map_object}{}\section{Map\+Object クラス}
+\label{class_map_object}\index{Map\+Object@{Map\+Object}}
+
+
+{\ttfamily \#include $<$map.\+h$>$}
+
+Map\+Object の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_map_object}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_map_object_ad4bcfdc33bd945a9aa5e50a57c2704bc}{Destroy}} () final
+\begin{DoxyCompactList}\small\item\em マップの破棄 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_map_object_a568754515cc72ce0861d30c3040d26d2}{Map\+Object}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_map_object_aae3a8a07e453e38a58b01e2eea16a76a}{Map\+Object}} (\mbox{\hyperlink{class_map_object}{Map\+Object}} \&\&m)
+\begin{DoxyCompactList}\small\item\em ムーブコンストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_object_a61c2b7e046b76d98adbf23c9e6302918}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}) final
+\begin{DoxyCompactList}\small\item\em マップが当たってるときに実行する関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_map_object_a3043cddb8aaad0eab27a076e9bee0284}{Init\+Process}} () final
+\begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_object_ab6b8849f15175417eca94b2703945e4b}{Update\+Process}} () final
+\begin{DoxyCompactList}\small\item\em マップの更新 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_map_object_a568754515cc72ce0861d30c3040d26d2}\label{class_map_object_a568754515cc72ce0861d30c3040d26d2}} 
+\index{Map\+Object@{Map\+Object}!Map\+Object@{Map\+Object}}
+\index{Map\+Object@{Map\+Object}!Map\+Object@{Map\+Object}}
+\subsubsection{\texorpdfstring{Map\+Object()}{MapObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Map\+Object\+::\+Map\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{class_map_object_aae3a8a07e453e38a58b01e2eea16a76a}\label{class_map_object_aae3a8a07e453e38a58b01e2eea16a76a}} 
+\index{Map\+Object@{Map\+Object}!Map\+Object@{Map\+Object}}
+\index{Map\+Object@{Map\+Object}!Map\+Object@{Map\+Object}}
+\subsubsection{\texorpdfstring{Map\+Object()}{MapObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Map\+Object\+::\+Map\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_map_object}{Map\+Object}} \&\&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ムーブコンストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_map_object_a61c2b7e046b76d98adbf23c9e6302918}\label{class_map_object_a61c2b7e046b76d98adbf23c9e6302918}} 
+\index{Map\+Object@{Map\+Object}!Collision@{Collision}}
+\index{Collision@{Collision}!Map\+Object@{Map\+Object}}
+\subsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void Map\+Object\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+マップが当たってるときに実行する関数 
+
+
+
+\mbox{\hyperlink{class_static_object_abe05f711f0d62319e1a11419813c5d50}{Static\+Object}}を再実装しています。
+
+\mbox{\Hypertarget{class_map_object_ad4bcfdc33bd945a9aa5e50a57c2704bc}\label{class_map_object_ad4bcfdc33bd945a9aa5e50a57c2704bc}} 
+\index{Map\+Object@{Map\+Object}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Map\+Object@{Map\+Object}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Map\+Object\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+マップの破棄 
+
+
+
+\mbox{\hyperlink{class_static_object_a8e9fb321b4f8f12c4bec1bc66853512f}{Static\+Object}}を再実装しています。
+
+\mbox{\Hypertarget{class_map_object_a3043cddb8aaad0eab27a076e9bee0284}\label{class_map_object_a3043cddb8aaad0eab27a076e9bee0284}} 
+\index{Map\+Object@{Map\+Object}!Init\+Process@{Init\+Process}}
+\index{Init\+Process@{Init\+Process}!Map\+Object@{Map\+Object}}
+\subsubsection{\texorpdfstring{Init\+Process()}{InitProcess()}}
+{\footnotesize\ttfamily void Map\+Object\+::\+Init\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+初期化 
+
+
+
+\mbox{\hyperlink{class_static_object_afa0709f50495338a23c1140062a567af}{Static\+Object}}を再実装しています。
+
+\mbox{\Hypertarget{class_map_object_ab6b8849f15175417eca94b2703945e4b}\label{class_map_object_ab6b8849f15175417eca94b2703945e4b}} 
+\index{Map\+Object@{Map\+Object}!Update\+Process@{Update\+Process}}
+\index{Update\+Process@{Update\+Process}!Map\+Object@{Map\+Object}}
+\subsubsection{\texorpdfstring{Update\+Process()}{UpdateProcess()}}
+{\footnotesize\ttfamily void Map\+Object\+::\+Update\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+マップの更新 
+
+
+
+\mbox{\hyperlink{class_static_object_a7fa678c3c4032bb6e9417f93a8bb895c}{Static\+Object}}を再実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/map/\mbox{\hyperlink{map_8h}{map.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/map/\mbox{\hyperlink{map_8cpp}{map.\+cpp}}\end{DoxyCompactItemize}

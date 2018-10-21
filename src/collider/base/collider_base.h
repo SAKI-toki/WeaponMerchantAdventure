@@ -14,17 +14,17 @@ class ColliderBase
 {
 public:
 	//押し出しするかどうか
-	const bool is_trigger;
+	bool is_trigger;
 	//x方向に対して押し出ししないものぶつかったかどうか
-	bool collision_is_trigger_x;
+	bool collision_is_static_x = false;
 	//y方向に対して押し出ししないものぶつかったかどうか
-	bool collision_is_trigger_y;
+	bool collision_is_static_y = false;
 	//このコライダを持つオブジェクト
 	ObjectBase* object;
 	//当たっているときに実行する関数
 	std::function<void(ObjectBase*,VEC2)> collision_func;
 	//判定するかどうか
-	bool enabled;
+	bool enabled = true;
 
 	/**
 	* @brief コンストラクタ
@@ -32,10 +32,27 @@ public:
 	* @param _is_trigger 押し出しするかどうか
 	*/
 	ColliderBase(ObjectBase* obj, bool _is_trigger = false) :
-		enabled(true), object(obj), is_trigger(_is_trigger), collision_is_trigger_x(false), collision_is_trigger_y(false)
+		object(obj), is_trigger(_is_trigger)
 	{
 		//当たったときに実行する関数を格納
 		collision_func = std::bind(&ObjectBase::Collision, obj, std::placeholders::_1, std::placeholders::_2);
+	}
+
+	/**
+	* @brief コピー代入演算子
+	*/
+	ColliderBase& operator=(const ColliderBase& other)
+	{
+		if (this != &other)
+		{
+			this->collision_func = other.collision_func;
+			this->collision_is_static_x = other.collision_is_static_x;
+			this->collision_is_static_y = other.collision_is_static_y;
+			this->enabled = other.enabled;
+			this->is_trigger = other.is_trigger;
+			this->object = other.object;
+		}
+		return *this;
 	}
 
 	virtual ~ColliderBase() {}

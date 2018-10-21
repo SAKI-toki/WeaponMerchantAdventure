@@ -5,6 +5,7 @@
 * @date 2018/10/07
 */
 #pragma once
+#include <Windows.h>
 namespace
 {
 	//定数定義
@@ -14,7 +15,8 @@ namespace
 	inline constexpr bool FULL_SCREEN = false;//フルスクリーンかどうか
 	inline constexpr int WINDOW_WIDTH = 1920;//ウィンドウの幅
 	inline constexpr int WINDOW_HEIGHT = 1080;//ウィンドウの高さ
-	inline constexpr float STICK_DEAD_ZONE = 0.3f;//スティックのデッドゾーン
+	inline constexpr float L_STICK_DEAD_ZONE = 0.3f;//左スティックのデッドゾーン
+	inline constexpr float R_STICK_DEAD_ZONE = 0.05f;//右スティックのデッドゾーン
 	inline constexpr float TRIGGER_DEAD_ZONE = 0.3f;//トリガーのデッドゾーン
 	inline constexpr int MAX_CONTROLLERS = 1;//コントローラーの数
 	//円周率の変数テンプレート
@@ -24,8 +26,12 @@ namespace
 	inline constexpr WCHAR* sound_path = L"resources/sound/";		//サウンドのパス
 	//メッセージボックスを使いやすくした
 	template<typename T1,typename T2>
-	void Comment(const T1& t1, const T2& t2)
+	void Comment(const T1& t1, const T2& t2 = L"")
 	{
 		MessageBox(NULL, t1, t2, MB_OK);
+	}
+	void Comment()
+	{
+		MessageBox(NULL, L"", L"", MB_OK);
 	}
 }

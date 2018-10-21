@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['player',['Player',['../class_player.html',1,'']]]
+  ['mapobject',['MapObject',['../class_map_object.html',1,'']]]
 ];

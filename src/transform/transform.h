@@ -10,27 +10,27 @@
 using VEC2 = DirectX::SimpleMath::Vector2;
 
 /**
-* @transformクラス
+* @brief transformクラス
 */
 class Transform
 {
 public:
-	VEC2 pos;	//位置
-	float rot;	//回転
-	float scale;//拡大・縮小
-	VEC2 size;
+	VEC2 pos=VEC2::Zero;	//位置
+	float rot=0.0f;	//回転
+	float scale=0.0f;//拡大・縮小
+	VEC2 size=VEC2::Zero;//サイズ
 
 	//コンストラクタ
-	Transform();
-	Transform(const float, const float = 0, const float = 0, const float = 1);
-	Transform(const VEC2& _pos, const float _rot, const float _scale);
+	Transform() {}
+	Transform(const float, const float = 0, const float = 0, const float = 1, const float = 0, const float = 0);
+	Transform(const VEC2& _pos, const float _rot, const float _scale,const VEC2& =VEC2::Zero);
 
 	//コピーコンストラクタ
 	Transform(const Transform& t);
 
 	//初期化
-	void Init(const float, const float = 0, const float = 0, const float = 1);
-	void Init(const VEC2& _pos, const float _rot, const float _scale);
+	void Init(const float, const float = 0, const float = 0, const float = 1, const float = 0, const float = 0);
+	void Init(const VEC2& _pos, const float _rot, const float _scale,const VEC2&);
 	void Init(const Transform& t);
 
 	//移動

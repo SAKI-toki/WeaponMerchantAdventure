@@ -13,7 +13,22 @@
 class DynamicObject :public ObjectBase
 {
 protected:
-	void RenderProcess(bool);
+	virtual void RenderProcess(bool);
 public:
+	/**
+	* @brief コンストラクタ
+	*/
+	DynamicObject() :ObjectBase(true) {}
+	/**
+	* @brief コピー代入演算子
+	*/
+	DynamicObject& operator=(const DynamicObject& other)
+	{
+		if (this != &other)
+		{
+			ObjectBase::operator=(other);
+		}
+		return *this;
+	}
 	virtual ~DynamicObject() {}
 };

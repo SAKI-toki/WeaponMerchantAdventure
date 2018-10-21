@@ -6,6 +6,7 @@
 */
 #include "scene_manager.h"
 #include "../main/title/title_scene.h"
+#include "../main/game/game_scene.h"
 #include "../../input/gamepad/gamepad_input.h"
 #include "../../sound/manager/sound_manager.h"
 #include "../../rendering/sprite/manager/sprite_manager.h"
@@ -33,8 +34,10 @@ void SceneManager::Update()
 	auto next_scene = scene_ptr->Update();
 	if (next_scene != my_scene)
 	{
+		my_scene = next_scene;
 		//ƒV[ƒ“‘JˆÚ
 		scene_ptr->Destroy();
+		ColliderManager::GetInstance()->Reset();
 		scene_ptr = switch_scene(next_scene);
 		scene_ptr->Init();
 	}
@@ -72,6 +75,8 @@ std::unique_ptr<Scene> SceneManager::switch_scene(const SCENE scene)const
 	{
 	case SCENE::TITLE:
 		return std::make_unique<TitleScene>();
+	case SCENE::GAME:
+		return std::make_unique<GameScene>();
 	}
 	return nullptr;
 }

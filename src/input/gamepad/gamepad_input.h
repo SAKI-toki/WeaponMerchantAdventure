@@ -50,12 +50,26 @@ public:
 
 
 	///--ゲッタ--
-	//ボタンの状態を返す
-	bool GetButtonDown(BUTTON k)const { return controller.bConnected&&button_down[static_cast<int>(k)]; };
-	bool GetButton(BUTTON k)const { return controller.bConnected&&button[static_cast<int>(k)]; };
-	bool GetButtonUp(BUTTON k)const { return controller.bConnected&&button_up[static_cast<int>(k)]; };
+	/**
+	* @brief ボタンを押したかどうか
+	* @param k 判定するボタン
+	*/
+	bool GetButtonDown(BUTTON b)const { return controller.bConnected&&controller.bConnected&&button_down[static_cast<int>(b)]; };
+	/**
+	* @brief ボタンを押しているかどうか
+	* @param k 判定するボタン
+	*/
+	bool GetButton(BUTTON b)const { return controller.bConnected&&controller.bConnected&&button[static_cast<int>(b)]; };
+	/**
+	* @brief ボタンを離したかどうか
+	* @param k 判定するボタン
+	*/
+	bool GetButtonUp(BUTTON b)const { return controller.bConnected&&controller.bConnected&&button_up[static_cast<int>(b)]; };
 
-	//トリガーの状態を返す
+	/**
+	* @brief トリガーの状態を返す
+	* @param right 判定するのが右かどうか
+	*/
 	float GetTrigger(const bool right)const
 	{
 		//つながっていなかったら0を返す
@@ -69,7 +83,11 @@ public:
 		return 0;
 	};
 
-	//スティックの状態を返す
+	/**
+	* @brief スティックの状態を返す
+	* @param right 判定するのが右かどうか
+	* @param right 判定するのがxかどうか
+	*/
 	float GetStick(const bool right, const bool x)const
 	{
 		//つながっていなかったら0を返す
@@ -78,7 +96,7 @@ public:
 			(x ? controller.state.Gamepad.sThumbRX : controller.state.Gamepad.sThumbRY) :
 			x ? controller.state.Gamepad.sThumbLX : controller.state.Gamepad.sThumbLY) / 32767.0f;
 
-		if (std::abs(stick) > STICK_DEAD_ZONE)
+		if (std::abs(stick) > (right ? R_STICK_DEAD_ZONE : L_STICK_DEAD_ZONE))
 		{
 			return stick;
 		}

@@ -20,26 +20,28 @@ struct FontColor
 */
 class Font
 {
-	WCHAR* text;
-	const Transform& transform;
+	WCHAR text[100];
+	Transform transform;
 	FontColor color;
 public:
-	//デフォルトコンストラクタ削除
-	Font() = delete;
 
-	Font(const Transform&);
-
-	void Init(WCHAR* _text, float r = 1, float g = 1, float b = 1, float a = 1);
+	void Init(WCHAR* _text, float r = 0, float g = 0, float b = 0, float a = 1);
 	void Render();
 
 	/**
 	* @brief 文字列のセット
 	* @param _text セットする文字列
 	*/
-	void SetText(WCHAR* _text) { text = _text; }
+	void SetText(WCHAR* _text) { wcscpy_s(text, _text); }
 	/**
 	* @brief テキストを取得する
 	* @return WCHAR* テキスト
 	*/
 	WCHAR* GetText() { return text; }
+
+	/**
+	* @brief 位置をセット
+	* @return t 位置や回転等を含む
+	*/
+	void SetTransform(const Transform& t) { transform = t; }
 };

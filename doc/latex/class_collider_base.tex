@@ -18,16 +18,22 @@ Collider\+Base の継承関係図\begin{figure}[H]
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_collider_base_a0d407592309c7cc2ee3fbd9ed8ff90fd}{Collider\+Base}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$obj)
+\mbox{\hyperlink{class_collider_base_a61d7057a7e05549088f2b15c1e525858}{Collider\+Base}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$obj, bool \+\_\+is\+\_\+trigger=false)
 \begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_collider_base_a485c8a6348a053228aa61142a71e48fb}{$\sim$\+Collider\+Base}} ()
 \end{DoxyCompactItemize}
 \subsection*{公開変数類}
 \begin{DoxyCompactItemize}
 \item 
+const bool \mbox{\hyperlink{class_collider_base_a0664409b8b88719fd5ac4bd350ea3b8f}{is\+\_\+trigger}}
+\item 
+bool \mbox{\hyperlink{class_collider_base_ae26c13f9f9ac56fe2b8010d6fa9eb504}{collision\+\_\+is\+\_\+trigger\+\_\+x}}
+\item 
+bool \mbox{\hyperlink{class_collider_base_a920eaa089f531e1e62b1ce8898b46453}{collision\+\_\+is\+\_\+trigger\+\_\+y}}
+\item 
 \mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$ \mbox{\hyperlink{class_collider_base_a63adac6a75877857abe9ff2cf4274157}{object}}
 \item 
-std\+::function$<$ void(\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$)$>$ \mbox{\hyperlink{class_collider_base_a8b948d3373acccf67573bcb6029f7572}{collision\+\_\+func}}
+std\+::function$<$ void(\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}})$>$ \mbox{\hyperlink{class_collider_base_a5ac4f3c76c753790abef75e3eb7accbe}{collision\+\_\+func}}
 \item 
 bool \mbox{\hyperlink{class_collider_base_a812053f247dc6357357bdf9353dded77}{enabled}}
 \end{DoxyCompactItemize}
@@ -37,11 +43,11 @@ bool \mbox{\hyperlink{class_collider_base_a812053f247dc6357357bdf9353dded77}{ena
 コライダのスーパークラス 
 
 \subsection{構築子と解体子}
-\mbox{\Hypertarget{class_collider_base_a0d407592309c7cc2ee3fbd9ed8ff90fd}\label{class_collider_base_a0d407592309c7cc2ee3fbd9ed8ff90fd}} 
+\mbox{\Hypertarget{class_collider_base_a61d7057a7e05549088f2b15c1e525858}\label{class_collider_base_a61d7057a7e05549088f2b15c1e525858}} 
 \index{Collider\+Base@{Collider\+Base}!Collider\+Base@{Collider\+Base}}
 \index{Collider\+Base@{Collider\+Base}!Collider\+Base@{Collider\+Base}}
 \subsubsection{\texorpdfstring{Collider\+Base()}{ColliderBase()}}
-{\footnotesize\ttfamily Collider\+Base\+::\+Collider\+Base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Collider\+Base\+::\+Collider\+Base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{bool}]{\+\_\+is\+\_\+trigger = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -50,6 +56,8 @@ bool \mbox{\hyperlink{class_collider_base_a812053f247dc6357357bdf9353dded77}{ena
 
 \begin{DoxyParams}{引数}
 {\em obj} & オブジェクト \\
+\hline
+{\em \+\_\+is\+\_\+trigger} & 押し出しするかどうか \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{class_collider_base_a485c8a6348a053228aa61142a71e48fb}\label{class_collider_base_a485c8a6348a053228aa61142a71e48fb}} 
@@ -61,17 +69,35 @@ bool \mbox{\hyperlink{class_collider_base_a812053f247dc6357357bdf9353dded77}{ena
 
 
 \subsection{メンバ詳解}
-\mbox{\Hypertarget{class_collider_base_a8b948d3373acccf67573bcb6029f7572}\label{class_collider_base_a8b948d3373acccf67573bcb6029f7572}} 
+\mbox{\Hypertarget{class_collider_base_a5ac4f3c76c753790abef75e3eb7accbe}\label{class_collider_base_a5ac4f3c76c753790abef75e3eb7accbe}} 
 \index{Collider\+Base@{Collider\+Base}!collision\+\_\+func@{collision\+\_\+func}}
 \index{collision\+\_\+func@{collision\+\_\+func}!Collider\+Base@{Collider\+Base}}
 \subsubsection{\texorpdfstring{collision\+\_\+func}{collision\_func}}
-{\footnotesize\ttfamily std\+::function$<$void(\mbox{\hyperlink{class_object_base}{Object\+Base}}$\ast$)$>$ Collider\+Base\+::collision\+\_\+func}
+{\footnotesize\ttfamily std\+::function$<$void(\mbox{\hyperlink{class_object_base}{Object\+Base}}$\ast$,\mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}})$>$ Collider\+Base\+::collision\+\_\+func}
+
+\mbox{\Hypertarget{class_collider_base_ae26c13f9f9ac56fe2b8010d6fa9eb504}\label{class_collider_base_ae26c13f9f9ac56fe2b8010d6fa9eb504}} 
+\index{Collider\+Base@{Collider\+Base}!collision\+\_\+is\+\_\+trigger\+\_\+x@{collision\+\_\+is\+\_\+trigger\+\_\+x}}
+\index{collision\+\_\+is\+\_\+trigger\+\_\+x@{collision\+\_\+is\+\_\+trigger\+\_\+x}!Collider\+Base@{Collider\+Base}}
+\subsubsection{\texorpdfstring{collision\+\_\+is\+\_\+trigger\+\_\+x}{collision\_is\_trigger\_x}}
+{\footnotesize\ttfamily bool Collider\+Base\+::collision\+\_\+is\+\_\+trigger\+\_\+x}
+
+\mbox{\Hypertarget{class_collider_base_a920eaa089f531e1e62b1ce8898b46453}\label{class_collider_base_a920eaa089f531e1e62b1ce8898b46453}} 
+\index{Collider\+Base@{Collider\+Base}!collision\+\_\+is\+\_\+trigger\+\_\+y@{collision\+\_\+is\+\_\+trigger\+\_\+y}}
+\index{collision\+\_\+is\+\_\+trigger\+\_\+y@{collision\+\_\+is\+\_\+trigger\+\_\+y}!Collider\+Base@{Collider\+Base}}
+\subsubsection{\texorpdfstring{collision\+\_\+is\+\_\+trigger\+\_\+y}{collision\_is\_trigger\_y}}
+{\footnotesize\ttfamily bool Collider\+Base\+::collision\+\_\+is\+\_\+trigger\+\_\+y}
 
 \mbox{\Hypertarget{class_collider_base_a812053f247dc6357357bdf9353dded77}\label{class_collider_base_a812053f247dc6357357bdf9353dded77}} 
 \index{Collider\+Base@{Collider\+Base}!enabled@{enabled}}
 \index{enabled@{enabled}!Collider\+Base@{Collider\+Base}}
 \subsubsection{\texorpdfstring{enabled}{enabled}}
 {\footnotesize\ttfamily bool Collider\+Base\+::enabled}
+
+\mbox{\Hypertarget{class_collider_base_a0664409b8b88719fd5ac4bd350ea3b8f}\label{class_collider_base_a0664409b8b88719fd5ac4bd350ea3b8f}} 
+\index{Collider\+Base@{Collider\+Base}!is\+\_\+trigger@{is\+\_\+trigger}}
+\index{is\+\_\+trigger@{is\+\_\+trigger}!Collider\+Base@{Collider\+Base}}
+\subsubsection{\texorpdfstring{is\+\_\+trigger}{is\_trigger}}
+{\footnotesize\ttfamily const bool Collider\+Base\+::is\+\_\+trigger}
 
 \mbox{\Hypertarget{class_collider_base_a63adac6a75877857abe9ff2cf4274157}\label{class_collider_base_a63adac6a75877857abe9ff2cf4274157}} 
 \index{Collider\+Base@{Collider\+Base}!object@{object}}

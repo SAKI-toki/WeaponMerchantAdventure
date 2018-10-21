@@ -8,7 +8,7 @@
 
 /**
 * @brief 初期化
-* @param name mapで管理するためのキー
+* @param name テクスチャをロードするためのキー
 * @param path テクスチャのパス
 * @param w,h テクスチャのサイズ
 * @param pos 初期位置
@@ -20,8 +20,7 @@
 void ObjectBase::Init(std::string name, WCHAR* path, const LONG w, const LONG h,
 	VEC2 pos, float rot, float scale, bool all_render)
 {
-	transform.Init(pos, rot, scale);
-	transform.size = VEC2(static_cast<float>(w), static_cast<float>(h));
+	transform.Init(pos, rot, scale, VEC2(static_cast<float>(w), static_cast<float>(h)));
 	sprite.Init(name, path, all_render, w, h);
 	InitProcess();
 }

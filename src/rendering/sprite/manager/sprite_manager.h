@@ -2,12 +2,15 @@
 * @file sprite_manager.h
 * @brief SpriteManagerクラスの宣言
 * @author 石山　悠
-* @date 2018/10/11
+* @date 2018/10/19
 */
 #pragma once
 #include "../../../common/singleton.h"
+#include "../../../transform/transform.h"
 #include <SpriteBatch.h>
+#include <CommonStates.h>
 #include <wrl.h>
+#include "../../../../Main.h"
 template<typename T>
 using CP = Microsoft::WRL::ComPtr<T>;
 
@@ -24,9 +27,11 @@ class SpriteManager :public Singleton<SpriteManager>
 	//デバイス関係
 	ID3D11Device* device;
 	ID3D11DeviceContext* deviceContext;
+	std::unique_ptr<DirectX::CommonStates> commonState;
 public:
 	void Init();
-	CP<ID3D11ShaderResourceView>& GetTexture(std::string, WCHAR*);
+	void SetTexture(std::string, WCHAR*);
+	void Render(const Transform&, bool, bool, const std::string&, const DirectX::XMVECTOR&,const RECT&);
 	~SpriteManager();
 
 
@@ -49,7 +54,11 @@ public:
 	/**
 	* @brief 描画をスタート
 	*/
-	void Start() { m_pSpriteBatch->Begin(); }
+	
+	void Start() 
+	{
+		m_pSpriteBatch->Begin(DirectX::SpriteSortMode_Deferred, commonState->NonPremultiplied());
+	}
 	/**
 	* @brief 描画を終了
 	*/

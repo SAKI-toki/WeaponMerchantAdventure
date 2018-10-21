@@ -9,6 +9,7 @@
 #include "../square/square_collider.h"
 #include <vector>
 
+
 /**
 * @brief コライダを管理するクラス
 */
@@ -38,7 +39,7 @@ private:
 	std::vector<SquarePosCol> dynamicSquareColliderList;
 protected:
 	//当たっているか判定する関数
-	bool CompareCollision(SquarePosCol&, SquarePosCol&);
+	bool CompareCollision(SquarePosCol&, SquarePosCol&,bool);
 public:
 	//上のstd::vectorにセットする関数
 	void SetCollider(SquareCollider*, bool is_static);
@@ -46,4 +47,6 @@ public:
 	void CheckCollision();
 	//指定した要素を削除
 	void DeleteCollider(SquareCollider*);
+	//シーン遷移の時にすべてのコライダを削除する
+	void Reset();
 };

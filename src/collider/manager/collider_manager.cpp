@@ -45,8 +45,8 @@ void ColliderManager::CheckCollision()
 	for (auto&& dc : dynamicSquareColliderList)
 	{
 		dc.prev_pos = dc.current_pos;
-		dc.col->collision_is_trigger_x = false;
-		dc.col->collision_is_trigger_y = false;
+		dc.col->collision_is_static_x = false;
+		dc.col->collision_is_static_y = false;
 	}
 	//静的なオブジェクトと動的なオブジェクトの当たり判定
 	for (auto&& sobj : staticSquareColliderList)
@@ -58,7 +58,7 @@ void ColliderManager::CheckCollision()
 				if (dobj.col->enabled)
 				{
 					//比べる
-					if (CompareCollision(sobj, dobj))
+					if (CompareCollision(sobj, dobj, true))
 					{
 						//ヒット
 						//関数を格納する
@@ -83,7 +83,7 @@ void ColliderManager::CheckCollision()
 				if (dc2->col->enabled)
 				{
 					//比べる
-					if (CompareCollision(*dc1, *dc2))
+					if (CompareCollision(*dc1, *dc2, false))
 					{
 						//ヒット
 						//関数を格納する
@@ -114,9 +114,10 @@ void ColliderManager::CheckCollision()
 /**
 * @brief 四角形同士が当たっているかを判定する
 * @param col1,col2 比べる二つの四角形コライダ
+* @param col1_static スタティックかどうか
 * @return bool 当たっているかどうか
 */
-bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2)
+bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2, bool col1_static)
 {
 	/*
 	decltype(auto)
@@ -145,6 +146,12 @@ bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2)
 	if (std::abs(status1.center_pos.x - status2.center_pos.x) < sum_width&&
 		std::abs(status1.center_pos.y - status2.center_pos.y) < sum_height)
 	{
+		//どちらもtriggerなら当たったことのみ返す
+		if (col1.col->is_trigger || col2.col->is_trigger)
+		{
+			return true;
+		}
+
 		//ベクトル
 		auto col1vec = col1.col->GetStatus().center_pos - col1.prev_pos;
 		auto col2vec = col2.col->GetStatus().center_pos - col2.prev_pos;
@@ -152,7 +159,7 @@ bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2)
 		if (std::abs(col1.prev_pos.x - col2.prev_pos.x) < sum_width)
 		{
 			//どちらも押し出す場合
-			if (!col1.col->is_trigger && !col2.col->is_trigger && !col1.col->collision_is_trigger_y && !col2.col->collision_is_trigger_y)
+			if (!col1_static && !col1.col->collision_is_static_y && !col2.col->collision_is_static_y)
 			{
 				//押し出す量（どちらも押し出すため半分）
 				auto diff = (sum_height - std::abs(status1.center_pos.y - status2.center_pos.y)) / 2.0f;
@@ -169,26 +176,39 @@ bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2)
 					col2.col->GetStatus().center_pos.y - diff));
 			}
 			//片方が押し出す場合
-			else if (!(col1.col->is_trigger&&col2.col->is_trigger))
+			else if (col1_static || !col1.col->collision_is_static_y || !col2.col->collision_is_static_y)
 			{
-				//押し出す量
-				auto diff = sum_height - std::abs(status1.center_pos.y - status2.center_pos.y);
 				//is_triggerじゃないほうをターゲットにする
-				decltype(auto) target_col = ((col1.col->is_trigger || col1.col->collision_is_trigger_y) ? col2 : col1);
-				if (!target_col.col->collision_is_trigger_y)
+				decltype(auto) target_col = ((col1.col->collision_is_static_y || col1_static) ? col2 : col1);
+				if (!target_col.col->collision_is_static_y)
 				{
-					//y方向をこれ以上動かさないためにする
-					target_col.col->collision_is_trigger_y = true;
+					//押し出す量
+					auto diff = sum_height - std::abs(status1.center_pos.y - status2.center_pos.y);
 					//ターゲットじゃないほうも格納
-					decltype(auto) not_target_col = (!(col1.col->is_trigger || col1.col->collision_is_trigger_y) ? col1 : col2);
+					decltype(auto) not_target_col = (!(col1.col->collision_is_static_y || col1_static) ? col2 : col1);
+					//y方向をこれ以上動かさないためにする
+					target_col.col->collision_is_static_y = true;
 					//ターゲットのみ押し出す処理をするため押し出す量全て受ける
 					target_col.col->CollisionExtrusion(VEC2(
 						target_col.col->GetStatus().center_pos.x,
 						(target_col.prev_pos.y > not_target_col.prev_pos.y) ?
 						target_col.col->GetStatus().center_pos.y + diff :
 						target_col.col->GetStatus().center_pos.y - diff));
+					//重力関係
+					if (target_col.col->object->use_gravity)
+					{
+						//足が着いたら重力リセット
+						if (target_col.prev_pos.y < not_target_col.prev_pos.y)
+						{
+							target_col.col->object->gravity.ResetGravity();
+						}
+						//頭が当たったら落下に切り替え
+						else
+						{
+							target_col.col->object->gravity.HitHead();
+						}
+					}
 				}
-
 			}
 			//どちらも押し出さない場合何も処理しない
 			//else {}
@@ -197,7 +217,7 @@ bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2)
 		if (std::abs(col1.prev_pos.y - col2.prev_pos.y) < sum_height)
 		{
 			//どちらも押し出す場合
-			if (!col1.col->is_trigger && !col2.col->is_trigger && !col1.col->collision_is_trigger_x && !col2.col->collision_is_trigger_x)
+			if (!col1_static && !col1.col->collision_is_static_x && !col2.col->collision_is_static_x)
 			{
 				//押し出す量（どちらも押し出すため半分）
 				auto diff = (sum_width - std::abs(status1.center_pos.x - status2.center_pos.x)) / 2.0f;
@@ -214,18 +234,18 @@ bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2)
 					col2.col->GetStatus().center_pos.y));
 			}
 			//片方が押し出す場合
-			else if (!(col1.col->is_trigger&&col2.col->is_trigger))
+			else if (col1_static || !col1.col->collision_is_static_x || !col2.col->collision_is_static_x)
 			{
-				//押し出す量
-				auto diff = sum_width - std::abs(status1.center_pos.x - status2.center_pos.x);
 				//is_triggerじゃないほうをターゲットにする
-				decltype(auto) target_col = ((col1.col->is_trigger || col1.col->collision_is_trigger_x) ? col2 : col1);
-				if (!target_col.col->collision_is_trigger_x)
+				decltype(auto) target_col = ((col1.col->collision_is_static_x || col1_static) ? col2 : col1);
+				if (!target_col.col->collision_is_static_x)
 				{
-					//x方向をこれ以上動かさないためにする
-					target_col.col->collision_is_trigger_x = true;
+					//押し出す量
+					auto diff = sum_width - std::abs(status1.center_pos.x - status2.center_pos.x);
 					//ターゲットじゃないほうも格納
-					decltype(auto) not_target_col = (!(col1.col->is_trigger || col1.col->collision_is_trigger_x) ? col1 : col2);
+					decltype(auto) not_target_col = (!(col1.col->collision_is_static_x || col1_static) ? col2 : col1);
+					//x方向をこれ以上動かさないためにする
+					target_col.col->collision_is_static_x = true;
 					//ターゲットのみ押し出す処理をするため押し出す量全て受ける
 					target_col.col->CollisionExtrusion(VEC2(
 						(target_col.prev_pos.x > not_target_col.prev_pos.x) ?
@@ -233,7 +253,6 @@ bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2)
 						target_col.col->GetStatus().center_pos.x - diff,
 						target_col.col->GetStatus().center_pos.y));
 				}
-
 			}
 			//どちらも押し出さない場合何も処理しない
 			//else {}
@@ -270,4 +289,13 @@ void ColliderManager::DeleteCollider(SquareCollider* col)
 			return;
 		}
 	}
+}
+
+/**
+* @brief コライダリストをクリアする
+*/
+void ColliderManager::Reset()
+{
+	dynamicSquareColliderList.clear();
+	staticSquareColliderList.clear();
 }

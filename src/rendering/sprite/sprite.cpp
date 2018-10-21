@@ -2,7 +2,7 @@
 * @file sprite.cpp
 * @brief Spriteクラスのメンバ関数の定義
 * @author 石山　悠
-* @date 2018/10/11
+* @date 2018/10/19
 */
 #include "sprite.h"
 #include "../../../DeviceResources.h"
@@ -23,11 +23,12 @@ void Sprite::Init(std::string name, WCHAR* path, const bool _all_render, const L
 {
 	//テクスチャのサイズを代入
 	rect = { 0,0,w,h };
+	my_name = name;
 	//すべて描画するかどうか
 	all_render = _all_render;
 	color.r = r; color.g = g; color.b = b; color.a = a;
-	//テクスチャを取得
-	texture = SpriteManager::GetInstance()->GetTexture(name, path);
+	//テクスチャをセット
+	SpriteManager::GetInstance()->SetTexture(name, path);
 }
 
 /**
@@ -35,17 +36,29 @@ void Sprite::Init(std::string name, WCHAR* path, const bool _all_render, const L
 * @param transform 位置や回転、拡大・縮小
 * @param affected_camera カメラの位置によって描画する位置を変えるかどうか
 */
-void Sprite::Render(const Transform& transform,bool affected_camera)
+void Sprite::Render(const Transform& transform, bool affected_camera, bool center_axis)
 {
+
+	/*try {
+		//描画
+		if (affected_camera)
+		{
+			SpriteManager::GetInstance()->GetSpriteBatch()->Draw(texture.Get(), transform.pos - Camera::GetInstance()->GetPos(), &rect, _color, transform.rot, { (center_axis)?rect.right / 2.0f:0.0f,(center_axis) ? rect.bottom / 2.0f : 0.0f }, transform.scale);
+		}
+		else
+		{
+			SpriteManager::GetInstance()->GetSpriteBatch()->Draw(texture.Get(), transform.pos, &rect, _color, transform.rot, { (center_axis) ? rect.right / 2.0f : 0.0f,(center_axis) ? rect.bottom / 2.0f : 0.0f }, transform.scale);
+		}
+	}
+	catch (std::exception& e)
+	{
+		WCHAR str[100];
+		auto s = e.what();
+		size_t len = 0;
+		mbstowcs_s(&len, str, 50, s, _TRUNCATE);
+		Comment(str, L"");
+	}*/
 	//メンバ変数にするとアライメントがどうのこうのと言われるのでここで変換
 	DirectX::XMVECTOR _color = DirectX::XMVectorSet(color.r, color.g, color.b, color.a);
-	//描画
-	if (affected_camera)
-	{
-		SpriteManager::GetInstance()->GetSpriteBatch()->Draw(texture.Get(), transform.pos - Camera::GetInstance()->GetPos(), &rect, _color, transform.rot, { rect.right / 2.0f,rect.bottom / 2.0f }, transform.scale);
-	}
-	else
-	{
-		SpriteManager::GetInstance()->GetSpriteBatch()->Draw(texture.Get(), transform.pos, &rect, _color, transform.rot, { rect.right / 2.0f,rect.bottom / 2.0f }, transform.scale);
-	}
+	SpriteManager::GetInstance()->Render(transform, affected_camera, center_axis, my_name, _color, rect);
 }

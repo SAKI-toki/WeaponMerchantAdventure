@@ -22,5 +22,8 @@ var searchData=
   ['getstick',['GetStick',['../class_gamepad_input.html#ab7e3fb80f81fcafdfc7c0f546c280929',1,'GamepadInput']]],
   ['gettext',['GetText',['../class_font.html#a47be569e73a4ba819bf4370463cf929b',1,'Font']]],
   ['gettexture',['GetTexture',['../class_sprite_manager.html#abccd80013300704593a7bdc45aeeeb05',1,'SpriteManager']]],
-  ['gettrigger',['GetTrigger',['../class_gamepad_input.html#aab528f55fe651996096e697acdec4546',1,'GamepadInput']]]
+  ['gettrigger',['GetTrigger',['../class_gamepad_input.html#aab528f55fe651996096e697acdec4546',1,'GamepadInput']]],
+  ['gravity',['Gravity',['../class_gravity.html',1,'Gravity'],['../class_object_base.html#a570bfa03730e906989187bfbcad95c51',1,'ObjectBase::gravity()']]],
+  ['gravity_2ecpp',['gravity.cpp',['../gravity_8cpp.html',1,'']]],
+  ['gravity_2eh',['gravity.h',['../gravity_8h.html',1,'']]]
 ];

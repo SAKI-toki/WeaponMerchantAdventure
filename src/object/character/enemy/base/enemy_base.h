@@ -9,9 +9,9 @@
 #include "../../../../collider/square/square_collider.h"
 
 /**
-* @brief 敵のタイプ
+* @brief 敵のタイプの列挙型
 */
-enum class ENEMY_TYPE { NORMAL, NONE };
+enum class ENEMY_TYPE { NORMAL, FLY, NONE };
 
 /**
 * @brief エネミーのスーパークラス
@@ -31,6 +31,19 @@ public:
 	EnemyBase(ENEMY_TYPE et) :enemy_type(et), collider(this)
 	{
 		object_tag = OBJECT_TAG::ENEMY;
+	}
+	/**
+	* @brief コピー代入演算子
+	*/
+	EnemyBase& operator=(const EnemyBase& other)
+	{
+		if (this != &other)
+		{
+			this->collider = other.collider;
+			this->enemy_type = other.enemy_type;
+			DynamicObject::operator=(other);
+		}
+		return *this;
 	}
 
 };

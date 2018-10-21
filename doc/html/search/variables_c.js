@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['width',['width',['../struct_square_status.html#ad3da51c76a64f335e2401a333ed7a29c',1,'SquareStatus']]],
-  ['worldtransform',['worldTransform',['../class_object_base.html#abedc2ea4baa694611f8822ea6e04b210',1,'ObjectBase']]]
+  ['use_5fgravity',['use_gravity',['../class_object_base.html#aab135a2a04e76046804f01b63df4f35c',1,'ObjectBase']]]
 ];

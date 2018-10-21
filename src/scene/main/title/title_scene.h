@@ -6,20 +6,14 @@
 */
 #pragma once
 #include "../../scene.h"
-#include "../../../object/base/static/static_object.h"
-#include "../../../object/map/map.h"
-#include "../../../object/character/player/player.h"
-#include "../../../object/character/enemy/normal/normal_enemy.h"
+#include "../../../rendering/font/font.h"
 
 /**
 * @brief タイトルシーンクラス
 */
 class TitleScene :public Scene
 {
-	NormalEnemy enemy;
-	Player player;
-	std::vector<StaticObject> backGround;
-	std::vector<MapObject> field;
+	Font font;
 public:
 	void Init()final;
 	SCENE Update()final;

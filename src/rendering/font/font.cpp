@@ -8,14 +8,6 @@
 #include "../sprite/manager/sprite_manager.h"
 
 /**
-* @brief コンストラクタ
-* @param t Transformの参照
-*/
-Font::Font(const Transform& t):
-	transform(t)
-{}
-
-/**
 * @brief 初期化
 * @param _text テキスト
 * @param r,g,b,a 色
@@ -31,6 +23,7 @@ void Font::Init(WCHAR* _text, float r, float g, float b, float a)
 */
 void Font::Render()
 {
+
 	//メンバ変数にするとアライメントがどうのこうのと言われるのでここで変換
 	DirectX::XMVECTOR _color = DirectX::XMVectorSet(color.r, color.g, color.b, color.a);
 	//描画
