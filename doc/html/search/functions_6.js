@@ -1,5 +1,20 @@
 var searchData=
 [
-  ['init',['Init',['../class_object_base.html#aea82aedc489b0a9d9990aafa06eef514',1,'ObjectBase::Init()'],['../class_font.html#a35fd445e07010a3ad2c74c93dfa33f66',1,'Font::Init()'],['../class_font_manager.html#acabba97ebae69b7b92d2ea4a2e9216e4',1,'FontManager::Init()'],['../class_sprite_manager.html#a82941ce284548c762f250220ea58f43c',1,'SpriteManager::Init()'],['../class_sprite.html#a6d108b11013eeca94c6f283af96a9c9f',1,'Sprite::Init()'],['../class_scene_base.html#a24d7db43c819924dc8b07b436f6d3148',1,'SceneBase::Init()'],['../class_title_scene.html#a3d039e7db0fa1e22e8c36d3cedfbd318',1,'TitleScene::Init()'],['../class_scene_manager.html#a6c0e84d0e76f23fb3172839dba5f091b',1,'SceneManager::Init()'],['../class_sound_manager.html#adab2bc016911756ffd973c7d781b5cfb',1,'SoundManager::Init()'],['../class_sound.html#a341bf468ea414e896daf3a5f7937ee12',1,'Sound::Init()'],['../class_transform.html#a39816379bc1e3a0bbae23fa94db576f1',1,'Transform::Init(const float, const float=0, const float=0, const float=1)'],['../class_transform.html#a0ccfc45e47071b7ebed1a61a14a202c4',1,'Transform::Init(const VEC2 &amp;_pos, const float _rot, const float _scale)'],['../class_transform.html#a2d0cb73aca3f73de81f2bf8463cdb942',1,'Transform::Init(const Transform &amp;t)']]],
-  ['initprocess',['InitProcess',['../class_object_base.html#af133f36f2bca1dcfd962e2cfac61ab51',1,'ObjectBase::InitProcess()'],['../class_static_object.html#afa0709f50495338a23c1140062a567af',1,'StaticObject::InitProcess()'],['../class_normal_enemy.html#ae45bd9535595f810d065b92f8dd63342',1,'NormalEnemy::InitProcess()'],['../class_player.html#a1051f85c8bf18a256d275d1a1dee5da6',1,'Player::InitProcess()'],['../class_map_object.html#a3043cddb8aaad0eab27a076e9bee0284',1,'MapObject::InitProcess()']]]
+  ['gamepadinput',['GamepadInput',['../class_gamepad_input.html#acd9878326e438f379020827d63ebd6cf',1,'GamepadInput']]],
+  ['getanimation',['GetAnimation',['../class_animation.html#a6a4980272204d8d2027c206f89984e47',1,'Animation']]],
+  ['getbutton',['GetButton',['../class_gamepad_input.html#a73a45e377ebcd58b6f0462d6d8fbcb94',1,'GamepadInput']]],
+  ['getbuttondown',['GetButtonDown',['../class_gamepad_input.html#a209f58f3b488e87d5feb99c7b2f06939',1,'GamepadInput']]],
+  ['getbuttonup',['GetButtonUp',['../class_gamepad_input.html#ac33f84af8806aeaff44296de9bf1dde0',1,'GamepadInput']]],
+  ['getdevice',['GetDevice',['../class_sprite_manager.html#ac9e2c44cc43775d9802612bd4be9bac3',1,'SpriteManager']]],
+  ['getdevicecontext',['GetDeviceContext',['../class_sprite_manager.html#a6bad23e380818dbe6b521adc07ab84fa',1,'SpriteManager']]],
+  ['getengine',['GetEngine',['../class_sound_manager.html#a5a575ac572eb0b50b3bb48b879a1a7e6',1,'SoundManager']]],
+  ['getinstance',['GetInstance',['../class_singleton.html#a57b10e4aa6d89bbac3a16355914655b3',1,'Singleton']]],
+  ['getpos',['GetPos',['../class_camera.html#ac3b4f1248489c0ac0faa521329de71cd',1,'Camera']]],
+  ['getsound',['GetSound',['../class_sound_manager.html#ab97083f065caec6d4f59c246b1978faf',1,'SoundManager']]],
+  ['getspritebatch',['GetSpriteBatch',['../class_sprite_manager.html#a0b82bacf33d0b558657c8e9841daf9d9',1,'SpriteManager']]],
+  ['getspritefont',['GetSpriteFont',['../class_font_manager.html#a612a8922fc977b07959406468dec922f',1,'FontManager']]],
+  ['getstatus',['GetStatus',['../class_square_collider.html#ac437bc1bed951c82ca25d2b17a7b2e0f',1,'SquareCollider']]],
+  ['getstick',['GetStick',['../class_gamepad_input.html#ab7e3fb80f81fcafdfc7c0f546c280929',1,'GamepadInput']]],
+  ['gettext',['GetText',['../class_font.html#a47be569e73a4ba819bf4370463cf929b',1,'Font']]],
+  ['gettrigger',['GetTrigger',['../class_gamepad_input.html#aab528f55fe651996096e697acdec4546',1,'GamepadInput']]]
 ];

@@ -52,20 +52,24 @@ void SpriteManager::SetTexture(std::string name, WCHAR* path)
 * @param name キー
 * @param color 色
 * @param rect テクスチャのどこを描画するかどうか
+* @param sprite_effect 様々の方向の反転
 */
-void SpriteManager::Render(const Transform& transform, bool affected_camera, bool center_axis, const std::string& name, const DirectX::XMVECTOR& color, const RECT& rect)
+void SpriteManager::Render(const Transform& transform, bool affected_camera, bool center_axis, 
+	const std::string& name, const DirectX::XMVECTOR& color, const RECT& rect, 
+	const DirectX::SpriteEffects sprite_effect)
 {
-	try {
+	try
+	{
 		//メンバ変数にするとアライメントがどうのこうのと言われるのでここで変換
 		//DirectX::XMVECTOR _color = DirectX::XMVectorSet(color.r, color.g, color.b, color.a);
 		//描画
 		if (affected_camera)
 		{
-			SpriteManager::GetInstance()->GetSpriteBatch()->Draw(textureList.at(name).Get(), transform.pos - Camera::GetInstance()->GetPos(), &rect, color, transform.rot, { (center_axis) ? rect.right / 2.0f : 0.0f,(center_axis) ? rect.bottom / 2.0f : 0.0f }, transform.scale);
+			SpriteManager::GetInstance()->GetSpriteBatch()->Draw(textureList.at(name).Get(), transform.pos - Camera::GetInstance()->GetPos(), &rect, color, transform.rot, { (center_axis) ? (rect.right - rect.left) / 2.0f : 0.0f,(center_axis) ? (rect.bottom - rect.top) / 2.0f : 0.0f }, transform.scale, sprite_effect);
 		}
 		else
 		{
-			SpriteManager::GetInstance()->GetSpriteBatch()->Draw(textureList.at(name).Get(), transform.pos, &rect, color, transform.rot, { (center_axis) ? rect.right / 2.0f : 0.0f,(center_axis) ? rect.bottom / 2.0f : 0.0f }, transform.scale);
+			SpriteManager::GetInstance()->GetSpriteBatch()->Draw(textureList.at(name).Get(), transform.pos, &rect, color, transform.rot, { (center_axis) ? (rect.right - rect.left) / 2.0f : 0.0f,(center_axis) ? (rect.bottom - rect.top) / 2.0f : 0.0f }, transform.scale, sprite_effect);
 		}
 	}
 	catch (std::exception& e)

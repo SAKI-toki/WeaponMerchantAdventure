@@ -11,26 +11,37 @@
 */
 Sword::Sword() :collider(this, true)
 {
-	sprite.Init(std::string("sword"), L"sword.png", true, 100, 100, 0, 0, 0, 0.3f);
+	object_tag = OBJECT_TAG::WEAPON;
+	
+	sprite.Init(std::string("sword"), L"sword.png", 100, 100, 0, 0, 0, 0.3f);
+	sound.Init(std::string("sword_sound"), L"sword.wav", false, false);
 	transform.size = VEC2(100, 100);
 	transform.scale = 1;
 }
+
 /**
 * @brief 武器用の初期化
 */
 void Sword::WeaponStart()
 {
-	collider.enabled = true;
+	//collider.enabled = true;
+	collider.enabled = false;
+	current_delay = delay;
 }
 
 /**
 * @brief 武器用の更新
+* @param p 位置
 * @param _right 右向きかどうか
 */
-void Sword::WeaponUpdate(const VEC2&, bool _right)
+void Sword::WeaponUpdate(const VEC2& p, bool _right)
 {
+	if (current_delay < delay) { ++current_delay; }
 	right = _right;
-	is_attack = false;
+	//is_attack = false;
+
+	collider.enabled = false;
+	collider.SetStatus(VEC2(p.x + (_right ? 1 : -1)*distance, p.y), transform.size.x, transform.size.y, 0, transform.scale);
 }
 
 /**
@@ -52,17 +63,19 @@ void Sword::WeaponDestroy()
 
 /**
 * @brief 当たったときの反応
+* @param obj 当たった相手のオブジェクト
 */
 void Sword::Collision(ObjectBase* obj, VEC2)
 {
-	if (!is_attack)
+	if (obj == nullptr)return;
+	/*if (!is_attack)
 	{
 		return;
-	}
+	}*/
 	if (obj->object_tag == OBJECT_TAG::ENEMY)
 	{
-		--obj->status.HP;
-		obj->Destroy();
+		sound.Stop();
+		sound.Start();
 	}
 }
 
@@ -73,8 +86,11 @@ void Sword::Collision(ObjectBase* obj, VEC2)
 */
 void Sword::Attack(bool _right, const VEC2& pos)
 {
+	if (current_delay < delay) { return; }
+	current_delay = 0;
 	auto p = pos;
 	p.x += (_right ? 1 : -1)*distance;
 	collider.SetStatus(p, transform.size.x, transform.size.y, 0, transform.scale);
-	is_attack = true;
+	//is_attack = true;
+	collider.enabled = true;
 }

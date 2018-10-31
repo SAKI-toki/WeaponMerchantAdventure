@@ -1,0 +1,97 @@
+\hypertarget{class_animation}{}\section{Animation クラス}
+\label{class_animation}\index{Animation@{Animation}}
+
+
+アニメーションクラス  
+
+
+
+
+{\ttfamily \#include $<$animation.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_animation_af745af1b6e861b20db426b92a980d4bd}{Init}} (const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&, const int, const int, const int)
+\begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animation_a0c6a4e940db84d4a6246fcb3ae773402}{Update}} ()
+\begin{DoxyCompactList}\small\item\em 更新 \end{DoxyCompactList}\item 
+R\+E\+CT \mbox{\hyperlink{class_animation_a6a4980272204d8d2027c206f89984e47}{Get\+Animation}} () const
+\begin{DoxyCompactList}\small\item\em アニメーションを変更する \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animation_ae9fe84bd92b1df395dd09aeed37a8373}{Change\+Animation}} (const int, const int, const bool=false)
+\begin{DoxyCompactList}\small\item\em アニメーションを変える \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+アニメーションクラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_animation_ae9fe84bd92b1df395dd09aeed37a8373}\label{class_animation_ae9fe84bd92b1df395dd09aeed37a8373}} 
+\index{Animation@{Animation}!Change\+Animation@{Change\+Animation}}
+\index{Change\+Animation@{Change\+Animation}!Animation@{Animation}}
+\subsubsection{\texorpdfstring{Change\+Animation()}{ChangeAnimation()}}
+{\footnotesize\ttfamily void Animation\+::\+Change\+Animation (\begin{DoxyParamCaption}\item[{const int}]{vertical,  }\item[{const int}]{\+\_\+time,  }\item[{const bool}]{reset = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+アニメーションを変える 
+
+
+\begin{DoxyParams}{引数}
+{\em vertical} & 上から何番目のアニメーションにするか(0スタート) \\
+\hline
+{\em \+\_\+time} & 何フレームごとに変更するか \\
+\hline
+{\em reset} & アニメーションを最初からするかどうか \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_animation_a6a4980272204d8d2027c206f89984e47}\label{class_animation_a6a4980272204d8d2027c206f89984e47}} 
+\index{Animation@{Animation}!Get\+Animation@{Get\+Animation}}
+\index{Get\+Animation@{Get\+Animation}!Animation@{Animation}}
+\subsubsection{\texorpdfstring{Get\+Animation()}{GetAnimation()}}
+{\footnotesize\ttfamily R\+E\+CT Animation\+::\+Get\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+アニメーションを変更する 
+
+\begin{DoxyReturn}{戻り値}
+R\+E\+CT テクスチャで描画する部分 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_animation_af745af1b6e861b20db426b92a980d4bd}\label{class_animation_af745af1b6e861b20db426b92a980d4bd}} 
+\index{Animation@{Animation}!Init@{Init}}
+\index{Init@{Init}!Animation@{Animation}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Animation\+::\+Init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{\+\_\+one,  }\item[{const int}]{hor,  }\item[{const int}]{ver,  }\item[{const int}]{\+\_\+inter }\end{DoxyParamCaption})}
+
+
+
+初期化 
+
+
+\begin{DoxyParams}{引数}
+{\em \+\_\+one} & 一つ当たりの大きさ \\
+\hline
+{\em hor} & 横の数 \\
+\hline
+{\em ver} & 縦の数 \\
+\hline
+{\em \+\_\+inter} & 一つ一つの間隔 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_animation_a0c6a4e940db84d4a6246fcb3ae773402}\label{class_animation_a0c6a4e940db84d4a6246fcb3ae773402}} 
+\index{Animation@{Animation}!Update@{Update}}
+\index{Update@{Update}!Animation@{Animation}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Animation\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+更新 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/animation/\mbox{\hyperlink{animation_8h}{animation.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/animation/\mbox{\hyperlink{animation_8cpp}{animation.\+cpp}}\end{DoxyCompactItemize}

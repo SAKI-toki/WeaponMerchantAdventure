@@ -11,7 +11,7 @@
 #include "../../gravity/gravity.h"
 #include "../../status/status.h"
 
-enum class OBJECT_TAG { PLAYER, ENEMY, MAP, NONE };
+enum class OBJECT_TAG { PLAYER, ENEMY, MAP, WEAPON, NONE };
 /**
 * @brief オブジェクトのスーパークラス
 */
@@ -43,6 +43,9 @@ public:
 	* @brief コンストラクタ
 	*/
 	ObjectBase(bool _gravity = false) : use_gravity(_gravity) {}
+	/**
+	* @brief コピーコンストラクタ
+	*/
 	ObjectBase(const ObjectBase& o)
 	{
 		this->transform = o.transform;
@@ -71,9 +74,9 @@ public:
 
 
 	void Init(std::string name, WCHAR* path, const LONG w, const LONG h, VEC2 pos,
-		float rot = 0, float scale = 1, bool all_render = true);
+		float rot = 0, float scale = 1);
 	void Update();
-	void Render(bool = true, const Transform& = NULL);
+	void Render(bool = true, const Transform& = Transform(0, 0, 0, 0, 0, 0));
 
 	virtual void Destroy() = 0;
 

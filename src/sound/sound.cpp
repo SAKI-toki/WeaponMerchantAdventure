@@ -14,7 +14,7 @@
 * @param loop ループするかどうか
 * @param awake 初期化した瞬間から再生するかどうか
 */
-void Sound::Init(std::string name, WCHAR* path, bool loop, bool awake)
+void Sound::Init(const std::string name, WCHAR* path, bool loop, bool awake)
 {
 	instance_sound = SoundManager::GetInstance()->GetSound(name, path)->CreateInstance();
 	is_loop = loop;
@@ -22,9 +22,17 @@ void Sound::Init(std::string name, WCHAR* path, bool loop, bool awake)
 }
 
 /**
+* @brief 破棄
+*/
+void Sound::Destroy()
+{
+	if (instance_sound)instance_sound.reset();
+}
+
+/**
 * @brief デストラクタ
 */
 Sound::~Sound()
 {
-	instance_sound.reset();
+	Destroy();
 }

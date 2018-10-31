@@ -12,21 +12,48 @@
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_sprite_a6d108b11013eeca94c6f283af96a9c9f}{Init}} (std\+::string name, W\+C\+H\+AR $\ast$path, const bool \+\_\+all\+\_\+render, const L\+O\+NG w, const L\+O\+NG h, const float r=1.\+0f, const float g=1.\+0f, const float b=1.\+0f, const float a=1.\+0f)
+void \mbox{\hyperlink{class_sprite_a86796a03be222a502397aa53a5207522}{Init}} (std\+::string name, W\+C\+H\+AR $\ast$path, const L\+O\+NG w, const L\+O\+NG h, const float r=1.\+0f, const float g=1.\+0f, const float b=1.\+0f, const float a=1.\+0f)
 \begin{DoxyCompactList}\small\item\em 各パラメータや画像を読み込む \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_sprite_a936771e0b67adc2f673ac24b03411535}{Render}} (const \mbox{\hyperlink{class_transform}{Transform}} \&, bool=true)
-\begin{DoxyCompactList}\small\item\em Sprite\+Batchを経由して描画する \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_sprite_ac5efaa5f750f8095c8846e2183c4d52b}{Render}} (const \mbox{\hyperlink{class_transform}{Transform}} \&, bool=true, bool=true, const Direct\+X\+::\+Sprite\+Effects=Direct\+X\+::\+Sprite\+Effects\+::\+Sprite\+Effects\+\_\+\+None)
+\begin{DoxyCompactList}\small\item\em Sprite\+Batchを経由して描画する \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_a0565013aa0e194c67dfbaf243ab9250a}{Set\+Rect}} (const R\+E\+CT \&new\+\_\+rect)
+\begin{DoxyCompactList}\small\item\em テクスチャの描画する部分を変える（アニメーション） \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_a12cba3ac1868418add3c4d95ce87e615}{Sprite}} ()
+\item 
+\mbox{\hyperlink{class_sprite_a53252d3d5fbc5438ed6bbd8b3913c3b4}{Sprite}} (const \mbox{\hyperlink{class_sprite}{Sprite}} \&s)
+\begin{DoxyCompactList}\small\item\em コピーコンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite}{Sprite}} \& \mbox{\hyperlink{class_sprite_a3a53b4a3491e8d1e8c63387167dc7329}{operator=}} (const \mbox{\hyperlink{class_sprite}{Sprite}} \&other)
+\begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
 個々の画像を管理するクラス 
 
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_sprite_a12cba3ac1868418add3c4d95ce87e615}\label{class_sprite_a12cba3ac1868418add3c4d95ce87e615}} 
+\index{Sprite@{Sprite}!Sprite@{Sprite}}
+\index{Sprite@{Sprite}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{Sprite()}{Sprite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Sprite\+::\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_sprite_a53252d3d5fbc5438ed6bbd8b3913c3b4}\label{class_sprite_a53252d3d5fbc5438ed6bbd8b3913c3b4}} 
+\index{Sprite@{Sprite}!Sprite@{Sprite}}
+\index{Sprite@{Sprite}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{Sprite()}{Sprite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Sprite\+::\+Sprite (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sprite}{Sprite}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピーコンストラクタ 
+
+
+
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_sprite_a6d108b11013eeca94c6f283af96a9c9f}\label{class_sprite_a6d108b11013eeca94c6f283af96a9c9f}} 
+\mbox{\Hypertarget{class_sprite_a86796a03be222a502397aa53a5207522}\label{class_sprite_a86796a03be222a502397aa53a5207522}} 
 \index{Sprite@{Sprite}!Init@{Init}}
 \index{Init@{Init}!Sprite@{Sprite}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily void Sprite\+::\+Init (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{W\+C\+H\+AR $\ast$}]{path,  }\item[{const bool}]{\+\_\+all\+\_\+render,  }\item[{const L\+O\+NG}]{w,  }\item[{const L\+O\+NG}]{h,  }\item[{const float}]{r = {\ttfamily 1.0f},  }\item[{const float}]{g = {\ttfamily 1.0f},  }\item[{const float}]{b = {\ttfamily 1.0f},  }\item[{const float}]{a = {\ttfamily 1.0f} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Sprite\+::\+Init (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{W\+C\+H\+AR $\ast$}]{path,  }\item[{const L\+O\+NG}]{w,  }\item[{const L\+O\+NG}]{h,  }\item[{const float}]{r = {\ttfamily 1.0f},  }\item[{const float}]{g = {\ttfamily 1.0f},  }\item[{const float}]{b = {\ttfamily 1.0f},  }\item[{const float}]{a = {\ttfamily 1.0f} }\end{DoxyParamCaption})}
 
 
 
@@ -38,18 +65,26 @@ void \mbox{\hyperlink{class_sprite_a936771e0b67adc2f673ac24b03411535}{Render}} (
 \hline
 {\em path} & テクスチャのパス \\
 \hline
-{\em h,w　テクスチャの大きさ} & \\
-\hline
-{\em \+\_\+all\+\_\+render} & テクスチャをすべて描画するかどうか（アニメーションがあるかどうかとほぼ同義） \\
+{\em w,h} & テクスチャの大きさ \\
 \hline
 {\em r,g,b,a} & 色 \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_sprite_a936771e0b67adc2f673ac24b03411535}\label{class_sprite_a936771e0b67adc2f673ac24b03411535}} 
+\mbox{\Hypertarget{class_sprite_a3a53b4a3491e8d1e8c63387167dc7329}\label{class_sprite_a3a53b4a3491e8d1e8c63387167dc7329}} 
+\index{Sprite@{Sprite}!operator=@{operator=}}
+\index{operator=@{operator=}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite}{Sprite}}\& Sprite\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sprite}{Sprite}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピー代入演算子 
+
+\mbox{\Hypertarget{class_sprite_ac5efaa5f750f8095c8846e2183c4d52b}\label{class_sprite_ac5efaa5f750f8095c8846e2183c4d52b}} 
 \index{Sprite@{Sprite}!Render@{Render}}
 \index{Render@{Render}!Sprite@{Sprite}}
 \subsubsection{\texorpdfstring{Render()}{Render()}}
-{\footnotesize\ttfamily void Sprite\+::\+Render (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_transform}{Transform}} \&}]{transform,  }\item[{bool}]{affected\+\_\+camera = {\ttfamily true} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Sprite\+::\+Render (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_transform}{Transform}} \&}]{transform,  }\item[{bool}]{affected\+\_\+camera = {\ttfamily true},  }\item[{bool}]{center\+\_\+axis = {\ttfamily true},  }\item[{const Direct\+X\+::\+Sprite\+Effects}]{sprite\+\_\+effects = {\ttfamily DirectX\+:\+:SpriteEffects\+:\+:SpriteEffects\+\_\+None} }\end{DoxyParamCaption})}
 
 
 
@@ -60,6 +95,25 @@ Sprite\+Batchを経由して描画する
 {\em transform} & 位置や回転、拡大・縮小 \\
 \hline
 {\em affected\+\_\+camera} & カメラの位置によって描画する位置を変えるかどうか \\
+\hline
+{\em center\+\_\+axis} & 中心を軸に描画するかどうか \\
+\hline
+{\em sprite\+\_\+effects} & 様々な反転 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_a0565013aa0e194c67dfbaf243ab9250a}\label{class_sprite_a0565013aa0e194c67dfbaf243ab9250a}} 
+\index{Sprite@{Sprite}!Set\+Rect@{Set\+Rect}}
+\index{Set\+Rect@{Set\+Rect}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{Set\+Rect()}{SetRect()}}
+{\footnotesize\ttfamily void Sprite\+::\+Set\+Rect (\begin{DoxyParamCaption}\item[{const R\+E\+CT \&}]{new\+\_\+rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+テクスチャの描画する部分を変える（アニメーション） 
+
+
+\begin{DoxyParams}{引数}
+{\em new\+\_\+rect} & 新しい位置のrect \\
 \hline
 \end{DoxyParams}
 

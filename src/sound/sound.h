@@ -18,20 +18,67 @@ class Sound
 	//ループするかどうか
 	bool is_loop;
 public:
-	void Init(std::string, WCHAR*, bool, bool);
+	/**
+	* @brief コンストラクタ
+	*/
+	Sound() {}
+	/**
+	* @brief コピーコンストラクタ
+	*/
+	Sound(const Sound& s)
+	{
+		//this->instance_sound = s.instance_sound;
+		this->is_loop = s.is_loop;
+	}
+	/**
+	* @brief コピー代入演算子
+	*/
+	Sound& operator=(const Sound& s)
+	{
+		if (this != &s)
+		{
+			//this->instance_sound = s.instance_sound;
+			this->is_loop = s.is_loop;
+		}
+		return *this;
+	}
+	/**
+	* @brief ムーブコンストラクタ
+	*/
+	Sound(Sound&& s)noexcept
+	{
+		this->instance_sound = std::move(s.instance_sound);
+		this->is_loop = s.is_loop;
+	}
+	/**
+	* @brief ムーブ代入演算子
+	*/
+	Sound& operator=(Sound&& s)noexcept
+	{
+		if (this != &s)
+		{
+			this->instance_sound = std::move(s.instance_sound);
+			this->is_loop = s.is_loop;
+		}
+		return *this;
+	}
 
+	void Init(const std::string, WCHAR*, bool, bool);
+	void Destroy();
 	//再生
-	void Start() { instance_sound->Play(is_loop); }
+	void Start() { if (instance_sound)instance_sound->Play(is_loop); }
 	//停止
-	void Stop() { instance_sound->Stop(); }
+	void Stop() { if (instance_sound)instance_sound->Stop(); }
 	//一時停止
-	void Pause() { instance_sound->Pause(); }
+	void Pause() { if (instance_sound)instance_sound->Pause(); }
+	//再生されているかどうか
+	bool Is_Play()const { return instance_sound && instance_sound->GetState() != DirectX::SoundState::STOPPED; }
 	//ボリューム
-	void SetVolume(float vol) { instance_sound->SetVolume(vol); }
+	void SetVolume(float vol) { if (instance_sound)instance_sound->SetVolume(vol); }
 	//ピッチ
-	void SetPitch(float pit) { instance_sound->SetPitch(pit); }
+	void SetPitch(float pit) { if (instance_sound)instance_sound->SetPitch(pit); }
 	//パン
-	void SetPan(float pan) { instance_sound->SetPan(pan); }
+	void SetPan(float pan) { if (instance_sound)instance_sound->SetPan(pan); }
 
 	~Sound();
 

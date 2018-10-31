@@ -14,8 +14,14 @@
 */
 class SceneManager :public SceneBase, public Singleton<SceneManager>
 {
+	//シーン
 	std::unique_ptr<Scene> scene_ptr;
+	//シーン遷移
 	std::unique_ptr<Scene> switch_scene(const SCENE)const;
+	//フェード中かどうか
+	bool is_current_fade = false;
+	//フェードインかどうか
+	bool is_fade_in = false;
 public:
 	void Init()final;
 	void Update();

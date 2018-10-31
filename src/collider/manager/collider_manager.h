@@ -49,4 +49,5 @@ public:
 	void DeleteCollider(SquareCollider*);
 	//シーン遷移の時にすべてのコライダを削除する
 	void Reset();
+
 };

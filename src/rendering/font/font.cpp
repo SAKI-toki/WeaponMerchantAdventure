@@ -29,4 +29,5 @@ void Font::Render()
 	//•`‰æ
 	FontManager::GetInstance()->GetSpriteFont()->DrawString(SpriteManager::GetInstance()->GetSpriteBatch().get(),
 		text, transform.pos, _color, transform.rot, { 0,0 }, transform.scale);
+
 }

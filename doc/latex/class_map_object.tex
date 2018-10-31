@@ -2,6 +2,11 @@
 \label{class_map_object}\index{Map\+Object@{Map\+Object}}
 
 
+マップに配置するオブジェクトのクラス  
+
+
+
+
 {\ttfamily \#include $<$map.\+h$>$}
 
 Map\+Object の継承関係図\begin{figure}[H]
@@ -17,10 +22,18 @@ void \mbox{\hyperlink{class_map_object_ad4bcfdc33bd945a9aa5e50a57c2704bc}{Destro
 \begin{DoxyCompactList}\small\item\em マップの破棄 \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_map_object_a568754515cc72ce0861d30c3040d26d2}{Map\+Object}} ()
 \begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_map_object_aae3a8a07e453e38a58b01e2eea16a76a}{Map\+Object}} (\mbox{\hyperlink{class_map_object}{Map\+Object}} \&\&m)
+\mbox{\hyperlink{class_map_object_a4d69915b6837056e40c0c17afe78ce8e}{Map\+Object}} (const \mbox{\hyperlink{class_map_object}{Map\+Object}} \&m)
+\begin{DoxyCompactList}\small\item\em コピーコンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_map_object_ad3779307ee41c0bc0fdf4b419baac3da}{Map\+Object}} (\mbox{\hyperlink{class_map_object}{Map\+Object}} \&\&m) noexcept
 \begin{DoxyCompactList}\small\item\em ムーブコンストラクタ \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_map_object_a61c2b7e046b76d98adbf23c9e6302918}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}) final
-\begin{DoxyCompactList}\small\item\em マップが当たってるときに実行する関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_map_object}{Map\+Object}} \& \mbox{\hyperlink{class_map_object_a4ff3c31cc463a650e4d870ea65b65c58}{operator=}} (const \mbox{\hyperlink{class_map_object}{Map\+Object}} \&other)
+\begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_map_object}{Map\+Object}} \& \mbox{\hyperlink{class_map_object_ae36fa838f3f8bac8ef2d67b39adf0298}{operator=}} (\mbox{\hyperlink{class_map_object}{Map\+Object}} \&\&other) noexcept
+\begin{DoxyCompactList}\small\item\em ムーブ代入演算子 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_object_a61c2b7e046b76d98adbf23c9e6302918}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}) final
+\begin{DoxyCompactList}\small\item\em マップが当たってるときに実行する関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_map_object_aa601344267a49df197e841fcbd732209}{$\sim$\+Map\+Object}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{限定公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -31,26 +44,49 @@ void \mbox{\hyperlink{class_map_object_ab6b8849f15175417eca94b2703945e4b}{Update
 \subsection*{その他の継承メンバ}
 
 
+\subsection{詳解}
+マップに配置するオブジェクトのクラス 
+
 \subsection{構築子と解体子}
 \mbox{\Hypertarget{class_map_object_a568754515cc72ce0861d30c3040d26d2}\label{class_map_object_a568754515cc72ce0861d30c3040d26d2}} 
 \index{Map\+Object@{Map\+Object}!Map\+Object@{Map\+Object}}
 \index{Map\+Object@{Map\+Object}!Map\+Object@{Map\+Object}}
-\subsubsection{\texorpdfstring{Map\+Object()}{MapObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{Map\+Object()}{MapObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily Map\+Object\+::\+Map\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 コンストラクタ 
 
-\mbox{\Hypertarget{class_map_object_aae3a8a07e453e38a58b01e2eea16a76a}\label{class_map_object_aae3a8a07e453e38a58b01e2eea16a76a}} 
+\mbox{\Hypertarget{class_map_object_a4d69915b6837056e40c0c17afe78ce8e}\label{class_map_object_a4d69915b6837056e40c0c17afe78ce8e}} 
 \index{Map\+Object@{Map\+Object}!Map\+Object@{Map\+Object}}
 \index{Map\+Object@{Map\+Object}!Map\+Object@{Map\+Object}}
-\subsubsection{\texorpdfstring{Map\+Object()}{MapObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Map\+Object\+::\+Map\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_map_object}{Map\+Object}} \&\&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{Map\+Object()}{MapObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Map\+Object\+::\+Map\+Object (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_map_object}{Map\+Object}} \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピーコンストラクタ 
+
+\mbox{\Hypertarget{class_map_object_ad3779307ee41c0bc0fdf4b419baac3da}\label{class_map_object_ad3779307ee41c0bc0fdf4b419baac3da}} 
+\index{Map\+Object@{Map\+Object}!Map\+Object@{Map\+Object}}
+\index{Map\+Object@{Map\+Object}!Map\+Object@{Map\+Object}}
+\subsubsection{\texorpdfstring{Map\+Object()}{MapObject()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Map\+Object\+::\+Map\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_map_object}{Map\+Object}} \&\&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
 
 
 
 ムーブコンストラクタ 
+
+\mbox{\Hypertarget{class_map_object_aa601344267a49df197e841fcbd732209}\label{class_map_object_aa601344267a49df197e841fcbd732209}} 
+\index{Map\+Object@{Map\+Object}!````~Map\+Object@{$\sim$\+Map\+Object}}
+\index{````~Map\+Object@{$\sim$\+Map\+Object}!Map\+Object@{Map\+Object}}
+\subsubsection{\texorpdfstring{$\sim$\+Map\+Object()}{~MapObject()}}
+{\footnotesize\ttfamily Map\+Object\+::$\sim$\+Map\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+デストラクタ 
 
 
 
@@ -59,7 +95,7 @@ void \mbox{\hyperlink{class_map_object_ab6b8849f15175417eca94b2703945e4b}{Update
 \index{Map\+Object@{Map\+Object}!Collision@{Collision}}
 \index{Collision@{Collision}!Map\+Object@{Map\+Object}}
 \subsubsection{\texorpdfstring{Collision()}{Collision()}}
-{\footnotesize\ttfamily void Map\+Object\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Map\+Object\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
 
 
 
@@ -96,6 +132,26 @@ void \mbox{\hyperlink{class_map_object_ab6b8849f15175417eca94b2703945e4b}{Update
 
 
 \mbox{\hyperlink{class_static_object_afa0709f50495338a23c1140062a567af}{Static\+Object}}を再実装しています。
+
+\mbox{\Hypertarget{class_map_object_a4ff3c31cc463a650e4d870ea65b65c58}\label{class_map_object_a4ff3c31cc463a650e4d870ea65b65c58}} 
+\index{Map\+Object@{Map\+Object}!operator=@{operator=}}
+\index{operator=@{operator=}!Map\+Object@{Map\+Object}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_map_object}{Map\+Object}}\& Map\+Object\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_map_object}{Map\+Object}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピー代入演算子 
+
+\mbox{\Hypertarget{class_map_object_ae36fa838f3f8bac8ef2d67b39adf0298}\label{class_map_object_ae36fa838f3f8bac8ef2d67b39adf0298}} 
+\index{Map\+Object@{Map\+Object}!operator=@{operator=}}
+\index{operator=@{operator=}!Map\+Object@{Map\+Object}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_map_object}{Map\+Object}}\& Map\+Object\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_map_object}{Map\+Object}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+ムーブ代入演算子 
 
 \mbox{\Hypertarget{class_map_object_ab6b8849f15175417eca94b2703945e4b}\label{class_map_object_ab6b8849f15175417eca94b2703945e4b}} 
 \index{Map\+Object@{Map\+Object}!Update\+Process@{Update\+Process}}

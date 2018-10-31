@@ -78,3 +78,25 @@ void GamepadInput::Update()
 		controller.bConnected = false;
 	}
 }
+
+/**
+* @brief コントローラーの振動
+* @param right 右のモーターの力
+* @param left 左のモーターの力
+*/
+void GamepadInput::Vibration(float right, float left)
+{
+	//未接続
+	if (!controller.bConnected)return;
+	//範囲内の振動に収める
+	{
+		if (right < 0)right = 0;
+		else if (right > 1.0f)right = 1.0f;
+		if (left < 0)left = 0;
+		else if (left > 1.0f)left = 1.0f;
+	}
+	XINPUT_VIBRATION vibration;
+	vibration.wRightMotorSpeed = static_cast<WORD>(UINT8_MAX * right);
+	vibration.wLeftMotorSpeed = static_cast<WORD>(UINT8_MAX * left);
+	XInputSetState(0, &vibration);
+}

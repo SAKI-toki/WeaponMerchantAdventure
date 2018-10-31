@@ -1,0 +1,92 @@
+\hypertarget{class_game_over_scene}{}\section{Game\+Over\+Scene クラス}
+\label{class_game_over_scene}\index{Game\+Over\+Scene@{Game\+Over\+Scene}}
+
+
+{\ttfamily \#include $<$game\+\_\+over.\+h$>$}
+
+Game\+Over\+Scene の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_over_scene}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_over_scene_a7382331efb2eda768c093f66395655d7}{Init}} () final
+\begin{DoxyCompactList}\small\item\em ゲームオーバーシーンの初期化 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{scene__base_8h_a24cee5343fb9d0706ead6e8601f363be}{S\+C\+E\+NE}} \mbox{\hyperlink{class_game_over_scene_a27d347ed1ff81cbd252e3bcc3f2989a8}{Update}} () final
+\begin{DoxyCompactList}\small\item\em ゲームオーバーシーンの更新 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_over_scene_a3fd3123c8660c25b01ca2f1e16615072}{Render}} () final
+\begin{DoxyCompactList}\small\item\em ゲームオーバーシーンの描画 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_over_scene_a439e4c515c9549abd6eb45f2a3d115fa}{Destroy}} () final
+\begin{DoxyCompactList}\small\item\em ゲームオーバーシーンの破棄 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_game_over_scene_a439e4c515c9549abd6eb45f2a3d115fa}\label{class_game_over_scene_a439e4c515c9549abd6eb45f2a3d115fa}} 
+\index{Game\+Over\+Scene@{Game\+Over\+Scene}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Game\+Over\+Scene@{Game\+Over\+Scene}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Game\+Over\+Scene\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームオーバーシーンの破棄 
+
+
+
+\mbox{\hyperlink{class_scene_base_a7c5b54020bc519b4dadfe9770d6b27f7}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_game_over_scene_a7382331efb2eda768c093f66395655d7}\label{class_game_over_scene_a7382331efb2eda768c093f66395655d7}} 
+\index{Game\+Over\+Scene@{Game\+Over\+Scene}!Init@{Init}}
+\index{Init@{Init}!Game\+Over\+Scene@{Game\+Over\+Scene}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Game\+Over\+Scene\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームオーバーシーンの初期化 
+
+
+
+\mbox{\hyperlink{class_scene_base_a24d7db43c819924dc8b07b436f6d3148}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_game_over_scene_a3fd3123c8660c25b01ca2f1e16615072}\label{class_game_over_scene_a3fd3123c8660c25b01ca2f1e16615072}} 
+\index{Game\+Over\+Scene@{Game\+Over\+Scene}!Render@{Render}}
+\index{Render@{Render}!Game\+Over\+Scene@{Game\+Over\+Scene}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Game\+Over\+Scene\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームオーバーシーンの描画 
+
+
+
+\mbox{\hyperlink{class_scene_base_ad981674ce731ea267f398e889bbb9dc3}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_game_over_scene_a27d347ed1ff81cbd252e3bcc3f2989a8}\label{class_game_over_scene_a27d347ed1ff81cbd252e3bcc3f2989a8}} 
+\index{Game\+Over\+Scene@{Game\+Over\+Scene}!Update@{Update}}
+\index{Update@{Update}!Game\+Over\+Scene@{Game\+Over\+Scene}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{scene__base_8h_a24cee5343fb9d0706ead6e8601f363be}{S\+C\+E\+NE}} Game\+Over\+Scene\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームオーバーシーンの更新 
+
+\begin{DoxyReturn}{戻り値}
+S\+C\+E\+NE シーンが変わるなら次のシーンのenum classを返す 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{class_scene_acb50f8104e5a7cfecbdececa7d5f1b39}{Scene}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/scene/main/over/\mbox{\hyperlink{game__over_8h}{game\+\_\+over.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/scene/main/over/\mbox{\hyperlink{game__over_8cpp}{game\+\_\+over.\+cpp}}\end{DoxyCompactItemize}

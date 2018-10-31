@@ -9,16 +9,22 @@
 #include "../../base/object_base.h"
 #include "../../../collider/square/square_collider.h"
 #include "../../../rendering/sprite/sprite.h"
+#include "../../../sound/sound.h"
 
 /**
 * @brief 剣クラス
 */
 class Sword :public WeaponBase, public ObjectBase
 {
+	//次の攻撃をするまでのディレイ
+	static constexpr int delay = /*3*/0;
+	int current_delay = 0;
+	//音
+	Sound sound;
 	//プレイヤーからの距離
 	static constexpr float distance = 80.0f;
 	//アタックしているかどうかのフラグ
-	bool is_attack = false;
+	//bool is_attack = false;
 	//コリジョン
 	SquareCollider collider;
 	Sprite sprite;
@@ -45,7 +51,7 @@ public:
 	{
 		if (this != &other)
 		{
-			this->is_attack = other.is_attack;
+			//this->is_attack = other.is_attack;
 			this->collider = other.collider;
 			ObjectBase::operator=(other);
 		}

@@ -20,8 +20,10 @@ Sprite\+Manager の継承関係図\begin{figure}[H]
 \item 
 void \mbox{\hyperlink{class_sprite_manager_a82941ce284548c762f250220ea58f43c}{Init}} ()
 \begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
-\mbox{\hyperlink{sprite__manager_8h_ab0deadee9fd38132a17560766af7fc45}{CP}}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ \& \mbox{\hyperlink{class_sprite_manager_abccd80013300704593a7bdc45aeeeb05}{Get\+Texture}} (std\+::string, W\+C\+H\+AR $\ast$)
-\begin{DoxyCompactList}\small\item\em テクスチャを保存し、返す \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_manager_a5b41702bb7476fb1c148b3e2c81d6b06}{Set\+Texture}} (std\+::string, W\+C\+H\+AR $\ast$)
+\begin{DoxyCompactList}\small\item\em テクスチャを保存 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_manager_a4cdd5540bace32d5742ea4df648d87e9}{Render}} (const \mbox{\hyperlink{class_transform}{Transform}} \&, bool, bool, const std\+::string \&, const Direct\+X\+::\+X\+M\+V\+E\+C\+T\+OR \&, const R\+E\+CT \&, const Direct\+X\+::\+Sprite\+Effects)
+\begin{DoxyCompactList}\small\item\em 描画 \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_sprite_manager_ae01a31b1c80f676604ba55c93b499e1f}{$\sim$\+Sprite\+Manager}} ()
 \begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
 std\+::unique\+\_\+ptr$<$ Direct\+X\+::\+Sprite\+Batch $>$ \& \mbox{\hyperlink{class_sprite_manager_a0b82bacf33d0b558657c8e9841daf9d9}{Get\+Sprite\+Batch}} ()
@@ -103,26 +105,6 @@ Sprite\+Batchのゲッタ
 \begin{DoxyReturn}{戻り値}
 std\+::unique\+\_\+ptr$<$\+Direct\+X\+::\+Sprite\+Batch$>$\& 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_sprite_manager_abccd80013300704593a7bdc45aeeeb05}\label{class_sprite_manager_abccd80013300704593a7bdc45aeeeb05}} 
-\index{Sprite\+Manager@{Sprite\+Manager}!Get\+Texture@{Get\+Texture}}
-\index{Get\+Texture@{Get\+Texture}!Sprite\+Manager@{Sprite\+Manager}}
-\subsubsection{\texorpdfstring{Get\+Texture()}{GetTexture()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{sprite__manager_8h_ab0deadee9fd38132a17560766af7fc45}{CP}}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ \& Sprite\+Manager\+::\+Get\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{W\+C\+H\+AR $\ast$}]{path }\end{DoxyParamCaption})}
-
-
-
-テクスチャを保存し、返す 
-
-
-\begin{DoxyParams}{引数}
-{\em name} & mapで管理するためのキー \\
-\hline
-{\em path} & テクスチャがあるパス \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{戻り値}
-C\+P$<$\+I\+D3\+D11\+Shader\+Resource\+View$>$\& テクスチャ 
-\end{DoxyReturn}
 \mbox{\Hypertarget{class_sprite_manager_a82941ce284548c762f250220ea58f43c}\label{class_sprite_manager_a82941ce284548c762f250220ea58f43c}} 
 \index{Sprite\+Manager@{Sprite\+Manager}!Init@{Init}}
 \index{Init@{Init}!Sprite\+Manager@{Sprite\+Manager}}
@@ -133,6 +115,50 @@ C\+P$<$\+I\+D3\+D11\+Shader\+Resource\+View$>$\& テクスチャ
 
 初期化 
 
+\mbox{\Hypertarget{class_sprite_manager_a4cdd5540bace32d5742ea4df648d87e9}\label{class_sprite_manager_a4cdd5540bace32d5742ea4df648d87e9}} 
+\index{Sprite\+Manager@{Sprite\+Manager}!Render@{Render}}
+\index{Render@{Render}!Sprite\+Manager@{Sprite\+Manager}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Sprite\+Manager\+::\+Render (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_transform}{Transform}} \&}]{transform,  }\item[{bool}]{affected\+\_\+camera,  }\item[{bool}]{center\+\_\+axis,  }\item[{const std\+::string \&}]{name,  }\item[{const Direct\+X\+::\+X\+M\+V\+E\+C\+T\+OR \&}]{color,  }\item[{const R\+E\+CT \&}]{rect,  }\item[{const Direct\+X\+::\+Sprite\+Effects}]{sprite\+\_\+effect }\end{DoxyParamCaption})}
+
+
+
+描画 
+
+
+\begin{DoxyParams}{引数}
+{\em transform} & 位置や回転、拡大・縮小等 \\
+\hline
+{\em affected\+\_\+camera} & カメラの影響を受けるかどうか \\
+\hline
+{\em center\+\_\+axis} & センターを軸にするかどうか \\
+\hline
+{\em name} & キー \\
+\hline
+{\em color} & 色 \\
+\hline
+{\em rect} & テクスチャのどこを描画するかどうか \\
+\hline
+{\em sprite\+\_\+effect} & 様々の方向の反転 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_manager_a5b41702bb7476fb1c148b3e2c81d6b06}\label{class_sprite_manager_a5b41702bb7476fb1c148b3e2c81d6b06}} 
+\index{Sprite\+Manager@{Sprite\+Manager}!Set\+Texture@{Set\+Texture}}
+\index{Set\+Texture@{Set\+Texture}!Sprite\+Manager@{Sprite\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Texture()}{SetTexture()}}
+{\footnotesize\ttfamily void Sprite\+Manager\+::\+Set\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{W\+C\+H\+AR $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+テクスチャを保存 
+
+
+\begin{DoxyParams}{引数}
+{\em name} & mapで管理するためのキー \\
+\hline
+{\em path} & テクスチャがあるパス \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_sprite_manager_a6b387e8736713264f6d590082cd492cb}\label{class_sprite_manager_a6b387e8736713264f6d590082cd492cb}} 
 \index{Sprite\+Manager@{Sprite\+Manager}!Start@{Start}}
 \index{Start@{Start}!Sprite\+Manager@{Sprite\+Manager}}

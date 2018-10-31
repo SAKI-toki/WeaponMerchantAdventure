@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['font',['Font',['../class_font.html#a2af6642bc26eebff029c74d7827f5ee5',1,'Font::Font()=delete'],['../class_font.html#aa07b69b4e229b2e9efdf0ac49e7a2af1',1,'Font::Font(const Transform &amp;)']]]
+  ['end',['End',['../class_sprite_manager.html#afed8a96a6530f67123a4efa1b6d77032',1,'SpriteManager']]],
+  ['enemybase',['EnemyBase',['../class_enemy_base.html#abe56e3aa221224c1196fd65f897d5f19',1,'EnemyBase']]]
 ];

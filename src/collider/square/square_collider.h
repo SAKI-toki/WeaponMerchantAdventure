@@ -9,12 +9,12 @@
 #include "../../transform/transform.h"
 
 
-
 /**
 * @brief 四角形コライダクラス
 */
 class SquareCollider :public ColliderBase
 {
+
 	/**
 	* @brief 四角形のコライダのステータス
 	*/
@@ -66,6 +66,7 @@ public:
 	const SquareStatus& GetStatus()const { return status; }
 	//破棄
 	void Destroy();
-
+	//コピーコンストラクタ
 	SquareCollider& operator=(const SquareCollider& other);
+
 };

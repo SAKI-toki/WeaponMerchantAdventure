@@ -15,7 +15,9 @@
 */
 class Camera :public Singleton<Camera>
 {
+	//カメラの位置
 	VEC2 camera_pos = VEC2::Zero;
+	//追尾させるターゲット
 	ObjectBase* target = nullptr;
 public:
 	Camera() {}

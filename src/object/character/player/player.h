@@ -10,6 +10,8 @@
 #include "../../weapon/base/weapon_base.h"
 #include "../../weapon/sword/sword.h"
 #include "../../weapon/arrow/arrow.h"
+
+#include "../../../animation/animation.h"
 /**
 * @brief 向きの列挙型
 */
@@ -19,6 +21,8 @@ enum class DIRE { RIGHT, LEFT };
 */
 class Player :public DynamicObject
 {
+	Animation anim;
+	bool destroy_flg = false;
 	//武器
 	std::unique_ptr<WeaponBase> weapon[2];
 	//武器のナンバー
@@ -28,11 +32,16 @@ class Player :public DynamicObject
 	//当たり判定
 	SquareCollider collider;
 	//移動速度
-	static constexpr float speed = 4.0f;
+	static constexpr float speed = 0.3f;
+	static constexpr float max_speed = 4.0f;
+	//コライダの大きさ
+	static constexpr float collider_scale = 0.75f;
 	//ジャンプ時の上方向の加速度
 	static constexpr float jump = 10.0f;
 	//向き
 	DIRE dire = DIRE::RIGHT;
+	//振動フラグ
+	bool vib_r = false, vib_l = false;
 protected:
 	void InitProcess()final;
 	void UpdateProcess()final;
@@ -50,11 +59,5 @@ public:
 	}
 	void Collision(ObjectBase*,VEC2)final;
 
-	/**
-	* @brief 攻撃
-	*/
-	void Attack()
-	{
-		weapon[weapon_num]->Attack((dire == DIRE::RIGHT ? true : false), transform.pos);
-	}
+	void Attack();
 };

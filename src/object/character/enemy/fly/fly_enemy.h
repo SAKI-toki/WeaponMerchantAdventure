@@ -1,9 +1,18 @@
+/**
+* @file fly_enemy.h
+* @brief 飛ぶエネミークラスの宣言
+* @author 石山　悠
+* @date 2018/10/22
+*/
 #pragma once
 #include "../base/enemy_base.h"
+/**
+* @brief 飛ぶエネミークラス
+*/
 class FlyEnemy :public EnemyBase
 {
+	//スタートと終わりの間を移動する
 	VEC2 start_pos, end_pos, move;
-	static constexpr float speed = 3.0f;
 protected:
 	void InitProcess()final;
 	void UpdateProcess()final;
@@ -62,6 +71,11 @@ public:
 		Destroy();
 	}
 
+	/**
+	* @brief 移動範囲を決める
+	* @param range 現在の位置からどのくらい移動するか
+	* @param time どのくらいの時間をかけて行き来するか
+	*/
 	void SetMove(const VEC2& range, float time)
 	{
 		VEC2 _range = range / 2;

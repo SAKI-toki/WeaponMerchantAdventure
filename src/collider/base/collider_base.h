@@ -13,6 +13,8 @@
 class ColliderBase
 {
 public:
+	//当たったときに消えるフラグ
+	bool collision_destroy = false;
 	//押し出しするかどうか
 	bool is_trigger;
 	//x方向に対して押し出ししないものぶつかったかどうか

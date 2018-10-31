@@ -1,0 +1,100 @@
+\hypertarget{class_game_clear_scene}{}\section{Game\+Clear\+Scene クラス}
+\label{class_game_clear_scene}\index{Game\+Clear\+Scene@{Game\+Clear\+Scene}}
+
+
+ゲームクリアクラス  
+
+
+
+
+{\ttfamily \#include $<$game\+\_\+clear.\+h$>$}
+
+Game\+Clear\+Scene の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_clear_scene}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_clear_scene_a59fcf2b5d5d7197d37ecb85c54e7712a}{Init}} () final
+\begin{DoxyCompactList}\small\item\em ゲームクリアシーンの初期化 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{scene__base_8h_a24cee5343fb9d0706ead6e8601f363be}{S\+C\+E\+NE}} \mbox{\hyperlink{class_game_clear_scene_aebea5913506cc86d9570b286e69dfedd}{Update}} () final
+\begin{DoxyCompactList}\small\item\em ゲームクリアシーンの更新 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_clear_scene_addea514045f47860cfa23439b7bba075}{Render}} () final
+\begin{DoxyCompactList}\small\item\em ゲームクリアシーンの描画 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_clear_scene_a5a3a9e62bb0244b164d9e34663e99594}{Destroy}} () final
+\begin{DoxyCompactList}\small\item\em ゲームクリアシーンの破棄 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+ゲームクリアクラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_game_clear_scene_a5a3a9e62bb0244b164d9e34663e99594}\label{class_game_clear_scene_a5a3a9e62bb0244b164d9e34663e99594}} 
+\index{Game\+Clear\+Scene@{Game\+Clear\+Scene}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Game\+Clear\+Scene@{Game\+Clear\+Scene}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Game\+Clear\+Scene\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームクリアシーンの破棄 
+
+
+
+\mbox{\hyperlink{class_scene_base_a7c5b54020bc519b4dadfe9770d6b27f7}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_game_clear_scene_a59fcf2b5d5d7197d37ecb85c54e7712a}\label{class_game_clear_scene_a59fcf2b5d5d7197d37ecb85c54e7712a}} 
+\index{Game\+Clear\+Scene@{Game\+Clear\+Scene}!Init@{Init}}
+\index{Init@{Init}!Game\+Clear\+Scene@{Game\+Clear\+Scene}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Game\+Clear\+Scene\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームクリアシーンの初期化 
+
+
+
+\mbox{\hyperlink{class_scene_base_a24d7db43c819924dc8b07b436f6d3148}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_game_clear_scene_addea514045f47860cfa23439b7bba075}\label{class_game_clear_scene_addea514045f47860cfa23439b7bba075}} 
+\index{Game\+Clear\+Scene@{Game\+Clear\+Scene}!Render@{Render}}
+\index{Render@{Render}!Game\+Clear\+Scene@{Game\+Clear\+Scene}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Game\+Clear\+Scene\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームクリアシーンの描画 
+
+
+
+\mbox{\hyperlink{class_scene_base_ad981674ce731ea267f398e889bbb9dc3}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_game_clear_scene_aebea5913506cc86d9570b286e69dfedd}\label{class_game_clear_scene_aebea5913506cc86d9570b286e69dfedd}} 
+\index{Game\+Clear\+Scene@{Game\+Clear\+Scene}!Update@{Update}}
+\index{Update@{Update}!Game\+Clear\+Scene@{Game\+Clear\+Scene}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{scene__base_8h_a24cee5343fb9d0706ead6e8601f363be}{S\+C\+E\+NE}} Game\+Clear\+Scene\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームクリアシーンの更新 
+
+\begin{DoxyReturn}{戻り値}
+S\+C\+E\+NE シーンが変わるなら次のシーンのenum classを返す 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{class_scene_acb50f8104e5a7cfecbdececa7d5f1b39}{Scene}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/scene/main/clear/\mbox{\hyperlink{game__clear_8h}{game\+\_\+clear.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/scene/main/clear/\mbox{\hyperlink{game__clear_8cpp}{game\+\_\+clear.\+cpp}}\end{DoxyCompactItemize}

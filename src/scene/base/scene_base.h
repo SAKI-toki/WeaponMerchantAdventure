@@ -9,7 +9,7 @@
 /**
 * @brief シーン遷移を円滑にするためのenum class
 */
-enum class SCENE { TITLE, SELECT, GAME };
+enum class SCENE { TITLE, SELECT, GAME, CLEAR, OVER };
 
 /**
 * @brief マネージャーを含むシーンのスーパークラス

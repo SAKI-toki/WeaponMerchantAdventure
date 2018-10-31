@@ -15,17 +15,14 @@
 * @brief 各パラメータや画像を読み込む
 * @param name mapで管理するためのキー
 * @param path テクスチャのパス
-* @param h,w　テクスチャの大きさ
-* @param _all_render テクスチャをすべて描画するかどうか（アニメーションがあるかどうかとほぼ同義）
+* @param w,h テクスチャの大きさ
 * @param r,g,b,a 色
 */
-void Sprite::Init(std::string name, WCHAR* path, const bool _all_render, const LONG w, const LONG h, const float r, const float g, const float b, const float a)
+void Sprite::Init(std::string name, WCHAR* path, const LONG w, const LONG h, const float r, const float g, const float b, const float a)
 {
-	//テクスチャのサイズを代入
+	//１つのサイズを代入
 	rect = { 0,0,w,h };
 	my_name = name;
-	//すべて描画するかどうか
-	all_render = _all_render;
 	color.r = r; color.g = g; color.b = b; color.a = a;
 	//テクスチャをセット
 	SpriteManager::GetInstance()->SetTexture(name, path);
@@ -35,10 +32,12 @@ void Sprite::Init(std::string name, WCHAR* path, const bool _all_render, const L
 * @brief SpriteBatchを経由して描画する
 * @param transform 位置や回転、拡大・縮小
 * @param affected_camera カメラの位置によって描画する位置を変えるかどうか
+* @param center_axis 中心を軸に描画するかどうか
+* @param sprite_effects 様々な反転
 */
-void Sprite::Render(const Transform& transform, bool affected_camera, bool center_axis)
+void Sprite::Render(const Transform& transform, bool affected_camera, 
+	bool center_axis, const DirectX::SpriteEffects sprite_effects)
 {
-
 	/*try {
 		//描画
 		if (affected_camera)
@@ -60,5 +59,5 @@ void Sprite::Render(const Transform& transform, bool affected_camera, bool cente
 	}*/
 	//メンバ変数にするとアライメントがどうのこうのと言われるのでここで変換
 	DirectX::XMVECTOR _color = DirectX::XMVectorSet(color.r, color.g, color.b, color.a);
-	SpriteManager::GetInstance()->Render(transform, affected_camera, center_axis, my_name, _color, rect);
+	SpriteManager::GetInstance()->Render(transform, affected_camera, center_axis, my_name, _color, rect, sprite_effects);
 }

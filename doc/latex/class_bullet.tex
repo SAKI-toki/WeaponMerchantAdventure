@@ -1,0 +1,187 @@
+\hypertarget{class_bullet}{}\section{Bullet クラス}
+\label{class_bullet}\index{Bullet@{Bullet}}
+
+
+弾クラス  
+
+
+
+
+{\ttfamily \#include $<$bullet.\+h$>$}
+
+Bullet の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_bullet}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bullet_acd7befc0bc18907cc1d871d37bbdddeb}{Bullet}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bullet_a7e1ed7ba89e019b3d0fd068cfb4f9a6d}{Bullet}} (const \mbox{\hyperlink{class_bullet}{Bullet}} \&b)
+\begin{DoxyCompactList}\small\item\em コピーコンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bullet}{Bullet}} \& \mbox{\hyperlink{class_bullet_a2a98443028be8389c0eb9da9a09f661c}{operator=}} (const \mbox{\hyperlink{class_bullet}{Bullet}} \&other)
+\begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bullet_a4bf8f227cde57a6abcdd268df2ef9a9d}{Bullet}} (\mbox{\hyperlink{class_bullet}{Bullet}} \&\&b)
+\begin{DoxyCompactList}\small\item\em ムーブコンストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_ab6b7b4ebc19095372a8e5ef3ad45ff65}{Bullet\+Init}} (const float, const std\+::function$<$ void()$>$ \&)
+\begin{DoxyCompactList}\small\item\em 弾の初期化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_a09a92c6b924fb6bc38e18f6c41ac20ff}{Destroy}} () final
+\begin{DoxyCompactList}\small\item\em 破棄 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_a945da4a16d11cfee31139d564bea61f0}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}) final
+\begin{DoxyCompactList}\small\item\em 当たったときに実行する関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bullet_aaeb5cb41d7db89f49007b08b41f1bfcf}{$\sim$\+Bullet}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_bullet_a448c1c566e002d7b51ba6ed5c927bff7}{Init\+Process}} () final
+\begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_aa0867038c9c35e30ee09e21ecdccf281}{Update\+Process}} () final
+\begin{DoxyCompactList}\small\item\em 更新 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+弾クラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_bullet_acd7befc0bc18907cc1d871d37bbdddeb}\label{class_bullet_acd7befc0bc18907cc1d871d37bbdddeb}} 
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{Bullet()}{Bullet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Bullet\+::\+Bullet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{class_bullet_a7e1ed7ba89e019b3d0fd068cfb4f9a6d}\label{class_bullet_a7e1ed7ba89e019b3d0fd068cfb4f9a6d}} 
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{Bullet()}{Bullet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Bullet\+::\+Bullet (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_bullet}{Bullet}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピーコンストラクタ 
+
+\mbox{\Hypertarget{class_bullet_a4bf8f227cde57a6abcdd268df2ef9a9d}\label{class_bullet_a4bf8f227cde57a6abcdd268df2ef9a9d}} 
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{Bullet()}{Bullet()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Bullet\+::\+Bullet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bullet}{Bullet}} \&\&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ムーブコンストラクタ 
+
+\mbox{\Hypertarget{class_bullet_aaeb5cb41d7db89f49007b08b41f1bfcf}\label{class_bullet_aaeb5cb41d7db89f49007b08b41f1bfcf}} 
+\index{Bullet@{Bullet}!````~Bullet@{$\sim$\+Bullet}}
+\index{````~Bullet@{$\sim$\+Bullet}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{$\sim$\+Bullet()}{~Bullet()}}
+{\footnotesize\ttfamily Bullet\+::$\sim$\+Bullet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+デストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_bullet_ab6b7b4ebc19095372a8e5ef3ad45ff65}\label{class_bullet_ab6b7b4ebc19095372a8e5ef3ad45ff65}} 
+\index{Bullet@{Bullet}!Bullet\+Init@{Bullet\+Init}}
+\index{Bullet\+Init@{Bullet\+Init}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{Bullet\+Init()}{BulletInit()}}
+{\footnotesize\ttfamily void Bullet\+::\+Bullet\+Init (\begin{DoxyParamCaption}\item[{const float}]{angle,  }\item[{const std\+::function$<$ void()$>$ \&}]{func }\end{DoxyParamCaption})}
+
+
+
+弾の初期化 
+
+
+\begin{DoxyParams}{引数}
+{\em angle} & 発射角度 \\
+\hline
+{\em func} & 当たったときに実行する関数 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bullet_a945da4a16d11cfee31139d564bea61f0}\label{class_bullet_a945da4a16d11cfee31139d564bea61f0}} 
+\index{Bullet@{Bullet}!Collision@{Collision}}
+\index{Collision@{Collision}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void Bullet\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+当たったときに実行する関数 
+
+
+\begin{DoxyParams}{引数}
+{\em obj} & 当たった相手のオブジェクト \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_object_base_ad772d7a42f5e46c39481f5db22ee8193}{Object\+Base}}を再実装しています。
+
+\mbox{\Hypertarget{class_bullet_a09a92c6b924fb6bc38e18f6c41ac20ff}\label{class_bullet_a09a92c6b924fb6bc38e18f6c41ac20ff}} 
+\index{Bullet@{Bullet}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Bullet\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+破棄 
+
+
+
+\mbox{\hyperlink{class_object_base_a7fa4c548153c3af20f89673ffea809af}{Object\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_bullet_a448c1c566e002d7b51ba6ed5c927bff7}\label{class_bullet_a448c1c566e002d7b51ba6ed5c927bff7}} 
+\index{Bullet@{Bullet}!Init\+Process@{Init\+Process}}
+\index{Init\+Process@{Init\+Process}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{Init\+Process()}{InitProcess()}}
+{\footnotesize\ttfamily void Bullet\+::\+Init\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+初期化 
+
+
+
+\mbox{\hyperlink{class_object_base_af133f36f2bca1dcfd962e2cfac61ab51}{Object\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_bullet_a2a98443028be8389c0eb9da9a09f661c}\label{class_bullet_a2a98443028be8389c0eb9da9a09f661c}} 
+\index{Bullet@{Bullet}!operator=@{operator=}}
+\index{operator=@{operator=}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bullet}{Bullet}}\& Bullet\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_bullet}{Bullet}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピー代入演算子 
+
+\mbox{\Hypertarget{class_bullet_aa0867038c9c35e30ee09e21ecdccf281}\label{class_bullet_aa0867038c9c35e30ee09e21ecdccf281}} 
+\index{Bullet@{Bullet}!Update\+Process@{Update\+Process}}
+\index{Update\+Process@{Update\+Process}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{Update\+Process()}{UpdateProcess()}}
+{\footnotesize\ttfamily void Bullet\+::\+Update\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+更新 
+
+
+
+\mbox{\hyperlink{class_object_base_a8b5b72b363a419767efde0b0e692ea95}{Object\+Base}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/weapon/arrow/bullet/\mbox{\hyperlink{bullet_8h}{bullet.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/weapon/arrow/bullet/\mbox{\hyperlink{bullet_8cpp}{bullet.\+cpp}}\end{DoxyCompactItemize}

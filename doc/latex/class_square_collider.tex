@@ -20,14 +20,16 @@ Square\+Collider の継承関係図\begin{figure}[H]
 \item 
 \mbox{\hyperlink{class_square_collider_a354753b61e7fa39cb5e7aadcddb78910}{Square\+Collider}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, bool=false, bool=false)
 \begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_square_collider_ab5e57de1f1fddd5a6935e4ed8739b4b2}{Set\+Status}} (\mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} pos, float w, float h, float rot)
+void \mbox{\hyperlink{class_square_collider_a11fbfdc35978ca8be47671a23719dbd4}{Set\+Status}} (const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&pos, const float w, const float h, const float rot, const float scale)
 \begin{DoxyCompactList}\small\item\em 当たり判定のステータスをセットする \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_square_collider_a68cf6f1607d0d460e3a4ba31a49153d8}{Collision\+Extrusion}} (const \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&)
+void \mbox{\hyperlink{class_square_collider_a68cf6f1607d0d460e3a4ba31a49153d8}{Collision\+Extrusion}} (const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&)
 \begin{DoxyCompactList}\small\item\em 当たったときの押し出し \end{DoxyCompactList}\item 
 const Square\+Status \& \mbox{\hyperlink{class_square_collider_ac437bc1bed951c82ca25d2b17a7b2e0f}{Get\+Status}} () const
 \begin{DoxyCompactList}\small\item\em 当たり判定のステータスを返す \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_square_collider_a83273e0e63692aa8020b8deedd456886}{Destroy}} ()
-\begin{DoxyCompactList}\small\item\em 四角形のコライダの破棄 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 四角形のコライダの破棄 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_square_collider}{Square\+Collider}} \& \mbox{\hyperlink{class_square_collider_aaa648559b58219a455333f3a100c1d67}{operator=}} (const \mbox{\hyperlink{class_square_collider}{Square\+Collider}} \&other)
+\begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
 
 
@@ -39,7 +41,7 @@ void \mbox{\hyperlink{class_square_collider_a83273e0e63692aa8020b8deedd456886}{D
 \index{Square\+Collider@{Square\+Collider}!Square\+Collider@{Square\+Collider}}
 \index{Square\+Collider@{Square\+Collider}!Square\+Collider@{Square\+Collider}}
 \subsubsection{\texorpdfstring{Square\+Collider()}{SquareCollider()}}
-{\footnotesize\ttfamily Square\+Collider\+::\+Square\+Collider (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{bool}]{\+\_\+is\+\_\+trigger = {\ttfamily false},  }\item[{bool}]{is\+\_\+static = {\ttfamily false} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Square\+Collider\+::\+Square\+Collider (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{bool}]{\+\_\+is\+\_\+trigger = {\ttfamily false},  }\item[{bool}]{\+\_\+is\+\_\+static = {\ttfamily false} }\end{DoxyParamCaption})}
 
 
 
@@ -49,6 +51,10 @@ void \mbox{\hyperlink{class_square_collider_a83273e0e63692aa8020b8deedd456886}{D
 \begin{DoxyParams}{引数}
 {\em obj} & オブジェクト \\
 \hline
+{\em \+\_\+is\+\_\+trigger} & 当たったときに透けるかどうか \\
+\hline
+{\em \+\_\+is\+\_\+static} & 静的かどうか \\
+\hline
 \end{DoxyParams}
 
 
@@ -57,7 +63,7 @@ void \mbox{\hyperlink{class_square_collider_a83273e0e63692aa8020b8deedd456886}{D
 \index{Square\+Collider@{Square\+Collider}!Collision\+Extrusion@{Collision\+Extrusion}}
 \index{Collision\+Extrusion@{Collision\+Extrusion}!Square\+Collider@{Square\+Collider}}
 \subsubsection{\texorpdfstring{Collision\+Extrusion()}{CollisionExtrusion()}}
-{\footnotesize\ttfamily void Square\+Collider\+::\+Collision\+Extrusion (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{pos }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Square\+Collider\+::\+Collision\+Extrusion (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{pos }\end{DoxyParamCaption})}
 
 
 
@@ -65,10 +71,10 @@ void \mbox{\hyperlink{class_square_collider_a83273e0e63692aa8020b8deedd456886}{D
 
 
 \begin{DoxyParams}{引数}
-{\em pos} & 移動先  加算減算にしない理由はfloatの誤差が起きてバグらないようにするため \\
+{\em pos} & 移動先\\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_square_collider_a83273e0e63692aa8020b8deedd456886}\label{class_square_collider_a83273e0e63692aa8020b8deedd456886}} 
+加算減算にしない理由はfloatの誤差が起きてバグらないようにするため \mbox{\Hypertarget{class_square_collider_a83273e0e63692aa8020b8deedd456886}\label{class_square_collider_a83273e0e63692aa8020b8deedd456886}} 
 \index{Square\+Collider@{Square\+Collider}!Destroy@{Destroy}}
 \index{Destroy@{Destroy}!Square\+Collider@{Square\+Collider}}
 \subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
@@ -91,11 +97,21 @@ void \mbox{\hyperlink{class_square_collider_a83273e0e63692aa8020b8deedd456886}{D
 \begin{DoxyReturn}{戻り値}
 const Square\+Status\& ステータス 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_square_collider_ab5e57de1f1fddd5a6935e4ed8739b4b2}\label{class_square_collider_ab5e57de1f1fddd5a6935e4ed8739b4b2}} 
+\mbox{\Hypertarget{class_square_collider_aaa648559b58219a455333f3a100c1d67}\label{class_square_collider_aaa648559b58219a455333f3a100c1d67}} 
+\index{Square\+Collider@{Square\+Collider}!operator=@{operator=}}
+\index{operator=@{operator=}!Square\+Collider@{Square\+Collider}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_square_collider}{Square\+Collider}} \& Square\+Collider\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_square_collider}{Square\+Collider}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+コピー代入演算子 
+
+\mbox{\Hypertarget{class_square_collider_a11fbfdc35978ca8be47671a23719dbd4}\label{class_square_collider_a11fbfdc35978ca8be47671a23719dbd4}} 
 \index{Square\+Collider@{Square\+Collider}!Set\+Status@{Set\+Status}}
 \index{Set\+Status@{Set\+Status}!Square\+Collider@{Square\+Collider}}
 \subsubsection{\texorpdfstring{Set\+Status()}{SetStatus()}}
-{\footnotesize\ttfamily void Square\+Collider\+::\+Set\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{pos,  }\item[{float}]{w,  }\item[{float}]{h,  }\item[{float}]{rot }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Square\+Collider\+::\+Set\+Status (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{pos,  }\item[{const float}]{w,  }\item[{const float}]{h,  }\item[{const float}]{rot,  }\item[{const float}]{scale }\end{DoxyParamCaption})}
 
 
 
@@ -108,6 +124,8 @@ const Square\+Status\& ステータス
 {\em w,h} & 幅、高さ \\
 \hline
 {\em rot} & 回転 \\
+\hline
+{\em scale} & 拡大・縮小 \\
 \hline
 \end{DoxyParams}
 

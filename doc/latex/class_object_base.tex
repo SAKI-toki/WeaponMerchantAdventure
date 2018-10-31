@@ -12,15 +12,19 @@
 Object\+Base の継承関係図\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{class_object_base}
+\includegraphics[height=3.522013cm]{class_object_base}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_object_base_a8b5bc833070770f6c9e17031b54ef12f}{Object\+Base}} (bool \+\_\+gravity)
+\mbox{\hyperlink{class_object_base_a8567572c8f524465f9c70cabdb603637}{Object\+Base}} (bool \+\_\+gravity=false)
 \begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_object_base_aea82aedc489b0a9d9990aafa06eef514}{Init}} (std\+::string name, W\+C\+H\+AR $\ast$path, const L\+O\+NG w, const L\+O\+NG h, \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} pos, float rot=0, float scale=1, bool all\+\_\+render=true)
+\mbox{\hyperlink{class_object_base_a5f5bbcf3e9036ac77a93c2243999f534}{Object\+Base}} (const \mbox{\hyperlink{class_object_base}{Object\+Base}} \&o)
+\begin{DoxyCompactList}\small\item\em コピーコンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_object_base}{Object\+Base}} \& \mbox{\hyperlink{class_object_base_aa475bbf5768adfb410951251f0070d19}{operator=}} (const \mbox{\hyperlink{class_object_base}{Object\+Base}} \&other)
+\begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_object_base_a65028dd02e59f53f441e3dcccaf301e9}{Init}} (std\+::string name, W\+C\+H\+AR $\ast$path, const L\+O\+NG w, const L\+O\+NG h, \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} pos, float rot=0, float scale=1)
 \begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_object_base_a5b5672034139b22235ada326eb16dd3e}{Update}} ()
 \begin{DoxyCompactList}\small\item\em 更新するかどうか決める \end{DoxyCompactList}\item 
@@ -30,10 +34,12 @@ virtual void \mbox{\hyperlink{class_object_base_a7fa4c548153c3af20f89673ffea809a
 \item 
 virtual \mbox{\hyperlink{class_object_base_a7074bc9389069351c2d0eee6a47e5ee3}{$\sim$\+Object\+Base}} ()
 \item 
-virtual void \mbox{\hyperlink{class_object_base_ad772d7a42f5e46c39481f5db22ee8193}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}})
+virtual void \mbox{\hyperlink{class_object_base_ad772d7a42f5e46c39481f5db22ee8193}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}})
 \end{DoxyCompactItemize}
 \subsection*{公開変数類}
 \begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_status}{Status}} \mbox{\hyperlink{class_object_base_a03b285263802692be1f3a9a7b13e5344}{status}}
 \item 
 \mbox{\hyperlink{class_gravity}{Gravity}} \mbox{\hyperlink{class_object_base_a570bfa03730e906989187bfbcad95c51}{gravity}}
 \item 
@@ -41,7 +47,7 @@ bool \mbox{\hyperlink{class_object_base_aab135a2a04e76046804f01b63df4f35c}{use\+
 \item 
 \mbox{\hyperlink{object__base_8h_a0eff9883ab049ee02773dde19d057c0c}{O\+B\+J\+E\+C\+T\+\_\+\+T\+AG}} \mbox{\hyperlink{class_object_base_aff7eb5482ca9bc1cd30b84994d0dad8b}{object\+\_\+tag}}
 \item 
-bool \mbox{\hyperlink{class_object_base_ade1c868f20653a6fa5236544120eca2b}{enabled}}
+bool \mbox{\hyperlink{class_object_base_ade1c868f20653a6fa5236544120eca2b}{enabled}} = true
 \item 
 \mbox{\hyperlink{class_transform}{Transform}} \mbox{\hyperlink{class_object_base_ac8096c26fe09682da6119208d392dc62}{transform}}
 \end{DoxyCompactItemize}
@@ -67,15 +73,25 @@ virtual void \mbox{\hyperlink{class_object_base_a8b5b72b363a419767efde0b0e692ea9
 オブジェクトのスーパークラス 
 
 \subsection{構築子と解体子}
-\mbox{\Hypertarget{class_object_base_a8b5bc833070770f6c9e17031b54ef12f}\label{class_object_base_a8b5bc833070770f6c9e17031b54ef12f}} 
+\mbox{\Hypertarget{class_object_base_a8567572c8f524465f9c70cabdb603637}\label{class_object_base_a8567572c8f524465f9c70cabdb603637}} 
 \index{Object\+Base@{Object\+Base}!Object\+Base@{Object\+Base}}
 \index{Object\+Base@{Object\+Base}!Object\+Base@{Object\+Base}}
-\subsubsection{\texorpdfstring{Object\+Base()}{ObjectBase()}}
-{\footnotesize\ttfamily Object\+Base\+::\+Object\+Base (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+gravity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{Object\+Base()}{ObjectBase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Object\+Base\+::\+Object\+Base (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+gravity = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 コンストラクタ 
+
+\mbox{\Hypertarget{class_object_base_a5f5bbcf3e9036ac77a93c2243999f534}\label{class_object_base_a5f5bbcf3e9036ac77a93c2243999f534}} 
+\index{Object\+Base@{Object\+Base}!Object\+Base@{Object\+Base}}
+\index{Object\+Base@{Object\+Base}!Object\+Base@{Object\+Base}}
+\subsubsection{\texorpdfstring{Object\+Base()}{ObjectBase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Object\+Base\+::\+Object\+Base (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_object_base}{Object\+Base}} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピーコンストラクタ 
 
 \mbox{\Hypertarget{class_object_base_a7074bc9389069351c2d0eee6a47e5ee3}\label{class_object_base_a7074bc9389069351c2d0eee6a47e5ee3}} 
 \index{Object\+Base@{Object\+Base}!````~Object\+Base@{$\sim$\+Object\+Base}}
@@ -90,11 +106,11 @@ virtual void \mbox{\hyperlink{class_object_base_a8b5b72b363a419767efde0b0e692ea9
 \index{Object\+Base@{Object\+Base}!Collision@{Collision}}
 \index{Collision@{Collision}!Object\+Base@{Object\+Base}}
 \subsubsection{\texorpdfstring{Collision()}{Collision()}}
-{\footnotesize\ttfamily virtual void Object\+Base\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{,  }\item[{\mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual void Object\+Base\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{,  }\item[{\mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_player_a184fbb2c70e34fb6c6a0c2fc7e0f86c9}{Player}}, \mbox{\hyperlink{class_map_object_a61c2b7e046b76d98adbf23c9e6302918}{Map\+Object}}, \mbox{\hyperlink{class_static_object_abe05f711f0d62319e1a11419813c5d50}{Static\+Object}}, \mbox{\hyperlink{class_normal_enemy_ac27e00973d2430da57e044bfe04fe5b4}{Normal\+Enemy}}で再実装されています。
+\mbox{\hyperlink{class_bullet_a945da4a16d11cfee31139d564bea61f0}{Bullet}}, \mbox{\hyperlink{class_map_object_a61c2b7e046b76d98adbf23c9e6302918}{Map\+Object}}, \mbox{\hyperlink{class_normal_enemy_ac27e00973d2430da57e044bfe04fe5b4}{Normal\+Enemy}}, \mbox{\hyperlink{class_fly_enemy_adaabf7ce270104e30df29bfa464d72ce}{Fly\+Enemy}}, \mbox{\hyperlink{class_sword_acb6e5846afb674bc1ec47dcfee0a6bd3}{Sword}}, \mbox{\hyperlink{class_player_a184fbb2c70e34fb6c6a0c2fc7e0f86c9}{Player}}, \mbox{\hyperlink{class_static_object_abe05f711f0d62319e1a11419813c5d50}{Static\+Object}}で再実装されています。
 
 \mbox{\Hypertarget{class_object_base_a7fa4c548153c3af20f89673ffea809af}\label{class_object_base_a7fa4c548153c3af20f89673ffea809af}} 
 \index{Object\+Base@{Object\+Base}!Destroy@{Destroy}}
@@ -104,13 +120,13 @@ virtual void \mbox{\hyperlink{class_object_base_a8b5b72b363a419767efde0b0e692ea9
 
 
 
-\mbox{\hyperlink{class_player_af2cf4936165ef12cce96f7994e0879df}{Player}}, \mbox{\hyperlink{class_static_object_a8e9fb321b4f8f12c4bec1bc66853512f}{Static\+Object}}, \mbox{\hyperlink{class_normal_enemy_a8a4271b6da6c7679d134d1c08125815b}{Normal\+Enemy}}, \mbox{\hyperlink{class_map_object_ad4bcfdc33bd945a9aa5e50a57c2704bc}{Map\+Object}}で実装されています。
+\mbox{\hyperlink{class_bullet_a09a92c6b924fb6bc38e18f6c41ac20ff}{Bullet}}, \mbox{\hyperlink{class_normal_enemy_a8a4271b6da6c7679d134d1c08125815b}{Normal\+Enemy}}, \mbox{\hyperlink{class_sword_a8473b694775374df4d9b6305cfa82293}{Sword}}, \mbox{\hyperlink{class_fly_enemy_af7ce5137e8eb2e8cc6654fbbdbc714cd}{Fly\+Enemy}}, \mbox{\hyperlink{class_player_af2cf4936165ef12cce96f7994e0879df}{Player}}, \mbox{\hyperlink{class_static_object_a8e9fb321b4f8f12c4bec1bc66853512f}{Static\+Object}}, \mbox{\hyperlink{class_map_object_ad4bcfdc33bd945a9aa5e50a57c2704bc}{Map\+Object}}で実装されています。
 
-\mbox{\Hypertarget{class_object_base_aea82aedc489b0a9d9990aafa06eef514}\label{class_object_base_aea82aedc489b0a9d9990aafa06eef514}} 
+\mbox{\Hypertarget{class_object_base_a65028dd02e59f53f441e3dcccaf301e9}\label{class_object_base_a65028dd02e59f53f441e3dcccaf301e9}} 
 \index{Object\+Base@{Object\+Base}!Init@{Init}}
 \index{Init@{Init}!Object\+Base@{Object\+Base}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily void Object\+Base\+::\+Init (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{W\+C\+H\+AR $\ast$}]{path,  }\item[{const L\+O\+NG}]{w,  }\item[{const L\+O\+NG}]{h,  }\item[{\mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{pos,  }\item[{float}]{rot = {\ttfamily 0},  }\item[{float}]{scale = {\ttfamily 1},  }\item[{bool}]{all\+\_\+render = {\ttfamily true} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Object\+Base\+::\+Init (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{W\+C\+H\+AR $\ast$}]{path,  }\item[{const L\+O\+NG}]{w,  }\item[{const L\+O\+NG}]{h,  }\item[{\mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{pos,  }\item[{float}]{rot = {\ttfamily 0},  }\item[{float}]{scale = {\ttfamily 1} }\end{DoxyParamCaption})}
 
 
 
@@ -118,6 +134,8 @@ virtual void \mbox{\hyperlink{class_object_base_a8b5b72b363a419767efde0b0e692ea9
 
 
 \begin{DoxyParams}{引数}
+{\em name} & テクスチャをロードするためのキー \\
+\hline
 {\em path} & テクスチャのパス \\
 \hline
 {\em w,h} & テクスチャのサイズ \\
@@ -126,9 +144,7 @@ virtual void \mbox{\hyperlink{class_object_base_a8b5b72b363a419767efde0b0e692ea9
 \hline
 {\em rot} & 回転 \\
 \hline
-{\em scale} & サイズ \\
-\hline
-{\em all\+\_\+render} & テクスチャすべてを描画するかどうか \\
+{\em scale} & 拡大・縮小 \\
 \hline
 {\em テクスチャをすべて描画するかどうか} & \\
 \hline
@@ -141,7 +157,17 @@ virtual void \mbox{\hyperlink{class_object_base_a8b5b72b363a419767efde0b0e692ea9
 
 
 
-\mbox{\hyperlink{class_player_a1051f85c8bf18a256d275d1a1dee5da6}{Player}}, \mbox{\hyperlink{class_static_object_afa0709f50495338a23c1140062a567af}{Static\+Object}}, \mbox{\hyperlink{class_map_object_a3043cddb8aaad0eab27a076e9bee0284}{Map\+Object}}, \mbox{\hyperlink{class_normal_enemy_ae45bd9535595f810d065b92f8dd63342}{Normal\+Enemy}}で実装されています。
+\mbox{\hyperlink{class_player_a1051f85c8bf18a256d275d1a1dee5da6}{Player}}, \mbox{\hyperlink{class_sword_aab0c07888f3aaee1ba25d668ac7c847a}{Sword}}, \mbox{\hyperlink{class_bullet_a448c1c566e002d7b51ba6ed5c927bff7}{Bullet}}, \mbox{\hyperlink{class_normal_enemy_ae45bd9535595f810d065b92f8dd63342}{Normal\+Enemy}}, \mbox{\hyperlink{class_map_object_a3043cddb8aaad0eab27a076e9bee0284}{Map\+Object}}, \mbox{\hyperlink{class_fly_enemy_afe4ddbf7089952146443f4ca71f55b13}{Fly\+Enemy}}, \mbox{\hyperlink{class_static_object_afa0709f50495338a23c1140062a567af}{Static\+Object}}で実装されています。
+
+\mbox{\Hypertarget{class_object_base_aa475bbf5768adfb410951251f0070d19}\label{class_object_base_aa475bbf5768adfb410951251f0070d19}} 
+\index{Object\+Base@{Object\+Base}!operator=@{operator=}}
+\index{operator=@{operator=}!Object\+Base@{Object\+Base}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_object_base}{Object\+Base}}\& Object\+Base\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_object_base}{Object\+Base}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピー代入演算子 
 
 \mbox{\Hypertarget{class_object_base_ac84be5b56d23b8809ca08e27c0dcb16a}\label{class_object_base_ac84be5b56d23b8809ca08e27c0dcb16a}} 
 \index{Object\+Base@{Object\+Base}!Render@{Render}}
@@ -168,7 +194,7 @@ virtual void \mbox{\hyperlink{class_object_base_a8b5b72b363a419767efde0b0e692ea9
 
 
 
-\mbox{\hyperlink{class_dynamic_object_aa7488e1b4dfd7049447535d93d9d6783}{Dynamic\+Object}}, \mbox{\hyperlink{class_static_object_afec57009537695c4715386120a619942}{Static\+Object}}で実装されています。
+\mbox{\hyperlink{class_player_a8ac2e54fe5672d32186456b9735c02c3}{Player}}, \mbox{\hyperlink{class_sword_a7f5d2c6e6e0104e9a85f600eec14ef6d}{Sword}}, \mbox{\hyperlink{class_enemy_base_af874ce6fc410fddc7d55ffd7c7bedac8}{Enemy\+Base}}, \mbox{\hyperlink{class_dynamic_object_aa7488e1b4dfd7049447535d93d9d6783}{Dynamic\+Object}}, \mbox{\hyperlink{class_static_object_afec57009537695c4715386120a619942}{Static\+Object}}で実装されています。
 
 \mbox{\Hypertarget{class_object_base_a5b5672034139b22235ada326eb16dd3e}\label{class_object_base_a5b5672034139b22235ada326eb16dd3e}} 
 \index{Object\+Base@{Object\+Base}!Update@{Update}}
@@ -188,7 +214,7 @@ virtual void \mbox{\hyperlink{class_object_base_a8b5b72b363a419767efde0b0e692ea9
 
 
 
-\mbox{\hyperlink{class_player_ab8accc9b83b030f5313f1b4872a7e634}{Player}}, \mbox{\hyperlink{class_static_object_a7fa678c3c4032bb6e9417f93a8bb895c}{Static\+Object}}, \mbox{\hyperlink{class_map_object_ab6b8849f15175417eca94b2703945e4b}{Map\+Object}}, \mbox{\hyperlink{class_normal_enemy_a371a6bef4feaeb0b47e1ab61dead7b77}{Normal\+Enemy}}で実装されています。
+\mbox{\hyperlink{class_player_ab8accc9b83b030f5313f1b4872a7e634}{Player}}, \mbox{\hyperlink{class_sword_a3e0221aa5c05ecada9def39fb38c0059}{Sword}}, \mbox{\hyperlink{class_bullet_aa0867038c9c35e30ee09e21ecdccf281}{Bullet}}, \mbox{\hyperlink{class_normal_enemy_a371a6bef4feaeb0b47e1ab61dead7b77}{Normal\+Enemy}}, \mbox{\hyperlink{class_map_object_ab6b8849f15175417eca94b2703945e4b}{Map\+Object}}, \mbox{\hyperlink{class_fly_enemy_a5122c8fea26ebbd0390acfd6e41931ff}{Fly\+Enemy}}, \mbox{\hyperlink{class_static_object_a7fa678c3c4032bb6e9417f93a8bb895c}{Static\+Object}}で実装されています。
 
 
 
@@ -197,7 +223,7 @@ virtual void \mbox{\hyperlink{class_object_base_a8b5b72b363a419767efde0b0e692ea9
 \index{Object\+Base@{Object\+Base}!enabled@{enabled}}
 \index{enabled@{enabled}!Object\+Base@{Object\+Base}}
 \subsubsection{\texorpdfstring{enabled}{enabled}}
-{\footnotesize\ttfamily bool Object\+Base\+::enabled}
+{\footnotesize\ttfamily bool Object\+Base\+::enabled = true}
 
 \mbox{\Hypertarget{class_object_base_a570bfa03730e906989187bfbcad95c51}\label{class_object_base_a570bfa03730e906989187bfbcad95c51}} 
 \index{Object\+Base@{Object\+Base}!gravity@{gravity}}
@@ -216,6 +242,12 @@ virtual void \mbox{\hyperlink{class_object_base_a8b5b72b363a419767efde0b0e692ea9
 \index{sprite@{sprite}!Object\+Base@{Object\+Base}}
 \subsubsection{\texorpdfstring{sprite}{sprite}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_sprite}{Sprite}} Object\+Base\+::sprite\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_object_base_a03b285263802692be1f3a9a7b13e5344}\label{class_object_base_a03b285263802692be1f3a9a7b13e5344}} 
+\index{Object\+Base@{Object\+Base}!status@{status}}
+\index{status@{status}!Object\+Base@{Object\+Base}}
+\subsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_status}{Status}} Object\+Base\+::status}
 
 \mbox{\Hypertarget{class_object_base_ac8096c26fe09682da6119208d392dc62}\label{class_object_base_ac8096c26fe09682da6119208d392dc62}} 
 \index{Object\+Base@{Object\+Base}!transform@{transform}}

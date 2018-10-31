@@ -88,9 +88,12 @@ SpriteManager の継承関係図</div>
 <tr class="memitem:a82941ce284548c762f250220ea58f43c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite_manager.html#a82941ce284548c762f250220ea58f43c">Init</a> ()</td></tr>
 <tr class="memdesc:a82941ce284548c762f250220ea58f43c"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化  <a href="#a82941ce284548c762f250220ea58f43c">[詳解]</a><br /></td></tr>
 <tr class="separator:a82941ce284548c762f250220ea58f43c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abccd80013300704593a7bdc45aeeeb05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sprite__manager_8h.html#ab0deadee9fd38132a17560766af7fc45">CP</a>&lt; ID3D11ShaderResourceView &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite_manager.html#abccd80013300704593a7bdc45aeeeb05">GetTexture</a> (std::string, WCHAR *)</td></tr>
-<tr class="memdesc:abccd80013300704593a7bdc45aeeeb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャを保存し、返す  <a href="#abccd80013300704593a7bdc45aeeeb05">[詳解]</a><br /></td></tr>
-<tr class="separator:abccd80013300704593a7bdc45aeeeb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b41702bb7476fb1c148b3e2c81d6b06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite_manager.html#a5b41702bb7476fb1c148b3e2c81d6b06">SetTexture</a> (std::string, WCHAR *)</td></tr>
+<tr class="memdesc:a5b41702bb7476fb1c148b3e2c81d6b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャを保存  <a href="#a5b41702bb7476fb1c148b3e2c81d6b06">[詳解]</a><br /></td></tr>
+<tr class="separator:a5b41702bb7476fb1c148b3e2c81d6b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cdd5540bace32d5742ea4df648d87e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite_manager.html#a4cdd5540bace32d5742ea4df648d87e9">Render</a> (const <a class="el" href="class_transform.html">Transform</a> &amp;, bool, bool, const std::string &amp;, const DirectX::XMVECTOR &amp;, const RECT &amp;, const DirectX::SpriteEffects)</td></tr>
+<tr class="memdesc:a4cdd5540bace32d5742ea4df648d87e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画  <a href="#a4cdd5540bace32d5742ea4df648d87e9">[詳解]</a><br /></td></tr>
+<tr class="separator:a4cdd5540bace32d5742ea4df648d87e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae01a31b1c80f676604ba55c93b499e1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite_manager.html#ae01a31b1c80f676604ba55c93b499e1f">~SpriteManager</a> ()</td></tr>
 <tr class="memdesc:ae01a31b1c80f676604ba55c93b499e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <a href="#ae01a31b1c80f676604ba55c93b499e1f">[詳解]</a><br /></td></tr>
 <tr class="separator:ae01a31b1c80f676604ba55c93b499e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,6 +120,7 @@ SpriteManager の継承関係図</div>
 その他の継承メンバ</h2></td></tr>
 <tr class="inherit_header pub_static_methods_class_singleton"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_singleton')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_singleton.html">Singleton&lt; SpriteManager &gt;</a> に属する継承静的公開メンバ関数</td></tr>
 <tr class="memitem:a57b10e4aa6d89bbac3a16355914655b3 inherit pub_static_methods_class_singleton"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="class_sprite_manager.html">SpriteManager</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_singleton.html#a57b10e4aa6d89bbac3a16355914655b3">GetInstance</a> ()</td></tr>
+<tr class="memdesc:a57b10e4aa6d89bbac3a16355914655b3 inherit pub_static_methods_class_singleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">インスタンスの取得  <a href="class_singleton.html#a57b10e4aa6d89bbac3a16355914655b3">[詳解]</a><br /></td></tr>
 <tr class="separator:a57b10e4aa6d89bbac3a16355914655b3 inherit pub_static_methods_class_singleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_singleton"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_singleton')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_singleton.html">Singleton&lt; SpriteManager &gt;</a> に属する継承限定公開メンバ関数</td></tr>
 <tr class="memitem:a923b995920da9c06590adb170ab2f890 inherit pro_methods_class_singleton"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_singleton.html#a923b995920da9c06590adb170ab2f890">Singleton</a> ()</td></tr>
@@ -256,14 +260,105 @@ SpriteManager の継承関係図</div>
 
 </div>
 </div>
-<a id="abccd80013300704593a7bdc45aeeeb05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abccd80013300704593a7bdc45aeeeb05">&#9670;&nbsp;</a></span>GetTexture()</h2>
+<a id="a82941ce284548c762f250220ea58f43c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82941ce284548c762f250220ea58f43c">&#9670;&nbsp;</a></span>Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="sprite__manager_8h.html#ab0deadee9fd38132a17560766af7fc45">CP</a>&lt; ID3D11ShaderResourceView &gt; &amp; SpriteManager::GetTexture </td>
+          <td class="memname">void SpriteManager::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初期化 </p>
+
+</div>
+</div>
+<a id="a4cdd5540bace32d5742ea4df648d87e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cdd5540bace32d5742ea4df648d87e9">&#9670;&nbsp;</a></span>Render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SpriteManager::Render </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_transform.html">Transform</a> &amp;&#160;</td>
+          <td class="paramname"><em>transform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>affected_camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>center_axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DirectX::XMVECTOR &amp;&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RECT &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DirectX::SpriteEffects&#160;</td>
+          <td class="paramname"><em>sprite_effect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>描画 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transform</td><td>位置や回転、拡大・縮小等 </td></tr>
+    <tr><td class="paramname">affected_camera</td><td>カメラの影響を受けるかどうか </td></tr>
+    <tr><td class="paramname">center_axis</td><td>センターを軸にするかどうか </td></tr>
+    <tr><td class="paramname">name</td><td>キー </td></tr>
+    <tr><td class="paramname">color</td><td>色 </td></tr>
+    <tr><td class="paramname">rect</td><td>テクスチャのどこを描画するかどうか </td></tr>
+    <tr><td class="paramname">sprite_effect</td><td>様々の方向の反転 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5b41702bb7476fb1c148b3e2c81d6b06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b41702bb7476fb1c148b3e2c81d6b06">&#9670;&nbsp;</a></span>SetTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SpriteManager::SetTexture </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -282,7 +377,7 @@ SpriteManager の継承関係図</div>
       </table>
 </div><div class="memdoc">
 
-<p>テクスチャを保存し、返す </p>
+<p>テクスチャを保存 </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>mapで管理するためのキー </td></tr>
@@ -290,26 +385,6 @@ SpriteManager の継承関係図</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>戻り値</dt><dd>CP&lt;ID3D11ShaderResourceView&gt;&amp; テクスチャ </dd></dl>
-
-</div>
-</div>
-<a id="a82941ce284548c762f250220ea58f43c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82941ce284548c762f250220ea58f43c">&#9670;&nbsp;</a></span>Init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SpriteManager::Init </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>初期化 </p>
 
 </div>
 </div>

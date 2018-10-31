@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['objectbase',['ObjectBase',['../class_object_base.html',1,'']]]
+  ['mapobject',['MapObject',['../class_map_object.html',1,'']]]
 ];

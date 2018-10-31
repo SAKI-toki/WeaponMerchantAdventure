@@ -2,7 +2,7 @@
 * @file enemy_base.h
 * @brief エネミーのスーパークラスの宣言
 * @author 石山　悠
-* @date 2018/10/11
+* @date 2018/10/23
 */
 #pragma once
 #include "../../../base/dynamic/dynamic_object.h"
@@ -21,6 +21,9 @@ class EnemyBase :public DynamicObject
 protected:
 	//コライダ
 	SquareCollider collider;
+	//削除するかどうか
+	bool destroy_flg = false;
+	void RenderProcess(bool)final;
 public:
 	//敵のタイプ
 	ENEMY_TYPE enemy_type;

@@ -1,19 +1,5 @@
 var searchData=
 [
-  ['scaling',['Scaling',['../class_transform.html#ad6097ddf1d30f5a1023725efbee375fb',1,'Transform']]],
-  ['setcollider',['SetCollider',['../class_collider_manager.html#acf6822be802b18cd2f0ea50b2ba00d63',1,'ColliderManager']]],
-  ['setpan',['SetPan',['../class_sound.html#a1b066e78405656b1475849139ca24dce',1,'Sound']]],
-  ['setpitch',['SetPitch',['../class_sound.html#a06b9680efb2b6b41b52d9f25ac0264f1',1,'Sound']]],
-  ['setpos',['SetPos',['../class_camera.html#af79aa3fedd030712e7fa122a2ea88b48',1,'Camera']]],
-  ['setpower',['SetPower',['../class_gravity.html#a5cc5e47fc7c323ea38a2a289bdefae51',1,'Gravity']]],
-  ['setstatus',['SetStatus',['../class_square_collider.html#ab5e57de1f1fddd5a6935e4ed8739b4b2',1,'SquareCollider']]],
-  ['settarget',['SetTarget',['../class_camera.html#a7336f8f6c9145bee1ce6b1f16f0aaee4',1,'Camera']]],
-  ['settext',['SetText',['../class_font.html#a2c862120802e9aac650a96f7b4e29081',1,'Font']]],
-  ['setvolume',['SetVolume',['../class_sound.html#a993eee69f61611ca1b4621ea0952e2c8',1,'Sound']]],
-  ['singleton',['Singleton',['../class_singleton.html#a923b995920da9c06590adb170ab2f890',1,'Singleton']]],
-  ['squarecollider',['SquareCollider',['../class_square_collider.html#a354753b61e7fa39cb5e7aadcddb78910',1,'SquareCollider']]],
-  ['start',['Start',['../class_sprite_manager.html#a6b387e8736713264f6d590082cd492cb',1,'SpriteManager::Start()'],['../class_sound.html#ae021b518e93d7d8c6f3ea951cd4b98d8',1,'Sound::Start()']]],
-  ['staticobject',['StaticObject',['../class_static_object.html#a2a8e918ddfe5c6723b88b9f5c4156472',1,'StaticObject']]],
-  ['stop',['Stop',['../class_sound.html#a188de6836d531813da378464e392e813',1,'Sound']]],
-  ['suspend',['Suspend',['../class_sound_manager.html#a97d76cb22596fbb3c85766df0dcde757',1,'SoundManager']]]
+  ['pause',['Pause',['../class_sound.html#a4e199b4346519a4977fe94998c4a77e7',1,'Sound']]],
+  ['player',['Player',['../class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8',1,'Player']]]
 ];

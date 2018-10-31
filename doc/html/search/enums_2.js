@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['object_5ftag',['OBJECT_TAG',['../object__base_8h.html#a0eff9883ab049ee02773dde19d057c0c',1,'object_base.h']]]
+  ['enemy_5ftype',['ENEMY_TYPE',['../enemy__base_8h.html#aef73e23ea1cdc9dda520bbb81af707db',1,'enemy_base.h']]]
 ];

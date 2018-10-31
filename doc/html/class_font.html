@@ -76,14 +76,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a2af6642bc26eebff029c74d7827f5ee5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font.html#a2af6642bc26eebff029c74d7827f5ee5">Font</a> ()=delete</td></tr>
-<tr class="separator:a2af6642bc26eebff029c74d7827f5ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa07b69b4e229b2e9efdf0ac49e7a2af1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font.html#aa07b69b4e229b2e9efdf0ac49e7a2af1">Font</a> (const <a class="el" href="class_transform.html">Transform</a> &amp;)</td></tr>
-<tr class="memdesc:aa07b69b4e229b2e9efdf0ac49e7a2af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="#aa07b69b4e229b2e9efdf0ac49e7a2af1">[詳解]</a><br /></td></tr>
-<tr class="separator:aa07b69b4e229b2e9efdf0ac49e7a2af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35fd445e07010a3ad2c74c93dfa33f66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font.html#a35fd445e07010a3ad2c74c93dfa33f66">Init</a> (WCHAR *_text, float r=1, float g=1, float b=1, float a=1)</td></tr>
-<tr class="memdesc:a35fd445e07010a3ad2c74c93dfa33f66"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化  <a href="#a35fd445e07010a3ad2c74c93dfa33f66">[詳解]</a><br /></td></tr>
-<tr class="separator:a35fd445e07010a3ad2c74c93dfa33f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89cf4ba6fb0d3105b1207146e85661c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font.html#a89cf4ba6fb0d3105b1207146e85661c0">Init</a> (WCHAR *_text, float r=0, float g=0, float b=0, float a=1)</td></tr>
+<tr class="memdesc:a89cf4ba6fb0d3105b1207146e85661c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化  <a href="#a89cf4ba6fb0d3105b1207146e85661c0">[詳解]</a><br /></td></tr>
+<tr class="separator:a89cf4ba6fb0d3105b1207146e85661c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0e36f0066cc8724b6cf6833a15aedbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font.html#ad0e36f0066cc8724b6cf6833a15aedbc">Render</a> ()</td></tr>
 <tr class="memdesc:ad0e36f0066cc8724b6cf6833a15aedbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画  <a href="#ad0e36f0066cc8724b6cf6833a15aedbc">[詳解]</a><br /></td></tr>
 <tr class="separator:ad0e36f0066cc8724b6cf6833a15aedbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -93,62 +88,13 @@ $(function() {
 <tr class="memitem:a47be569e73a4ba819bf4370463cf929b"><td class="memItemLeft" align="right" valign="top">WCHAR *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font.html#a47be569e73a4ba819bf4370463cf929b">GetText</a> ()</td></tr>
 <tr class="memdesc:a47be569e73a4ba819bf4370463cf929b"><td class="mdescLeft">&#160;</td><td class="mdescRight">テキストを取得する  <a href="#a47be569e73a4ba819bf4370463cf929b">[詳解]</a><br /></td></tr>
 <tr class="separator:a47be569e73a4ba819bf4370463cf929b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46354f2c8dfd91268242b44e337d5262"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font.html#a46354f2c8dfd91268242b44e337d5262">SetTransform</a> (const <a class="el" href="class_transform.html">Transform</a> &amp;t)</td></tr>
+<tr class="memdesc:a46354f2c8dfd91268242b44e337d5262"><td class="mdescLeft">&#160;</td><td class="mdescRight">位置をセット  <a href="#a46354f2c8dfd91268242b44e337d5262">[詳解]</a><br /></td></tr>
+<tr class="separator:a46354f2c8dfd91268242b44e337d5262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>フォントクラス </p>
-</div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a2af6642bc26eebff029c74d7827f5ee5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2af6642bc26eebff029c74d7827f5ee5">&#9670;&nbsp;</a></span>Font() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Font::Font </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa07b69b4e229b2e9efdf0ac49e7a2af1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa07b69b4e229b2e9efdf0ac49e7a2af1">&#9670;&nbsp;</a></span>Font() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Font::Font </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_transform.html">Transform</a> &amp;&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>コンストラクタ </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">t</td><td>Transformの参照 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">関数詳解</h2>
+</div><h2 class="groupheader">関数詳解</h2>
 <a id="a47be569e73a4ba819bf4370463cf929b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a47be569e73a4ba819bf4370463cf929b">&#9670;&nbsp;</a></span>GetText()</h2>
 
@@ -177,8 +123,8 @@ $(function() {
 
 </div>
 </div>
-<a id="a35fd445e07010a3ad2c74c93dfa33f66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35fd445e07010a3ad2c74c93dfa33f66">&#9670;&nbsp;</a></span>Init()</h2>
+<a id="a89cf4ba6fb0d3105b1207146e85661c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89cf4ba6fb0d3105b1207146e85661c0">&#9670;&nbsp;</a></span>Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,19 +139,19 @@ $(function() {
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>r</em> = <code>1</code>, </td>
+          <td class="paramname"><em>r</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>g</em> = <code>1</code>, </td>
+          <td class="paramname"><em>g</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>b</em> = <code>1</code>, </td>
+          <td class="paramname"><em>b</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -282,6 +228,35 @@ $(function() {
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a46354f2c8dfd91268242b44e337d5262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46354f2c8dfd91268242b44e337d5262">&#9670;&nbsp;</a></span>SetTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Font::SetTransform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_transform.html">Transform</a> &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>位置をセット </p>
+<dl class="section return"><dt>戻り値</dt><dd>t 位置や回転等を含む </dd></dl>
 
 </div>
 </div>

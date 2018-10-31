@@ -7,12 +7,15 @@
 #pragma once
 #include "../../../base/dynamic/dynamic_object.h"
 #include "../../../../collider/square/square_collider.h"
+#include "../arrow.h"
 
 /**
 * @brief 弾クラス
 */
 class Bullet :public DynamicObject
 {
+	//当たったときに実行する関数
+	std::function<void()> arrow_func;
 	//弾速
 	static constexpr float speed = 20.0f;
 	//弾の寿命（フレーム数）
@@ -30,7 +33,10 @@ public:
 	/**
 	* @brief コンストラクタ
 	*/
-	Bullet() :collider(this, true) {}
+	Bullet() :collider(this, true)
+	{
+		object_tag = OBJECT_TAG::WEAPON;
+	}
 	/**
 	* @brief コピーコンストラクタ
 	*/
@@ -77,7 +83,7 @@ public:
 		this->life = b.life;
 	}
 
-	void BulletInit(const float);
+	void BulletInit(const float, const std::function<void()>&);
 	void Destroy()final;
 	void Collision(ObjectBase*, VEC2)final;
 

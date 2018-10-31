@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['enemy_5ftype',['ENEMY_TYPE',['../enemy__base_8h.html#aef73e23ea1cdc9dda520bbb81af707db',1,'enemy_base.h']]]
+  ['dire',['DIRE',['../player_8h.html#afd647f5491714764c356baf565c9828a',1,'player.h']]]
 ];

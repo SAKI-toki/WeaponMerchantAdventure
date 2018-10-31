@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['r',['r',['../struct_font_color.html#a194c6908e2594b30387e7e127e340f87',1,'FontColor::r()'],['../struct_sprite_color.html#a640d8864838a78db2a9d5f1840e24882',1,'SpriteColor::r()']]],
-  ['rot',['rot',['../class_transform.html#a2b471ae0000c6959dc9b07263933aa43',1,'Transform']]]
+  ['object',['object',['../class_collider_base.html#a63adac6a75877857abe9ff2cf4274157',1,'ColliderBase']]],
+  ['object_5ftag',['object_tag',['../class_object_base.html#aff7eb5482ca9bc1cd30b84994d0dad8b',1,'ObjectBase']]]
 ];

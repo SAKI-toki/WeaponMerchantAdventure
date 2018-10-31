@@ -11,7 +11,7 @@
 * @brief コンストラクタ
 * @param obj オブジェクト
 * @param _is_trigger 当たったときに透けるかどうか
-* @param is_static 静的かどうか
+* @param _is_static 静的かどうか
 */
 SquareCollider::SquareCollider(ObjectBase* obj, bool _is_trigger, bool _is_static)
 	:ColliderBase(obj, _is_trigger), is_static(_is_static)
@@ -28,12 +28,13 @@ SquareCollider::SquareCollider(ObjectBase* obj, bool _is_trigger, bool _is_stati
 */
 void SquareCollider::SetStatus(const VEC2& pos, const float w, const float h, const float rot, const float scale)
 {
-	status.center_pos = pos, status.width = w / 2.0f*scale, status.height = h / 2.0f*scale, status.rot = rot;
+	status.center_pos = pos, status.width = w * 0.5f*scale, status.height = h * 0.5f*scale, status.rot = rot;
+
 }
 /**
 * @brief 当たったときの押し出し
 * @param pos 移動先
-* @detail 加算減算にしない理由はfloatの誤差が起きてバグらないようにするため
+* @details 加算減算にしない理由はfloatの誤差が起きてバグらないようにするため
 */
 void SquareCollider::CollisionExtrusion(const VEC2& pos)
 {
@@ -48,6 +49,10 @@ void SquareCollider::Destroy()
 	ColliderManager::GetInstance()->DeleteCollider(this);
 	enabled = false;
 }
+
+/**
+* @brief コピー代入演算子
+*/
 SquareCollider& SquareCollider::operator=(const SquareCollider& other)
 {
 	if (this != &other)

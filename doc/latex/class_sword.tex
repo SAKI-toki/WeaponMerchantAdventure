@@ -1,0 +1,243 @@
+\hypertarget{class_sword}{}\section{Sword クラス}
+\label{class_sword}\index{Sword@{Sword}}
+
+
+剣クラス  
+
+
+
+
+{\ttfamily \#include $<$sword.\+h$>$}
+
+Sword の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sword}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sword_af33284e40825ec8ddccd01fa5833be36}{Sword}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sword_a6a55d930547584000fcc7c63d47ffabf}{Sword}} (const \mbox{\hyperlink{class_sword}{Sword}} \&s)
+\begin{DoxyCompactList}\small\item\em コピーコンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sword}{Sword}} \& \mbox{\hyperlink{class_sword_a47720cf8f0a44a9a30cf586a188a4730}{operator=}} (const \mbox{\hyperlink{class_sword}{Sword}} \&other)
+\begin{DoxyCompactList}\small\item\em 代入演算子 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sword_aa145196b7a7f01fd6fb6d4e323451b06}{Weapon\+Start}} ()
+\begin{DoxyCompactList}\small\item\em 武器用の初期化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sword_a11b6e50545688b52175a7089c61ac168}{Weapon\+Update}} (const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&, bool)
+\begin{DoxyCompactList}\small\item\em 武器用の更新 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sword_a3f60d8b24b7847d6a84f0941820b711d}{Weapon\+Destroy}} () final
+\begin{DoxyCompactList}\small\item\em 武器用の破棄 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sword_acb6e5846afb674bc1ec47dcfee0a6bd3}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}) final
+\begin{DoxyCompactList}\small\item\em 当たったときの反応 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sword_a923943b87ee19f3670bfcdb18d670e1e}{Attack}} (bool, const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&) final
+\begin{DoxyCompactList}\small\item\em 攻撃 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sword_aba05706b8b2480a8317595f92a7bc5ce}{Weapon\+Render}} (const \mbox{\hyperlink{class_transform}{Transform}} \&=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em 武器用の描画 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sword_a8473b694775374df4d9b6305cfa82293}{Destroy}} ()
+\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sword_a7f5d2c6e6e0104e9a85f600eec14ef6d}{Render\+Process}} (bool) final
+\item 
+void \mbox{\hyperlink{class_sword_aab0c07888f3aaee1ba25d668ac7c847a}{Init\+Process}} () final
+\item 
+void \mbox{\hyperlink{class_sword_a3e0221aa5c05ecada9def39fb38c0059}{Update\+Process}} () final
+\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+剣クラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_sword_af33284e40825ec8ddccd01fa5833be36}\label{class_sword_af33284e40825ec8ddccd01fa5833be36}} 
+\index{Sword@{Sword}!Sword@{Sword}}
+\index{Sword@{Sword}!Sword@{Sword}}
+\subsubsection{\texorpdfstring{Sword()}{Sword()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Sword\+::\+Sword (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{class_sword_a6a55d930547584000fcc7c63d47ffabf}\label{class_sword_a6a55d930547584000fcc7c63d47ffabf}} 
+\index{Sword@{Sword}!Sword@{Sword}}
+\index{Sword@{Sword}!Sword@{Sword}}
+\subsubsection{\texorpdfstring{Sword()}{Sword()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Sword\+::\+Sword (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sword}{Sword}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピーコンストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_sword_a923943b87ee19f3670bfcdb18d670e1e}\label{class_sword_a923943b87ee19f3670bfcdb18d670e1e}} 
+\index{Sword@{Sword}!Attack@{Attack}}
+\index{Attack@{Attack}!Sword@{Sword}}
+\subsubsection{\texorpdfstring{Attack()}{Attack()}}
+{\footnotesize\ttfamily void Sword\+::\+Attack (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+right,  }\item[{const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+攻撃 
+
+
+\begin{DoxyParams}{引数}
+{\em \+\_\+right} & 右向きかどうか \\
+\hline
+{\em pos} & 位置 \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_weapon_base_a8663cb6d8510d5b3aff1129c575cbd9c}{Weapon\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_sword_acb6e5846afb674bc1ec47dcfee0a6bd3}\label{class_sword_acb6e5846afb674bc1ec47dcfee0a6bd3}} 
+\index{Sword@{Sword}!Collision@{Collision}}
+\index{Collision@{Collision}!Sword@{Sword}}
+\subsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void Sword\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+当たったときの反応 
+
+
+\begin{DoxyParams}{引数}
+{\em obj} & 当たった相手のオブジェクト \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_object_base_ad772d7a42f5e46c39481f5db22ee8193}{Object\+Base}}を再実装しています。
+
+\mbox{\Hypertarget{class_sword_a8473b694775374df4d9b6305cfa82293}\label{class_sword_a8473b694775374df4d9b6305cfa82293}} 
+\index{Sword@{Sword}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Sword@{Sword}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Sword\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_object_base_a7fa4c548153c3af20f89673ffea809af}{Object\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_sword_aab0c07888f3aaee1ba25d668ac7c847a}\label{class_sword_aab0c07888f3aaee1ba25d668ac7c847a}} 
+\index{Sword@{Sword}!Init\+Process@{Init\+Process}}
+\index{Init\+Process@{Init\+Process}!Sword@{Sword}}
+\subsubsection{\texorpdfstring{Init\+Process()}{InitProcess()}}
+{\footnotesize\ttfamily void Sword\+::\+Init\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_object_base_af133f36f2bca1dcfd962e2cfac61ab51}{Object\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_sword_a47720cf8f0a44a9a30cf586a188a4730}\label{class_sword_a47720cf8f0a44a9a30cf586a188a4730}} 
+\index{Sword@{Sword}!operator=@{operator=}}
+\index{operator=@{operator=}!Sword@{Sword}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sword}{Sword}}\& Sword\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sword}{Sword}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+代入演算子 
+
+\mbox{\Hypertarget{class_sword_a7f5d2c6e6e0104e9a85f600eec14ef6d}\label{class_sword_a7f5d2c6e6e0104e9a85f600eec14ef6d}} 
+\index{Sword@{Sword}!Render\+Process@{Render\+Process}}
+\index{Render\+Process@{Render\+Process}!Sword@{Sword}}
+\subsubsection{\texorpdfstring{Render\+Process()}{RenderProcess()}}
+{\footnotesize\ttfamily void Sword\+::\+Render\+Process (\begin{DoxyParamCaption}\item[{bool}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_object_base_aeac51d868beeb7f7fe900407b76b93a2}{Object\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_sword_a3e0221aa5c05ecada9def39fb38c0059}\label{class_sword_a3e0221aa5c05ecada9def39fb38c0059}} 
+\index{Sword@{Sword}!Update\+Process@{Update\+Process}}
+\index{Update\+Process@{Update\+Process}!Sword@{Sword}}
+\subsubsection{\texorpdfstring{Update\+Process()}{UpdateProcess()}}
+{\footnotesize\ttfamily void Sword\+::\+Update\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_object_base_a8b5b72b363a419767efde0b0e692ea95}{Object\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_sword_a3f60d8b24b7847d6a84f0941820b711d}\label{class_sword_a3f60d8b24b7847d6a84f0941820b711d}} 
+\index{Sword@{Sword}!Weapon\+Destroy@{Weapon\+Destroy}}
+\index{Weapon\+Destroy@{Weapon\+Destroy}!Sword@{Sword}}
+\subsubsection{\texorpdfstring{Weapon\+Destroy()}{WeaponDestroy()}}
+{\footnotesize\ttfamily void Sword\+::\+Weapon\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+武器用の破棄 
+
+
+
+\mbox{\hyperlink{class_weapon_base_a417784a8c8bf73cd398a77b922fc110c}{Weapon\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_sword_aba05706b8b2480a8317595f92a7bc5ce}\label{class_sword_aba05706b8b2480a8317595f92a7bc5ce}} 
+\index{Sword@{Sword}!Weapon\+Render@{Weapon\+Render}}
+\index{Weapon\+Render@{Weapon\+Render}!Sword@{Sword}}
+\subsubsection{\texorpdfstring{Weapon\+Render()}{WeaponRender()}}
+{\footnotesize\ttfamily void Sword\+::\+Weapon\+Render (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_transform}{Transform}} \&}]{t = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+武器用の描画 
+
+
+\begin{DoxyParams}{引数}
+{\em t} & 描画位置 \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_weapon_base_a619809ea6c169446d9524f8089057436}{Weapon\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_sword_aa145196b7a7f01fd6fb6d4e323451b06}\label{class_sword_aa145196b7a7f01fd6fb6d4e323451b06}} 
+\index{Sword@{Sword}!Weapon\+Start@{Weapon\+Start}}
+\index{Weapon\+Start@{Weapon\+Start}!Sword@{Sword}}
+\subsubsection{\texorpdfstring{Weapon\+Start()}{WeaponStart()}}
+{\footnotesize\ttfamily void Sword\+::\+Weapon\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+武器用の初期化 
+
+
+
+\mbox{\hyperlink{class_weapon_base_a25cd4c351638b76377e93341a9545712}{Weapon\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_sword_a11b6e50545688b52175a7089c61ac168}\label{class_sword_a11b6e50545688b52175a7089c61ac168}} 
+\index{Sword@{Sword}!Weapon\+Update@{Weapon\+Update}}
+\index{Weapon\+Update@{Weapon\+Update}!Sword@{Sword}}
+\subsubsection{\texorpdfstring{Weapon\+Update()}{WeaponUpdate()}}
+{\footnotesize\ttfamily void Sword\+::\+Weapon\+Update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{p,  }\item[{bool}]{\+\_\+right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+武器用の更新 
+
+
+\begin{DoxyParams}{引数}
+{\em p} & 位置 \\
+\hline
+{\em \+\_\+right} & 右向きかどうか \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_weapon_base_a389110ad7653d16eecfd9770a8b6b08e}{Weapon\+Base}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/weapon/sword/\mbox{\hyperlink{sword_8h}{sword.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/weapon/sword/\mbox{\hyperlink{sword_8cpp}{sword.\+cpp}}\end{DoxyCompactItemize}

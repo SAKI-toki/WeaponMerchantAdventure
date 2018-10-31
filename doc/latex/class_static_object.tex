@@ -19,10 +19,12 @@ Static\+Object の継承関係図\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_static_object_a2a8e918ddfe5c6723b88b9f5c4156472}{Static\+Object}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_static_object}{Static\+Object}} \& \mbox{\hyperlink{class_static_object_aa2a0526bd19e479ea4d1e5da236c1bf3}{operator=}} (const \mbox{\hyperlink{class_static_object}{Static\+Object}} \&other)
+\begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_static_object_a8e9fb321b4f8f12c4bec1bc66853512f}{Destroy}} ()
 \item 
-virtual void \mbox{\hyperlink{class_static_object_abe05f711f0d62319e1a11419813c5d50}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}})
+virtual void \mbox{\hyperlink{class_static_object_abe05f711f0d62319e1a11419813c5d50}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}})
 \item 
 virtual \mbox{\hyperlink{class_static_object_ac27301fc3d8d22aff5664f592c375cd8}{$\sim$\+Static\+Object}} ()
 \end{DoxyCompactItemize}
@@ -35,7 +37,7 @@ virtual void \mbox{\hyperlink{class_static_object_afa0709f50495338a23c1140062a56
 \item 
 virtual void \mbox{\hyperlink{class_static_object_a7fa678c3c4032bb6e9417f93a8bb895c}{Update\+Process}} ()
 \item 
-virtual void \mbox{\hyperlink{class_static_object_ab17d0cb5b2544054022356a7ee4000db}{Collision\+Process}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}})
+virtual void \mbox{\hyperlink{class_static_object_ab17d0cb5b2544054022356a7ee4000db}{Collision\+Process}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}})
 \end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
 
@@ -50,6 +52,10 @@ virtual void \mbox{\hyperlink{class_static_object_ab17d0cb5b2544054022356a7ee400
 \subsubsection{\texorpdfstring{Static\+Object()}{StaticObject()}}
 {\footnotesize\ttfamily Static\+Object\+::\+Static\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+コンストラクタ 
+
 \mbox{\Hypertarget{class_static_object_ac27301fc3d8d22aff5664f592c375cd8}\label{class_static_object_ac27301fc3d8d22aff5664f592c375cd8}} 
 \index{Static\+Object@{Static\+Object}!````~Static\+Object@{$\sim$\+Static\+Object}}
 \index{````~Static\+Object@{$\sim$\+Static\+Object}!Static\+Object@{Static\+Object}}
@@ -63,7 +69,7 @@ virtual void \mbox{\hyperlink{class_static_object_ab17d0cb5b2544054022356a7ee400
 \index{Static\+Object@{Static\+Object}!Collision@{Collision}}
 \index{Collision@{Collision}!Static\+Object@{Static\+Object}}
 \subsubsection{\texorpdfstring{Collision()}{Collision()}}
-{\footnotesize\ttfamily virtual void Static\+Object\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{,  }\item[{\mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual void Static\+Object\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{,  }\item[{\mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
@@ -77,7 +83,7 @@ virtual void \mbox{\hyperlink{class_static_object_ab17d0cb5b2544054022356a7ee400
 \index{Static\+Object@{Static\+Object}!Collision\+Process@{Collision\+Process}}
 \index{Collision\+Process@{Collision\+Process}!Static\+Object@{Static\+Object}}
 \subsubsection{\texorpdfstring{Collision\+Process()}{CollisionProcess()}}
-{\footnotesize\ttfamily virtual void Static\+Object\+::\+Collision\+Process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{,  }\item[{\mbox{\hyperlink{transform_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual void Static\+Object\+::\+Collision\+Process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{,  }\item[{\mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
 \mbox{\Hypertarget{class_static_object_a8e9fb321b4f8f12c4bec1bc66853512f}\label{class_static_object_a8e9fb321b4f8f12c4bec1bc66853512f}} 
 \index{Static\+Object@{Static\+Object}!Destroy@{Destroy}}
@@ -106,6 +112,16 @@ virtual void \mbox{\hyperlink{class_static_object_ab17d0cb5b2544054022356a7ee400
 
 
 \mbox{\hyperlink{class_map_object_a3043cddb8aaad0eab27a076e9bee0284}{Map\+Object}}で再実装されています。
+
+\mbox{\Hypertarget{class_static_object_aa2a0526bd19e479ea4d1e5da236c1bf3}\label{class_static_object_aa2a0526bd19e479ea4d1e5da236c1bf3}} 
+\index{Static\+Object@{Static\+Object}!operator=@{operator=}}
+\index{operator=@{operator=}!Static\+Object@{Static\+Object}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_static_object}{Static\+Object}}\& Static\+Object\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_static_object}{Static\+Object}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピー代入演算子 
 
 \mbox{\Hypertarget{class_static_object_afec57009537695c4715386120a619942}\label{class_static_object_afec57009537695c4715386120a619942}} 
 \index{Static\+Object@{Static\+Object}!Render\+Process@{Render\+Process}}

@@ -1,0 +1,100 @@
+\hypertarget{class_select_scene}{}\section{Select\+Scene クラス}
+\label{class_select_scene}\index{Select\+Scene@{Select\+Scene}}
+
+
+セレクトシーンクラス  
+
+
+
+
+{\ttfamily \#include $<$select\+\_\+scene.\+h$>$}
+
+Select\+Scene の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_select_scene}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_select_scene_a20b3a902b5521d7494ed353731b3065d}{Init}} () final
+\begin{DoxyCompactList}\small\item\em セレクトシーンの初期化 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{scene__base_8h_a24cee5343fb9d0706ead6e8601f363be}{S\+C\+E\+NE}} \mbox{\hyperlink{class_select_scene_a963eef40b6cae9667a66c5a517b66ab8}{Update}} () final
+\begin{DoxyCompactList}\small\item\em セレクトシーンの更新 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_select_scene_a85445536ad84d5232c724ecb7d48b8aa}{Render}} () final
+\begin{DoxyCompactList}\small\item\em セレクトシーンの描画 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_select_scene_a938293516c0e1ae5bb09dbab81bc78d9}{Destroy}} () final
+\begin{DoxyCompactList}\small\item\em セレクトシーンの破棄 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+セレクトシーンクラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_select_scene_a938293516c0e1ae5bb09dbab81bc78d9}\label{class_select_scene_a938293516c0e1ae5bb09dbab81bc78d9}} 
+\index{Select\+Scene@{Select\+Scene}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Select\+Scene@{Select\+Scene}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Select\+Scene\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+セレクトシーンの破棄 
+
+
+
+\mbox{\hyperlink{class_scene_base_a7c5b54020bc519b4dadfe9770d6b27f7}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_select_scene_a20b3a902b5521d7494ed353731b3065d}\label{class_select_scene_a20b3a902b5521d7494ed353731b3065d}} 
+\index{Select\+Scene@{Select\+Scene}!Init@{Init}}
+\index{Init@{Init}!Select\+Scene@{Select\+Scene}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Select\+Scene\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+セレクトシーンの初期化 
+
+
+
+\mbox{\hyperlink{class_scene_base_a24d7db43c819924dc8b07b436f6d3148}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_select_scene_a85445536ad84d5232c724ecb7d48b8aa}\label{class_select_scene_a85445536ad84d5232c724ecb7d48b8aa}} 
+\index{Select\+Scene@{Select\+Scene}!Render@{Render}}
+\index{Render@{Render}!Select\+Scene@{Select\+Scene}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Select\+Scene\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+セレクトシーンの描画 
+
+
+
+\mbox{\hyperlink{class_scene_base_ad981674ce731ea267f398e889bbb9dc3}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_select_scene_a963eef40b6cae9667a66c5a517b66ab8}\label{class_select_scene_a963eef40b6cae9667a66c5a517b66ab8}} 
+\index{Select\+Scene@{Select\+Scene}!Update@{Update}}
+\index{Update@{Update}!Select\+Scene@{Select\+Scene}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{scene__base_8h_a24cee5343fb9d0706ead6e8601f363be}{S\+C\+E\+NE}} Select\+Scene\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+セレクトシーンの更新 
+
+\begin{DoxyReturn}{戻り値}
+S\+C\+E\+NE シーンが変わるなら次のシーンのenum classを返す 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{class_scene_acb50f8104e5a7cfecbdececa7d5f1b39}{Scene}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/scene/main/select/\mbox{\hyperlink{select__scene_8h}{select\+\_\+scene.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/scene/main/select/\mbox{\hyperlink{select__scene_8cpp}{select\+\_\+scene.\+cpp}}\end{DoxyCompactItemize}

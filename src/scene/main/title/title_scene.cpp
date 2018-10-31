@@ -8,6 +8,7 @@
 #include "../../../common/common.h"
 #include "../../../object/camera/camera.h"
 #include "../../../input/gamepad/gamepad_input.h"
+#include "../../../sound/bgm/bgm.h"
 /**
 * @brief タイトルシーンの初期化
 */
@@ -15,6 +16,8 @@ void TitleScene::Init()
 {
 	my_scene = SCENE::TITLE;
 	font.Init(L"XとYを同時押しで始まるよ");
+	font.SetTransform(Transform(VEC2(100, 400), 0, 9));
+	BGM::GetInstance()->ChangeBgm(std::string("title_bgm"), L"BGM/title.wav");
 }
 
 /**
@@ -29,7 +32,6 @@ SCENE TitleScene::Update()
 	{
 		current_scene = SCENE::GAME;
 	}
-	font.SetTransform(Transform(VEC2(100, 400), 0, 9));
 	return current_scene;
 }
 

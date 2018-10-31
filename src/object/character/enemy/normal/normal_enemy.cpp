@@ -13,6 +13,7 @@ void NormalEnemy::InitProcess()
 {
 	prev_left = move_left;
 	gravity.ResetGravity();
+	gravity.Init(max_speed);
 	status.Init(100, 1, 1);
 	collider.SetStatus(transform.pos, transform.size.x, transform.size.y, transform.rot, transform.scale);
 }
@@ -21,29 +22,57 @@ void NormalEnemy::InitProcess()
 */
 void NormalEnemy::UpdateProcess()
 {
-	move_left = prev_left;
-	transform.pos.y += gravity.AddGravity();
-	transform.pos.x += move_left ? -move_speed : move_speed;
-	collider.SetStatus(transform.pos, transform.size.x, transform.size.y, transform.rot, transform.scale);
+	if (transform.pos.y > DESTROY_Y)
+	{
+		Destroy();
+		return;
+	}
+	if (!destroy_flg)
+	{
+		if (move_left != prev_left)
+		{
+			move_left = prev_left;
+			gravity.DirectSetSidePower(0);
+		}
+		//transform.pos.x += move_left ? -move_speed : move_speed;
+		gravity.SetSidePower(move_left ? -move_speed : move_speed);
+	}
+	else
+	{
+		if (transform.pos.y > DESTROY_Y)
+		{
+			Destroy();
+		}
+	}
+	transform.pos/*.y*/ += gravity.AddGravity();
+	if (!destroy_flg)collider.SetStatus(transform.pos, transform.size.x, transform.size.y, transform.rot, transform.scale);
 }
 /**
 * @brief エネミーの破棄
 */
 void NormalEnemy::Destroy()
 {
-	if (collider.enabled)collider.Destroy();
+	if (collider.enabled) { collider.Destroy(); }
 	enabled = false;
 }
 
 /**
 * @brief エネミーの当たったときに実行する関数
+* @param obj　当たった相手のオブジェクト
 */
-void NormalEnemy::Collision(ObjectBase*,VEC2)
+void NormalEnemy::Collision(ObjectBase* obj,VEC2)
 {
 	if (this->collider.collision_is_static_x)
 	{
 		prev_left = !move_left;
 	}
-	//Destroy();
-	//enabled = false;
+	if (obj == nullptr)return;
+	if (obj->object_tag == OBJECT_TAG::WEAPON)
+	{
+		collider.Destroy();
+		destroy_flg = true;
+		gravity.ResetGravity();
+		gravity.SetUpPower(5);
+		transform.sprite_effect = DirectX::SpriteEffects_FlipVertically;
+	}
 }

@@ -13,15 +13,14 @@
 * @param w,h テクスチャのサイズ
 * @param pos 初期位置
 * @param rot 回転
-* @param scale サイズ
-* @param all_render テクスチャすべてを描画するかどうか
+* @param scale 拡大・縮小
 * @param テクスチャをすべて描画するかどうか
 */
 void ObjectBase::Init(std::string name, WCHAR* path, const LONG w, const LONG h,
-	VEC2 pos, float rot, float scale, bool all_render)
+	VEC2 pos, float rot, float scale)
 {
-	transform.Init(pos, rot, scale, VEC2(static_cast<float>(w), static_cast<float>(h)));
-	sprite.Init(name, path, all_render, w, h);
+	transform.Init(pos, rot, scale, VEC2(static_cast<float>(w), static_cast<float>(h)),DirectX::SpriteEffects_None);
+	sprite.Init(name, path, w, h);
 	InitProcess();
 }
 

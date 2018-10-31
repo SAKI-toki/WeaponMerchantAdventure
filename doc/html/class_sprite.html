@@ -76,18 +76,83 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a6d108b11013eeca94c6f283af96a9c9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a6d108b11013eeca94c6f283af96a9c9f">Init</a> (std::string name, WCHAR *path, const bool _all_render, const LONG w, const LONG h, const float r=1.0f, const float g=1.0f, const float b=1.0f, const float a=1.0f)</td></tr>
-<tr class="memdesc:a6d108b11013eeca94c6f283af96a9c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">各パラメータや画像を読み込む  <a href="#a6d108b11013eeca94c6f283af96a9c9f">[詳解]</a><br /></td></tr>
-<tr class="separator:a6d108b11013eeca94c6f283af96a9c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a936771e0b67adc2f673ac24b03411535"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a936771e0b67adc2f673ac24b03411535">Render</a> (const <a class="el" href="class_transform.html">Transform</a> &amp;, bool=true)</td></tr>
-<tr class="memdesc:a936771e0b67adc2f673ac24b03411535"><td class="mdescLeft">&#160;</td><td class="mdescRight">SpriteBatchを経由して描画する  <a href="#a936771e0b67adc2f673ac24b03411535">[詳解]</a><br /></td></tr>
-<tr class="separator:a936771e0b67adc2f673ac24b03411535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86796a03be222a502397aa53a5207522"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a86796a03be222a502397aa53a5207522">Init</a> (std::string name, WCHAR *path, const LONG w, const LONG h, const float r=1.0f, const float g=1.0f, const float b=1.0f, const float a=1.0f)</td></tr>
+<tr class="memdesc:a86796a03be222a502397aa53a5207522"><td class="mdescLeft">&#160;</td><td class="mdescRight">各パラメータや画像を読み込む  <a href="#a86796a03be222a502397aa53a5207522">[詳解]</a><br /></td></tr>
+<tr class="separator:a86796a03be222a502397aa53a5207522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5efaa5f750f8095c8846e2183c4d52b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#ac5efaa5f750f8095c8846e2183c4d52b">Render</a> (const <a class="el" href="class_transform.html">Transform</a> &amp;, bool=true, bool=true, const DirectX::SpriteEffects=DirectX::SpriteEffects::SpriteEffects_None)</td></tr>
+<tr class="memdesc:ac5efaa5f750f8095c8846e2183c4d52b"><td class="mdescLeft">&#160;</td><td class="mdescRight">SpriteBatchを経由して描画する  <a href="#ac5efaa5f750f8095c8846e2183c4d52b">[詳解]</a><br /></td></tr>
+<tr class="separator:ac5efaa5f750f8095c8846e2183c4d52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0565013aa0e194c67dfbaf243ab9250a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a0565013aa0e194c67dfbaf243ab9250a">SetRect</a> (const RECT &amp;new_rect)</td></tr>
+<tr class="memdesc:a0565013aa0e194c67dfbaf243ab9250a"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャの描画する部分を変える（アニメーション）  <a href="#a0565013aa0e194c67dfbaf243ab9250a">[詳解]</a><br /></td></tr>
+<tr class="separator:a0565013aa0e194c67dfbaf243ab9250a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12cba3ac1868418add3c4d95ce87e615"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a12cba3ac1868418add3c4d95ce87e615">Sprite</a> ()</td></tr>
+<tr class="separator:a12cba3ac1868418add3c4d95ce87e615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53252d3d5fbc5438ed6bbd8b3913c3b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a53252d3d5fbc5438ed6bbd8b3913c3b4">Sprite</a> (const <a class="el" href="class_sprite.html">Sprite</a> &amp;s)</td></tr>
+<tr class="memdesc:a53252d3d5fbc5438ed6bbd8b3913c3b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">コピーコンストラクタ  <a href="#a53252d3d5fbc5438ed6bbd8b3913c3b4">[詳解]</a><br /></td></tr>
+<tr class="separator:a53252d3d5fbc5438ed6bbd8b3913c3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a53b4a3491e8d1e8c63387167dc7329"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite.html">Sprite</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a3a53b4a3491e8d1e8c63387167dc7329">operator=</a> (const <a class="el" href="class_sprite.html">Sprite</a> &amp;other)</td></tr>
+<tr class="memdesc:a3a53b4a3491e8d1e8c63387167dc7329"><td class="mdescLeft">&#160;</td><td class="mdescRight">コピー代入演算子  <a href="#a3a53b4a3491e8d1e8c63387167dc7329">[詳解]</a><br /></td></tr>
+<tr class="separator:a3a53b4a3491e8d1e8c63387167dc7329"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>個々の画像を管理するクラス </p>
-</div><h2 class="groupheader">関数詳解</h2>
-<a id="a6d108b11013eeca94c6f283af96a9c9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d108b11013eeca94c6f283af96a9c9f">&#9670;&nbsp;</a></span>Init()</h2>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a12cba3ac1868418add3c4d95ce87e615"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12cba3ac1868418add3c4d95ce87e615">&#9670;&nbsp;</a></span>Sprite() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Sprite::Sprite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53252d3d5fbc5438ed6bbd8b3913c3b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53252d3d5fbc5438ed6bbd8b3913c3b4">&#9670;&nbsp;</a></span>Sprite() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Sprite::Sprite </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_sprite.html">Sprite</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コピーコンストラクタ </p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a86796a03be222a502397aa53a5207522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86796a03be222a502397aa53a5207522">&#9670;&nbsp;</a></span>Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -103,12 +168,6 @@ $(function() {
           <td></td>
           <td class="paramtype">WCHAR *&#160;</td>
           <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>_all_render</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -159,8 +218,7 @@ $(function() {
   <table class="params">
     <tr><td class="paramname">name</td><td>mapで管理するためのキー </td></tr>
     <tr><td class="paramname">path</td><td>テクスチャのパス </td></tr>
-    <tr><td class="paramname">h,w　テクスチャの大きさ</td><td></td></tr>
-    <tr><td class="paramname">_all_render</td><td>テクスチャをすべて描画するかどうか（アニメーションがあるかどうかとほぼ同義） </td></tr>
+    <tr><td class="paramname">w,h</td><td>テクスチャの大きさ </td></tr>
     <tr><td class="paramname">r,g,b,a</td><td>色 </td></tr>
   </table>
   </dd>
@@ -168,8 +226,36 @@ $(function() {
 
 </div>
 </div>
-<a id="a936771e0b67adc2f673ac24b03411535"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a936771e0b67adc2f673ac24b03411535">&#9670;&nbsp;</a></span>Render()</h2>
+<a id="a3a53b4a3491e8d1e8c63387167dc7329"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a53b4a3491e8d1e8c63387167dc7329">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_sprite.html">Sprite</a>&amp; Sprite::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_sprite.html">Sprite</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コピー代入演算子 </p>
+
+</div>
+</div>
+<a id="ac5efaa5f750f8095c8846e2183c4d52b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5efaa5f750f8095c8846e2183c4d52b">&#9670;&nbsp;</a></span>Render()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,7 +270,19 @@ $(function() {
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>affected_camera</em> = <code>true</code>&#160;</td>
+          <td class="paramname"><em>affected_camera</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>center_axis</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DirectX::SpriteEffects&#160;</td>
+          <td class="paramname"><em>sprite_effects</em> = <code>DirectX::SpriteEffects::SpriteEffects_None</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -199,6 +297,42 @@ $(function() {
   <table class="params">
     <tr><td class="paramname">transform</td><td>位置や回転、拡大・縮小 </td></tr>
     <tr><td class="paramname">affected_camera</td><td>カメラの位置によって描画する位置を変えるかどうか </td></tr>
+    <tr><td class="paramname">center_axis</td><td>中心を軸に描画するかどうか </td></tr>
+    <tr><td class="paramname">sprite_effects</td><td>様々な反転 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0565013aa0e194c67dfbaf243ab9250a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0565013aa0e194c67dfbaf243ab9250a">&#9670;&nbsp;</a></span>SetRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sprite::SetRect </td>
+          <td>(</td>
+          <td class="paramtype">const RECT &amp;&#160;</td>
+          <td class="paramname"><em>new_rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>テクスチャの描画する部分を変える（アニメーション） </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_rect</td><td>新しい位置のrect </td></tr>
   </table>
   </dd>
 </dl>

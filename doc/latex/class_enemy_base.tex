@@ -19,18 +19,26 @@ Enemy\+Base の継承関係図\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_enemy_base_abe56e3aa221224c1196fd65f897d5f19}{Enemy\+Base}} (\mbox{\hyperlink{enemy__base_8h_aef73e23ea1cdc9dda520bbb81af707db}{E\+N\+E\+M\+Y\+\_\+\+T\+Y\+PE}} et)
-\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_enemy_base}{Enemy\+Base}} \& \mbox{\hyperlink{class_enemy_base_ab733c603aedea1306fe42755c784a9db}{operator=}} (const \mbox{\hyperlink{class_enemy_base}{Enemy\+Base}} \&other)
+\begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{公開変数類}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{enemy__base_8h_aef73e23ea1cdc9dda520bbb81af707db}{E\+N\+E\+M\+Y\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{class_enemy_base_a34ad22e6b0d06b8d63c207c843383eba}{enemy\+\_\+type}}
 \end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy_base_af874ce6fc410fddc7d55ffd7c7bedac8}{Render\+Process}} (bool) final
+\begin{DoxyCompactList}\small\item\em 描画 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{限定公開変数類}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_square_collider}{Square\+Collider}} \mbox{\hyperlink{class_enemy_base_aea91f1e50b8977daa467a3d9fe5f0ef9}{collider}}
+\item 
+bool \mbox{\hyperlink{class_enemy_base_a0ea15efab9eed801fb676b9276c8e9c9}{destroy\+\_\+flg}} = false
 \end{DoxyCompactItemize}
-\subsection*{その他の継承メンバ}
 
 
 \subsection{詳解}
@@ -54,12 +62,50 @@ Enemy\+Base の継承関係図\begin{figure}[H]
 \end{DoxyParams}
 
 
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_enemy_base_ab733c603aedea1306fe42755c784a9db}\label{class_enemy_base_ab733c603aedea1306fe42755c784a9db}} 
+\index{Enemy\+Base@{Enemy\+Base}!operator=@{operator=}}
+\index{operator=@{operator=}!Enemy\+Base@{Enemy\+Base}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_enemy_base}{Enemy\+Base}}\& Enemy\+Base\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_enemy_base}{Enemy\+Base}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピー代入演算子 
+
+\mbox{\Hypertarget{class_enemy_base_af874ce6fc410fddc7d55ffd7c7bedac8}\label{class_enemy_base_af874ce6fc410fddc7d55ffd7c7bedac8}} 
+\index{Enemy\+Base@{Enemy\+Base}!Render\+Process@{Render\+Process}}
+\index{Render\+Process@{Render\+Process}!Enemy\+Base@{Enemy\+Base}}
+\subsubsection{\texorpdfstring{Render\+Process()}{RenderProcess()}}
+{\footnotesize\ttfamily void Enemy\+Base\+::\+Render\+Process (\begin{DoxyParamCaption}\item[{bool}]{camera\+\_\+affected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+描画 
+
+
+\begin{DoxyParams}{引数}
+{\em camera\+\_\+affected} & カメラの位置によって描画する位置を変えるかどうか \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_dynamic_object_aa7488e1b4dfd7049447535d93d9d6783}{Dynamic\+Object}}を再実装しています。
+
+
+
 \subsection{メンバ詳解}
 \mbox{\Hypertarget{class_enemy_base_aea91f1e50b8977daa467a3d9fe5f0ef9}\label{class_enemy_base_aea91f1e50b8977daa467a3d9fe5f0ef9}} 
 \index{Enemy\+Base@{Enemy\+Base}!collider@{collider}}
 \index{collider@{collider}!Enemy\+Base@{Enemy\+Base}}
 \subsubsection{\texorpdfstring{collider}{collider}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_square_collider}{Square\+Collider}} Enemy\+Base\+::collider\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_enemy_base_a0ea15efab9eed801fb676b9276c8e9c9}\label{class_enemy_base_a0ea15efab9eed801fb676b9276c8e9c9}} 
+\index{Enemy\+Base@{Enemy\+Base}!destroy\+\_\+flg@{destroy\+\_\+flg}}
+\index{destroy\+\_\+flg@{destroy\+\_\+flg}!Enemy\+Base@{Enemy\+Base}}
+\subsubsection{\texorpdfstring{destroy\+\_\+flg}{destroy\_flg}}
+{\footnotesize\ttfamily bool Enemy\+Base\+::destroy\+\_\+flg = false\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{class_enemy_base_a34ad22e6b0d06b8d63c207c843383eba}\label{class_enemy_base_a34ad22e6b0d06b8d63c207c843383eba}} 
 \index{Enemy\+Base@{Enemy\+Base}!enemy\+\_\+type@{enemy\+\_\+type}}
@@ -71,4 +117,5 @@ Enemy\+Base の継承関係図\begin{figure}[H]
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/character/enemy/base/\mbox{\hyperlink{enemy__base_8h}{enemy\+\_\+base.\+h}}\end{DoxyCompactItemize}
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/character/enemy/base/\mbox{\hyperlink{enemy__base_8h}{enemy\+\_\+base.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/character/enemy/base/\mbox{\hyperlink{enemy__base_8cpp}{enemy\+\_\+base.\+cpp}}\end{DoxyCompactItemize}

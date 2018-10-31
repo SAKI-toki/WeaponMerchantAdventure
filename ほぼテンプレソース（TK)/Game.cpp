@@ -9,6 +9,7 @@
 #include "src/scene/manager/scene_manager.h"
 #include "src/rendering/sprite/manager/sprite_manager.h"
 #include "src/common/common.h"
+#include "src/rendering/font/font.h"
 
 extern void ExitGame();
 
@@ -36,10 +37,10 @@ void Game::Initialize(HWND window, int width, int height)
 
     // TODO: Change the timer settings if you want something other than the default variable timestep mode.
     // e.g. for 60 FPS fixed timestep update logic, call:
-    
+    /*
     m_timer.SetFixedTimeStep(true);
     m_timer.SetTargetElapsedSeconds(1.0 / 60);
-    
+    */
 	SoundManager::GetInstance()->Init(window);
 	SceneManager::GetInstance()->Init();
 }
@@ -53,6 +54,7 @@ void Game::Tick()
         Update(m_timer);
     });
 
+	SceneManager::GetInstance()->Update();
     Render();
 }
 
@@ -62,8 +64,10 @@ void Game::Update(DX::StepTimer const& timer)
     float elapsedTime = float(timer.GetElapsedSeconds());
 
     // TODO: Add your game logic here.
-	SceneManager::GetInstance()->Update();
     elapsedTime;
+#ifdef _DEBUG
+	fps = 1.0f / elapsedTime;
+#endif
 }
 #pragma endregion
 
@@ -83,7 +87,18 @@ void Game::Render()
     auto context = m_deviceResources->GetD3DDeviceContext();
 
     // TODO: Add your rendering code here.
+
+	SpriteManager::GetInstance()->Start();
 	SceneManager::GetInstance()->Render();
+#ifdef _DEBUG
+	Font f;
+	WCHAR s[256];
+	swprintf_s(s, L"fps=%3.2f", fps);
+	f.Init(s, 1, 0, 0);
+	f.SetTransform(Transform(VEC2(0, 0), 0, 5));
+	f.Render();
+#endif
+	SpriteManager::GetInstance()->End();
     context;
 
     m_deviceResources->PIXEndEvent();
@@ -170,8 +185,6 @@ void Game::GetDefaultSize(int& width, int& height) const
 void Game::CreateDeviceDependentResources()
 {
     auto device = m_deviceResources->GetD3DDevice();
-
-    // TODO: Initialize device dependent objects here (independent of window size).
     device;
 }
 

@@ -15,7 +15,10 @@ template<typename T>
 class Singleton
 {
 public:
-	//インスタンス取得
+	/**
+	* @brief インスタンスの取得
+	* @return std::unique_ptr<T>& インスタンス
+	*/
 	static std::unique_ptr<T>& GetInstance()
 	{
 		static auto instance = std::make_unique<T>();

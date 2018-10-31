@@ -1,0 +1,100 @@
+\hypertarget{class_game_scene}{}\section{Game\+Scene クラス}
+\label{class_game_scene}\index{Game\+Scene@{Game\+Scene}}
+
+
+ゲームシーンクラス  
+
+
+
+
+{\ttfamily \#include $<$game\+\_\+scene.\+h$>$}
+
+Game\+Scene の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_scene}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_scene_a86227765def624b9b227db2aa41d9141}{Init}} () final
+\begin{DoxyCompactList}\small\item\em ゲームシーンの初期化 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{scene__base_8h_a24cee5343fb9d0706ead6e8601f363be}{S\+C\+E\+NE}} \mbox{\hyperlink{class_game_scene_a2d4c44e96484af17ed3f6fb0402ebafd}{Update}} () final
+\begin{DoxyCompactList}\small\item\em ゲームシーンの更新 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_scene_ae5ecfa81aecd5e959b038142640a1c7b}{Render}} () final
+\begin{DoxyCompactList}\small\item\em ゲームシーンの描画 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_scene_a5c544d5a87a60f09ada75f1f60f0a787}{Destroy}} () final
+\begin{DoxyCompactList}\small\item\em ゲームシーンの破棄 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+ゲームシーンクラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_game_scene_a5c544d5a87a60f09ada75f1f60f0a787}\label{class_game_scene_a5c544d5a87a60f09ada75f1f60f0a787}} 
+\index{Game\+Scene@{Game\+Scene}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Game\+Scene@{Game\+Scene}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Game\+Scene\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームシーンの破棄 
+
+
+
+\mbox{\hyperlink{class_scene_base_a7c5b54020bc519b4dadfe9770d6b27f7}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_game_scene_a86227765def624b9b227db2aa41d9141}\label{class_game_scene_a86227765def624b9b227db2aa41d9141}} 
+\index{Game\+Scene@{Game\+Scene}!Init@{Init}}
+\index{Init@{Init}!Game\+Scene@{Game\+Scene}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Game\+Scene\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームシーンの初期化 
+
+
+
+\mbox{\hyperlink{class_scene_base_a24d7db43c819924dc8b07b436f6d3148}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_game_scene_ae5ecfa81aecd5e959b038142640a1c7b}\label{class_game_scene_ae5ecfa81aecd5e959b038142640a1c7b}} 
+\index{Game\+Scene@{Game\+Scene}!Render@{Render}}
+\index{Render@{Render}!Game\+Scene@{Game\+Scene}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Game\+Scene\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームシーンの描画 
+
+
+
+\mbox{\hyperlink{class_scene_base_ad981674ce731ea267f398e889bbb9dc3}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_game_scene_a2d4c44e96484af17ed3f6fb0402ebafd}\label{class_game_scene_a2d4c44e96484af17ed3f6fb0402ebafd}} 
+\index{Game\+Scene@{Game\+Scene}!Update@{Update}}
+\index{Update@{Update}!Game\+Scene@{Game\+Scene}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{scene__base_8h_a24cee5343fb9d0706ead6e8601f363be}{S\+C\+E\+NE}} Game\+Scene\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームシーンの更新 
+
+\begin{DoxyReturn}{戻り値}
+S\+C\+E\+NE シーンが変わるなら次のシーンのenum classを返す 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{class_scene_acb50f8104e5a7cfecbdececa7d5f1b39}{Scene}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/scene/main/game/\mbox{\hyperlink{game__scene_8h}{game\+\_\+scene.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/scene/main/game/\mbox{\hyperlink{game__scene_8cpp}{game\+\_\+scene.\+cpp}}\end{DoxyCompactItemize}

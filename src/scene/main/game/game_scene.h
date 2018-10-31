@@ -12,6 +12,7 @@
 #include "../../../object/character/enemy/normal/normal_enemy.h"
 #include "../../../object/character/enemy/fly/fly_enemy.h"
 #include <list>
+#include <vector>
 /**
 * @brief ゲームシーンクラス
 */

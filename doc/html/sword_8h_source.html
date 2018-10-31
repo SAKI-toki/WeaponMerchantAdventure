@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/object/weapon/sword/sword.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_bb043af75e54e1af3032f67529bb720c.html">object</a></li><li class="navelem"><a class="el" href="dir_9939a4e69b5c70e8d2a8af0748fc7963.html">weapon</a></li><li class="navelem"><a class="el" href="dir_62cfe27078a6ca3a4ffda064bca6df2f.html">sword</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">sword.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="sword_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../base/weapon_base.h&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../../base/object_base.h&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../../../collider/square/square_collider.h&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../../../rendering/sprite/sprite.h&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../../../sound/sound.h&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_sword.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sword.html">Sword</a> :<span class="keyword">public</span> <a class="code" href="class_weapon_base.html">WeaponBase</a>, <span class="keyword">public</span> <a class="code" href="class_object_base.html">ObjectBase</a></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">//次の攻撃をするまでのディレイ</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">int</span> delay = <span class="comment">/*3*/</span>0;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> current_delay = 0;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">//音</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_sound.html">Sound</a> sound;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//プレイヤーからの距離</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> distance = 80.0f;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//アタックしているかどうかのフラグ</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">//bool is_attack = false;</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">//コリジョン</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_square_collider.html">SquareCollider</a> collider;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_sprite.html">Sprite</a> sprite;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">//プレイヤーが右を向いているかどうか</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">bool</span> right = <span class="keyword">true</span>;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_sword.html#a7f5d2c6e6e0104e9a85f600eec14ef6d">   34</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sword.html#a7f5d2c6e6e0104e9a85f600eec14ef6d">RenderProcess</a>(<span class="keywordtype">bool</span>)<span class="keyword">final</span> {}</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_sword.html#aab0c07888f3aaee1ba25d668ac7c847a">   35</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sword.html#aab0c07888f3aaee1ba25d668ac7c847a">InitProcess</a>()final {}</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_sword.html#a3e0221aa5c05ecada9def39fb38c0059">   36</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sword.html#a3e0221aa5c05ecada9def39fb38c0059">UpdateProcess</a>()final {}</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//コンストラクタ</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_sword.html#af33284e40825ec8ddccd01fa5833be36">Sword</a>();</div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_sword.html#a6a55d930547584000fcc7c63d47ffabf">   43</a></span>&#160;    <a class="code" href="class_sword.html#a6a55d930547584000fcc7c63d47ffabf">Sword</a>(<span class="keyword">const</span> <a class="code" href="class_sword.html">Sword</a>&amp; s) :collider(this, true)</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        this-&gt;<a class="code" href="class_object_base.html#ac8096c26fe09682da6119208d392dc62">transform</a> = s.<a class="code" href="class_object_base.html#ac8096c26fe09682da6119208d392dc62">transform</a>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_sword.html#a47720cf8f0a44a9a30cf586a188a4730">   50</a></span>&#160;    <a class="code" href="class_sword.html">Sword</a>&amp; <a class="code" href="class_sword.html#a47720cf8f0a44a9a30cf586a188a4730">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_sword.html">Sword</a>&amp; other)</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other)</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        {</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="comment">//this-&gt;is_attack = other.is_attack;</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            this-&gt;collider = other.collider;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="class_object_base.html#aa475bbf5768adfb410951251f0070d19">ObjectBase::operator=</a>(other);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sword.html#aa145196b7a7f01fd6fb6d4e323451b06">WeaponStart</a>();</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sword.html#a11b6e50545688b52175a7089c61ac168">WeaponUpdate</a>(<span class="keyword">const</span> <a class="code" href="common_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a>&amp;,<span class="keywordtype">bool</span>);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sword.html#a3f60d8b24b7847d6a84f0941820b711d">WeaponDestroy</a>()final;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sword.html#acb6e5846afb674bc1ec47dcfee0a6bd3">Collision</a>(<a class="code" href="class_object_base.html">ObjectBase</a>*, <a class="code" href="common_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a>)final;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sword.html#a923943b87ee19f3670bfcdb18d670e1e">Attack</a>(<span class="keywordtype">bool</span>, const <a class="code" href="common_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a>&amp;)final;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sword.html#aba05706b8b2480a8317595f92a7bc5ce">WeaponRender</a>(const <a class="code" href="class_transform.html">Transform</a>&amp; = NULL);</div><div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_sword.html#a8473b694775374df4d9b6305cfa82293">   66</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sword.html#a8473b694775374df4d9b6305cfa82293">Destroy</a>() {}</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div><div class="ttc" id="class_object_base_html_aa475bbf5768adfb410951251f0070d19"><div class="ttname"><a href="class_object_base.html#aa475bbf5768adfb410951251f0070d19">ObjectBase::operator=</a></div><div class="ttdeci">ObjectBase &amp; operator=(const ObjectBase &amp;other)</div><div class="ttdoc">コピー代入演算子 </div><div class="ttdef"><b>Definition:</b> object_base.h:60</div></div>
+<div class="ttc" id="class_sound_html"><div class="ttname"><a href="class_sound.html">Sound</a></div><div class="ttdoc">個々のサウンドクラス </div><div class="ttdef"><b>Definition:</b> sound.h:15</div></div>
+<div class="ttc" id="class_sword_html_aab0c07888f3aaee1ba25d668ac7c847a"><div class="ttname"><a href="class_sword.html#aab0c07888f3aaee1ba25d668ac7c847a">Sword::InitProcess</a></div><div class="ttdeci">void InitProcess() final</div><div class="ttdef"><b>Definition:</b> sword.h:35</div></div>
+<div class="ttc" id="class_sword_html_a11b6e50545688b52175a7089c61ac168"><div class="ttname"><a href="class_sword.html#a11b6e50545688b52175a7089c61ac168">Sword::WeaponUpdate</a></div><div class="ttdeci">void WeaponUpdate(const VEC2 &amp;, bool)</div><div class="ttdoc">武器用の更新 </div><div class="ttdef"><b>Definition:</b> sword.cpp:37</div></div>
+<div class="ttc" id="class_sword_html_aa145196b7a7f01fd6fb6d4e323451b06"><div class="ttname"><a href="class_sword.html#aa145196b7a7f01fd6fb6d4e323451b06">Sword::WeaponStart</a></div><div class="ttdeci">void WeaponStart()</div><div class="ttdoc">武器用の初期化 </div><div class="ttdef"><b>Definition:</b> sword.cpp:25</div></div>
+<div class="ttc" id="class_sword_html_aba05706b8b2480a8317595f92a7bc5ce"><div class="ttname"><a href="class_sword.html#aba05706b8b2480a8317595f92a7bc5ce">Sword::WeaponRender</a></div><div class="ttdeci">void WeaponRender(const Transform &amp;=NULL)</div><div class="ttdoc">武器用の描画 </div><div class="ttdef"><b>Definition:</b> sword.cpp:51</div></div>
+<div class="ttc" id="class_sword_html_a8473b694775374df4d9b6305cfa82293"><div class="ttname"><a href="class_sword.html#a8473b694775374df4d9b6305cfa82293">Sword::Destroy</a></div><div class="ttdeci">void Destroy()</div><div class="ttdef"><b>Definition:</b> sword.h:66</div></div>
+<div class="ttc" id="class_sword_html_a47720cf8f0a44a9a30cf586a188a4730"><div class="ttname"><a href="class_sword.html#a47720cf8f0a44a9a30cf586a188a4730">Sword::operator=</a></div><div class="ttdeci">Sword &amp; operator=(const Sword &amp;other)</div><div class="ttdoc">代入演算子 </div><div class="ttdef"><b>Definition:</b> sword.h:50</div></div>
+<div class="ttc" id="common_8h_html_afb0c5e21d4133ff4f200992c0b534e1b"><div class="ttname"><a href="common_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a></div><div class="ttdeci">DirectX::SimpleMath::Vector2 VEC2</div><div class="ttdef"><b>Definition:</b> common.h:11</div></div>
+<div class="ttc" id="class_transform_html"><div class="ttname"><a href="class_transform.html">Transform</a></div><div class="ttdoc">transformクラス </div><div class="ttdef"><b>Definition:</b> transform.h:14</div></div>
+<div class="ttc" id="class_sprite_html"><div class="ttname"><a href="class_sprite.html">Sprite</a></div><div class="ttdoc">個々の画像を管理するクラス </div><div class="ttdef"><b>Definition:</b> sprite.h:21</div></div>
+<div class="ttc" id="class_sword_html_a7f5d2c6e6e0104e9a85f600eec14ef6d"><div class="ttname"><a href="class_sword.html#a7f5d2c6e6e0104e9a85f600eec14ef6d">Sword::RenderProcess</a></div><div class="ttdeci">void RenderProcess(bool) final</div><div class="ttdef"><b>Definition:</b> sword.h:34</div></div>
+<div class="ttc" id="class_sword_html_af33284e40825ec8ddccd01fa5833be36"><div class="ttname"><a href="class_sword.html#af33284e40825ec8ddccd01fa5833be36">Sword::Sword</a></div><div class="ttdeci">Sword()</div><div class="ttdoc">コンストラクタ </div><div class="ttdef"><b>Definition:</b> sword.cpp:12</div></div>
+<div class="ttc" id="class_sword_html_a6a55d930547584000fcc7c63d47ffabf"><div class="ttname"><a href="class_sword.html#a6a55d930547584000fcc7c63d47ffabf">Sword::Sword</a></div><div class="ttdeci">Sword(const Sword &amp;s)</div><div class="ttdoc">コピーコンストラクタ </div><div class="ttdef"><b>Definition:</b> sword.h:43</div></div>
+<div class="ttc" id="class_sword_html_a3f60d8b24b7847d6a84f0941820b711d"><div class="ttname"><a href="class_sword.html#a3f60d8b24b7847d6a84f0941820b711d">Sword::WeaponDestroy</a></div><div class="ttdeci">void WeaponDestroy() final</div><div class="ttdoc">武器用の破棄 </div><div class="ttdef"><b>Definition:</b> sword.cpp:59</div></div>
+<div class="ttc" id="class_object_base_html"><div class="ttname"><a href="class_object_base.html">ObjectBase</a></div><div class="ttdoc">オブジェクトのスーパークラス </div><div class="ttdef"><b>Definition:</b> object_base.h:18</div></div>
+<div class="ttc" id="class_sword_html"><div class="ttname"><a href="class_sword.html">Sword</a></div><div class="ttdoc">剣クラス </div><div class="ttdef"><b>Definition:</b> sword.h:17</div></div>
+<div class="ttc" id="class_weapon_base_html"><div class="ttname"><a href="class_weapon_base.html">WeaponBase</a></div><div class="ttdoc">武器のスーパークラス </div><div class="ttdef"><b>Definition:</b> weapon_base.h:13</div></div>
+<div class="ttc" id="class_sword_html_a923943b87ee19f3670bfcdb18d670e1e"><div class="ttname"><a href="class_sword.html#a923943b87ee19f3670bfcdb18d670e1e">Sword::Attack</a></div><div class="ttdeci">void Attack(bool, const VEC2 &amp;) final</div><div class="ttdoc">攻撃 </div><div class="ttdef"><b>Definition:</b> sword.cpp:87</div></div>
+<div class="ttc" id="class_square_collider_html"><div class="ttname"><a href="class_square_collider.html">SquareCollider</a></div><div class="ttdoc">四角形コライダクラス </div><div class="ttdef"><b>Definition:</b> square_collider.h:15</div></div>
+<div class="ttc" id="class_sword_html_acb6e5846afb674bc1ec47dcfee0a6bd3"><div class="ttname"><a href="class_sword.html#acb6e5846afb674bc1ec47dcfee0a6bd3">Sword::Collision</a></div><div class="ttdeci">void Collision(ObjectBase *, VEC2) final</div><div class="ttdoc">当たったときの反応 </div><div class="ttdef"><b>Definition:</b> sword.cpp:68</div></div>
+<div class="ttc" id="class_sword_html_a3e0221aa5c05ecada9def39fb38c0059"><div class="ttname"><a href="class_sword.html#a3e0221aa5c05ecada9def39fb38c0059">Sword::UpdateProcess</a></div><div class="ttdeci">void UpdateProcess() final</div><div class="ttdef"><b>Definition:</b> sword.h:36</div></div>
+<div class="ttc" id="class_object_base_html_ac8096c26fe09682da6119208d392dc62"><div class="ttname"><a href="class_object_base.html#ac8096c26fe09682da6119208d392dc62">ObjectBase::transform</a></div><div class="ttdeci">Transform transform</div><div class="ttdef"><b>Definition:</b> object_base.h:41</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

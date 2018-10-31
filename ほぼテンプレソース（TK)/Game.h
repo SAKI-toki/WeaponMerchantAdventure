@@ -13,7 +13,6 @@
 class Game : public DX::IDeviceNotify
 {
 public:
-
     Game() noexcept(false);
 	~Game();
 	void OnNewAudioDevice();
@@ -53,4 +52,7 @@ private:
     std::unique_ptr<DX::DeviceResources>    m_deviceResources;
     // Rendering loop timer.
     DX::StepTimer                           m_timer;
+#ifdef _DEBUG
+	float fps;
+#endif
 };

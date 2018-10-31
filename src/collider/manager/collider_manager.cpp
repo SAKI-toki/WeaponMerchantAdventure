@@ -7,6 +7,7 @@
 
 #include "collider_manager.h"
 #include "../../common/common.h"
+#include <queue>
 
 /**
 * @brief 四角形コライダを配列に格納する
@@ -36,7 +37,7 @@ void ColliderManager::SetCollider(SquareCollider* obj, bool is_static)
 void ColliderManager::CheckCollision()
 {
 	//全てのコライダを走査してから関数を実行するため、一時的に格納する場所
-	std::vector <std::pair<std::function<void(ObjectBase*, VEC2)>, SquarePosCol>> vec;
+	std::queue<std::pair<std::function<void(ObjectBase*, VEC2)>, SquarePosCol>> func_queue;
 	//前の位置を格納
 	for (auto&& sc : staticSquareColliderList)
 	{
@@ -62,19 +63,15 @@ void ColliderManager::CheckCollision()
 					{
 						//ヒット
 						//関数を格納する
-						vec.push_back(std::make_pair(dobj.col->collision_func, sobj));
-						vec.push_back(std::make_pair(sobj.col->collision_func, dobj));
+						func_queue.push(std::make_pair(dobj.col->collision_func, sobj));
+						func_queue.push(std::make_pair(sobj.col->collision_func, dobj));
 					}
 				}
 			}
 		}
 	}
 	//動的なオブジェクト同士の当たり判定
-	/*
-	本当はコメントアウトしているところで-1したほうが処理が少なくて済むが、
-	配列の中身が0の時にエラーが発生してしまうため削除してる
-	*/
-	for (auto dc1 = std::begin(dynamicSquareColliderList); dc1 != std::end(dynamicSquareColliderList)/*-1*/; ++dc1)
+	for (auto dc1 = std::begin(dynamicSquareColliderList); dc1 != std::end(dynamicSquareColliderList); ++dc1)
 	{
 		if (dc1->col->enabled)
 		{
@@ -87,19 +84,34 @@ void ColliderManager::CheckCollision()
 					{
 						//ヒット
 						//関数を格納する
-						vec.push_back(std::make_pair(dc1->col->collision_func, *dc2));
-						vec.push_back(std::make_pair(dc2->col->collision_func, *dc1));
+						func_queue.push(std::make_pair(dc1->col->collision_func, *dc2));
+						func_queue.push(std::make_pair(dc2->col->collision_func, *dc1));
 					}
 				}
 			}
 		}
 	}
 
-	//ぶつかったオブジェクトの関数を実行
-	for (const auto& func : vec)
+
+	while (!func_queue.empty())
 	{
-		func.first(func.second.col->object, func.second.col->GetStatus().center_pos - func.second.prev_pos);
+		try
+		{
+			//ないオブジェクトを参照しないようにする
+			//volatileというには最適化させないための修飾子
+			//[[maybe_unused]]属性というのは意図的に未使用の要素を定義していることをコンパイラに伝え、警告を抑制するための属性
+			[[maybe_unused]]volatile auto temp = func_queue.front().second.col->object->enabled;
+			func_queue.front().first(func_queue.front().second.col->object, func_queue.front().second.col->GetStatus().center_pos - func_queue.front().second.prev_pos);
+		}
+		catch (...)
+		{
+#ifdef _DEBUG
+			Comment(L"ないオブジェクトを参照", L"collider_manager.cpp");
+#endif
+		}
+		func_queue.pop();
 	}
+
 	//現在の位置を格納
 	for (auto&& sc : staticSquareColliderList)
 	{
@@ -162,7 +174,8 @@ bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2, b
 			if (!col1_static && !col1.col->collision_is_static_y && !col2.col->collision_is_static_y)
 			{
 				//押し出す量（どちらも押し出すため半分）
-				auto diff = (sum_height - std::abs(status1.center_pos.y - status2.center_pos.y)) / 2.0f;
+				//floatの誤差を防ぐために+0.1fしている
+				auto diff = (sum_height - std::abs(status1.center_pos.y - status2.center_pos.y) + 0.1f)  *0.5f;
 				//半分ずつぶつかってる値を位置から引く
 				col1.col->CollisionExtrusion(VEC2(
 					col1.col->GetStatus().center_pos.x,
@@ -183,7 +196,8 @@ bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2, b
 				if (!target_col.col->collision_is_static_y)
 				{
 					//押し出す量
-					auto diff = sum_height - std::abs(status1.center_pos.y - status2.center_pos.y);
+					//floatの誤差を防ぐために+0.1fしている
+					auto diff = sum_height - std::abs(status1.center_pos.y - status2.center_pos.y) + 0.1f;
 					//ターゲットじゃないほうも格納
 					decltype(auto) not_target_col = (!(col1.col->collision_is_static_y || col1_static) ? col2 : col1);
 					//y方向をこれ以上動かさないためにする
@@ -220,7 +234,8 @@ bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2, b
 			if (!col1_static && !col1.col->collision_is_static_x && !col2.col->collision_is_static_x)
 			{
 				//押し出す量（どちらも押し出すため半分）
-				auto diff = (sum_width - std::abs(status1.center_pos.x - status2.center_pos.x)) / 2.0f;
+				//floatの誤差を防ぐために+0.1fしている
+				auto diff = (sum_width - std::abs(status1.center_pos.x - status2.center_pos.x) + 0.1f) *0.5f;
 				//半分ずつぶつかってる値を位置から引く
 				col1.col->CollisionExtrusion(VEC2(
 					(col1.prev_pos.x > col2.prev_pos.x) ?
@@ -241,7 +256,8 @@ bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2, b
 				if (!target_col.col->collision_is_static_x)
 				{
 					//押し出す量
-					auto diff = sum_width - std::abs(status1.center_pos.x - status2.center_pos.x);
+					//floatの誤差を防ぐために+0.1fしている
+					auto diff = sum_width - std::abs(status1.center_pos.x - status2.center_pos.x) + 0.1f;
 					//ターゲットじゃないほうも格納
 					decltype(auto) not_target_col = (!(col1.col->collision_is_static_x || col1_static) ? col2 : col1);
 					//x方向をこれ以上動かさないためにする
@@ -252,6 +268,11 @@ bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2, b
 						target_col.col->GetStatus().center_pos.x + diff :
 						target_col.col->GetStatus().center_pos.x - diff,
 						target_col.col->GetStatus().center_pos.y));
+					//重力関係
+					if (target_col.col->object->use_gravity)
+					{
+						target_col.col->object->gravity.ResetSideGravity();
+					}
 				}
 			}
 			//どちらも押し出さない場合何も処理しない
@@ -270,6 +291,15 @@ bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2, b
 */
 void ColliderManager::DeleteCollider(SquareCollider* col)
 {
+	for (auto itr = std::begin(dynamicSquareColliderList); itr != std::cend(dynamicSquareColliderList); ++itr)
+	{
+		//一致したら削除
+		if (itr->col == col)
+		{
+			dynamicSquareColliderList.erase(itr);
+			return;
+		}
+	}
 	for (auto itr = std::begin(staticSquareColliderList); itr != std::cend(staticSquareColliderList); ++itr)
 	{
 		//一致したら削除
@@ -280,15 +310,6 @@ void ColliderManager::DeleteCollider(SquareCollider* col)
 		}
 	}
 
-	for (auto itr = std::begin(dynamicSquareColliderList); itr != std::cend(dynamicSquareColliderList); ++itr)
-	{
-		//一致したら削除
-		if (itr->col == col)
-		{
-			dynamicSquareColliderList.erase(itr);
-			return;
-		}
-	}
 }
 
 /**

@@ -48,6 +48,8 @@ public:
 
 	void Update();
 
+	void Vibration(float, float);
+
 
 	///--ƒQƒbƒ^--
 	/**

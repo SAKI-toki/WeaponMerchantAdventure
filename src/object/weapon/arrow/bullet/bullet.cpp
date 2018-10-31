@@ -8,10 +8,12 @@
 /**
 * @brief 弾の初期化
 * @param angle 発射角度
+* @param func 当たったときに実行する関数
 */
-void Bullet::BulletInit(const float angle)
+void Bullet::BulletInit(const float angle, const std::function<void()>& func)
 {
 	dire = VEC2(std::cos(-angle + PI<float>*0.5f), -std::sin(-angle + PI<float>*0.5f));
+	arrow_func = func;
 }
 /**
 * @brief 初期化
@@ -47,13 +49,15 @@ void Bullet::Destroy()
 
 /**
 * @brief 当たったときに実行する関数
+* @param obj 当たった相手のオブジェクト
 */
 void Bullet::Collision(ObjectBase* obj, VEC2)
 {
+	if (obj == nullptr)return;
 	//敵に当たったら
 	if (obj->object_tag == OBJECT_TAG::ENEMY)
 	{
-		obj->Destroy();
+		arrow_func();
 		this->Destroy();
 	}
 	//マップに当たったら

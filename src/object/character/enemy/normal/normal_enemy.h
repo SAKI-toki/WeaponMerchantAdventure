@@ -1,5 +1,5 @@
 /**
-* @file normal_base.h
+* @file normal_enemy.h
 * @brief ノーマルな敵クラスの宣言
 * @author 石山　悠
 * @date 2018/10/18
@@ -7,6 +7,9 @@
 #pragma once
 #include "../base/enemy_base.h"
 
+/**
+* @brief ノーマルな敵クラス
+*/
 class NormalEnemy :public EnemyBase
 {
 	//左に移動しているかどうか
@@ -14,7 +17,8 @@ class NormalEnemy :public EnemyBase
 	//当たったときに方向転換するための一時的に格納する変数
 	bool prev_left = true;
 	//移動速度
-	static constexpr float move_speed = 2.0f;
+	static constexpr float move_speed = 0.1f;
+	static constexpr float max_speed = 2.0f;
 protected:
 	void InitProcess()final;
 	void UpdateProcess()final;

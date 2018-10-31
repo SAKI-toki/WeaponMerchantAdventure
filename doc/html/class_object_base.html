@@ -82,25 +82,34 @@ ObjectBase の継承関係図</div>
  <div class="center">
   <img src="class_object_base.png" usemap="#ObjectBase_map" alt=""/>
   <map id="ObjectBase_map" name="ObjectBase_map">
-<area href="class_dynamic_object.html" title="動くオブジェクトのスーパークラス " alt="DynamicObject" shape="rect" coords="108,56,206,80"/>
-<area href="class_static_object.html" title="動かないオブジェクトのスーパークラス " alt="StaticObject" shape="rect" coords="324,56,422,80"/>
-<area href="class_enemy_base.html" title="エネミーのスーパークラス " alt="EnemyBase" shape="rect" coords="0,112,98,136"/>
-<area href="class_player.html" title="プレイヤークラス " alt="Player" shape="rect" coords="108,112,206,136"/>
-<area href="class_ui_base.html" alt="UiBase" shape="rect" coords="216,112,314,136"/>
-<area href="class_map_object.html" alt="MapObject" shape="rect" coords="324,112,422,136"/>
-<area href="class_normal_enemy.html" alt="NormalEnemy" shape="rect" coords="0,168,98,192"/>
-<area href="class_ui_text.html" title="テキストのuiクラス " alt="UiText" shape="rect" coords="216,168,314,192"/>
+<area href="class_dynamic_object.html" title="動くオブジェクトのスーパークラス " alt="DynamicObject" shape="rect" coords="162,56,260,80"/>
+<area href="class_static_object.html" title="動かないオブジェクトのスーパークラス " alt="StaticObject" shape="rect" coords="432,56,530,80"/>
+<area href="class_sword.html" title="剣クラス " alt="Sword" shape="rect" coords="540,56,638,80"/>
+<area href="class_bullet.html" title="弾クラス " alt="Bullet" shape="rect" coords="0,112,98,136"/>
+<area href="class_enemy_base.html" title="エネミーのスーパークラス " alt="EnemyBase" shape="rect" coords="108,112,206,136"/>
+<area href="class_player.html" title="プレイヤークラス " alt="Player" shape="rect" coords="216,112,314,136"/>
+<area href="class_ui_base.html" title="uiのスーパークラス " alt="UiBase" shape="rect" coords="324,112,422,136"/>
+<area href="class_map_object.html" title="マップに配置するオブジェクトのクラス " alt="MapObject" shape="rect" coords="432,112,530,136"/>
+<area href="class_fly_enemy.html" title="飛ぶエネミークラス " alt="FlyEnemy" shape="rect" coords="54,168,152,192"/>
+<area href="class_normal_enemy.html" title="ノーマルな敵クラス " alt="NormalEnemy" shape="rect" coords="162,168,260,192"/>
+<area href="class_ui_text.html" title="テキストのuiクラス " alt="UiText" shape="rect" coords="324,168,422,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a8b5bc833070770f6c9e17031b54ef12f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a8b5bc833070770f6c9e17031b54ef12f">ObjectBase</a> (bool _gravity)</td></tr>
-<tr class="memdesc:a8b5bc833070770f6c9e17031b54ef12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="#a8b5bc833070770f6c9e17031b54ef12f">[詳解]</a><br /></td></tr>
-<tr class="separator:a8b5bc833070770f6c9e17031b54ef12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea82aedc489b0a9d9990aafa06eef514"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#aea82aedc489b0a9d9990aafa06eef514">Init</a> (std::string name, WCHAR *path, const LONG w, const LONG h, <a class="el" href="transform_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a> pos, float rot=0, float scale=1, bool all_render=true)</td></tr>
-<tr class="memdesc:aea82aedc489b0a9d9990aafa06eef514"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化  <a href="#aea82aedc489b0a9d9990aafa06eef514">[詳解]</a><br /></td></tr>
-<tr class="separator:aea82aedc489b0a9d9990aafa06eef514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8567572c8f524465f9c70cabdb603637"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a8567572c8f524465f9c70cabdb603637">ObjectBase</a> (bool _gravity=false)</td></tr>
+<tr class="memdesc:a8567572c8f524465f9c70cabdb603637"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="#a8567572c8f524465f9c70cabdb603637">[詳解]</a><br /></td></tr>
+<tr class="separator:a8567572c8f524465f9c70cabdb603637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f5bbcf3e9036ac77a93c2243999f534"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a5f5bbcf3e9036ac77a93c2243999f534">ObjectBase</a> (const <a class="el" href="class_object_base.html">ObjectBase</a> &amp;o)</td></tr>
+<tr class="memdesc:a5f5bbcf3e9036ac77a93c2243999f534"><td class="mdescLeft">&#160;</td><td class="mdescRight">コピーコンストラクタ  <a href="#a5f5bbcf3e9036ac77a93c2243999f534">[詳解]</a><br /></td></tr>
+<tr class="separator:a5f5bbcf3e9036ac77a93c2243999f534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa475bbf5768adfb410951251f0070d19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_object_base.html">ObjectBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#aa475bbf5768adfb410951251f0070d19">operator=</a> (const <a class="el" href="class_object_base.html">ObjectBase</a> &amp;other)</td></tr>
+<tr class="memdesc:aa475bbf5768adfb410951251f0070d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">コピー代入演算子  <a href="#aa475bbf5768adfb410951251f0070d19">[詳解]</a><br /></td></tr>
+<tr class="separator:aa475bbf5768adfb410951251f0070d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65028dd02e59f53f441e3dcccaf301e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a65028dd02e59f53f441e3dcccaf301e9">Init</a> (std::string name, WCHAR *path, const LONG w, const LONG h, <a class="el" href="common_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a> pos, float rot=0, float scale=1)</td></tr>
+<tr class="memdesc:a65028dd02e59f53f441e3dcccaf301e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化  <a href="#a65028dd02e59f53f441e3dcccaf301e9">[詳解]</a><br /></td></tr>
+<tr class="separator:a65028dd02e59f53f441e3dcccaf301e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b5672034139b22235ada326eb16dd3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a5b5672034139b22235ada326eb16dd3e">Update</a> ()</td></tr>
 <tr class="memdesc:a5b5672034139b22235ada326eb16dd3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新するかどうか決める  <a href="#a5b5672034139b22235ada326eb16dd3e">[詳解]</a><br /></td></tr>
 <tr class="separator:a5b5672034139b22235ada326eb16dd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,18 +120,20 @@ ObjectBase の継承関係図</div>
 <tr class="separator:a7fa4c548153c3af20f89673ffea809af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7074bc9389069351c2d0eee6a47e5ee3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a7074bc9389069351c2d0eee6a47e5ee3">~ObjectBase</a> ()</td></tr>
 <tr class="separator:a7074bc9389069351c2d0eee6a47e5ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad772d7a42f5e46c39481f5db22ee8193"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#ad772d7a42f5e46c39481f5db22ee8193">Collision</a> (<a class="el" href="class_object_base.html">ObjectBase</a> *, <a class="el" href="transform_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a>)</td></tr>
+<tr class="memitem:ad772d7a42f5e46c39481f5db22ee8193"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#ad772d7a42f5e46c39481f5db22ee8193">Collision</a> (<a class="el" href="class_object_base.html">ObjectBase</a> *, <a class="el" href="common_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a>)</td></tr>
 <tr class="separator:ad772d7a42f5e46c39481f5db22ee8193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 公開変数類</h2></td></tr>
+<tr class="memitem:a03b285263802692be1f3a9a7b13e5344"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a03b285263802692be1f3a9a7b13e5344">status</a></td></tr>
+<tr class="separator:a03b285263802692be1f3a9a7b13e5344"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a570bfa03730e906989187bfbcad95c51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_gravity.html">Gravity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a570bfa03730e906989187bfbcad95c51">gravity</a></td></tr>
 <tr class="separator:a570bfa03730e906989187bfbcad95c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab135a2a04e76046804f01b63df4f35c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#aab135a2a04e76046804f01b63df4f35c">use_gravity</a></td></tr>
 <tr class="separator:aab135a2a04e76046804f01b63df4f35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff7eb5482ca9bc1cd30b84994d0dad8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0c">OBJECT_TAG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#aff7eb5482ca9bc1cd30b84994d0dad8b">object_tag</a></td></tr>
 <tr class="separator:aff7eb5482ca9bc1cd30b84994d0dad8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade1c868f20653a6fa5236544120eca2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#ade1c868f20653a6fa5236544120eca2b">enabled</a></td></tr>
+<tr class="memitem:ade1c868f20653a6fa5236544120eca2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#ade1c868f20653a6fa5236544120eca2b">enabled</a> = true</td></tr>
 <tr class="separator:ade1c868f20653a6fa5236544120eca2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8096c26fe09682da6119208d392dc62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#ac8096c26fe09682da6119208d392dc62">transform</a></td></tr>
 <tr class="separator:ac8096c26fe09682da6119208d392dc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,8 +157,8 @@ ObjectBase の継承関係図</div>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>オブジェクトのスーパークラス </p>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a8b5bc833070770f6c9e17031b54ef12f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b5bc833070770f6c9e17031b54ef12f">&#9670;&nbsp;</a></span>ObjectBase()</h2>
+<a id="a8567572c8f524465f9c70cabdb603637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8567572c8f524465f9c70cabdb603637">&#9670;&nbsp;</a></span>ObjectBase() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,7 +170,7 @@ ObjectBase の継承関係図</div>
           <td class="memname">ObjectBase::ObjectBase </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>_gravity</em></td><td>)</td>
+          <td class="paramname"><em>_gravity</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -171,6 +182,34 @@ ObjectBase の継承関係図</div>
 </div><div class="memdoc">
 
 <p>コンストラクタ </p>
+
+</div>
+</div>
+<a id="a5f5bbcf3e9036ac77a93c2243999f534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f5bbcf3e9036ac77a93c2243999f534">&#9670;&nbsp;</a></span>ObjectBase() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectBase::ObjectBase </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_object_base.html">ObjectBase</a> &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コピーコンストラクタ </p>
 
 </div>
 </div>
@@ -218,7 +257,7 @@ ObjectBase の継承関係図</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="transform_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="common_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -234,7 +273,7 @@ ObjectBase の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_player.html#a184fbb2c70e34fb6c6a0c2fc7e0f86c9">Player</a>, <a class="el" href="class_map_object.html#a61c2b7e046b76d98adbf23c9e6302918">MapObject</a>, <a class="el" href="class_static_object.html#abe05f711f0d62319e1a11419813c5d50">StaticObject</a>, <a class="el" href="class_normal_enemy.html#ac27e00973d2430da57e044bfe04fe5b4">NormalEnemy</a>で再実装されています。</p>
+<p><a class="el" href="class_bullet.html#a945da4a16d11cfee31139d564bea61f0">Bullet</a>, <a class="el" href="class_map_object.html#a61c2b7e046b76d98adbf23c9e6302918">MapObject</a>, <a class="el" href="class_normal_enemy.html#ac27e00973d2430da57e044bfe04fe5b4">NormalEnemy</a>, <a class="el" href="class_fly_enemy.html#adaabf7ce270104e30df29bfa464d72ce">FlyEnemy</a>, <a class="el" href="class_sword.html#acb6e5846afb674bc1ec47dcfee0a6bd3">Sword</a>, <a class="el" href="class_player.html#a184fbb2c70e34fb6c6a0c2fc7e0f86c9">Player</a>, <a class="el" href="class_static_object.html#abe05f711f0d62319e1a11419813c5d50">StaticObject</a>で再実装されています。</p>
 
 </div>
 </div>
@@ -261,12 +300,12 @@ ObjectBase の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_player.html#af2cf4936165ef12cce96f7994e0879df">Player</a>, <a class="el" href="class_static_object.html#a8e9fb321b4f8f12c4bec1bc66853512f">StaticObject</a>, <a class="el" href="class_normal_enemy.html#a8a4271b6da6c7679d134d1c08125815b">NormalEnemy</a>, <a class="el" href="class_map_object.html#ad4bcfdc33bd945a9aa5e50a57c2704bc">MapObject</a>で実装されています。</p>
+<p><a class="el" href="class_bullet.html#a09a92c6b924fb6bc38e18f6c41ac20ff">Bullet</a>, <a class="el" href="class_normal_enemy.html#a8a4271b6da6c7679d134d1c08125815b">NormalEnemy</a>, <a class="el" href="class_sword.html#a8473b694775374df4d9b6305cfa82293">Sword</a>, <a class="el" href="class_fly_enemy.html#af7ce5137e8eb2e8cc6654fbbdbc714cd">FlyEnemy</a>, <a class="el" href="class_player.html#af2cf4936165ef12cce96f7994e0879df">Player</a>, <a class="el" href="class_static_object.html#a8e9fb321b4f8f12c4bec1bc66853512f">StaticObject</a>, <a class="el" href="class_map_object.html#ad4bcfdc33bd945a9aa5e50a57c2704bc">MapObject</a>で実装されています。</p>
 
 </div>
 </div>
-<a id="aea82aedc489b0a9d9990aafa06eef514"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea82aedc489b0a9d9990aafa06eef514">&#9670;&nbsp;</a></span>Init()</h2>
+<a id="a65028dd02e59f53f441e3dcccaf301e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65028dd02e59f53f441e3dcccaf301e9">&#9670;&nbsp;</a></span>Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,7 +337,7 @@ ObjectBase の継承関係図</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="transform_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="common_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a>&#160;</td>
           <td class="paramname"><em>pos</em>, </td>
         </tr>
         <tr>
@@ -311,13 +350,7 @@ ObjectBase の継承関係図</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>scale</em> = <code>1</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>all_render</em> = <code>true</code>&#160;</td>
+          <td class="paramname"><em>scale</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -330,12 +363,12 @@ ObjectBase の継承関係図</div>
 <p>初期化 </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
+    <tr><td class="paramname">name</td><td>テクスチャをロードするためのキー </td></tr>
     <tr><td class="paramname">path</td><td>テクスチャのパス </td></tr>
     <tr><td class="paramname">w,h</td><td>テクスチャのサイズ </td></tr>
     <tr><td class="paramname">pos</td><td>初期位置 </td></tr>
     <tr><td class="paramname">rot</td><td>回転 </td></tr>
-    <tr><td class="paramname">scale</td><td>サイズ </td></tr>
-    <tr><td class="paramname">all_render</td><td>テクスチャすべてを描画するかどうか </td></tr>
+    <tr><td class="paramname">scale</td><td>拡大・縮小 </td></tr>
     <tr><td class="paramname">テクスチャをすべて描画するかどうか</td><td></td></tr>
   </table>
   </dd>
@@ -366,7 +399,35 @@ ObjectBase の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_player.html#a1051f85c8bf18a256d275d1a1dee5da6">Player</a>, <a class="el" href="class_static_object.html#afa0709f50495338a23c1140062a567af">StaticObject</a>, <a class="el" href="class_map_object.html#a3043cddb8aaad0eab27a076e9bee0284">MapObject</a>, <a class="el" href="class_normal_enemy.html#ae45bd9535595f810d065b92f8dd63342">NormalEnemy</a>で実装されています。</p>
+<p><a class="el" href="class_player.html#a1051f85c8bf18a256d275d1a1dee5da6">Player</a>, <a class="el" href="class_sword.html#aab0c07888f3aaee1ba25d668ac7c847a">Sword</a>, <a class="el" href="class_bullet.html#a448c1c566e002d7b51ba6ed5c927bff7">Bullet</a>, <a class="el" href="class_normal_enemy.html#ae45bd9535595f810d065b92f8dd63342">NormalEnemy</a>, <a class="el" href="class_map_object.html#a3043cddb8aaad0eab27a076e9bee0284">MapObject</a>, <a class="el" href="class_fly_enemy.html#afe4ddbf7089952146443f4ca71f55b13">FlyEnemy</a>, <a class="el" href="class_static_object.html#afa0709f50495338a23c1140062a567af">StaticObject</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="aa475bbf5768adfb410951251f0070d19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa475bbf5768adfb410951251f0070d19">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_object_base.html">ObjectBase</a>&amp; ObjectBase::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_object_base.html">ObjectBase</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コピー代入演算子 </p>
 
 </div>
 </div>
@@ -431,7 +492,7 @@ ObjectBase の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_dynamic_object.html#aa7488e1b4dfd7049447535d93d9d6783">DynamicObject</a>, <a class="el" href="class_static_object.html#afec57009537695c4715386120a619942">StaticObject</a>で実装されています。</p>
+<p><a class="el" href="class_player.html#a8ac2e54fe5672d32186456b9735c02c3">Player</a>, <a class="el" href="class_sword.html#a7f5d2c6e6e0104e9a85f600eec14ef6d">Sword</a>, <a class="el" href="class_enemy_base.html#af874ce6fc410fddc7d55ffd7c7bedac8">EnemyBase</a>, <a class="el" href="class_dynamic_object.html#aa7488e1b4dfd7049447535d93d9d6783">DynamicObject</a>, <a class="el" href="class_static_object.html#afec57009537695c4715386120a619942">StaticObject</a>で実装されています。</p>
 
 </div>
 </div>
@@ -477,7 +538,7 @@ ObjectBase の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_player.html#ab8accc9b83b030f5313f1b4872a7e634">Player</a>, <a class="el" href="class_static_object.html#a7fa678c3c4032bb6e9417f93a8bb895c">StaticObject</a>, <a class="el" href="class_map_object.html#ab6b8849f15175417eca94b2703945e4b">MapObject</a>, <a class="el" href="class_normal_enemy.html#a371a6bef4feaeb0b47e1ab61dead7b77">NormalEnemy</a>で実装されています。</p>
+<p><a class="el" href="class_player.html#ab8accc9b83b030f5313f1b4872a7e634">Player</a>, <a class="el" href="class_sword.html#a3e0221aa5c05ecada9def39fb38c0059">Sword</a>, <a class="el" href="class_bullet.html#aa0867038c9c35e30ee09e21ecdccf281">Bullet</a>, <a class="el" href="class_normal_enemy.html#a371a6bef4feaeb0b47e1ab61dead7b77">NormalEnemy</a>, <a class="el" href="class_map_object.html#ab6b8849f15175417eca94b2703945e4b">MapObject</a>, <a class="el" href="class_fly_enemy.html#a5122c8fea26ebbd0390acfd6e41931ff">FlyEnemy</a>, <a class="el" href="class_static_object.html#a7fa678c3c4032bb6e9417f93a8bb895c">StaticObject</a>で実装されています。</p>
 
 </div>
 </div>
@@ -489,7 +550,7 @@ ObjectBase の継承関係図</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool ObjectBase::enabled</td>
+          <td class="memname">bool ObjectBase::enabled = true</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -542,6 +603,20 @@ ObjectBase の継承関係図</div>
 <span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03b285263802692be1f3a9a7b13e5344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03b285263802692be1f3a9a7b13e5344">&#9670;&nbsp;</a></span>status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_status.html">Status</a> ObjectBase::status</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

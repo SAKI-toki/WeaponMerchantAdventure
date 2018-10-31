@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['none',['NONE',['../object__base_8h.html#a0eff9883ab049ee02773dde19d057c0cab50339a10e1de285ac99d4c3990b8693',1,'NONE():&#160;object_base.h'],['../enemy__base_8h.html#aef73e23ea1cdc9dda520bbb81af707dbab50339a10e1de285ac99d4c3990b8693',1,'NONE():&#160;enemy_base.h']]],
-  ['normal',['NORMAL',['../enemy__base_8h.html#aef73e23ea1cdc9dda520bbb81af707dba1e23852820b9154316c7c06e2b7ba051',1,'enemy_base.h']]],
-  ['normal_5fenemy_2ecpp',['normal_enemy.cpp',['../normal__enemy_8cpp.html',1,'']]],
-  ['normal_5fenemy_2eh',['normal_enemy.h',['../normal__enemy_8h.html',1,'']]],
-  ['normalenemy',['NormalEnemy',['../class_normal_enemy.html',1,'NormalEnemy'],['../class_normal_enemy.html#aa386eea59a2983574fe7d55a91f93012',1,'NormalEnemy::NormalEnemy()']]]
+  ['map',['MAP',['../object__base_8h.html#a0eff9883ab049ee02773dde19d057c0ca5af1a3a285c2bdee4192223e31e1f833',1,'object_base.h']]],
+  ['map_2ecpp',['map.cpp',['../map_8cpp.html',1,'']]],
+  ['map_2eh',['map.h',['../map_8h.html',1,'']]],
+  ['mapobject',['MapObject',['../class_map_object.html',1,'MapObject'],['../class_map_object.html#a568754515cc72ce0861d30c3040d26d2',1,'MapObject::MapObject()'],['../class_map_object.html#a4d69915b6837056e40c0c17afe78ce8e',1,'MapObject::MapObject(const MapObject &amp;m)'],['../class_map_object.html#ad3779307ee41c0bc0fdf4b419baac3da',1,'MapObject::MapObject(MapObject &amp;&amp;m) noexcept']]],
+  ['move',['Move',['../class_camera.html#a5c6b7ad424d835a3022393099886a90b',1,'Camera::Move()'],['../class_transform.html#a45772ecb47b60d5b3f110613c3f15984',1,'Transform::Move(const float, const float)'],['../class_transform.html#a13dbb800ca989856d1f56c03dd9a0ad0',1,'Transform::Move(const VEC2 &amp;)']]],
+  ['my_5fscene',['my_scene',['../class_scene_base.html#a18dcdbacfbd98f73099c3cbeb70ae3b8',1,'SceneBase']]]
 ];

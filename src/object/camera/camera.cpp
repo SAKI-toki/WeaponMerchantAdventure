@@ -50,4 +50,5 @@ void Camera::Update()
 	{
 		SetPos(target->transform.pos);
 	}
+	if (camera_pos.y > -WINDOW_HEIGHT / 2)camera_pos.y = -WINDOW_HEIGHT / 2;
 }

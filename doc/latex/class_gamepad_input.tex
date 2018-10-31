@@ -22,16 +22,18 @@ Gamepad\+Input の継承関係図\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em コンストラクタで初期化 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_gamepad_input_a3512c0cc4d57534c83db09c4b5377caa}{Update}} ()
 \begin{DoxyCompactList}\small\item\em ゲームパッドインプットの更新 \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_gamepad_input_a7e7a0e3d48ce3f91332fd52c4c92bb8f}{Get\+Button\+Down}} (\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705}{B\+U\+T\+T\+ON}} k) const
+void \mbox{\hyperlink{class_gamepad_input_ac78cf60cd63a1b1d53510dd7193b5fcb}{Vibration}} (float, float)
+\begin{DoxyCompactList}\small\item\em コントローラーの振動 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gamepad_input_a209f58f3b488e87d5feb99c7b2f06939}{Get\+Button\+Down}} (\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705}{B\+U\+T\+T\+ON}} b) const
 \begin{DoxyCompactList}\small\item\em --ゲッタ-- \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_gamepad_input_a2bf3c765fd5e4261a0ab56c8871bd614}{Get\+Button}} (\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705}{B\+U\+T\+T\+ON}} k) const
-\item 
-bool \mbox{\hyperlink{class_gamepad_input_a2c013028c4e0983a957666ff9922a40c}{Get\+Button\+Up}} (\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705}{B\+U\+T\+T\+ON}} k) const
-\item 
+bool \mbox{\hyperlink{class_gamepad_input_a73a45e377ebcd58b6f0462d6d8fbcb94}{Get\+Button}} (\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705}{B\+U\+T\+T\+ON}} b) const
+\begin{DoxyCompactList}\small\item\em ボタンを押しているかどうか \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gamepad_input_ac33f84af8806aeaff44296de9bf1dde0}{Get\+Button\+Up}} (\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705}{B\+U\+T\+T\+ON}} b) const
+\begin{DoxyCompactList}\small\item\em ボタンを離したかどうか \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_gamepad_input_aab528f55fe651996096e697acdec4546}{Get\+Trigger}} (const bool right) const
-\item 
+\begin{DoxyCompactList}\small\item\em トリガーの状態を返す \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_gamepad_input_ab7e3fb80f81fcafdfc7c0f546c280929}{Get\+Stick}} (const bool right, const bool x) const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em スティックの状態を返す \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
 
 
@@ -52,40 +54,83 @@ float \mbox{\hyperlink{class_gamepad_input_ab7e3fb80f81fcafdfc7c0f546c280929}{Ge
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_gamepad_input_a2bf3c765fd5e4261a0ab56c8871bd614}\label{class_gamepad_input_a2bf3c765fd5e4261a0ab56c8871bd614}} 
+\mbox{\Hypertarget{class_gamepad_input_a73a45e377ebcd58b6f0462d6d8fbcb94}\label{class_gamepad_input_a73a45e377ebcd58b6f0462d6d8fbcb94}} 
 \index{Gamepad\+Input@{Gamepad\+Input}!Get\+Button@{Get\+Button}}
 \index{Get\+Button@{Get\+Button}!Gamepad\+Input@{Gamepad\+Input}}
 \subsubsection{\texorpdfstring{Get\+Button()}{GetButton()}}
-{\footnotesize\ttfamily bool Gamepad\+Input\+::\+Get\+Button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705}{B\+U\+T\+T\+ON}}}]{k }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool Gamepad\+Input\+::\+Get\+Button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705}{B\+U\+T\+T\+ON}}}]{b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_gamepad_input_a7e7a0e3d48ce3f91332fd52c4c92bb8f}\label{class_gamepad_input_a7e7a0e3d48ce3f91332fd52c4c92bb8f}} 
+
+
+ボタンを押しているかどうか 
+
+
+\begin{DoxyParams}{引数}
+{\em k} & 判定するボタン \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gamepad_input_a209f58f3b488e87d5feb99c7b2f06939}\label{class_gamepad_input_a209f58f3b488e87d5feb99c7b2f06939}} 
 \index{Gamepad\+Input@{Gamepad\+Input}!Get\+Button\+Down@{Get\+Button\+Down}}
 \index{Get\+Button\+Down@{Get\+Button\+Down}!Gamepad\+Input@{Gamepad\+Input}}
 \subsubsection{\texorpdfstring{Get\+Button\+Down()}{GetButtonDown()}}
-{\footnotesize\ttfamily bool Gamepad\+Input\+::\+Get\+Button\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705}{B\+U\+T\+T\+ON}}}]{k }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool Gamepad\+Input\+::\+Get\+Button\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705}{B\+U\+T\+T\+ON}}}]{b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 --ゲッタ-- 
 
-\mbox{\Hypertarget{class_gamepad_input_a2c013028c4e0983a957666ff9922a40c}\label{class_gamepad_input_a2c013028c4e0983a957666ff9922a40c}} 
+ボタンを押したかどうか 
+\begin{DoxyParams}{引数}
+{\em k} & 判定するボタン \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gamepad_input_ac33f84af8806aeaff44296de9bf1dde0}\label{class_gamepad_input_ac33f84af8806aeaff44296de9bf1dde0}} 
 \index{Gamepad\+Input@{Gamepad\+Input}!Get\+Button\+Up@{Get\+Button\+Up}}
 \index{Get\+Button\+Up@{Get\+Button\+Up}!Gamepad\+Input@{Gamepad\+Input}}
 \subsubsection{\texorpdfstring{Get\+Button\+Up()}{GetButtonUp()}}
-{\footnotesize\ttfamily bool Gamepad\+Input\+::\+Get\+Button\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705}{B\+U\+T\+T\+ON}}}]{k }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool Gamepad\+Input\+::\+Get\+Button\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{gamepad__input_8h_a739845b0076428add52ca3cec492e705}{B\+U\+T\+T\+ON}}}]{b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ボタンを離したかどうか 
+
+
+\begin{DoxyParams}{引数}
+{\em k} & 判定するボタン \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_gamepad_input_ab7e3fb80f81fcafdfc7c0f546c280929}\label{class_gamepad_input_ab7e3fb80f81fcafdfc7c0f546c280929}} 
 \index{Gamepad\+Input@{Gamepad\+Input}!Get\+Stick@{Get\+Stick}}
 \index{Get\+Stick@{Get\+Stick}!Gamepad\+Input@{Gamepad\+Input}}
 \subsubsection{\texorpdfstring{Get\+Stick()}{GetStick()}}
 {\footnotesize\ttfamily float Gamepad\+Input\+::\+Get\+Stick (\begin{DoxyParamCaption}\item[{const bool}]{right,  }\item[{const bool}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+スティックの状態を返す 
+
+
+\begin{DoxyParams}{引数}
+{\em right} & 判定するのが右かどうか \\
+\hline
+{\em right} & 判定するのがxかどうか \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_gamepad_input_aab528f55fe651996096e697acdec4546}\label{class_gamepad_input_aab528f55fe651996096e697acdec4546}} 
 \index{Gamepad\+Input@{Gamepad\+Input}!Get\+Trigger@{Get\+Trigger}}
 \index{Get\+Trigger@{Get\+Trigger}!Gamepad\+Input@{Gamepad\+Input}}
 \subsubsection{\texorpdfstring{Get\+Trigger()}{GetTrigger()}}
 {\footnotesize\ttfamily float Gamepad\+Input\+::\+Get\+Trigger (\begin{DoxyParamCaption}\item[{const bool}]{right }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+トリガーの状態を返す 
+
+
+\begin{DoxyParams}{引数}
+{\em right} & 判定するのが右かどうか \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_gamepad_input_a3512c0cc4d57534c83db09c4b5377caa}\label{class_gamepad_input_a3512c0cc4d57534c83db09c4b5377caa}} 
 \index{Gamepad\+Input@{Gamepad\+Input}!Update@{Update}}
 \index{Update@{Update}!Gamepad\+Input@{Gamepad\+Input}}
@@ -96,6 +141,23 @@ float \mbox{\hyperlink{class_gamepad_input_ab7e3fb80f81fcafdfc7c0f546c280929}{Ge
 
 ゲームパッドインプットの更新 
 
+\mbox{\Hypertarget{class_gamepad_input_ac78cf60cd63a1b1d53510dd7193b5fcb}\label{class_gamepad_input_ac78cf60cd63a1b1d53510dd7193b5fcb}} 
+\index{Gamepad\+Input@{Gamepad\+Input}!Vibration@{Vibration}}
+\index{Vibration@{Vibration}!Gamepad\+Input@{Gamepad\+Input}}
+\subsubsection{\texorpdfstring{Vibration()}{Vibration()}}
+{\footnotesize\ttfamily void Gamepad\+Input\+::\+Vibration (\begin{DoxyParamCaption}\item[{float}]{right,  }\item[{float}]{left }\end{DoxyParamCaption})}
+
+
+
+コントローラーの振動 
+
+
+\begin{DoxyParams}{引数}
+{\em right} & 右のモーターの力 \\
+\hline
+{\em left} & 左のモーターの力 \\
+\hline
+\end{DoxyParams}
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}

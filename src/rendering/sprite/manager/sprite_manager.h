@@ -31,7 +31,7 @@ class SpriteManager :public Singleton<SpriteManager>
 public:
 	void Init();
 	void SetTexture(std::string, WCHAR*);
-	void Render(const Transform&, bool, bool, const std::string&, const DirectX::XMVECTOR&,const RECT&);
+	void Render(const Transform&, bool, bool, const std::string&, const DirectX::XMVECTOR&, const RECT&, const DirectX::SpriteEffects);
 	~SpriteManager();
 
 
