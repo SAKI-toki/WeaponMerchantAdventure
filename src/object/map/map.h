@@ -99,14 +99,17 @@ public:
 * @param scale ägëÂÅEèkè¨
 */
 static void MakeMap(std::vector<MapObject>& con, const VEC2& pos, const int hor, const int ver,
-	const std::string& name, WCHAR* path, const LONG w, const LONG h, float rot = 0, float scale = 1)
+	const std::string& name, WCHAR* path, LONG w, LONG h, float rot = 0, float scale = 1)
 {
 	for (int i = 0; i < hor; ++i)
 	{
 		for (int j = 0; j < ver; ++j)
 		{
 			con.push_back(MapObject());
-			con[con.size() - 1].Init(name, path, w, h, pos + VEC2(i*static_cast<float>(w), j*static_cast<float>(h)), rot, scale);
+			con[con.size() - 1].Init(name, path, w, h,
+				pos + VEC2((i*(static_cast<float>(w)/* - 1*/))*scale, (j*(static_cast<float>(h)/* - 1*/))*scale),
+				rot, scale);
+
 		}
 	}
 }

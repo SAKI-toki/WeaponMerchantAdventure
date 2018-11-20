@@ -14,6 +14,7 @@ void MapObject::InitProcess()
 	collider.SetStatus(transform.pos, transform.size.x, transform.size.y, transform.rot, transform.scale);
 	sprite.SetRect(RECT{ 448 + 32,32,479 + 32,63 });
 }
+
 /**
 * @brief マップの更新
 */
@@ -21,6 +22,7 @@ void MapObject::UpdateProcess()
 {
 	collider.SetStatus(transform.pos, transform.size.x, transform.size.y, transform.rot, transform.scale);
 }
+
 /**
 * @brief マップの破棄
 */

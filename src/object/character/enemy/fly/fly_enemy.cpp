@@ -12,6 +12,7 @@
 void FlyEnemy::InitProcess()
 {
 	collider.SetStatus(transform.pos, transform.size.x, transform.size.y, transform.rot, transform.scale);
+	status.Init(100, 10, 1);
 }
 
 /**
@@ -33,13 +34,12 @@ void FlyEnemy::UpdateProcess()
 				transform.pos.y <= start_pos.y&&transform.pos.y <= end_pos.y))
 		{
 			move *= -1;
-			//transform.pos += move;
 		}
 		collider.SetStatus(transform.pos, transform.size.x, transform.size.y, transform.rot, transform.scale);
 	}
 	else
 	{
-		transform.pos/*.y*/ += gravity.AddGravity();
+		transform.pos += gravity.AddGravity();
 	}
 }
 
@@ -52,6 +52,10 @@ void FlyEnemy::Collision(ObjectBase* obj, VEC2)
 	if (obj == nullptr)return;
 	if (obj->object_tag == OBJECT_TAG::WEAPON)
 	{
+		/*if (!status.Damage(obj->status.Attack))
+		{
+			return;
+		}*/
 		collider.Destroy();
 		destroy_flg = true;
 		gravity.ResetGravity();

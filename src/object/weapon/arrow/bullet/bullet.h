@@ -14,12 +14,13 @@
 */
 class Bullet :public DynamicObject
 {
+	//bool is_
 	//当たったときに実行する関数
 	std::function<void()> arrow_func;
 	//弾速
 	static constexpr float speed = 20.0f;
 	//弾の寿命（フレーム数）
-	static constexpr int life_time = 600;
+	static constexpr int life_time = 120;
 	//コライダ
 	SquareCollider collider;
 	//どの方向に向かって飛ぶか

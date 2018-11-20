@@ -6,6 +6,7 @@
 */
 #include "arrow.h"
 #include "../../../input/gamepad/gamepad_input.h"
+#include "../../../common/saki/degree_radian/degree_radian_conversion.h"
 
 /**
 * @brief コンストラクタ
@@ -48,38 +49,11 @@ void Arrow::WeaponUpdate(const VEC2&, bool)
 	//右スティックの角度
 	float stick_x = GamepadInput::GetInstance()->GetStick(true, true);
 	float stick_y = GamepadInput::GetInstance()->GetStick(true, false);
-	//右スティックの角度を出す
-	float ratio_x;
-	//xとyのがどの程度傾いているかを出す(値としてはxのみ保持する)
+	//右スティックが倒れているとき
+	if (stick_x != 0.0f || stick_y != 0.0f)
 	{
-		float abs_sum = std::abs(stick_x) + std::abs(stick_y);
-		ratio_x = std::abs(stick_x) / abs_sum;
-	}
-	stick_angle = PI<float> / 2 * ratio_x;
-	if (stick_x == 0)
-	{
-		if (stick_y < 0)stick_angle = PI<float>;
-		else stick_angle = 0;
-	}
-	else if (stick_y == 0)
-	{
-		if (stick_x < 0)stick_angle = PI<float>*1.5f;
-		else stick_angle = PI<float>*0.5f;
-	}
-	else if (stick_x > 0 && stick_y < 0)
-	{
-		stick_angle = PI<float> -stick_angle;
-	}
-	else if (stick_x < 0)
-	{
-		if (stick_y < 0)
-		{
-			stick_angle += PI<float>;
-		}
-		else
-		{
-			stick_angle = PI<float> * 2 - stick_angle;
-		}
+		//上を向いているときを0度となるように計算する
+		stick_angle = std::atan2f(-stick_y, stick_x) + saki::to_radian<float>(90.0f);
 	}
 
 	//弾の更新
@@ -118,8 +92,12 @@ void Arrow::WeaponUpdate(const VEC2&, bool)
 */
 void Arrow::WeaponRender(const Transform& t)
 {
-	//矢印の描画
-	sprite.Render(Transform(t.pos, stick_angle, 1));
+	if (!weapon_enabled)return;
+	if (current_delay >= delay)
+	{	
+		//矢印の描画
+		sprite.Render(Transform(t.pos, stick_angle, 1));
+	}
 	//弾の描画
 	for (auto&& n : bullet)
 	{

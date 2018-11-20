@@ -16,3 +16,22 @@ VEC2 Gravity::AddGravity()
 	auto g = (((hit_head) ? 0 : power.y) + gravity * std::pow(time / 60.0f, 2.0f))*-1;
 	return VEC2(power.x, g > std::abs(max_gravity) ? max_gravity : g);
 }
+
+/**
+* @brief 横移動でスティック入力していないときの減速
+* @param speed どのくらい減速するか
+* @return bool スピードゼロになったかどうか
+*/
+bool Gravity::ReturnZero(const float speed)
+{
+	if (power.x == 0)return true;
+	auto prev = power.x;
+	power.x -= power.x > 0 ? speed : -speed;
+	if (prev > 0 && power.x < 0 ||
+		prev < 0 && power.x > 0)
+	{
+		power.x = 0;
+	}
+	if (power.x == 0)return true;
+	else return false;
+}

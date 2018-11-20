@@ -13,6 +13,7 @@
 class WeaponBase
 {
 public:
+	bool weapon_enabled = true;
 	virtual void Attack(bool,const VEC2&) = 0;
 	virtual void WeaponStart() = 0;
 	virtual void WeaponUpdate(const VEC2&, bool) = 0;

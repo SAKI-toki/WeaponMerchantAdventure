@@ -11,7 +11,7 @@
 #include "../../gravity/gravity.h"
 #include "../../status/status.h"
 
-enum class OBJECT_TAG { PLAYER, ENEMY, MAP, WEAPON, NONE };
+enum class OBJECT_TAG { PLAYER, ENEMY, MAP, WEAPON, BOSS, NONE };
 /**
 * @brief オブジェクトのスーパークラス
 */
@@ -46,13 +46,15 @@ public:
 	/**
 	* @brief コピーコンストラクタ
 	*/
-	ObjectBase(const ObjectBase& o)
+	ObjectBase(const ObjectBase& other)
 	{
-		this->transform = o.transform;
-		this->enabled = o.enabled;
-		this->object_tag = o.object_tag;
-		this->sprite = o.sprite;
-		this->use_gravity = o.use_gravity;
+		this->sprite = other.sprite;
+		this->status = other.status;
+		this->gravity = other.gravity;
+		this->use_gravity = other.use_gravity;
+		this->object_tag = other.object_tag;
+		this->enabled = other.enabled;
+		this->transform = other.transform;
 	}
 	/**
 	* @brief コピー代入演算子

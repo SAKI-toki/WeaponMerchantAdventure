@@ -29,7 +29,6 @@ SquareCollider::SquareCollider(ObjectBase* obj, bool _is_trigger, bool _is_stati
 void SquareCollider::SetStatus(const VEC2& pos, const float w, const float h, const float rot, const float scale)
 {
 	status.center_pos = pos, status.width = w * 0.5f*scale, status.height = h * 0.5f*scale, status.rot = rot;
-
 }
 /**
 * @brief “–‚½‚Á‚½‚Æ‚«‚Ì‰Ÿ‚µo‚µ
@@ -46,6 +45,7 @@ void SquareCollider::CollisionExtrusion(const VEC2& pos)
 */
 void SquareCollider::Destroy()
 {
+	if (!enabled)return;
 	ColliderManager::GetInstance()->DeleteCollider(this);
 	enabled = false;
 }

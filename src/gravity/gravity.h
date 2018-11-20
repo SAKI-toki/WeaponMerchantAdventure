@@ -25,7 +25,7 @@ class Gravity
 	//上に働く力
 	VEC2 power = VEC2(0, 0);
 	//経過時間
-	int time = 0;
+	int time = 1;
 	//頭がぶつかったかどうか
 	bool hit_head = false;
 public:
@@ -86,6 +86,9 @@ public:
 		power.y = 0;
 		hit_head = false;
 	}
+	/**
+	* @param 重力系の横方向のみリセット
+	*/
 	void ResetSideGravity()
 	{
 		power.x = 0;
@@ -98,24 +101,7 @@ public:
 		time = 0;
 		hit_head = true;
 	}
-	/**
-	* @brief 横移動でスティック入力していないときの減速
-	* @param speed どのくらい減速するか
-	* @return bool スピードゼロになったかどうか
-	*/
-	bool ReturnZero(const float speed)
-	{
-		if (power.x == 0)return true;
-		auto prev = power.x;
-		power.x -= power.x > 0 ? speed : -speed;
-		if (prev > 0 && power.x < 0 ||
-			prev < 0 && power.x > 0)
-		{
-			power.x = 0;
-		}
-		if (power.x == 0)return true;
-		else return false;
-	}
+	bool ReturnZero(const float speed);
 	/**
 	* @brief 直接横の力を入れる
 	* @param side_power 横の力

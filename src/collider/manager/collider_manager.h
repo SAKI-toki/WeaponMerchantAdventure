@@ -7,6 +7,7 @@
 #pragma once
 #include "../../common/singleton.h"
 #include "../square/square_collider.h"
+#include "../../rendering/font/font.h"
 #include <vector>
 
 
@@ -16,6 +17,22 @@
 class ColliderManager :public Singleton<ColliderManager>
 {
 private:
+
+#ifdef _DEBUG
+	int count = 0;
+public:
+	void DebugRender()
+	{
+		Font f;
+		WCHAR str[255];
+		swprintf_s(str, L"ColliderNum=%d", count);
+		f.Init(str, 1, 0, 0);
+		f.SetTransform({ {500,0},0,5 });
+		f.Render();
+	}
+private:
+#endif
+
 	/**
 	* @brief 四角コライダ自信と1フレーム前の位置と今の位置を格納
 	*/

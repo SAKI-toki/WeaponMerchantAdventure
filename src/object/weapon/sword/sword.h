@@ -17,7 +17,7 @@
 class Sword :public WeaponBase, public ObjectBase
 {
 	//Ÿ‚ÌUŒ‚‚ğ‚·‚é‚Ü‚Å‚ÌƒfƒBƒŒƒC
-	static constexpr int delay = /*3*/0;
+	static constexpr int delay = 30;
 	int current_delay = 0;
 	//‰¹
 	Sound sound;

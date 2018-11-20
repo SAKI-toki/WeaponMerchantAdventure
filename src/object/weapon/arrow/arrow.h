@@ -16,8 +16,9 @@ class Bullet;
 */
 class Arrow :public WeaponBase
 {
+	bool enabled = true;
 	//Ÿ‚ÌUŒ‚‚ğ‚·‚é‚Ü‚Å‚ÌƒfƒBƒŒƒC
-	static constexpr int delay = /*3*/0;
+	static constexpr int delay = 15;
 	int current_delay = 0;
 	//–îˆó
 	Sprite sprite;

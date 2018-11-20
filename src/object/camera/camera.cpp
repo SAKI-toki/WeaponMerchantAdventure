@@ -2,7 +2,7 @@
 * @file camera.cpp
 * @brief カメラクラスのメンバ関数を定義
 * @author 石山　悠
-* @date 2018/10/09
+* @date 2018/11/06
 */
 #include "camera.h"
 #include "../../common/common.h"
@@ -50,5 +50,6 @@ void Camera::Update()
 	{
 		SetPos(target->transform.pos);
 	}
-	if (camera_pos.y > -WINDOW_HEIGHT / 2)camera_pos.y = -WINDOW_HEIGHT / 2;
+	camera_pos.y = -WINDOW_HEIGHT / 2;
+	if (camera_pos.x < 0)camera_pos.x = 0;
 }

@@ -26,6 +26,9 @@ public:
 		HP = hp; Attack = attack; Defense = defense;
 	}
 
+	/**
+	* @brief コピー代入演算子
+	*/
 	Status& operator=(const Status& other)
 	{
 		if (this != &other)
@@ -36,4 +39,6 @@ public:
 		}
 		return *this;
 	}
+
+	bool Damage(const float);
 };

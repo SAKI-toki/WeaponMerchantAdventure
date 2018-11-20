@@ -12,7 +12,7 @@
 Sword::Sword() :collider(this, true)
 {
 	object_tag = OBJECT_TAG::WEAPON;
-	
+	status.Init(1, 20, 1);
 	sprite.Init(std::string("sword"), L"sword.png", 100, 100, 0, 0, 0, 0.3f);
 	sound.Init(std::string("sword_sound"), L"sword.wav", false, false);
 	transform.size = VEC2(100, 100);
@@ -36,7 +36,15 @@ void Sword::WeaponStart()
 */
 void Sword::WeaponUpdate(const VEC2& p, bool _right)
 {
-	if (current_delay < delay) { ++current_delay; }
+	if (current_delay < delay)
+	{
+		++current_delay;
+		sprite.ColorChange(1, 0, 0, 0.3f);
+	}
+	else
+	{
+		sprite.ColorChange(0, 0, 0, 0.3f);
+	}
 	right = _right;
 	//is_attack = false;
 
@@ -50,6 +58,7 @@ void Sword::WeaponUpdate(const VEC2& p, bool _right)
 */
 void Sword::WeaponRender(const Transform& t)
 {
+	if (!weapon_enabled)return;
 	sprite.Render(Transform(t.pos.x + (right ? distance : -distance), t.pos.y, 0, 1));
 }
 

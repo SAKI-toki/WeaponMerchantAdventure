@@ -6,6 +6,7 @@
 */
 #pragma once
 #include "base/scene_base.h"
+#include <memory>
 /**
 * @brief マネージャーを含まないシーンのスーパークラス
 * @details マネージャーはこのクラスを保持する
@@ -14,5 +15,5 @@ class Scene :public SceneBase
 {
 public:
 	virtual ~Scene() {}
-	virtual SCENE Update() = 0;
+	virtual std::shared_ptr<Scene> Update(std::shared_ptr<Scene>&) = 0;
 };

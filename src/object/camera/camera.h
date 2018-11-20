@@ -9,7 +9,6 @@
 #include "../../transform/transform.h"
 #include "../base/object_base.h"
 
-
 /**
 * @brief カメラクラス
 */
@@ -19,6 +18,7 @@ class Camera :public Singleton<Camera>
 	VEC2 camera_pos = VEC2::Zero;
 	//追尾させるターゲット
 	ObjectBase* target = nullptr;
+	float RIGHT_LIMIT;
 public:
 	Camera() {}
 	Camera(const VEC2&);
@@ -32,5 +32,9 @@ public:
 	void SetTarget(ObjectBase* t)
 	{
 		target = t;
+	}
+	void DirectSetPos(const VEC2& v2)
+	{
+		camera_pos = v2;
 	}
 };

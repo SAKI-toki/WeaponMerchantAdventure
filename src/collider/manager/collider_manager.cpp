@@ -38,6 +38,19 @@ void ColliderManager::CheckCollision()
 {
 	//全てのコライダを走査してから関数を実行するため、一時的に格納する場所
 	std::queue<std::pair<std::function<void(ObjectBase*, VEC2)>, SquarePosCol>> func_queue;
+
+#ifdef _DEBUG
+	count = 0; 
+	for (auto&& sc : staticSquareColliderList)
+	{
+		++count;
+	}
+	for (auto&& dc : dynamicSquareColliderList)
+	{
+		++count;
+	}
+#endif
+
 	//前の位置を格納
 	for (auto&& sc : staticSquareColliderList)
 	{
@@ -101,6 +114,10 @@ void ColliderManager::CheckCollision()
 			//volatileというには最適化させないための修飾子
 			//[[maybe_unused]]属性というのは意図的に未使用の要素を定義していることをコンパイラに伝え、警告を抑制するための属性
 			[[maybe_unused]]volatile auto temp = func_queue.front().second.col->object->enabled;
+			if (func_queue.front().second.col->object == nullptr)
+			{
+				throw;
+			}
 			func_queue.front().first(func_queue.front().second.col->object, func_queue.front().second.col->GetStatus().center_pos - func_queue.front().second.prev_pos);
 		}
 		catch (...)
@@ -174,8 +191,8 @@ bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2, b
 			if (!col1_static && !col1.col->collision_is_static_y && !col2.col->collision_is_static_y)
 			{
 				//押し出す量（どちらも押し出すため半分）
-				//floatの誤差を防ぐために+0.1fしている
-				auto diff = (sum_height - std::abs(status1.center_pos.y - status2.center_pos.y) + 0.1f)  *0.5f;
+				//floatの誤差を防ぐために+0.001fしている
+				auto diff = (sum_height - std::abs(status1.center_pos.y - status2.center_pos.y) + 0.001f)  *0.5f;
 				//半分ずつぶつかってる値を位置から引く
 				col1.col->CollisionExtrusion(VEC2(
 					col1.col->GetStatus().center_pos.x,
@@ -196,8 +213,8 @@ bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2, b
 				if (!target_col.col->collision_is_static_y)
 				{
 					//押し出す量
-					//floatの誤差を防ぐために+0.1fしている
-					auto diff = sum_height - std::abs(status1.center_pos.y - status2.center_pos.y) + 0.1f;
+					//floatの誤差を防ぐために+0.001fしている
+					auto diff = sum_height - std::abs(status1.center_pos.y - status2.center_pos.y) + 0.001f;
 					//ターゲットじゃないほうも格納
 					decltype(auto) not_target_col = (!(col1.col->collision_is_static_y || col1_static) ? col2 : col1);
 					//y方向をこれ以上動かさないためにする
@@ -234,8 +251,8 @@ bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2, b
 			if (!col1_static && !col1.col->collision_is_static_x && !col2.col->collision_is_static_x)
 			{
 				//押し出す量（どちらも押し出すため半分）
-				//floatの誤差を防ぐために+0.1fしている
-				auto diff = (sum_width - std::abs(status1.center_pos.x - status2.center_pos.x) + 0.1f) *0.5f;
+				//floatの誤差を防ぐために+0.001fしている
+				auto diff = (sum_width - std::abs(status1.center_pos.x - status2.center_pos.x) + 0.001f) *0.5f;
 				//半分ずつぶつかってる値を位置から引く
 				col1.col->CollisionExtrusion(VEC2(
 					(col1.prev_pos.x > col2.prev_pos.x) ?
@@ -256,8 +273,8 @@ bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2, b
 				if (!target_col.col->collision_is_static_x)
 				{
 					//押し出す量
-					//floatの誤差を防ぐために+0.1fしている
-					auto diff = sum_width - std::abs(status1.center_pos.x - status2.center_pos.x) + 0.1f;
+					//floatの誤差を防ぐために+0.001fしている
+					auto diff = sum_width - std::abs(status1.center_pos.x - status2.center_pos.x) + 0.001f;
 					//ターゲットじゃないほうも格納
 					decltype(auto) not_target_col = (!(col1.col->collision_is_static_x || col1_static) ? col2 : col1);
 					//x方向をこれ以上動かさないためにする

@@ -65,25 +65,51 @@ public:
 
 	void Init(const std::string, WCHAR*, bool, bool);
 	void Destroy();
-	//再生
+	/**
+	* @brief 再生
+	*/
 	void Start() { if (instance_sound)instance_sound->Play(is_loop); }
-	//停止
+
+	/**
+	* @brief 停止
+	*/
 	void Stop() { if (instance_sound)instance_sound->Stop(); }
-	//一時停止
+
+	/**
+	* @brief 一時停止
+	*/
 	void Pause() { if (instance_sound)instance_sound->Pause(); }
-	//再生されているかどうか
+
+	/**
+	* @brief 再生されているかどうか
+	* @return bool 再生されていたらtrue
+	*/
 	bool Is_Play()const { return instance_sound && instance_sound->GetState() != DirectX::SoundState::STOPPED; }
-	//ボリューム
+
+	/**
+	* @brief ボリュームのセッタ
+	* @param vol ボリューム
+	*/
 	void SetVolume(float vol) { if (instance_sound)instance_sound->SetVolume(vol); }
-	//ピッチ
+
+	/**
+	* @brief ピッチのセッタ
+	* @param pit ピッチ
+	*/
 	void SetPitch(float pit) { if (instance_sound)instance_sound->SetPitch(pit); }
-	//パン
+
+	/**
+	* @brief パンのセッタ
+	* @param pan パン
+	*/
 	void SetPan(float pan) { if (instance_sound)instance_sound->SetPan(pan); }
 
-	~Sound();
 
+	~Sound();
+	/*
 	std::unique_ptr<DirectX::SoundEffectInstance>& operator()()
 	{
 		return instance_sound;
 	}
+	*/
 };

@@ -15,9 +15,8 @@
 class SceneManager :public SceneBase, public Singleton<SceneManager>
 {
 	//シーン
-	std::unique_ptr<Scene> scene_ptr;
-	//シーン遷移
-	std::unique_ptr<Scene> switch_scene(const SCENE)const;
+	std::shared_ptr<Scene> scene_ptr;
+	std::shared_ptr<Scene> next_scene_ptr;
 	//フェード中かどうか
 	bool is_current_fade = false;
 	//フェードインかどうか

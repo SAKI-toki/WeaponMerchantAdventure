@@ -14,6 +14,7 @@ void Bullet::BulletInit(const float angle, const std::function<void()>& func)
 {
 	dire = VEC2(std::cos(-angle + PI<float>*0.5f), -std::sin(-angle + PI<float>*0.5f));
 	arrow_func = func;
+	status.Init(1, 5, 1);
 }
 /**
 * @brief ‰Šú‰»
@@ -55,7 +56,7 @@ void Bullet::Collision(ObjectBase* obj, VEC2)
 {
 	if (obj == nullptr)return;
 	//“G‚É“–‚½‚Á‚½‚ç
-	if (obj->object_tag == OBJECT_TAG::ENEMY)
+	if (obj->object_tag == OBJECT_TAG::ENEMY || obj->object_tag == OBJECT_TAG::BOSS)
 	{
 		arrow_func();
 		this->Destroy();

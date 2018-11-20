@@ -6,13 +6,16 @@
 */
 #include "scene_manager.h"
 #include "../main/title/title_scene.h"
-#include "../main/game/game_scene.h"
 #include "../../input/gamepad/gamepad_input.h"
 #include "../../sound/manager/sound_manager.h"
 #include "../../rendering/sprite/manager/sprite_manager.h"
 #include "../../collider/manager/collider_manager.h"
 #include "../../object/camera/camera.h"
 #include "../fade/fade.h"
+#include "../../object/ui/manager/ui_manager.h"
+#include "../main/game/over/game_over.h"
+
+
 
 /**
 * @brief シーンマネージャーの初期化
@@ -21,9 +24,9 @@ void SceneManager::Init()
 {
 	SpriteManager::GetInstance()->Init();
 	Fade::GetInstance()->Init();
+	GameOver::getinstance()->Init();
 	//タイトルからスタート
-	my_scene = SCENE::TITLE;
-	scene_ptr = switch_scene(my_scene);
+	scene_ptr = std::make_shared<TitleScene>();
 	scene_ptr->Init();
 }
 
@@ -40,10 +43,9 @@ void SceneManager::Update()
 		//ゲームパッドの更新
 		GamepadInput::GetInstance()->Update();
 		//シーンを更新し、ほかのシーンが返ってきたらシーン遷移する/*ここではシーン遷移はしていない*/
-		auto next_scene = scene_ptr->Update();
-		if (next_scene != my_scene)
+		next_scene_ptr = scene_ptr->Update(scene_ptr);
+		if (next_scene_ptr != scene_ptr)
 		{
-			my_scene = next_scene;
 			//フェードを開始する
 			is_current_fade = true;
 			//ゲームパッドのバイブレーションのリセット
@@ -71,8 +73,10 @@ void SceneManager::Update()
 				scene_ptr->Destroy();
 				//コライダのリセット
 				ColliderManager::GetInstance()->Reset();
+				//UIの破棄
+				UiManager::getinstance()->Destroy();
 				//シーンの遷移
-				scene_ptr = switch_scene(my_scene);
+				scene_ptr = next_scene_ptr;
 				//シーンの初期化
 				scene_ptr->Init();
 				//カメラの更新をここで一回しないと変なところにカメラがいってしまう
@@ -89,7 +93,10 @@ void SceneManager::Update()
 */
 void SceneManager::Render()
 {
+	//シーンの描画
 	scene_ptr->Render();
+	//UIの描画
+	UiManager::getinstance()->Render();
 	//もしシーン遷移中なら
 	if (is_current_fade)Fade::GetInstance()->Render();
 }
@@ -102,22 +109,4 @@ void SceneManager::Destroy()
 	scene_ptr->Destroy();
 	Fade::GetInstance()->Destroy();
 	SoundManager::GetInstance()->Destroy();
-}
-
-/**
-* @brief 引数によってシーンを切り替える
-* @param scene 次のシーンのenum class
-* @return std::unique_ptr<Scene>
-*/
-std::unique_ptr<Scene> SceneManager::switch_scene(const SCENE scene)const
-{
-	switch (scene)
-	{
-	case SCENE::TITLE:
-		return std::make_unique<TitleScene>();
-	case SCENE::GAME:
-		return std::make_unique<GameScene>();
-	}
-	Comment(L"登録していないシーンに遷移した", L"error");
-	return nullptr;
 }

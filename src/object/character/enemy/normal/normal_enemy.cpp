@@ -14,7 +14,7 @@ void NormalEnemy::InitProcess()
 	prev_left = move_left;
 	gravity.ResetGravity();
 	gravity.Init(max_speed);
-	status.Init(100, 1, 1);
+	status.Init(100, 10, 1);
 	collider.SetStatus(transform.pos, transform.size.x, transform.size.y, transform.rot, transform.scale);
 }
 /**
@@ -34,7 +34,6 @@ void NormalEnemy::UpdateProcess()
 			move_left = prev_left;
 			gravity.DirectSetSidePower(0);
 		}
-		//transform.pos.x += move_left ? -move_speed : move_speed;
 		gravity.SetSidePower(move_left ? -move_speed : move_speed);
 	}
 	else
@@ -44,7 +43,7 @@ void NormalEnemy::UpdateProcess()
 			Destroy();
 		}
 	}
-	transform.pos/*.y*/ += gravity.AddGravity();
+	transform.pos += gravity.AddGravity();
 	if (!destroy_flg)collider.SetStatus(transform.pos, transform.size.x, transform.size.y, transform.rot, transform.scale);
 }
 /**
@@ -69,6 +68,10 @@ void NormalEnemy::Collision(ObjectBase* obj,VEC2)
 	if (obj == nullptr)return;
 	if (obj->object_tag == OBJECT_TAG::WEAPON)
 	{
+		/*if (!status.Damage(obj->status.Attack))
+		{
+			return;
+		}*/
 		collider.Destroy();
 		destroy_flg = true;
 		gravity.ResetGravity();

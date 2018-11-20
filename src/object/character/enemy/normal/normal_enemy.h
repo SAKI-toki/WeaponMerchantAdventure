@@ -41,7 +41,7 @@ public:
 	/**
 	* @brief ムーブコンストラクタ
 	*/
-	NormalEnemy(NormalEnemy&& ne) :EnemyBase(ENEMY_TYPE::NORMAL)
+	NormalEnemy(NormalEnemy&& ne)noexcept :EnemyBase(ENEMY_TYPE::NORMAL)
 	{
 		this->transform = ne.transform;
 		this->enabled = ne.enabled;

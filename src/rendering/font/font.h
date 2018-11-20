@@ -44,4 +44,12 @@ public:
 	* @return t ˆÊ’u‚â‰ñ“]“™‚ğŠÜ‚Ş
 	*/
 	void SetTransform(const Transform& t) { transform = t; }
+	/**
+	* @brief F‚ğ•Ï‚¦‚é
+	* @param r,g,b,a F
+	*/
+	void ColorChange(const float r, const float g, const float b, const float a)
+	{
+		color.r = r; color.g = g; color.b = b; color.a = a;
+	}
 };
