@@ -41,14 +41,7 @@ void ColliderManager::CheckCollision()
 
 #ifdef _DEBUG
 	count = 0; 
-	for (auto&& sc : staticSquareColliderList)
-	{
-		++count;
-	}
-	for (auto&& dc : dynamicSquareColliderList)
-	{
-		++count;
-	}
+	count = staticSquareColliderList.size() + dynamicSquareColliderList.size();
 #endif
 
 	//前の位置を格納
@@ -65,11 +58,11 @@ void ColliderManager::CheckCollision()
 	//静的なオブジェクトと動的なオブジェクトの当たり判定
 	for (auto&& sobj : staticSquareColliderList)
 	{
-		if (sobj.col->enabled)
+		if (sobj.col->enabled&&DistancePlayer(sobj.col->object))
 		{
 			for (auto&& dobj : dynamicSquareColliderList)
 			{
-				if (dobj.col->enabled)
+				if (dobj.col->enabled&&DistancePlayer(dobj.col->object))
 				{
 					//比べる
 					if (CompareCollision(sobj, dobj, true))
@@ -86,11 +79,11 @@ void ColliderManager::CheckCollision()
 	//動的なオブジェクト同士の当たり判定
 	for (auto dc1 = std::begin(dynamicSquareColliderList); dc1 != std::end(dynamicSquareColliderList); ++dc1)
 	{
-		if (dc1->col->enabled)
+		if (dc1->col->enabled&&DistancePlayer(dc1->col->object))
 		{
 			for (auto dc2 = dc1 + 1; dc2 != std::end(dynamicSquareColliderList); ++dc2)
 			{
-				if (dc2->col->enabled)
+				if (dc2->col->enabled&&DistancePlayer(dc2->col->object))
 				{
 					//比べる
 					if (CompareCollision(*dc1, *dc2, false))
@@ -177,6 +170,12 @@ bool ColliderManager::CompareCollision(SquarePosCol& col1, SquarePosCol& col2, b
 	{
 		//どちらもtriggerなら当たったことのみ返す
 		if (col1.col->is_trigger || col2.col->is_trigger)
+		{
+			return true;
+		}
+		//どちらもENEMYなら当たったことのみ返す
+		if (col1.col->object->object_tag == OBJECT_TAG::ENEMY&&
+			col2.col->object->object_tag == OBJECT_TAG::ENEMY)
 		{
 			return true;
 		}

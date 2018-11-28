@@ -32,12 +32,26 @@ void BGM::Fade(const bool fade_in)
 * @param name キー
 * @param path パス
 */
-void BGM::ChangeBgm(const std::string name, WCHAR* path)
+void BGM::ChangeBgm(const std::string& name, WCHAR* path)
 {
 	bgm.SetVolume(0.0f);
 	bgm.Stop();
 	bgm.Destroy();
 	bgm.Init(name, path, true, true);
+	bgm.Start();
+	bgm.SetVolume(volume);
+}
+/**
+* @brief BGMを変える(ループなし)
+* @param name キー
+* @param path パス
+*/
+void BGM::OneShotBGM(const std::string& name, WCHAR* path)
+{
+	bgm.SetVolume(0.0f);
+	bgm.Stop();
+	bgm.Destroy();
+	bgm.Init(name, path, false, true);
 	bgm.Start();
 	bgm.SetVolume(volume);
 }

@@ -78,7 +78,7 @@ void SpriteManager::Render(const Transform& transform, bool affected_camera, boo
 		auto s = e.what();
 		size_t len = 0;
 		mbstowcs_s(&len, str, 50, s, _TRUNCATE);
-		Comment(str, L"");
+		Comment(str, L"sprite_manager.cpp");
 	}
 }
 

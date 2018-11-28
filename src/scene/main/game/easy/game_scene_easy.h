@@ -1,34 +1,16 @@
 /**
-* @file game_scene.h
-* @brief ゲームシーンの宣言
+* @file game_scene_easy.h
+* @brief ゲームシーン(easy)の宣言
 * @author 石山　悠
-* @date 2018/10/18
+* @date 2018/11/22
 */
 #pragma once
-#include "../../../scene.h"
-#include "../../../../object/base/static/static_object.h"
-#include "../../../../object/map/map.h"
-#include "../../../../object/character/player/player.h"
-#include "../../../../object/character/enemy/normal/normal_enemy.h"
-#include "../../../../object/character/enemy/fly/fly_enemy.h"
-#include "../../../../object/character/enemy/boss/boss.h"
-#include <list>
-#include <vector>
+#include "../base/game_scene_base.h"
 /**
-* @brief ゲームシーンクラス
+* @brief ゲームシーン(easy)クラス
 */
-class GameSceneEasy :public Scene
+class GameSceneEasy :public Scene, private GameSceneBase
 {
-	bool clear_jump = false;
-	enum class GAME { MAIN, TRANSLATION, BOSS, CLEAR, NONE };
-	GAME current_game = GAME::MAIN;
-	std::list<NormalEnemy> enemy;
-	std::list<FlyEnemy> f_enemy;
-	std::unique_ptr<Player> player;
-	std::unique_ptr<Boss> boss;
-	std::vector<StaticObject> backGround;
-	std::vector<MapObject> field;
-	float boss_center_x;
 public:
 	void Init()final;
 	std::shared_ptr<Scene> Update(std::shared_ptr<Scene>&)final;

@@ -56,7 +56,7 @@ void Bullet::Collision(ObjectBase* obj, VEC2)
 {
 	if (obj == nullptr)return;
 	//“G‚É“–‚½‚Á‚½‚ç
-	if (obj->object_tag == OBJECT_TAG::ENEMY || obj->object_tag == OBJECT_TAG::BOSS)
+	if (obj->object_tag == OBJECT_TAG::ENEMY || obj->object_tag == OBJECT_TAG::BOSS || obj->object_tag == OBJECT_TAG::SELECT)
 	{
 		arrow_func();
 		this->Destroy();

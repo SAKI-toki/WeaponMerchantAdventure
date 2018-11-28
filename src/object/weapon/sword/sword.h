@@ -16,15 +16,16 @@
 */
 class Sword :public WeaponBase, public ObjectBase
 {
+	bool first = true;
+	bool hit = false;
 	//次の攻撃をするまでのディレイ
 	static constexpr int delay = 30;
 	int current_delay = 0;
 	//音
-	Sound sound;
+	Sound hit_sound;
+	Sound nohit_sound;
 	//プレイヤーからの距離
 	static constexpr float distance = 80.0f;
-	//アタックしているかどうかのフラグ
-	//bool is_attack = false;
 	//コリジョン
 	SquareCollider collider;
 	Sprite sprite;

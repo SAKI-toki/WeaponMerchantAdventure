@@ -9,6 +9,7 @@
 #include "../../../sound/bgm/bgm.h"
 #include "../../../input/gamepad/gamepad_input.h"
 #include "../../../rendering/font/font.h"
+#include "../../../collider/manager/collider_manager.h"
 
 #include "../game/easy/game_scene_easy.h"
 #include "../game/normal/game_scene_normal.h"
@@ -19,6 +20,7 @@
 */
 void SelectScene::Init()
 {
+	ColliderManager::GetInstance()->SetTarget(nullptr);
 	//ƒvƒŒƒCƒ„[
 	{
 		player = std::make_unique<Player>();

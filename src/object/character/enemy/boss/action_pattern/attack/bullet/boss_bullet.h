@@ -18,7 +18,7 @@ public:
 	void Destroy()final;
 	BossBullet() :collider(this, true) 
 	{
-		object_tag = OBJECT_TAG::BOSS;
+		object_tag = OBJECT_TAG::BOSS_BULLET;
 	}
 	BossBullet(const BossBullet& other) :collider(this, true)
 	{

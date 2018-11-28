@@ -2,7 +2,7 @@
 * @file scene_manager.cpp
 * @brief シーンのマネージャークラスのメンバ関数を定義
 * @author 石山　悠
-* @date 2018/10/30
+* @date 2018/11/20
 */
 #include "scene_manager.h"
 #include "../main/title/title_scene.h"
@@ -14,7 +14,12 @@
 #include "../fade/fade.h"
 #include "../../object/ui/manager/ui_manager.h"
 #include "../main/game/over/game_over.h"
-
+#ifdef _DEBUG
+#include "../main/select/select_scene.h"
+#include "../main/game/easy/game_scene_easy.h"
+#include "../main/game/normal/game_scene_normal.h"
+#include "../main/game/hard/game_scene_hard.h"
+#endif
 
 
 /**
@@ -26,7 +31,11 @@ void SceneManager::Init()
 	Fade::GetInstance()->Init();
 	GameOver::getinstance()->Init();
 	//タイトルからスタート
+#ifndef _DEBUG
 	scene_ptr = std::make_shared<TitleScene>();
+#else //デバッグ用にどこのシーンからでもスタートできる
+	scene_ptr = std::make_shared<GameSceneNormal>();
+#endif
 	scene_ptr->Init();
 }
 
@@ -44,7 +53,7 @@ void SceneManager::Update()
 		GamepadInput::GetInstance()->Update();
 		//シーンを更新し、ほかのシーンが返ってきたらシーン遷移する/*ここではシーン遷移はしていない*/
 		next_scene_ptr = scene_ptr->Update(scene_ptr);
-		if (next_scene_ptr != scene_ptr)
+		if (continue_scene || next_scene_ptr != scene_ptr)
 		{
 			//フェードを開始する
 			is_current_fade = true;
@@ -76,6 +85,11 @@ void SceneManager::Update()
 				//UIの破棄
 				UiManager::getinstance()->Destroy();
 				//シーンの遷移
+				if (continue_scene)
+				{
+					next_scene_ptr = next_continue_scene_ptr;
+					continue_scene = false;
+				}
 				scene_ptr = next_scene_ptr;
 				//シーンの初期化
 				scene_ptr->Init();
@@ -97,6 +111,8 @@ void SceneManager::Render()
 	scene_ptr->Render();
 	//UIの描画
 	UiManager::getinstance()->Render();
+	//ゲームオーバーシーンの描画
+	GameOver::getinstance()->Render();
 	//もしシーン遷移中なら
 	if (is_current_fade)Fade::GetInstance()->Render();
 }

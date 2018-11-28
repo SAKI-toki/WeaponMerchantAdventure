@@ -38,25 +38,6 @@ void Sprite::Init(std::string name, WCHAR* path, const LONG w, const LONG h, con
 void Sprite::Render(const Transform& transform, bool affected_camera, 
 	bool center_axis, const DirectX::SpriteEffects sprite_effects)
 {
-	/*try {
-		//描画
-		if (affected_camera)
-		{
-			SpriteManager::GetInstance()->GetSpriteBatch()->Draw(texture.Get(), transform.pos - Camera::GetInstance()->GetPos(), &rect, _color, transform.rot, { (center_axis)?rect.right / 2.0f:0.0f,(center_axis) ? rect.bottom / 2.0f : 0.0f }, transform.scale);
-		}
-		else
-		{
-			SpriteManager::GetInstance()->GetSpriteBatch()->Draw(texture.Get(), transform.pos, &rect, _color, transform.rot, { (center_axis) ? rect.right / 2.0f : 0.0f,(center_axis) ? rect.bottom / 2.0f : 0.0f }, transform.scale);
-		}
-	}
-	catch (std::exception& e)
-	{
-		WCHAR str[100];
-		auto s = e.what();
-		size_t len = 0;
-		mbstowcs_s(&len, str, 50, s, _TRUNCATE);
-		Comment(str, L"");
-	}*/
 	//メンバ変数にするとアライメントがどうのこうのと言われるのでここで変換
 	DirectX::XMVECTOR _color = DirectX::XMVectorSet(color.r, color.g, color.b, color.a);
 	SpriteManager::GetInstance()->Render(transform, affected_camera, center_axis, my_name, _color, rect, sprite_effects);

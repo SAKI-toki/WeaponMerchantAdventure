@@ -19,7 +19,7 @@ public:
 	*/
 	SelectObj() :collider(this, true, true)
 	{
-		object_tag = OBJECT_TAG::MAP;
+		object_tag = OBJECT_TAG::SELECT;
 	}
 	/**
 	* @brief コピーコンストラクタ

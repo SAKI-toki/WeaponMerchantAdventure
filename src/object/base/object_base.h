@@ -11,7 +11,7 @@
 #include "../../gravity/gravity.h"
 #include "../../status/status.h"
 
-enum class OBJECT_TAG { PLAYER, ENEMY, MAP, WEAPON, BOSS, NONE };
+enum class OBJECT_TAG { PLAYER, ENEMY, MAP, WEAPON, BOSS, BOSS_BULLET, BOSS_ZONE, SELECT, NONE };
 /**
 * @brief オブジェクトのスーパークラス
 */

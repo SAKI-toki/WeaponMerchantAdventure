@@ -14,6 +14,8 @@
 */
 class SceneManager :public SceneBase, public Singleton<SceneManager>
 {
+	bool continue_scene = false;
+	std::shared_ptr<Scene> next_continue_scene_ptr;
 	//ÉVÅ[Éì
 	std::shared_ptr<Scene> scene_ptr;
 	std::shared_ptr<Scene> next_scene_ptr;
@@ -26,4 +28,10 @@ public:
 	void Update();
 	void Render()final;
 	void Destroy()final;
+	
+	void ContinueGame(std::shared_ptr<Scene>& p)
+	{
+		continue_scene = true;
+		next_continue_scene_ptr = p;
+	}
 };

@@ -12,8 +12,8 @@
 */
 void Player::InitProcess()
 {
-	which_weapon_ui[0].Init("weapon_ui_sword", L"sword_ui.png", 592, 592);
-	which_weapon_ui[1].Init("weapon_ui_magic", L"magic_ui.png", 592, 592, 0.5f, 0.5f, 0.5f, 1.0f);
+	which_weapon_ui[0].Init("weapon_ui_sword", L"sword_ui.png", 592, 592, 0.5f, 0.5f, 0.5f, 1.0f);
+	which_weapon_ui[1].Init("weapon_ui_magic", L"magic_ui.png", 592, 592);
 	gravity.Init(max_speed);
 	gravity.ResetGravity();
 	transform.pos += gravity.AddGravity();
@@ -158,41 +158,23 @@ void Player::Destroy()
 void Player::Collision(ObjectBase* obj, VEC2)
 {
 	if (obj == nullptr)return;
-	if (obj->object_tag == OBJECT_TAG::ENEMY)
+	if (obj->object_tag == OBJECT_TAG::ENEMY ||
+		obj->object_tag == OBJECT_TAG::BOSS ||
+		obj->object_tag == OBJECT_TAG::BOSS_BULLET)
 	{
-		/*if (is_invincible) { return; }
-		if (!status.Damage(obj->status.Attack)) 
-		{
-			is_invincible = true;
-			return;
-		}
-		else*/
-		{
-			collider.Destroy();
-			destroy_flg = true;
-			gravity.ResetGravity();
-			gravity.SetUpPower(5);
-			weapon[weapon_num]->WeaponDestroy();
-			transform.sprite_effect = DirectX::SpriteEffects_FlipVertically;
-		}
+		collider.Destroy();
+		destroy_flg = true;
+		gravity.ResetGravity();
+		gravity.SetUpPower(5);
+		weapon[weapon_num]->WeaponDestroy();
+		transform.sprite_effect = DirectX::SpriteEffects_FlipVertically;
+
 	}
-	else if (obj->object_tag == OBJECT_TAG::BOSS)
+	else if (obj->object_tag == OBJECT_TAG::BOSS_ZONE)
 	{
-		if (boss_scene)
-		{
-			collider.Destroy();
-			destroy_flg = true;
-			gravity.ResetGravity();
-			gravity.SetUpPower(5);
-			weapon[weapon_num]->WeaponDestroy();
-			transform.sprite_effect = DirectX::SpriteEffects_FlipVertically;
-		}
-		else
-		{
-			boss_scene = true;
-			gravity.ResetGravity();
-			gravity.ResetSideGravity();
-		}
+		boss_scene = true;
+		gravity.ResetGravity();
+		gravity.ResetSideGravity();
 	}
 }
 

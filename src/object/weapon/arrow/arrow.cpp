@@ -34,7 +34,7 @@ void Arrow::Attack(bool, const VEC2& pos)
 	current_delay = 0;
 	bullet.push_front(Bullet());
 
-	std::begin(bullet)->Init("bullet", L"sample5.png", 32, 32, VEC2(pos.x, pos.y - 0.5f));
+	std::begin(bullet)->Init("bullet", L"bullet.png", 32, 32, VEC2(pos.x, pos.y - 0.5f));
 	std::begin(bullet)->BulletInit(stick_angle, std::bind(&Arrow::CollisionBullet, this));
 	sound.push_back(Sound());
 	sound[sound.size() - 1].Init(std::string("bullet"), L"bullet.wav", false, true);

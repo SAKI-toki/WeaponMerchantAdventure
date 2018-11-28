@@ -12,7 +12,7 @@
 void MapObject::InitProcess()
 {
 	collider.SetStatus(transform.pos, transform.size.x, transform.size.y, transform.rot, transform.scale);
-	sprite.SetRect(RECT{ 448 + 32,32,479 + 32,63 });
+	sprite.SetRect(RECT{ 448 + 32,32,480 + 32,32 + 32 });
 }
 
 /**

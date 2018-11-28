@@ -19,13 +19,13 @@ class ColliderManager :public Singleton<ColliderManager>
 private:
 
 #ifdef _DEBUG
-	int count = 0;
+	size_t count = 0;
 public:
 	void DebugRender()
 	{
 		Font f;
 		WCHAR str[255];
-		swprintf_s(str, L"ColliderNum=%d", count);
+		swprintf_s(str, L"ColliderNum=%zd", count);
 		f.Init(str, 1, 0, 0);
 		f.SetTransform({ {500,0},0,5 });
 		f.Render();
@@ -54,10 +54,22 @@ private:
 
 	//動的オブジェクトの四角形コライダ
 	std::vector<SquarePosCol> dynamicSquareColliderList;
-protected:
+
 	//当たっているか判定する関数
 	bool CompareCollision(SquarePosCol&, SquarePosCol&,bool);
+
+	ObjectBase* target;
+
+	bool DistancePlayer(ObjectBase* obj)
+	{
+		if (target == nullptr||std::abs(target->transform.pos.x - obj->transform.pos.x) < WINDOW_WIDTH + 200.0f)
+		{
+			return true;
+		}
+		return false;
+	}
 public:
+	void SetTarget(ObjectBase* obj) { target = obj; }
 	//上のstd::vectorにセットする関数
 	void SetCollider(SquareCollider*, bool is_static);
 	//全てを走査する関数

@@ -8,15 +8,15 @@ void Boss::InitProcess()
 {
 	gravity.ResetGravity();
 	gravity.Init(max_speed);
-	collider.SetStatus(transform.pos, 1920, 1080, 0, 1);
+	collider.SetStatus(transform.pos, WINDOW_WIDTH*1.2f, WINDOW_HEIGHT*1.2f, 0, 1);
 	delay = saki::random(30, 120);
 	constexpr float ui_size = 8.0f;
-	constexpr VEC2 ui_pos{ 100.0f,100.0f };
+	constexpr VEC2 ui_pos{ 50.0f,50.0f };
 	ui_hp_back.Init("hp_bar_back", L"hp_bar_back.png", 102, 12,
 		ui_pos - VEC2{ 2 * ui_size / 2,2 * ui_size / 2 }, 0, ui_size);
 	ui_hp.Init("hp_bar", L"hp_bar.png", 100, 10, ui_pos, 0, ui_size);
 	ui_hp_back.SetColor(0.0f, 0.0f, 0.0f, 1.0f);
-	ui_hp.SetColor(1.0f, 0.0f, 1.0f, 1.0f);
+	ui_hp.SetColor(1.0f, 1.0f, 0.0f, 1.0f);
 }
 /**
 * @brief エネミーの更新
@@ -34,13 +34,14 @@ void Boss::UpdateProcess()
 		{
 			ui_hp.enabled = true;
 			ui_hp_back.enabled = true;
+			object_tag = OBJECT_TAG::BOSS;
 			action_pattern_manager.Update(boss_scene_center_pos_x);
 		}
 	}
 	transform.pos += gravity.AddGravity();
 	if (!boss_scene && !boss_translation_scene)
 	{
-		collider.SetStatus(transform.pos, 1920, 1080, 0, 1);
+		collider.SetStatus(transform.pos, WINDOW_WIDTH*1.2f, WINDOW_HEIGHT*1.2f, 0, 1);
 	}
 	else
 	{
@@ -57,6 +58,10 @@ void Boss::UpdateProcess()
 void Boss::RenderProcess(bool camera_affected)
 {
 	ui_hp.SetPercent(percentage);
+	if (percentage >= 0.2f && percentage <= 0.4f)
+	{
+		ui_hp.SetColor(1.0f, (percentage - 0.2f) * 5, 0.0f, 1.0f);
+	}
 	auto percent = status.HP / MAX_HP;
 	if (percent < percentage - 0.01f)
 	{

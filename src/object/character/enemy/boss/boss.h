@@ -43,7 +43,7 @@ public:
 	*/
 	Boss() :collider(this, true), action_pattern_manager(*this)
 	{
-		object_tag = OBJECT_TAG::BOSS;
+		object_tag = OBJECT_TAG::BOSS_ZONE;
 	}
 	/**
 	* @brief コピーコンストラクタ

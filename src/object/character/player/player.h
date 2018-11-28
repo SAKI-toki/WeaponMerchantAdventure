@@ -29,7 +29,7 @@ class Player :public DynamicObject
 	//武器
 	std::unique_ptr<WeaponBase> weapon[2];
 	//武器のナンバー
-	int weapon_num = 0;
+	int weapon_num = 1;
 	//rightトリガーが押されていたらtrue
 	bool current_trigger_right = false;
 	//leftトリガーが押されていたらtrue
@@ -42,7 +42,7 @@ class Player :public DynamicObject
 	//コライダの大きさ
 	static constexpr float collider_scale = 0.75f;
 	//ジャンプ時の上方向の加速度
-	static constexpr float jump = 10.0f;
+	static constexpr float jump = 11.0f;
 	static constexpr float ui_size = 0.3f;
 	//無敵時間
 	static constexpr int invincible_time = 60;
@@ -57,34 +57,56 @@ protected:
 	void UpdateProcess()final;
 	void RenderProcess(bool camera_affected)final;
 public:
+	/**
+	* @brief UIの描画
+	*/
 	void UiRender()
 	{
 		which_weapon_ui[0].Render(Transform({ WINDOW_WIDTH - 592 * ui_size,WINDOW_HEIGHT - 592 * ui_size }, 0, ui_size), false, false);
 		which_weapon_ui[1].Render(Transform({ 0,WINDOW_HEIGHT - 592 * ui_size }, 0, ui_size), false, false);
 	}
+	/**
+	* @brief 武器の非表示
+	*/
 	void EnabledWeapon()
 	{
 		weapon[0]->weapon_enabled = false;
 		weapon[1]->weapon_enabled = false;
 	}
+	/**
+	* @brief ボスシーンに移行するときの処理
+	*/
 	void TranslationBossScene()
 	{
 		weapon[weapon_num]->WeaponDestroy();
 	}
+	/**
+	* @brief ボスシーンに入ったときの処理
+	*/
 	void InBossScene()
 	{
 		weapon[weapon_num]->WeaponStart();
 	}
+	/**
+	* @brief 歩くアニメーションのみ関数化
+	* @param right 右かどうか
+	*/
 	void AnimationWalk(bool right)
 	{
 		anim.ChangeAnimation((right) ? 6 : 2, 10);
 	}
+	/**
+	* @brief クリアした時の更新
+	*/
 	void ClearUpdate()
 	{
 		anim.Update();
 		transform.pos += gravity.AddGravity();
 		collider.SetStatus(transform.pos, transform.size.x, transform.size.y, transform.rot, transform.scale*collider_scale);
 	}
+	/**
+	* @brief 横方向の力を0にする
+	*/
 	void ResetSpeed()
 	{
 		gravity.ResetSideGravity();
@@ -92,6 +114,9 @@ public:
 	//ボスシーンに移行するかどうか
 	bool boss_scene = false;
 	void Destroy()final;
+	/**
+	* @brief アニメーションの更新
+	*/
 	void UpdateAnimation()
 	{
 		dire = DIRE::RIGHT;

@@ -20,5 +20,11 @@ class BGM :public Singleton<BGM>
 	float volume = 1.0f;
 public:
 	void Fade(const bool);
-	void ChangeBgm(const std::string, WCHAR*);
+	void ChangeBgm(const std::string&, WCHAR*);
+	void SetVolume(const float v)
+	{
+		volume = v;
+		bgm.SetVolume(volume);
+	}
+	void OneShotBGM(const std::string&, WCHAR*);
 };
