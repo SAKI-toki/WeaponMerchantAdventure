@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['pos',['pos',['../class_transform.html#a25bce2389cc280e8adf193bdbb00d94a',1,'Transform']]]
+  ['object',['object',['../class_collider_base.html#a63adac6a75877857abe9ff2cf4274157',1,'ColliderBase']]],
+  ['object_5ftag',['object_tag',['../class_object_base.html#aff7eb5482ca9bc1cd30b84994d0dad8b',1,'ObjectBase']]]
 ];

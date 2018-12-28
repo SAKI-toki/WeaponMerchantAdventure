@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/object/base/object_base.h ファイル</title>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/src/object/base/object_base.h ファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_bb043af75e54e1af3032f67529bb720c.html">object</a></li><li class="navelem"><a class="el" href="dir_d49ffbc2e2d98b9b560f900ba71bd1b9.html">base</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_98cdb10f369f6a3b9149e010b312bf5d.html">src</a></li><li class="navelem"><a class="el" href="dir_aff232980d313de02da2215121436487.html">object</a></li><li class="navelem"><a class="el" href="dir_edb6b6d0338112ede04fb8fe759bf47b.html">base</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -75,9 +75,9 @@ $(function() {
 
 <p>オブジェクトのスーパークラスを宣言  
 <a href="#details">[詳解]</a></p>
-<div class="textblock"><code>#include &lt;Windows.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="transform_8h_source.html">../../transform/transform.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sprite_8h_source.html">../../rendering/sprite/sprite.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="common_8h_source.html">../../common/common.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="transform_8h_source.html">saki/transform/transform.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="sprite_8h_source.html">../../sprite/sprite.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gravity_8h_source.html">../../gravity/gravity.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="status_8h_source.html">../../status/status.h</a>&quot;</code><br />
 </div>
@@ -97,7 +97,13 @@ $(function() {
 <a class="el" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0ca5af1a3a285c2bdee4192223e31e1f833">OBJECT_TAG::MAP</a>, 
 <a class="el" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0ca192633948703cf46924846d15ea7b5c1">OBJECT_TAG::WEAPON</a>, 
 <br />
-&#160;&#160;<a class="el" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0cab50339a10e1de285ac99d4c3990b8693">OBJECT_TAG::NONE</a>
+&#160;&#160;<a class="el" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0caf0523bf35faf77235783d0f3e43762d2">OBJECT_TAG::BOSS</a>, 
+<a class="el" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0ca688beef1201238e6785449114332a946">OBJECT_TAG::BOSS_BULLET</a>, 
+<a class="el" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0ca76b119476133929a6a49be9208444f70">OBJECT_TAG::BOSS_ZONE</a>, 
+<a class="el" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0ca63225f19fccb18e7c709f1fa11bc738e">OBJECT_TAG::SELECT</a>, 
+<br />
+&#160;&#160;<a class="el" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0ca5ca202011b9159ae9e0ce145f9b548ea">OBJECT_TAG::BULLET_ITEM</a>, 
+<a class="el" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0cab50339a10e1de285ac99d4c3990b8693">OBJECT_TAG::NONE</a>
 <br />
  }</td></tr>
 <tr class="separator:a0eff9883ab049ee02773dde19d057c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,6 +137,11 @@ $(function() {
 <tr><td class="fieldname"><a id="a0eff9883ab049ee02773dde19d057c0ca92b09d1635332c90ae8508618a174244"></a>ENEMY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0eff9883ab049ee02773dde19d057c0ca5af1a3a285c2bdee4192223e31e1f833"></a>MAP&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0eff9883ab049ee02773dde19d057c0ca192633948703cf46924846d15ea7b5c1"></a>WEAPON&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0eff9883ab049ee02773dde19d057c0caf0523bf35faf77235783d0f3e43762d2"></a>BOSS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0eff9883ab049ee02773dde19d057c0ca688beef1201238e6785449114332a946"></a>BOSS_BULLET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0eff9883ab049ee02773dde19d057c0ca76b119476133929a6a49be9208444f70"></a>BOSS_ZONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0eff9883ab049ee02773dde19d057c0ca63225f19fccb18e7c709f1fa11bc738e"></a>SELECT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0eff9883ab049ee02773dde19d057c0ca5ca202011b9159ae9e0ce145f9b548ea"></a>BULLET_ITEM&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0eff9883ab049ee02773dde19d057c0cab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 

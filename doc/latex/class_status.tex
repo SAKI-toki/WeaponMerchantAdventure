@@ -15,6 +15,8 @@
 void \mbox{\hyperlink{class_status_a04cf2752224db252d7694c2caf5caf83}{Init}} (const float hp, const float attack, const float defense)
 \begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_status}{Status}} \& \mbox{\hyperlink{class_status_abc76064ed2504493c3bbc0f287a49525}{operator=}} (const \mbox{\hyperlink{class_status}{Status}} \&other)
+\begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_status_a4ae0f2c35261aea40e2cf7649cc4f266}{Damage}} (const float)
 \end{DoxyCompactItemize}
 \subsection*{公開変数類}
 \begin{DoxyCompactItemize}
@@ -31,6 +33,12 @@ float \mbox{\hyperlink{class_status_aee944c63904ca1b6b3b04e24b2a9ac12}{Defense}}
 ステータスクラス 
 
 \subsection{関数詳解}
+\mbox{\Hypertarget{class_status_a4ae0f2c35261aea40e2cf7649cc4f266}\label{class_status_a4ae0f2c35261aea40e2cf7649cc4f266}} 
+\index{Status@{Status}!Damage@{Damage}}
+\index{Damage@{Damage}!Status@{Status}}
+\subsubsection{\texorpdfstring{Damage()}{Damage()}}
+{\footnotesize\ttfamily bool Status\+::\+Damage (\begin{DoxyParamCaption}\item[{const float}]{atk }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_status_a04cf2752224db252d7694c2caf5caf83}\label{class_status_a04cf2752224db252d7694c2caf5caf83}} 
 \index{Status@{Status}!Init@{Init}}
 \index{Init@{Init}!Status@{Status}}
@@ -58,6 +66,10 @@ float \mbox{\hyperlink{class_status_aee944c63904ca1b6b3b04e24b2a9ac12}{Defense}}
 
 
 
+コピー代入演算子 
+
+
+
 \subsection{メンバ詳解}
 \mbox{\Hypertarget{class_status_aede601b020ef15845b86d631a46f8980}\label{class_status_aede601b020ef15845b86d631a46f8980}} 
 \index{Status@{Status}!Attack@{Attack}}
@@ -81,4 +93,5 @@ float \mbox{\hyperlink{class_status_aee944c63904ca1b6b3b04e24b2a9ac12}{Defense}}
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/status/\mbox{\hyperlink{status_8h}{status.\+h}}\end{DoxyCompactItemize}
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/status/\mbox{\hyperlink{status_8h}{status.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/status/\mbox{\hyperlink{status_8cpp}{status.\+cpp}}\end{DoxyCompactItemize}

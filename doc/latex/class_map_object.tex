@@ -30,10 +30,15 @@ void \mbox{\hyperlink{class_map_object_ad4bcfdc33bd945a9aa5e50a57c2704bc}{Destro
 \begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_map_object}{Map\+Object}} \& \mbox{\hyperlink{class_map_object_ae36fa838f3f8bac8ef2d67b39adf0298}{operator=}} (\mbox{\hyperlink{class_map_object}{Map\+Object}} \&\&other) noexcept
 \begin{DoxyCompactList}\small\item\em ムーブ代入演算子 \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_map_object_a61c2b7e046b76d98adbf23c9e6302918}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}) final
+void \mbox{\hyperlink{class_map_object_a76b9161f2723272ad361d0b190e46245}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}) final
 \begin{DoxyCompactList}\small\item\em マップが当たってるときに実行する関数 \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_map_object_aa601344267a49df197e841fcbd732209}{$\sim$\+Map\+Object}} ()
 \begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_map_object_a21c5d70f23cca2a184297d766cc6acdc}{is\+\_\+mapchip}} = true
+\end{DoxyCompactItemize}
 \subsection*{限定公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -91,11 +96,11 @@ void \mbox{\hyperlink{class_map_object_ab6b8849f15175417eca94b2703945e4b}{Update
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_map_object_a61c2b7e046b76d98adbf23c9e6302918}\label{class_map_object_a61c2b7e046b76d98adbf23c9e6302918}} 
+\mbox{\Hypertarget{class_map_object_a76b9161f2723272ad361d0b190e46245}\label{class_map_object_a76b9161f2723272ad361d0b190e46245}} 
 \index{Map\+Object@{Map\+Object}!Collision@{Collision}}
 \index{Collision@{Collision}!Map\+Object@{Map\+Object}}
 \subsubsection{\texorpdfstring{Collision()}{Collision()}}
-{\footnotesize\ttfamily void Map\+Object\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Map\+Object\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
 
 
 
@@ -103,7 +108,7 @@ void \mbox{\hyperlink{class_map_object_ab6b8849f15175417eca94b2703945e4b}{Update
 
 
 
-\mbox{\hyperlink{class_static_object_abe05f711f0d62319e1a11419813c5d50}{Static\+Object}}を再実装しています。
+\mbox{\hyperlink{class_static_object_a64c8803ff881d578d103413e299dbf7f}{Static\+Object}}を再実装しています。
 
 \mbox{\Hypertarget{class_map_object_ad4bcfdc33bd945a9aa5e50a57c2704bc}\label{class_map_object_ad4bcfdc33bd945a9aa5e50a57c2704bc}} 
 \index{Map\+Object@{Map\+Object}!Destroy@{Destroy}}
@@ -169,7 +174,16 @@ void \mbox{\hyperlink{class_map_object_ab6b8849f15175417eca94b2703945e4b}{Update
 
 
 
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_map_object_a21c5d70f23cca2a184297d766cc6acdc}\label{class_map_object_a21c5d70f23cca2a184297d766cc6acdc}} 
+\index{Map\+Object@{Map\+Object}!is\+\_\+mapchip@{is\+\_\+mapchip}}
+\index{is\+\_\+mapchip@{is\+\_\+mapchip}!Map\+Object@{Map\+Object}}
+\subsubsection{\texorpdfstring{is\+\_\+mapchip}{is\_mapchip}}
+{\footnotesize\ttfamily bool Map\+Object\+::is\+\_\+mapchip = true}
+
+
+
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/map/\mbox{\hyperlink{map_8h}{map.\+h}}\item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/map/\mbox{\hyperlink{map_8cpp}{map.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/object/map/\mbox{\hyperlink{map_8h}{map.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/object/map/\mbox{\hyperlink{map_8cpp}{map.\+cpp}}\end{DoxyCompactItemize}

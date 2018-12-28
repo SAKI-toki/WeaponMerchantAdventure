@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/src/effect/effect.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_98cdb10f369f6a3b9149e010b312bf5d.html">src</a></li><li class="navelem"><a class="el" href="dir_c568349e30de75003e7620045a3e040d.html">effect</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">effect.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="effect_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;../sprite/sprite.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">class </span><a class="code" href="class_effect_manager.html">EffectManager</a>;</div><div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_effect.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_effect.html">Effect</a></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_effect.html#aa57a70c5d4b8abc800f69a1681448634">    6</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_effect_manager.html">EffectManager</a>;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordtype">size_t</span> num;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordtype">size_t</span> life_time;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordtype">float</span> time_count = 0.0f;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_sprite.html">Sprite</a> sprite;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">float</span> speed;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classsaki_1_1_vector3.html">Vec3</a> start_pos;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">struct </span>Param</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="classsaki_1_1_transform.html">Transform</a> transform;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="classsaki_1_1_vector3.html">Vec3</a> vector;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        Param(<a class="code" href="classsaki_1_1_transform.html">Transform</a>&amp;&amp; t, <a class="code" href="classsaki_1_1_vector3.html">Vec3</a>&amp;&amp; v) :transform(t), vector(v) {}</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    };</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    std::vector&lt;Param&gt; param;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">bool</span> Update();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> Render();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> Destroy();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_effect.html#acedbf09deb825d561ab406a84b64faf3">Init</a>(std::string, WCHAR*, <span class="keyword">const</span> <span class="keywordtype">float</span>, <span class="keyword">const</span> <span class="keywordtype">float</span>);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_effect.html#a382a3189eb3a9fd9fbd9edf80c661225">SetParam</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span>, <span class="keyword">const</span> <span class="keywordtype">size_t</span>, <span class="keyword">const</span> <span class="keywordtype">float</span>);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_effect.html#a8a2e4b2b5c71a95ed864f4fd64b10343">Start</a>(<span class="keyword">const</span> <a class="code" href="classsaki_1_1_vector3.html">Vec3</a>&amp;);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div><div class="ttc" id="classsaki_1_1_transform_html"><div class="ttname"><a href="classsaki_1_1_transform.html">saki::Transform&lt; float &gt;</a></div></div>
+<div class="ttc" id="class_effect_html_acedbf09deb825d561ab406a84b64faf3"><div class="ttname"><a href="class_effect.html#acedbf09deb825d561ab406a84b64faf3">Effect::Init</a></div><div class="ttdeci">void Init(std::string, WCHAR *, const float, const float)</div><div class="ttdef"><b>Definition:</b> effect.cpp:28</div></div>
+<div class="ttc" id="class_effect_html"><div class="ttname"><a href="class_effect.html">Effect</a></div><div class="ttdef"><b>Definition:</b> effect.h:4</div></div>
+<div class="ttc" id="class_sprite_html"><div class="ttname"><a href="class_sprite.html">Sprite</a></div><div class="ttdef"><b>Definition:</b> sprite.h:5</div></div>
+<div class="ttc" id="class_effect_html_a382a3189eb3a9fd9fbd9edf80c661225"><div class="ttname"><a href="class_effect.html#a382a3189eb3a9fd9fbd9edf80c661225">Effect::SetParam</a></div><div class="ttdeci">void SetParam(const size_t, const size_t, const float)</div><div class="ttdef"><b>Definition:</b> effect.cpp:33</div></div>
+<div class="ttc" id="class_effect_manager_html"><div class="ttname"><a href="class_effect_manager.html">EffectManager</a></div><div class="ttdef"><b>Definition:</b> effect_manager.h:9</div></div>
+<div class="ttc" id="class_effect_html_a8a2e4b2b5c71a95ed864f4fd64b10343"><div class="ttname"><a href="class_effect.html#a8a2e4b2b5c71a95ed864f4fd64b10343">Effect::Start</a></div><div class="ttdeci">void Start(const Vec3 &amp;)</div><div class="ttdef"><b>Definition:</b> effect.cpp:49</div></div>
+<div class="ttc" id="classsaki_1_1_vector3_html"><div class="ttname"><a href="classsaki_1_1_vector3.html">saki::Vector3&lt; float &gt;</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

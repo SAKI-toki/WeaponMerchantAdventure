@@ -12,7 +12,7 @@
 Static\+Object の継承関係図\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3.000000cm]{class_static_object}
+\includegraphics[height=4.000000cm]{class_static_object}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -20,13 +20,17 @@ Static\+Object の継承関係図\begin{figure}[H]
 \item 
 \mbox{\hyperlink{class_static_object_a2a8e918ddfe5c6723b88b9f5c4156472}{Static\+Object}} ()
 \begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_static_object_a0e1518e656ce5ba408cb69f14ee3066b}{Static\+Object}} (const \mbox{\hyperlink{class_static_object}{Static\+Object}} \&other)
+\item 
 \mbox{\hyperlink{class_static_object}{Static\+Object}} \& \mbox{\hyperlink{class_static_object_aa2a0526bd19e479ea4d1e5da236c1bf3}{operator=}} (const \mbox{\hyperlink{class_static_object}{Static\+Object}} \&other)
 \begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_static_object_a8e9fb321b4f8f12c4bec1bc66853512f}{Destroy}} ()
 \item 
-virtual void \mbox{\hyperlink{class_static_object_abe05f711f0d62319e1a11419813c5d50}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}})
+virtual void \mbox{\hyperlink{class_static_object_a64c8803ff881d578d103413e299dbf7f}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}})
 \item 
 virtual \mbox{\hyperlink{class_static_object_ac27301fc3d8d22aff5664f592c375cd8}{$\sim$\+Static\+Object}} ()
+\item 
+void \mbox{\hyperlink{class_static_object_a44408a8130d19f7284fe4daaab87c712}{Set\+Color}} (const float, const float, const float, const float)
 \end{DoxyCompactItemize}
 \subsection*{限定公開メンバ関数}
 \begin{DoxyCompactItemize}
@@ -37,7 +41,7 @@ virtual void \mbox{\hyperlink{class_static_object_afa0709f50495338a23c1140062a56
 \item 
 virtual void \mbox{\hyperlink{class_static_object_a7fa678c3c4032bb6e9417f93a8bb895c}{Update\+Process}} ()
 \item 
-virtual void \mbox{\hyperlink{class_static_object_ab17d0cb5b2544054022356a7ee4000db}{Collision\+Process}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}})
+virtual void \mbox{\hyperlink{class_static_object_a36379eb74b66c1586f1cc678a85c52c1}{Collision\+Process}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}})
 \end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
 
@@ -49,12 +53,18 @@ virtual void \mbox{\hyperlink{class_static_object_ab17d0cb5b2544054022356a7ee400
 \mbox{\Hypertarget{class_static_object_a2a8e918ddfe5c6723b88b9f5c4156472}\label{class_static_object_a2a8e918ddfe5c6723b88b9f5c4156472}} 
 \index{Static\+Object@{Static\+Object}!Static\+Object@{Static\+Object}}
 \index{Static\+Object@{Static\+Object}!Static\+Object@{Static\+Object}}
-\subsubsection{\texorpdfstring{Static\+Object()}{StaticObject()}}
+\subsubsection{\texorpdfstring{Static\+Object()}{StaticObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Static\+Object\+::\+Static\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 コンストラクタ 
+
+\mbox{\Hypertarget{class_static_object_a0e1518e656ce5ba408cb69f14ee3066b}\label{class_static_object_a0e1518e656ce5ba408cb69f14ee3066b}} 
+\index{Static\+Object@{Static\+Object}!Static\+Object@{Static\+Object}}
+\index{Static\+Object@{Static\+Object}!Static\+Object@{Static\+Object}}
+\subsubsection{\texorpdfstring{Static\+Object()}{StaticObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Static\+Object\+::\+Static\+Object (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_static_object}{Static\+Object}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \mbox{\Hypertarget{class_static_object_ac27301fc3d8d22aff5664f592c375cd8}\label{class_static_object_ac27301fc3d8d22aff5664f592c375cd8}} 
 \index{Static\+Object@{Static\+Object}!````~Static\+Object@{$\sim$\+Static\+Object}}
@@ -65,25 +75,25 @@ virtual void \mbox{\hyperlink{class_static_object_ab17d0cb5b2544054022356a7ee400
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_static_object_abe05f711f0d62319e1a11419813c5d50}\label{class_static_object_abe05f711f0d62319e1a11419813c5d50}} 
+\mbox{\Hypertarget{class_static_object_a64c8803ff881d578d103413e299dbf7f}\label{class_static_object_a64c8803ff881d578d103413e299dbf7f}} 
 \index{Static\+Object@{Static\+Object}!Collision@{Collision}}
 \index{Collision@{Collision}!Static\+Object@{Static\+Object}}
 \subsubsection{\texorpdfstring{Collision()}{Collision()}}
-{\footnotesize\ttfamily virtual void Static\+Object\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{,  }\item[{\mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual void Static\+Object\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{,  }\item[{\mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_object_base_ad772d7a42f5e46c39481f5db22ee8193}{Object\+Base}}を再実装しています。
+\mbox{\hyperlink{class_object_base_a3e1db79dfa119be067d816c22d09839d}{Object\+Base}}を再実装しています。
 
 
 
-\mbox{\hyperlink{class_map_object_a61c2b7e046b76d98adbf23c9e6302918}{Map\+Object}}で再実装されています。
+\mbox{\hyperlink{class_item_base_ae5c2bcf78c74126a6f76783ca927c7ab}{Item\+Base}}, \mbox{\hyperlink{class_map_object_a76b9161f2723272ad361d0b190e46245}{Map\+Object}}, \mbox{\hyperlink{class_select_obj_a497ff683aefe9bf77201eee1e3948e15}{Select\+Obj}}で再実装されています。
 
-\mbox{\Hypertarget{class_static_object_ab17d0cb5b2544054022356a7ee4000db}\label{class_static_object_ab17d0cb5b2544054022356a7ee4000db}} 
+\mbox{\Hypertarget{class_static_object_a36379eb74b66c1586f1cc678a85c52c1}\label{class_static_object_a36379eb74b66c1586f1cc678a85c52c1}} 
 \index{Static\+Object@{Static\+Object}!Collision\+Process@{Collision\+Process}}
 \index{Collision\+Process@{Collision\+Process}!Static\+Object@{Static\+Object}}
 \subsubsection{\texorpdfstring{Collision\+Process()}{CollisionProcess()}}
-{\footnotesize\ttfamily virtual void Static\+Object\+::\+Collision\+Process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{,  }\item[{\mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual void Static\+Object\+::\+Collision\+Process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{,  }\item[{\mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
 \mbox{\Hypertarget{class_static_object_a8e9fb321b4f8f12c4bec1bc66853512f}\label{class_static_object_a8e9fb321b4f8f12c4bec1bc66853512f}} 
 \index{Static\+Object@{Static\+Object}!Destroy@{Destroy}}
@@ -97,7 +107,7 @@ virtual void \mbox{\hyperlink{class_static_object_ab17d0cb5b2544054022356a7ee400
 
 
 
-\mbox{\hyperlink{class_map_object_ad4bcfdc33bd945a9aa5e50a57c2704bc}{Map\+Object}}で再実装されています。
+\mbox{\hyperlink{class_map_object_ad4bcfdc33bd945a9aa5e50a57c2704bc}{Map\+Object}}, \mbox{\hyperlink{class_item_base_ab34d53b8f3442da77466ba1b9132386e}{Item\+Base}}, \mbox{\hyperlink{class_select_obj_ad3a5fdc41a9e5753f99bae7ad289888f}{Select\+Obj}}で再実装されています。
 
 \mbox{\Hypertarget{class_static_object_afa0709f50495338a23c1140062a567af}\label{class_static_object_afa0709f50495338a23c1140062a567af}} 
 \index{Static\+Object@{Static\+Object}!Init\+Process@{Init\+Process}}
@@ -111,7 +121,7 @@ virtual void \mbox{\hyperlink{class_static_object_ab17d0cb5b2544054022356a7ee400
 
 
 
-\mbox{\hyperlink{class_map_object_a3043cddb8aaad0eab27a076e9bee0284}{Map\+Object}}で再実装されています。
+\mbox{\hyperlink{class_map_object_a3043cddb8aaad0eab27a076e9bee0284}{Map\+Object}}, \mbox{\hyperlink{class_select_obj_a09c9e1a54f4605eda5bb6e18887c2654}{Select\+Obj}}, \mbox{\hyperlink{class_item_base_a772804cb3c663b35e44d49913d1f1cef}{Item\+Base}}で再実装されています。
 
 \mbox{\Hypertarget{class_static_object_aa2a0526bd19e479ea4d1e5da236c1bf3}\label{class_static_object_aa2a0526bd19e479ea4d1e5da236c1bf3}} 
 \index{Static\+Object@{Static\+Object}!operator=@{operator=}}
@@ -142,6 +152,12 @@ virtual void \mbox{\hyperlink{class_static_object_ab17d0cb5b2544054022356a7ee400
 
 \mbox{\hyperlink{class_object_base_aeac51d868beeb7f7fe900407b76b93a2}{Object\+Base}}を実装しています。
 
+\mbox{\Hypertarget{class_static_object_a44408a8130d19f7284fe4daaab87c712}\label{class_static_object_a44408a8130d19f7284fe4daaab87c712}} 
+\index{Static\+Object@{Static\+Object}!Set\+Color@{Set\+Color}}
+\index{Set\+Color@{Set\+Color}!Static\+Object@{Static\+Object}}
+\subsubsection{\texorpdfstring{Set\+Color()}{SetColor()}}
+{\footnotesize\ttfamily void Static\+Object\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{const float}]{r,  }\item[{const float}]{g,  }\item[{const float}]{b,  }\item[{const float}]{a }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_static_object_a7fa678c3c4032bb6e9417f93a8bb895c}\label{class_static_object_a7fa678c3c4032bb6e9417f93a8bb895c}} 
 \index{Static\+Object@{Static\+Object}!Update\+Process@{Update\+Process}}
 \index{Update\+Process@{Update\+Process}!Static\+Object@{Static\+Object}}
@@ -154,11 +170,11 @@ virtual void \mbox{\hyperlink{class_static_object_ab17d0cb5b2544054022356a7ee400
 
 
 
-\mbox{\hyperlink{class_map_object_ab6b8849f15175417eca94b2703945e4b}{Map\+Object}}で再実装されています。
+\mbox{\hyperlink{class_map_object_ab6b8849f15175417eca94b2703945e4b}{Map\+Object}}, \mbox{\hyperlink{class_item_base_a8edff8edcf884f9590f973fd05d218bc}{Item\+Base}}, \mbox{\hyperlink{class_select_obj_a4788d957629f0b69dc78166f09f949bb}{Select\+Obj}}で再実装されています。
 
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/base/static/\mbox{\hyperlink{static__object_8h}{static\+\_\+object.\+h}}\item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/base/static/\mbox{\hyperlink{static__object_8cpp}{static\+\_\+object.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/object/base/static/\mbox{\hyperlink{static__object_8h}{static\+\_\+object.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/object/base/static/\mbox{\hyperlink{static__object_8cpp}{static\+\_\+object.\+cpp}}\end{DoxyCompactItemize}

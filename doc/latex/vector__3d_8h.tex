@@ -1,0 +1,55 @@
+\hypertarget{vector__3d_8h}{}\section{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/vector/vector\+\_\+3d.h ファイル}
+\label{vector__3d_8h}\index{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/vector/vector\+\_\+3d.\+h@{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/vector/vector\+\_\+3d.\+h}}
+
+
+3次元でのベクトル  
+
+
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$saki/constexpr\+\_\+std/sqrt.\+h$>$}\newline
+{\ttfamily \#include $<$saki/vector/details/3d/vector\+\_\+3d\+\_\+operator.\+h$>$}\newline
+{\ttfamily \#include $<$saki/macro/type\+\_\+macro.\+h$>$}\newline
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classsaki_1_1_vector3}{saki\+::\+Vector3$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em 3次元でのベクトル \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{名前空間}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacesaki}{saki}}
+\end{DoxyCompactItemize}
+\subsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{vector__3d_8h_a938e75286fb3165b32fdd886cc234e05}{S\+A\+K\+I\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+3\+D\+\_\+2018\+\_\+12\+\_\+06}}
+\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename U  = double, typename T1 , typename T2 $>$ }\\constexpr U \mbox{\hyperlink{namespacesaki_a4f2643c9bd618538a43cdad4a71398af}{saki\+::dot}} (const Vector3$<$ T1 $>$ \&v1, const Vector3$<$ T2 $>$ \&v2)
+\begin{DoxyCompactList}\small\item\em 内積 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U  = double, typename T1 , typename T2 $>$ }\\constexpr Vector3$<$ U $>$ \mbox{\hyperlink{namespacesaki_a0292208be2262a7ecbba114ebd10d5d6}{saki\+::cross}} (const Vector3$<$ T1 $>$ \&v1, const Vector3$<$ T2 $>$ \&v2)
+\begin{DoxyCompactList}\small\item\em 外積 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U  = double, typename T1 , typename T2 , typename T  = double$>$ }\\constexpr Vector3$<$ U $>$ \mbox{\hyperlink{namespacesaki_a3530d2e9468376228a3836112bd423c1}{saki\+::lerp}} (const Vector3$<$ T1 $>$ \&v1, const Vector3$<$ T2 $>$ \&v2, const T \&t, const T \&base=1)
+\begin{DoxyCompactList}\small\item\em 線形補間 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+3次元でのベクトル 
+
+\begin{DoxyAuthor}{著者}
+石山 悠 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日付}
+2018/12/06 
+\end{DoxyDate}
+
+
+\subsection{マクロ定義詳解}
+\mbox{\Hypertarget{vector__3d_8h_a938e75286fb3165b32fdd886cc234e05}\label{vector__3d_8h_a938e75286fb3165b32fdd886cc234e05}} 
+\index{vector\+\_\+3d.\+h@{vector\+\_\+3d.\+h}!S\+A\+K\+I\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+3\+D\+\_\+2018\+\_\+12\+\_\+06@{S\+A\+K\+I\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+3\+D\+\_\+2018\+\_\+12\+\_\+06}}
+\index{S\+A\+K\+I\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+3\+D\+\_\+2018\+\_\+12\+\_\+06@{S\+A\+K\+I\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+3\+D\+\_\+2018\+\_\+12\+\_\+06}!vector\+\_\+3d.\+h@{vector\+\_\+3d.\+h}}
+\subsubsection{\texorpdfstring{S\+A\+K\+I\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+3\+D\+\_\+2018\+\_\+12\+\_\+06}{SAKI\_VECTOR\_3D\_2018\_12\_06}}
+{\footnotesize\ttfamily \#define S\+A\+K\+I\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+3\+D\+\_\+2018\+\_\+12\+\_\+06}
+

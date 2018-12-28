@@ -79,12 +79,14 @@ Scene の継承関係図</div>
  <div class="center">
   <img src="class_scene.png" usemap="#Scene_map" alt=""/>
   <map id="Scene_map" name="Scene_map">
-<area href="class_scene_base.html" title="マネージャーを含むシーンのスーパークラス " alt="SceneBase" shape="rect" coords="242,0,353,24"/>
-<area href="class_game_clear_scene.html" title="ゲームクリアクラス " alt="GameClearScene" shape="rect" coords="0,112,111,136"/>
-<area href="class_game_over_scene.html" alt="GameOverScene" shape="rect" coords="121,112,232,136"/>
-<area href="class_game_scene.html" title="ゲームシーンクラス " alt="GameScene" shape="rect" coords="242,112,353,136"/>
-<area href="class_select_scene.html" title="セレクトシーンクラス " alt="SelectScene" shape="rect" coords="363,112,474,136"/>
-<area href="class_title_scene.html" title="タイトルシーンクラス " alt="TitleScene" shape="rect" coords="484,112,595,136"/>
+<area href="class_scene_base.html" title="マネージャーを含むシーンのスーパークラス " alt="SceneBase" shape="rect" coords="390,0,510,24"/>
+<area href="class_exit_scene.html" alt="ExitScene" shape="rect" coords="0,112,120,136"/>
+<area href="class_game_scene_easy.html" title="ゲームシーン(easy)クラス " alt="GameSceneEasy" shape="rect" coords="130,112,250,136"/>
+<area href="class_game_scene_hard.html" title="ゲームシーン(hard)クラス " alt="GameSceneHard" shape="rect" coords="260,112,380,136"/>
+<area href="class_game_scene_normal.html" title="ゲームシーン(normal)クラス " alt="GameSceneNormal" shape="rect" coords="390,112,510,136"/>
+<area href="class_pause_scene.html" alt="PauseScene" shape="rect" coords="520,112,640,136"/>
+<area href="class_select_scene.html" title="セレクトシーンクラス " alt="SelectScene" shape="rect" coords="650,112,770,136"/>
+<area href="class_title_scene.html" title="タイトルシーンクラス " alt="TitleScene" shape="rect" coords="780,112,900,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -92,8 +94,11 @@ Scene の継承関係図</div>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:aa0a5be58e2ee2d1fdafc5fb46b5e661e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#aa0a5be58e2ee2d1fdafc5fb46b5e661e">~Scene</a> ()</td></tr>
 <tr class="separator:aa0a5be58e2ee2d1fdafc5fb46b5e661e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb50f8104e5a7cfecbdececa7d5f1b39"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="scene__base_8h.html#a24cee5343fb9d0706ead6e8601f363be">SCENE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#acb50f8104e5a7cfecbdececa7d5f1b39">Update</a> ()=0</td></tr>
-<tr class="separator:acb50f8104e5a7cfecbdececa7d5f1b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab71ee5f19764b90c87b4574aa1cb1d25"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#ab71ee5f19764b90c87b4574aa1cb1d25">Update</a> (std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;)=0</td></tr>
+<tr class="separator:ab71ee5f19764b90c87b4574aa1cb1d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad19a449c6ed452823dae14183689570c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#ad19a449c6ed452823dae14183689570c">ExitFadeUpdate</a> ()</td></tr>
+<tr class="memdesc:ad19a449c6ed452823dae14183689570c"><td class="mdescLeft">&#160;</td><td class="mdescRight">シーンが変わるときの更新  <a href="#ad19a449c6ed452823dae14183689570c">[詳解]</a><br /></td></tr>
+<tr class="separator:ad19a449c6ed452823dae14183689570c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_scene_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_scene_base')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_scene_base.html">SceneBase</a> に属する継承公開メンバ関数</td></tr>
 <tr class="memitem:a187dd160e5a16909bcc6529851e38318 inherit pub_methods_class_scene_base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_base.html#a187dd160e5a16909bcc6529851e38318">~SceneBase</a> ()</td></tr>
 <tr class="separator:a187dd160e5a16909bcc6529851e38318 inherit pub_methods_class_scene_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,12 +108,6 @@ Scene の継承関係図</div>
 <tr class="separator:ad981674ce731ea267f398e889bbb9dc3 inherit pub_methods_class_scene_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c5b54020bc519b4dadfe9770d6b27f7 inherit pub_methods_class_scene_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_base.html#a7c5b54020bc519b4dadfe9770d6b27f7">Destroy</a> ()=0</td></tr>
 <tr class="separator:a7c5b54020bc519b4dadfe9770d6b27f7 inherit pub_methods_class_scene_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-その他の継承メンバ</h2></td></tr>
-<tr class="inherit_header pro_attribs_class_scene_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_scene_base')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_scene_base.html">SceneBase</a> に属する継承限定公開変数類</td></tr>
-<tr class="memitem:a18dcdbacfbd98f73099c3cbeb70ae3b8 inherit pro_attribs_class_scene_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="scene__base_8h.html#a24cee5343fb9d0706ead6e8601f363be">SCENE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_base.html#a18dcdbacfbd98f73099c3cbeb70ae3b8">my_scene</a></td></tr>
-<tr class="separator:a18dcdbacfbd98f73099c3cbeb70ae3b8 inherit pro_attribs_class_scene_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>マネージャーを含まないシーンのスーパークラス </p>
@@ -140,8 +139,8 @@ Scene の継承関係図</div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="acb50f8104e5a7cfecbdececa7d5f1b39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb50f8104e5a7cfecbdececa7d5f1b39">&#9670;&nbsp;</a></span>Update()</h2>
+<a id="ad19a449c6ed452823dae14183689570c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad19a449c6ed452823dae14183689570c">&#9670;&nbsp;</a></span>ExitFadeUpdate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,8 +149,38 @@ Scene の継承関係図</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="scene__base_8h.html#a24cee5343fb9d0706ead6e8601f363be">SCENE</a> Scene::Update </td>
+          <td class="memname">virtual void Scene::ExitFadeUpdate </td>
           <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>シーンが変わるときの更新 </p>
+
+<p><a class="el" href="class_select_scene.html#a546190bc143f6d7a3055935f97b55596">SelectScene</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="ab71ee5f19764b90c87b4574aa1cb1d25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab71ee5f19764b90c87b4574aa1cb1d25">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::shared_ptr&lt;<a class="el" href="class_scene.html">Scene</a>&gt; Scene::Update </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -163,12 +192,12 @@ Scene の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_game_scene.html#a2d4c44e96484af17ed3f6fb0402ebafd">GameScene</a>, <a class="el" href="class_title_scene.html#a19f6ee49ca6c8526fb1af2c0a2df9a33">TitleScene</a>, <a class="el" href="class_game_clear_scene.html#aebea5913506cc86d9570b286e69dfedd">GameClearScene</a>, <a class="el" href="class_select_scene.html#a963eef40b6cae9667a66c5a517b66ab8">SelectScene</a>, <a class="el" href="class_game_over_scene.html#a27d347ed1ff81cbd252e3bcc3f2989a8">GameOverScene</a>で実装されています。</p>
+<p><a class="el" href="class_select_scene.html#a0cef696ddf74155e061cc5f9f2e06419">SelectScene</a>, <a class="el" href="class_title_scene.html#ab3097e96e2fe65d6fad0d6bb45a14f9f">TitleScene</a>, <a class="el" href="class_pause_scene.html#a6adfe0685eb6bc64e658f6364c9f704d">PauseScene</a>, <a class="el" href="class_game_scene_easy.html#ac2bccbf61722010fd6f317693ee7b8b1">GameSceneEasy</a>, <a class="el" href="class_game_scene_hard.html#ac132a0e281a7d4e6b71deb6e5bcfdb9d">GameSceneHard</a>, <a class="el" href="class_game_scene_normal.html#a3e45ac3882f1d0dd5c77ab4f0a1ccb33">GameSceneNormal</a>, <a class="el" href="class_exit_scene.html#a18655f3124150a911f266e66e3fc4480">ExitScene</a>で実装されています。</p>
 
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/scene/<a class="el" href="scene_8h_source.html">scene.h</a></li>
+<li>C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/src/scene/<a class="el" href="scene_8h_source.html">scene.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

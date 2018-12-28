@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/src/device/device.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_98cdb10f369f6a3b9149e010b312bf5d.html">src</a></li><li class="navelem"><a class="el" href="dir_5e181567a4701d4398c89ec1d9f3e558.html">device</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">device.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="device_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;../common/common.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="singleton_8h.html">saki/singleton/singleton.h</a>&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_device.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_device.html">Device</a> :<span class="keyword">public</span> <a class="code" href="classsaki_1_1_singleton.html">saki::Singleton</a>&lt;Device&gt;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    HRESULT <a class="code" href="class_device.html#a8fc449792bf98bab448683f6815446e9">init</a>(HWND);</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_device.html#a17cd76103195bae419de11d43a4eeecd">clear_screen</a>();</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_device.html#a066c09b28fab69581e18459f45daa6a6">   10</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_device.html#a066c09b28fab69581e18459f45daa6a6">draw_begin</a>()</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <a class="code" href="class_device.html#a17cd76103195bae419de11d43a4eeecd">clear_screen</a>();</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    }</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_device.html#aa7c7313576c3274087b872a915fa181e">   14</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_device.html#aa7c7313576c3274087b872a915fa181e">draw_end</a>()</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="class_device.html#a8e522e4b61ad77b6581d4a160234c790">swap_chain</a>-&gt;Present(1, 0);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_device.html#af0aeb4e2375287fe02fc5154015b53be">   19</a></span>&#160;    <a class="code" href="common_8h.html#ab7d7d9064a34dd725663b1dbee652aca">ComPtr&lt;ID3D11Device&gt;</a> <a class="code" href="class_device.html#af0aeb4e2375287fe02fc5154015b53be">device</a>;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_device.html#a445dfbc67c6d8ad039ee462a891d63fc">   20</a></span>&#160;    <a class="code" href="common_8h.html#ab7d7d9064a34dd725663b1dbee652aca">ComPtr&lt;ID3D11DeviceContext&gt;</a> <a class="code" href="class_device.html#a445dfbc67c6d8ad039ee462a891d63fc">immediate_context</a>;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_device.html#a8e522e4b61ad77b6581d4a160234c790">   21</a></span>&#160;    <a class="code" href="common_8h.html#ab7d7d9064a34dd725663b1dbee652aca">ComPtr&lt;IDXGISwapChain&gt;</a> <a class="code" href="class_device.html#a8e522e4b61ad77b6581d4a160234c790">swap_chain</a>;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_device.html#ad50562d65b7c377ff48bf3ca26555028">   22</a></span>&#160;    <a class="code" href="common_8h.html#ab7d7d9064a34dd725663b1dbee652aca">ComPtr&lt;ID3D11RenderTargetView&gt;</a> <a class="code" href="class_device.html#ad50562d65b7c377ff48bf3ca26555028">render_target_view</a>;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_device.html#ac76a2dc2c3c49bb40f82c6d5300bf2b8">   23</a></span>&#160;    <a class="code" href="common_8h.html#ab7d7d9064a34dd725663b1dbee652aca">ComPtr&lt;ID3D11DepthStencilView&gt;</a> <a class="code" href="class_device.html#ac76a2dc2c3c49bb40f82c6d5300bf2b8">depth_stencil_view</a>;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_device.html#a077098001481f1c1c0c274caba595625">   24</a></span>&#160;    <a class="code" href="common_8h.html#ab7d7d9064a34dd725663b1dbee652aca">ComPtr&lt;ID3D11Texture2D&gt;</a> <a class="code" href="class_device.html#a077098001481f1c1c0c274caba595625">depth_stencil_texture</a>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div><div class="ttc" id="class_device_html_a445dfbc67c6d8ad039ee462a891d63fc"><div class="ttname"><a href="class_device.html#a445dfbc67c6d8ad039ee462a891d63fc">Device::immediate_context</a></div><div class="ttdeci">ComPtr&lt; ID3D11DeviceContext &gt; immediate_context</div><div class="ttdef"><b>Definition:</b> device.h:20</div></div>
+<div class="ttc" id="singleton_8h_html"><div class="ttname"><a href="singleton_8h.html">singleton.h</a></div><div class="ttdoc">シングルトンクラス </div></div>
+<div class="ttc" id="classsaki_1_1_singleton_html"><div class="ttname"><a href="classsaki_1_1_singleton.html">saki::Singleton</a></div><div class="ttdoc">継承するとシングルトンクラスになる </div><div class="ttdef"><b>Definition:</b> singleton.h:21</div></div>
+<div class="ttc" id="class_device_html_a077098001481f1c1c0c274caba595625"><div class="ttname"><a href="class_device.html#a077098001481f1c1c0c274caba595625">Device::depth_stencil_texture</a></div><div class="ttdeci">ComPtr&lt; ID3D11Texture2D &gt; depth_stencil_texture</div><div class="ttdef"><b>Definition:</b> device.h:24</div></div>
+<div class="ttc" id="class_device_html_a8fc449792bf98bab448683f6815446e9"><div class="ttname"><a href="class_device.html#a8fc449792bf98bab448683f6815446e9">Device::init</a></div><div class="ttdeci">HRESULT init(HWND)</div><div class="ttdef"><b>Definition:</b> device.cpp:4</div></div>
+<div class="ttc" id="class_device_html_a17cd76103195bae419de11d43a4eeecd"><div class="ttname"><a href="class_device.html#a17cd76103195bae419de11d43a4eeecd">Device::clear_screen</a></div><div class="ttdeci">void clear_screen()</div><div class="ttdef"><b>Definition:</b> device.cpp:119</div></div>
+<div class="ttc" id="class_device_html_ac76a2dc2c3c49bb40f82c6d5300bf2b8"><div class="ttname"><a href="class_device.html#ac76a2dc2c3c49bb40f82c6d5300bf2b8">Device::depth_stencil_view</a></div><div class="ttdeci">ComPtr&lt; ID3D11DepthStencilView &gt; depth_stencil_view</div><div class="ttdef"><b>Definition:</b> device.h:23</div></div>
+<div class="ttc" id="class_device_html"><div class="ttname"><a href="class_device.html">Device</a></div><div class="ttdef"><b>Definition:</b> device.h:5</div></div>
+<div class="ttc" id="common_8h_html_ab7d7d9064a34dd725663b1dbee652aca"><div class="ttname"><a href="common_8h.html#ab7d7d9064a34dd725663b1dbee652aca">ComPtr</a></div><div class="ttdeci">Microsoft::WRL::ComPtr&lt; T &gt; ComPtr</div><div class="ttdef"><b>Definition:</b> common.h:12</div></div>
+<div class="ttc" id="class_device_html_ad50562d65b7c377ff48bf3ca26555028"><div class="ttname"><a href="class_device.html#ad50562d65b7c377ff48bf3ca26555028">Device::render_target_view</a></div><div class="ttdeci">ComPtr&lt; ID3D11RenderTargetView &gt; render_target_view</div><div class="ttdef"><b>Definition:</b> device.h:22</div></div>
+<div class="ttc" id="class_device_html_aa7c7313576c3274087b872a915fa181e"><div class="ttname"><a href="class_device.html#aa7c7313576c3274087b872a915fa181e">Device::draw_end</a></div><div class="ttdeci">void draw_end()</div><div class="ttdef"><b>Definition:</b> device.h:14</div></div>
+<div class="ttc" id="class_device_html_a066c09b28fab69581e18459f45daa6a6"><div class="ttname"><a href="class_device.html#a066c09b28fab69581e18459f45daa6a6">Device::draw_begin</a></div><div class="ttdeci">void draw_begin()</div><div class="ttdef"><b>Definition:</b> device.h:10</div></div>
+<div class="ttc" id="class_device_html_af0aeb4e2375287fe02fc5154015b53be"><div class="ttname"><a href="class_device.html#af0aeb4e2375287fe02fc5154015b53be">Device::device</a></div><div class="ttdeci">ComPtr&lt; ID3D11Device &gt; device</div><div class="ttdef"><b>Definition:</b> device.h:19</div></div>
+<div class="ttc" id="class_device_html_a8e522e4b61ad77b6581d4a160234c790"><div class="ttname"><a href="class_device.html#a8e522e4b61ad77b6581d4a160234c790">Device::swap_chain</a></div><div class="ttdeci">ComPtr&lt; IDXGISwapChain &gt; swap_chain</div><div class="ttdef"><b>Definition:</b> device.h:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

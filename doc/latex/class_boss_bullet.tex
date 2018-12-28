@@ -1,0 +1,139 @@
+\hypertarget{class_boss_bullet}{}\section{Boss\+Bullet クラス}
+\label{class_boss_bullet}\index{Boss\+Bullet@{Boss\+Bullet}}
+
+
+{\ttfamily \#include $<$boss\+\_\+bullet.\+h$>$}
+
+Boss\+Bullet の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_boss_bullet}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_boss_bullet_a29bc4989a8b16a9da0daa3da92fb0e0a}{Set\+Vector}} (const \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}} vec2)
+\item 
+void \mbox{\hyperlink{class_boss_bullet_ace134e26eed55f3a839b8c6412664234}{Destroy}} () final
+\item 
+\mbox{\hyperlink{class_boss_bullet_acca8ecca1f90ed4454ca2bb3f20a86f9}{Boss\+Bullet}} ()
+\item 
+\mbox{\hyperlink{class_boss_bullet_a3fc4ad096e796b25d28e19ae8e4339bf}{Boss\+Bullet}} (const \mbox{\hyperlink{class_boss_bullet}{Boss\+Bullet}} \&other)
+\item 
+\mbox{\hyperlink{class_boss_bullet}{Boss\+Bullet}} \& \mbox{\hyperlink{class_boss_bullet_ab71ff0c91873433ba21e912c85800e1e}{operator=}} (const \mbox{\hyperlink{class_boss_bullet}{Boss\+Bullet}} \&other)
+\begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_boss_bullet_a852db4124cf1985c9bb612ef8a765722}{Boss\+Bullet}} (\mbox{\hyperlink{class_boss_bullet}{Boss\+Bullet}} \&\&other)
+\begin{DoxyCompactList}\small\item\em ムーブコンストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_bullet_ab742fa1d233e0df5d49cc239e24eeec3}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}) final
+\begin{DoxyCompactList}\small\item\em 当たってるときに実行する関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_boss_bullet_a387327aee4bbfba8abd6320f6f5acb35}{$\sim$\+Boss\+Bullet}} ()
+\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_boss_bullet_a8d70eb5a70dcf3d09baf646ae1bcb7f7}{Init\+Process}} () final
+\item 
+void \mbox{\hyperlink{class_boss_bullet_a8e9923194c03eb0d4225ed8dae409f29}{Update\+Process}} () final
+\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_boss_bullet_acca8ecca1f90ed4454ca2bb3f20a86f9}\label{class_boss_bullet_acca8ecca1f90ed4454ca2bb3f20a86f9}} 
+\index{Boss\+Bullet@{Boss\+Bullet}!Boss\+Bullet@{Boss\+Bullet}}
+\index{Boss\+Bullet@{Boss\+Bullet}!Boss\+Bullet@{Boss\+Bullet}}
+\subsubsection{\texorpdfstring{Boss\+Bullet()}{BossBullet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Boss\+Bullet\+::\+Boss\+Bullet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_boss_bullet_a3fc4ad096e796b25d28e19ae8e4339bf}\label{class_boss_bullet_a3fc4ad096e796b25d28e19ae8e4339bf}} 
+\index{Boss\+Bullet@{Boss\+Bullet}!Boss\+Bullet@{Boss\+Bullet}}
+\index{Boss\+Bullet@{Boss\+Bullet}!Boss\+Bullet@{Boss\+Bullet}}
+\subsubsection{\texorpdfstring{Boss\+Bullet()}{BossBullet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Boss\+Bullet\+::\+Boss\+Bullet (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_boss_bullet}{Boss\+Bullet}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_boss_bullet_a852db4124cf1985c9bb612ef8a765722}\label{class_boss_bullet_a852db4124cf1985c9bb612ef8a765722}} 
+\index{Boss\+Bullet@{Boss\+Bullet}!Boss\+Bullet@{Boss\+Bullet}}
+\index{Boss\+Bullet@{Boss\+Bullet}!Boss\+Bullet@{Boss\+Bullet}}
+\subsubsection{\texorpdfstring{Boss\+Bullet()}{BossBullet()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Boss\+Bullet\+::\+Boss\+Bullet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boss_bullet}{Boss\+Bullet}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ムーブコンストラクタ 
+
+\mbox{\Hypertarget{class_boss_bullet_a387327aee4bbfba8abd6320f6f5acb35}\label{class_boss_bullet_a387327aee4bbfba8abd6320f6f5acb35}} 
+\index{Boss\+Bullet@{Boss\+Bullet}!````~Boss\+Bullet@{$\sim$\+Boss\+Bullet}}
+\index{````~Boss\+Bullet@{$\sim$\+Boss\+Bullet}!Boss\+Bullet@{Boss\+Bullet}}
+\subsubsection{\texorpdfstring{$\sim$\+Boss\+Bullet()}{~BossBullet()}}
+{\footnotesize\ttfamily Boss\+Bullet\+::$\sim$\+Boss\+Bullet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_boss_bullet_ab742fa1d233e0df5d49cc239e24eeec3}\label{class_boss_bullet_ab742fa1d233e0df5d49cc239e24eeec3}} 
+\index{Boss\+Bullet@{Boss\+Bullet}!Collision@{Collision}}
+\index{Collision@{Collision}!Boss\+Bullet@{Boss\+Bullet}}
+\subsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void Boss\+Bullet\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+当たってるときに実行する関数 
+
+
+
+\mbox{\hyperlink{class_object_base_a3e1db79dfa119be067d816c22d09839d}{Object\+Base}}を再実装しています。
+
+\mbox{\Hypertarget{class_boss_bullet_ace134e26eed55f3a839b8c6412664234}\label{class_boss_bullet_ace134e26eed55f3a839b8c6412664234}} 
+\index{Boss\+Bullet@{Boss\+Bullet}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Boss\+Bullet@{Boss\+Bullet}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Boss\+Bullet\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_object_base_a7fa4c548153c3af20f89673ffea809af}{Object\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_boss_bullet_a8d70eb5a70dcf3d09baf646ae1bcb7f7}\label{class_boss_bullet_a8d70eb5a70dcf3d09baf646ae1bcb7f7}} 
+\index{Boss\+Bullet@{Boss\+Bullet}!Init\+Process@{Init\+Process}}
+\index{Init\+Process@{Init\+Process}!Boss\+Bullet@{Boss\+Bullet}}
+\subsubsection{\texorpdfstring{Init\+Process()}{InitProcess()}}
+{\footnotesize\ttfamily void Boss\+Bullet\+::\+Init\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_object_base_af133f36f2bca1dcfd962e2cfac61ab51}{Object\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_boss_bullet_ab71ff0c91873433ba21e912c85800e1e}\label{class_boss_bullet_ab71ff0c91873433ba21e912c85800e1e}} 
+\index{Boss\+Bullet@{Boss\+Bullet}!operator=@{operator=}}
+\index{operator=@{operator=}!Boss\+Bullet@{Boss\+Bullet}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boss_bullet}{Boss\+Bullet}}\& Boss\+Bullet\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_boss_bullet}{Boss\+Bullet}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピー代入演算子 
+
+\mbox{\Hypertarget{class_boss_bullet_a29bc4989a8b16a9da0daa3da92fb0e0a}\label{class_boss_bullet_a29bc4989a8b16a9da0daa3da92fb0e0a}} 
+\index{Boss\+Bullet@{Boss\+Bullet}!Set\+Vector@{Set\+Vector}}
+\index{Set\+Vector@{Set\+Vector}!Boss\+Bullet@{Boss\+Bullet}}
+\subsubsection{\texorpdfstring{Set\+Vector()}{SetVector()}}
+{\footnotesize\ttfamily void Boss\+Bullet\+::\+Set\+Vector (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}}]{vec2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_boss_bullet_a8e9923194c03eb0d4225ed8dae409f29}\label{class_boss_bullet_a8e9923194c03eb0d4225ed8dae409f29}} 
+\index{Boss\+Bullet@{Boss\+Bullet}!Update\+Process@{Update\+Process}}
+\index{Update\+Process@{Update\+Process}!Boss\+Bullet@{Boss\+Bullet}}
+\subsubsection{\texorpdfstring{Update\+Process()}{UpdateProcess()}}
+{\footnotesize\ttfamily void Boss\+Bullet\+::\+Update\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_object_base_a8b5b72b363a419767efde0b0e692ea95}{Object\+Base}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/object/character/enemy/boss/action\+\_\+pattern/attack/bullet/\mbox{\hyperlink{boss__bullet_8h}{boss\+\_\+bullet.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/object/character/enemy/boss/action\+\_\+pattern/attack/bullet/\mbox{\hyperlink{boss__bullet_8cpp}{boss\+\_\+bullet.\+cpp}}\end{DoxyCompactItemize}

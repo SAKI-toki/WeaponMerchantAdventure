@@ -1,0 +1,221 @@
+\hypertarget{class_boss}{}\section{Boss クラス}
+\label{class_boss}\index{Boss@{Boss}}
+
+
+{\ttfamily \#include $<$boss.\+h$>$}
+
+Boss の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_boss}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_boss_a3085cbf44a8e918abac0a62a6e443cab}{Set\+Max\+Hp}} (float max\+\_\+hp)
+\item 
+void \mbox{\hyperlink{class_boss_a417e06b76510146b1e6c0e6841e4463c}{Reset\+Speed}} ()
+\item 
+\mbox{\hyperlink{class_boss_af287739a9fe8cb9501795656d34f3018}{Boss}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_boss_ae6bb99cbbbb4a5ae7db4d174e6f4b50e}{Boss}} (const \mbox{\hyperlink{class_boss}{Boss}} \&ne)
+\begin{DoxyCompactList}\small\item\em コピーコンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_boss_a2e8bacd64a0212e890c62febaa37c988}{Boss}} (\mbox{\hyperlink{class_boss}{Boss}} \&\&ne) noexcept
+\begin{DoxyCompactList}\small\item\em ムーブコンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_boss}{Boss}} \& \mbox{\hyperlink{class_boss_ae84c6b0e64de86f606f5ac1348045371}{operator=}} (const \mbox{\hyperlink{class_boss}{Boss}} \&other)
+\begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_a36b664185c0aa3ae4c6fc58c33d8485b}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}) final
+\begin{DoxyCompactList}\small\item\em エネミーの当たったときに実行する関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_afe7a503ea624c30c2a50b58b40acfb48}{Destroy}} () final
+\begin{DoxyCompactList}\small\item\em エネミーの破棄 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_adb8591a0e2a919380e560f05b51fa171}{In\+Boss\+Scene}} (const float x)
+\item 
+void \mbox{\hyperlink{class_boss_a2d13fa10c0820f4131c145b6496a5e0b}{Translation\+Boss\+Scene}} ()
+\item 
+void \mbox{\hyperlink{class_boss_af1d3f76c28bff11d80530e4c8fdca355}{Destroy\+Ui}} ()
+\item 
+\mbox{\hyperlink{class_boss_ae2300fbed7e29873d66c5a89beb3a628}{$\sim$\+Boss}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_boss_a460293079fd93f0ad2b98193fa367aa7}{Init\+Process}} () final
+\begin{DoxyCompactList}\small\item\em エネミーの初期化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_a12b3970fee863198d6dafb9bafc55d47}{Update\+Process}} () final
+\begin{DoxyCompactList}\small\item\em エネミーの更新 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_a6681bd6fc6dc35e200f9e63f196301af}{Render\+Process}} (bool) final
+\begin{DoxyCompactList}\small\item\em 描画 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_boss_af287739a9fe8cb9501795656d34f3018}\label{class_boss_af287739a9fe8cb9501795656d34f3018}} 
+\index{Boss@{Boss}!Boss@{Boss}}
+\index{Boss@{Boss}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{Boss()}{Boss()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Boss\+::\+Boss (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{class_boss_ae6bb99cbbbb4a5ae7db4d174e6f4b50e}\label{class_boss_ae6bb99cbbbb4a5ae7db4d174e6f4b50e}} 
+\index{Boss@{Boss}!Boss@{Boss}}
+\index{Boss@{Boss}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{Boss()}{Boss()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Boss\+::\+Boss (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_boss}{Boss}} \&}]{ne }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピーコンストラクタ 
+
+\mbox{\Hypertarget{class_boss_a2e8bacd64a0212e890c62febaa37c988}\label{class_boss_a2e8bacd64a0212e890c62febaa37c988}} 
+\index{Boss@{Boss}!Boss@{Boss}}
+\index{Boss@{Boss}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{Boss()}{Boss()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Boss\+::\+Boss (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boss}{Boss}} \&\&}]{ne }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+ムーブコンストラクタ 
+
+\mbox{\Hypertarget{class_boss_ae2300fbed7e29873d66c5a89beb3a628}\label{class_boss_ae2300fbed7e29873d66c5a89beb3a628}} 
+\index{Boss@{Boss}!````~Boss@{$\sim$\+Boss}}
+\index{````~Boss@{$\sim$\+Boss}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{$\sim$\+Boss()}{~Boss()}}
+{\footnotesize\ttfamily Boss\+::$\sim$\+Boss (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+デストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_boss_a36b664185c0aa3ae4c6fc58c33d8485b}\label{class_boss_a36b664185c0aa3ae4c6fc58c33d8485b}} 
+\index{Boss@{Boss}!Collision@{Collision}}
+\index{Collision@{Collision}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void Boss\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+エネミーの当たったときに実行する関数 
+
+
+\begin{DoxyParams}{引数}
+{\em obj　当たった相手のオブジェクト} & \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_object_base_a3e1db79dfa119be067d816c22d09839d}{Object\+Base}}を再実装しています。
+
+\mbox{\Hypertarget{class_boss_afe7a503ea624c30c2a50b58b40acfb48}\label{class_boss_afe7a503ea624c30c2a50b58b40acfb48}} 
+\index{Boss@{Boss}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Boss\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+エネミーの破棄 
+
+
+
+\mbox{\hyperlink{class_object_base_a7fa4c548153c3af20f89673ffea809af}{Object\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_boss_af1d3f76c28bff11d80530e4c8fdca355}\label{class_boss_af1d3f76c28bff11d80530e4c8fdca355}} 
+\index{Boss@{Boss}!Destroy\+Ui@{Destroy\+Ui}}
+\index{Destroy\+Ui@{Destroy\+Ui}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{Destroy\+Ui()}{DestroyUi()}}
+{\footnotesize\ttfamily void Boss\+::\+Destroy\+Ui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_boss_adb8591a0e2a919380e560f05b51fa171}\label{class_boss_adb8591a0e2a919380e560f05b51fa171}} 
+\index{Boss@{Boss}!In\+Boss\+Scene@{In\+Boss\+Scene}}
+\index{In\+Boss\+Scene@{In\+Boss\+Scene}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{In\+Boss\+Scene()}{InBossScene()}}
+{\footnotesize\ttfamily void Boss\+::\+In\+Boss\+Scene (\begin{DoxyParamCaption}\item[{const float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_boss_a460293079fd93f0ad2b98193fa367aa7}\label{class_boss_a460293079fd93f0ad2b98193fa367aa7}} 
+\index{Boss@{Boss}!Init\+Process@{Init\+Process}}
+\index{Init\+Process@{Init\+Process}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{Init\+Process()}{InitProcess()}}
+{\footnotesize\ttfamily void Boss\+::\+Init\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+エネミーの初期化 
+
+
+
+\mbox{\hyperlink{class_object_base_af133f36f2bca1dcfd962e2cfac61ab51}{Object\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_boss_ae84c6b0e64de86f606f5ac1348045371}\label{class_boss_ae84c6b0e64de86f606f5ac1348045371}} 
+\index{Boss@{Boss}!operator=@{operator=}}
+\index{operator=@{operator=}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boss}{Boss}}\& Boss\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_boss}{Boss}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピー代入演算子 
+
+\mbox{\Hypertarget{class_boss_a6681bd6fc6dc35e200f9e63f196301af}\label{class_boss_a6681bd6fc6dc35e200f9e63f196301af}} 
+\index{Boss@{Boss}!Render\+Process@{Render\+Process}}
+\index{Render\+Process@{Render\+Process}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{Render\+Process()}{RenderProcess()}}
+{\footnotesize\ttfamily void Boss\+::\+Render\+Process (\begin{DoxyParamCaption}\item[{bool}]{camera\+\_\+affected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+描画 
+
+
+\begin{DoxyParams}{引数}
+{\em camera\+\_\+affected} & カメラの位置によって位置を変えるかどうか \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_dynamic_object_aa7488e1b4dfd7049447535d93d9d6783}{Dynamic\+Object}}を再実装しています。
+
+\mbox{\Hypertarget{class_boss_a417e06b76510146b1e6c0e6841e4463c}\label{class_boss_a417e06b76510146b1e6c0e6841e4463c}} 
+\index{Boss@{Boss}!Reset\+Speed@{Reset\+Speed}}
+\index{Reset\+Speed@{Reset\+Speed}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{Reset\+Speed()}{ResetSpeed()}}
+{\footnotesize\ttfamily void Boss\+::\+Reset\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_boss_a3085cbf44a8e918abac0a62a6e443cab}\label{class_boss_a3085cbf44a8e918abac0a62a6e443cab}} 
+\index{Boss@{Boss}!Set\+Max\+Hp@{Set\+Max\+Hp}}
+\index{Set\+Max\+Hp@{Set\+Max\+Hp}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{Set\+Max\+Hp()}{SetMaxHp()}}
+{\footnotesize\ttfamily void Boss\+::\+Set\+Max\+Hp (\begin{DoxyParamCaption}\item[{float}]{max\+\_\+hp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_boss_a2d13fa10c0820f4131c145b6496a5e0b}\label{class_boss_a2d13fa10c0820f4131c145b6496a5e0b}} 
+\index{Boss@{Boss}!Translation\+Boss\+Scene@{Translation\+Boss\+Scene}}
+\index{Translation\+Boss\+Scene@{Translation\+Boss\+Scene}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{Translation\+Boss\+Scene()}{TranslationBossScene()}}
+{\footnotesize\ttfamily void Boss\+::\+Translation\+Boss\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_boss_a12b3970fee863198d6dafb9bafc55d47}\label{class_boss_a12b3970fee863198d6dafb9bafc55d47}} 
+\index{Boss@{Boss}!Update\+Process@{Update\+Process}}
+\index{Update\+Process@{Update\+Process}!Boss@{Boss}}
+\subsubsection{\texorpdfstring{Update\+Process()}{UpdateProcess()}}
+{\footnotesize\ttfamily void Boss\+::\+Update\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+エネミーの更新 
+
+
+
+\mbox{\hyperlink{class_object_base_a8b5b72b363a419767efde0b0e692ea95}{Object\+Base}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/object/character/enemy/boss/\mbox{\hyperlink{boss_8h}{boss.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/object/character/enemy/boss/\mbox{\hyperlink{boss_8cpp}{boss.\+cpp}}\end{DoxyCompactItemize}

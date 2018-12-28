@@ -12,11 +12,19 @@
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_animation_af745af1b6e861b20db426b92a980d4bd}{Init}} (const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&, const int, const int, const int)
+\mbox{\hyperlink{class_animation_a83f0a16cef7117f187ad596de38dd9d6}{Animation}} ()
+\item 
+void \mbox{\hyperlink{class_animation_a6f532d6251cdf027ee8e6af311832c2f}{Changetime}} (const int t)
+\item 
+\mbox{\hyperlink{class_animation_a7c1388a1e58fb80682aa8e147f58d592}{Animation}} (const \mbox{\hyperlink{class_animation}{Animation}} \&other)
+\begin{DoxyCompactList}\small\item\em コピーコンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_animation}{Animation}} \& \mbox{\hyperlink{class_animation_a83fe682e706c6e5cc348b52bc8dbcddd}{operator=}} (const \mbox{\hyperlink{class_animation}{Animation}} \&other)
+\begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animation_a3f62687a696758fdba6eb1810e971c0d}{Init}} (const \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}} \&, const int, const int, const int)
 \begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_animation_a0c6a4e940db84d4a6246fcb3ae773402}{Update}} ()
 \begin{DoxyCompactList}\small\item\em 更新 \end{DoxyCompactList}\item 
-R\+E\+CT \mbox{\hyperlink{class_animation_a6a4980272204d8d2027c206f89984e47}{Get\+Animation}} () const
+\mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}} \mbox{\hyperlink{class_animation_a313060e5a143cb24d0264744249fddd6}{Get\+Animation}} () const
 \begin{DoxyCompactList}\small\item\em アニメーションを変更する \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_animation_ae9fe84bd92b1df395dd09aeed37a8373}{Change\+Animation}} (const int, const int, const bool=false)
 \begin{DoxyCompactList}\small\item\em アニメーションを変える \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -24,6 +32,25 @@ void \mbox{\hyperlink{class_animation_ae9fe84bd92b1df395dd09aeed37a8373}{Change\
 
 \subsection{詳解}
 アニメーションクラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_animation_a83f0a16cef7117f187ad596de38dd9d6}\label{class_animation_a83f0a16cef7117f187ad596de38dd9d6}} 
+\index{Animation@{Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!Animation@{Animation}}
+\subsubsection{\texorpdfstring{Animation()}{Animation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Animation\+::\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_animation_a7c1388a1e58fb80682aa8e147f58d592}\label{class_animation_a7c1388a1e58fb80682aa8e147f58d592}} 
+\index{Animation@{Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!Animation@{Animation}}
+\subsubsection{\texorpdfstring{Animation()}{Animation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Animation\+::\+Animation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_animation}{Animation}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピーコンストラクタ 
+
+
 
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_animation_ae9fe84bd92b1df395dd09aeed37a8373}\label{class_animation_ae9fe84bd92b1df395dd09aeed37a8373}} 
@@ -45,11 +72,17 @@ void \mbox{\hyperlink{class_animation_ae9fe84bd92b1df395dd09aeed37a8373}{Change\
 {\em reset} & アニメーションを最初からするかどうか \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_animation_a6a4980272204d8d2027c206f89984e47}\label{class_animation_a6a4980272204d8d2027c206f89984e47}} 
+\mbox{\Hypertarget{class_animation_a6f532d6251cdf027ee8e6af311832c2f}\label{class_animation_a6f532d6251cdf027ee8e6af311832c2f}} 
+\index{Animation@{Animation}!Changetime@{Changetime}}
+\index{Changetime@{Changetime}!Animation@{Animation}}
+\subsubsection{\texorpdfstring{Changetime()}{Changetime()}}
+{\footnotesize\ttfamily void Animation\+::\+Changetime (\begin{DoxyParamCaption}\item[{const int}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_animation_a313060e5a143cb24d0264744249fddd6}\label{class_animation_a313060e5a143cb24d0264744249fddd6}} 
 \index{Animation@{Animation}!Get\+Animation@{Get\+Animation}}
 \index{Get\+Animation@{Get\+Animation}!Animation@{Animation}}
 \subsubsection{\texorpdfstring{Get\+Animation()}{GetAnimation()}}
-{\footnotesize\ttfamily R\+E\+CT Animation\+::\+Get\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}} Animation\+::\+Get\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
@@ -58,11 +91,11 @@ void \mbox{\hyperlink{class_animation_ae9fe84bd92b1df395dd09aeed37a8373}{Change\
 \begin{DoxyReturn}{戻り値}
 R\+E\+CT テクスチャで描画する部分 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_animation_af745af1b6e861b20db426b92a980d4bd}\label{class_animation_af745af1b6e861b20db426b92a980d4bd}} 
+\mbox{\Hypertarget{class_animation_a3f62687a696758fdba6eb1810e971c0d}\label{class_animation_a3f62687a696758fdba6eb1810e971c0d}} 
 \index{Animation@{Animation}!Init@{Init}}
 \index{Init@{Init}!Animation@{Animation}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily void Animation\+::\+Init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{\+\_\+one,  }\item[{const int}]{hor,  }\item[{const int}]{ver,  }\item[{const int}]{\+\_\+inter }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Animation\+::\+Init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}} \&}]{\+\_\+one,  }\item[{const int}]{hor,  }\item[{const int}]{ver,  }\item[{const int}]{\+\_\+inter }\end{DoxyParamCaption})}
 
 
 
@@ -79,6 +112,16 @@ R\+E\+CT テクスチャで描画する部分
 {\em \+\_\+inter} & 一つ一つの間隔 \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_animation_a83fe682e706c6e5cc348b52bc8dbcddd}\label{class_animation_a83fe682e706c6e5cc348b52bc8dbcddd}} 
+\index{Animation@{Animation}!operator=@{operator=}}
+\index{operator=@{operator=}!Animation@{Animation}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_animation}{Animation}}\& Animation\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_animation}{Animation}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピー代入演算子 
+
 \mbox{\Hypertarget{class_animation_a0c6a4e940db84d4a6246fcb3ae773402}\label{class_animation_a0c6a4e940db84d4a6246fcb3ae773402}} 
 \index{Animation@{Animation}!Update@{Update}}
 \index{Update@{Update}!Animation@{Animation}}
@@ -93,5 +136,5 @@ R\+E\+CT テクスチャで描画する部分
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/animation/\mbox{\hyperlink{animation_8h}{animation.\+h}}\item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/animation/\mbox{\hyperlink{animation_8cpp}{animation.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/animation/\mbox{\hyperlink{animation_8h}{animation.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/animation/\mbox{\hyperlink{animation_8cpp}{animation.\+cpp}}\end{DoxyCompactItemize}

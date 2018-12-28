@@ -1,0 +1,75 @@
+\hypertarget{vector__3d__operator_8h}{}\section{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/vector/details/3d/vector\+\_\+3d\+\_\+operator.h ファイル}
+\label{vector__3d__operator_8h}\index{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/vector/details/3d/vector\+\_\+3d\+\_\+operator.\+h@{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/vector/details/3d/vector\+\_\+3d\+\_\+operator.\+h}}
+
+
+Vector3クラスの演算子  
+
+
+{\ttfamily \#include $<$saki/binary\+\_\+operator/binary\+\_\+operator.\+h$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classsaki_1_1_vector3}{saki\+::\+Vector3$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em 3次元でのベクトル \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{名前空間}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacesaki}{saki}}
+\item 
+ \mbox{\hyperlink{namespacesaki_1_1details}{saki\+::details}}
+\end{DoxyCompactItemize}
+\subsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{vector__3d__operator_8h_a8bcd7ad0e6c69e62c0531b4c53e684a7}{S\+A\+K\+I\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+3\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+13}}
+\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T1 , typename T2 , typename Func $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_1_1details_a9d9fd5673ab6516752ecf05845e7f9b9}{saki\+::details\+::vector3\+\_\+vector3\+\_\+some\+\_\+operator}} (const Vector3$<$ T1 $>$ \&v1, const Vector3$<$ T2 $>$ \&v2, Func \&\&f)
+\begin{DoxyCompactList}\small\item\em ベクトル同士の演算 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 , typename Func $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_1_1details_a65a656e3fd6cb4f45afc9137f5e6383a}{saki\+::details\+::vector3\+\_\+scalar\+\_\+some\+\_\+operator}} (const Vector3$<$ T1 $>$ \&v, const T2 \&scalar, Func \&\&f)
+\begin{DoxyCompactList}\small\item\em ベクトルとスカラの演算 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_a482be906f8ccfd7fa303391e28e44f05}{saki\+::operator+}} (const Vector3$<$ T1 $>$ \&v1, const Vector3$<$ T2 $>$ \&v2)
+\begin{DoxyCompactList}\small\item\em +演算子 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_ab4e324d1879fdeb0737196f18a3b42e2}{saki\+::operator-\/}} (const Vector3$<$ T1 $>$ \&v1, const Vector3$<$ T2 $>$ \&v2)
+\begin{DoxyCompactList}\small\item\em -\/演算子 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_a7e8da947afb09174d52b0e4aaa185d71}{saki\+::operator$\ast$}} (const Vector3$<$ T1 $>$ \&v, const T2 \&scalar)
+\begin{DoxyCompactList}\small\item\em $\ast$演算子(ベクトル$\ast$スカラ) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_a74073980f30054780d16bbda306bb0c4}{saki\+::operator$\ast$}} (const T1 \&scalar, const Vector3$<$ T2 $>$ \&v)
+\begin{DoxyCompactList}\small\item\em $\ast$演算子(スカラ$\ast$ベクトル) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_a44134827291df1234e04cbd1837a05ac}{saki\+::operator$\ast$}} (const Vector3$<$ T1 $>$ \&v1, const Vector3$<$ T2 $>$ \&v2)
+\begin{DoxyCompactList}\small\item\em $\ast$演算子(ベクトル) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_abbbafb6bb5e04aa715db728862e079a8}{saki\+::operator/}} (const Vector3$<$ T1 $>$ \&v, const T2 \&scalar)
+\begin{DoxyCompactList}\small\item\em /演算子(スカラ) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_a7af3750f8a88499eca7784ad18753111}{saki\+::operator/}} (const Vector3$<$ T1 $>$ \&v1, const Vector3$<$ T2 $>$ \&v2)
+\begin{DoxyCompactList}\small\item\em /演算子(ベクトル) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\constexpr bool \mbox{\hyperlink{namespacesaki_a29747cf04c5a821834f7a1fea39e4050}{saki\+::operator==}} (const Vector3$<$ T $>$ \&v1, const Vector3$<$ T $>$ \&v2)
+\begin{DoxyCompactList}\small\item\em ==演算子 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\constexpr bool \mbox{\hyperlink{namespacesaki_a49b3805c2b97e135606939b8d64eca20}{saki\+::operator!=}} (const Vector3$<$ T $>$ \&v1, const Vector3$<$ T $>$ \&v2)
+\begin{DoxyCompactList}\small\item\em !=演算子 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr bool \mbox{\hyperlink{namespacesaki_a487f0b513be6d4a0aecafeec28b6fc69}{saki\+::operator==}} (const Vector3$<$ T1 $>$ \&v1, const Vector3$<$ T2 $>$ \&v2)
+\begin{DoxyCompactList}\small\item\em ==演算子(型不一致) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr bool \mbox{\hyperlink{namespacesaki_a26df5bd85b044f8556c4e258479b54f7}{saki\+::operator!=}} (const Vector3$<$ T1 $>$ \&v1, const Vector3$<$ T2 $>$ \&v2)
+\begin{DoxyCompactList}\small\item\em !=演算子(型不一致) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+Vector3クラスの演算子 
+
+\begin{DoxyAuthor}{著者}
+石山 悠 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日付}
+2018/12/13 
+\end{DoxyDate}
+
+
+\subsection{マクロ定義詳解}
+\mbox{\Hypertarget{vector__3d__operator_8h_a8bcd7ad0e6c69e62c0531b4c53e684a7}\label{vector__3d__operator_8h_a8bcd7ad0e6c69e62c0531b4c53e684a7}} 
+\index{vector\+\_\+3d\+\_\+operator.\+h@{vector\+\_\+3d\+\_\+operator.\+h}!S\+A\+K\+I\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+3\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+13@{S\+A\+K\+I\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+3\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+13}}
+\index{S\+A\+K\+I\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+3\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+13@{S\+A\+K\+I\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+3\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+13}!vector\+\_\+3d\+\_\+operator.\+h@{vector\+\_\+3d\+\_\+operator.\+h}}
+\subsubsection{\texorpdfstring{S\+A\+K\+I\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+3\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+13}{SAKI\_VECTOR\_3D\_OPERATOR\_2018\_12\_13}}
+{\footnotesize\ttfamily \#define S\+A\+K\+I\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+3\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+13}
+

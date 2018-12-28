@@ -1,0 +1,45 @@
+\hypertarget{accumulate_8h}{}\section{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/accumulate/accumulate.h ファイル}
+\label{accumulate_8h}\index{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/accumulate/accumulate.\+h@{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/accumulate/accumulate.\+h}}
+
+
+既存のaccumulate関数の簡略化  
+
+
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+\subsection*{名前空間}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacesaki}{saki}}
+\end{DoxyCompactItemize}
+\subsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{accumulate_8h_a929b0b8e319f7448b342dd1337cf62de}{S\+A\+K\+I\+\_\+\+A\+C\+C\+U\+M\+U\+L\+A\+T\+E\+\_\+2018\+\_\+12\+\_\+06}}
+\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Container $>$ }\\auto \mbox{\hyperlink{namespacesaki_a981cc67b0d421b1836678c3ac4069afd}{saki\+::accumulate}} (Container \&\&con, typename std\+::remove\+\_\+reference\+\_\+t$<$ Container $>$\+::value\+\_\+type init=0)
+\begin{DoxyCompactList}\small\item\em 全ての値の合計 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Container , typename Binary\+Operation $>$ }\\auto \mbox{\hyperlink{namespacesaki_acb8c3f650d3b5d3b06259b91bd7ad85d}{saki\+::accumulate}} (Container \&\&con, Binary\+Operation \&\&binary\+\_\+op, typename std\+::remove\+\_\+reference\+\_\+t$<$ Container $>$\+::value\+\_\+type init=0)
+\begin{DoxyCompactList}\small\item\em 引数が2つの関数を指定し、それをすべての要素で回す \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+既存のaccumulate関数の簡略化 
+
+\begin{DoxyAuthor}{著者}
+石山 悠 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日付}
+2018/12/06 
+\end{DoxyDate}
+
+
+\subsection{マクロ定義詳解}
+\mbox{\Hypertarget{accumulate_8h_a929b0b8e319f7448b342dd1337cf62de}\label{accumulate_8h_a929b0b8e319f7448b342dd1337cf62de}} 
+\index{accumulate.\+h@{accumulate.\+h}!S\+A\+K\+I\+\_\+\+A\+C\+C\+U\+M\+U\+L\+A\+T\+E\+\_\+2018\+\_\+12\+\_\+06@{S\+A\+K\+I\+\_\+\+A\+C\+C\+U\+M\+U\+L\+A\+T\+E\+\_\+2018\+\_\+12\+\_\+06}}
+\index{S\+A\+K\+I\+\_\+\+A\+C\+C\+U\+M\+U\+L\+A\+T\+E\+\_\+2018\+\_\+12\+\_\+06@{S\+A\+K\+I\+\_\+\+A\+C\+C\+U\+M\+U\+L\+A\+T\+E\+\_\+2018\+\_\+12\+\_\+06}!accumulate.\+h@{accumulate.\+h}}
+\subsubsection{\texorpdfstring{S\+A\+K\+I\+\_\+\+A\+C\+C\+U\+M\+U\+L\+A\+T\+E\+\_\+2018\+\_\+12\+\_\+06}{SAKI\_ACCUMULATE\_2018\_12\_06}}
+{\footnotesize\ttfamily \#define S\+A\+K\+I\+\_\+\+A\+C\+C\+U\+M\+U\+L\+A\+T\+E\+\_\+2018\+\_\+12\+\_\+06}
+

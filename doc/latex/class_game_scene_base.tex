@@ -1,0 +1,212 @@
+\hypertarget{class_game_scene_base}{}\section{Game\+Scene\+Base クラス}
+\label{class_game_scene_base}\index{Game\+Scene\+Base@{Game\+Scene\+Base}}
+
+
+ゲームシーンのスーパークラス  
+
+
+
+
+{\ttfamily \#include $<$game\+\_\+scene\+\_\+base.\+h$>$}
+
+Game\+Scene\+Base の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_scene_base}
+\end{center}
+\end{figure}
+\subsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3}{G\+A\+ME}} \{ \newline
+\mbox{\hyperlink{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3a186495f7da296bf880df3a22a492b378}{G\+A\+M\+E\+::\+M\+A\+IN}}, 
+\mbox{\hyperlink{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3a0da044e5b37e6bcb3a8d01dc7362b276}{G\+A\+M\+E\+::\+T\+R\+A\+N\+S\+L\+A\+T\+I\+ON}}, 
+\mbox{\hyperlink{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3af0523bf35faf77235783d0f3e43762d2}{G\+A\+M\+E\+::\+B\+O\+SS}}, 
+\mbox{\hyperlink{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3a813461e0c58e7ad59a2fd83ca2237fec}{G\+A\+M\+E\+::\+C\+L\+E\+AR}}, 
+\newline
+\mbox{\hyperlink{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3ab50339a10e1de285ac99d4c3990b8693}{G\+A\+M\+E\+::\+N\+O\+NE}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_scene_base_ab37608f861866bd183801326214d0e92}{Game\+Init}} ()
+\begin{DoxyCompactList}\small\item\em ゲームシーンの初期化 \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \mbox{\hyperlink{class_game_scene_base_ae9dab92c5cb057a884d12d21fe823fd9}{Game\+Update}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \&)
+\begin{DoxyCompactList}\small\item\em ゲームシーンの更新 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_scene_base_acc15e7fb83c2403c2a5e65fa64ca8cb3}{Game\+Render}} ()
+\begin{DoxyCompactList}\small\item\em ゲームシーンの描画 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_scene_base_a8105804f1a8d6d59d4278d00142680a0}{Game\+Destroy}} ()
+\begin{DoxyCompactList}\small\item\em ゲームシーンの破棄 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_game_scene_base_af752b345d7711c43c8deafd6618bb62f}{clear\+\_\+jump}} = false
+\item 
+\mbox{\hyperlink{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3}{G\+A\+ME}} \mbox{\hyperlink{class_game_scene_base_aad639837dc3d0735e69052c980ec9f18}{current\+\_\+game}} = \mbox{\hyperlink{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3a186495f7da296bf880df3a22a492b378}{G\+A\+M\+E\+::\+M\+A\+IN}}
+\item 
+std\+::list$<$ \mbox{\hyperlink{class_normal_enemy}{Normal\+Enemy}} $>$ \mbox{\hyperlink{class_game_scene_base_a5203f71e49d0a65de546dce23670b39e}{enemy}}
+\item 
+std\+::list$<$ \mbox{\hyperlink{class_fly_enemy}{Fly\+Enemy}} $>$ \mbox{\hyperlink{class_game_scene_base_ad34ad8c64d483b662352b9a806634bd9}{f\+\_\+enemy}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_player}{Player}} $>$ \mbox{\hyperlink{class_game_scene_base_a86d056176f172dc0115d00878956a741}{player}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_boss}{Boss}} $>$ \mbox{\hyperlink{class_game_scene_base_a8de41f067f4a7ed1e41f60836ea1b1e5}{boss}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_static_object}{Static\+Object}} $>$ \mbox{\hyperlink{class_game_scene_base_a0c60c7b970f081b2eee1ac14d74f6a7e}{back\+Ground}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_map_object}{Map\+Object}} $>$ \mbox{\hyperlink{class_game_scene_base_a27a6d9806fd1f23a651a545c94a24254}{field}}
+\item 
+std\+::list$<$ \mbox{\hyperlink{class_bullet_item}{Bullet\+Item}} $>$ \mbox{\hyperlink{class_game_scene_base_a32ec936c873df49cdf1400deb60c6b7f}{bullet\+\_\+item}}
+\item 
+float \mbox{\hyperlink{class_game_scene_base_a1eebaf57ec13050f35ae29074f10c668}{boss\+\_\+center\+\_\+x}}
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+ゲームシーンのスーパークラス 
+
+\subsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3}\label{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3}} 
+\index{Game\+Scene\+Base@{Game\+Scene\+Base}!G\+A\+ME@{G\+A\+ME}}
+\index{G\+A\+ME@{G\+A\+ME}!Game\+Scene\+Base@{Game\+Scene\+Base}}
+\subsubsection{\texorpdfstring{G\+A\+ME}{GAME}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3}{Game\+Scene\+Base\+::\+G\+A\+ME}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+A\+IN@{M\+A\+IN}!Game\+Scene\+Base@{Game\+Scene\+Base}}\index{Game\+Scene\+Base@{Game\+Scene\+Base}!M\+A\+IN@{M\+A\+IN}}}\mbox{\Hypertarget{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3a186495f7da296bf880df3a22a492b378}\label{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3a186495f7da296bf880df3a22a492b378}} 
+M\+A\+IN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+R\+A\+N\+S\+L\+A\+T\+I\+ON@{T\+R\+A\+N\+S\+L\+A\+T\+I\+ON}!Game\+Scene\+Base@{Game\+Scene\+Base}}\index{Game\+Scene\+Base@{Game\+Scene\+Base}!T\+R\+A\+N\+S\+L\+A\+T\+I\+ON@{T\+R\+A\+N\+S\+L\+A\+T\+I\+ON}}}\mbox{\Hypertarget{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3a0da044e5b37e6bcb3a8d01dc7362b276}\label{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3a0da044e5b37e6bcb3a8d01dc7362b276}} 
+T\+R\+A\+N\+S\+L\+A\+T\+I\+ON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+O\+SS@{B\+O\+SS}!Game\+Scene\+Base@{Game\+Scene\+Base}}\index{Game\+Scene\+Base@{Game\+Scene\+Base}!B\+O\+SS@{B\+O\+SS}}}\mbox{\Hypertarget{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3af0523bf35faf77235783d0f3e43762d2}\label{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3af0523bf35faf77235783d0f3e43762d2}} 
+B\+O\+SS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+L\+E\+AR@{C\+L\+E\+AR}!Game\+Scene\+Base@{Game\+Scene\+Base}}\index{Game\+Scene\+Base@{Game\+Scene\+Base}!C\+L\+E\+AR@{C\+L\+E\+AR}}}\mbox{\Hypertarget{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3a813461e0c58e7ad59a2fd83ca2237fec}\label{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3a813461e0c58e7ad59a2fd83ca2237fec}} 
+C\+L\+E\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+NE@{N\+O\+NE}!Game\+Scene\+Base@{Game\+Scene\+Base}}\index{Game\+Scene\+Base@{Game\+Scene\+Base}!N\+O\+NE@{N\+O\+NE}}}\mbox{\Hypertarget{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3ab50339a10e1de285ac99d4c3990b8693}\label{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3ab50339a10e1de285ac99d4c3990b8693}} 
+N\+O\+NE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_game_scene_base_a8105804f1a8d6d59d4278d00142680a0}\label{class_game_scene_base_a8105804f1a8d6d59d4278d00142680a0}} 
+\index{Game\+Scene\+Base@{Game\+Scene\+Base}!Game\+Destroy@{Game\+Destroy}}
+\index{Game\+Destroy@{Game\+Destroy}!Game\+Scene\+Base@{Game\+Scene\+Base}}
+\subsubsection{\texorpdfstring{Game\+Destroy()}{GameDestroy()}}
+{\footnotesize\ttfamily void Game\+Scene\+Base\+::\+Game\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ゲームシーンの破棄 
+
+\mbox{\Hypertarget{class_game_scene_base_ab37608f861866bd183801326214d0e92}\label{class_game_scene_base_ab37608f861866bd183801326214d0e92}} 
+\index{Game\+Scene\+Base@{Game\+Scene\+Base}!Game\+Init@{Game\+Init}}
+\index{Game\+Init@{Game\+Init}!Game\+Scene\+Base@{Game\+Scene\+Base}}
+\subsubsection{\texorpdfstring{Game\+Init()}{GameInit()}}
+{\footnotesize\ttfamily void Game\+Scene\+Base\+::\+Game\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ゲームシーンの初期化 
+
+\mbox{\Hypertarget{class_game_scene_base_acc15e7fb83c2403c2a5e65fa64ca8cb3}\label{class_game_scene_base_acc15e7fb83c2403c2a5e65fa64ca8cb3}} 
+\index{Game\+Scene\+Base@{Game\+Scene\+Base}!Game\+Render@{Game\+Render}}
+\index{Game\+Render@{Game\+Render}!Game\+Scene\+Base@{Game\+Scene\+Base}}
+\subsubsection{\texorpdfstring{Game\+Render()}{GameRender()}}
+{\footnotesize\ttfamily void Game\+Scene\+Base\+::\+Game\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ゲームシーンの描画 
+
+\mbox{\Hypertarget{class_game_scene_base_ae9dab92c5cb057a884d12d21fe823fd9}\label{class_game_scene_base_ae9dab92c5cb057a884d12d21fe823fd9}} 
+\index{Game\+Scene\+Base@{Game\+Scene\+Base}!Game\+Update@{Game\+Update}}
+\index{Game\+Update@{Game\+Update}!Game\+Scene\+Base@{Game\+Scene\+Base}}
+\subsubsection{\texorpdfstring{Game\+Update()}{GameUpdate()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ Game\+Scene\+Base\+::\+Game\+Update (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \&}]{scene }\end{DoxyParamCaption})}
+
+
+
+ゲームシーンの更新 
+
+\begin{DoxyReturn}{戻り値}
+std\+::shared\+\_\+ptr$<$\+Scene$>$ シーンが変わるなら次のシーンのstd\+::shared\+\_\+ptr$<$\+Scene$>$を返す 
+\end{DoxyReturn}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_game_scene_base_a0c60c7b970f081b2eee1ac14d74f6a7e}\label{class_game_scene_base_a0c60c7b970f081b2eee1ac14d74f6a7e}} 
+\index{Game\+Scene\+Base@{Game\+Scene\+Base}!back\+Ground@{back\+Ground}}
+\index{back\+Ground@{back\+Ground}!Game\+Scene\+Base@{Game\+Scene\+Base}}
+\subsubsection{\texorpdfstring{back\+Ground}{backGround}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_static_object}{Static\+Object}}$>$ Game\+Scene\+Base\+::back\+Ground}
+
+\mbox{\Hypertarget{class_game_scene_base_a8de41f067f4a7ed1e41f60836ea1b1e5}\label{class_game_scene_base_a8de41f067f4a7ed1e41f60836ea1b1e5}} 
+\index{Game\+Scene\+Base@{Game\+Scene\+Base}!boss@{boss}}
+\index{boss@{boss}!Game\+Scene\+Base@{Game\+Scene\+Base}}
+\subsubsection{\texorpdfstring{boss}{boss}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_boss}{Boss}}$>$ Game\+Scene\+Base\+::boss}
+
+\mbox{\Hypertarget{class_game_scene_base_a1eebaf57ec13050f35ae29074f10c668}\label{class_game_scene_base_a1eebaf57ec13050f35ae29074f10c668}} 
+\index{Game\+Scene\+Base@{Game\+Scene\+Base}!boss\+\_\+center\+\_\+x@{boss\+\_\+center\+\_\+x}}
+\index{boss\+\_\+center\+\_\+x@{boss\+\_\+center\+\_\+x}!Game\+Scene\+Base@{Game\+Scene\+Base}}
+\subsubsection{\texorpdfstring{boss\+\_\+center\+\_\+x}{boss\_center\_x}}
+{\footnotesize\ttfamily float Game\+Scene\+Base\+::boss\+\_\+center\+\_\+x}
+
+\mbox{\Hypertarget{class_game_scene_base_a32ec936c873df49cdf1400deb60c6b7f}\label{class_game_scene_base_a32ec936c873df49cdf1400deb60c6b7f}} 
+\index{Game\+Scene\+Base@{Game\+Scene\+Base}!bullet\+\_\+item@{bullet\+\_\+item}}
+\index{bullet\+\_\+item@{bullet\+\_\+item}!Game\+Scene\+Base@{Game\+Scene\+Base}}
+\subsubsection{\texorpdfstring{bullet\+\_\+item}{bullet\_item}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{class_bullet_item}{Bullet\+Item}}$>$ Game\+Scene\+Base\+::bullet\+\_\+item}
+
+\mbox{\Hypertarget{class_game_scene_base_af752b345d7711c43c8deafd6618bb62f}\label{class_game_scene_base_af752b345d7711c43c8deafd6618bb62f}} 
+\index{Game\+Scene\+Base@{Game\+Scene\+Base}!clear\+\_\+jump@{clear\+\_\+jump}}
+\index{clear\+\_\+jump@{clear\+\_\+jump}!Game\+Scene\+Base@{Game\+Scene\+Base}}
+\subsubsection{\texorpdfstring{clear\+\_\+jump}{clear\_jump}}
+{\footnotesize\ttfamily bool Game\+Scene\+Base\+::clear\+\_\+jump = false}
+
+\mbox{\Hypertarget{class_game_scene_base_aad639837dc3d0735e69052c980ec9f18}\label{class_game_scene_base_aad639837dc3d0735e69052c980ec9f18}} 
+\index{Game\+Scene\+Base@{Game\+Scene\+Base}!current\+\_\+game@{current\+\_\+game}}
+\index{current\+\_\+game@{current\+\_\+game}!Game\+Scene\+Base@{Game\+Scene\+Base}}
+\subsubsection{\texorpdfstring{current\+\_\+game}{current\_game}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3}{G\+A\+ME}} Game\+Scene\+Base\+::current\+\_\+game = \mbox{\hyperlink{class_game_scene_base_a9e25ffb879e1347e9605badaa53518f3a186495f7da296bf880df3a22a492b378}{G\+A\+M\+E\+::\+M\+A\+IN}}}
+
+\mbox{\Hypertarget{class_game_scene_base_a5203f71e49d0a65de546dce23670b39e}\label{class_game_scene_base_a5203f71e49d0a65de546dce23670b39e}} 
+\index{Game\+Scene\+Base@{Game\+Scene\+Base}!enemy@{enemy}}
+\index{enemy@{enemy}!Game\+Scene\+Base@{Game\+Scene\+Base}}
+\subsubsection{\texorpdfstring{enemy}{enemy}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{class_normal_enemy}{Normal\+Enemy}}$>$ Game\+Scene\+Base\+::enemy}
+
+\mbox{\Hypertarget{class_game_scene_base_ad34ad8c64d483b662352b9a806634bd9}\label{class_game_scene_base_ad34ad8c64d483b662352b9a806634bd9}} 
+\index{Game\+Scene\+Base@{Game\+Scene\+Base}!f\+\_\+enemy@{f\+\_\+enemy}}
+\index{f\+\_\+enemy@{f\+\_\+enemy}!Game\+Scene\+Base@{Game\+Scene\+Base}}
+\subsubsection{\texorpdfstring{f\+\_\+enemy}{f\_enemy}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{class_fly_enemy}{Fly\+Enemy}}$>$ Game\+Scene\+Base\+::f\+\_\+enemy}
+
+\mbox{\Hypertarget{class_game_scene_base_a27a6d9806fd1f23a651a545c94a24254}\label{class_game_scene_base_a27a6d9806fd1f23a651a545c94a24254}} 
+\index{Game\+Scene\+Base@{Game\+Scene\+Base}!field@{field}}
+\index{field@{field}!Game\+Scene\+Base@{Game\+Scene\+Base}}
+\subsubsection{\texorpdfstring{field}{field}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_map_object}{Map\+Object}}$>$ Game\+Scene\+Base\+::field}
+
+\mbox{\Hypertarget{class_game_scene_base_a86d056176f172dc0115d00878956a741}\label{class_game_scene_base_a86d056176f172dc0115d00878956a741}} 
+\index{Game\+Scene\+Base@{Game\+Scene\+Base}!player@{player}}
+\index{player@{player}!Game\+Scene\+Base@{Game\+Scene\+Base}}
+\subsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_player}{Player}}$>$ Game\+Scene\+Base\+::player}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/scene/main/game/base/\mbox{\hyperlink{game__scene__base_8h}{game\+\_\+scene\+\_\+base.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/scene/main/game/base/\mbox{\hyperlink{game__scene__base_8cpp}{game\+\_\+scene\+\_\+base.\+cpp}}\end{DoxyCompactItemize}

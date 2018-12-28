@@ -1,0 +1,69 @@
+\hypertarget{transform__operator_8h}{}\section{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/transform/details/transform\+\_\+operator.h ファイル}
+\label{transform__operator_8h}\index{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/transform/details/transform\+\_\+operator.\+h@{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/transform/details/transform\+\_\+operator.\+h}}
+
+
+transformクラスの演算子  
+
+
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em transformクラス \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{名前空間}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacesaki}{saki}}
+\item 
+ \mbox{\hyperlink{namespacesaki_1_1details}{saki\+::details}}
+\end{DoxyCompactItemize}
+\subsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{transform__operator_8h_a2328682ca33c766a26b51fa1e6be27d7}{S\+A\+K\+I\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+16}}
+\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T1 , typename T2 , typename Func $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_1_1details_a7f4dc51673838db3e3827296124c1fe9}{saki\+::details\+::transform\+\_\+transform\+\_\+some\+\_\+operator}} (const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}$<$ T1 $>$ \&v1, const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}$<$ T2 $>$ \&v2, Func \&\&f)
+\begin{DoxyCompactList}\small\item\em Transform同士の演算 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 , typename Func $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_1_1details_a438d746d0acdacae59451776394228ee}{saki\+::details\+::transform\+\_\+scalar\+\_\+some\+\_\+operator}} (const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}$<$ T1 $>$ \&v, const T2 \&scalar, Func \&\&f)
+\begin{DoxyCompactList}\small\item\em Transformとスカラの演算 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_a5fad053b349698ccff4e555316544e68}{saki\+::operator+}} (const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}$<$ T1 $>$ \&v1, const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}$<$ T2 $>$ \&v2)
+\begin{DoxyCompactList}\small\item\em +演算子 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_a0efe115a634ca1910687617aa064f285}{saki\+::operator-\/}} (const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}$<$ T1 $>$ \&v1, const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}$<$ T2 $>$ \&v2)
+\begin{DoxyCompactList}\small\item\em -\/演算子 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_a34247f1a3390c2425f56909e10cc11f7}{saki\+::operator$\ast$}} (const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}$<$ T1 $>$ \&v, const T2 \&scalar)
+\begin{DoxyCompactList}\small\item\em $\ast$演算子(Transform$\ast$スカラ) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_a3d3864d0a671bd119a1d8202906d09d7}{saki\+::operator$\ast$}} (const T1 \&scalar, const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}$<$ T2 $>$ \&v)
+\begin{DoxyCompactList}\small\item\em $\ast$演算子(スカラ$\ast$\+Transform) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_a1a09a61ecb48d44bcb9dc201ab30216b}{saki\+::operator/}} (const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}$<$ T1 $>$ \&v, const T2 \&scalar)
+\begin{DoxyCompactList}\small\item\em /演算子(スカラ) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\constexpr bool \mbox{\hyperlink{namespacesaki_a547efe3eda4f6c4f41c5bda2676a8c0a}{saki\+::operator==}} (const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}$<$ T $>$ \&v1, const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}$<$ T $>$ \&v2)
+\begin{DoxyCompactList}\small\item\em ==演算子 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\constexpr bool \mbox{\hyperlink{namespacesaki_a0133284e616db2357d94a6cf561e7f60}{saki\+::operator!=}} (const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}$<$ T $>$ \&v1, const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}$<$ T $>$ \&v2)
+\begin{DoxyCompactList}\small\item\em !=演算子 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr bool \mbox{\hyperlink{namespacesaki_a55c0ab8cb5196de1f32bf7bbe49591f0}{saki\+::operator==}} (const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}$<$ T1 $>$ \&v1, const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}$<$ T2 $>$ \&v2)
+\begin{DoxyCompactList}\small\item\em ==演算子(型不一致) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr bool \mbox{\hyperlink{namespacesaki_a3853c55574719f3a97496132fdcfbd94}{saki\+::operator!=}} (const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}$<$ T1 $>$ \&v1, const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}$<$ T2 $>$ \&v2)
+\begin{DoxyCompactList}\small\item\em !=演算子(型不一致) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+transformクラスの演算子 
+
+\begin{DoxyAuthor}{著者}
+石山 悠 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日付}
+2018/12/16 
+\end{DoxyDate}
+
+
+\subsection{マクロ定義詳解}
+\mbox{\Hypertarget{transform__operator_8h_a2328682ca33c766a26b51fa1e6be27d7}\label{transform__operator_8h_a2328682ca33c766a26b51fa1e6be27d7}} 
+\index{transform\+\_\+operator.\+h@{transform\+\_\+operator.\+h}!S\+A\+K\+I\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+16@{S\+A\+K\+I\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+16}}
+\index{S\+A\+K\+I\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+16@{S\+A\+K\+I\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+16}!transform\+\_\+operator.\+h@{transform\+\_\+operator.\+h}}
+\subsubsection{\texorpdfstring{S\+A\+K\+I\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+16}{SAKI\_TRANSFORM\_OPERATOR\_2018\_12\_16}}
+{\footnotesize\ttfamily \#define S\+A\+K\+I\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+16}
+

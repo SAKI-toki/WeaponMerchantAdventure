@@ -2,11 +2,6 @@
 \label{class_sound_manager}\index{Sound\+Manager@{Sound\+Manager}}
 
 
-サウンドを管理するクラス  
-
-
-
-
 {\ttfamily \#include $<$sound\+\_\+manager.\+h$>$}
 
 Sound\+Manager の継承関係図\begin{figure}[H]
@@ -18,108 +13,53 @@ Sound\+Manager の継承関係図\begin{figure}[H]
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-std\+::unique\+\_\+ptr$<$ Direct\+X\+::\+Sound\+Effect $>$ \& \mbox{\hyperlink{class_sound_manager_ab97083f065caec6d4f59c246b1978faf}{Get\+Sound}} (std\+::string, W\+C\+H\+AR $\ast$)
-\begin{DoxyCompactList}\small\item\em サウンドを返す \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_sound_manager_adab2bc016911756ffd973c7d781b5cfb}{Init}} (H\+W\+ND)
-\begin{DoxyCompactList}\small\item\em サウンドマネージャークラスの初期化 \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_sound_manager_aaf241621221cdbefeba78e8b6bc29240}{Update}} ()
-\begin{DoxyCompactList}\small\item\em サウンドマネージャーの更新 \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_sound_manager_abf0d473d0a31323c8e74684976b08e7f}{Destroy}} ()
-\begin{DoxyCompactList}\small\item\em サウンドマネージャーの破棄 \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{class_sound_manager_a5a575ac572eb0b50b3bb48b879a1a7e6}{Get\+Engine}} () const
+H\+R\+E\+S\+U\+LT \mbox{\hyperlink{class_sound_manager_abbebeb61e63a5ec91e8d3081759cf598}{init}} ()
 \item 
-void \mbox{\hyperlink{class_sound_manager_acc9fb61509f30c7eb9136386eeeb9f94}{Retry\+Audio}} ()
+H\+R\+E\+S\+U\+LT \mbox{\hyperlink{class_sound_manager_a0a2e4248f9ca4654d672342750b73fb3}{load\+\_\+sound}} (const std\+::string \&, const W\+C\+H\+AR $\ast$)
 \item 
-void \mbox{\hyperlink{class_sound_manager_a97d76cb22596fbb3c85766df0dcde757}{Suspend}} ()
+\mbox{\hyperlink{struct_sound_data}{Sound\+Data}} \mbox{\hyperlink{class_sound_manager_a71867920306703ef2f3e5331cda3c4de}{get\+\_\+sound}} (const std\+::string \&)
 \item 
-void \mbox{\hyperlink{class_sound_manager_a6107940d2299131fbd7991a4f222491b}{Resume}} ()
+void \mbox{\hyperlink{class_sound_manager_aeb159a5b4e20a7bb5da4d4377b30f5cc}{destroy}} ()
+\item 
+I\+X\+Audio2 $\ast$\& \mbox{\hyperlink{class_sound_manager_acf958b3ac76bea62fca0d4c9df8028b6}{get\+\_\+ixaudio}} ()
 \end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
 
 
-\subsection{詳解}
-サウンドを管理するクラス 
-
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_sound_manager_abf0d473d0a31323c8e74684976b08e7f}\label{class_sound_manager_abf0d473d0a31323c8e74684976b08e7f}} 
-\index{Sound\+Manager@{Sound\+Manager}!Destroy@{Destroy}}
-\index{Destroy@{Destroy}!Sound\+Manager@{Sound\+Manager}}
-\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
-{\footnotesize\ttfamily void Sound\+Manager\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_sound_manager_aeb159a5b4e20a7bb5da4d4377b30f5cc}\label{class_sound_manager_aeb159a5b4e20a7bb5da4d4377b30f5cc}} 
+\index{Sound\+Manager@{Sound\+Manager}!destroy@{destroy}}
+\index{destroy@{destroy}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Sound\+Manager\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{class_sound_manager_acf958b3ac76bea62fca0d4c9df8028b6}\label{class_sound_manager_acf958b3ac76bea62fca0d4c9df8028b6}} 
+\index{Sound\+Manager@{Sound\+Manager}!get\+\_\+ixaudio@{get\+\_\+ixaudio}}
+\index{get\+\_\+ixaudio@{get\+\_\+ixaudio}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection{\texorpdfstring{get\+\_\+ixaudio()}{get\_ixaudio()}}
+{\footnotesize\ttfamily I\+X\+Audio2$\ast$\& Sound\+Manager\+::get\+\_\+ixaudio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+\mbox{\Hypertarget{class_sound_manager_a71867920306703ef2f3e5331cda3c4de}\label{class_sound_manager_a71867920306703ef2f3e5331cda3c4de}} 
+\index{Sound\+Manager@{Sound\+Manager}!get\+\_\+sound@{get\+\_\+sound}}
+\index{get\+\_\+sound@{get\+\_\+sound}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection{\texorpdfstring{get\+\_\+sound()}{get\_sound()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sound_data}{Sound\+Data}} Sound\+Manager\+::get\+\_\+sound (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})}
 
-サウンドマネージャーの破棄 
+\mbox{\Hypertarget{class_sound_manager_abbebeb61e63a5ec91e8d3081759cf598}\label{class_sound_manager_abbebeb61e63a5ec91e8d3081759cf598}} 
+\index{Sound\+Manager@{Sound\+Manager}!init@{init}}
+\index{init@{init}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT Sound\+Manager\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_sound_manager_a5a575ac572eb0b50b3bb48b879a1a7e6}\label{class_sound_manager_a5a575ac572eb0b50b3bb48b879a1a7e6}} 
-\index{Sound\+Manager@{Sound\+Manager}!Get\+Engine@{Get\+Engine}}
-\index{Get\+Engine@{Get\+Engine}!Sound\+Manager@{Sound\+Manager}}
-\subsubsection{\texorpdfstring{Get\+Engine()}{GetEngine()}}
-{\footnotesize\ttfamily auto Sound\+Manager\+::\+Get\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_sound_manager_ab97083f065caec6d4f59c246b1978faf}\label{class_sound_manager_ab97083f065caec6d4f59c246b1978faf}} 
-\index{Sound\+Manager@{Sound\+Manager}!Get\+Sound@{Get\+Sound}}
-\index{Get\+Sound@{Get\+Sound}!Sound\+Manager@{Sound\+Manager}}
-\subsubsection{\texorpdfstring{Get\+Sound()}{GetSound()}}
-{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ Direct\+X\+::\+Sound\+Effect $>$ \& Sound\+Manager\+::\+Get\+Sound (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{W\+C\+H\+AR $\ast$}]{path }\end{DoxyParamCaption})}
-
-
-
-サウンドを返す 
-
-
-\begin{DoxyParams}{引数}
-{\em name} & mapで管理するためのキー \\
-\hline
-{\em path} & wavファイルのパス\\
-\hline
-\end{DoxyParams}
-同じファイルを2度読み込まないようにする \mbox{\Hypertarget{class_sound_manager_adab2bc016911756ffd973c7d781b5cfb}\label{class_sound_manager_adab2bc016911756ffd973c7d781b5cfb}} 
-\index{Sound\+Manager@{Sound\+Manager}!Init@{Init}}
-\index{Init@{Init}!Sound\+Manager@{Sound\+Manager}}
-\subsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily void Sound\+Manager\+::\+Init (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{h\+Wnd }\end{DoxyParamCaption})}
-
-
-
-サウンドマネージャークラスの初期化 
-
-
-\begin{DoxyParams}{引数}
-{\em h\+Wnd} & ウィンドウハンドラ \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{class_sound_manager_a6107940d2299131fbd7991a4f222491b}\label{class_sound_manager_a6107940d2299131fbd7991a4f222491b}} 
-\index{Sound\+Manager@{Sound\+Manager}!Resume@{Resume}}
-\index{Resume@{Resume}!Sound\+Manager@{Sound\+Manager}}
-\subsubsection{\texorpdfstring{Resume()}{Resume()}}
-{\footnotesize\ttfamily void Sound\+Manager\+::\+Resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_sound_manager_acc9fb61509f30c7eb9136386eeeb9f94}\label{class_sound_manager_acc9fb61509f30c7eb9136386eeeb9f94}} 
-\index{Sound\+Manager@{Sound\+Manager}!Retry\+Audio@{Retry\+Audio}}
-\index{Retry\+Audio@{Retry\+Audio}!Sound\+Manager@{Sound\+Manager}}
-\subsubsection{\texorpdfstring{Retry\+Audio()}{RetryAudio()}}
-{\footnotesize\ttfamily void Sound\+Manager\+::\+Retry\+Audio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_sound_manager_a97d76cb22596fbb3c85766df0dcde757}\label{class_sound_manager_a97d76cb22596fbb3c85766df0dcde757}} 
-\index{Sound\+Manager@{Sound\+Manager}!Suspend@{Suspend}}
-\index{Suspend@{Suspend}!Sound\+Manager@{Sound\+Manager}}
-\subsubsection{\texorpdfstring{Suspend()}{Suspend()}}
-{\footnotesize\ttfamily void Sound\+Manager\+::\+Suspend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_sound_manager_aaf241621221cdbefeba78e8b6bc29240}\label{class_sound_manager_aaf241621221cdbefeba78e8b6bc29240}} 
-\index{Sound\+Manager@{Sound\+Manager}!Update@{Update}}
-\index{Update@{Update}!Sound\+Manager@{Sound\+Manager}}
-\subsubsection{\texorpdfstring{Update()}{Update()}}
-{\footnotesize\ttfamily void Sound\+Manager\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-サウンドマネージャーの更新 
+\mbox{\Hypertarget{class_sound_manager_a0a2e4248f9ca4654d672342750b73fb3}\label{class_sound_manager_a0a2e4248f9ca4654d672342750b73fb3}} 
+\index{Sound\+Manager@{Sound\+Manager}!load\+\_\+sound@{load\+\_\+sound}}
+\index{load\+\_\+sound@{load\+\_\+sound}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection{\texorpdfstring{load\+\_\+sound()}{load\_sound()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT Sound\+Manager\+::load\+\_\+sound (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{const W\+C\+H\+AR $\ast$}]{path }\end{DoxyParamCaption})}
 
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/sound/manager/\mbox{\hyperlink{sound__manager_8h}{sound\+\_\+manager.\+h}}\item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/sound/manager/\mbox{\hyperlink{sound__manager_8cpp}{sound\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/sound/manager/\mbox{\hyperlink{sound__manager_8h}{sound\+\_\+manager.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/sound/manager/\mbox{\hyperlink{sound__manager_8cpp}{sound\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/lib/saki/distance/distance.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li><li class="navelem"><a class="el" href="dir_97801e0f0fab83ef8381284867ac8848.html">saki</a></li><li class="navelem"><a class="el" href="dir_56f329b6da16b5aecee57e3b264ede99.html">distance</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">distance.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="distance_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef SAKI_DISTANCE_2018_12_06</span></div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="distance_8h.html#ae5e5a4a9abfebaf218e991304d642abe">    9</a></span>&#160;<span class="preprocessor">#define SAKI_DISTANCE_2018_12_06</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="sqrt_8h.html">saki/constexpr_std/sqrt.h</a>&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacesaki.html">saki</a></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U = <span class="keywordtype">double</span>, <span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespacesaki.html#ac7860b024b9f60e5d2426448504cdfa5">   19</a></span>&#160;    constexpr U <a class="code" href="namespacesaki.html#ac7860b024b9f60e5d2426448504cdfa5">distanceXY</a>(<span class="keyword">const</span> T1&amp; v1, <span class="keyword">const</span> T2&amp; v2)</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> saki::sqrt&lt;U&gt;(</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            (v1.x - v2.x) * (v1.x - v2.x) +</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            (v1.y - v2.y) * (v1.y - v2.y));</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U = <span class="keywordtype">double</span>, <span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="namespacesaki.html#aa160b674649d86e048ff2676e20b0d25">   29</a></span>&#160;    constexpr U <a class="code" href="namespacesaki.html#aa160b674649d86e048ff2676e20b0d25">distanceXZ</a>(<span class="keyword">const</span> T1&amp; v1, <span class="keyword">const</span> T2&amp; v2)</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> saki::sqrt&lt;U&gt;(</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            (v1.x - v2.x) * (v1.x - v2.x) +</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            (v1.z - v2.z) * (v1.z - v2.z));</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U = <span class="keywordtype">double</span>, <span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="namespacesaki.html#a430390838f23403a3efc4182aed002b1">   39</a></span>&#160;    constexpr U <a class="code" href="namespacesaki.html#a430390838f23403a3efc4182aed002b1">distanceYZ</a>(<span class="keyword">const</span> T1&amp; v1, <span class="keyword">const</span> T2&amp; v2)</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> saki::sqrt&lt;U&gt;(</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            (v1.y - v2.y) * (v1.y - v2.y) +</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            (v1.z - v2.z) * (v1.z - v2.z));</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U = <span class="keywordtype">double</span>, <span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div><div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="namespacesaki.html#aca24fd78c511e7ccd8f14a9c04eff7e9">   49</a></span>&#160;    constexpr U <a class="code" href="namespacesaki.html#aca24fd78c511e7ccd8f14a9c04eff7e9">distanceXYZ</a>(<span class="keyword">const</span> T1&amp; v1, <span class="keyword">const</span> T2&amp; v2)</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> saki::sqrt&lt;U&gt;(</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            (v1.x - v2.x) * (v1.x - v2.x) +</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            (v1.y - v2.y) * (v1.y - v2.y) +</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            (v1.z - v2.z) * (v1.z - v2.z));</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif //SAKI_DISTANCE_2018_12_06</span></div><div class="ttc" id="namespacesaki_html_ac7860b024b9f60e5d2426448504cdfa5"><div class="ttname"><a href="namespacesaki.html#ac7860b024b9f60e5d2426448504cdfa5">saki::distanceXY</a></div><div class="ttdeci">constexpr U distanceXY(const T1 &amp;v1, const T2 &amp;v2)</div><div class="ttdoc">二点間の距離(XY) </div><div class="ttdef"><b>Definition:</b> distance.h:19</div></div>
+<div class="ttc" id="namespacesaki_html_aca24fd78c511e7ccd8f14a9c04eff7e9"><div class="ttname"><a href="namespacesaki.html#aca24fd78c511e7ccd8f14a9c04eff7e9">saki::distanceXYZ</a></div><div class="ttdeci">constexpr U distanceXYZ(const T1 &amp;v1, const T2 &amp;v2)</div><div class="ttdoc">二点間の距離(XYZ) </div><div class="ttdef"><b>Definition:</b> distance.h:49</div></div>
+<div class="ttc" id="namespacesaki_html_aa160b674649d86e048ff2676e20b0d25"><div class="ttname"><a href="namespacesaki.html#aa160b674649d86e048ff2676e20b0d25">saki::distanceXZ</a></div><div class="ttdeci">constexpr U distanceXZ(const T1 &amp;v1, const T2 &amp;v2)</div><div class="ttdoc">二点間の距離(XZ) </div><div class="ttdef"><b>Definition:</b> distance.h:29</div></div>
+<div class="ttc" id="namespacesaki_html"><div class="ttname"><a href="namespacesaki.html">saki</a></div><div class="ttdef"><b>Definition:</b> accumulate.h:15</div></div>
+<div class="ttc" id="namespacesaki_html_a430390838f23403a3efc4182aed002b1"><div class="ttname"><a href="namespacesaki.html#a430390838f23403a3efc4182aed002b1">saki::distanceYZ</a></div><div class="ttdeci">constexpr U distanceYZ(const T1 &amp;v1, const T2 &amp;v2)</div><div class="ttdoc">二点間の距離(YZ) </div><div class="ttdef"><b>Definition:</b> distance.h:39</div></div>
+<div class="ttc" id="sqrt_8h_html"><div class="ttname"><a href="sqrt_8h.html">sqrt.h</a></div><div class="ttdoc">コンパイル時平方根 </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

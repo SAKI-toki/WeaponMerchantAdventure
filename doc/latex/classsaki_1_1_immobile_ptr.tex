@@ -1,0 +1,196 @@
+\hypertarget{classsaki_1_1_immobile_ptr}{}\section{saki\+:\+:Immobile\+Ptr$<$ T $>$ クラステンプレート}
+\label{classsaki_1_1_immobile_ptr}\index{saki\+::\+Immobile\+Ptr$<$ T $>$@{saki\+::\+Immobile\+Ptr$<$ T $>$}}
+
+
+コピー・ムーブ禁止のスマートポインタ  
+
+
+
+
+{\ttfamily \#include $<$immobile\+\_\+ptr.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename ... Args$>$ }\\\mbox{\hyperlink{classsaki_1_1_immobile_ptr_a5b990c72b4222f49b160f4ed5d0c77f9}{Immobile\+Ptr}} (Args... args)
+\begin{DoxyCompactList}\small\item\em コンストラクタ時にメモリ確保 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsaki_1_1_immobile_ptr_ac51507648866a294082a9f38796ca5e4}{$\sim$\+Immobile\+Ptr}} () noexcept
+\begin{DoxyCompactList}\small\item\em デストラクタ時にメモリ解放 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsaki_1_1_immobile_ptr_a669b89e9c884f703f9dafc1257d694bf}{release}} () noexcept
+\begin{DoxyCompactList}\small\item\em 明示的なメモリ解放 \end{DoxyCompactList}\item 
+T $\ast$ \mbox{\hyperlink{classsaki_1_1_immobile_ptr_afdaa7016460af66e4e375f064e232720}{get}} ()
+\begin{DoxyCompactList}\small\item\em リソースの取得 \end{DoxyCompactList}\item 
+T $\ast$$\ast$ \mbox{\hyperlink{classsaki_1_1_immobile_ptr_a8c0dc38fed7ef4e56321909f42f9ed5f}{get\+\_\+address}} ()
+\begin{DoxyCompactList}\small\item\em リソースのアドレスを取得 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename ... Args$>$ }\\void \mbox{\hyperlink{classsaki_1_1_immobile_ptr_abc92fb9bf2200ecc6304164ae6c00e09}{reset}} (Args ...args)
+\begin{DoxyCompactList}\small\item\em 明示的なメモリ解放と新たにメモリ確保する \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsaki_1_1_immobile_ptr_aa90a657cb5b071d5561ff4f9efe8c979}{operator bool}} () const
+\begin{DoxyCompactList}\small\item\em 変換演算子 \end{DoxyCompactList}\item 
+T $\ast$ \mbox{\hyperlink{classsaki_1_1_immobile_ptr_a54b22ca7f98168cf42f3b66f3da26006}{operator-\/$>$}} () const
+\begin{DoxyCompactList}\small\item\em アロー演算子 \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classsaki_1_1_immobile_ptr_acda7da57ed5dd06c866bd7c96d254cc1}{operator$\ast$}} () const
+\begin{DoxyCompactList}\small\item\em 参照演算子 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsaki_1_1_immobile_ptr_a890a531c0e6371987cfe352196c06d3f}{Immobile\+Ptr}} (const \mbox{\hyperlink{classsaki_1_1_immobile_ptr}{Immobile\+Ptr}} \&)=delete
+\item 
+\mbox{\hyperlink{classsaki_1_1_immobile_ptr_acfc2a0ddb90c0acaaabfdeb98b10625c}{Immobile\+Ptr}} (\mbox{\hyperlink{classsaki_1_1_immobile_ptr}{Immobile\+Ptr}} \&\&)=delete
+\item 
+\mbox{\hyperlink{classsaki_1_1_immobile_ptr}{Immobile\+Ptr}} \& \mbox{\hyperlink{classsaki_1_1_immobile_ptr_ad302722791d66a361f6e198696412d4b}{operator=}} (const \mbox{\hyperlink{classsaki_1_1_immobile_ptr}{Immobile\+Ptr}} \&)=delete
+\item 
+\mbox{\hyperlink{classsaki_1_1_immobile_ptr}{Immobile\+Ptr}} \& \mbox{\hyperlink{classsaki_1_1_immobile_ptr_a115f6cb0829142d395840b921b0df629}{operator=}} (\mbox{\hyperlink{classsaki_1_1_immobile_ptr}{Immobile\+Ptr}} \&\&)=delete
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+\subsubsection*{template$<$typename T$>$\newline
+class saki\+::\+Immobile\+Ptr$<$ T $>$}
+
+コピー・ムーブ禁止のスマートポインタ 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{classsaki_1_1_immobile_ptr_a5b990c72b4222f49b160f4ed5d0c77f9}\label{classsaki_1_1_immobile_ptr_a5b990c72b4222f49b160f4ed5d0c77f9}} 
+\index{saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}!Immobile\+Ptr@{Immobile\+Ptr}}
+\index{Immobile\+Ptr@{Immobile\+Ptr}!saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}}
+\subsubsection{\texorpdfstring{Immobile\+Ptr()}{ImmobilePtr()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename ... Args$>$ \\
+\mbox{\hyperlink{classsaki_1_1_immobile_ptr}{saki\+::\+Immobile\+Ptr}}$<$ T $>$\+::\mbox{\hyperlink{classsaki_1_1_immobile_ptr}{Immobile\+Ptr}} (\begin{DoxyParamCaption}\item[{Args...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+コンストラクタ時にメモリ確保 
+
+
+\begin{DoxyParams}{引数}
+{\em args} & Tのコンストラクタに必要な引数 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsaki_1_1_immobile_ptr_ac51507648866a294082a9f38796ca5e4}\label{classsaki_1_1_immobile_ptr_ac51507648866a294082a9f38796ca5e4}} 
+\index{saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}!````~Immobile\+Ptr@{$\sim$\+Immobile\+Ptr}}
+\index{````~Immobile\+Ptr@{$\sim$\+Immobile\+Ptr}!saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}}
+\subsubsection{\texorpdfstring{$\sim$\+Immobile\+Ptr()}{~ImmobilePtr()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classsaki_1_1_immobile_ptr}{saki\+::\+Immobile\+Ptr}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classsaki_1_1_immobile_ptr}{Immobile\+Ptr}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+デストラクタ時にメモリ解放 
+
+\mbox{\Hypertarget{classsaki_1_1_immobile_ptr_a890a531c0e6371987cfe352196c06d3f}\label{classsaki_1_1_immobile_ptr_a890a531c0e6371987cfe352196c06d3f}} 
+\index{saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}!Immobile\+Ptr@{Immobile\+Ptr}}
+\index{Immobile\+Ptr@{Immobile\+Ptr}!saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}}
+\subsubsection{\texorpdfstring{Immobile\+Ptr()}{ImmobilePtr()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classsaki_1_1_immobile_ptr}{saki\+::\+Immobile\+Ptr}}$<$ T $>$\+::\mbox{\hyperlink{classsaki_1_1_immobile_ptr}{Immobile\+Ptr}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_immobile_ptr}{Immobile\+Ptr}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classsaki_1_1_immobile_ptr_acfc2a0ddb90c0acaaabfdeb98b10625c}\label{classsaki_1_1_immobile_ptr_acfc2a0ddb90c0acaaabfdeb98b10625c}} 
+\index{saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}!Immobile\+Ptr@{Immobile\+Ptr}}
+\index{Immobile\+Ptr@{Immobile\+Ptr}!saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}}
+\subsubsection{\texorpdfstring{Immobile\+Ptr()}{ImmobilePtr()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classsaki_1_1_immobile_ptr}{saki\+::\+Immobile\+Ptr}}$<$ T $>$\+::\mbox{\hyperlink{classsaki_1_1_immobile_ptr}{Immobile\+Ptr}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsaki_1_1_immobile_ptr}{Immobile\+Ptr}}$<$ T $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{classsaki_1_1_immobile_ptr_afdaa7016460af66e4e375f064e232720}\label{classsaki_1_1_immobile_ptr_afdaa7016460af66e4e375f064e232720}} 
+\index{saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}!get@{get}}
+\index{get@{get}!saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ \mbox{\hyperlink{classsaki_1_1_immobile_ptr}{saki\+::\+Immobile\+Ptr}}$<$ T $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+リソースの取得 
+
+\mbox{\Hypertarget{classsaki_1_1_immobile_ptr_a8c0dc38fed7ef4e56321909f42f9ed5f}\label{classsaki_1_1_immobile_ptr_a8c0dc38fed7ef4e56321909f42f9ed5f}} 
+\index{saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}!get\+\_\+address@{get\+\_\+address}}
+\index{get\+\_\+address@{get\+\_\+address}!saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}}
+\subsubsection{\texorpdfstring{get\+\_\+address()}{get\_address()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$$\ast$ \mbox{\hyperlink{classsaki_1_1_immobile_ptr}{saki\+::\+Immobile\+Ptr}}$<$ T $>$\+::get\+\_\+address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+リソースのアドレスを取得 
+
+\mbox{\Hypertarget{classsaki_1_1_immobile_ptr_aa90a657cb5b071d5561ff4f9efe8c979}\label{classsaki_1_1_immobile_ptr_aa90a657cb5b071d5561ff4f9efe8c979}} 
+\index{saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}}
+\subsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classsaki_1_1_immobile_ptr}{saki\+::\+Immobile\+Ptr}}$<$ T $>$\+::operator bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+変換演算子 
+
+\mbox{\Hypertarget{classsaki_1_1_immobile_ptr_acda7da57ed5dd06c866bd7c96d254cc1}\label{classsaki_1_1_immobile_ptr_acda7da57ed5dd06c866bd7c96d254cc1}} 
+\index{saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classsaki_1_1_immobile_ptr}{saki\+::\+Immobile\+Ptr}}$<$ T $>$\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+参照演算子 
+
+\mbox{\Hypertarget{classsaki_1_1_immobile_ptr_a54b22ca7f98168cf42f3b66f3da26006}\label{classsaki_1_1_immobile_ptr_a54b22ca7f98168cf42f3b66f3da26006}} 
+\index{saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}}
+\subsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ \mbox{\hyperlink{classsaki_1_1_immobile_ptr}{saki\+::\+Immobile\+Ptr}}$<$ T $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+アロー演算子 
+
+\mbox{\Hypertarget{classsaki_1_1_immobile_ptr_ad302722791d66a361f6e198696412d4b}\label{classsaki_1_1_immobile_ptr_ad302722791d66a361f6e198696412d4b}} 
+\index{saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}!operator=@{operator=}}
+\index{operator=@{operator=}!saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classsaki_1_1_immobile_ptr}{Immobile\+Ptr}}\& \mbox{\hyperlink{classsaki_1_1_immobile_ptr}{saki\+::\+Immobile\+Ptr}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_immobile_ptr}{Immobile\+Ptr}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classsaki_1_1_immobile_ptr_a115f6cb0829142d395840b921b0df629}\label{classsaki_1_1_immobile_ptr_a115f6cb0829142d395840b921b0df629}} 
+\index{saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}!operator=@{operator=}}
+\index{operator=@{operator=}!saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classsaki_1_1_immobile_ptr}{Immobile\+Ptr}}\& \mbox{\hyperlink{classsaki_1_1_immobile_ptr}{saki\+::\+Immobile\+Ptr}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsaki_1_1_immobile_ptr}{Immobile\+Ptr}}$<$ T $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classsaki_1_1_immobile_ptr_a669b89e9c884f703f9dafc1257d694bf}\label{classsaki_1_1_immobile_ptr_a669b89e9c884f703f9dafc1257d694bf}} 
+\index{saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}!release@{release}}
+\index{release@{release}!saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classsaki_1_1_immobile_ptr}{saki\+::\+Immobile\+Ptr}}$<$ T $>$\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+明示的なメモリ解放 
+
+\mbox{\Hypertarget{classsaki_1_1_immobile_ptr_abc92fb9bf2200ecc6304164ae6c00e09}\label{classsaki_1_1_immobile_ptr_abc92fb9bf2200ecc6304164ae6c00e09}} 
+\index{saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}!reset@{reset}}
+\index{reset@{reset}!saki\+::\+Immobile\+Ptr@{saki\+::\+Immobile\+Ptr}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename ... Args$>$ \\
+void \mbox{\hyperlink{classsaki_1_1_immobile_ptr}{saki\+::\+Immobile\+Ptr}}$<$ T $>$\+::reset (\begin{DoxyParamCaption}\item[{Args ...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+明示的なメモリ解放と新たにメモリ確保する 
+
+
+\begin{DoxyParams}{引数}
+{\em args} & Tのコンストラクタに必要な引数 \\
+\hline
+\end{DoxyParams}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/smart\+\_\+ptr/immobile/\mbox{\hyperlink{immobile__ptr_8h}{immobile\+\_\+ptr.\+h}}\end{DoxyCompactItemize}

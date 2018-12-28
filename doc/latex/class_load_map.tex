@@ -1,0 +1,115 @@
+\hypertarget{class_load_map}{}\section{Load\+Map クラス}
+\label{class_load_map}\index{Load\+Map@{Load\+Map}}
+
+
+マップロードクラス  
+
+
+
+
+{\ttfamily \#include $<$load\+\_\+map.\+h$>$}
+
+Load\+Map の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_load_map}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_load_map_a534a2ac8151a7549b1fed723759ab2d0}{Game\+Loading\+Map}} (W\+C\+H\+AR $\ast$, W\+C\+H\+AR $\ast$)
+\begin{DoxyCompactList}\small\item\em ゲームマップの読み込み \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_load_map_a44d4c9299837322a7eedbb298b6dbda9}{Game\+Making\+Map}} (std\+::vector$<$ \mbox{\hyperlink{class_map_object}{Map\+Object}} $>$ \&, std\+::list$<$ \mbox{\hyperlink{class_normal_enemy}{Normal\+Enemy}} $>$ \&, std\+::list$<$ \mbox{\hyperlink{class_fly_enemy}{Fly\+Enemy}} $>$ \&, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_boss}{Boss}} $>$ \&, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_player}{Player}} $>$ \&, std\+::list$<$ \mbox{\hyperlink{class_bullet_item}{Bullet\+Item}} $>$ \&)
+\begin{DoxyCompactList}\small\item\em ゲームマップの作成 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_load_map_a9cfbf3d52bcaf5384d882c1cf591bf43}{Title\+Select\+Loading\+Map}} (W\+C\+H\+AR $\ast$)
+\begin{DoxyCompactList}\small\item\em タイトルかセレクトマップの読み込み \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_load_map_a69d69c3ac701f152395a18719c16c881}{Title\+Select\+Making\+Map}} (std\+::vector$<$ \mbox{\hyperlink{class_map_object}{Map\+Object}} $>$ \&, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_player}{Player}} $>$ \&, std\+::vector$<$ \mbox{\hyperlink{class_select_obj}{Select\+Obj}} $>$ \&, \mbox{\hyperlink{class_static_object}{Static\+Object}} \&)
+\begin{DoxyCompactList}\small\item\em ゲームマップの作成 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+マップロードクラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_load_map_a534a2ac8151a7549b1fed723759ab2d0}\label{class_load_map_a534a2ac8151a7549b1fed723759ab2d0}} 
+\index{Load\+Map@{Load\+Map}!Game\+Loading\+Map@{Game\+Loading\+Map}}
+\index{Game\+Loading\+Map@{Game\+Loading\+Map}!Load\+Map@{Load\+Map}}
+\subsubsection{\texorpdfstring{Game\+Loading\+Map()}{GameLoadingMap()}}
+{\footnotesize\ttfamily void Load\+Map\+::\+Game\+Loading\+Map (\begin{DoxyParamCaption}\item[{W\+C\+H\+AR $\ast$}]{r\+\_\+map\+\_\+path,  }\item[{W\+C\+H\+AR $\ast$}]{r\+\_\+fly\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+ゲームマップの読み込み 
+
+
+\begin{DoxyParams}{引数}
+{\em r\+\_\+map\+\_\+path} & 読み込むマップcsvのパス \\
+\hline
+{\em r\+\_\+flu\+\_\+path} & 読み込む飛ぶ鳥csvのパス \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_load_map_a44d4c9299837322a7eedbb298b6dbda9}\label{class_load_map_a44d4c9299837322a7eedbb298b6dbda9}} 
+\index{Load\+Map@{Load\+Map}!Game\+Making\+Map@{Game\+Making\+Map}}
+\index{Game\+Making\+Map@{Game\+Making\+Map}!Load\+Map@{Load\+Map}}
+\subsubsection{\texorpdfstring{Game\+Making\+Map()}{GameMakingMap()}}
+{\footnotesize\ttfamily void Load\+Map\+::\+Game\+Making\+Map (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_map_object}{Map\+Object}} $>$ \&}]{m,  }\item[{std\+::list$<$ \mbox{\hyperlink{class_normal_enemy}{Normal\+Enemy}} $>$ \&}]{enemy,  }\item[{std\+::list$<$ \mbox{\hyperlink{class_fly_enemy}{Fly\+Enemy}} $>$ \&}]{f\+\_\+enemy,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_boss}{Boss}} $>$ \&}]{boss,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_player}{Player}} $>$ \&}]{player,  }\item[{std\+::list$<$ \mbox{\hyperlink{class_bullet_item}{Bullet\+Item}} $>$ \&}]{bullet\+\_\+item }\end{DoxyParamCaption})}
+
+
+
+ゲームマップの作成 
+
+
+\begin{DoxyParams}{引数}
+{\em m} & マップのstd\+::vector \\
+\hline
+{\em enemy} & 敵のstd\+::list \\
+\hline
+{\em f\+\_\+enemy} & 飛ぶ敵のstd\+::list \\
+\hline
+{\em boss} & ボスのstd\+::unique\+\_\+ptr \\
+\hline
+{\em player} & プレイヤーのstd\+::unique\+\_\+ptr \\
+\hline
+{\em bullet\+\_\+item} & 弾のアイテムのstd\+::list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_load_map_a9cfbf3d52bcaf5384d882c1cf591bf43}\label{class_load_map_a9cfbf3d52bcaf5384d882c1cf591bf43}} 
+\index{Load\+Map@{Load\+Map}!Title\+Select\+Loading\+Map@{Title\+Select\+Loading\+Map}}
+\index{Title\+Select\+Loading\+Map@{Title\+Select\+Loading\+Map}!Load\+Map@{Load\+Map}}
+\subsubsection{\texorpdfstring{Title\+Select\+Loading\+Map()}{TitleSelectLoadingMap()}}
+{\footnotesize\ttfamily void Load\+Map\+::\+Title\+Select\+Loading\+Map (\begin{DoxyParamCaption}\item[{W\+C\+H\+AR $\ast$}]{r\+\_\+map\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+タイトルかセレクトマップの読み込み 
+
+
+\begin{DoxyParams}{引数}
+{\em r\+\_\+map\+\_\+path} & 読み込むマップcsvのパス \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_load_map_a69d69c3ac701f152395a18719c16c881}\label{class_load_map_a69d69c3ac701f152395a18719c16c881}} 
+\index{Load\+Map@{Load\+Map}!Title\+Select\+Making\+Map@{Title\+Select\+Making\+Map}}
+\index{Title\+Select\+Making\+Map@{Title\+Select\+Making\+Map}!Load\+Map@{Load\+Map}}
+\subsubsection{\texorpdfstring{Title\+Select\+Making\+Map()}{TitleSelectMakingMap()}}
+{\footnotesize\ttfamily void Load\+Map\+::\+Title\+Select\+Making\+Map (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_map_object}{Map\+Object}} $>$ \&}]{m,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_player}{Player}} $>$ \&}]{player,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_select_obj}{Select\+Obj}} $>$ \&}]{select\+\_\+obj,  }\item[{\mbox{\hyperlink{class_static_object}{Static\+Object}} \&}]{sign }\end{DoxyParamCaption})}
+
+
+
+ゲームマップの作成 
+
+
+\begin{DoxyParams}{引数}
+{\em m} & マップのstd\+::vector \\
+\hline
+{\em player} & プレイヤーのstd\+::unique\+\_\+ptr \\
+\hline
+\end{DoxyParams}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/load/map/\mbox{\hyperlink{load__map_8h}{load\+\_\+map.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/load/map/\mbox{\hyperlink{load__map_8cpp}{load\+\_\+map.\+cpp}}\end{DoxyCompactItemize}

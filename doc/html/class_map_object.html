@@ -63,6 +63,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
 <a href="#pro-methods">限定公開メンバ関数</a> &#124;
 <a href="class_map_object-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
@@ -105,9 +106,9 @@ MapObject の継承関係図</div>
 <tr class="memitem:ae36fa838f3f8bac8ef2d67b39adf0298"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_map_object.html">MapObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_map_object.html#ae36fa838f3f8bac8ef2d67b39adf0298">operator=</a> (<a class="el" href="class_map_object.html">MapObject</a> &amp;&amp;other) noexcept</td></tr>
 <tr class="memdesc:ae36fa838f3f8bac8ef2d67b39adf0298"><td class="mdescLeft">&#160;</td><td class="mdescRight">ムーブ代入演算子  <a href="#ae36fa838f3f8bac8ef2d67b39adf0298">[詳解]</a><br /></td></tr>
 <tr class="separator:ae36fa838f3f8bac8ef2d67b39adf0298"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61c2b7e046b76d98adbf23c9e6302918"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_map_object.html#a61c2b7e046b76d98adbf23c9e6302918">Collision</a> (<a class="el" href="class_object_base.html">ObjectBase</a> *, <a class="el" href="common_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a>) final</td></tr>
-<tr class="memdesc:a61c2b7e046b76d98adbf23c9e6302918"><td class="mdescLeft">&#160;</td><td class="mdescRight">マップが当たってるときに実行する関数  <a href="#a61c2b7e046b76d98adbf23c9e6302918">[詳解]</a><br /></td></tr>
-<tr class="separator:a61c2b7e046b76d98adbf23c9e6302918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b9161f2723272ad361d0b190e46245"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_map_object.html#a76b9161f2723272ad361d0b190e46245">Collision</a> (<a class="el" href="class_object_base.html">ObjectBase</a> *, <a class="el" href="common_8h.html#ae148fff5818e9444b4ab2288829559bf">Vec2</a>) final</td></tr>
+<tr class="memdesc:a76b9161f2723272ad361d0b190e46245"><td class="mdescLeft">&#160;</td><td class="mdescRight">マップが当たってるときに実行する関数  <a href="#a76b9161f2723272ad361d0b190e46245">[詳解]</a><br /></td></tr>
+<tr class="separator:a76b9161f2723272ad361d0b190e46245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa601344267a49df197e841fcbd732209"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_map_object.html#aa601344267a49df197e841fcbd732209">~MapObject</a> ()</td></tr>
 <tr class="memdesc:aa601344267a49df197e841fcbd732209"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <a href="#aa601344267a49df197e841fcbd732209">[詳解]</a><br /></td></tr>
 <tr class="separator:aa601344267a49df197e841fcbd732209"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,32 +116,56 @@ MapObject の継承関係図</div>
 <tr class="memitem:a2a8e918ddfe5c6723b88b9f5c4156472 inherit pub_methods_class_static_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_object.html#a2a8e918ddfe5c6723b88b9f5c4156472">StaticObject</a> ()</td></tr>
 <tr class="memdesc:a2a8e918ddfe5c6723b88b9f5c4156472 inherit pub_methods_class_static_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="class_static_object.html#a2a8e918ddfe5c6723b88b9f5c4156472">[詳解]</a><br /></td></tr>
 <tr class="separator:a2a8e918ddfe5c6723b88b9f5c4156472 inherit pub_methods_class_static_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1518e656ce5ba408cb69f14ee3066b inherit pub_methods_class_static_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_object.html#a0e1518e656ce5ba408cb69f14ee3066b">StaticObject</a> (const <a class="el" href="class_static_object.html">StaticObject</a> &amp;other)</td></tr>
+<tr class="separator:a0e1518e656ce5ba408cb69f14ee3066b inherit pub_methods_class_static_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2a0526bd19e479ea4d1e5da236c1bf3 inherit pub_methods_class_static_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_static_object.html">StaticObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_object.html#aa2a0526bd19e479ea4d1e5da236c1bf3">operator=</a> (const <a class="el" href="class_static_object.html">StaticObject</a> &amp;other)</td></tr>
 <tr class="memdesc:aa2a0526bd19e479ea4d1e5da236c1bf3 inherit pub_methods_class_static_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">コピー代入演算子  <a href="class_static_object.html#aa2a0526bd19e479ea4d1e5da236c1bf3">[詳解]</a><br /></td></tr>
 <tr class="separator:aa2a0526bd19e479ea4d1e5da236c1bf3 inherit pub_methods_class_static_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac27301fc3d8d22aff5664f592c375cd8 inherit pub_methods_class_static_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_object.html#ac27301fc3d8d22aff5664f592c375cd8">~StaticObject</a> ()</td></tr>
 <tr class="separator:ac27301fc3d8d22aff5664f592c375cd8 inherit pub_methods_class_static_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44408a8130d19f7284fe4daaab87c712 inherit pub_methods_class_static_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_object.html#a44408a8130d19f7284fe4daaab87c712">SetColor</a> (const float, const float, const float, const float)</td></tr>
+<tr class="separator:a44408a8130d19f7284fe4daaab87c712 inherit pub_methods_class_static_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_object_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_object_base')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_object_base.html">ObjectBase</a> に属する継承公開メンバ関数</td></tr>
 <tr class="memitem:a8567572c8f524465f9c70cabdb603637 inherit pub_methods_class_object_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a8567572c8f524465f9c70cabdb603637">ObjectBase</a> (bool _gravity=false)</td></tr>
 <tr class="memdesc:a8567572c8f524465f9c70cabdb603637 inherit pub_methods_class_object_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="class_object_base.html#a8567572c8f524465f9c70cabdb603637">[詳解]</a><br /></td></tr>
 <tr class="separator:a8567572c8f524465f9c70cabdb603637 inherit pub_methods_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f5bbcf3e9036ac77a93c2243999f534 inherit pub_methods_class_object_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a5f5bbcf3e9036ac77a93c2243999f534">ObjectBase</a> (const <a class="el" href="class_object_base.html">ObjectBase</a> &amp;o)</td></tr>
-<tr class="memdesc:a5f5bbcf3e9036ac77a93c2243999f534 inherit pub_methods_class_object_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">コピーコンストラクタ  <a href="class_object_base.html#a5f5bbcf3e9036ac77a93c2243999f534">[詳解]</a><br /></td></tr>
-<tr class="separator:a5f5bbcf3e9036ac77a93c2243999f534 inherit pub_methods_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace25225cee2f693b3b507a0ef6c19938 inherit pub_methods_class_object_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#ace25225cee2f693b3b507a0ef6c19938">ObjectBase</a> (const <a class="el" href="class_object_base.html">ObjectBase</a> &amp;other)</td></tr>
+<tr class="memdesc:ace25225cee2f693b3b507a0ef6c19938 inherit pub_methods_class_object_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">コピーコンストラクタ  <a href="class_object_base.html#ace25225cee2f693b3b507a0ef6c19938">[詳解]</a><br /></td></tr>
+<tr class="separator:ace25225cee2f693b3b507a0ef6c19938 inherit pub_methods_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa475bbf5768adfb410951251f0070d19 inherit pub_methods_class_object_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_object_base.html">ObjectBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#aa475bbf5768adfb410951251f0070d19">operator=</a> (const <a class="el" href="class_object_base.html">ObjectBase</a> &amp;other)</td></tr>
 <tr class="memdesc:aa475bbf5768adfb410951251f0070d19 inherit pub_methods_class_object_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">コピー代入演算子  <a href="class_object_base.html#aa475bbf5768adfb410951251f0070d19">[詳解]</a><br /></td></tr>
 <tr class="separator:aa475bbf5768adfb410951251f0070d19 inherit pub_methods_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65028dd02e59f53f441e3dcccaf301e9 inherit pub_methods_class_object_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a65028dd02e59f53f441e3dcccaf301e9">Init</a> (std::string name, WCHAR *path, const LONG w, const LONG h, <a class="el" href="common_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a> pos, float rot=0, float scale=1)</td></tr>
-<tr class="memdesc:a65028dd02e59f53f441e3dcccaf301e9 inherit pub_methods_class_object_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化  <a href="class_object_base.html#a65028dd02e59f53f441e3dcccaf301e9">[詳解]</a><br /></td></tr>
-<tr class="separator:a65028dd02e59f53f441e3dcccaf301e9 inherit pub_methods_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ec7737feab27edbf576ac1c796c5fe inherit pub_methods_class_object_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a72ec7737feab27edbf576ac1c796c5fe">Init</a> (std::string name, WCHAR *path, const float w, const float h, <a class="el" href="common_8h.html#ab1cb35b3a17c398d8ef71d5f779808bf">Vec3</a> pos, <a class="el" href="common_8h.html#ab1cb35b3a17c398d8ef71d5f779808bf">Vec3</a> rot=saki::vector3_zero&lt; float &gt;, <a class="el" href="common_8h.html#ab1cb35b3a17c398d8ef71d5f779808bf">Vec3</a> scale=saki::vector3_one&lt; float &gt;)</td></tr>
+<tr class="memdesc:a72ec7737feab27edbf576ac1c796c5fe inherit pub_methods_class_object_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化  <a href="class_object_base.html#a72ec7737feab27edbf576ac1c796c5fe">[詳解]</a><br /></td></tr>
+<tr class="separator:a72ec7737feab27edbf576ac1c796c5fe inherit pub_methods_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b5672034139b22235ada326eb16dd3e inherit pub_methods_class_object_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a5b5672034139b22235ada326eb16dd3e">Update</a> ()</td></tr>
 <tr class="memdesc:a5b5672034139b22235ada326eb16dd3e inherit pub_methods_class_object_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新するかどうか決める  <a href="class_object_base.html#a5b5672034139b22235ada326eb16dd3e">[詳解]</a><br /></td></tr>
 <tr class="separator:a5b5672034139b22235ada326eb16dd3e inherit pub_methods_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac84be5b56d23b8809ca08e27c0dcb16a inherit pub_methods_class_object_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#ac84be5b56d23b8809ca08e27c0dcb16a">Render</a> (bool=true, const <a class="el" href="class_transform.html">Transform</a> &amp;=NULL)</td></tr>
-<tr class="memdesc:ac84be5b56d23b8809ca08e27c0dcb16a inherit pub_methods_class_object_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画するかどうかを決める  <a href="class_object_base.html#ac84be5b56d23b8809ca08e27c0dcb16a">[詳解]</a><br /></td></tr>
-<tr class="separator:ac84be5b56d23b8809ca08e27c0dcb16a inherit pub_methods_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f39c1b6f0f829ed271bd0fca9fe4756 inherit pub_methods_class_object_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a0f39c1b6f0f829ed271bd0fca9fe4756">Render</a> (bool=true, const <a class="el" href="common_8h.html#a1c43cb8f0d8a41901f3ce4c67dbbce20">Transform</a> &amp;=<a class="el" href="common_8h.html#a1c43cb8f0d8a41901f3ce4c67dbbce20">Transform</a>(saki::vector3_zero&lt; float &gt;, saki::vector3_zero&lt; float &gt;, saki::vector3_zero&lt; float &gt;))</td></tr>
+<tr class="memdesc:a0f39c1b6f0f829ed271bd0fca9fe4756 inherit pub_methods_class_object_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画するかどうかを決める  <a href="class_object_base.html#a0f39c1b6f0f829ed271bd0fca9fe4756">[詳解]</a><br /></td></tr>
+<tr class="separator:a0f39c1b6f0f829ed271bd0fca9fe4756 inherit pub_methods_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7074bc9389069351c2d0eee6a47e5ee3 inherit pub_methods_class_object_base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a7074bc9389069351c2d0eee6a47e5ee3">~ObjectBase</a> ()</td></tr>
 <tr class="separator:a7074bc9389069351c2d0eee6a47e5ee3 inherit pub_methods_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a21c5d70f23cca2a184297d766cc6acdc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_map_object.html#a21c5d70f23cca2a184297d766cc6acdc">is_mapchip</a> = true</td></tr>
+<tr class="separator:a21c5d70f23cca2a184297d766cc6acdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_class_object_base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_object_base')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_object_base.html">ObjectBase</a> に属する継承公開変数類</td></tr>
+<tr class="memitem:a82ab5370f1e5f21005131f719e06c1af inherit pub_attribs_class_object_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_8h.html#ae148fff5818e9444b4ab2288829559bf">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a82ab5370f1e5f21005131f719e06c1af">size</a></td></tr>
+<tr class="separator:a82ab5370f1e5f21005131f719e06c1af inherit pub_attribs_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03b285263802692be1f3a9a7b13e5344 inherit pub_attribs_class_object_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a03b285263802692be1f3a9a7b13e5344">status</a></td></tr>
+<tr class="separator:a03b285263802692be1f3a9a7b13e5344 inherit pub_attribs_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a570bfa03730e906989187bfbcad95c51 inherit pub_attribs_class_object_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_gravity.html">Gravity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a570bfa03730e906989187bfbcad95c51">gravity</a></td></tr>
+<tr class="separator:a570bfa03730e906989187bfbcad95c51 inherit pub_attribs_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab135a2a04e76046804f01b63df4f35c inherit pub_attribs_class_object_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#aab135a2a04e76046804f01b63df4f35c">use_gravity</a></td></tr>
+<tr class="separator:aab135a2a04e76046804f01b63df4f35c inherit pub_attribs_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff7eb5482ca9bc1cd30b84994d0dad8b inherit pub_attribs_class_object_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0c">OBJECT_TAG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#aff7eb5482ca9bc1cd30b84994d0dad8b">object_tag</a></td></tr>
+<tr class="separator:aff7eb5482ca9bc1cd30b84994d0dad8b inherit pub_attribs_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade1c868f20653a6fa5236544120eca2b inherit pub_attribs_class_object_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#ade1c868f20653a6fa5236544120eca2b">enabled</a> = true</td></tr>
+<tr class="separator:ade1c868f20653a6fa5236544120eca2b inherit pub_attribs_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8096c26fe09682da6119208d392dc62 inherit pub_attribs_class_object_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_8h.html#a1c43cb8f0d8a41901f3ce4c67dbbce20">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#ac8096c26fe09682da6119208d392dc62">transform</a></td></tr>
+<tr class="separator:ac8096c26fe09682da6119208d392dc62 inherit pub_attribs_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 限定公開メンバ関数</h2></td></tr>
@@ -154,28 +179,15 @@ MapObject の継承関係図</div>
 <tr class="memitem:afec57009537695c4715386120a619942 inherit pro_methods_class_static_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_object.html#afec57009537695c4715386120a619942">RenderProcess</a> (bool)</td></tr>
 <tr class="memdesc:afec57009537695c4715386120a619942 inherit pro_methods_class_static_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画  <a href="class_static_object.html#afec57009537695c4715386120a619942">[詳解]</a><br /></td></tr>
 <tr class="separator:afec57009537695c4715386120a619942 inherit pro_methods_class_static_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab17d0cb5b2544054022356a7ee4000db inherit pro_methods_class_static_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_object.html#ab17d0cb5b2544054022356a7ee4000db">CollisionProcess</a> (<a class="el" href="class_object_base.html">ObjectBase</a> *, <a class="el" href="common_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a>)</td></tr>
-<tr class="separator:ab17d0cb5b2544054022356a7ee4000db inherit pro_methods_class_static_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36379eb74b66c1586f1cc678a85c52c1 inherit pro_methods_class_static_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_object.html#a36379eb74b66c1586f1cc678a85c52c1">CollisionProcess</a> (<a class="el" href="class_object_base.html">ObjectBase</a> *, <a class="el" href="common_8h.html#ae148fff5818e9444b4ab2288829559bf">Vec2</a>)</td></tr>
+<tr class="separator:a36379eb74b66c1586f1cc678a85c52c1 inherit pro_methods_class_static_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 その他の継承メンバ</h2></td></tr>
-<tr class="inherit_header pub_attribs_class_object_base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_object_base')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_object_base.html">ObjectBase</a> に属する継承公開変数類</td></tr>
-<tr class="memitem:a03b285263802692be1f3a9a7b13e5344 inherit pub_attribs_class_object_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a03b285263802692be1f3a9a7b13e5344">status</a></td></tr>
-<tr class="separator:a03b285263802692be1f3a9a7b13e5344 inherit pub_attribs_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a570bfa03730e906989187bfbcad95c51 inherit pub_attribs_class_object_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_gravity.html">Gravity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a570bfa03730e906989187bfbcad95c51">gravity</a></td></tr>
-<tr class="separator:a570bfa03730e906989187bfbcad95c51 inherit pub_attribs_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab135a2a04e76046804f01b63df4f35c inherit pub_attribs_class_object_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#aab135a2a04e76046804f01b63df4f35c">use_gravity</a></td></tr>
-<tr class="separator:aab135a2a04e76046804f01b63df4f35c inherit pub_attribs_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff7eb5482ca9bc1cd30b84994d0dad8b inherit pub_attribs_class_object_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="object__base_8h.html#a0eff9883ab049ee02773dde19d057c0c">OBJECT_TAG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#aff7eb5482ca9bc1cd30b84994d0dad8b">object_tag</a></td></tr>
-<tr class="separator:aff7eb5482ca9bc1cd30b84994d0dad8b inherit pub_attribs_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade1c868f20653a6fa5236544120eca2b inherit pub_attribs_class_object_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#ade1c868f20653a6fa5236544120eca2b">enabled</a> = true</td></tr>
-<tr class="separator:ade1c868f20653a6fa5236544120eca2b inherit pub_attribs_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8096c26fe09682da6119208d392dc62 inherit pub_attribs_class_object_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#ac8096c26fe09682da6119208d392dc62">transform</a></td></tr>
-<tr class="separator:ac8096c26fe09682da6119208d392dc62 inherit pub_attribs_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_object_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_object_base')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_object_base.html">ObjectBase</a> に属する継承限定公開変数類</td></tr>
 <tr class="memitem:a16415e349623e10f45518fb637f7051b inherit pro_attribs_class_object_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite.html">Sprite</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#a16415e349623e10f45518fb637f7051b">sprite</a></td></tr>
 <tr class="separator:a16415e349623e10f45518fb637f7051b inherit pro_attribs_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abedc2ea4baa694611f8822ea6e04b210 inherit pro_attribs_class_object_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#abedc2ea4baa694611f8822ea6e04b210">worldTransform</a></td></tr>
+<tr class="memitem:abedc2ea4baa694611f8822ea6e04b210 inherit pro_attribs_class_object_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_8h.html#a1c43cb8f0d8a41901f3ce4c67dbbce20">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_base.html#abedc2ea4baa694611f8822ea6e04b210">worldTransform</a></td></tr>
 <tr class="separator:abedc2ea4baa694611f8822ea6e04b210 inherit pro_attribs_class_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
@@ -292,8 +304,8 @@ MapObject の継承関係図</div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a61c2b7e046b76d98adbf23c9e6302918"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61c2b7e046b76d98adbf23c9e6302918">&#9670;&nbsp;</a></span>Collision()</h2>
+<a id="a76b9161f2723272ad361d0b190e46245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76b9161f2723272ad361d0b190e46245">&#9670;&nbsp;</a></span>Collision()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -310,7 +322,7 @@ MapObject の継承関係図</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="common_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="common_8h.html#ae148fff5818e9444b4ab2288829559bf">Vec2</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -328,7 +340,7 @@ MapObject の継承関係図</div>
 
 <p>マップが当たってるときに実行する関数 </p>
 
-<p><a class="el" href="class_static_object.html#abe05f711f0d62319e1a11419813c5d50">StaticObject</a>を再実装しています。</p>
+<p><a class="el" href="class_static_object.html#a64c8803ff881d578d103413e299dbf7f">StaticObject</a>を再実装しています。</p>
 
 </div>
 </div>
@@ -475,9 +487,24 @@ MapObject の継承関係図</div>
 
 </div>
 </div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a21c5d70f23cca2a184297d766cc6acdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21c5d70f23cca2a184297d766cc6acdc">&#9670;&nbsp;</a></span>is_mapchip</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MapObject::is_mapchip = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/object/map/<a class="el" href="map_8h_source.html">map.h</a></li>
-<li>C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/object/map/<a class="el" href="map_8cpp.html">map.cpp</a></li>
+<li>C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/src/object/map/<a class="el" href="map_8h_source.html">map.h</a></li>
+<li>C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/src/object/map/<a class="el" href="map_8cpp.html">map.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,4 +1,23 @@
 var searchData=
 [
-  ['x',['X',['../gamepad__input_8h.html#a739845b0076428add52ca3cec492e705a02129bb861061d1a052c592e2dc6b383',1,'gamepad_input.h']]]
+  ['w',['w',['../classsaki_1_1_vector4.html#a626a70f13cca824eae75e80cb1179b1b',1,'saki::Vector4']]],
+  ['wav_5fsize',['wav_size',['../struct_sound_data.html#a7345591a265366527aa8f294baa28473',1,'SoundData']]],
+  ['weapon',['WEAPON',['../object__base_8h.html#a0eff9883ab049ee02773dde19d057c0ca192633948703cf46924846d15ea7b5c1',1,'object_base.h']]],
+  ['weapon_5fbase_2ecpp',['weapon_base.cpp',['../weapon__base_8cpp.html',1,'']]],
+  ['weapon_5fbase_2eh',['weapon_base.h',['../weapon__base_8h.html',1,'']]],
+  ['weapon_5fenabled',['weapon_enabled',['../class_weapon_base.html#a54883e3ecbc54ff42ea381a17ef8cf8f',1,'WeaponBase']]],
+  ['weaponbase',['WeaponBase',['../class_weapon_base.html',1,'']]],
+  ['weapondestroy',['WeaponDestroy',['../class_arrow.html#a1101d1159771b5c428afd3c7a6a0a4df',1,'Arrow::WeaponDestroy()'],['../class_weapon_base.html#a417784a8c8bf73cd398a77b922fc110c',1,'WeaponBase::WeaponDestroy()'],['../class_sword.html#a3f60d8b24b7847d6a84f0941820b711d',1,'Sword::WeaponDestroy()']]],
+  ['weaponrender',['WeaponRender',['../class_arrow.html#af9e54760156a77a15ad98a88f712ebdb',1,'Arrow::WeaponRender()'],['../class_weapon_base.html#af308d16d3892c3ffaeedf74b08e761b9',1,'WeaponBase::WeaponRender()'],['../class_sword.html#ac80e3b54ef5572eae1e4760d14383f4f',1,'Sword::WeaponRender()']]],
+  ['weaponstart',['WeaponStart',['../class_arrow.html#a085b5bd5f9e3ce25a081b502f9989f33',1,'Arrow::WeaponStart()'],['../class_weapon_base.html#a25cd4c351638b76377e93341a9545712',1,'WeaponBase::WeaponStart()'],['../class_sword.html#af9027f627d1db6c0ac21d2aa842cff69',1,'Sword::WeaponStart()']]],
+  ['weaponupdate',['WeaponUpdate',['../class_arrow.html#afb6110035cba7b850d12755570163b29',1,'Arrow::WeaponUpdate()'],['../class_weapon_base.html#aa1e3d02353273ab72a71cc3a1563636a',1,'WeaponBase::WeaponUpdate()'],['../class_sword.html#a5fda2f72829b6256ffc3fb18d9d065e8',1,'Sword::WeaponUpdate()']]],
+  ['wic_5floader_5fdefault',['WIC_LOADER_DEFAULT',['../namespace_direct_x.html#ad1ef6b84995b08da5a29130bd8cc5c2aa31db232209a0c414f3c5dd3f36fad240',1,'DirectX']]],
+  ['wic_5floader_5fflags',['WIC_LOADER_FLAGS',['../namespace_direct_x.html#ad1ef6b84995b08da5a29130bd8cc5c2a',1,'DirectX']]],
+  ['wic_5floader_5fforce_5fsrgb',['WIC_LOADER_FORCE_SRGB',['../namespace_direct_x.html#ad1ef6b84995b08da5a29130bd8cc5c2aa19253126a33109ad1e9ca15710a48a71',1,'DirectX']]],
+  ['wic_5floader_5fignore_5fsrgb',['WIC_LOADER_IGNORE_SRGB',['../namespace_direct_x.html#ad1ef6b84995b08da5a29130bd8cc5c2aaa411d70404895e65f12c2e6f4216636c',1,'DirectX']]],
+  ['wictextureloader_2ecpp',['WICTextureLoader.cpp',['../_w_i_c_texture_loader_8cpp.html',1,'']]],
+  ['wictextureloader_2eh',['WICTextureLoader.h',['../_w_i_c_texture_loader_8h.html',1,'']]],
+  ['wndproc',['WndProc',['../main_8cpp.html#a9135ea2a0d6fce68ba3b858226a31a4f',1,'main.cpp']]],
+  ['worldtransform',['worldTransform',['../class_object_base.html#abedc2ea4baa694611f8822ea6e04b210',1,'ObjectBase']]],
+  ['wwinmain',['wWinMain',['../main_8cpp.html#a3d5c1c0296e64ca24e2221c9d970b25c',1,'main.cpp']]]
 ];

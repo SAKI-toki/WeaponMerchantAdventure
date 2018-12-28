@@ -1,0 +1,36 @@
+\hypertarget{_w_i_c_texture_loader_8h}{}\section{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/\+W\+I\+C\+Texture/\+W\+I\+C\+Texture\+Loader.h ファイル}
+\label{_w_i_c_texture_loader_8h}\index{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/\+W\+I\+C\+Texture/\+W\+I\+C\+Texture\+Loader.\+h@{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/\+W\+I\+C\+Texture/\+W\+I\+C\+Texture\+Loader.\+h}}
+{\ttfamily \#include $<$d3d11\+\_\+1.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\subsection*{名前空間}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_direct_x}{DirectX}}
+\end{DoxyCompactItemize}
+\subsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_direct_x_ad1ef6b84995b08da5a29130bd8cc5c2a}{Direct\+X\+::\+W\+I\+C\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+F\+L\+A\+GS}} \{ \mbox{\hyperlink{namespace_direct_x_ad1ef6b84995b08da5a29130bd8cc5c2aa31db232209a0c414f3c5dd3f36fad240}{Direct\+X\+::\+W\+I\+C\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+D\+E\+F\+A\+U\+LT}} = 0, 
+\mbox{\hyperlink{namespace_direct_x_ad1ef6b84995b08da5a29130bd8cc5c2aa19253126a33109ad1e9ca15710a48a71}{Direct\+X\+::\+W\+I\+C\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+F\+O\+R\+C\+E\+\_\+\+S\+R\+GB}} = 0x1, 
+\mbox{\hyperlink{namespace_direct_x_ad1ef6b84995b08da5a29130bd8cc5c2aaa411d70404895e65f12c2e6f4216636c}{Direct\+X\+::\+W\+I\+C\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+S\+R\+GB}} = 0x2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+H\+R\+E\+S\+U\+LT \mbox{\hyperlink{namespace_direct_x_a3ce3ec875ba946920f2e8939915fd594}{Direct\+X\+::\+Create\+W\+I\+C\+Texture\+From\+Memory}} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$d3d\+Device, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(wic\+Data\+Size) const uint8\+\_\+t $\ast$wic\+Data, \+\_\+\+In\+\_\+ size\+\_\+t wic\+Data\+Size, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+View, \+\_\+\+In\+\_\+ size\+\_\+t maxsize=0)
+\item 
+H\+R\+E\+S\+U\+LT \mbox{\hyperlink{namespace_direct_x_a5fdba9031952424bfe7d31e0d859edd2}{Direct\+X\+::\+Create\+W\+I\+C\+Texture\+From\+File}} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$d3d\+Device, \+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$sz\+File\+Name, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+View, \+\_\+\+In\+\_\+ size\+\_\+t maxsize=0)
+\item 
+H\+R\+E\+S\+U\+LT \mbox{\hyperlink{namespace_direct_x_afe67970a867e51ea4f153cf50cd68f86}{Direct\+X\+::\+Create\+W\+I\+C\+Texture\+From\+Memory}} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$d3d\+Device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(wic\+Data\+Size) const uint8\+\_\+t $\ast$wic\+Data, \+\_\+\+In\+\_\+ size\+\_\+t wic\+Data\+Size, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+View, \+\_\+\+In\+\_\+ size\+\_\+t maxsize=0)
+\item 
+H\+R\+E\+S\+U\+LT \mbox{\hyperlink{namespace_direct_x_a8907d700dcbb64e9a172ac986ade4877}{Direct\+X\+::\+Create\+W\+I\+C\+Texture\+From\+File}} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$d3d\+Device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$sz\+File\+Name, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+View, \+\_\+\+In\+\_\+ size\+\_\+t maxsize=0)
+\item 
+H\+R\+E\+S\+U\+LT \mbox{\hyperlink{namespace_direct_x_a6f07a913b5f44a124de427d73afea1a4}{Direct\+X\+::\+Create\+W\+I\+C\+Texture\+From\+Memory\+Ex}} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$d3d\+Device, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(wic\+Data\+Size) const uint8\+\_\+t $\ast$wic\+Data, \+\_\+\+In\+\_\+ size\+\_\+t wic\+Data\+Size, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ unsigned int bind\+Flags, \+\_\+\+In\+\_\+ unsigned int cpu\+Access\+Flags, \+\_\+\+In\+\_\+ unsigned int misc\+Flags, \+\_\+\+In\+\_\+ unsigned int load\+Flags, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+View)
+\item 
+H\+R\+E\+S\+U\+LT \mbox{\hyperlink{namespace_direct_x_af2065bbcfa2e7f066de9583dc7c3c61d}{Direct\+X\+::\+Create\+W\+I\+C\+Texture\+From\+File\+Ex}} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$d3d\+Device, \+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$sz\+File\+Name, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ unsigned int bind\+Flags, \+\_\+\+In\+\_\+ unsigned int cpu\+Access\+Flags, \+\_\+\+In\+\_\+ unsigned int misc\+Flags, \+\_\+\+In\+\_\+ unsigned int load\+Flags, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+View)
+\item 
+H\+R\+E\+S\+U\+LT \mbox{\hyperlink{namespace_direct_x_ae20d2e1ac1ab3927c6bf8873b67e8b4b}{Direct\+X\+::\+Create\+W\+I\+C\+Texture\+From\+Memory\+Ex}} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$d3d\+Device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(wic\+Data\+Size) const uint8\+\_\+t $\ast$wic\+Data, \+\_\+\+In\+\_\+ size\+\_\+t wic\+Data\+Size, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ unsigned int bind\+Flags, \+\_\+\+In\+\_\+ unsigned int cpu\+Access\+Flags, \+\_\+\+In\+\_\+ unsigned int misc\+Flags, \+\_\+\+In\+\_\+ unsigned int load\+Flags, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+View)
+\item 
+H\+R\+E\+S\+U\+LT \mbox{\hyperlink{namespace_direct_x_add6a4b3cabfab65339e9816320bf2f5a}{Direct\+X\+::\+Create\+W\+I\+C\+Texture\+From\+File\+Ex}} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$d3d\+Device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$sz\+File\+Name, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ unsigned int bind\+Flags, \+\_\+\+In\+\_\+ unsigned int cpu\+Access\+Flags, \+\_\+\+In\+\_\+ unsigned int misc\+Flags, \+\_\+\+In\+\_\+ unsigned int load\+Flags, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+View)
+\end{DoxyCompactItemize}

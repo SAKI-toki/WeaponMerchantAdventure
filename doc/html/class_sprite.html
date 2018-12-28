@@ -62,148 +62,165 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
 <a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
 <a href="class_sprite-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">Sprite クラス</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>個々の画像を管理するクラス  
- <a href="class_sprite.html#details">[詳解]</a></p>
-
 <p><code>#include &lt;<a class="el" href="sprite_8h_source.html">sprite.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a86796a03be222a502397aa53a5207522"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a86796a03be222a502397aa53a5207522">Init</a> (std::string name, WCHAR *path, const LONG w, const LONG h, const float r=1.0f, const float g=1.0f, const float b=1.0f, const float a=1.0f)</td></tr>
-<tr class="memdesc:a86796a03be222a502397aa53a5207522"><td class="mdescLeft">&#160;</td><td class="mdescRight">各パラメータや画像を読み込む  <a href="#a86796a03be222a502397aa53a5207522">[詳解]</a><br /></td></tr>
-<tr class="separator:a86796a03be222a502397aa53a5207522"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5efaa5f750f8095c8846e2183c4d52b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#ac5efaa5f750f8095c8846e2183c4d52b">Render</a> (const <a class="el" href="class_transform.html">Transform</a> &amp;, bool=true, bool=true, const DirectX::SpriteEffects=DirectX::SpriteEffects::SpriteEffects_None)</td></tr>
-<tr class="memdesc:ac5efaa5f750f8095c8846e2183c4d52b"><td class="mdescLeft">&#160;</td><td class="mdescRight">SpriteBatchを経由して描画する  <a href="#ac5efaa5f750f8095c8846e2183c4d52b">[詳解]</a><br /></td></tr>
-<tr class="separator:ac5efaa5f750f8095c8846e2183c4d52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0565013aa0e194c67dfbaf243ab9250a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a0565013aa0e194c67dfbaf243ab9250a">SetRect</a> (const RECT &amp;new_rect)</td></tr>
-<tr class="memdesc:a0565013aa0e194c67dfbaf243ab9250a"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャの描画する部分を変える（アニメーション）  <a href="#a0565013aa0e194c67dfbaf243ab9250a">[詳解]</a><br /></td></tr>
-<tr class="separator:a0565013aa0e194c67dfbaf243ab9250a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12cba3ac1868418add3c4d95ce87e615"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a12cba3ac1868418add3c4d95ce87e615">Sprite</a> ()</td></tr>
-<tr class="separator:a12cba3ac1868418add3c4d95ce87e615"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53252d3d5fbc5438ed6bbd8b3913c3b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a53252d3d5fbc5438ed6bbd8b3913c3b4">Sprite</a> (const <a class="el" href="class_sprite.html">Sprite</a> &amp;s)</td></tr>
-<tr class="memdesc:a53252d3d5fbc5438ed6bbd8b3913c3b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">コピーコンストラクタ  <a href="#a53252d3d5fbc5438ed6bbd8b3913c3b4">[詳解]</a><br /></td></tr>
-<tr class="separator:a53252d3d5fbc5438ed6bbd8b3913c3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a53b4a3491e8d1e8c63387167dc7329"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite.html">Sprite</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a3a53b4a3491e8d1e8c63387167dc7329">operator=</a> (const <a class="el" href="class_sprite.html">Sprite</a> &amp;other)</td></tr>
-<tr class="memdesc:a3a53b4a3491e8d1e8c63387167dc7329"><td class="mdescLeft">&#160;</td><td class="mdescRight">コピー代入演算子  <a href="#a3a53b4a3491e8d1e8c63387167dc7329">[詳解]</a><br /></td></tr>
-<tr class="separator:a3a53b4a3491e8d1e8c63387167dc7329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65b9b470731149992bfa7401ffb676ae"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a65b9b470731149992bfa7401ffb676ae">Init</a> (const std::string &amp;, const WCHAR *, <a class="el" href="common_8h.html#ae148fff5818e9444b4ab2288829559bf">Vec2</a> &amp;, const std::string &amp;=&quot;shader&quot;, const WCHAR *=L&quot;sprite_shader.hlsl&quot;, const WCHAR *=L&quot;sprite_shader.hlsl&quot;, const float=1, const float=1, const float=1, const float=1)</td></tr>
+<tr class="separator:a65b9b470731149992bfa7401ffb676ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23296a54e3165adbbeb2b5351d04b921"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a23296a54e3165adbbeb2b5351d04b921">Render</a> (const <a class="el" href="common_8h.html#a1c43cb8f0d8a41901f3ce4c67dbbce20">Transform</a> &amp;, const bool=true)</td></tr>
+<tr class="separator:a23296a54e3165adbbeb2b5351d04b921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3daa8677d1205981e27bd698025afa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a0a3daa8677d1205981e27bd698025afa">ColorChange</a> (const float r, const float g, const float b, const float a)</td></tr>
+<tr class="separator:a0a3daa8677d1205981e27bd698025afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:aac62c18a9b678d357f3465d45b2e6ebd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_8h.html#ae148fff5818e9444b4ab2288829559bf">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#aac62c18a9b678d357f3465d45b2e6ebd">slice_num</a></td></tr>
+<tr class="separator:aac62c18a9b678d357f3465d45b2e6ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c96c0e7d46a79740a5fe9e71e9f132b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_8h.html#ae148fff5818e9444b4ab2288829559bf">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a5c96c0e7d46a79740a5fe9e71e9f132b">prev_slice</a></td></tr>
+<tr class="separator:a5c96c0e7d46a79740a5fe9e71e9f132b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d4903c9693bbb41094b395fe587bf47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_8h.html#ae148fff5818e9444b4ab2288829559bf">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a7d4903c9693bbb41094b395fe587bf47">current_slice</a></td></tr>
+<tr class="separator:a7d4903c9693bbb41094b395fe587bf47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8f3dc3f60aaa09306153d50e4243c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_8h.html#ae148fff5818e9444b4ab2288829559bf">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#afb8f3dc3f60aaa09306153d50e4243c9">texture_size</a></td></tr>
+<tr class="separator:afb8f3dc3f60aaa09306153d50e4243c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae561a927089192371cff0c1b7402593b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#ae561a927089192371cff0c1b7402593b">is_ui_image</a> = false</td></tr>
+<tr class="separator:ae561a927089192371cff0c1b7402593b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e306b23bbc378d1d973ca61084ebd9e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a4e306b23bbc378d1d973ca61084ebd9e">percent</a> = 1.0f</td></tr>
+<tr class="separator:a4e306b23bbc378d1d973ca61084ebd9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a9acc35b192b4150fe31b9386f7f9fc78"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a9acc35b192b4150fe31b9386f7f9fc78">depth</a> = 9999</td></tr>
+<tr class="separator:a9acc35b192b4150fe31b9386f7f9fc78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4340ffd8b88519c28822eb2e9b71bf0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#ad4340ffd8b88519c28822eb2e9b71bf0">has_target</a> = false</td></tr>
+<tr class="separator:ad4340ffd8b88519c28822eb2e9b71bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add18808500d3dca23d496757bf10259a"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#add18808500d3dca23d496757bf10259a">target_x</a> = 0</td></tr>
+<tr class="separator:add18808500d3dca23d496757bf10259a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
-<div class="textblock"><p>個々の画像を管理するクラス </p>
-</div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a12cba3ac1868418add3c4d95ce87e615"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12cba3ac1868418add3c4d95ce87e615">&#9670;&nbsp;</a></span>Sprite() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Sprite::Sprite </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a53252d3d5fbc5438ed6bbd8b3913c3b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53252d3d5fbc5438ed6bbd8b3913c3b4">&#9670;&nbsp;</a></span>Sprite() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Sprite::Sprite </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_sprite.html">Sprite</a> &amp;&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>コピーコンストラクタ </p>
-
-</div>
-</div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a86796a03be222a502397aa53a5207522"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86796a03be222a502397aa53a5207522">&#9670;&nbsp;</a></span>Init()</h2>
+<a id="a0a3daa8677d1205981e27bd698025afa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a3daa8677d1205981e27bd698025afa">&#9670;&nbsp;</a></span>ColorChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sprite::ColorChange </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65b9b470731149992bfa7401ffb676ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65b9b470731149992bfa7401ffb676ae">&#9670;&nbsp;</a></span>Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Sprite::Init </td>
+          <td class="memname">HRESULT Sprite::Init </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>texture_name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">WCHAR *&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
+          <td class="paramtype">const WCHAR *&#160;</td>
+          <td class="paramname"><em>texture_path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const LONG&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
+          <td class="paramtype"><a class="el" href="common_8h.html#ae148fff5818e9444b4ab2288829559bf">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const LONG&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>shader_name</em> = <code>&quot;shader&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>r</em> = <code>1.0f</code>, </td>
+          <td class="paramtype">const WCHAR *&#160;</td>
+          <td class="paramname"><em>v_shader_path</em> = <code>L&quot;sprite_shader.hlsl&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>g</em> = <code>1.0f</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>b</em> = <code>1.0f</code>, </td>
+          <td class="paramtype">const WCHAR *&#160;</td>
+          <td class="paramname"><em>p_shader_path</em> = <code>L&quot;sprite_shader.hlsl&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>a</em> = <code>1.0f</code>&#160;</td>
+          <td class="paramname"><em>slice_h_num</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>slice_v_num</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>slice_h_init</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>slice_v_init</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -213,49 +230,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p>各パラメータや画像を読み込む </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>mapで管理するためのキー </td></tr>
-    <tr><td class="paramname">path</td><td>テクスチャのパス </td></tr>
-    <tr><td class="paramname">w,h</td><td>テクスチャの大きさ </td></tr>
-    <tr><td class="paramname">r,g,b,a</td><td>色 </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
-<a id="a3a53b4a3491e8d1e8c63387167dc7329"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a53b4a3491e8d1e8c63387167dc7329">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_sprite.html">Sprite</a>&amp; Sprite::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_sprite.html">Sprite</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>コピー代入演算子 </p>
-
-</div>
-</div>
-<a id="ac5efaa5f750f8095c8846e2183c4d52b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5efaa5f750f8095c8846e2183c4d52b">&#9670;&nbsp;</a></span>Render()</h2>
+<a id="a23296a54e3165adbbeb2b5351d04b921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23296a54e3165adbbeb2b5351d04b921">&#9670;&nbsp;</a></span>Render()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,26 +241,14 @@ $(function() {
         <tr>
           <td class="memname">void Sprite::Render </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_transform.html">Transform</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="common_8h.html#a1c43cb8f0d8a41901f3ce4c67dbbce20">Transform</a> &amp;&#160;</td>
           <td class="paramname"><em>transform</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>affected_camera</em> = <code>true</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>center_axis</em> = <code>true</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const DirectX::SpriteEffects&#160;</td>
-          <td class="paramname"><em>sprite_effects</em> = <code>DirectX::SpriteEffects::SpriteEffects_None</code>&#160;</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>camera_affected</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -292,21 +258,25 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p>SpriteBatchを経由して描画する </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">transform</td><td>位置や回転、拡大・縮小 </td></tr>
-    <tr><td class="paramname">affected_camera</td><td>カメラの位置によって描画する位置を変えるかどうか </td></tr>
-    <tr><td class="paramname">center_axis</td><td>中心を軸に描画するかどうか </td></tr>
-    <tr><td class="paramname">sprite_effects</td><td>様々な反転 </td></tr>
-  </table>
-  </dd>
-</dl>
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a7d4903c9693bbb41094b395fe587bf47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d4903c9693bbb41094b395fe587bf47">&#9670;&nbsp;</a></span>current_slice</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_8h.html#ae148fff5818e9444b4ab2288829559bf">Vec2</a> Sprite::current_slice</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0565013aa0e194c67dfbaf243ab9250a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0565013aa0e194c67dfbaf243ab9250a">&#9670;&nbsp;</a></span>SetRect()</h2>
+<a id="a9acc35b192b4150fe31b9386f7f9fc78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9acc35b192b4150fe31b9386f7f9fc78">&#9670;&nbsp;</a></span>depth</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -315,33 +285,135 @@ $(function() {
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Sprite::SetRect </td>
-          <td>(</td>
-          <td class="paramtype">const RECT &amp;&#160;</td>
-          <td class="paramname"><em>new_rect</em></td><td>)</td>
-          <td></td>
+          <td class="memname">int Sprite::depth = 9999</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>テクスチャの描画する部分を変える（アニメーション） </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">new_rect</td><td>新しい位置のrect </td></tr>
-  </table>
-  </dd>
-</dl>
+</div>
+</div>
+<a id="ad4340ffd8b88519c28822eb2e9b71bf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4340ffd8b88519c28822eb2e9b71bf0">&#9670;&nbsp;</a></span>has_target</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Sprite::has_target = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae561a927089192371cff0c1b7402593b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae561a927089192371cff0c1b7402593b">&#9670;&nbsp;</a></span>is_ui_image</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Sprite::is_ui_image = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e306b23bbc378d1d973ca61084ebd9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e306b23bbc378d1d973ca61084ebd9e">&#9670;&nbsp;</a></span>percent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sprite::percent = 1.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c96c0e7d46a79740a5fe9e71e9f132b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c96c0e7d46a79740a5fe9e71e9f132b">&#9670;&nbsp;</a></span>prev_slice</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_8h.html#ae148fff5818e9444b4ab2288829559bf">Vec2</a> Sprite::prev_slice</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac62c18a9b678d357f3465d45b2e6ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac62c18a9b678d357f3465d45b2e6ebd">&#9670;&nbsp;</a></span>slice_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_8h.html#ae148fff5818e9444b4ab2288829559bf">Vec2</a> Sprite::slice_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add18808500d3dca23d496757bf10259a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add18808500d3dca23d496757bf10259a">&#9670;&nbsp;</a></span>target_x</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Sprite::target_x = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb8f3dc3f60aaa09306153d50e4243c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb8f3dc3f60aaa09306153d50e4243c9">&#9670;&nbsp;</a></span>texture_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_8h.html#ae148fff5818e9444b4ab2288829559bf">Vec2</a> Sprite::texture_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/rendering/sprite/<a class="el" href="sprite_8h_source.html">sprite.h</a></li>
-<li>C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/rendering/sprite/<a class="el" href="sprite_8cpp.html">sprite.cpp</a></li>
+<li>C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/src/sprite/<a class="el" href="sprite_8h_source.html">sprite.h</a></li>
+<li>C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/src/sprite/<a class="el" href="sprite_8cpp.html">sprite.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

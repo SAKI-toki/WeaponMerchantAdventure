@@ -1,0 +1,114 @@
+\hypertarget{class_game_over}{}\section{Game\+Over クラス}
+\label{class_game_over}\index{Game\+Over@{Game\+Over}}
+
+
+ゲームオーバークラス  
+
+
+
+
+{\ttfamily \#include $<$game\+\_\+over.\+h$>$}
+
+Game\+Over の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_over}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_over_ac13d1bd0fe9f8db0ef0301c9ec63a9e0}{Init}} ()
+\begin{DoxyCompactList}\small\item\em ゲームオーバーシーンの初期化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_over_afed8423e1fc3b76ba826b9c376913df9}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em 値をリセットする \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_over_ab5d86cf67969620b78fb6f978802daca}{Set\+Color}} ()
+\begin{DoxyCompactList}\small\item\em フェード時に色をセットする \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_over_a13dd856f7d38020ad388cacda5fef575}{Update}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \&, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \&\&)
+\begin{DoxyCompactList}\small\item\em ゲームオーバーシーンの更新 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_over_ae16a875f25d87d8d368f24db4137f4c1}{Render}} ()
+\begin{DoxyCompactList}\small\item\em ゲームオーバーシーンの描画 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_game_over_a7de925db0f485b924ef29f4649d2984d}{game\+\_\+over\+\_\+flg}} = false
+\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+ゲームオーバークラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_game_over_ac13d1bd0fe9f8db0ef0301c9ec63a9e0}\label{class_game_over_ac13d1bd0fe9f8db0ef0301c9ec63a9e0}} 
+\index{Game\+Over@{Game\+Over}!Init@{Init}}
+\index{Init@{Init}!Game\+Over@{Game\+Over}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Game\+Over\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ゲームオーバーシーンの初期化 
+
+\mbox{\Hypertarget{class_game_over_ae16a875f25d87d8d368f24db4137f4c1}\label{class_game_over_ae16a875f25d87d8d368f24db4137f4c1}} 
+\index{Game\+Over@{Game\+Over}!Render@{Render}}
+\index{Render@{Render}!Game\+Over@{Game\+Over}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Game\+Over\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ゲームオーバーシーンの描画 
+
+\mbox{\Hypertarget{class_game_over_afed8423e1fc3b76ba826b9c376913df9}\label{class_game_over_afed8423e1fc3b76ba826b9c376913df9}} 
+\index{Game\+Over@{Game\+Over}!Reset@{Reset}}
+\index{Reset@{Reset}!Game\+Over@{Game\+Over}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Game\+Over\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+値をリセットする 
+
+\mbox{\Hypertarget{class_game_over_ab5d86cf67969620b78fb6f978802daca}\label{class_game_over_ab5d86cf67969620b78fb6f978802daca}} 
+\index{Game\+Over@{Game\+Over}!Set\+Color@{Set\+Color}}
+\index{Set\+Color@{Set\+Color}!Game\+Over@{Game\+Over}}
+\subsubsection{\texorpdfstring{Set\+Color()}{SetColor()}}
+{\footnotesize\ttfamily void Game\+Over\+::\+Set\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+フェード時に色をセットする 
+
+\mbox{\Hypertarget{class_game_over_a13dd856f7d38020ad388cacda5fef575}\label{class_game_over_a13dd856f7d38020ad388cacda5fef575}} 
+\index{Game\+Over@{Game\+Over}!Update@{Update}}
+\index{Update@{Update}!Game\+Over@{Game\+Over}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Game\+Over\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \&}]{scene\+\_\+ptr,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \&\&}]{continue\+\_\+next }\end{DoxyParamCaption})}
+
+
+
+ゲームオーバーシーンの更新 
+
+
+\begin{DoxyParams}{引数}
+{\em scene\+\_\+ptr} & 現在のシーン情報を格納し、シーン遷移時にも利用する \\
+\hline
+{\em continue\+\_\+next} & ゲームシーンがどの難易度かわかるようにする \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_game_over_a7de925db0f485b924ef29f4649d2984d}\label{class_game_over_a7de925db0f485b924ef29f4649d2984d}} 
+\index{Game\+Over@{Game\+Over}!game\+\_\+over\+\_\+flg@{game\+\_\+over\+\_\+flg}}
+\index{game\+\_\+over\+\_\+flg@{game\+\_\+over\+\_\+flg}!Game\+Over@{Game\+Over}}
+\subsubsection{\texorpdfstring{game\+\_\+over\+\_\+flg}{game\_over\_flg}}
+{\footnotesize\ttfamily bool Game\+Over\+::game\+\_\+over\+\_\+flg = false}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/scene/main/game/over/\mbox{\hyperlink{game__over_8h}{game\+\_\+over.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/scene/main/game/over/\mbox{\hyperlink{game__over_8cpp}{game\+\_\+over.\+cpp}}\end{DoxyCompactItemize}

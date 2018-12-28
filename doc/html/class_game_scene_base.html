@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: GameSceneBase クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="class_game_scene_base-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">GameSceneBase クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>ゲームシーンのスーパークラス  
+ <a href="class_game_scene_base.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="game__scene__base_8h_source.html">game_scene_base.h</a>&gt;</code></p>
+<div class="dynheader">
+GameSceneBase の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_game_scene_base.png" usemap="#GameSceneBase_map" alt=""/>
+  <map id="GameSceneBase_map" name="GameSceneBase_map">
+<area href="class_game_scene_easy.html" title="ゲームシーン(easy)クラス " alt="GameSceneEasy" shape="rect" coords="0,56,120,80"/>
+<area href="class_game_scene_hard.html" title="ゲームシーン(hard)クラス " alt="GameSceneHard" shape="rect" coords="130,56,250,80"/>
+<area href="class_game_scene_normal.html" title="ゲームシーン(normal)クラス " alt="GameSceneNormal" shape="rect" coords="260,56,380,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a9e25ffb879e1347e9605badaa53518f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene_base.html#a9e25ffb879e1347e9605badaa53518f3">GAME</a> { <br />
+&#160;&#160;<a class="el" href="class_game_scene_base.html#a9e25ffb879e1347e9605badaa53518f3a186495f7da296bf880df3a22a492b378">GAME::MAIN</a>, 
+<a class="el" href="class_game_scene_base.html#a9e25ffb879e1347e9605badaa53518f3a0da044e5b37e6bcb3a8d01dc7362b276">GAME::TRANSLATION</a>, 
+<a class="el" href="class_game_scene_base.html#a9e25ffb879e1347e9605badaa53518f3af0523bf35faf77235783d0f3e43762d2">GAME::BOSS</a>, 
+<a class="el" href="class_game_scene_base.html#a9e25ffb879e1347e9605badaa53518f3a813461e0c58e7ad59a2fd83ca2237fec">GAME::CLEAR</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_game_scene_base.html#a9e25ffb879e1347e9605badaa53518f3ab50339a10e1de285ac99d4c3990b8693">GAME::NONE</a>
+<br />
+ }</td></tr>
+<tr class="separator:a9e25ffb879e1347e9605badaa53518f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ab37608f861866bd183801326214d0e92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene_base.html#ab37608f861866bd183801326214d0e92">GameInit</a> ()</td></tr>
+<tr class="memdesc:ab37608f861866bd183801326214d0e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲームシーンの初期化  <a href="#ab37608f861866bd183801326214d0e92">[詳解]</a><br /></td></tr>
+<tr class="separator:ab37608f861866bd183801326214d0e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9dab92c5cb057a884d12d21fe823fd9"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene_base.html#ae9dab92c5cb057a884d12d21fe823fd9">GameUpdate</a> (std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;)</td></tr>
+<tr class="memdesc:ae9dab92c5cb057a884d12d21fe823fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲームシーンの更新  <a href="#ae9dab92c5cb057a884d12d21fe823fd9">[詳解]</a><br /></td></tr>
+<tr class="separator:ae9dab92c5cb057a884d12d21fe823fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc15e7fb83c2403c2a5e65fa64ca8cb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene_base.html#acc15e7fb83c2403c2a5e65fa64ca8cb3">GameRender</a> ()</td></tr>
+<tr class="memdesc:acc15e7fb83c2403c2a5e65fa64ca8cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲームシーンの描画  <a href="#acc15e7fb83c2403c2a5e65fa64ca8cb3">[詳解]</a><br /></td></tr>
+<tr class="separator:acc15e7fb83c2403c2a5e65fa64ca8cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8105804f1a8d6d59d4278d00142680a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene_base.html#a8105804f1a8d6d59d4278d00142680a0">GameDestroy</a> ()</td></tr>
+<tr class="memdesc:a8105804f1a8d6d59d4278d00142680a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲームシーンの破棄  <a href="#a8105804f1a8d6d59d4278d00142680a0">[詳解]</a><br /></td></tr>
+<tr class="separator:a8105804f1a8d6d59d4278d00142680a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:af752b345d7711c43c8deafd6618bb62f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene_base.html#af752b345d7711c43c8deafd6618bb62f">clear_jump</a> = false</td></tr>
+<tr class="separator:af752b345d7711c43c8deafd6618bb62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad639837dc3d0735e69052c980ec9f18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_scene_base.html#a9e25ffb879e1347e9605badaa53518f3">GAME</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene_base.html#aad639837dc3d0735e69052c980ec9f18">current_game</a> = <a class="el" href="class_game_scene_base.html#a9e25ffb879e1347e9605badaa53518f3a186495f7da296bf880df3a22a492b378">GAME::MAIN</a></td></tr>
+<tr class="separator:aad639837dc3d0735e69052c980ec9f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5203f71e49d0a65de546dce23670b39e"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_normal_enemy.html">NormalEnemy</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene_base.html#a5203f71e49d0a65de546dce23670b39e">enemy</a></td></tr>
+<tr class="separator:a5203f71e49d0a65de546dce23670b39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad34ad8c64d483b662352b9a806634bd9"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_fly_enemy.html">FlyEnemy</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene_base.html#ad34ad8c64d483b662352b9a806634bd9">f_enemy</a></td></tr>
+<tr class="separator:ad34ad8c64d483b662352b9a806634bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d056176f172dc0115d00878956a741"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_player.html">Player</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene_base.html#a86d056176f172dc0115d00878956a741">player</a></td></tr>
+<tr class="separator:a86d056176f172dc0115d00878956a741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de41f067f4a7ed1e41f60836ea1b1e5"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_boss.html">Boss</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene_base.html#a8de41f067f4a7ed1e41f60836ea1b1e5">boss</a></td></tr>
+<tr class="separator:a8de41f067f4a7ed1e41f60836ea1b1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c60c7b970f081b2eee1ac14d74f6a7e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_static_object.html">StaticObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene_base.html#a0c60c7b970f081b2eee1ac14d74f6a7e">backGround</a></td></tr>
+<tr class="separator:a0c60c7b970f081b2eee1ac14d74f6a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27a6d9806fd1f23a651a545c94a24254"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_map_object.html">MapObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene_base.html#a27a6d9806fd1f23a651a545c94a24254">field</a></td></tr>
+<tr class="separator:a27a6d9806fd1f23a651a545c94a24254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32ec936c873df49cdf1400deb60c6b7f"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_bullet_item.html">BulletItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene_base.html#a32ec936c873df49cdf1400deb60c6b7f">bullet_item</a></td></tr>
+<tr class="separator:a32ec936c873df49cdf1400deb60c6b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eebaf57ec13050f35ae29074f10c668"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene_base.html#a1eebaf57ec13050f35ae29074f10c668">boss_center_x</a></td></tr>
+<tr class="separator:a1eebaf57ec13050f35ae29074f10c668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>ゲームシーンのスーパークラス </p>
+</div><h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a9e25ffb879e1347e9605badaa53518f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e25ffb879e1347e9605badaa53518f3">&#9670;&nbsp;</a></span>GAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_game_scene_base.html#a9e25ffb879e1347e9605badaa53518f3">GameSceneBase::GAME</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a9e25ffb879e1347e9605badaa53518f3a186495f7da296bf880df3a22a492b378"></a>MAIN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e25ffb879e1347e9605badaa53518f3a0da044e5b37e6bcb3a8d01dc7362b276"></a>TRANSLATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e25ffb879e1347e9605badaa53518f3af0523bf35faf77235783d0f3e43762d2"></a>BOSS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e25ffb879e1347e9605badaa53518f3a813461e0c58e7ad59a2fd83ca2237fec"></a>CLEAR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e25ffb879e1347e9605badaa53518f3ab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a8105804f1a8d6d59d4278d00142680a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8105804f1a8d6d59d4278d00142680a0">&#9670;&nbsp;</a></span>GameDestroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameSceneBase::GameDestroy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ゲームシーンの破棄 </p>
+
+</div>
+</div>
+<a id="ab37608f861866bd183801326214d0e92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab37608f861866bd183801326214d0e92">&#9670;&nbsp;</a></span>GameInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameSceneBase::GameInit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ゲームシーンの初期化 </p>
+
+</div>
+</div>
+<a id="acc15e7fb83c2403c2a5e65fa64ca8cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc15e7fb83c2403c2a5e65fa64ca8cb3">&#9670;&nbsp;</a></span>GameRender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameSceneBase::GameRender </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ゲームシーンの描画 </p>
+
+</div>
+</div>
+<a id="ae9dab92c5cb057a884d12d21fe823fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9dab92c5cb057a884d12d21fe823fd9">&#9670;&nbsp;</a></span>GameUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; GameSceneBase::GameUpdate </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_scene.html">Scene</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ゲームシーンの更新 </p>
+<dl class="section return"><dt>戻り値</dt><dd>std::shared_ptr&lt;Scene&gt; シーンが変わるなら次のシーンのstd::shared_ptr&lt;Scene&gt;を返す </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a0c60c7b970f081b2eee1ac14d74f6a7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c60c7b970f081b2eee1ac14d74f6a7e">&#9670;&nbsp;</a></span>backGround</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_static_object.html">StaticObject</a>&gt; GameSceneBase::backGround</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8de41f067f4a7ed1e41f60836ea1b1e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de41f067f4a7ed1e41f60836ea1b1e5">&#9670;&nbsp;</a></span>boss</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_boss.html">Boss</a>&gt; GameSceneBase::boss</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1eebaf57ec13050f35ae29074f10c668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eebaf57ec13050f35ae29074f10c668">&#9670;&nbsp;</a></span>boss_center_x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GameSceneBase::boss_center_x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a32ec936c873df49cdf1400deb60c6b7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32ec936c873df49cdf1400deb60c6b7f">&#9670;&nbsp;</a></span>bullet_item</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;<a class="el" href="class_bullet_item.html">BulletItem</a>&gt; GameSceneBase::bullet_item</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af752b345d7711c43c8deafd6618bb62f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af752b345d7711c43c8deafd6618bb62f">&#9670;&nbsp;</a></span>clear_jump</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GameSceneBase::clear_jump = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad639837dc3d0735e69052c980ec9f18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad639837dc3d0735e69052c980ec9f18">&#9670;&nbsp;</a></span>current_game</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_scene_base.html#a9e25ffb879e1347e9605badaa53518f3">GAME</a> GameSceneBase::current_game = <a class="el" href="class_game_scene_base.html#a9e25ffb879e1347e9605badaa53518f3a186495f7da296bf880df3a22a492b378">GAME::MAIN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5203f71e49d0a65de546dce23670b39e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5203f71e49d0a65de546dce23670b39e">&#9670;&nbsp;</a></span>enemy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;<a class="el" href="class_normal_enemy.html">NormalEnemy</a>&gt; GameSceneBase::enemy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad34ad8c64d483b662352b9a806634bd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad34ad8c64d483b662352b9a806634bd9">&#9670;&nbsp;</a></span>f_enemy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;<a class="el" href="class_fly_enemy.html">FlyEnemy</a>&gt; GameSceneBase::f_enemy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27a6d9806fd1f23a651a545c94a24254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27a6d9806fd1f23a651a545c94a24254">&#9670;&nbsp;</a></span>field</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_map_object.html">MapObject</a>&gt; GameSceneBase::field</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86d056176f172dc0115d00878956a741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86d056176f172dc0115d00878956a741">&#9670;&nbsp;</a></span>player</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_player.html">Player</a>&gt; GameSceneBase::player</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/src/scene/main/game/base/<a class="el" href="game__scene__base_8h_source.html">game_scene_base.h</a></li>
+<li>C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/src/scene/main/game/base/<a class="el" href="game__scene__base_8cpp.html">game_scene_base.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

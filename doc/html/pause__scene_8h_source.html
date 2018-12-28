@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/src/scene/pause/pause_scene.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_98cdb10f369f6a3b9149e010b312bf5d.html">src</a></li><li class="navelem"><a class="el" href="dir_055e45f868f3a0229f2a949d2a33000f.html">scene</a></li><li class="navelem"><a class="el" href="dir_e54f7956b9180928d261abe28ce18472.html">pause</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">pause_scene.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pause__scene_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;../scene.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="singleton_8h.html">saki/singleton/singleton.h</a>&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../../sprite/sprite.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../../sound/bgm/bgm.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_pause_scene.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_pause_scene.html">PauseScene</a> :<span class="keyword">public</span> <a class="code" href="classsaki_1_1_singleton.html">saki::Singleton</a>&lt;PauseScene&gt;,<span class="keyword">public</span> <a class="code" href="class_scene.html">Scene</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_sound.html">Sound</a> move_sound;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_sound.html">Sound</a> accept_sound;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">//テクスチャ</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_sprite.html">Sprite</a> black;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_sprite.html">Sprite</a> next_scene[2];</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">int</span> current_select = 0;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">bool</span> upflg = <span class="keyword">true</span>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">bool</span> downflg = <span class="keyword">true</span>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pause_scene.html#ad2df77966e0ac9ef6dfa99e416498183">Init</a>();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::shared_ptr&lt;Scene&gt; <a class="code" href="class_pause_scene.html#a6adfe0685eb6bc64e658f6364c9f704d">Update</a>(std::shared_ptr&lt;Scene&gt;&amp;);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pause_scene.html#a4eeb70d814edbe91a10e315c5e9942df">Render</a>();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pause_scene.html#a1ff30a4006f7b93f13305b270bc0d913">Destroy</a>();</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_pause_scene.html#ae6b7dfe712032062c6406a05cd258756">   21</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_pause_scene.html#ae6b7dfe712032062c6406a05cd258756">is_pause</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_pause_scene.html#add74d9bcc744eaedbd6e8e10c5ee3bcc">   22</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pause_scene.html#add74d9bcc744eaedbd6e8e10c5ee3bcc">Reset</a>()</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        current_select = 0;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        next_scene[0].<a class="code" href="class_sprite.html#a0a3daa8677d1205981e27bd698025afa">ColorChange</a>(1.0f, 1.0f, 1.0f, 1.0f);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        next_scene[1].<a class="code" href="class_sprite.html#a0a3daa8677d1205981e27bd698025afa">ColorChange</a>(0.4f, 0.4f, 0.4f, 1.0f);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        upflg = <span class="keyword">true</span>;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        downflg = <span class="keyword">true</span>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_pause_scene.html#a894f114f5398caf802eaad77826b7b2c">   30</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pause_scene.html#a894f114f5398caf802eaad77826b7b2c">EndPause</a>()</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="class_pause_scene.html#ae6b7dfe712032062c6406a05cd258756">is_pause</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="class_pause_scene.html#add74d9bcc744eaedbd6e8e10c5ee3bcc">Reset</a>();</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_pause_scene.html#acc1c366b69b6de802332b4e3d7993b41">   35</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pause_scene.html#acc1c366b69b6de802332b4e3d7993b41">SwitchPause</a>()</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_pause_scene.html#ae6b7dfe712032062c6406a05cd258756">is_pause</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        move_sound.<a class="code" href="class_sound.html#a07c551ab56d2f83a861a2f7fd81b480a">stop</a>();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        accept_sound.<a class="code" href="class_sound.html#a07c551ab56d2f83a861a2f7fd81b480a">stop</a>();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classsaki_1_1_singleton.html#a198911b1e5a72914511ffd6f50e4da2f">BGM::getinstance</a>()-&gt;SetVolume(0.55f);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div><div class="ttc" id="singleton_8h_html"><div class="ttname"><a href="singleton_8h.html">singleton.h</a></div><div class="ttdoc">シングルトンクラス </div></div>
+<div class="ttc" id="class_sound_html"><div class="ttname"><a href="class_sound.html">Sound</a></div><div class="ttdef"><b>Definition:</b> sound.h:5</div></div>
+<div class="ttc" id="class_sound_html_a07c551ab56d2f83a861a2f7fd81b480a"><div class="ttname"><a href="class_sound.html#a07c551ab56d2f83a861a2f7fd81b480a">Sound::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdef"><b>Definition:</b> sound.h:25</div></div>
+<div class="ttc" id="class_pause_scene_html_ae6b7dfe712032062c6406a05cd258756"><div class="ttname"><a href="class_pause_scene.html#ae6b7dfe712032062c6406a05cd258756">PauseScene::is_pause</a></div><div class="ttdeci">bool is_pause</div><div class="ttdef"><b>Definition:</b> pause_scene.h:21</div></div>
+<div class="ttc" id="class_pause_scene_html_a1ff30a4006f7b93f13305b270bc0d913"><div class="ttname"><a href="class_pause_scene.html#a1ff30a4006f7b93f13305b270bc0d913">PauseScene::Destroy</a></div><div class="ttdeci">void Destroy()</div><div class="ttdef"><b>Definition:</b> pause_scene.cpp:101</div></div>
+<div class="ttc" id="class_pause_scene_html_a4eeb70d814edbe91a10e315c5e9942df"><div class="ttname"><a href="class_pause_scene.html#a4eeb70d814edbe91a10e315c5e9942df">PauseScene::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdef"><b>Definition:</b> pause_scene.cpp:86</div></div>
+<div class="ttc" id="class_pause_scene_html_acc1c366b69b6de802332b4e3d7993b41"><div class="ttname"><a href="class_pause_scene.html#acc1c366b69b6de802332b4e3d7993b41">PauseScene::SwitchPause</a></div><div class="ttdeci">void SwitchPause()</div><div class="ttdef"><b>Definition:</b> pause_scene.h:35</div></div>
+<div class="ttc" id="classsaki_1_1_singleton_html"><div class="ttname"><a href="classsaki_1_1_singleton.html">saki::Singleton</a></div><div class="ttdoc">継承するとシングルトンクラスになる </div><div class="ttdef"><b>Definition:</b> singleton.h:21</div></div>
+<div class="ttc" id="class_pause_scene_html_ad2df77966e0ac9ef6dfa99e416498183"><div class="ttname"><a href="class_pause_scene.html#ad2df77966e0ac9ef6dfa99e416498183">PauseScene::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> pause_scene.cpp:5</div></div>
+<div class="ttc" id="class_sprite_html"><div class="ttname"><a href="class_sprite.html">Sprite</a></div><div class="ttdef"><b>Definition:</b> sprite.h:5</div></div>
+<div class="ttc" id="class_scene_html"><div class="ttname"><a href="class_scene.html">Scene</a></div><div class="ttdoc">マネージャーを含まないシーンのスーパークラス </div><div class="ttdef"><b>Definition:</b> scene.h:14</div></div>
+<div class="ttc" id="class_pause_scene_html_a894f114f5398caf802eaad77826b7b2c"><div class="ttname"><a href="class_pause_scene.html#a894f114f5398caf802eaad77826b7b2c">PauseScene::EndPause</a></div><div class="ttdeci">void EndPause()</div><div class="ttdef"><b>Definition:</b> pause_scene.h:30</div></div>
+<div class="ttc" id="class_pause_scene_html"><div class="ttname"><a href="class_pause_scene.html">PauseScene</a></div><div class="ttdef"><b>Definition:</b> pause_scene.h:6</div></div>
+<div class="ttc" id="classsaki_1_1_singleton_html_a198911b1e5a72914511ffd6f50e4da2f"><div class="ttname"><a href="classsaki_1_1_singleton.html#a198911b1e5a72914511ffd6f50e4da2f">saki::Singleton&lt; BGM &gt;::getinstance</a></div><div class="ttdeci">static std::unique_ptr&lt; BGM &gt; &amp; getinstance()</div><div class="ttdoc">インスタンスを取得 </div><div class="ttdef"><b>Definition:</b> singleton.h:28</div></div>
+<div class="ttc" id="class_pause_scene_html_add74d9bcc744eaedbd6e8e10c5ee3bcc"><div class="ttname"><a href="class_pause_scene.html#add74d9bcc744eaedbd6e8e10c5ee3bcc">PauseScene::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdef"><b>Definition:</b> pause_scene.h:22</div></div>
+<div class="ttc" id="class_sprite_html_a0a3daa8677d1205981e27bd698025afa"><div class="ttname"><a href="class_sprite.html#a0a3daa8677d1205981e27bd698025afa">Sprite::ColorChange</a></div><div class="ttdeci">void ColorChange(const float r, const float g, const float b, const float a)</div><div class="ttdef"><b>Definition:</b> sprite.h:32</div></div>
+<div class="ttc" id="class_pause_scene_html_a6adfe0685eb6bc64e658f6364c9f704d"><div class="ttname"><a href="class_pause_scene.html#a6adfe0685eb6bc64e658f6364c9f704d">PauseScene::Update</a></div><div class="ttdeci">std::shared_ptr&lt; Scene &gt; Update(std::shared_ptr&lt; Scene &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> pause_scene.cpp:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

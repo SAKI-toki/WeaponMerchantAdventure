@@ -16,10 +16,10 @@ void \mbox{\hyperlink{class_gravity_acd4190d806a404342bbb49031e47b7b6}{Init}} (c
 \begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_gravity}{Gravity}} \& \mbox{\hyperlink{class_gravity_a68162c6452cad9eef17c6688266023c0}{operator=}} (const \mbox{\hyperlink{class_gravity}{Gravity}} \&other)
 \begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\item 
-\mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \mbox{\hyperlink{class_gravity_a310540f600900ee0b93f7e84dd2f2b26}{Add\+Gravity}} ()
+\mbox{\hyperlink{common_8h_ab1cb35b3a17c398d8ef71d5f779808bf}{Vec3}} \mbox{\hyperlink{class_gravity_aaa4ff8499bad48efebed909ab16b6dfa}{Add\+Gravity}} ()
 \begin{DoxyCompactList}\small\item\em 重力の追加 \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_gravity_af31f3dceee7c82385b4c93569e215f91}{Set\+Up\+Power}} (const float up\+\_\+power)
-\begin{DoxyCompactList}\small\item\em 重力加速度のセット \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gravity_ace00a42ac3fc74608e77cffa7f39baae}{Set\+Up\+Power}} (const float up\+\_\+power)
+\begin{DoxyCompactList}\small\item\em 重力加速度のセット(ジャンプ) \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_gravity_a76503b3788b696748828f6e48556b9ab}{Set\+Side\+Power}} (const float side\+\_\+power)
 \begin{DoxyCompactList}\small\item\em 横移動の加速度のセット \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_gravity_aa334a7ebbbd79ca28e7d29c3fc5c03ed}{Reset\+Gravity}} ()
@@ -31,18 +31,22 @@ void \mbox{\hyperlink{class_gravity_a56fa68b18b0426bdb267850e1917eb05}{Hit\+Head
 bool \mbox{\hyperlink{class_gravity_a1efc862b822ca8cfea80b066ed4479f9}{Return\+Zero}} (const float speed)
 \begin{DoxyCompactList}\small\item\em 横移動でスティック入力していないときの減速 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_gravity_a015bda4dc0019baaa70378e1d6715a55}{Direct\+Set\+Side\+Power}} (const float side\+\_\+power)
-\begin{DoxyCompactList}\small\item\em 直接横の力を入れる \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 直接横の力を入れる \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_gravity_a32728f5db170dedc5a2a5282c7ec1a78}{Get\+Side\+Power}} ()
+\item 
+void \mbox{\hyperlink{class_gravity_a74d50df160f70b19f82e382b2a90be3e}{Set\+Max\+Speed}} (const float speed)
+\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
 重力を管理するクラス 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_gravity_a310540f600900ee0b93f7e84dd2f2b26}\label{class_gravity_a310540f600900ee0b93f7e84dd2f2b26}} 
+\mbox{\Hypertarget{class_gravity_aaa4ff8499bad48efebed909ab16b6dfa}\label{class_gravity_aaa4ff8499bad48efebed909ab16b6dfa}} 
 \index{Gravity@{Gravity}!Add\+Gravity@{Add\+Gravity}}
 \index{Add\+Gravity@{Add\+Gravity}!Gravity@{Gravity}}
 \subsubsection{\texorpdfstring{Add\+Gravity()}{AddGravity()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} Gravity\+::\+Add\+Gravity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{common_8h_ab1cb35b3a17c398d8ef71d5f779808bf}{Vec3}} Gravity\+::\+Add\+Gravity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -66,6 +70,12 @@ V\+E\+C2 移動量
 {\em side\+\_\+power} & 横の力 \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_gravity_a32728f5db170dedc5a2a5282c7ec1a78}\label{class_gravity_a32728f5db170dedc5a2a5282c7ec1a78}} 
+\index{Gravity@{Gravity}!Get\+Side\+Power@{Get\+Side\+Power}}
+\index{Get\+Side\+Power@{Get\+Side\+Power}!Gravity@{Gravity}}
+\subsubsection{\texorpdfstring{Get\+Side\+Power()}{GetSidePower()}}
+{\footnotesize\ttfamily float Gravity\+::\+Get\+Side\+Power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
 \mbox{\Hypertarget{class_gravity_a56fa68b18b0426bdb267850e1917eb05}\label{class_gravity_a56fa68b18b0426bdb267850e1917eb05}} 
 \index{Gravity@{Gravity}!Hit\+Head@{Hit\+Head}}
 \index{Hit\+Head@{Hit\+Head}!Gravity@{Gravity}}
@@ -118,11 +128,16 @@ V\+E\+C2 移動量
 \subsubsection{\texorpdfstring{Reset\+Side\+Gravity()}{ResetSideGravity()}}
 {\footnotesize\ttfamily void Gravity\+::\+Reset\+Side\+Gravity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+\begin{DoxyParams}{引数}
+{\em 重力系の横方向のみリセット} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_gravity_a1efc862b822ca8cfea80b066ed4479f9}\label{class_gravity_a1efc862b822ca8cfea80b066ed4479f9}} 
 \index{Gravity@{Gravity}!Return\+Zero@{Return\+Zero}}
 \index{Return\+Zero@{Return\+Zero}!Gravity@{Gravity}}
 \subsubsection{\texorpdfstring{Return\+Zero()}{ReturnZero()}}
-{\footnotesize\ttfamily bool Gravity\+::\+Return\+Zero (\begin{DoxyParamCaption}\item[{const float}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool Gravity\+::\+Return\+Zero (\begin{DoxyParamCaption}\item[{const float}]{speed }\end{DoxyParamCaption})}
 
 
 
@@ -136,6 +151,12 @@ V\+E\+C2 移動量
 \begin{DoxyReturn}{戻り値}
 bool スピードゼロになったかどうか 
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_gravity_a74d50df160f70b19f82e382b2a90be3e}\label{class_gravity_a74d50df160f70b19f82e382b2a90be3e}} 
+\index{Gravity@{Gravity}!Set\+Max\+Speed@{Set\+Max\+Speed}}
+\index{Set\+Max\+Speed@{Set\+Max\+Speed}!Gravity@{Gravity}}
+\subsubsection{\texorpdfstring{Set\+Max\+Speed()}{SetMaxSpeed()}}
+{\footnotesize\ttfamily void Gravity\+::\+Set\+Max\+Speed (\begin{DoxyParamCaption}\item[{const float}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
 \mbox{\Hypertarget{class_gravity_a76503b3788b696748828f6e48556b9ab}\label{class_gravity_a76503b3788b696748828f6e48556b9ab}} 
 \index{Gravity@{Gravity}!Set\+Side\+Power@{Set\+Side\+Power}}
 \index{Set\+Side\+Power@{Set\+Side\+Power}!Gravity@{Gravity}}
@@ -151,24 +172,27 @@ bool スピードゼロになったかどうか
 {\em side\+\_\+power} & 加速度 \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_gravity_af31f3dceee7c82385b4c93569e215f91}\label{class_gravity_af31f3dceee7c82385b4c93569e215f91}} 
+\mbox{\Hypertarget{class_gravity_ace00a42ac3fc74608e77cffa7f39baae}\label{class_gravity_ace00a42ac3fc74608e77cffa7f39baae}} 
 \index{Gravity@{Gravity}!Set\+Up\+Power@{Set\+Up\+Power}}
 \index{Set\+Up\+Power@{Set\+Up\+Power}!Gravity@{Gravity}}
 \subsubsection{\texorpdfstring{Set\+Up\+Power()}{SetUpPower()}}
-{\footnotesize\ttfamily void Gravity\+::\+Set\+Up\+Power (\begin{DoxyParamCaption}\item[{const float}]{up\+\_\+power }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool Gravity\+::\+Set\+Up\+Power (\begin{DoxyParamCaption}\item[{const float}]{up\+\_\+power }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-重力加速度のセット 
+重力加速度のセット(ジャンプ) 
 
 
 \begin{DoxyParams}{引数}
 {\em up\+\_\+power} & 加速度 \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+bool ジャンプできたかどうか 
+\end{DoxyReturn}
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/gravity/\mbox{\hyperlink{gravity_8h}{gravity.\+h}}\item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/gravity/\mbox{\hyperlink{gravity_8cpp}{gravity.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/gravity/\mbox{\hyperlink{gravity_8h}{gravity.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/gravity/\mbox{\hyperlink{gravity_8cpp}{gravity.\+cpp}}\end{DoxyCompactItemize}

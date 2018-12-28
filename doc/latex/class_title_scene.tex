@@ -20,13 +20,12 @@ Title\+Scene の継承関係図\begin{figure}[H]
 \item 
 void \mbox{\hyperlink{class_title_scene_a3d039e7db0fa1e22e8c36d3cedfbd318}{Init}} () final
 \begin{DoxyCompactList}\small\item\em タイトルシーンの初期化 \end{DoxyCompactList}\item 
-\mbox{\hyperlink{scene__base_8h_a24cee5343fb9d0706ead6e8601f363be}{S\+C\+E\+NE}} \mbox{\hyperlink{class_title_scene_a19f6ee49ca6c8526fb1af2c0a2df9a33}{Update}} () final
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \mbox{\hyperlink{class_title_scene_ab3097e96e2fe65d6fad0d6bb45a14f9f}{Update}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \&) final
 \begin{DoxyCompactList}\small\item\em タイトルシーンの更新 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_title_scene_af12c59b3bf9458640938c5ca620527ae}{Render}} () final
 \begin{DoxyCompactList}\small\item\em タイトルシーンの描画 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_title_scene_adfbc5f934572ede2e36419b089c88fe8}{Destroy}} () final
 \begin{DoxyCompactList}\small\item\em タイトルシーンの破棄 \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{その他の継承メンバ}
 
 
 \subsection{詳解}
@@ -75,26 +74,26 @@ void \mbox{\hyperlink{class_title_scene_adfbc5f934572ede2e36419b089c88fe8}{Destr
 
 \mbox{\hyperlink{class_scene_base_ad981674ce731ea267f398e889bbb9dc3}{Scene\+Base}}を実装しています。
 
-\mbox{\Hypertarget{class_title_scene_a19f6ee49ca6c8526fb1af2c0a2df9a33}\label{class_title_scene_a19f6ee49ca6c8526fb1af2c0a2df9a33}} 
+\mbox{\Hypertarget{class_title_scene_ab3097e96e2fe65d6fad0d6bb45a14f9f}\label{class_title_scene_ab3097e96e2fe65d6fad0d6bb45a14f9f}} 
 \index{Title\+Scene@{Title\+Scene}!Update@{Update}}
 \index{Update@{Update}!Title\+Scene@{Title\+Scene}}
 \subsubsection{\texorpdfstring{Update()}{Update()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{scene__base_8h_a24cee5343fb9d0706ead6e8601f363be}{S\+C\+E\+NE}} Title\+Scene\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ Title\+Scene\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
 
 
 
 タイトルシーンの更新 
 
 \begin{DoxyReturn}{戻り値}
-S\+C\+E\+NE シーンが変わるなら次のシーンのenum classを返す 
+std\+::shared\+\_\+ptr$<$\+Scene$>$ シーンが変わるなら次のシーンのstd\+::shared\+\_\+ptr$<$\+Scene$>$を返す 
 \end{DoxyReturn}
 
 
-\mbox{\hyperlink{class_scene_acb50f8104e5a7cfecbdececa7d5f1b39}{Scene}}を実装しています。
+\mbox{\hyperlink{class_scene_ab71ee5f19764b90c87b4574aa1cb1d25}{Scene}}を実装しています。
 
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/scene/main/title/\mbox{\hyperlink{title__scene_8h}{title\+\_\+scene.\+h}}\item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/scene/main/title/\mbox{\hyperlink{title__scene_8cpp}{title\+\_\+scene.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/scene/main/title/\mbox{\hyperlink{title__scene_8h}{title\+\_\+scene.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/scene/main/title/\mbox{\hyperlink{title__scene_8cpp}{title\+\_\+scene.\+cpp}}\end{DoxyCompactItemize}

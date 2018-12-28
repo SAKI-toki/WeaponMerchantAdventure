@@ -1,0 +1,71 @@
+\hypertarget{classsaki_1_1_singleton}{}\section{saki\+:\+:Singleton$<$ T $>$ クラステンプレート}
+\label{classsaki_1_1_singleton}\index{saki\+::\+Singleton$<$ T $>$@{saki\+::\+Singleton$<$ T $>$}}
+
+
+継承するとシングルトンクラスになる  
+
+
+
+
+{\ttfamily \#include $<$singleton.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classsaki_1_1_singleton_a3ff92ba5c83fba36d539cfa16d35599a}{$\sim$\+Singleton}} ()
+\end{DoxyCompactItemize}
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::unique\+\_\+ptr$<$ T $>$ \& \mbox{\hyperlink{classsaki_1_1_singleton_a198911b1e5a72914511ffd6f50e4da2f}{getinstance}} ()
+\begin{DoxyCompactList}\small\item\em インスタンスを取得 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsaki_1_1_singleton_a1cd9f69783e3c0c83db851edc061bb7f}{Singleton}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+\subsubsection*{template$<$typename T$>$\newline
+class saki\+::\+Singleton$<$ T $>$}
+
+継承するとシングルトンクラスになる 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{classsaki_1_1_singleton_a3ff92ba5c83fba36d539cfa16d35599a}\label{classsaki_1_1_singleton_a3ff92ba5c83fba36d539cfa16d35599a}} 
+\index{saki\+::\+Singleton@{saki\+::\+Singleton}!````~Singleton@{$\sim$\+Singleton}}
+\index{````~Singleton@{$\sim$\+Singleton}!saki\+::\+Singleton@{saki\+::\+Singleton}}
+\subsubsection{\texorpdfstring{$\sim$\+Singleton()}{~Singleton()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual \mbox{\hyperlink{classsaki_1_1_singleton}{saki\+::\+Singleton}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classsaki_1_1_singleton}{Singleton}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classsaki_1_1_singleton_a1cd9f69783e3c0c83db851edc061bb7f}\label{classsaki_1_1_singleton_a1cd9f69783e3c0c83db851edc061bb7f}} 
+\index{saki\+::\+Singleton@{saki\+::\+Singleton}!Singleton@{Singleton}}
+\index{Singleton@{Singleton}!saki\+::\+Singleton@{saki\+::\+Singleton}}
+\subsubsection{\texorpdfstring{Singleton()}{Singleton()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classsaki_1_1_singleton}{saki\+::\+Singleton}}$<$ T $>$\+::\mbox{\hyperlink{classsaki_1_1_singleton}{Singleton}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{classsaki_1_1_singleton_a198911b1e5a72914511ffd6f50e4da2f}\label{classsaki_1_1_singleton_a198911b1e5a72914511ffd6f50e4da2f}} 
+\index{saki\+::\+Singleton@{saki\+::\+Singleton}!getinstance@{getinstance}}
+\index{getinstance@{getinstance}!saki\+::\+Singleton@{saki\+::\+Singleton}}
+\subsubsection{\texorpdfstring{getinstance()}{getinstance()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+static std\+::unique\+\_\+ptr$<$T$>$\& \mbox{\hyperlink{classsaki_1_1_singleton}{saki\+::\+Singleton}}$<$ T $>$\+::getinstance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+インスタンスを取得 
+
+\begin{DoxyReturn}{戻り値}
+std\+::unique\+\_\+ptr$<$\+T$>$ インスタンスを返す 
+\end{DoxyReturn}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/singleton/\mbox{\hyperlink{singleton_8h}{singleton.\+h}}\end{DoxyCompactItemize}

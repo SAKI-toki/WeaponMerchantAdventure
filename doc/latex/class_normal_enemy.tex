@@ -22,14 +22,16 @@ Normal\+Enemy の継承関係図\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_normal_enemy_a08bfcea97297d0cff5c10854c8f5ffb8}{Normal\+Enemy}} (const \mbox{\hyperlink{class_normal_enemy}{Normal\+Enemy}} \&ne)
 \begin{DoxyCompactList}\small\item\em コピーコンストラクタ \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_normal_enemy_a7c024e471aa0f2ae094aa399dc2e0dcf}{Normal\+Enemy}} (\mbox{\hyperlink{class_normal_enemy}{Normal\+Enemy}} \&\&ne)
+\mbox{\hyperlink{class_normal_enemy_a64edfeecedfae67d33a5e1fcdccbbfa6}{Normal\+Enemy}} (\mbox{\hyperlink{class_normal_enemy}{Normal\+Enemy}} \&\&ne) noexcept
 \begin{DoxyCompactList}\small\item\em ムーブコンストラクタ \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_normal_enemy}{Normal\+Enemy}} \& \mbox{\hyperlink{class_normal_enemy_a4294020d85d9ae77a47294e04fd048b6}{operator=}} (const \mbox{\hyperlink{class_normal_enemy}{Normal\+Enemy}} \&other)
 \begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_normal_enemy_ac27e00973d2430da57e044bfe04fe5b4}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}) final
+void \mbox{\hyperlink{class_normal_enemy_a71cb11fe60d713ce638dcec5d66912e6}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}) final
 \begin{DoxyCompactList}\small\item\em エネミーの当たったときに実行する関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_normal_enemy_a8a4271b6da6c7679d134d1c08125815b}{Destroy}} () final
 \begin{DoxyCompactList}\small\item\em エネミーの破棄 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_normal_enemy_a9fe91caeeb6d9882e108c8c0d9d404c1}{Change\+Dire}} ()
+\item 
 \mbox{\hyperlink{class_normal_enemy_adc9a3115b2494739261b5cc363c11c32}{$\sim$\+Normal\+Enemy}} ()
 \begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{限定公開メンバ関数}
@@ -37,7 +39,7 @@ void \mbox{\hyperlink{class_normal_enemy_a8a4271b6da6c7679d134d1c08125815b}{Dest
 \item 
 void \mbox{\hyperlink{class_normal_enemy_ae45bd9535595f810d065b92f8dd63342}{Init\+Process}} () final
 \begin{DoxyCompactList}\small\item\em エネミーの初期化 \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_normal_enemy_a371a6bef4feaeb0b47e1ab61dead7b77}{Update\+Process}} () final
+void \mbox{\hyperlink{class_normal_enemy_a9f66e4bf18310ec7c5dc679bea78fa8e}{Update\+Process}} ()
 \begin{DoxyCompactList}\small\item\em エネミーの更新 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
 
@@ -66,11 +68,11 @@ void \mbox{\hyperlink{class_normal_enemy_a371a6bef4feaeb0b47e1ab61dead7b77}{Upda
 
 コピーコンストラクタ 
 
-\mbox{\Hypertarget{class_normal_enemy_a7c024e471aa0f2ae094aa399dc2e0dcf}\label{class_normal_enemy_a7c024e471aa0f2ae094aa399dc2e0dcf}} 
+\mbox{\Hypertarget{class_normal_enemy_a64edfeecedfae67d33a5e1fcdccbbfa6}\label{class_normal_enemy_a64edfeecedfae67d33a5e1fcdccbbfa6}} 
 \index{Normal\+Enemy@{Normal\+Enemy}!Normal\+Enemy@{Normal\+Enemy}}
 \index{Normal\+Enemy@{Normal\+Enemy}!Normal\+Enemy@{Normal\+Enemy}}
 \subsubsection{\texorpdfstring{Normal\+Enemy()}{NormalEnemy()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily Normal\+Enemy\+::\+Normal\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_normal_enemy}{Normal\+Enemy}} \&\&}]{ne }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Normal\+Enemy\+::\+Normal\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_normal_enemy}{Normal\+Enemy}} \&\&}]{ne }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
 
 
 
@@ -89,11 +91,17 @@ void \mbox{\hyperlink{class_normal_enemy_a371a6bef4feaeb0b47e1ab61dead7b77}{Upda
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_normal_enemy_ac27e00973d2430da57e044bfe04fe5b4}\label{class_normal_enemy_ac27e00973d2430da57e044bfe04fe5b4}} 
+\mbox{\Hypertarget{class_normal_enemy_a9fe91caeeb6d9882e108c8c0d9d404c1}\label{class_normal_enemy_a9fe91caeeb6d9882e108c8c0d9d404c1}} 
+\index{Normal\+Enemy@{Normal\+Enemy}!Change\+Dire@{Change\+Dire}}
+\index{Change\+Dire@{Change\+Dire}!Normal\+Enemy@{Normal\+Enemy}}
+\subsubsection{\texorpdfstring{Change\+Dire()}{ChangeDire()}}
+{\footnotesize\ttfamily void Normal\+Enemy\+::\+Change\+Dire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_normal_enemy_a71cb11fe60d713ce638dcec5d66912e6}\label{class_normal_enemy_a71cb11fe60d713ce638dcec5d66912e6}} 
 \index{Normal\+Enemy@{Normal\+Enemy}!Collision@{Collision}}
 \index{Collision@{Collision}!Normal\+Enemy@{Normal\+Enemy}}
 \subsubsection{\texorpdfstring{Collision()}{Collision()}}
-{\footnotesize\ttfamily void Normal\+Enemy\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Normal\+Enemy\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
 
 
 
@@ -106,7 +114,7 @@ void \mbox{\hyperlink{class_normal_enemy_a371a6bef4feaeb0b47e1ab61dead7b77}{Upda
 \end{DoxyParams}
 
 
-\mbox{\hyperlink{class_object_base_ad772d7a42f5e46c39481f5db22ee8193}{Object\+Base}}を再実装しています。
+\mbox{\hyperlink{class_object_base_a3e1db79dfa119be067d816c22d09839d}{Object\+Base}}を再実装しています。
 
 \mbox{\Hypertarget{class_normal_enemy_a8a4271b6da6c7679d134d1c08125815b}\label{class_normal_enemy_a8a4271b6da6c7679d134d1c08125815b}} 
 \index{Normal\+Enemy@{Normal\+Enemy}!Destroy@{Destroy}}
@@ -146,11 +154,11 @@ void \mbox{\hyperlink{class_normal_enemy_a371a6bef4feaeb0b47e1ab61dead7b77}{Upda
 
 コピー代入演算子 
 
-\mbox{\Hypertarget{class_normal_enemy_a371a6bef4feaeb0b47e1ab61dead7b77}\label{class_normal_enemy_a371a6bef4feaeb0b47e1ab61dead7b77}} 
+\mbox{\Hypertarget{class_normal_enemy_a9f66e4bf18310ec7c5dc679bea78fa8e}\label{class_normal_enemy_a9f66e4bf18310ec7c5dc679bea78fa8e}} 
 \index{Normal\+Enemy@{Normal\+Enemy}!Update\+Process@{Update\+Process}}
 \index{Update\+Process@{Update\+Process}!Normal\+Enemy@{Normal\+Enemy}}
 \subsubsection{\texorpdfstring{Update\+Process()}{UpdateProcess()}}
-{\footnotesize\ttfamily void Normal\+Enemy\+::\+Update\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Normal\+Enemy\+::\+Update\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
 
 
 
@@ -164,5 +172,5 @@ void \mbox{\hyperlink{class_normal_enemy_a371a6bef4feaeb0b47e1ab61dead7b77}{Upda
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/character/enemy/normal/\mbox{\hyperlink{normal__enemy_8h}{normal\+\_\+enemy.\+h}}\item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/character/enemy/normal/\mbox{\hyperlink{normal__enemy_8cpp}{normal\+\_\+enemy.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/object/character/enemy/normal/\mbox{\hyperlink{normal__enemy_8h}{normal\+\_\+enemy.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/object/character/enemy/normal/\mbox{\hyperlink{normal__enemy_8cpp}{normal\+\_\+enemy.\+cpp}}\end{DoxyCompactItemize}

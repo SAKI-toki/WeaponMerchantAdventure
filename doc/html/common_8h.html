@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/common/common.h ファイル</title>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/src/common/common.h ファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,43 +61,211 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_fdedb0aba14d44ce9d99bc100e026e6a.html">common</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_98cdb10f369f6a3b9149e010b312bf5d.html">src</a></li><li class="navelem"><a class="el" href="dir_365f3217ff78cdd5bdf7f74707255a95.html">common</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">マクロ定義</a> &#124;
 <a href="#typedef-members">型定義</a>  </div>
   <div class="headertitle">
 <div class="title">common.h ファイル</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>定数定義やヘッダのインクルード  
-<a href="#details">[詳解]</a></p>
 <div class="textblock"><code>#include &lt;Windows.h&gt;</code><br />
 <code>#include &lt;d3d11.h&gt;</code><br />
-<code>#include &lt;SimpleMath.h&gt;</code><br />
+<code>#include &lt;d3dcompiler.h&gt;</code><br />
+<code>#include &lt;wrl.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="pi_8h_source.html">saki/pi.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="vector__2d_8h_source.html">saki/vector/vector_2d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="vector__3d_8h_source.html">saki/vector/vector_3d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="vector__4d_8h_source.html">saki/vector/vector_4d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="transform_8h_source.html">saki/transform/transform.h</a>&gt;</code><br />
+<code>#include &lt;DirectXMath.h&gt;</code><br />
 </div>
 <p><a href="common_8h_source.html">[ソースコード]</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a9f918755b601cf4bffca775992e6fb90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a9f918755b601cf4bffca775992e6fb90">NOMINMAX</a></td></tr>
+<tr class="separator:a9f918755b601cf4bffca775992e6fb90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 型定義</h2></td></tr>
-<tr class="memitem:afb0c5e21d4133ff4f200992c0b534e1b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a> = DirectX::SimpleMath::Vector2</td></tr>
-<tr class="separator:afb0c5e21d4133ff4f200992c0b534e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d7d9064a34dd725663b1dbee652aca"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab7d7d9064a34dd725663b1dbee652aca"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="common_8h.html#ab7d7d9064a34dd725663b1dbee652aca">ComPtr</a> = Microsoft::WRL::ComPtr&lt; T &gt;</td></tr>
+<tr class="separator:ab7d7d9064a34dd725663b1dbee652aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae148fff5818e9444b4ab2288829559bf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#ae148fff5818e9444b4ab2288829559bf">Vec2</a> = <a class="el" href="classsaki_1_1_vector2.html">saki::Vector2</a>&lt; float &gt;</td></tr>
+<tr class="separator:ae148fff5818e9444b4ab2288829559bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1cb35b3a17c398d8ef71d5f779808bf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#ab1cb35b3a17c398d8ef71d5f779808bf">Vec3</a> = <a class="el" href="classsaki_1_1_vector3.html">saki::Vector3</a>&lt; float &gt;</td></tr>
+<tr class="separator:ab1cb35b3a17c398d8ef71d5f779808bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eafa16de452739414b9c28b2d6cfa97"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a0eafa16de452739414b9c28b2d6cfa97">Vec4</a> = <a class="el" href="classsaki_1_1_vector4.html">saki::Vector4</a>&lt; float &gt;</td></tr>
+<tr class="separator:a0eafa16de452739414b9c28b2d6cfa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c43cb8f0d8a41901f3ce4c67dbbce20"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a1c43cb8f0d8a41901f3ce4c67dbbce20">Transform</a> = <a class="el" href="classsaki_1_1_transform.html">saki::Transform</a>&lt; float &gt;</td></tr>
+<tr class="separator:a1c43cb8f0d8a41901f3ce4c67dbbce20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa80a2c993af85304eca72a4e11daa1e6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#aa80a2c993af85304eca72a4e11daa1e6">Float2</a> = DirectX::XMFLOAT2</td></tr>
+<tr class="separator:aa80a2c993af85304eca72a4e11daa1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa675d103841c4c5b4208e691647db4aa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#aa675d103841c4c5b4208e691647db4aa">Float3</a> = DirectX::XMFLOAT3</td></tr>
+<tr class="separator:aa675d103841c4c5b4208e691647db4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f67830dc6446e8c45d77b58760be881"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a8f67830dc6446e8c45d77b58760be881">Float4</a> = DirectX::XMFLOAT4</td></tr>
+<tr class="separator:a8f67830dc6446e8c45d77b58760be881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad141492b3b60f10d3af40f41a9e97c74"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#ad141492b3b60f10d3af40f41a9e97c74">Vector</a> = DirectX::XMVECTOR</td></tr>
+<tr class="separator:ad141492b3b60f10d3af40f41a9e97c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b2f2a47a728f9de5b5700d5aea93de"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#ac6b2f2a47a728f9de5b5700d5aea93de">Matrix</a> = DirectX::XMMATRIX</td></tr>
+<tr class="separator:ac6b2f2a47a728f9de5b5700d5aea93de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
-<div class="textblock"><p>定数定義やヘッダのインクルード </p>
-<dl class="section author"><dt>著者</dt><dd>石山　悠 </dd></dl>
-<dl class="section date"><dt>日付</dt><dd>2018/10/29 </dd></dl>
-</div><h2 class="groupheader">型定義詳解</h2>
-<a id="afb0c5e21d4133ff4f200992c0b534e1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb0c5e21d4133ff4f200992c0b534e1b">&#9670;&nbsp;</a></span>VEC2</h2>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a id="a9f918755b601cf4bffca775992e6fb90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f918755b601cf4bffca775992e6fb90">&#9670;&nbsp;</a></span>NOMINMAX</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="common_8h.html#afb0c5e21d4133ff4f200992c0b534e1b">VEC2</a> =  DirectX::SimpleMath::Vector2</td>
+          <td class="memname">#define NOMINMAX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">型定義詳解</h2>
+<a id="ab7d7d9064a34dd725663b1dbee652aca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7d7d9064a34dd725663b1dbee652aca">&#9670;&nbsp;</a></span>ComPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="common_8h.html#ab7d7d9064a34dd725663b1dbee652aca">ComPtr</a> =  Microsoft::WRL::ComPtr&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa80a2c993af85304eca72a4e11daa1e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa80a2c993af85304eca72a4e11daa1e6">&#9670;&nbsp;</a></span>Float2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="common_8h.html#aa80a2c993af85304eca72a4e11daa1e6">Float2</a> =  DirectX::XMFLOAT2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa675d103841c4c5b4208e691647db4aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa675d103841c4c5b4208e691647db4aa">&#9670;&nbsp;</a></span>Float3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="common_8h.html#aa675d103841c4c5b4208e691647db4aa">Float3</a> =  DirectX::XMFLOAT3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f67830dc6446e8c45d77b58760be881"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f67830dc6446e8c45d77b58760be881">&#9670;&nbsp;</a></span>Float4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="common_8h.html#a8f67830dc6446e8c45d77b58760be881">Float4</a> =  DirectX::XMFLOAT4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6b2f2a47a728f9de5b5700d5aea93de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6b2f2a47a728f9de5b5700d5aea93de">&#9670;&nbsp;</a></span>Matrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="common_8h.html#ac6b2f2a47a728f9de5b5700d5aea93de">Matrix</a> =  DirectX::XMMATRIX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c43cb8f0d8a41901f3ce4c67dbbce20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c43cb8f0d8a41901f3ce4c67dbbce20">&#9670;&nbsp;</a></span>Transform</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="common_8h.html#a1c43cb8f0d8a41901f3ce4c67dbbce20">Transform</a> =  <a class="el" href="classsaki_1_1_transform.html">saki::Transform</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae148fff5818e9444b4ab2288829559bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae148fff5818e9444b4ab2288829559bf">&#9670;&nbsp;</a></span>Vec2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="common_8h.html#ae148fff5818e9444b4ab2288829559bf">Vec2</a> =  <a class="el" href="classsaki_1_1_vector2.html">saki::Vector2</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1cb35b3a17c398d8ef71d5f779808bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1cb35b3a17c398d8ef71d5f779808bf">&#9670;&nbsp;</a></span>Vec3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="common_8h.html#ab1cb35b3a17c398d8ef71d5f779808bf">Vec3</a> =  <a class="el" href="classsaki_1_1_vector3.html">saki::Vector3</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0eafa16de452739414b9c28b2d6cfa97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eafa16de452739414b9c28b2d6cfa97">&#9670;&nbsp;</a></span>Vec4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="common_8h.html#a0eafa16de452739414b9c28b2d6cfa97">Vec4</a> =  <a class="el" href="classsaki_1_1_vector4.html">saki::Vector4</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad141492b3b60f10d3af40f41a9e97c74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad141492b3b60f10d3af40f41a9e97c74">&#9670;&nbsp;</a></span>Vector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="common_8h.html#ad141492b3b60f10d3af40f41a9e97c74">Vector</a> =  DirectX::XMVECTOR</td>
         </tr>
       </table>
 </div><div class="memdoc">

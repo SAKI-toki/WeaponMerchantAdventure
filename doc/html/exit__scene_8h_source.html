@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/src/scene/exit_scene.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_98cdb10f369f6a3b9149e010b312bf5d.html">src</a></li><li class="navelem"><a class="el" href="dir_055e45f868f3a0229f2a949d2a33000f.html">scene</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">exit_scene.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="exit__scene_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="scene_8h.html">scene.h</a>&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="exit__scene_8h.html#a4ae4a6c601765f289ae97678bb8a4d6a">ExitGame</a>();</div><div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_exit_scene.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_exit_scene.html">ExitScene</a> :<span class="keyword">public</span> <a class="code" href="class_scene.html">Scene</a></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_exit_scene.html#a10f6018b0c4c639d0e8756885dbc834c">    7</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_exit_scene.html#a10f6018b0c4c639d0e8756885dbc834c">Init</a>()final</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <a class="code" href="exit__scene_8h.html#a4ae4a6c601765f289ae97678bb8a4d6a">ExitGame</a>();</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    }</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_exit_scene.html#a18655f3124150a911f266e66e3fc4480">   11</a></span>&#160;    std::shared_ptr&lt;Scene&gt; <a class="code" href="class_exit_scene.html#a18655f3124150a911f266e66e3fc4480">Update</a>(std::shared_ptr&lt;Scene&gt;&amp; p)<span class="keyword">final</span> { <span class="keywordflow">return</span> p; }</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_exit_scene.html#aecf5de52db863695794ee0b0e68a4ad0">   12</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_exit_scene.html#aecf5de52db863695794ee0b0e68a4ad0">Render</a>() final {}</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_exit_scene.html#afc24a09da4a553109f813566f5d04da8">   13</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_exit_scene.html#afc24a09da4a553109f813566f5d04da8">Destroy</a>()final {}</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div><div class="ttc" id="class_exit_scene_html"><div class="ttname"><a href="class_exit_scene.html">ExitScene</a></div><div class="ttdef"><b>Definition:</b> exit_scene.h:4</div></div>
+<div class="ttc" id="exit__scene_8h_html_a4ae4a6c601765f289ae97678bb8a4d6a"><div class="ttname"><a href="exit__scene_8h.html#a4ae4a6c601765f289ae97678bb8a4d6a">ExitGame</a></div><div class="ttdeci">void ExitGame()</div><div class="ttdef"><b>Definition:</b> main.cpp:116</div></div>
+<div class="ttc" id="class_exit_scene_html_aecf5de52db863695794ee0b0e68a4ad0"><div class="ttname"><a href="class_exit_scene.html#aecf5de52db863695794ee0b0e68a4ad0">ExitScene::Render</a></div><div class="ttdeci">void Render() final</div><div class="ttdef"><b>Definition:</b> exit_scene.h:12</div></div>
+<div class="ttc" id="scene_8h_html"><div class="ttname"><a href="scene_8h.html">scene.h</a></div><div class="ttdoc">マネージャーを含まないシーンのスーパークラスを宣言 </div></div>
+<div class="ttc" id="class_exit_scene_html_a18655f3124150a911f266e66e3fc4480"><div class="ttname"><a href="class_exit_scene.html#a18655f3124150a911f266e66e3fc4480">ExitScene::Update</a></div><div class="ttdeci">std::shared_ptr&lt; Scene &gt; Update(std::shared_ptr&lt; Scene &gt; &amp;p) final</div><div class="ttdef"><b>Definition:</b> exit_scene.h:11</div></div>
+<div class="ttc" id="class_exit_scene_html_afc24a09da4a553109f813566f5d04da8"><div class="ttname"><a href="class_exit_scene.html#afc24a09da4a553109f813566f5d04da8">ExitScene::Destroy</a></div><div class="ttdeci">void Destroy() final</div><div class="ttdef"><b>Definition:</b> exit_scene.h:13</div></div>
+<div class="ttc" id="class_scene_html"><div class="ttname"><a href="class_scene.html">Scene</a></div><div class="ttdoc">マネージャーを含まないシーンのスーパークラス </div><div class="ttdef"><b>Definition:</b> scene.h:14</div></div>
+<div class="ttc" id="class_exit_scene_html_a10f6018b0c4c639d0e8756885dbc834c"><div class="ttname"><a href="class_exit_scene.html#a10f6018b0c4c639d0e8756885dbc834c">ExitScene::Init</a></div><div class="ttdeci">void Init() final</div><div class="ttdef"><b>Definition:</b> exit_scene.h:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

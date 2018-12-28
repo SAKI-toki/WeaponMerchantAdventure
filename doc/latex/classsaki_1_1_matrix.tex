@@ -1,0 +1,278 @@
+\hypertarget{classsaki_1_1_matrix}{}\section{saki\+:\+:Matrix$<$ T $>$ クラステンプレート}
+\label{classsaki_1_1_matrix}\index{saki\+::\+Matrix$<$ T $>$@{saki\+::\+Matrix$<$ T $>$}}
+
+
+行列  
+
+
+
+
+{\ttfamily \#include $<$matrix\+\_\+operator.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \mbox{\hyperlink{classsaki_1_1_matrix_a820035e9bafc0fa4269c4b94b1ec4f4f}{Matrix}} ()
+\begin{DoxyCompactList}\small\item\em 引数なしコンストラクタ \end{DoxyCompactList}\item 
+constexpr \mbox{\hyperlink{classsaki_1_1_matrix_ad4f497bd4ba2b7de464afea4436d9a51}{Matrix}} (const T \&m00, const T \&m01, const T \&m02, const T \&m03, const T \&m10, const T \&m11, const T \&m12, const T \&m13, const T \&m20, const T \&m21, const T \&m22, const T \&m23, const T \&m30, const T \&m31, const T \&m32, const T \&m33)
+\begin{DoxyCompactList}\small\item\em 引数ありコンストラクタ \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\constexpr \mbox{\hyperlink{classsaki_1_1_matrix_a3d877c3e3581397370561be931972cb9}{Matrix}} (const U arr\mbox{[}4\mbox{]}\mbox{[}4\mbox{]})
+\begin{DoxyCompactList}\small\item\em 生配列からの初期化 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U1 , typename U2 , typename U3 , typename U4 $>$ }\\constexpr \mbox{\hyperlink{classsaki_1_1_matrix_a1a1e4f58fd842e6bfd953ff5b0bd7e37}{Matrix}} (const \mbox{\hyperlink{classsaki_1_1_vector4}{Vector4}}$<$ U1 $>$ v1, const \mbox{\hyperlink{classsaki_1_1_vector4}{Vector4}}$<$ U2 $>$ v2, const \mbox{\hyperlink{classsaki_1_1_vector4}{Vector4}}$<$ U3 $>$ v3, const \mbox{\hyperlink{classsaki_1_1_vector4}{Vector4}}$<$ U4 $>$ v4)
+\begin{DoxyCompactList}\small\item\em vector4での初期化 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsaki_1_1_matrix_a08d28bd14af9be6650325574a20101d7}{Matrix}} (const \mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$ T $>$ \&)=default
+\item 
+\mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$ T $>$ \& \mbox{\hyperlink{classsaki_1_1_matrix_af83ebe0a4f4652fbf30dd64307021603}{operator=}} (const \mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$ T $>$ \&)=default
+\item 
+\mbox{\hyperlink{classsaki_1_1_matrix_aced6f31e05917c2c41305dd0be082f8b}{Matrix}} (\mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$ T $>$ \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}} \& \mbox{\hyperlink{classsaki_1_1_matrix_a96b3519d691108a606d4ece3a9bac134}{operator=}} (\mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$ T $>$ \&\&) noexcept=default
+\item 
+{\footnotesize template$<$typename U  = T$>$ }\\auto \mbox{\hyperlink{classsaki_1_1_matrix_a06e54f0ce6ff0cd591725a753d9a4c60}{operator+=}} (const \mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$ U $>$ \&other)
+\begin{DoxyCompactList}\small\item\em +=演算子 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U  = T$>$ }\\auto \mbox{\hyperlink{classsaki_1_1_matrix_a782a94fb837a9973fed259c55e6817f1}{operator-\/=}} (const \mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$ U $>$ \&other)
+\begin{DoxyCompactList}\small\item\em -\/=演算子 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U  = T$>$ }\\auto \mbox{\hyperlink{classsaki_1_1_matrix_aae1ffee9f67e7c9893a2329c75bd8a51}{operator$\ast$=}} (const U \&scalar)
+\begin{DoxyCompactList}\small\item\em $\ast$=演算子(スカラ) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U  = T$>$ }\\auto \mbox{\hyperlink{classsaki_1_1_matrix_a66c88e0fcf5b1e86180c097ff24ceff4}{operator$\ast$=}} (const \mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$ U $>$ \&other)
+\begin{DoxyCompactList}\small\item\em $\ast$=演算子(行列) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U  = T$>$ }\\auto \mbox{\hyperlink{classsaki_1_1_matrix_a12f386d5595d02c11a8a7af642183c6c}{operator/=}} (const U \&scalar)
+\begin{DoxyCompactList}\small\item\em /=演算子(スカラ) \end{DoxyCompactList}\item 
+constexpr \mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$ T $>$ \mbox{\hyperlink{classsaki_1_1_matrix_a94797edf2e87a6242a5441ad219dc825}{operator+}} () const
+\begin{DoxyCompactList}\small\item\em 単項+演算子 \end{DoxyCompactList}\item 
+constexpr \mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$ T $>$ \mbox{\hyperlink{classsaki_1_1_matrix_ab56b2934659f55200a3f7a18e48306b5}{operator-\/}} () const
+\begin{DoxyCompactList}\small\item\em 単項-\/演算子 \end{DoxyCompactList}\item 
+T $\ast$ \mbox{\hyperlink{classsaki_1_1_matrix_ad1fa9ab13d6ab9def73a4ac5bfa15cf4}{operator\mbox{[}$\,$\mbox{]}}} (const unsigned int index)
+\begin{DoxyCompactList}\small\item\em \mbox{[}\mbox{]}演算子 \end{DoxyCompactList}\item 
+constexpr T \mbox{\hyperlink{classsaki_1_1_matrix_ac9e6609628221255fd9577eceb9ab2af}{at\+\_\+constexpr}} (const unsigned int row, const unsigned int col) const
+\begin{DoxyCompactList}\small\item\em \mbox{[}\mbox{]}演算子では表現できないため、普通の関数にした \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsaki_1_1_matrix_af0c4f3614c29e27eae5fecde22140be8}{identity}} ()
+\begin{DoxyCompactList}\small\item\em 単位行列に変換 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+\subsubsection*{template$<$typename T$>$\newline
+class saki\+::\+Matrix$<$ T $>$}
+
+行列 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{classsaki_1_1_matrix_a820035e9bafc0fa4269c4b94b1ec4f4f}\label{classsaki_1_1_matrix_a820035e9bafc0fa4269c4b94b1ec4f4f}} 
+\index{saki\+::\+Matrix@{saki\+::\+Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!saki\+::\+Matrix@{saki\+::\+Matrix}}
+\subsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+constexpr \mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix}}$<$ T $>$\+::\mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+引数なしコンストラクタ 
+
+Identity初期化 \mbox{\Hypertarget{classsaki_1_1_matrix_ad4f497bd4ba2b7de464afea4436d9a51}\label{classsaki_1_1_matrix_ad4f497bd4ba2b7de464afea4436d9a51}} 
+\index{saki\+::\+Matrix@{saki\+::\+Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!saki\+::\+Matrix@{saki\+::\+Matrix}}
+\subsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+constexpr \mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix}}$<$ T $>$\+::\mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}} (\begin{DoxyParamCaption}\item[{const T \&}]{m00,  }\item[{const T \&}]{m01,  }\item[{const T \&}]{m02,  }\item[{const T \&}]{m03,  }\item[{const T \&}]{m10,  }\item[{const T \&}]{m11,  }\item[{const T \&}]{m12,  }\item[{const T \&}]{m13,  }\item[{const T \&}]{m20,  }\item[{const T \&}]{m21,  }\item[{const T \&}]{m22,  }\item[{const T \&}]{m23,  }\item[{const T \&}]{m30,  }\item[{const T \&}]{m31,  }\item[{const T \&}]{m32,  }\item[{const T \&}]{m33 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+引数ありコンストラクタ 
+
+\mbox{\Hypertarget{classsaki_1_1_matrix_a3d877c3e3581397370561be931972cb9}\label{classsaki_1_1_matrix_a3d877c3e3581397370561be931972cb9}} 
+\index{saki\+::\+Matrix@{saki\+::\+Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!saki\+::\+Matrix@{saki\+::\+Matrix}}
+\subsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename U $>$ \\
+constexpr \mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix}}$<$ T $>$\+::\mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}} (\begin{DoxyParamCaption}\item[{const U}]{arr\mbox{[}4\mbox{]}\mbox{[}4\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+生配列からの初期化 
+
+
+\begin{DoxyParams}{引数}
+{\em arr} & 4$\ast$4の配列 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsaki_1_1_matrix_a1a1e4f58fd842e6bfd953ff5b0bd7e37}\label{classsaki_1_1_matrix_a1a1e4f58fd842e6bfd953ff5b0bd7e37}} 
+\index{saki\+::\+Matrix@{saki\+::\+Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!saki\+::\+Matrix@{saki\+::\+Matrix}}
+\subsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename U1 , typename U2 , typename U3 , typename U4 $>$ \\
+constexpr \mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix}}$<$ T $>$\+::\mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_vector4}{Vector4}}$<$ U1 $>$}]{v1,  }\item[{const \mbox{\hyperlink{classsaki_1_1_vector4}{Vector4}}$<$ U2 $>$}]{v2,  }\item[{const \mbox{\hyperlink{classsaki_1_1_vector4}{Vector4}}$<$ U3 $>$}]{v3,  }\item[{const \mbox{\hyperlink{classsaki_1_1_vector4}{Vector4}}$<$ U4 $>$}]{v4 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+vector4での初期化 
+
+
+\begin{DoxyParams}{引数}
+{\em v1} & 1行目 \\
+\hline
+{\em v2} & 2行目 \\
+\hline
+{\em v3} & 3行目 \\
+\hline
+{\em v4} & 4行目 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsaki_1_1_matrix_a08d28bd14af9be6650325574a20101d7}\label{classsaki_1_1_matrix_a08d28bd14af9be6650325574a20101d7}} 
+\index{saki\+::\+Matrix@{saki\+::\+Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!saki\+::\+Matrix@{saki\+::\+Matrix}}
+\subsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix}}$<$ T $>$\+::\mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classsaki_1_1_matrix_aced6f31e05917c2c41305dd0be082f8b}\label{classsaki_1_1_matrix_aced6f31e05917c2c41305dd0be082f8b}} 
+\index{saki\+::\+Matrix@{saki\+::\+Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!saki\+::\+Matrix@{saki\+::\+Matrix}}
+\subsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix}}$<$ T $>$\+::\mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$ T $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{classsaki_1_1_matrix_ac9e6609628221255fd9577eceb9ab2af}\label{classsaki_1_1_matrix_ac9e6609628221255fd9577eceb9ab2af}} 
+\index{saki\+::\+Matrix@{saki\+::\+Matrix}!at\+\_\+constexpr@{at\+\_\+constexpr}}
+\index{at\+\_\+constexpr@{at\+\_\+constexpr}!saki\+::\+Matrix@{saki\+::\+Matrix}}
+\subsubsection{\texorpdfstring{at\+\_\+constexpr()}{at\_constexpr()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+constexpr T \mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix}}$<$ T $>$\+::at\+\_\+constexpr (\begin{DoxyParamCaption}\item[{const unsigned int}]{row,  }\item[{const unsigned int}]{col }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{[}\mbox{]}演算子では表現できないため、普通の関数にした 
+
+
+\begin{DoxyParams}{引数}
+{\em row,col} & 行、列\\
+\hline
+\end{DoxyParams}
+自作arrayクラスを作成すればできるが、とりあえず今はこのままで \mbox{\Hypertarget{classsaki_1_1_matrix_af0c4f3614c29e27eae5fecde22140be8}\label{classsaki_1_1_matrix_af0c4f3614c29e27eae5fecde22140be8}} 
+\index{saki\+::\+Matrix@{saki\+::\+Matrix}!identity@{identity}}
+\index{identity@{identity}!saki\+::\+Matrix@{saki\+::\+Matrix}}
+\subsubsection{\texorpdfstring{identity()}{identity()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix}}$<$ T $>$\+::identity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+単位行列に変換 
+
+\mbox{\Hypertarget{classsaki_1_1_matrix_aae1ffee9f67e7c9893a2329c75bd8a51}\label{classsaki_1_1_matrix_aae1ffee9f67e7c9893a2329c75bd8a51}} 
+\index{saki\+::\+Matrix@{saki\+::\+Matrix}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!saki\+::\+Matrix@{saki\+::\+Matrix}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename U  = T$>$ \\
+auto \mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix}}$<$ T $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const U \&}]{scalar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+$\ast$=演算子(スカラ) 
+
+\mbox{\Hypertarget{classsaki_1_1_matrix_a66c88e0fcf5b1e86180c097ff24ceff4}\label{classsaki_1_1_matrix_a66c88e0fcf5b1e86180c097ff24ceff4}} 
+\index{saki\+::\+Matrix@{saki\+::\+Matrix}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!saki\+::\+Matrix@{saki\+::\+Matrix}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename U  = T$>$ \\
+auto \mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix}}$<$ T $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$ U $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+$\ast$=演算子(行列) 
+
+\mbox{\Hypertarget{classsaki_1_1_matrix_a94797edf2e87a6242a5441ad219dc825}\label{classsaki_1_1_matrix_a94797edf2e87a6242a5441ad219dc825}} 
+\index{saki\+::\+Matrix@{saki\+::\+Matrix}!operator+@{operator+}}
+\index{operator+@{operator+}!saki\+::\+Matrix@{saki\+::\+Matrix}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+constexpr \mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$T$>$ \mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix}}$<$ T $>$\+::operator+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+単項+演算子 
+
+\mbox{\Hypertarget{classsaki_1_1_matrix_a06e54f0ce6ff0cd591725a753d9a4c60}\label{classsaki_1_1_matrix_a06e54f0ce6ff0cd591725a753d9a4c60}} 
+\index{saki\+::\+Matrix@{saki\+::\+Matrix}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!saki\+::\+Matrix@{saki\+::\+Matrix}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename U  = T$>$ \\
+auto \mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix}}$<$ T $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$ U $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
++=演算子 
+
+\mbox{\Hypertarget{classsaki_1_1_matrix_ab56b2934659f55200a3f7a18e48306b5}\label{classsaki_1_1_matrix_ab56b2934659f55200a3f7a18e48306b5}} 
+\index{saki\+::\+Matrix@{saki\+::\+Matrix}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!saki\+::\+Matrix@{saki\+::\+Matrix}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+constexpr \mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$T$>$ \mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix}}$<$ T $>$\+::operator-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+単項-\/演算子 
+
+\mbox{\Hypertarget{classsaki_1_1_matrix_a782a94fb837a9973fed259c55e6817f1}\label{classsaki_1_1_matrix_a782a94fb837a9973fed259c55e6817f1}} 
+\index{saki\+::\+Matrix@{saki\+::\+Matrix}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!saki\+::\+Matrix@{saki\+::\+Matrix}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename U  = T$>$ \\
+auto \mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix}}$<$ T $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$ U $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+-\/=演算子 
+
+\mbox{\Hypertarget{classsaki_1_1_matrix_a12f386d5595d02c11a8a7af642183c6c}\label{classsaki_1_1_matrix_a12f386d5595d02c11a8a7af642183c6c}} 
+\index{saki\+::\+Matrix@{saki\+::\+Matrix}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!saki\+::\+Matrix@{saki\+::\+Matrix}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename U  = T$>$ \\
+auto \mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix}}$<$ T $>$\+::operator/= (\begin{DoxyParamCaption}\item[{const U \&}]{scalar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+/=演算子(スカラ) 
+
+\mbox{\Hypertarget{classsaki_1_1_matrix_af83ebe0a4f4652fbf30dd64307021603}\label{classsaki_1_1_matrix_af83ebe0a4f4652fbf30dd64307021603}} 
+\index{saki\+::\+Matrix@{saki\+::\+Matrix}!operator=@{operator=}}
+\index{operator=@{operator=}!saki\+::\+Matrix@{saki\+::\+Matrix}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$T$>$\& \mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classsaki_1_1_matrix_a96b3519d691108a606d4ece3a9bac134}\label{classsaki_1_1_matrix_a96b3519d691108a606d4ece3a9bac134}} 
+\index{saki\+::\+Matrix@{saki\+::\+Matrix}!operator=@{operator=}}
+\index{operator=@{operator=}!saki\+::\+Matrix@{saki\+::\+Matrix}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}\& \mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsaki_1_1_matrix}{Matrix}}$<$ T $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classsaki_1_1_matrix_ad1fa9ab13d6ab9def73a4ac5bfa15cf4}\label{classsaki_1_1_matrix_ad1fa9ab13d6ab9def73a4ac5bfa15cf4}} 
+\index{saki\+::\+Matrix@{saki\+::\+Matrix}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!saki\+::\+Matrix@{saki\+::\+Matrix}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T$\ast$ \mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const unsigned int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{[}\mbox{]}演算子 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/matrix/details/\mbox{\hyperlink{matrix__operator_8h}{matrix\+\_\+operator.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/matrix/\mbox{\hyperlink{matrix_8h}{matrix.\+h}}\end{DoxyCompactItemize}

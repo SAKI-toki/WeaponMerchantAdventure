@@ -1,0 +1,319 @@
+\hypertarget{classsaki_1_1_transform}{}\section{saki\+:\+:Transform$<$ T $>$ クラステンプレート}
+\label{classsaki_1_1_transform}\index{saki\+::\+Transform$<$ T $>$@{saki\+::\+Transform$<$ T $>$}}
+
+
+transformクラス  
+
+
+
+
+{\ttfamily \#include $<$transform\+\_\+operator.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \mbox{\hyperlink{classsaki_1_1_transform_abdd7b5f310bccc56b804a2cf21890a35}{Transform}} ()
+\begin{DoxyCompactList}\small\item\em 引数なしコンストラクタ \end{DoxyCompactList}\item 
+constexpr \mbox{\hyperlink{classsaki_1_1_transform_ad0081402f944d173d0a1df40762d571c}{Transform}} (const \mbox{\hyperlink{classsaki_1_1_vector3}{Vector3}}$<$ T $>$ \&pos, const \mbox{\hyperlink{classsaki_1_1_vector3}{Vector3}}$<$ T $>$ rot, const \mbox{\hyperlink{classsaki_1_1_vector3}{Vector3}}$<$ T $>$sca)
+\begin{DoxyCompactList}\small\item\em 各値を引数にとるコンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsaki_1_1_transform_a86e4e6b8c8a3387f5659e71b377a9995}{Transform}} (const \mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$ T $>$ \&)=default
+\item 
+\mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$ T $>$ \& \mbox{\hyperlink{classsaki_1_1_transform_acfdf423e01196edf631f272400645cfa}{operator=}} (const \mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$ T $>$ \&)=default
+\item 
+\mbox{\hyperlink{classsaki_1_1_transform_a065323d290c8c4edd76855e7b9634ab8}{Transform}} (\mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$ T $>$ \&\&)=default
+\item 
+\mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$ T $>$ \& \mbox{\hyperlink{classsaki_1_1_transform_a66ea10234a845d96e63bbb9c2a1050eb}{operator=}} (\mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$ T $>$ \&\&)=default
+\item 
+void \mbox{\hyperlink{classsaki_1_1_transform_a1c0f7ad966d8f4d014e6f023943bbfb7}{move}} (const \mbox{\hyperlink{classsaki_1_1_vector3}{Vector3}}$<$ T $>$ \&pos)
+\begin{DoxyCompactList}\small\item\em 移動 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsaki_1_1_transform_aa46a720684261bebf4305724817ac053}{rotate}} (const \mbox{\hyperlink{classsaki_1_1_vector3}{Vector3}}$<$ T $>$ \&rot)
+\begin{DoxyCompactList}\small\item\em 回転 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsaki_1_1_transform_a58885f17529b9c32308ec826d67a82fd}{expantion}} (const \mbox{\hyperlink{classsaki_1_1_vector3}{Vector3}}$<$ T $>$ \&sca)
+\begin{DoxyCompactList}\small\item\em 拡大 \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classsaki_1_1_transform_a781a14da529aa0a45d4cfb66768ffc8c}{get\+\_\+pos}} () const
+\begin{DoxyCompactList}\small\item\em 位置のゲッタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsaki_1_1_transform_a2659fe0773c0b8137b3a321859c3906e}{set\+\_\+pos}} (const \mbox{\hyperlink{classsaki_1_1_vector3}{Vector3}}$<$ T $>$ \&pos)
+\begin{DoxyCompactList}\small\item\em 位置のセッタ \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classsaki_1_1_transform_ab5a091567c4f9f3040c0f843156d8bce}{get\+\_\+rot}} () const
+\begin{DoxyCompactList}\small\item\em 回転のゲッタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsaki_1_1_transform_a7b30f864722819b8be85ecbd4dde43a4}{set\+\_\+rot}} (const \mbox{\hyperlink{classsaki_1_1_vector3}{Vector3}}$<$ T $>$ \&rot)
+\begin{DoxyCompactList}\small\item\em 回転のセッタ \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classsaki_1_1_transform_a0ec8a9193bf5b987a72ed732b8976cfb}{get\+\_\+scale}} () const
+\begin{DoxyCompactList}\small\item\em 拡縮のゲッタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsaki_1_1_transform_aade1855d64e42635e8b613aa055aa6fc}{set\+\_\+scale}} (const \mbox{\hyperlink{classsaki_1_1_vector3}{Vector3}}$<$ T $>$ \&sca)
+\begin{DoxyCompactList}\small\item\em 拡縮のセッタ \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U  = T$>$ }\\auto \mbox{\hyperlink{classsaki_1_1_transform_ae61e16c754492653881275f3942efb29}{operator+=}} (const \mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$ U $>$ \&other)
+\begin{DoxyCompactList}\small\item\em +=演算子 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U  = T$>$ }\\auto \mbox{\hyperlink{classsaki_1_1_transform_a27f9b6f3571fb0a44ca36ef51080a1d3}{operator-\/=}} (const \mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$ U $>$ \&other)
+\begin{DoxyCompactList}\small\item\em -\/=演算子 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U  = T$>$ }\\auto \mbox{\hyperlink{classsaki_1_1_transform_ab8df7cf8619c1f245d871e4e7627bf78}{operator$\ast$=}} (const U \&scalar)
+\begin{DoxyCompactList}\small\item\em $\ast$=演算子(スカラ) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U  = T$>$ }\\auto \mbox{\hyperlink{classsaki_1_1_transform_a9a5559fdf626c8ecec063db74c6f4f8e}{operator/=}} (const U \&scalar)
+\begin{DoxyCompactList}\small\item\em /= 演算子(スカラ) \end{DoxyCompactList}\item 
+constexpr \mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$ T $>$ \mbox{\hyperlink{classsaki_1_1_transform_a52201fc4aed19cc0459dc4b3c21c3d37}{operator+}} () const
+\begin{DoxyCompactList}\small\item\em 単項+演算子 \end{DoxyCompactList}\item 
+constexpr \mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$ T $>$ \mbox{\hyperlink{classsaki_1_1_transform_a813e5118f0a23213b21a6b7f101a4584}{operator-\/}} () const
+\begin{DoxyCompactList}\small\item\em 単項-\/演算子 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+\subsubsection*{template$<$typename T$>$\newline
+class saki\+::\+Transform$<$ T $>$}
+
+transformクラス 
+
+クォータニオンは使用していません 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{classsaki_1_1_transform_abdd7b5f310bccc56b804a2cf21890a35}\label{classsaki_1_1_transform_abdd7b5f310bccc56b804a2cf21890a35}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+constexpr \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::\mbox{\hyperlink{classsaki_1_1_transform}{Transform}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+引数なしコンストラクタ 
+
+\mbox{\Hypertarget{classsaki_1_1_transform_ad0081402f944d173d0a1df40762d571c}\label{classsaki_1_1_transform_ad0081402f944d173d0a1df40762d571c}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+constexpr \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::\mbox{\hyperlink{classsaki_1_1_transform}{Transform}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_vector3}{Vector3}}$<$ T $>$ \&}]{pos,  }\item[{const \mbox{\hyperlink{classsaki_1_1_vector3}{Vector3}}$<$ T $>$}]{rot,  }\item[{const \mbox{\hyperlink{classsaki_1_1_vector3}{Vector3}}$<$ T $>$}]{sca }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+各値を引数にとるコンストラクタ 
+
+
+\begin{DoxyParams}{引数}
+{\em pos} & 位置 \\
+\hline
+{\em rot} & 回転 \\
+\hline
+{\em sca} & 拡縮 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsaki_1_1_transform_a86e4e6b8c8a3387f5659e71b377a9995}\label{classsaki_1_1_transform_a86e4e6b8c8a3387f5659e71b377a9995}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::\mbox{\hyperlink{classsaki_1_1_transform}{Transform}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classsaki_1_1_transform_a065323d290c8c4edd76855e7b9634ab8}\label{classsaki_1_1_transform_a065323d290c8c4edd76855e7b9634ab8}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::\mbox{\hyperlink{classsaki_1_1_transform}{Transform}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$ T $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{classsaki_1_1_transform_a58885f17529b9c32308ec826d67a82fd}\label{classsaki_1_1_transform_a58885f17529b9c32308ec826d67a82fd}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!expantion@{expantion}}
+\index{expantion@{expantion}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{expantion()}{expantion()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::expantion (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_vector3}{Vector3}}$<$ T $>$ \&}]{sca }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+拡大 
+
+\mbox{\Hypertarget{classsaki_1_1_transform_a781a14da529aa0a45d4cfb66768ffc8c}\label{classsaki_1_1_transform_a781a14da529aa0a45d4cfb66768ffc8c}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!get\+\_\+pos@{get\+\_\+pos}}
+\index{get\+\_\+pos@{get\+\_\+pos}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{get\+\_\+pos()}{get\_pos()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+auto \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::get\+\_\+pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+位置のゲッタ 
+
+\mbox{\Hypertarget{classsaki_1_1_transform_ab5a091567c4f9f3040c0f843156d8bce}\label{classsaki_1_1_transform_ab5a091567c4f9f3040c0f843156d8bce}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!get\+\_\+rot@{get\+\_\+rot}}
+\index{get\+\_\+rot@{get\+\_\+rot}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{get\+\_\+rot()}{get\_rot()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+auto \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::get\+\_\+rot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+回転のゲッタ 
+
+\mbox{\Hypertarget{classsaki_1_1_transform_a0ec8a9193bf5b987a72ed732b8976cfb}\label{classsaki_1_1_transform_a0ec8a9193bf5b987a72ed732b8976cfb}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!get\+\_\+scale@{get\+\_\+scale}}
+\index{get\+\_\+scale@{get\+\_\+scale}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{get\+\_\+scale()}{get\_scale()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+auto \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::get\+\_\+scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+拡縮のゲッタ 
+
+\mbox{\Hypertarget{classsaki_1_1_transform_a1c0f7ad966d8f4d014e6f023943bbfb7}\label{classsaki_1_1_transform_a1c0f7ad966d8f4d014e6f023943bbfb7}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!move@{move}}
+\index{move@{move}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::move (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_vector3}{Vector3}}$<$ T $>$ \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+移動 
+
+\mbox{\Hypertarget{classsaki_1_1_transform_ab8df7cf8619c1f245d871e4e7627bf78}\label{classsaki_1_1_transform_ab8df7cf8619c1f245d871e4e7627bf78}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename U  = T$>$ \\
+auto \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const U \&}]{scalar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+$\ast$=演算子(スカラ) 
+
+\mbox{\Hypertarget{classsaki_1_1_transform_a52201fc4aed19cc0459dc4b3c21c3d37}\label{classsaki_1_1_transform_a52201fc4aed19cc0459dc4b3c21c3d37}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!operator+@{operator+}}
+\index{operator+@{operator+}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+constexpr \mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$T$>$ \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::operator+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+単項+演算子 
+
+\mbox{\Hypertarget{classsaki_1_1_transform_ae61e16c754492653881275f3942efb29}\label{classsaki_1_1_transform_ae61e16c754492653881275f3942efb29}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename U  = T$>$ \\
+auto \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$ U $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
++=演算子 
+
+\mbox{\Hypertarget{classsaki_1_1_transform_a813e5118f0a23213b21a6b7f101a4584}\label{classsaki_1_1_transform_a813e5118f0a23213b21a6b7f101a4584}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+constexpr \mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$T$>$ \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::operator-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+単項-\/演算子 
+
+\mbox{\Hypertarget{classsaki_1_1_transform_a27f9b6f3571fb0a44ca36ef51080a1d3}\label{classsaki_1_1_transform_a27f9b6f3571fb0a44ca36ef51080a1d3}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename U  = T$>$ \\
+auto \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$ U $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+-\/=演算子 
+
+\mbox{\Hypertarget{classsaki_1_1_transform_a9a5559fdf626c8ecec063db74c6f4f8e}\label{classsaki_1_1_transform_a9a5559fdf626c8ecec063db74c6f4f8e}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename U  = T$>$ \\
+auto \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::operator/= (\begin{DoxyParamCaption}\item[{const U \&}]{scalar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+/= 演算子(スカラ) 
+
+\mbox{\Hypertarget{classsaki_1_1_transform_acfdf423e01196edf631f272400645cfa}\label{classsaki_1_1_transform_acfdf423e01196edf631f272400645cfa}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!operator=@{operator=}}
+\index{operator=@{operator=}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$T$>$\& \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classsaki_1_1_transform_a66ea10234a845d96e63bbb9c2a1050eb}\label{classsaki_1_1_transform_a66ea10234a845d96e63bbb9c2a1050eb}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!operator=@{operator=}}
+\index{operator=@{operator=}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$T$>$\& \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsaki_1_1_transform}{Transform}}$<$ T $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classsaki_1_1_transform_aa46a720684261bebf4305724817ac053}\label{classsaki_1_1_transform_aa46a720684261bebf4305724817ac053}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!rotate@{rotate}}
+\index{rotate@{rotate}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::rotate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_vector3}{Vector3}}$<$ T $>$ \&}]{rot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+回転 
+
+\mbox{\Hypertarget{classsaki_1_1_transform_a2659fe0773c0b8137b3a321859c3906e}\label{classsaki_1_1_transform_a2659fe0773c0b8137b3a321859c3906e}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!set\+\_\+pos@{set\+\_\+pos}}
+\index{set\+\_\+pos@{set\+\_\+pos}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{set\+\_\+pos()}{set\_pos()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::set\+\_\+pos (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_vector3}{Vector3}}$<$ T $>$ \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+位置のセッタ 
+
+
+\begin{DoxyParams}{引数}
+{\em pos} & 位置 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsaki_1_1_transform_a7b30f864722819b8be85ecbd4dde43a4}\label{classsaki_1_1_transform_a7b30f864722819b8be85ecbd4dde43a4}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!set\+\_\+rot@{set\+\_\+rot}}
+\index{set\+\_\+rot@{set\+\_\+rot}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{set\+\_\+rot()}{set\_rot()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::set\+\_\+rot (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_vector3}{Vector3}}$<$ T $>$ \&}]{rot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+回転のセッタ 
+
+
+\begin{DoxyParams}{引数}
+{\em rot} & 回転 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsaki_1_1_transform_aade1855d64e42635e8b613aa055aa6fc}\label{classsaki_1_1_transform_aade1855d64e42635e8b613aa055aa6fc}} 
+\index{saki\+::\+Transform@{saki\+::\+Transform}!set\+\_\+scale@{set\+\_\+scale}}
+\index{set\+\_\+scale@{set\+\_\+scale}!saki\+::\+Transform@{saki\+::\+Transform}}
+\subsubsection{\texorpdfstring{set\+\_\+scale()}{set\_scale()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ T $>$\+::set\+\_\+scale (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsaki_1_1_vector3}{Vector3}}$<$ T $>$ \&}]{sca }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+拡縮のセッタ 
+
+
+\begin{DoxyParams}{引数}
+{\em sca} & 拡縮 \\
+\hline
+\end{DoxyParams}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/transform/details/\mbox{\hyperlink{transform__operator_8h}{transform\+\_\+operator.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/transform/\mbox{\hyperlink{transform_8h}{transform.\+h}}\end{DoxyCompactItemize}

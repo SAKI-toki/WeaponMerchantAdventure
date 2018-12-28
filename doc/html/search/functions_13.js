@@ -1,19 +1,13 @@
 var searchData=
 [
-  ['_7ebullet',['~Bullet',['../class_bullet.html#aaeb5cb41d7db89f49007b08b41f1bfcf',1,'Bullet']]],
-  ['_7ecolliderbase',['~ColliderBase',['../class_collider_base.html#a485c8a6348a053228aa61142a71e48fb',1,'ColliderBase']]],
-  ['_7edynamicobject',['~DynamicObject',['../class_dynamic_object.html#af9141dddf35d338d5bae491cb0455583',1,'DynamicObject']]],
-  ['_7eflyenemy',['~FlyEnemy',['../class_fly_enemy.html#ae4345f89a659b559c08d0bb879db7158',1,'FlyEnemy']]],
-  ['_7efontmanager',['~FontManager',['../class_font_manager.html#aa190bb023b4cf2ad28e24c69ef57f380',1,'FontManager']]],
-  ['_7emapobject',['~MapObject',['../class_map_object.html#aa601344267a49df197e841fcbd732209',1,'MapObject']]],
-  ['_7enormalenemy',['~NormalEnemy',['../class_normal_enemy.html#adc9a3115b2494739261b5cc363c11c32',1,'NormalEnemy']]],
-  ['_7eobjectbase',['~ObjectBase',['../class_object_base.html#a7074bc9389069351c2d0eee6a47e5ee3',1,'ObjectBase']]],
-  ['_7escene',['~Scene',['../class_scene.html#aa0a5be58e2ee2d1fdafc5fb46b5e661e',1,'Scene']]],
-  ['_7escenebase',['~SceneBase',['../class_scene_base.html#a187dd160e5a16909bcc6529851e38318',1,'SceneBase']]],
-  ['_7esingleton',['~Singleton',['../class_singleton.html#ad3c93143836479fb3dd96b21b795938c',1,'Singleton']]],
-  ['_7esound',['~Sound',['../class_sound.html#a0907389078bf740be2a5763366ad3376',1,'Sound']]],
-  ['_7espritemanager',['~SpriteManager',['../class_sprite_manager.html#ae01a31b1c80f676604ba55c93b499e1f',1,'SpriteManager']]],
-  ['_7estaticobject',['~StaticObject',['../class_static_object.html#ac27301fc3d8d22aff5664f592c375cd8',1,'StaticObject']]],
-  ['_7euibase',['~UiBase',['../class_ui_base.html#ac8713016ee88ba89e36897f3bbf72743',1,'UiBase']]],
-  ['_7eweaponbase',['~WeaponBase',['../class_weapon_base.html#a311bee6c8496581f21068867be48762f',1,'WeaponBase']]]
+  ['vector2',['Vector2',['../classsaki_1_1_vector2.html#af57b72f4255812a361bef1922a226f86',1,'saki::Vector2::Vector2()'],['../classsaki_1_1_vector2.html#ad0f3d0a05370f1ef4947520245f6e9a8',1,'saki::Vector2::Vector2(const T &amp;_x, const T &amp;_y)'],['../classsaki_1_1_vector2.html#ad2c0fd66544f68066179490647244b14',1,'saki::Vector2::Vector2(const T *const pointer)'],['../classsaki_1_1_vector2.html#af3d61bb90047a8621cba0a17b265bfaa',1,'saki::Vector2::Vector2(const Vector2&lt; T &gt; &amp;)=default'],['../classsaki_1_1_vector2.html#ade059efe536b29346642aacbd973d062',1,'saki::Vector2::Vector2(Vector2&lt; T &gt; &amp;&amp;) noexcept=default']]],
+  ['vector2_5fscalar_5fsome_5foperator',['vector2_scalar_some_operator',['../namespacesaki_1_1details.html#a8767a64d897787a3b0561939412abb28',1,'saki::details']]],
+  ['vector2_5fvector2_5fsome_5foperator',['vector2_vector2_some_operator',['../namespacesaki_1_1details.html#a1e3ab5ffafb707dc8d8b3cf054f3b2e3',1,'saki::details']]],
+  ['vector3',['Vector3',['../classsaki_1_1_vector3.html#a8617fe1a8d279c9673628728a0c5e5c6',1,'saki::Vector3::Vector3()'],['../classsaki_1_1_vector3.html#abaf9038ebdc4895d7df1319b6234d790',1,'saki::Vector3::Vector3(const T &amp;_x, const T &amp;_y, const T &amp;_z)'],['../classsaki_1_1_vector3.html#a486cbaea59124a022d52b4dcfc4bfdab',1,'saki::Vector3::Vector3(const T *const pointer)'],['../classsaki_1_1_vector3.html#ae996c120efb16029f71c26e24dfaa144',1,'saki::Vector3::Vector3(const Vector3&lt; T &gt; &amp;)=default'],['../classsaki_1_1_vector3.html#add1b3e26d1c54b75f1903c6303eb08a6',1,'saki::Vector3::Vector3(Vector3&lt; T &gt; &amp;&amp;) noexcept=default']]],
+  ['vector3_5fscalar_5fsome_5foperator',['vector3_scalar_some_operator',['../namespacesaki_1_1details.html#a65a656e3fd6cb4f45afc9137f5e6383a',1,'saki::details']]],
+  ['vector3_5fvector3_5fsome_5foperator',['vector3_vector3_some_operator',['../namespacesaki_1_1details.html#a9d9fd5673ab6516752ecf05845e7f9b9',1,'saki::details']]],
+  ['vector4',['Vector4',['../classsaki_1_1_vector4.html#a9e8579274314ee2639d60c501c8ecf61',1,'saki::Vector4::Vector4()'],['../classsaki_1_1_vector4.html#abbab45ef6d7c95d150c3e76eb241a666',1,'saki::Vector4::Vector4(const T &amp;_x, const T &amp;_y, const T &amp;_z, const T &amp;_w)'],['../classsaki_1_1_vector4.html#abc0ccb1bdc06d795177dcbc800845873',1,'saki::Vector4::Vector4(const T *const pointer)'],['../classsaki_1_1_vector4.html#a1bb4d03830bdb84341a001ef4c9b6fab',1,'saki::Vector4::Vector4(const Vector4&lt; T &gt; &amp;)=default'],['../classsaki_1_1_vector4.html#afc0bf46f0fefeae2f6f21288f6714580',1,'saki::Vector4::Vector4(Vector4&lt; T &gt; &amp;&amp;) noexcept=default']]],
+  ['vector4_5fscalar_5fsome_5foperator',['vector4_scalar_some_operator',['../namespacesaki_1_1details.html#a1786beb40b0c29d0e6ea19ce2aad110c',1,'saki::details']]],
+  ['vector4_5fvector4_5fsome_5foperator',['vector4_vector4_some_operator',['../namespacesaki_1_1details.html#a7faa5e95c73949e48acc6840c357990f',1,'saki::details']]],
+  ['vibration',['Vibration',['../class_gamepad_input.html#afd429d32d076130ff8a7df12037eaddd',1,'GamepadInput']]]
 ];

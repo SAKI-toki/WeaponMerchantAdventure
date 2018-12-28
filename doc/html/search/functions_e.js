@@ -1,27 +1,6 @@
 var searchData=
 [
-  ['scaling',['Scaling',['../class_transform.html#ad6097ddf1d30f5a1023725efbee375fb',1,'Transform']]],
-  ['setcollider',['SetCollider',['../class_collider_manager.html#acf6822be802b18cd2f0ea50b2ba00d63',1,'ColliderManager']]],
-  ['setmove',['SetMove',['../class_fly_enemy.html#a137e5a5f2adb7eacd282bbf662242cb3',1,'FlyEnemy']]],
-  ['setpan',['SetPan',['../class_sound.html#a1b066e78405656b1475849139ca24dce',1,'Sound']]],
-  ['setpitch',['SetPitch',['../class_sound.html#a06b9680efb2b6b41b52d9f25ac0264f1',1,'Sound']]],
-  ['setpos',['SetPos',['../class_camera.html#af79aa3fedd030712e7fa122a2ea88b48',1,'Camera']]],
-  ['setrect',['SetRect',['../class_sprite.html#a0565013aa0e194c67dfbaf243ab9250a',1,'Sprite']]],
-  ['setsidepower',['SetSidePower',['../class_gravity.html#a76503b3788b696748828f6e48556b9ab',1,'Gravity']]],
-  ['setstatus',['SetStatus',['../class_square_collider.html#a11fbfdc35978ca8be47671a23719dbd4',1,'SquareCollider']]],
-  ['settarget',['SetTarget',['../class_camera.html#a7336f8f6c9145bee1ce6b1f16f0aaee4',1,'Camera']]],
-  ['settext',['SetText',['../class_font.html#a2c862120802e9aac650a96f7b4e29081',1,'Font']]],
-  ['settexture',['SetTexture',['../class_sprite_manager.html#a5b41702bb7476fb1c148b3e2c81d6b06',1,'SpriteManager']]],
-  ['settransform',['SetTransform',['../class_font.html#a46354f2c8dfd91268242b44e337d5262',1,'Font']]],
-  ['setuppower',['SetUpPower',['../class_gravity.html#af31f3dceee7c82385b4c93569e215f91',1,'Gravity']]],
-  ['setvolume',['SetVolume',['../class_sound.html#a993eee69f61611ca1b4621ea0952e2c8',1,'Sound']]],
-  ['singleton',['Singleton',['../class_singleton.html#a923b995920da9c06590adb170ab2f890',1,'Singleton']]],
-  ['sound',['Sound',['../class_sound.html#a539c205cdf06fe2c621fd77c37bcfac9',1,'Sound::Sound()'],['../class_sound.html#adbdf520a7124095c93390f43d78051ff',1,'Sound::Sound(const Sound &amp;s)'],['../class_sound.html#a4db406891d5b285ace544a52737c571a',1,'Sound::Sound(Sound &amp;&amp;s) noexcept']]],
-  ['sprite',['Sprite',['../class_sprite.html#a12cba3ac1868418add3c4d95ce87e615',1,'Sprite::Sprite()'],['../class_sprite.html#a53252d3d5fbc5438ed6bbd8b3913c3b4',1,'Sprite::Sprite(const Sprite &amp;s)']]],
-  ['squarecollider',['SquareCollider',['../class_square_collider.html#a354753b61e7fa39cb5e7aadcddb78910',1,'SquareCollider']]],
-  ['start',['Start',['../class_sprite_manager.html#a6b387e8736713264f6d590082cd492cb',1,'SpriteManager::Start()'],['../class_sound.html#ae021b518e93d7d8c6f3ea951cd4b98d8',1,'Sound::Start()']]],
-  ['staticobject',['StaticObject',['../class_static_object.html#a2a8e918ddfe5c6723b88b9f5c4156472',1,'StaticObject']]],
-  ['stop',['Stop',['../class_sound.html#a188de6836d531813da378464e392e813',1,'Sound']]],
-  ['suspend',['Suspend',['../class_sound_manager.html#a97d76cb22596fbb3c85766df0dcde757',1,'SoundManager']]],
-  ['sword',['Sword',['../class_sword.html#af33284e40825ec8ddccd01fa5833be36',1,'Sword::Sword()'],['../class_sword.html#a6a55d930547584000fcc7c63d47ffabf',1,'Sword::Sword(const Sword &amp;s)']]]
+  ['pause',['pause',['../class_sound.html#a65b0f66e9123caed2809da366ac4d377',1,'Sound']]],
+  ['play',['play',['../class_sound.html#aad595b0dc5459e110b53a4e6b2adb0e4',1,'Sound']]],
+  ['player',['Player',['../class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8',1,'Player::Player()'],['../class_player.html#a635af5e438af5a296c88f768e5e93eb0',1,'Player::Player(Player &amp;&amp;other) noexcept']]]
 ];

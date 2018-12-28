@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['objectbase',['ObjectBase',['../class_object_base.html',1,'']]]
+  ['loadmap',['LoadMap',['../class_load_map.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['worldtransform',['worldTransform',['../class_object_base.html#abedc2ea4baa694611f8822ea6e04b210',1,'ObjectBase']]]
+  ['use_5fgravity',['use_gravity',['../class_object_base.html#aab135a2a04e76046804f01b63df4f35c',1,'ObjectBase']]]
 ];

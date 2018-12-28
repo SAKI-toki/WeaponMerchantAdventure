@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['g',['g',['../struct_font_color.html#aee91e6024a40a2bc4a21cc427c9102a6',1,'FontColor::g()'],['../struct_sprite_color.html#ae59c4c99310c60ac72740f83a3073a44',1,'SpriteColor::g()']]],
-  ['gravity',['gravity',['../class_object_base.html#a570bfa03730e906989187bfbcad95c51',1,'ObjectBase']]]
+  ['f_5fenemy',['f_enemy',['../class_game_scene_base.html#ad34ad8c64d483b662352b9a806634bd9',1,'GameSceneBase']]],
+  ['field',['field',['../class_game_scene_base.html#a27a6d9806fd1f23a651a545c94a24254',1,'GameSceneBase']]]
 ];

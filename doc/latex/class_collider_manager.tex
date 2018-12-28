@@ -18,6 +18,8 @@ Collider\+Manager の継承関係図\begin{figure}[H]
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
+void \mbox{\hyperlink{class_collider_manager_a197aed04295d1118fe7bc0be935b9a47}{Set\+Target}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$obj)
+\item 
 void \mbox{\hyperlink{class_collider_manager_acf6822be802b18cd2f0ea50b2ba00d63}{Set\+Collider}} (\mbox{\hyperlink{class_square_collider}{Square\+Collider}} $\ast$, bool is\+\_\+static)
 \begin{DoxyCompactList}\small\item\em 四角形コライダを配列に格納する \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_collider_manager_af3863143e206b4c86c8b89dd91ff3c8c}{Check\+Collision}} ()
@@ -26,11 +28,6 @@ void \mbox{\hyperlink{class_collider_manager_afb805cdb8c6e5872d54ecbb9368ba38d}{
 \begin{DoxyCompactList}\small\item\em 四角形コライダの削除 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_collider_manager_a6d397c24cd8fdac77685d71842b8ae2e}{Reset}} ()
 \begin{DoxyCompactList}\small\item\em コライダリストをクリアする \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{限定公開メンバ関数}
-\begin{DoxyCompactItemize}
-\item 
-bool \mbox{\hyperlink{class_collider_manager_a4875e1763218249c86a09bbc1ff53720}{Compare\+Collision}} (Square\+Pos\+Col \&, Square\+Pos\+Col \&, bool)
-\begin{DoxyCompactList}\small\item\em 四角形同士が当たっているかを判定する \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
 
 
@@ -48,26 +45,6 @@ bool \mbox{\hyperlink{class_collider_manager_a4875e1763218249c86a09bbc1ff53720}{
 
 全てのコライダを走査する 
 
-\mbox{\Hypertarget{class_collider_manager_a4875e1763218249c86a09bbc1ff53720}\label{class_collider_manager_a4875e1763218249c86a09bbc1ff53720}} 
-\index{Collider\+Manager@{Collider\+Manager}!Compare\+Collision@{Compare\+Collision}}
-\index{Compare\+Collision@{Compare\+Collision}!Collider\+Manager@{Collider\+Manager}}
-\subsubsection{\texorpdfstring{Compare\+Collision()}{CompareCollision()}}
-{\footnotesize\ttfamily bool Collider\+Manager\+::\+Compare\+Collision (\begin{DoxyParamCaption}\item[{Square\+Pos\+Col \&}]{col1,  }\item[{Square\+Pos\+Col \&}]{col2,  }\item[{bool}]{col1\+\_\+static }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-
-
-四角形同士が当たっているかを判定する 
-
-
-\begin{DoxyParams}{引数}
-{\em col1,col2} & 比べる二つの四角形コライダ \\
-\hline
-{\em col1\+\_\+static} & スタティックかどうか \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{戻り値}
-bool 当たっているかどうか 
-\end{DoxyReturn}
 \mbox{\Hypertarget{class_collider_manager_afb805cdb8c6e5872d54ecbb9368ba38d}\label{class_collider_manager_afb805cdb8c6e5872d54ecbb9368ba38d}} 
 \index{Collider\+Manager@{Collider\+Manager}!Delete\+Collider@{Delete\+Collider}}
 \index{Delete\+Collider@{Delete\+Collider}!Collider\+Manager@{Collider\+Manager}}
@@ -110,9 +87,15 @@ bool 当たっているかどうか
 {\em is\+\_\+static} & 静的か動的か \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_collider_manager_a197aed04295d1118fe7bc0be935b9a47}\label{class_collider_manager_a197aed04295d1118fe7bc0be935b9a47}} 
+\index{Collider\+Manager@{Collider\+Manager}!Set\+Target@{Set\+Target}}
+\index{Set\+Target@{Set\+Target}!Collider\+Manager@{Collider\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Target()}{SetTarget()}}
+{\footnotesize\ttfamily void Collider\+Manager\+::\+Set\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/collider/manager/\mbox{\hyperlink{collider__manager_8h}{collider\+\_\+manager.\+h}}\item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/collider/manager/\mbox{\hyperlink{collider__manager_8cpp}{collider\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/collider/manager/\mbox{\hyperlink{collider__manager_8h}{collider\+\_\+manager.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/collider/manager/\mbox{\hyperlink{collider__manager_8cpp}{collider\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

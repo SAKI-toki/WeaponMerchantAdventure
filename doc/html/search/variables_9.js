@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['object',['object',['../class_collider_base.html#a63adac6a75877857abe9ff2cf4274157',1,'ColliderBase']]],
-  ['object_5ftag',['object_tag',['../class_object_base.html#aff7eb5482ca9bc1cd30b84994d0dad8b',1,'ObjectBase']]]
+  ['maproj',['maProj',['../class_camera.html#aad6337f1b3a5528df50ab0fe0f3ad1cb',1,'Camera']]],
+  ['maview',['maView',['../class_camera.html#ac762f84210cdf6a30b0b311c943bd236',1,'Camera']]]
 ];

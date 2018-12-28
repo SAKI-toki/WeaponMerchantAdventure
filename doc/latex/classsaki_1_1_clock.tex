@@ -1,0 +1,95 @@
+\hypertarget{classsaki_1_1_clock}{}\section{saki\+:\+:Clock クラス}
+\label{classsaki_1_1_clock}\index{saki\+::\+Clock@{saki\+::\+Clock}}
+
+
+時間を測るクラス  
+
+
+
+
+{\ttfamily \#include $<$clock.\+h$>$}
+
+saki\+:\+:Clock の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classsaki_1_1_clock}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsaki_1_1_clock_a235372b9a2044bab90f38c117b49d3ab}{Clock}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsaki_1_1_clock_a522e7d5dcae1f457dfc1cd4eb9560cec}{start}} ()
+\begin{DoxyCompactList}\small\item\em 開始時間のセット \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T  = double$>$ }\\T \mbox{\hyperlink{classsaki_1_1_clock_afb3a41ac314bb58c010283bea60069f9}{end}} (bool ms=true)
+\begin{DoxyCompactList}\small\item\em 開始時間をセットしてからの時間を返す \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T  = double$>$ }\\T \mbox{\hyperlink{classsaki_1_1_clock_a6df6705089065ac8f9f3cdb718d7284f}{end\+\_\+and\+\_\+start}} (bool ms=true)
+\begin{DoxyCompactList}\small\item\em 開始時間をセットしてからの時間を返し、そこからまた時間をスタートする \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+時間を測るクラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{classsaki_1_1_clock_a235372b9a2044bab90f38c117b49d3ab}\label{classsaki_1_1_clock_a235372b9a2044bab90f38c117b49d3ab}} 
+\index{saki\+::\+Clock@{saki\+::\+Clock}!Clock@{Clock}}
+\index{Clock@{Clock}!saki\+::\+Clock@{saki\+::\+Clock}}
+\subsubsection{\texorpdfstring{Clock()}{Clock()}}
+{\footnotesize\ttfamily saki\+::\+Clock\+::\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コンストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{classsaki_1_1_clock_afb3a41ac314bb58c010283bea60069f9}\label{classsaki_1_1_clock_afb3a41ac314bb58c010283bea60069f9}} 
+\index{saki\+::\+Clock@{saki\+::\+Clock}!end@{end}}
+\index{end@{end}!saki\+::\+Clock@{saki\+::\+Clock}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$typename T  = double$>$ \\
+T saki\+::\+Clock\+::end (\begin{DoxyParamCaption}\item[{bool}]{ms = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+開始時間をセットしてからの時間を返す 
+
+
+\begin{DoxyParams}{引数}
+{\em ms} & trueならミリ秒,falseなら秒で返す return 時間 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsaki_1_1_clock_a6df6705089065ac8f9f3cdb718d7284f}\label{classsaki_1_1_clock_a6df6705089065ac8f9f3cdb718d7284f}} 
+\index{saki\+::\+Clock@{saki\+::\+Clock}!end\+\_\+and\+\_\+start@{end\+\_\+and\+\_\+start}}
+\index{end\+\_\+and\+\_\+start@{end\+\_\+and\+\_\+start}!saki\+::\+Clock@{saki\+::\+Clock}}
+\subsubsection{\texorpdfstring{end\+\_\+and\+\_\+start()}{end\_and\_start()}}
+{\footnotesize\ttfamily template$<$typename T  = double$>$ \\
+T saki\+::\+Clock\+::end\+\_\+and\+\_\+start (\begin{DoxyParamCaption}\item[{bool}]{ms = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+開始時間をセットしてからの時間を返し、そこからまた時間をスタートする 
+
+
+\begin{DoxyParams}{引数}
+{\em ms} & trueならミリ秒,falseなら秒で返す return 時間 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsaki_1_1_clock_a522e7d5dcae1f457dfc1cd4eb9560cec}\label{classsaki_1_1_clock_a522e7d5dcae1f457dfc1cd4eb9560cec}} 
+\index{saki\+::\+Clock@{saki\+::\+Clock}!start@{start}}
+\index{start@{start}!saki\+::\+Clock@{saki\+::\+Clock}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void saki\+::\+Clock\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+開始時間のセット 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/clock/\mbox{\hyperlink{clock_8h}{clock.\+h}}\end{DoxyCompactItemize}

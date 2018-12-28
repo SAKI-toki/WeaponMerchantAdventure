@@ -20,9 +20,9 @@ Square\+Collider の継承関係図\begin{figure}[H]
 \item 
 \mbox{\hyperlink{class_square_collider_a354753b61e7fa39cb5e7aadcddb78910}{Square\+Collider}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, bool=false, bool=false)
 \begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_square_collider_a11fbfdc35978ca8be47671a23719dbd4}{Set\+Status}} (const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&pos, const float w, const float h, const float rot, const float scale)
+void \mbox{\hyperlink{class_square_collider_a382870e5f0bc29b4f38eb476ecb2fd68}{Set\+Status}} (const \mbox{\hyperlink{common_8h_ab1cb35b3a17c398d8ef71d5f779808bf}{Vec3}} \&pos, const float w, const float h, const \mbox{\hyperlink{common_8h_ab1cb35b3a17c398d8ef71d5f779808bf}{Vec3}} \&scale)
 \begin{DoxyCompactList}\small\item\em 当たり判定のステータスをセットする \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_square_collider_a68cf6f1607d0d460e3a4ba31a49153d8}{Collision\+Extrusion}} (const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&)
+void \mbox{\hyperlink{class_square_collider_ac250db865d0755fc8731f1660397943d}{Collision\+Extrusion}} (const \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}} \&)
 \begin{DoxyCompactList}\small\item\em 当たったときの押し出し \end{DoxyCompactList}\item 
 const Square\+Status \& \mbox{\hyperlink{class_square_collider_ac437bc1bed951c82ca25d2b17a7b2e0f}{Get\+Status}} () const
 \begin{DoxyCompactList}\small\item\em 当たり判定のステータスを返す \end{DoxyCompactList}\item 
@@ -59,11 +59,11 @@ void \mbox{\hyperlink{class_square_collider_a83273e0e63692aa8020b8deedd456886}{D
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_square_collider_a68cf6f1607d0d460e3a4ba31a49153d8}\label{class_square_collider_a68cf6f1607d0d460e3a4ba31a49153d8}} 
+\mbox{\Hypertarget{class_square_collider_ac250db865d0755fc8731f1660397943d}\label{class_square_collider_ac250db865d0755fc8731f1660397943d}} 
 \index{Square\+Collider@{Square\+Collider}!Collision\+Extrusion@{Collision\+Extrusion}}
 \index{Collision\+Extrusion@{Collision\+Extrusion}!Square\+Collider@{Square\+Collider}}
 \subsubsection{\texorpdfstring{Collision\+Extrusion()}{CollisionExtrusion()}}
-{\footnotesize\ttfamily void Square\+Collider\+::\+Collision\+Extrusion (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{pos }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Square\+Collider\+::\+Collision\+Extrusion (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}} \&}]{pos }\end{DoxyParamCaption})}
 
 
 
@@ -107,11 +107,11 @@ const Square\+Status\& ステータス
 
 コピー代入演算子 
 
-\mbox{\Hypertarget{class_square_collider_a11fbfdc35978ca8be47671a23719dbd4}\label{class_square_collider_a11fbfdc35978ca8be47671a23719dbd4}} 
+\mbox{\Hypertarget{class_square_collider_a382870e5f0bc29b4f38eb476ecb2fd68}\label{class_square_collider_a382870e5f0bc29b4f38eb476ecb2fd68}} 
 \index{Square\+Collider@{Square\+Collider}!Set\+Status@{Set\+Status}}
 \index{Set\+Status@{Set\+Status}!Square\+Collider@{Square\+Collider}}
 \subsubsection{\texorpdfstring{Set\+Status()}{SetStatus()}}
-{\footnotesize\ttfamily void Square\+Collider\+::\+Set\+Status (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{pos,  }\item[{const float}]{w,  }\item[{const float}]{h,  }\item[{const float}]{rot,  }\item[{const float}]{scale }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Square\+Collider\+::\+Set\+Status (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_ab1cb35b3a17c398d8ef71d5f779808bf}{Vec3}} \&}]{pos,  }\item[{const float}]{w,  }\item[{const float}]{h,  }\item[{const \mbox{\hyperlink{common_8h_ab1cb35b3a17c398d8ef71d5f779808bf}{Vec3}} \&}]{scale }\end{DoxyParamCaption})}
 
 
 
@@ -123,8 +123,6 @@ const Square\+Status\& ステータス
 \hline
 {\em w,h} & 幅、高さ \\
 \hline
-{\em rot} & 回転 \\
-\hline
 {\em scale} & 拡大・縮小 \\
 \hline
 \end{DoxyParams}
@@ -132,5 +130,5 @@ const Square\+Status\& ステータス
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/collider/square/\mbox{\hyperlink{square__collider_8h}{square\+\_\+collider.\+h}}\item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/collider/square/\mbox{\hyperlink{square__collider_8cpp}{square\+\_\+collider.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/collider/square/\mbox{\hyperlink{square__collider_8h}{square\+\_\+collider.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/collider/square/\mbox{\hyperlink{square__collider_8cpp}{square\+\_\+collider.\+cpp}}\end{DoxyCompactItemize}

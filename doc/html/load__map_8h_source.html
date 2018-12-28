@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/src/load/map/load_map.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_98cdb10f369f6a3b9149e010b312bf5d.html">src</a></li><li class="navelem"><a class="el" href="dir_13cf8647c814ec1777e9b0815b252931.html">load</a></li><li class="navelem"><a class="el" href="dir_b38c807139e68713063826da9e5ea4ec.html">map</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">load_map.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="load__map_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../../common/common.h&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="singleton_8h.html">saki/singleton/singleton.h</a>&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../../object/map/map.h&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../../object/character/player/player.h&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../../object/character/enemy/normal/normal_enemy.h&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../../object/character/enemy/fly/fly_enemy.h&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;../../object/character/enemy/boss/boss.h&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../../object/select/select_object.h&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;../../object/item/bullet/bullet_item.h&quot;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_load_map.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_load_map.html">LoadMap</a> :<span class="keyword">public</span> <a class="code" href="classsaki_1_1_singleton.html">saki::Singleton</a>&lt;LoadMap&gt;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    WCHAR map_path[256];</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    WCHAR fly_path[256];</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::vector&lt;std::vector&lt;int&gt;&gt; map;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">struct </span>INT2</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">int</span> x, y;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">struct </span>HashINT2</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">size_t</span> operator()(<span class="keyword">const</span> INT2&amp; int2)<span class="keyword">const</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">        </span>{</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span> int2.x * 100000 + int2.y;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">struct </span>EqualINT2</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> INT2&amp; left, <span class="keyword">const</span> INT2&amp; right)<span class="keyword">const</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">        </span>{</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">return</span> left.x == right.x&amp;&amp;left.y == right.y;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    };</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::unordered_map&lt;INT2, std::pair&lt;Vec2, float&gt;, HashINT2, EqualINT2&gt; fly;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_load_map.html#a534a2ac8151a7549b1fed723759ab2d0">GameLoadingMap</a>(WCHAR*, WCHAR*);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_load_map.html#a44d4c9299837322a7eedbb298b6dbda9">GameMakingMap</a>(std::vector&lt;MapObject&gt;&amp;, std::list&lt;NormalEnemy&gt;&amp;,</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        std::list&lt;FlyEnemy&gt;&amp;, std::unique_ptr&lt;Boss&gt;&amp;,</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        std::unique_ptr&lt;Player&gt;&amp;,std::list&lt;BulletItem&gt;&amp;);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_load_map.html#a9cfbf3d52bcaf5384d882c1cf591bf43">TitleSelectLoadingMap</a>(WCHAR*);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_load_map.html#a69d69c3ac701f152395a18719c16c881">TitleSelectMakingMap</a>(std::vector&lt;MapObject&gt;&amp;, std::unique_ptr&lt;Player&gt;&amp;, </div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        std::vector&lt;SelectObj&gt;&amp;, <a class="code" href="class_static_object.html">StaticObject</a>&amp;);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="ttc" id="class_load_map_html_a69d69c3ac701f152395a18719c16c881"><div class="ttname"><a href="class_load_map.html#a69d69c3ac701f152395a18719c16c881">LoadMap::TitleSelectMakingMap</a></div><div class="ttdeci">void TitleSelectMakingMap(std::vector&lt; MapObject &gt; &amp;, std::unique_ptr&lt; Player &gt; &amp;, std::vector&lt; SelectObj &gt; &amp;, StaticObject &amp;)</div><div class="ttdoc">ゲームマップの作成 </div><div class="ttdef"><b>Definition:</b> load_map.cpp:273</div></div>
+<div class="ttc" id="singleton_8h_html"><div class="ttname"><a href="singleton_8h.html">singleton.h</a></div><div class="ttdoc">シングルトンクラス </div></div>
+<div class="ttc" id="class_load_map_html_a534a2ac8151a7549b1fed723759ab2d0"><div class="ttname"><a href="class_load_map.html#a534a2ac8151a7549b1fed723759ab2d0">LoadMap::GameLoadingMap</a></div><div class="ttdeci">void GameLoadingMap(WCHAR *, WCHAR *)</div><div class="ttdoc">ゲームマップの読み込み </div><div class="ttdef"><b>Definition:</b> load_map.cpp:17</div></div>
+<div class="ttc" id="class_load_map_html"><div class="ttname"><a href="class_load_map.html">LoadMap</a></div><div class="ttdoc">マップロードクラス </div><div class="ttdef"><b>Definition:</b> load_map.h:26</div></div>
+<div class="ttc" id="classsaki_1_1_singleton_html"><div class="ttname"><a href="classsaki_1_1_singleton.html">saki::Singleton</a></div><div class="ttdoc">継承するとシングルトンクラスになる </div><div class="ttdef"><b>Definition:</b> singleton.h:21</div></div>
+<div class="ttc" id="class_static_object_html"><div class="ttname"><a href="class_static_object.html">StaticObject</a></div><div class="ttdoc">動かないオブジェクトのスーパークラス </div><div class="ttdef"><b>Definition:</b> static_object.h:12</div></div>
+<div class="ttc" id="class_load_map_html_a44d4c9299837322a7eedbb298b6dbda9"><div class="ttname"><a href="class_load_map.html#a44d4c9299837322a7eedbb298b6dbda9">LoadMap::GameMakingMap</a></div><div class="ttdeci">void GameMakingMap(std::vector&lt; MapObject &gt; &amp;, std::list&lt; NormalEnemy &gt; &amp;, std::list&lt; FlyEnemy &gt; &amp;, std::unique_ptr&lt; Boss &gt; &amp;, std::unique_ptr&lt; Player &gt; &amp;, std::list&lt; BulletItem &gt; &amp;)</div><div class="ttdoc">ゲームマップの作成 </div><div class="ttdef"><b>Definition:</b> load_map.cpp:113</div></div>
+<div class="ttc" id="class_load_map_html_a9cfbf3d52bcaf5384d882c1cf591bf43"><div class="ttname"><a href="class_load_map.html#a9cfbf3d52bcaf5384d882c1cf591bf43">LoadMap::TitleSelectLoadingMap</a></div><div class="ttdeci">void TitleSelectLoadingMap(WCHAR *)</div><div class="ttdoc">タイトルかセレクトマップの読み込み </div><div class="ttdef"><b>Definition:</b> load_map.cpp:229</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

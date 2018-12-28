@@ -1,0 +1,189 @@
+\hypertarget{class_select_obj}{}\section{Select\+Obj クラス}
+\label{class_select_obj}\index{Select\+Obj@{Select\+Obj}}
+
+
+{\ttfamily \#include $<$select\+\_\+object.\+h$>$}
+
+Select\+Obj の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_select_obj}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_select_obj_ad3a5fdc41a9e5753f99bae7ad289888f}{Destroy}} () final
+\begin{DoxyCompactList}\small\item\em マップの破棄 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_select_obj_a38e6ecf0bc37abe109332de38c027853}{Select\+Obj}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_select_obj_ab62679ab8ef5831c5389fdb234b37188}{Select\+Obj}} (const \mbox{\hyperlink{class_select_obj}{Select\+Obj}} \&m)
+\begin{DoxyCompactList}\small\item\em コピーコンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_select_obj_a5d1e7d1696dfdef2eadf25cb4166f2ef}{Select\+Obj}} (\mbox{\hyperlink{class_select_obj}{Select\+Obj}} \&\&m) noexcept
+\begin{DoxyCompactList}\small\item\em ムーブコンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_select_obj}{Select\+Obj}} \& \mbox{\hyperlink{class_select_obj_a6faf6b5fed9a6a61f24d1c91e009d0c7}{operator=}} (const \mbox{\hyperlink{class_select_obj}{Select\+Obj}} \&other)
+\begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_select_obj}{Select\+Obj}} \& \mbox{\hyperlink{class_select_obj_a31f75f0dc6f8fb01f577bc8e5d4099f8}{operator=}} (\mbox{\hyperlink{class_select_obj}{Select\+Obj}} \&\&other) noexcept
+\begin{DoxyCompactList}\small\item\em ムーブ代入演算子 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_select_obj_a497ff683aefe9bf77201eee1e3948e15}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}) final
+\begin{DoxyCompactList}\small\item\em マップが当たってるときに実行する関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_select_obj_a091e4be751b4f828d0780acdd493fa71}{$\sim$\+Select\+Obj}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_select_obj_a7678b8b51a55e9dcd2b8a003d54c08f5}{collision\+\_\+weapon}} = false
+\item 
+bool \mbox{\hyperlink{class_select_obj_ab3471f76e003f613f38d396ad42a7860}{another\+\_\+obj\+\_\+collision}} = false
+\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_select_obj_a09c9e1a54f4605eda5bb6e18887c2654}{Init\+Process}} () final
+\begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_select_obj_a4788d957629f0b69dc78166f09f949bb}{Update\+Process}} () final
+\begin{DoxyCompactList}\small\item\em マップの更新 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_select_obj_a38e6ecf0bc37abe109332de38c027853}\label{class_select_obj_a38e6ecf0bc37abe109332de38c027853}} 
+\index{Select\+Obj@{Select\+Obj}!Select\+Obj@{Select\+Obj}}
+\index{Select\+Obj@{Select\+Obj}!Select\+Obj@{Select\+Obj}}
+\subsubsection{\texorpdfstring{Select\+Obj()}{SelectObj()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Select\+Obj\+::\+Select\+Obj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{class_select_obj_ab62679ab8ef5831c5389fdb234b37188}\label{class_select_obj_ab62679ab8ef5831c5389fdb234b37188}} 
+\index{Select\+Obj@{Select\+Obj}!Select\+Obj@{Select\+Obj}}
+\index{Select\+Obj@{Select\+Obj}!Select\+Obj@{Select\+Obj}}
+\subsubsection{\texorpdfstring{Select\+Obj()}{SelectObj()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Select\+Obj\+::\+Select\+Obj (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_select_obj}{Select\+Obj}} \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピーコンストラクタ 
+
+\mbox{\Hypertarget{class_select_obj_a5d1e7d1696dfdef2eadf25cb4166f2ef}\label{class_select_obj_a5d1e7d1696dfdef2eadf25cb4166f2ef}} 
+\index{Select\+Obj@{Select\+Obj}!Select\+Obj@{Select\+Obj}}
+\index{Select\+Obj@{Select\+Obj}!Select\+Obj@{Select\+Obj}}
+\subsubsection{\texorpdfstring{Select\+Obj()}{SelectObj()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Select\+Obj\+::\+Select\+Obj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_select_obj}{Select\+Obj}} \&\&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+ムーブコンストラクタ 
+
+\mbox{\Hypertarget{class_select_obj_a091e4be751b4f828d0780acdd493fa71}\label{class_select_obj_a091e4be751b4f828d0780acdd493fa71}} 
+\index{Select\+Obj@{Select\+Obj}!````~Select\+Obj@{$\sim$\+Select\+Obj}}
+\index{````~Select\+Obj@{$\sim$\+Select\+Obj}!Select\+Obj@{Select\+Obj}}
+\subsubsection{\texorpdfstring{$\sim$\+Select\+Obj()}{~SelectObj()}}
+{\footnotesize\ttfamily Select\+Obj\+::$\sim$\+Select\+Obj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+デストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_select_obj_a497ff683aefe9bf77201eee1e3948e15}\label{class_select_obj_a497ff683aefe9bf77201eee1e3948e15}} 
+\index{Select\+Obj@{Select\+Obj}!Collision@{Collision}}
+\index{Collision@{Collision}!Select\+Obj@{Select\+Obj}}
+\subsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void Select\+Obj\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+マップが当たってるときに実行する関数 
+
+
+
+\mbox{\hyperlink{class_static_object_a64c8803ff881d578d103413e299dbf7f}{Static\+Object}}を再実装しています。
+
+\mbox{\Hypertarget{class_select_obj_ad3a5fdc41a9e5753f99bae7ad289888f}\label{class_select_obj_ad3a5fdc41a9e5753f99bae7ad289888f}} 
+\index{Select\+Obj@{Select\+Obj}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Select\+Obj@{Select\+Obj}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Select\+Obj\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+マップの破棄 
+
+
+
+\mbox{\hyperlink{class_static_object_a8e9fb321b4f8f12c4bec1bc66853512f}{Static\+Object}}を再実装しています。
+
+\mbox{\Hypertarget{class_select_obj_a09c9e1a54f4605eda5bb6e18887c2654}\label{class_select_obj_a09c9e1a54f4605eda5bb6e18887c2654}} 
+\index{Select\+Obj@{Select\+Obj}!Init\+Process@{Init\+Process}}
+\index{Init\+Process@{Init\+Process}!Select\+Obj@{Select\+Obj}}
+\subsubsection{\texorpdfstring{Init\+Process()}{InitProcess()}}
+{\footnotesize\ttfamily void Select\+Obj\+::\+Init\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+初期化 
+
+
+
+\mbox{\hyperlink{class_static_object_afa0709f50495338a23c1140062a567af}{Static\+Object}}を再実装しています。
+
+\mbox{\Hypertarget{class_select_obj_a6faf6b5fed9a6a61f24d1c91e009d0c7}\label{class_select_obj_a6faf6b5fed9a6a61f24d1c91e009d0c7}} 
+\index{Select\+Obj@{Select\+Obj}!operator=@{operator=}}
+\index{operator=@{operator=}!Select\+Obj@{Select\+Obj}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_select_obj}{Select\+Obj}}\& Select\+Obj\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_select_obj}{Select\+Obj}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピー代入演算子 
+
+\mbox{\Hypertarget{class_select_obj_a31f75f0dc6f8fb01f577bc8e5d4099f8}\label{class_select_obj_a31f75f0dc6f8fb01f577bc8e5d4099f8}} 
+\index{Select\+Obj@{Select\+Obj}!operator=@{operator=}}
+\index{operator=@{operator=}!Select\+Obj@{Select\+Obj}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_select_obj}{Select\+Obj}}\& Select\+Obj\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_select_obj}{Select\+Obj}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+ムーブ代入演算子 
+
+\mbox{\Hypertarget{class_select_obj_a4788d957629f0b69dc78166f09f949bb}\label{class_select_obj_a4788d957629f0b69dc78166f09f949bb}} 
+\index{Select\+Obj@{Select\+Obj}!Update\+Process@{Update\+Process}}
+\index{Update\+Process@{Update\+Process}!Select\+Obj@{Select\+Obj}}
+\subsubsection{\texorpdfstring{Update\+Process()}{UpdateProcess()}}
+{\footnotesize\ttfamily void Select\+Obj\+::\+Update\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+マップの更新 
+
+
+
+\mbox{\hyperlink{class_static_object_a7fa678c3c4032bb6e9417f93a8bb895c}{Static\+Object}}を再実装しています。
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_select_obj_ab3471f76e003f613f38d396ad42a7860}\label{class_select_obj_ab3471f76e003f613f38d396ad42a7860}} 
+\index{Select\+Obj@{Select\+Obj}!another\+\_\+obj\+\_\+collision@{another\+\_\+obj\+\_\+collision}}
+\index{another\+\_\+obj\+\_\+collision@{another\+\_\+obj\+\_\+collision}!Select\+Obj@{Select\+Obj}}
+\subsubsection{\texorpdfstring{another\+\_\+obj\+\_\+collision}{another\_obj\_collision}}
+{\footnotesize\ttfamily bool Select\+Obj\+::another\+\_\+obj\+\_\+collision = false}
+
+\mbox{\Hypertarget{class_select_obj_a7678b8b51a55e9dcd2b8a003d54c08f5}\label{class_select_obj_a7678b8b51a55e9dcd2b8a003d54c08f5}} 
+\index{Select\+Obj@{Select\+Obj}!collision\+\_\+weapon@{collision\+\_\+weapon}}
+\index{collision\+\_\+weapon@{collision\+\_\+weapon}!Select\+Obj@{Select\+Obj}}
+\subsubsection{\texorpdfstring{collision\+\_\+weapon}{collision\_weapon}}
+{\footnotesize\ttfamily bool Select\+Obj\+::collision\+\_\+weapon = false}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/object/select/\mbox{\hyperlink{select__object_8h}{select\+\_\+object.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/object/select/\mbox{\hyperlink{select__object_8cpp}{select\+\_\+object.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\hypertarget{matrix__operator_8h}{}\section{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/matrix/details/matrix\+\_\+operator.h ファイル}
+\label{matrix__operator_8h}\index{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/matrix/details/matrix\+\_\+operator.\+h@{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/matrix/details/matrix\+\_\+operator.\+h}}
+
+
+Matrixクラスの演算子  
+
+
+{\ttfamily \#include $<$saki/binary\+\_\+operator/binary\+\_\+operator.\+h$>$}\newline
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classsaki_1_1_matrix}{saki\+::\+Matrix$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em 行列 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{名前空間}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacesaki}{saki}}
+\item 
+ \mbox{\hyperlink{namespacesaki_1_1details}{saki\+::details}}
+\end{DoxyCompactItemize}
+\subsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{matrix__operator_8h_a6bf4c2d2cce6cf45d7f5ea57df543f2d}{S\+A\+K\+I\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+13}}
+\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T1 , typename T2 , typename Func $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_1_1details_ab331ad2e5330aa422492d228d522aeea}{saki\+::details\+::matrix\+\_\+matrix\+\_\+some\+\_\+operator}} (const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T1 $>$ \&m1, const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T2 $>$ \&m2, Func \&\&f)
+\begin{DoxyCompactList}\small\item\em 行列同士の演算(+と-\/) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 , typename Func $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_1_1details_a3b467138701d036240cfbf728d3a7a2d}{saki\+::details\+::matrix\+\_\+scalar\+\_\+some\+\_\+operator}} (const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T1 $>$ \&m, const T2 \&scalar, Func \&\&f)
+\begin{DoxyCompactList}\small\item\em 行列とスカラの演算 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_a2ce80b823ffc05593663b5ebaeac9ff2}{saki\+::operator+}} (const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T1 $>$ \&m1, const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T2 $>$ \&m2)
+\begin{DoxyCompactList}\small\item\em +演算子 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_a6980888c403aa3728ab24202fe155295}{saki\+::operator-\/}} (const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T1 $>$ \&m1, const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T2 $>$ \&m2)
+\begin{DoxyCompactList}\small\item\em -\/演算子 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_ad348e50faa98837b804c503c3198afc3}{saki\+::operator$\ast$}} (const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T1 $>$ \&m, const T2 \&scalar)
+\begin{DoxyCompactList}\small\item\em $\ast$演算子(行列$\ast$スカラ) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_aed1e93efca8468e08d2f569b50c328e0}{saki\+::operator$\ast$}} (const T1 \&scalar, const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T2 $>$ \&m)
+\begin{DoxyCompactList}\small\item\em $\ast$演算子(スカラ$\ast$行列) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_a8a8f2d1ac91826453735810908a3c32d}{saki\+::operator$\ast$}} (const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T1 $>$ \&m1, const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T2 $>$ \&m2)
+\begin{DoxyCompactList}\small\item\em $\ast$演算子(行列$\ast$行列) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr auto \mbox{\hyperlink{namespacesaki_af54405ace3d571365d95cfecb624c611}{saki\+::operator/}} (const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T1 $>$ \&m, const T2 \&scalar)
+\begin{DoxyCompactList}\small\item\em /演算子(スカラ) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\constexpr bool \mbox{\hyperlink{namespacesaki_acecebb6fed194d4ca5b6f123b5ed7563}{saki\+::operator==}} (const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T $>$ \&m1, const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T $>$ \&m2)
+\begin{DoxyCompactList}\small\item\em ==演算子 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\constexpr bool \mbox{\hyperlink{namespacesaki_a79218f0b5ef57832094c0fb4b74fb8b2}{saki\+::operator!=}} (const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T $>$ \&m1, const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T $>$ \&m2)
+\begin{DoxyCompactList}\small\item\em !=演算子 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr bool \mbox{\hyperlink{namespacesaki_a57ebf9c4b637e0dff3c957a7b4786332}{saki\+::operator==}} (const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T1 $>$ \&m1, const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T2 $>$ \&m2)
+\begin{DoxyCompactList}\small\item\em ==演算子(型不一致) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr bool \mbox{\hyperlink{namespacesaki_afce7efc7fea0dc8cd8bc6a10d231261e}{saki\+::operator!=}} (const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T1 $>$ \&m1, const \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}}$<$ T2 $>$ \&m2)
+\begin{DoxyCompactList}\small\item\em !=演算子(型不一致) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+Matrixクラスの演算子 
+
+\begin{DoxyAuthor}{著者}
+石山 悠 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日付}
+2018/12/13 
+\end{DoxyDate}
+
+
+\subsection{マクロ定義詳解}
+\mbox{\Hypertarget{matrix__operator_8h_a6bf4c2d2cce6cf45d7f5ea57df543f2d}\label{matrix__operator_8h_a6bf4c2d2cce6cf45d7f5ea57df543f2d}} 
+\index{matrix\+\_\+operator.\+h@{matrix\+\_\+operator.\+h}!S\+A\+K\+I\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+13@{S\+A\+K\+I\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+13}}
+\index{S\+A\+K\+I\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+13@{S\+A\+K\+I\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+13}!matrix\+\_\+operator.\+h@{matrix\+\_\+operator.\+h}}
+\subsubsection{\texorpdfstring{S\+A\+K\+I\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+13}{SAKI\_MATRIX\_OPERATOR\_2018\_12\_13}}
+{\footnotesize\ttfamily \#define S\+A\+K\+I\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+2018\+\_\+12\+\_\+13}
+

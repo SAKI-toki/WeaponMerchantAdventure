@@ -1,0 +1,48 @@
+\hypertarget{type__macro_8h}{}\section{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/macro/type\+\_\+macro.h ファイル}
+\label{type__macro_8h}\index{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/macro/type\+\_\+macro.\+h@{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/macro/type\+\_\+macro.\+h}}
+
+
+element\+\_\+type,value\+\_\+type,pointer,referenceを自動定義  
+
+
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+\subsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{type__macro_8h_aa9a5d41ca730514ed05a89e6354af783}{S\+A\+K\+I\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+C\+R\+O\+\_\+2018\+\_\+12\+\_\+13}}
+\item 
+\#define \mbox{\hyperlink{type__macro_8h_a887a945f39183a6c615ed78abe5ab967}{S\+A\+K\+I\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+C\+RO}}(T)
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+element\+\_\+type,value\+\_\+type,pointer,referenceを自動定義 
+
+\begin{DoxyAuthor}{著者}
+石山 悠 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日付}
+2018/12/13 
+\end{DoxyDate}
+
+
+\subsection{マクロ定義詳解}
+\mbox{\Hypertarget{type__macro_8h_a887a945f39183a6c615ed78abe5ab967}\label{type__macro_8h_a887a945f39183a6c615ed78abe5ab967}} 
+\index{type\+\_\+macro.\+h@{type\+\_\+macro.\+h}!S\+A\+K\+I\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+C\+RO@{S\+A\+K\+I\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+C\+RO}}
+\index{S\+A\+K\+I\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+C\+RO@{S\+A\+K\+I\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+C\+RO}!type\+\_\+macro.\+h@{type\+\_\+macro.\+h}}
+\subsubsection{\texorpdfstring{S\+A\+K\+I\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+C\+RO}{SAKI\_TYPE\_MACRO}}
+{\footnotesize\ttfamily \#define S\+A\+K\+I\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+C\+RO(\begin{DoxyParamCaption}\item[{}]{T }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{using} element\_type = T;                 \(\backslash\)
+using value\_type = std::remove\_cv\_t<T>; \(\backslash\)
+using pointer = T*;                     \(\backslash\)
+using reference = T&;                   \(\backslash\)
+\end{DoxyCode}
+\mbox{\Hypertarget{type__macro_8h_aa9a5d41ca730514ed05a89e6354af783}\label{type__macro_8h_aa9a5d41ca730514ed05a89e6354af783}} 
+\index{type\+\_\+macro.\+h@{type\+\_\+macro.\+h}!S\+A\+K\+I\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+C\+R\+O\+\_\+2018\+\_\+12\+\_\+13@{S\+A\+K\+I\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+C\+R\+O\+\_\+2018\+\_\+12\+\_\+13}}
+\index{S\+A\+K\+I\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+C\+R\+O\+\_\+2018\+\_\+12\+\_\+13@{S\+A\+K\+I\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+C\+R\+O\+\_\+2018\+\_\+12\+\_\+13}!type\+\_\+macro.\+h@{type\+\_\+macro.\+h}}
+\subsubsection{\texorpdfstring{S\+A\+K\+I\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+C\+R\+O\+\_\+2018\+\_\+12\+\_\+13}{SAKI\_TYPE\_MACRO\_2018\_12\_13}}
+{\footnotesize\ttfamily \#define S\+A\+K\+I\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+C\+R\+O\+\_\+2018\+\_\+12\+\_\+13}
+

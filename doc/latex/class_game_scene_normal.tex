@@ -1,0 +1,99 @@
+\hypertarget{class_game_scene_normal}{}\section{Game\+Scene\+Normal クラス}
+\label{class_game_scene_normal}\index{Game\+Scene\+Normal@{Game\+Scene\+Normal}}
+
+
+ゲームシーン(normal)クラス  
+
+
+
+
+{\ttfamily \#include $<$game\+\_\+scene\+\_\+normal.\+h$>$}
+
+Game\+Scene\+Normal の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_scene_normal}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_scene_normal_ac3f3e52cf1c24802035f38fccb221fd3}{Init}} () final
+\begin{DoxyCompactList}\small\item\em ゲームシーン(normal)の初期化 \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \mbox{\hyperlink{class_game_scene_normal_a3e45ac3882f1d0dd5c77ab4f0a1ccb33}{Update}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \&) final
+\begin{DoxyCompactList}\small\item\em ゲームシーン(normal)の更新 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_scene_normal_a1f0ef0b5b194f9f9e7bf857cca7acc39}{Render}} () final
+\begin{DoxyCompactList}\small\item\em ゲームシーン(normal)の描画 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_scene_normal_a1c06daa1715624eabd199472a37d97cd}{Destroy}} () final
+\begin{DoxyCompactList}\small\item\em ゲームシーン(normal)の破棄 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+ゲームシーン(normal)クラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_game_scene_normal_a1c06daa1715624eabd199472a37d97cd}\label{class_game_scene_normal_a1c06daa1715624eabd199472a37d97cd}} 
+\index{Game\+Scene\+Normal@{Game\+Scene\+Normal}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Game\+Scene\+Normal@{Game\+Scene\+Normal}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Game\+Scene\+Normal\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームシーン(normal)の破棄 
+
+
+
+\mbox{\hyperlink{class_scene_base_a7c5b54020bc519b4dadfe9770d6b27f7}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_game_scene_normal_ac3f3e52cf1c24802035f38fccb221fd3}\label{class_game_scene_normal_ac3f3e52cf1c24802035f38fccb221fd3}} 
+\index{Game\+Scene\+Normal@{Game\+Scene\+Normal}!Init@{Init}}
+\index{Init@{Init}!Game\+Scene\+Normal@{Game\+Scene\+Normal}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Game\+Scene\+Normal\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームシーン(normal)の初期化 
+
+
+
+\mbox{\hyperlink{class_scene_base_a24d7db43c819924dc8b07b436f6d3148}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_game_scene_normal_a1f0ef0b5b194f9f9e7bf857cca7acc39}\label{class_game_scene_normal_a1f0ef0b5b194f9f9e7bf857cca7acc39}} 
+\index{Game\+Scene\+Normal@{Game\+Scene\+Normal}!Render@{Render}}
+\index{Render@{Render}!Game\+Scene\+Normal@{Game\+Scene\+Normal}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Game\+Scene\+Normal\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームシーン(normal)の描画 
+
+
+
+\mbox{\hyperlink{class_scene_base_ad981674ce731ea267f398e889bbb9dc3}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_game_scene_normal_a3e45ac3882f1d0dd5c77ab4f0a1ccb33}\label{class_game_scene_normal_a3e45ac3882f1d0dd5c77ab4f0a1ccb33}} 
+\index{Game\+Scene\+Normal@{Game\+Scene\+Normal}!Update@{Update}}
+\index{Update@{Update}!Game\+Scene\+Normal@{Game\+Scene\+Normal}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ Game\+Scene\+Normal\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームシーン(normal)の更新 
+
+\begin{DoxyReturn}{戻り値}
+std\+::shared\+\_\+ptr$<$\+Scene$>$ シーンが変わるなら次のシーンのstd\+::shared\+\_\+ptr$<$\+Scene$>$を返す 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{class_scene_ab71ee5f19764b90c87b4574aa1cb1d25}{Scene}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/scene/main/game/normal/\mbox{\hyperlink{game__scene__normal_8h}{game\+\_\+scene\+\_\+normal.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/scene/main/game/normal/\mbox{\hyperlink{game__scene__normal_8cpp}{game\+\_\+scene\+\_\+normal.\+cpp}}\end{DoxyCompactItemize}

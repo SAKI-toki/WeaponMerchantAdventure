@@ -1,0 +1,46 @@
+\hypertarget{copy_8h}{}\section{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/copy/copy.h ファイル}
+\label{copy_8h}\index{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/copy/copy.\+h@{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/lib/saki/copy/copy.\+h}}
+
+
+既存のcopy関数の簡略化  
+
+
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include $<$saki/meta/can\+\_\+begin\+\_\+method.\+h$>$}\newline
+\subsection*{名前空間}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacesaki}{saki}}
+\end{DoxyCompactItemize}
+\subsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{copy_8h_af8b82ec4eee610c558bd646b7e63e09c}{S\+A\+K\+I\+\_\+\+C\+O\+P\+Y\+\_\+2018\+\_\+12\+\_\+09}}
+\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Container1 , typename Container2 , typename std\+::enable\+\_\+if\+\_\+t$<$ can\+\_\+begin\+\_\+v$<$ Container2 $>$, std\+::nullptr\+\_\+t $>$  = nullptr$>$ }\\auto \mbox{\hyperlink{namespacesaki_a469bffdeaee5edab8000f7174b9de5f2}{saki\+::copy}} (Container1 \&\&con1, Container2 \&\&con2)
+\begin{DoxyCompactList}\small\item\em コンテナとコンテナを渡すcopy \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Container , typename Out\+Itr , typename std\+::enable\+\_\+if\+\_\+t$<$!can\+\_\+begin\+\_\+v$<$ Out\+Itr $>$, std\+::nullptr\+\_\+t $>$  = nullptr$>$ }\\auto \mbox{\hyperlink{namespacesaki_a810f851279b6d10acc3892433f7036fd}{saki\+::copy}} (Container \&\&con, Out\+Itr outitr)
+\begin{DoxyCompactList}\small\item\em コンテナとコンテナを渡すcopy \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+既存のcopy関数の簡略化 
+
+\begin{DoxyAuthor}{著者}
+石山 悠 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日付}
+2018/12/09 
+\end{DoxyDate}
+
+
+\subsection{マクロ定義詳解}
+\mbox{\Hypertarget{copy_8h_af8b82ec4eee610c558bd646b7e63e09c}\label{copy_8h_af8b82ec4eee610c558bd646b7e63e09c}} 
+\index{copy.\+h@{copy.\+h}!S\+A\+K\+I\+\_\+\+C\+O\+P\+Y\+\_\+2018\+\_\+12\+\_\+09@{S\+A\+K\+I\+\_\+\+C\+O\+P\+Y\+\_\+2018\+\_\+12\+\_\+09}}
+\index{S\+A\+K\+I\+\_\+\+C\+O\+P\+Y\+\_\+2018\+\_\+12\+\_\+09@{S\+A\+K\+I\+\_\+\+C\+O\+P\+Y\+\_\+2018\+\_\+12\+\_\+09}!copy.\+h@{copy.\+h}}
+\subsubsection{\texorpdfstring{S\+A\+K\+I\+\_\+\+C\+O\+P\+Y\+\_\+2018\+\_\+12\+\_\+09}{SAKI\_COPY\_2018\_12\_09}}
+{\footnotesize\ttfamily \#define S\+A\+K\+I\+\_\+\+C\+O\+P\+Y\+\_\+2018\+\_\+12\+\_\+09}
+

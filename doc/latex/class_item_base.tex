@@ -1,0 +1,150 @@
+\hypertarget{class_item_base}{}\section{Item\+Base クラス}
+\label{class_item_base}\index{Item\+Base@{Item\+Base}}
+
+
+{\ttfamily \#include $<$item\+\_\+base.\+h$>$}
+
+Item\+Base の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_item_base}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_item_base_ab34d53b8f3442da77466ba1b9132386e}{Destroy}} () final
+\item 
+\mbox{\hyperlink{class_item_base_af005cade3ceb3329ffecd83956e4b975}{Item\+Base}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_item_base_a992226bfc15b036f408edf72fa94034b}{Item\+Base}} (const \mbox{\hyperlink{class_item_base}{Item\+Base}} \&m)
+\begin{DoxyCompactList}\small\item\em コピーコンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_item_base_a17a7d9d2a649e92dba8d5ee054bf10dd}{Item\+Base}} (\mbox{\hyperlink{class_item_base}{Item\+Base}} \&\&m) noexcept
+\begin{DoxyCompactList}\small\item\em ムーブコンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_item_base}{Item\+Base}} \& \mbox{\hyperlink{class_item_base_a94bf9130253e36ba8b1d4019bf5b8a3a}{operator=}} (const \mbox{\hyperlink{class_item_base}{Item\+Base}} \&other)
+\begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_item_base}{Item\+Base}} \& \mbox{\hyperlink{class_item_base_a51a498e075511b0817ae827cdf1e3d5b}{operator=}} (\mbox{\hyperlink{class_item_base}{Item\+Base}} \&\&other) noexcept
+\begin{DoxyCompactList}\small\item\em ムーブ代入演算子 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_item_base_aa3ad2e9dc1eb00a7e0e7bac7c4deb302}{$\sim$\+Item\+Base}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_item_base_ae5c2bcf78c74126a6f76783ca927c7ab}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$obj, \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}) final
+\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_item_base_a772804cb3c663b35e44d49913d1f1cef}{Init\+Process}} () final
+\item 
+void \mbox{\hyperlink{class_item_base_a8edff8edcf884f9590f973fd05d218bc}{Update\+Process}} () final
+\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_item_base_af005cade3ceb3329ffecd83956e4b975}\label{class_item_base_af005cade3ceb3329ffecd83956e4b975}} 
+\index{Item\+Base@{Item\+Base}!Item\+Base@{Item\+Base}}
+\index{Item\+Base@{Item\+Base}!Item\+Base@{Item\+Base}}
+\subsubsection{\texorpdfstring{Item\+Base()}{ItemBase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Item\+Base\+::\+Item\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{class_item_base_a992226bfc15b036f408edf72fa94034b}\label{class_item_base_a992226bfc15b036f408edf72fa94034b}} 
+\index{Item\+Base@{Item\+Base}!Item\+Base@{Item\+Base}}
+\index{Item\+Base@{Item\+Base}!Item\+Base@{Item\+Base}}
+\subsubsection{\texorpdfstring{Item\+Base()}{ItemBase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Item\+Base\+::\+Item\+Base (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_item_base}{Item\+Base}} \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピーコンストラクタ 
+
+\mbox{\Hypertarget{class_item_base_a17a7d9d2a649e92dba8d5ee054bf10dd}\label{class_item_base_a17a7d9d2a649e92dba8d5ee054bf10dd}} 
+\index{Item\+Base@{Item\+Base}!Item\+Base@{Item\+Base}}
+\index{Item\+Base@{Item\+Base}!Item\+Base@{Item\+Base}}
+\subsubsection{\texorpdfstring{Item\+Base()}{ItemBase()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Item\+Base\+::\+Item\+Base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_item_base}{Item\+Base}} \&\&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+ムーブコンストラクタ 
+
+\mbox{\Hypertarget{class_item_base_aa3ad2e9dc1eb00a7e0e7bac7c4deb302}\label{class_item_base_aa3ad2e9dc1eb00a7e0e7bac7c4deb302}} 
+\index{Item\+Base@{Item\+Base}!````~Item\+Base@{$\sim$\+Item\+Base}}
+\index{````~Item\+Base@{$\sim$\+Item\+Base}!Item\+Base@{Item\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+Item\+Base()}{~ItemBase()}}
+{\footnotesize\ttfamily Item\+Base\+::$\sim$\+Item\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+デストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_item_base_ae5c2bcf78c74126a6f76783ca927c7ab}\label{class_item_base_ae5c2bcf78c74126a6f76783ca927c7ab}} 
+\index{Item\+Base@{Item\+Base}!Collision@{Collision}}
+\index{Collision@{Collision}!Item\+Base@{Item\+Base}}
+\subsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void Item\+Base\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_static_object_a64c8803ff881d578d103413e299dbf7f}{Static\+Object}}を再実装しています。
+
+\mbox{\Hypertarget{class_item_base_ab34d53b8f3442da77466ba1b9132386e}\label{class_item_base_ab34d53b8f3442da77466ba1b9132386e}} 
+\index{Item\+Base@{Item\+Base}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Item\+Base@{Item\+Base}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Item\+Base\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_static_object_a8e9fb321b4f8f12c4bec1bc66853512f}{Static\+Object}}を再実装しています。
+
+\mbox{\Hypertarget{class_item_base_a772804cb3c663b35e44d49913d1f1cef}\label{class_item_base_a772804cb3c663b35e44d49913d1f1cef}} 
+\index{Item\+Base@{Item\+Base}!Init\+Process@{Init\+Process}}
+\index{Init\+Process@{Init\+Process}!Item\+Base@{Item\+Base}}
+\subsubsection{\texorpdfstring{Init\+Process()}{InitProcess()}}
+{\footnotesize\ttfamily void Item\+Base\+::\+Init\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_static_object_afa0709f50495338a23c1140062a567af}{Static\+Object}}を再実装しています。
+
+\mbox{\Hypertarget{class_item_base_a94bf9130253e36ba8b1d4019bf5b8a3a}\label{class_item_base_a94bf9130253e36ba8b1d4019bf5b8a3a}} 
+\index{Item\+Base@{Item\+Base}!operator=@{operator=}}
+\index{operator=@{operator=}!Item\+Base@{Item\+Base}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_item_base}{Item\+Base}}\& Item\+Base\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_item_base}{Item\+Base}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピー代入演算子 
+
+\mbox{\Hypertarget{class_item_base_a51a498e075511b0817ae827cdf1e3d5b}\label{class_item_base_a51a498e075511b0817ae827cdf1e3d5b}} 
+\index{Item\+Base@{Item\+Base}!operator=@{operator=}}
+\index{operator=@{operator=}!Item\+Base@{Item\+Base}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_item_base}{Item\+Base}}\& Item\+Base\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_item_base}{Item\+Base}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+ムーブ代入演算子 
+
+\mbox{\Hypertarget{class_item_base_a8edff8edcf884f9590f973fd05d218bc}\label{class_item_base_a8edff8edcf884f9590f973fd05d218bc}} 
+\index{Item\+Base@{Item\+Base}!Update\+Process@{Update\+Process}}
+\index{Update\+Process@{Update\+Process}!Item\+Base@{Item\+Base}}
+\subsubsection{\texorpdfstring{Update\+Process()}{UpdateProcess()}}
+{\footnotesize\ttfamily void Item\+Base\+::\+Update\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_static_object_a7fa678c3c4032bb6e9417f93a8bb895c}{Static\+Object}}を再実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/object/item/base/\mbox{\hyperlink{item__base_8h}{item\+\_\+base.\+h}}\end{DoxyCompactItemize}

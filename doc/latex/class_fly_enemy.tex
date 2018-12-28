@@ -26,13 +26,13 @@ Fly\+Enemy の継承関係図\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em ムーブコンストラクタ \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_fly_enemy}{Fly\+Enemy}} \& \mbox{\hyperlink{class_fly_enemy_a6cc3f3701b503020620c02667705fd23}{operator=}} (const \mbox{\hyperlink{class_fly_enemy}{Fly\+Enemy}} \&other)
 \begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_fly_enemy_adaabf7ce270104e30df29bfa464d72ce}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}) final
+void \mbox{\hyperlink{class_fly_enemy_a90b7b82f93094aaee9069daafe319a2b}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}) final
 \begin{DoxyCompactList}\small\item\em 当たったときに実行する関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_fly_enemy_af7ce5137e8eb2e8cc6654fbbdbc714cd}{Destroy}} () final
 \begin{DoxyCompactList}\small\item\em 破棄 \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_fly_enemy_ae4345f89a659b559c08d0bb879db7158}{$\sim$\+Fly\+Enemy}} ()
 \begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_fly_enemy_a137e5a5f2adb7eacd282bbf662242cb3}{Set\+Move}} (const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&range, float time)
+void \mbox{\hyperlink{class_fly_enemy_afc4616eb4d12d3b7c401f35002812330}{Set\+Move}} (const \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}} \&range, float time)
 \begin{DoxyCompactList}\small\item\em 移動範囲を決める \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{限定公開メンバ関数}
 \begin{DoxyCompactItemize}
@@ -91,11 +91,11 @@ void \mbox{\hyperlink{class_fly_enemy_a5122c8fea26ebbd0390acfd6e41931ff}{Update\
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_fly_enemy_adaabf7ce270104e30df29bfa464d72ce}\label{class_fly_enemy_adaabf7ce270104e30df29bfa464d72ce}} 
+\mbox{\Hypertarget{class_fly_enemy_a90b7b82f93094aaee9069daafe319a2b}\label{class_fly_enemy_a90b7b82f93094aaee9069daafe319a2b}} 
 \index{Fly\+Enemy@{Fly\+Enemy}!Collision@{Collision}}
 \index{Collision@{Collision}!Fly\+Enemy@{Fly\+Enemy}}
 \subsubsection{\texorpdfstring{Collision()}{Collision()}}
-{\footnotesize\ttfamily void Fly\+Enemy\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Fly\+Enemy\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
 
 
 
@@ -108,7 +108,7 @@ void \mbox{\hyperlink{class_fly_enemy_a5122c8fea26ebbd0390acfd6e41931ff}{Update\
 \end{DoxyParams}
 
 
-\mbox{\hyperlink{class_object_base_ad772d7a42f5e46c39481f5db22ee8193}{Object\+Base}}を再実装しています。
+\mbox{\hyperlink{class_object_base_a3e1db79dfa119be067d816c22d09839d}{Object\+Base}}を再実装しています。
 
 \mbox{\Hypertarget{class_fly_enemy_af7ce5137e8eb2e8cc6654fbbdbc714cd}\label{class_fly_enemy_af7ce5137e8eb2e8cc6654fbbdbc714cd}} 
 \index{Fly\+Enemy@{Fly\+Enemy}!Destroy@{Destroy}}
@@ -148,11 +148,11 @@ void \mbox{\hyperlink{class_fly_enemy_a5122c8fea26ebbd0390acfd6e41931ff}{Update\
 
 コピー代入演算子 
 
-\mbox{\Hypertarget{class_fly_enemy_a137e5a5f2adb7eacd282bbf662242cb3}\label{class_fly_enemy_a137e5a5f2adb7eacd282bbf662242cb3}} 
+\mbox{\Hypertarget{class_fly_enemy_afc4616eb4d12d3b7c401f35002812330}\label{class_fly_enemy_afc4616eb4d12d3b7c401f35002812330}} 
 \index{Fly\+Enemy@{Fly\+Enemy}!Set\+Move@{Set\+Move}}
 \index{Set\+Move@{Set\+Move}!Fly\+Enemy@{Fly\+Enemy}}
 \subsubsection{\texorpdfstring{Set\+Move()}{SetMove()}}
-{\footnotesize\ttfamily void Fly\+Enemy\+::\+Set\+Move (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{range,  }\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Fly\+Enemy\+::\+Set\+Move (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}} \&}]{range,  }\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -162,7 +162,7 @@ void \mbox{\hyperlink{class_fly_enemy_a5122c8fea26ebbd0390acfd6e41931ff}{Update\
 \begin{DoxyParams}{引数}
 {\em range} & 現在の位置からどのくらい移動するか \\
 \hline
-{\em time} & どのくらいの時間をかけて行き来するか \\
+{\em time} & 1マスあたりどのくらいの時間をかけて移動するか \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{class_fly_enemy_a5122c8fea26ebbd0390acfd6e41931ff}\label{class_fly_enemy_a5122c8fea26ebbd0390acfd6e41931ff}} 
@@ -183,5 +183,5 @@ void \mbox{\hyperlink{class_fly_enemy_a5122c8fea26ebbd0390acfd6e41931ff}{Update\
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/character/enemy/fly/\mbox{\hyperlink{fly__enemy_8h}{fly\+\_\+enemy.\+h}}\item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/character/enemy/fly/\mbox{\hyperlink{fly__enemy_8cpp}{fly\+\_\+enemy.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/object/character/enemy/fly/\mbox{\hyperlink{fly__enemy_8h}{fly\+\_\+enemy.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/object/character/enemy/fly/\mbox{\hyperlink{fly__enemy_8cpp}{fly\+\_\+enemy.\+cpp}}\end{DoxyCompactItemize}

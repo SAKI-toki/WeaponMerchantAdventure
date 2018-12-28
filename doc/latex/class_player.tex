@@ -18,14 +18,41 @@ Player の継承関係図\begin{figure}[H]
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
+void \mbox{\hyperlink{class_player_a848c2ecb62431010eaa9298b2c2c4be0}{Ui\+Render}} ()
+\begin{DoxyCompactList}\small\item\em U\+Iの描画 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a615af41886fe293fcc3c6f276de77991}{Enabled\+Weapon}} ()
+\begin{DoxyCompactList}\small\item\em 武器の非表示 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a97012a8b2bead252582ff39e852961ac}{Eenabled\+True\+Weapon}} ()
+\begin{DoxyCompactList}\small\item\em 武器の表示 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a662de093359fb8e4a5bdc86a34fd2549}{Translation\+Boss\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em ボスシーンに移行するときの処理 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_aff4d2bffe97e2b70f47f5eac2da26562}{In\+Boss\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em ボスシーンに入ったときの処理 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_af1b9f4482efa53508befe6de204a3da6}{Animation\+Walk}} (bool right)
+\begin{DoxyCompactList}\small\item\em 歩くアニメーションのみ関数化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a8b27da2bdfb3e25337c7b6fd345d21f2}{Clear\+Update}} ()
+\begin{DoxyCompactList}\small\item\em クリアした時の更新 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a6ddf26051788b56dd4029ba851e1f35a}{Reset\+Speed}} ()
+\begin{DoxyCompactList}\small\item\em 横方向の力を0にする \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_player_af2cf4936165ef12cce96f7994e0879df}{Destroy}} () final
 \begin{DoxyCompactList}\small\item\em プレイヤーの破棄 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_abbb6662f1dc4ba3f75cafa6100160da0}{Update\+Animation}} (bool right=true)
+\begin{DoxyCompactList}\small\item\em アニメーションの更新 \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player}} ()
 \begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_player_a184fbb2c70e34fb6c6a0c2fc7e0f86c9}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}) final
+\mbox{\hyperlink{class_player_a635af5e438af5a296c88f768e5e93eb0}{Player}} (\mbox{\hyperlink{class_player}{Player}} \&\&other) noexcept
+\begin{DoxyCompactList}\small\item\em ムーブコンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player}{Player}} \& \mbox{\hyperlink{class_player_a8868988ae751daed5cfa32627e78889b}{operator=}} (const \mbox{\hyperlink{class_player}{Player}} \&other)
+\begin{DoxyCompactList}\small\item\em コピー代入演算子 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a992b5c7e0d981308ed56706c6e71a709}{Collision}} (\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$, \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}) final
 \begin{DoxyCompactList}\small\item\em 当たってるときに実行する関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_player_a6c879db24d39d894207e078eb4c56e8d}{Attack}} ()
 \begin{DoxyCompactList}\small\item\em 攻撃 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_player_adf34c7a3a58c3f8e7f7201ed962a03f0}{boss\+\_\+scene}} = false
+\end{DoxyCompactItemize}
 \subsection*{限定公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -45,16 +72,41 @@ void \mbox{\hyperlink{class_player_a8ac2e54fe5672d32186456b9735c02c3}{Render\+Pr
 \mbox{\Hypertarget{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}\label{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}} 
 \index{Player@{Player}!Player@{Player}}
 \index{Player@{Player}!Player@{Player}}
-\subsubsection{\texorpdfstring{Player()}{Player()}}
+\subsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 コンストラクタ 
 
+\mbox{\Hypertarget{class_player_a635af5e438af5a296c88f768e5e93eb0}\label{class_player_a635af5e438af5a296c88f768e5e93eb0}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+ムーブコンストラクタ 
+
 
 
 \subsection{関数詳解}
+\mbox{\Hypertarget{class_player_af1b9f4482efa53508befe6de204a3da6}\label{class_player_af1b9f4482efa53508befe6de204a3da6}} 
+\index{Player@{Player}!Animation\+Walk@{Animation\+Walk}}
+\index{Animation\+Walk@{Animation\+Walk}!Player@{Player}}
+\subsubsection{\texorpdfstring{Animation\+Walk()}{AnimationWalk()}}
+{\footnotesize\ttfamily void Player\+::\+Animation\+Walk (\begin{DoxyParamCaption}\item[{bool}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+歩くアニメーションのみ関数化 
+
+
+\begin{DoxyParams}{引数}
+{\em right} & 右かどうか \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_player_a6c879db24d39d894207e078eb4c56e8d}\label{class_player_a6c879db24d39d894207e078eb4c56e8d}} 
 \index{Player@{Player}!Attack@{Attack}}
 \index{Attack@{Attack}!Player@{Player}}
@@ -65,11 +117,21 @@ void \mbox{\hyperlink{class_player_a8ac2e54fe5672d32186456b9735c02c3}{Render\+Pr
 
 攻撃 
 
-\mbox{\Hypertarget{class_player_a184fbb2c70e34fb6c6a0c2fc7e0f86c9}\label{class_player_a184fbb2c70e34fb6c6a0c2fc7e0f86c9}} 
+\mbox{\Hypertarget{class_player_a8b27da2bdfb3e25337c7b6fd345d21f2}\label{class_player_a8b27da2bdfb3e25337c7b6fd345d21f2}} 
+\index{Player@{Player}!Clear\+Update@{Clear\+Update}}
+\index{Clear\+Update@{Clear\+Update}!Player@{Player}}
+\subsubsection{\texorpdfstring{Clear\+Update()}{ClearUpdate()}}
+{\footnotesize\ttfamily void Player\+::\+Clear\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+クリアした時の更新 
+
+\mbox{\Hypertarget{class_player_a992b5c7e0d981308ed56706c6e71a709}\label{class_player_a992b5c7e0d981308ed56706c6e71a709}} 
 \index{Player@{Player}!Collision@{Collision}}
 \index{Collision@{Collision}!Player@{Player}}
 \subsubsection{\texorpdfstring{Collision()}{Collision()}}
-{\footnotesize\ttfamily void Player\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Player\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_base}{Object\+Base}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
 
 
 
@@ -77,7 +139,7 @@ void \mbox{\hyperlink{class_player_a8ac2e54fe5672d32186456b9735c02c3}{Render\+Pr
 
 
 
-\mbox{\hyperlink{class_object_base_ad772d7a42f5e46c39481f5db22ee8193}{Object\+Base}}を再実装しています。
+\mbox{\hyperlink{class_object_base_a3e1db79dfa119be067d816c22d09839d}{Object\+Base}}を再実装しています。
 
 \mbox{\Hypertarget{class_player_af2cf4936165ef12cce96f7994e0879df}\label{class_player_af2cf4936165ef12cce96f7994e0879df}} 
 \index{Player@{Player}!Destroy@{Destroy}}
@@ -93,6 +155,36 @@ void \mbox{\hyperlink{class_player_a8ac2e54fe5672d32186456b9735c02c3}{Render\+Pr
 
 \mbox{\hyperlink{class_object_base_a7fa4c548153c3af20f89673ffea809af}{Object\+Base}}を実装しています。
 
+\mbox{\Hypertarget{class_player_a97012a8b2bead252582ff39e852961ac}\label{class_player_a97012a8b2bead252582ff39e852961ac}} 
+\index{Player@{Player}!Eenabled\+True\+Weapon@{Eenabled\+True\+Weapon}}
+\index{Eenabled\+True\+Weapon@{Eenabled\+True\+Weapon}!Player@{Player}}
+\subsubsection{\texorpdfstring{Eenabled\+True\+Weapon()}{EenabledTrueWeapon()}}
+{\footnotesize\ttfamily void Player\+::\+Eenabled\+True\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+武器の表示 
+
+\mbox{\Hypertarget{class_player_a615af41886fe293fcc3c6f276de77991}\label{class_player_a615af41886fe293fcc3c6f276de77991}} 
+\index{Player@{Player}!Enabled\+Weapon@{Enabled\+Weapon}}
+\index{Enabled\+Weapon@{Enabled\+Weapon}!Player@{Player}}
+\subsubsection{\texorpdfstring{Enabled\+Weapon()}{EnabledWeapon()}}
+{\footnotesize\ttfamily void Player\+::\+Enabled\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+武器の非表示 
+
+\mbox{\Hypertarget{class_player_aff4d2bffe97e2b70f47f5eac2da26562}\label{class_player_aff4d2bffe97e2b70f47f5eac2da26562}} 
+\index{Player@{Player}!In\+Boss\+Scene@{In\+Boss\+Scene}}
+\index{In\+Boss\+Scene@{In\+Boss\+Scene}!Player@{Player}}
+\subsubsection{\texorpdfstring{In\+Boss\+Scene()}{InBossScene()}}
+{\footnotesize\ttfamily void Player\+::\+In\+Boss\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ボスシーンに入ったときの処理 
+
 \mbox{\Hypertarget{class_player_a1051f85c8bf18a256d275d1a1dee5da6}\label{class_player_a1051f85c8bf18a256d275d1a1dee5da6}} 
 \index{Player@{Player}!Init\+Process@{Init\+Process}}
 \index{Init\+Process@{Init\+Process}!Player@{Player}}
@@ -106,6 +198,16 @@ void \mbox{\hyperlink{class_player_a8ac2e54fe5672d32186456b9735c02c3}{Render\+Pr
 
 
 \mbox{\hyperlink{class_object_base_af133f36f2bca1dcfd962e2cfac61ab51}{Object\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_player_a8868988ae751daed5cfa32627e78889b}\label{class_player_a8868988ae751daed5cfa32627e78889b}} 
+\index{Player@{Player}!operator=@{operator=}}
+\index{operator=@{operator=}!Player@{Player}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}\& Player\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_player}{Player}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コピー代入演算子 
 
 \mbox{\Hypertarget{class_player_a8ac2e54fe5672d32186456b9735c02c3}\label{class_player_a8ac2e54fe5672d32186456b9735c02c3}} 
 \index{Player@{Player}!Render\+Process@{Render\+Process}}
@@ -126,6 +228,46 @@ void \mbox{\hyperlink{class_player_a8ac2e54fe5672d32186456b9735c02c3}{Render\+Pr
 
 \mbox{\hyperlink{class_dynamic_object_aa7488e1b4dfd7049447535d93d9d6783}{Dynamic\+Object}}を再実装しています。
 
+\mbox{\Hypertarget{class_player_a6ddf26051788b56dd4029ba851e1f35a}\label{class_player_a6ddf26051788b56dd4029ba851e1f35a}} 
+\index{Player@{Player}!Reset\+Speed@{Reset\+Speed}}
+\index{Reset\+Speed@{Reset\+Speed}!Player@{Player}}
+\subsubsection{\texorpdfstring{Reset\+Speed()}{ResetSpeed()}}
+{\footnotesize\ttfamily void Player\+::\+Reset\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+横方向の力を0にする 
+
+\mbox{\Hypertarget{class_player_a662de093359fb8e4a5bdc86a34fd2549}\label{class_player_a662de093359fb8e4a5bdc86a34fd2549}} 
+\index{Player@{Player}!Translation\+Boss\+Scene@{Translation\+Boss\+Scene}}
+\index{Translation\+Boss\+Scene@{Translation\+Boss\+Scene}!Player@{Player}}
+\subsubsection{\texorpdfstring{Translation\+Boss\+Scene()}{TranslationBossScene()}}
+{\footnotesize\ttfamily void Player\+::\+Translation\+Boss\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ボスシーンに移行するときの処理 
+
+\mbox{\Hypertarget{class_player_a848c2ecb62431010eaa9298b2c2c4be0}\label{class_player_a848c2ecb62431010eaa9298b2c2c4be0}} 
+\index{Player@{Player}!Ui\+Render@{Ui\+Render}}
+\index{Ui\+Render@{Ui\+Render}!Player@{Player}}
+\subsubsection{\texorpdfstring{Ui\+Render()}{UiRender()}}
+{\footnotesize\ttfamily void Player\+::\+Ui\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+U\+Iの描画 
+
+\mbox{\Hypertarget{class_player_abbb6662f1dc4ba3f75cafa6100160da0}\label{class_player_abbb6662f1dc4ba3f75cafa6100160da0}} 
+\index{Player@{Player}!Update\+Animation@{Update\+Animation}}
+\index{Update\+Animation@{Update\+Animation}!Player@{Player}}
+\subsubsection{\texorpdfstring{Update\+Animation()}{UpdateAnimation()}}
+{\footnotesize\ttfamily void Player\+::\+Update\+Animation (\begin{DoxyParamCaption}\item[{bool}]{right = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+アニメーションの更新 
+
 \mbox{\Hypertarget{class_player_ab8accc9b83b030f5313f1b4872a7e634}\label{class_player_ab8accc9b83b030f5313f1b4872a7e634}} 
 \index{Player@{Player}!Update\+Process@{Update\+Process}}
 \index{Update\+Process@{Update\+Process}!Player@{Player}}
@@ -142,7 +284,16 @@ void \mbox{\hyperlink{class_player_a8ac2e54fe5672d32186456b9735c02c3}{Render\+Pr
 
 
 
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_player_adf34c7a3a58c3f8e7f7201ed962a03f0}\label{class_player_adf34c7a3a58c3f8e7f7201ed962a03f0}} 
+\index{Player@{Player}!boss\+\_\+scene@{boss\+\_\+scene}}
+\index{boss\+\_\+scene@{boss\+\_\+scene}!Player@{Player}}
+\subsubsection{\texorpdfstring{boss\+\_\+scene}{boss\_scene}}
+{\footnotesize\ttfamily bool Player\+::boss\+\_\+scene = false}
+
+
+
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/character/player/\mbox{\hyperlink{player_8h}{player.\+h}}\item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/character/player/\mbox{\hyperlink{player_8cpp}{player.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/object/character/player/\mbox{\hyperlink{player_8h}{player.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/object/character/player/\mbox{\hyperlink{player_8cpp}{player.\+cpp}}\end{DoxyCompactItemize}

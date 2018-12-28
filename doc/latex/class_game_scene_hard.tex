@@ -1,0 +1,99 @@
+\hypertarget{class_game_scene_hard}{}\section{Game\+Scene\+Hard クラス}
+\label{class_game_scene_hard}\index{Game\+Scene\+Hard@{Game\+Scene\+Hard}}
+
+
+ゲームシーン(hard)クラス  
+
+
+
+
+{\ttfamily \#include $<$game\+\_\+scene\+\_\+hard.\+h$>$}
+
+Game\+Scene\+Hard の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_scene_hard}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_scene_hard_affc2e6a09c13a625730eeb0e742cb22a}{Init}} () final
+\begin{DoxyCompactList}\small\item\em ゲームシーン(hard)の初期化 \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \mbox{\hyperlink{class_game_scene_hard_ac132a0e281a7d4e6b71deb6e5bcfdb9d}{Update}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \&) final
+\begin{DoxyCompactList}\small\item\em ゲームシーン(hard)の更新 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_scene_hard_ab4d10e5fc6e39746f80ef967d6a02eae}{Render}} () final
+\begin{DoxyCompactList}\small\item\em ゲームシーン(hard)の描画 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_scene_hard_a7a2ddc79c737ede4d1125d352c5756c1}{Destroy}} () final
+\begin{DoxyCompactList}\small\item\em ゲームシーン(hard)の破棄 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+ゲームシーン(hard)クラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_game_scene_hard_a7a2ddc79c737ede4d1125d352c5756c1}\label{class_game_scene_hard_a7a2ddc79c737ede4d1125d352c5756c1}} 
+\index{Game\+Scene\+Hard@{Game\+Scene\+Hard}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Game\+Scene\+Hard@{Game\+Scene\+Hard}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Game\+Scene\+Hard\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームシーン(hard)の破棄 
+
+
+
+\mbox{\hyperlink{class_scene_base_a7c5b54020bc519b4dadfe9770d6b27f7}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_game_scene_hard_affc2e6a09c13a625730eeb0e742cb22a}\label{class_game_scene_hard_affc2e6a09c13a625730eeb0e742cb22a}} 
+\index{Game\+Scene\+Hard@{Game\+Scene\+Hard}!Init@{Init}}
+\index{Init@{Init}!Game\+Scene\+Hard@{Game\+Scene\+Hard}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Game\+Scene\+Hard\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームシーン(hard)の初期化 
+
+
+
+\mbox{\hyperlink{class_scene_base_a24d7db43c819924dc8b07b436f6d3148}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_game_scene_hard_ab4d10e5fc6e39746f80ef967d6a02eae}\label{class_game_scene_hard_ab4d10e5fc6e39746f80ef967d6a02eae}} 
+\index{Game\+Scene\+Hard@{Game\+Scene\+Hard}!Render@{Render}}
+\index{Render@{Render}!Game\+Scene\+Hard@{Game\+Scene\+Hard}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Game\+Scene\+Hard\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームシーン(hard)の描画 
+
+
+
+\mbox{\hyperlink{class_scene_base_ad981674ce731ea267f398e889bbb9dc3}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_game_scene_hard_ac132a0e281a7d4e6b71deb6e5bcfdb9d}\label{class_game_scene_hard_ac132a0e281a7d4e6b71deb6e5bcfdb9d}} 
+\index{Game\+Scene\+Hard@{Game\+Scene\+Hard}!Update@{Update}}
+\index{Update@{Update}!Game\+Scene\+Hard@{Game\+Scene\+Hard}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ Game\+Scene\+Hard\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+ゲームシーン(hard)の更新 
+
+\begin{DoxyReturn}{戻り値}
+std\+::shared\+\_\+ptr$<$\+Scene$>$ シーンが変わるなら次のシーンのstd\+::shared\+\_\+ptr$<$\+Scene$>$を返す 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{class_scene_ab71ee5f19764b90c87b4574aa1cb1d25}{Scene}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/scene/main/game/hard/\mbox{\hyperlink{game__scene__hard_8h}{game\+\_\+scene\+\_\+hard.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/scene/main/game/hard/\mbox{\hyperlink{game__scene__hard_8cpp}{game\+\_\+scene\+\_\+hard.\+cpp}}\end{DoxyCompactItemize}

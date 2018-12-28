@@ -1,35 +1,113 @@
-\hypertarget{common_8h}{}\section{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/common/common.h ファイル}
-\label{common_8h}\index{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/common/common.\+h@{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/common/common.\+h}}
-
-
-定数定義やヘッダのインクルード  
-
-
+\hypertarget{common_8h}{}\section{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/common/common.h ファイル}
+\label{common_8h}\index{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/common/common.\+h@{C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/common/common.\+h}}
 {\ttfamily \#include $<$Windows.\+h$>$}\newline
 {\ttfamily \#include $<$d3d11.\+h$>$}\newline
-{\ttfamily \#include $<$Simple\+Math.\+h$>$}\newline
+{\ttfamily \#include $<$d3dcompiler.\+h$>$}\newline
+{\ttfamily \#include $<$wrl.\+h$>$}\newline
+{\ttfamily \#include $<$saki/pi.\+h$>$}\newline
+{\ttfamily \#include $<$saki/vector/vector\+\_\+2d.\+h$>$}\newline
+{\ttfamily \#include $<$saki/vector/vector\+\_\+3d.\+h$>$}\newline
+{\ttfamily \#include $<$saki/vector/vector\+\_\+4d.\+h$>$}\newline
+{\ttfamily \#include $<$saki/transform/transform.\+h$>$}\newline
+{\ttfamily \#include $<$Direct\+X\+Math.\+h$>$}\newline
+\subsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{common_8h_a9f918755b601cf4bffca775992e6fb90}{N\+O\+M\+I\+N\+M\+AX}}
+\end{DoxyCompactItemize}
 \subsection*{型定義}
 \begin{DoxyCompactItemize}
 \item 
-using \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} = Direct\+X\+::\+Simple\+Math\+::\+Vector2
+{\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{common_8h_ab7d7d9064a34dd725663b1dbee652aca}{Com\+Ptr}} = Microsoft\+::\+W\+R\+L\+::\+Com\+Ptr$<$ T $>$
+\item 
+using \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}} = \mbox{\hyperlink{classsaki_1_1_vector2}{saki\+::\+Vector2}}$<$ float $>$
+\item 
+using \mbox{\hyperlink{common_8h_ab1cb35b3a17c398d8ef71d5f779808bf}{Vec3}} = \mbox{\hyperlink{classsaki_1_1_vector3}{saki\+::\+Vector3}}$<$ float $>$
+\item 
+using \mbox{\hyperlink{common_8h_a0eafa16de452739414b9c28b2d6cfa97}{Vec4}} = \mbox{\hyperlink{classsaki_1_1_vector4}{saki\+::\+Vector4}}$<$ float $>$
+\item 
+using \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}} = \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$ float $>$
+\item 
+using \mbox{\hyperlink{common_8h_aa80a2c993af85304eca72a4e11daa1e6}{Float2}} = Direct\+X\+::\+X\+M\+F\+L\+O\+A\+T2
+\item 
+using \mbox{\hyperlink{common_8h_aa675d103841c4c5b4208e691647db4aa}{Float3}} = Direct\+X\+::\+X\+M\+F\+L\+O\+A\+T3
+\item 
+using \mbox{\hyperlink{common_8h_a8f67830dc6446e8c45d77b58760be881}{Float4}} = Direct\+X\+::\+X\+M\+F\+L\+O\+A\+T4
+\item 
+using \mbox{\hyperlink{common_8h_ad141492b3b60f10d3af40f41a9e97c74}{Vector}} = Direct\+X\+::\+X\+M\+V\+E\+C\+T\+OR
+\item 
+using \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}} = Direct\+X\+::\+X\+M\+M\+A\+T\+R\+IX
 \end{DoxyCompactItemize}
 
 
-\subsection{詳解}
-定数定義やヘッダのインクルード 
+\subsection{マクロ定義詳解}
+\mbox{\Hypertarget{common_8h_a9f918755b601cf4bffca775992e6fb90}\label{common_8h_a9f918755b601cf4bffca775992e6fb90}} 
+\index{common.\+h@{common.\+h}!N\+O\+M\+I\+N\+M\+AX@{N\+O\+M\+I\+N\+M\+AX}}
+\index{N\+O\+M\+I\+N\+M\+AX@{N\+O\+M\+I\+N\+M\+AX}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{N\+O\+M\+I\+N\+M\+AX}{NOMINMAX}}
+{\footnotesize\ttfamily \#define N\+O\+M\+I\+N\+M\+AX}
 
-\begin{DoxyAuthor}{著者}
-石山　悠 
-\end{DoxyAuthor}
-\begin{DoxyDate}{日付}
-2018/10/29 
-\end{DoxyDate}
 
 
 \subsection{型定義詳解}
-\mbox{\Hypertarget{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}\label{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}} 
-\index{common.\+h@{common.\+h}!V\+E\+C2@{V\+E\+C2}}
-\index{V\+E\+C2@{V\+E\+C2}!common.\+h@{common.\+h}}
-\subsubsection{\texorpdfstring{V\+E\+C2}{VEC2}}
-{\footnotesize\ttfamily using \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} =  Direct\+X\+::\+Simple\+Math\+::\+Vector2}
+\mbox{\Hypertarget{common_8h_ab7d7d9064a34dd725663b1dbee652aca}\label{common_8h_ab7d7d9064a34dd725663b1dbee652aca}} 
+\index{common.\+h@{common.\+h}!Com\+Ptr@{Com\+Ptr}}
+\index{Com\+Ptr@{Com\+Ptr}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{Com\+Ptr}{ComPtr}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{common_8h_ab7d7d9064a34dd725663b1dbee652aca}{Com\+Ptr}} =  Microsoft\+::\+W\+R\+L\+::\+Com\+Ptr$<$T$>$}
+
+\mbox{\Hypertarget{common_8h_aa80a2c993af85304eca72a4e11daa1e6}\label{common_8h_aa80a2c993af85304eca72a4e11daa1e6}} 
+\index{common.\+h@{common.\+h}!Float2@{Float2}}
+\index{Float2@{Float2}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{Float2}{Float2}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{common_8h_aa80a2c993af85304eca72a4e11daa1e6}{Float2}} =  Direct\+X\+::\+X\+M\+F\+L\+O\+A\+T2}
+
+\mbox{\Hypertarget{common_8h_aa675d103841c4c5b4208e691647db4aa}\label{common_8h_aa675d103841c4c5b4208e691647db4aa}} 
+\index{common.\+h@{common.\+h}!Float3@{Float3}}
+\index{Float3@{Float3}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{Float3}{Float3}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{common_8h_aa675d103841c4c5b4208e691647db4aa}{Float3}} =  Direct\+X\+::\+X\+M\+F\+L\+O\+A\+T3}
+
+\mbox{\Hypertarget{common_8h_a8f67830dc6446e8c45d77b58760be881}\label{common_8h_a8f67830dc6446e8c45d77b58760be881}} 
+\index{common.\+h@{common.\+h}!Float4@{Float4}}
+\index{Float4@{Float4}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{Float4}{Float4}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{common_8h_a8f67830dc6446e8c45d77b58760be881}{Float4}} =  Direct\+X\+::\+X\+M\+F\+L\+O\+A\+T4}
+
+\mbox{\Hypertarget{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}\label{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}} 
+\index{common.\+h@{common.\+h}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{Matrix}{Matrix}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{common_8h_ac6b2f2a47a728f9de5b5700d5aea93de}{Matrix}} =  Direct\+X\+::\+X\+M\+M\+A\+T\+R\+IX}
+
+\mbox{\Hypertarget{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}\label{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}} 
+\index{common.\+h@{common.\+h}!Transform@{Transform}}
+\index{Transform@{Transform}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{Transform}{Transform}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}} =  \mbox{\hyperlink{classsaki_1_1_transform}{saki\+::\+Transform}}$<$float$>$}
+
+\mbox{\Hypertarget{common_8h_ae148fff5818e9444b4ab2288829559bf}\label{common_8h_ae148fff5818e9444b4ab2288829559bf}} 
+\index{common.\+h@{common.\+h}!Vec2@{Vec2}}
+\index{Vec2@{Vec2}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{Vec2}{Vec2}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{common_8h_ae148fff5818e9444b4ab2288829559bf}{Vec2}} =  \mbox{\hyperlink{classsaki_1_1_vector2}{saki\+::\+Vector2}}$<$float$>$}
+
+\mbox{\Hypertarget{common_8h_ab1cb35b3a17c398d8ef71d5f779808bf}\label{common_8h_ab1cb35b3a17c398d8ef71d5f779808bf}} 
+\index{common.\+h@{common.\+h}!Vec3@{Vec3}}
+\index{Vec3@{Vec3}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{Vec3}{Vec3}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{common_8h_ab1cb35b3a17c398d8ef71d5f779808bf}{Vec3}} =  \mbox{\hyperlink{classsaki_1_1_vector3}{saki\+::\+Vector3}}$<$float$>$}
+
+\mbox{\Hypertarget{common_8h_a0eafa16de452739414b9c28b2d6cfa97}\label{common_8h_a0eafa16de452739414b9c28b2d6cfa97}} 
+\index{common.\+h@{common.\+h}!Vec4@{Vec4}}
+\index{Vec4@{Vec4}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{Vec4}{Vec4}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{common_8h_a0eafa16de452739414b9c28b2d6cfa97}{Vec4}} =  \mbox{\hyperlink{classsaki_1_1_vector4}{saki\+::\+Vector4}}$<$float$>$}
+
+\mbox{\Hypertarget{common_8h_ad141492b3b60f10d3af40f41a9e97c74}\label{common_8h_ad141492b3b60f10d3af40f41a9e97c74}} 
+\index{common.\+h@{common.\+h}!Vector@{Vector}}
+\index{Vector@{Vector}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{Vector}{Vector}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{common_8h_ad141492b3b60f10d3af40f41a9e97c74}{Vector}} =  Direct\+X\+::\+X\+M\+V\+E\+C\+T\+OR}
 

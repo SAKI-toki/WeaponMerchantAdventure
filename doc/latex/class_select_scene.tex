@@ -20,13 +20,14 @@ Select\+Scene の継承関係図\begin{figure}[H]
 \item 
 void \mbox{\hyperlink{class_select_scene_a20b3a902b5521d7494ed353731b3065d}{Init}} () final
 \begin{DoxyCompactList}\small\item\em セレクトシーンの初期化 \end{DoxyCompactList}\item 
-\mbox{\hyperlink{scene__base_8h_a24cee5343fb9d0706ead6e8601f363be}{S\+C\+E\+NE}} \mbox{\hyperlink{class_select_scene_a963eef40b6cae9667a66c5a517b66ab8}{Update}} () final
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \mbox{\hyperlink{class_select_scene_a0cef696ddf74155e061cc5f9f2e06419}{Update}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \&) final
 \begin{DoxyCompactList}\small\item\em セレクトシーンの更新 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_select_scene_a85445536ad84d5232c724ecb7d48b8aa}{Render}} () final
 \begin{DoxyCompactList}\small\item\em セレクトシーンの描画 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_select_scene_a938293516c0e1ae5bb09dbab81bc78d9}{Destroy}} () final
-\begin{DoxyCompactList}\small\item\em セレクトシーンの破棄 \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{その他の継承メンバ}
+\begin{DoxyCompactList}\small\item\em セレクトシーンの破棄 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_select_scene_a546190bc143f6d7a3055935f97b55596}{Exit\+Fade\+Update}} () final
+\begin{DoxyCompactList}\small\item\em フェード中の更新 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
@@ -46,6 +47,20 @@ void \mbox{\hyperlink{class_select_scene_a938293516c0e1ae5bb09dbab81bc78d9}{Dest
 
 
 \mbox{\hyperlink{class_scene_base_a7c5b54020bc519b4dadfe9770d6b27f7}{Scene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_select_scene_a546190bc143f6d7a3055935f97b55596}\label{class_select_scene_a546190bc143f6d7a3055935f97b55596}} 
+\index{Select\+Scene@{Select\+Scene}!Exit\+Fade\+Update@{Exit\+Fade\+Update}}
+\index{Exit\+Fade\+Update@{Exit\+Fade\+Update}!Select\+Scene@{Select\+Scene}}
+\subsubsection{\texorpdfstring{Exit\+Fade\+Update()}{ExitFadeUpdate()}}
+{\footnotesize\ttfamily void Select\+Scene\+::\+Exit\+Fade\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+フェード中の更新 
+
+
+
+\mbox{\hyperlink{class_scene_ad19a449c6ed452823dae14183689570c}{Scene}}を再実装しています。
 
 \mbox{\Hypertarget{class_select_scene_a20b3a902b5521d7494ed353731b3065d}\label{class_select_scene_a20b3a902b5521d7494ed353731b3065d}} 
 \index{Select\+Scene@{Select\+Scene}!Init@{Init}}
@@ -75,26 +90,26 @@ void \mbox{\hyperlink{class_select_scene_a938293516c0e1ae5bb09dbab81bc78d9}{Dest
 
 \mbox{\hyperlink{class_scene_base_ad981674ce731ea267f398e889bbb9dc3}{Scene\+Base}}を実装しています。
 
-\mbox{\Hypertarget{class_select_scene_a963eef40b6cae9667a66c5a517b66ab8}\label{class_select_scene_a963eef40b6cae9667a66c5a517b66ab8}} 
+\mbox{\Hypertarget{class_select_scene_a0cef696ddf74155e061cc5f9f2e06419}\label{class_select_scene_a0cef696ddf74155e061cc5f9f2e06419}} 
 \index{Select\+Scene@{Select\+Scene}!Update@{Update}}
 \index{Update@{Update}!Select\+Scene@{Select\+Scene}}
 \subsubsection{\texorpdfstring{Update()}{Update()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{scene__base_8h_a24cee5343fb9d0706ead6e8601f363be}{S\+C\+E\+NE}} Select\+Scene\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ Select\+Scene\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
 
 
 
 セレクトシーンの更新 
 
 \begin{DoxyReturn}{戻り値}
-S\+C\+E\+NE シーンが変わるなら次のシーンのenum classを返す 
+std\+::shared\+\_\+ptr$<$\+Scene$>$ シーンが変わるなら次のシーンのstd\+::shared\+\_\+ptr$<$\+Scene$>$を返す 
 \end{DoxyReturn}
 
 
-\mbox{\hyperlink{class_scene_acb50f8104e5a7cfecbdececa7d5f1b39}{Scene}}を実装しています。
+\mbox{\hyperlink{class_scene_ab71ee5f19764b90c87b4574aa1cb1d25}{Scene}}を実装しています。
 
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/scene/main/select/\mbox{\hyperlink{select__scene_8h}{select\+\_\+scene.\+h}}\item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/scene/main/select/\mbox{\hyperlink{select__scene_8cpp}{select\+\_\+scene.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/scene/main/select/\mbox{\hyperlink{select__scene_8h}{select\+\_\+scene.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/scene/main/select/\mbox{\hyperlink{select__scene_8cpp}{select\+\_\+scene.\+cpp}}\end{DoxyCompactItemize}

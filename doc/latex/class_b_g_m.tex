@@ -1,0 +1,96 @@
+\hypertarget{class_b_g_m}{}\section{B\+GM クラス}
+\label{class_b_g_m}\index{B\+GM@{B\+GM}}
+
+
+B\+G\+Mクラス  
+
+
+
+
+{\ttfamily \#include $<$bgm.\+h$>$}
+
+B\+GM の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_b_g_m}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_b_g_m_a63645262b99c4d3aef0a58d9b972f674}{Fade}} (const bool)
+\begin{DoxyCompactList}\small\item\em 主にシーン遷移時になめらかに\+B\+G\+Mを変えるため \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_b_g_m_a67e626cf0e596ca4fcf74df02fadf882}{Change\+Bgm}} (const std\+::string \&, W\+C\+H\+AR $\ast$)
+\begin{DoxyCompactList}\small\item\em B\+G\+Mを変える \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_b_g_m_a6d5d9eddf086075d2b579c3a8061cc8c}{Set\+Volume}} (const float v)
+\item 
+void \mbox{\hyperlink{class_b_g_m_a5aaf11289bdf7eddba2ee3af7995b4fc}{One\+Shot\+B\+GM}} (const std\+::string \&, W\+C\+H\+AR $\ast$)
+\begin{DoxyCompactList}\small\item\em B\+G\+Mを変える(ループなし) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+B\+G\+Mクラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_b_g_m_a67e626cf0e596ca4fcf74df02fadf882}\label{class_b_g_m_a67e626cf0e596ca4fcf74df02fadf882}} 
+\index{B\+GM@{B\+GM}!Change\+Bgm@{Change\+Bgm}}
+\index{Change\+Bgm@{Change\+Bgm}!B\+GM@{B\+GM}}
+\subsubsection{\texorpdfstring{Change\+Bgm()}{ChangeBgm()}}
+{\footnotesize\ttfamily void B\+G\+M\+::\+Change\+Bgm (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{W\+C\+H\+AR $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+B\+G\+Mを変える 
+
+
+\begin{DoxyParams}{引数}
+{\em name} & キー \\
+\hline
+{\em path} & パス \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_g_m_a63645262b99c4d3aef0a58d9b972f674}\label{class_b_g_m_a63645262b99c4d3aef0a58d9b972f674}} 
+\index{B\+GM@{B\+GM}!Fade@{Fade}}
+\index{Fade@{Fade}!B\+GM@{B\+GM}}
+\subsubsection{\texorpdfstring{Fade()}{Fade()}}
+{\footnotesize\ttfamily void B\+G\+M\+::\+Fade (\begin{DoxyParamCaption}\item[{const bool}]{fade\+\_\+in }\end{DoxyParamCaption})}
+
+
+
+主にシーン遷移時になめらかに\+B\+G\+Mを変えるため 
+
+
+\begin{DoxyParams}{引数}
+{\em fade\+\_\+in} & フェードインかどうか \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_g_m_a5aaf11289bdf7eddba2ee3af7995b4fc}\label{class_b_g_m_a5aaf11289bdf7eddba2ee3af7995b4fc}} 
+\index{B\+GM@{B\+GM}!One\+Shot\+B\+GM@{One\+Shot\+B\+GM}}
+\index{One\+Shot\+B\+GM@{One\+Shot\+B\+GM}!B\+GM@{B\+GM}}
+\subsubsection{\texorpdfstring{One\+Shot\+B\+G\+M()}{OneShotBGM()}}
+{\footnotesize\ttfamily void B\+G\+M\+::\+One\+Shot\+B\+GM (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{W\+C\+H\+AR $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+B\+G\+Mを変える(ループなし) 
+
+
+\begin{DoxyParams}{引数}
+{\em name} & キー \\
+\hline
+{\em path} & パス \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_g_m_a6d5d9eddf086075d2b579c3a8061cc8c}\label{class_b_g_m_a6d5d9eddf086075d2b579c3a8061cc8c}} 
+\index{B\+GM@{B\+GM}!Set\+Volume@{Set\+Volume}}
+\index{Set\+Volume@{Set\+Volume}!B\+GM@{B\+GM}}
+\subsubsection{\texorpdfstring{Set\+Volume()}{SetVolume()}}
+{\footnotesize\ttfamily void B\+G\+M\+::\+Set\+Volume (\begin{DoxyParamCaption}\item[{const float}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/sound/bgm/\mbox{\hyperlink{bgm_8h}{bgm.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/sound/bgm/\mbox{\hyperlink{bgm_8cpp}{bgm.\+cpp}}\end{DoxyCompactItemize}

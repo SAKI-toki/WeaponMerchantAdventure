@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/src/object/character/enemy/boss/action_pattern/base/action_pattern_base.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_98cdb10f369f6a3b9149e010b312bf5d.html">src</a></li><li class="navelem"><a class="el" href="dir_aff232980d313de02da2215121436487.html">object</a></li><li class="navelem"><a class="el" href="dir_325780c2f901cc3e3b29dbfa332a1301.html">character</a></li><li class="navelem"><a class="el" href="dir_7dc315065d93ea09ce9335fe29df8ae6.html">enemy</a></li><li class="navelem"><a class="el" href="dir_380d2d4489411008761ba3974c983bc6.html">boss</a></li><li class="navelem"><a class="el" href="dir_ff731b35bd2eee3c717b475f38ab61d2.html">action_pattern</a></li><li class="navelem"><a class="el" href="dir_4259166c107183f425ec77f1bff04f99.html">base</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">action_pattern_base.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="action__pattern__base_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../../boss.h&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../../../../../../camera/camera.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_action_pattern.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_action_pattern.html">ActionPattern</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_action_pattern.html#ac8f2228ca469ce6fe29a9775bf393e0e">Init</a>() = 0;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">virtual</span> std::shared_ptr&lt;ActionPattern&gt; <a class="code" href="class_action_pattern.html#a04c8daf0bf5e263303f7d86aec20eb27">Action</a>(std::shared_ptr&lt;ActionPattern&gt;&amp;, <a class="code" href="class_boss.html">Boss</a>&amp;,<span class="keyword">const</span> <span class="keywordtype">float</span>) = 0;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_action_pattern.html#a313199aa5d15b6f9381b916ffe23fe6a">Render</a>() = 0;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_action_pattern.html#a73833df08867c4f4785ddf51344eca47">Destroy</a>() = 0;</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_action_pattern.html#a0549549b350f2a150835c07cb796131b">   13</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_action_pattern.html#a0549549b350f2a150835c07cb796131b">~ActionPattern</a>() {}</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div><div class="ttc" id="class_action_pattern_html_a313199aa5d15b6f9381b916ffe23fe6a"><div class="ttname"><a href="class_action_pattern.html#a313199aa5d15b6f9381b916ffe23fe6a">ActionPattern::Render</a></div><div class="ttdeci">virtual void Render()=0</div></div>
+<div class="ttc" id="class_action_pattern_html_a73833df08867c4f4785ddf51344eca47"><div class="ttname"><a href="class_action_pattern.html#a73833df08867c4f4785ddf51344eca47">ActionPattern::Destroy</a></div><div class="ttdeci">virtual void Destroy()=0</div></div>
+<div class="ttc" id="class_boss_html"><div class="ttname"><a href="class_boss.html">Boss</a></div><div class="ttdef"><b>Definition:</b> boss.h:8</div></div>
+<div class="ttc" id="class_action_pattern_html_ac8f2228ca469ce6fe29a9775bf393e0e"><div class="ttname"><a href="class_action_pattern.html#ac8f2228ca469ce6fe29a9775bf393e0e">ActionPattern::Init</a></div><div class="ttdeci">virtual void Init()=0</div></div>
+<div class="ttc" id="class_action_pattern_html_a0549549b350f2a150835c07cb796131b"><div class="ttname"><a href="class_action_pattern.html#a0549549b350f2a150835c07cb796131b">ActionPattern::~ActionPattern</a></div><div class="ttdeci">virtual ~ActionPattern()</div><div class="ttdef"><b>Definition:</b> action_pattern_base.h:13</div></div>
+<div class="ttc" id="class_action_pattern_html_a04c8daf0bf5e263303f7d86aec20eb27"><div class="ttname"><a href="class_action_pattern.html#a04c8daf0bf5e263303f7d86aec20eb27">ActionPattern::Action</a></div><div class="ttdeci">virtual std::shared_ptr&lt; ActionPattern &gt; Action(std::shared_ptr&lt; ActionPattern &gt; &amp;, Boss &amp;, const float)=0</div></div>
+<div class="ttc" id="class_action_pattern_html"><div class="ttname"><a href="class_action_pattern.html">ActionPattern</a></div><div class="ttdef"><b>Definition:</b> action_pattern_base.h:6</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

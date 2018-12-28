@@ -25,7 +25,14 @@ void \mbox{\hyperlink{class_scene_manager_a63dcf65832d6a2c190bf496d9a3b00a3}{Upd
 void \mbox{\hyperlink{class_scene_manager_a968ae7a0065b793f139bda6bcc58d106}{Render}} () final
 \begin{DoxyCompactList}\small\item\em 保持してるシーンの描画 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_scene_manager_a0e3ad11342e763f0d4108c0b4674a157}{Destroy}} () final
-\begin{DoxyCompactList}\small\item\em 保持してるシーンのマネージャーの破棄 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 保持してるシーンのマネージャーの破棄 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a5ed223ec14c6b62d378b3f95ed4f5d8e}{Continue\+Game}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \&p)
+\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_scene_manager_a416645f4b11ce8cdb81d9d43d1c5666b}{is\+\_\+game\+\_\+scene}} = false
+\end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
 
 
@@ -33,6 +40,12 @@ void \mbox{\hyperlink{class_scene_manager_a0e3ad11342e763f0d4108c0b4674a157}{Des
 シーンをマネージャーするクラス 
 
 \subsection{関数詳解}
+\mbox{\Hypertarget{class_scene_manager_a5ed223ec14c6b62d378b3f95ed4f5d8e}\label{class_scene_manager_a5ed223ec14c6b62d378b3f95ed4f5d8e}} 
+\index{Scene\+Manager@{Scene\+Manager}!Continue\+Game@{Continue\+Game}}
+\index{Continue\+Game@{Continue\+Game}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{Continue\+Game()}{ContinueGame()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::\+Continue\+Game (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
 \mbox{\Hypertarget{class_scene_manager_a0e3ad11342e763f0d4108c0b4674a157}\label{class_scene_manager_a0e3ad11342e763f0d4108c0b4674a157}} 
 \index{Scene\+Manager@{Scene\+Manager}!Destroy@{Destroy}}
 \index{Destroy@{Destroy}!Scene\+Manager@{Scene\+Manager}}
@@ -87,7 +100,16 @@ void \mbox{\hyperlink{class_scene_manager_a0e3ad11342e763f0d4108c0b4674a157}{Des
 
 
 
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_scene_manager_a416645f4b11ce8cdb81d9d43d1c5666b}\label{class_scene_manager_a416645f4b11ce8cdb81d9d43d1c5666b}} 
+\index{Scene\+Manager@{Scene\+Manager}!is\+\_\+game\+\_\+scene@{is\+\_\+game\+\_\+scene}}
+\index{is\+\_\+game\+\_\+scene@{is\+\_\+game\+\_\+scene}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{is\+\_\+game\+\_\+scene}{is\_game\_scene}}
+{\footnotesize\ttfamily bool Scene\+Manager\+::is\+\_\+game\+\_\+scene = false}
+
+
+
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/scene/manager/\mbox{\hyperlink{scene__manager_8h}{scene\+\_\+manager.\+h}}\item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/scene/manager/\mbox{\hyperlink{scene__manager_8cpp}{scene\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/scene/manager/\mbox{\hyperlink{scene__manager_8h}{scene\+\_\+manager.\+h}}\item 
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/scene/manager/\mbox{\hyperlink{scene__manager_8cpp}{scene\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

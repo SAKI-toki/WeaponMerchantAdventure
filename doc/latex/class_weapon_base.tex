@@ -18,17 +18,22 @@ Weapon\+Base の継承関係図\begin{figure}[H]
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \mbox{\hyperlink{class_weapon_base_a8663cb6d8510d5b3aff1129c575cbd9c}{Attack}} (bool, const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&)=0
+virtual bool \mbox{\hyperlink{class_weapon_base_a1bab9c7fb9524db754bebbbcbf6c2fd9}{Attack}} (bool, const \mbox{\hyperlink{common_8h_ab1cb35b3a17c398d8ef71d5f779808bf}{Vec3}} \&)=0
 \item 
 virtual void \mbox{\hyperlink{class_weapon_base_a25cd4c351638b76377e93341a9545712}{Weapon\+Start}} ()=0
 \item 
-virtual void \mbox{\hyperlink{class_weapon_base_a389110ad7653d16eecfd9770a8b6b08e}{Weapon\+Update}} (const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&, bool)=0
+virtual void \mbox{\hyperlink{class_weapon_base_aa1e3d02353273ab72a71cc3a1563636a}{Weapon\+Update}} (const \mbox{\hyperlink{common_8h_ab1cb35b3a17c398d8ef71d5f779808bf}{Vec3}} \&, bool)=0
 \item 
-virtual void \mbox{\hyperlink{class_weapon_base_a619809ea6c169446d9524f8089057436}{Weapon\+Render}} (const \mbox{\hyperlink{class_transform}{Transform}} \&=N\+U\+LL)=0
+virtual void \mbox{\hyperlink{class_weapon_base_af308d16d3892c3ffaeedf74b08e761b9}{Weapon\+Render}} (const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}} \&=\mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}\{ saki\+::vector3\+\_\+zero$<$ float $>$, saki\+::vector3\+\_\+zero$<$ float $>$, saki\+::vector3\+\_\+zero$<$ float $>$ \})=0
 \item 
 virtual void \mbox{\hyperlink{class_weapon_base_a417784a8c8bf73cd398a77b922fc110c}{Weapon\+Destroy}} ()=0
 \item 
 virtual \mbox{\hyperlink{class_weapon_base_a311bee6c8496581f21068867be48762f}{$\sim$\+Weapon\+Base}} ()
+\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_weapon_base_a54883e3ecbc54ff42ea381a17ef8cf8f}{weapon\+\_\+enabled}} = true
 \end{DoxyCompactItemize}
 
 
@@ -45,15 +50,15 @@ virtual \mbox{\hyperlink{class_weapon_base_a311bee6c8496581f21068867be48762f}{$\
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_weapon_base_a8663cb6d8510d5b3aff1129c575cbd9c}\label{class_weapon_base_a8663cb6d8510d5b3aff1129c575cbd9c}} 
+\mbox{\Hypertarget{class_weapon_base_a1bab9c7fb9524db754bebbbcbf6c2fd9}\label{class_weapon_base_a1bab9c7fb9524db754bebbbcbf6c2fd9}} 
 \index{Weapon\+Base@{Weapon\+Base}!Attack@{Attack}}
 \index{Attack@{Attack}!Weapon\+Base@{Weapon\+Base}}
 \subsubsection{\texorpdfstring{Attack()}{Attack()}}
-{\footnotesize\ttfamily virtual void Weapon\+Base\+::\+Attack (\begin{DoxyParamCaption}\item[{bool}]{,  }\item[{const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual bool Weapon\+Base\+::\+Attack (\begin{DoxyParamCaption}\item[{bool}]{,  }\item[{const \mbox{\hyperlink{common_8h_ab1cb35b3a17c398d8ef71d5f779808bf}{Vec3}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-\mbox{\hyperlink{class_sword_a923943b87ee19f3670bfcdb18d670e1e}{Sword}}, \mbox{\hyperlink{class_arrow_ab2571579c0183f4db62bc1c4f9fc68f3}{Arrow}}で実装されています。
+\mbox{\hyperlink{class_sword_a6c8642e6a8f1d6152abce6c84bf6d21b}{Sword}}, \mbox{\hyperlink{class_arrow_a98ea469bf0b21635b2d2dadb69c72240}{Arrow}}で実装されています。
 
 \mbox{\Hypertarget{class_weapon_base_a417784a8c8bf73cd398a77b922fc110c}\label{class_weapon_base_a417784a8c8bf73cd398a77b922fc110c}} 
 \index{Weapon\+Base@{Weapon\+Base}!Weapon\+Destroy@{Weapon\+Destroy}}
@@ -63,17 +68,17 @@ virtual \mbox{\hyperlink{class_weapon_base_a311bee6c8496581f21068867be48762f}{$\
 
 
 
-\mbox{\hyperlink{class_sword_a3f60d8b24b7847d6a84f0941820b711d}{Sword}}, \mbox{\hyperlink{class_arrow_a6b9bfb7bf580c147e61d111b3cb2b293}{Arrow}}で実装されています。
+\mbox{\hyperlink{class_sword_a3f60d8b24b7847d6a84f0941820b711d}{Sword}}, \mbox{\hyperlink{class_arrow_a1101d1159771b5c428afd3c7a6a0a4df}{Arrow}}で実装されています。
 
-\mbox{\Hypertarget{class_weapon_base_a619809ea6c169446d9524f8089057436}\label{class_weapon_base_a619809ea6c169446d9524f8089057436}} 
+\mbox{\Hypertarget{class_weapon_base_af308d16d3892c3ffaeedf74b08e761b9}\label{class_weapon_base_af308d16d3892c3ffaeedf74b08e761b9}} 
 \index{Weapon\+Base@{Weapon\+Base}!Weapon\+Render@{Weapon\+Render}}
 \index{Weapon\+Render@{Weapon\+Render}!Weapon\+Base@{Weapon\+Base}}
 \subsubsection{\texorpdfstring{Weapon\+Render()}{WeaponRender()}}
-{\footnotesize\ttfamily virtual void Weapon\+Base\+::\+Weapon\+Render (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_transform}{Transform}} \&}]{ = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Weapon\+Base\+::\+Weapon\+Render (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}} \&}]{ = {\ttfamily \mbox{\hyperlink{common_8h_a1c43cb8f0d8a41901f3ce4c67dbbce20}{Transform}}\{~saki\+:\+:vector3\+\_\+zero$<$~float~$>$,~saki\+:\+:vector3\+\_\+zero$<$~float~$>$,~saki\+:\+:vector3\+\_\+zero$<$~float~$>$~\}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-\mbox{\hyperlink{class_sword_aba05706b8b2480a8317595f92a7bc5ce}{Sword}}, \mbox{\hyperlink{class_arrow_a30553702b80c0559705a17d92389a1fc}{Arrow}}で実装されています。
+\mbox{\hyperlink{class_sword_ac80e3b54ef5572eae1e4760d14383f4f}{Sword}}, \mbox{\hyperlink{class_arrow_af9e54760156a77a15ad98a88f712ebdb}{Arrow}}で実装されています。
 
 \mbox{\Hypertarget{class_weapon_base_a25cd4c351638b76377e93341a9545712}\label{class_weapon_base_a25cd4c351638b76377e93341a9545712}} 
 \index{Weapon\+Base@{Weapon\+Base}!Weapon\+Start@{Weapon\+Start}}
@@ -83,20 +88,29 @@ virtual \mbox{\hyperlink{class_weapon_base_a311bee6c8496581f21068867be48762f}{$\
 
 
 
-\mbox{\hyperlink{class_sword_aa145196b7a7f01fd6fb6d4e323451b06}{Sword}}, \mbox{\hyperlink{class_arrow_a0bdc2c0f450a1c6f4d38e49fdfd60a88}{Arrow}}で実装されています。
+\mbox{\hyperlink{class_sword_af9027f627d1db6c0ac21d2aa842cff69}{Sword}}, \mbox{\hyperlink{class_arrow_a085b5bd5f9e3ce25a081b502f9989f33}{Arrow}}で実装されています。
 
-\mbox{\Hypertarget{class_weapon_base_a389110ad7653d16eecfd9770a8b6b08e}\label{class_weapon_base_a389110ad7653d16eecfd9770a8b6b08e}} 
+\mbox{\Hypertarget{class_weapon_base_aa1e3d02353273ab72a71cc3a1563636a}\label{class_weapon_base_aa1e3d02353273ab72a71cc3a1563636a}} 
 \index{Weapon\+Base@{Weapon\+Base}!Weapon\+Update@{Weapon\+Update}}
 \index{Weapon\+Update@{Weapon\+Update}!Weapon\+Base@{Weapon\+Base}}
 \subsubsection{\texorpdfstring{Weapon\+Update()}{WeaponUpdate()}}
-{\footnotesize\ttfamily virtual void Weapon\+Base\+::\+Weapon\+Update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_afb0c5e21d4133ff4f200992c0b534e1b}{V\+E\+C2}} \&}]{,  }\item[{bool}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Weapon\+Base\+::\+Weapon\+Update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_ab1cb35b3a17c398d8ef71d5f779808bf}{Vec3}} \&}]{,  }\item[{bool}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-\mbox{\hyperlink{class_sword_a11b6e50545688b52175a7089c61ac168}{Sword}}, \mbox{\hyperlink{class_arrow_a00f34c3153e0b2dc50259b8a249ee8ad}{Arrow}}で実装されています。
+\mbox{\hyperlink{class_sword_a5fda2f72829b6256ffc3fb18d9d065e8}{Sword}}, \mbox{\hyperlink{class_arrow_afb6110035cba7b850d12755570163b29}{Arrow}}で実装されています。
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_weapon_base_a54883e3ecbc54ff42ea381a17ef8cf8f}\label{class_weapon_base_a54883e3ecbc54ff42ea381a17ef8cf8f}} 
+\index{Weapon\+Base@{Weapon\+Base}!weapon\+\_\+enabled@{weapon\+\_\+enabled}}
+\index{weapon\+\_\+enabled@{weapon\+\_\+enabled}!Weapon\+Base@{Weapon\+Base}}
+\subsubsection{\texorpdfstring{weapon\+\_\+enabled}{weapon\_enabled}}
+{\footnotesize\ttfamily bool Weapon\+Base\+::weapon\+\_\+enabled = true}
 
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/object/weapon/base/\mbox{\hyperlink{weapon__base_8h}{weapon\+\_\+base.\+h}}\end{DoxyCompactItemize}
+C\+:/\+Users/tokir/\+Documents/\+Git\+Hub/\+Weapon\+Merchant\+Adventure/src/src/object/weapon/base/\mbox{\hyperlink{weapon__base_8h}{weapon\+\_\+base.\+h}}\end{DoxyCompactItemize}

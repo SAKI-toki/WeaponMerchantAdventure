@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mapobject',['MapObject',['../class_map_object.html',1,'']]]
+  ['immobileptr',['ImmobilePtr',['../classsaki_1_1_immobile_ptr.html',1,'saki']]],
+  ['itembase',['ItemBase',['../class_item_base.html',1,'']]]
 ];

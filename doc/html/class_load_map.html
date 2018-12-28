@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WeaponMerchantAdventure: LoadMap クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WeaponMerchantAdventure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="class_load_map-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">LoadMap クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>マップロードクラス  
+ <a href="class_load_map.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="load__map_8h_source.html">load_map.h</a>&gt;</code></p>
+<div class="dynheader">
+LoadMap の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_load_map.png" usemap="#LoadMap_map" alt=""/>
+  <map id="LoadMap_map" name="LoadMap_map">
+<area href="classsaki_1_1_singleton.html" alt="saki::Singleton&lt; LoadMap &gt;" shape="rect" coords="0,0,169,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a534a2ac8151a7549b1fed723759ab2d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_load_map.html#a534a2ac8151a7549b1fed723759ab2d0">GameLoadingMap</a> (WCHAR *, WCHAR *)</td></tr>
+<tr class="memdesc:a534a2ac8151a7549b1fed723759ab2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲームマップの読み込み  <a href="#a534a2ac8151a7549b1fed723759ab2d0">[詳解]</a><br /></td></tr>
+<tr class="separator:a534a2ac8151a7549b1fed723759ab2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44d4c9299837322a7eedbb298b6dbda9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_load_map.html#a44d4c9299837322a7eedbb298b6dbda9">GameMakingMap</a> (std::vector&lt; <a class="el" href="class_map_object.html">MapObject</a> &gt; &amp;, std::list&lt; <a class="el" href="class_normal_enemy.html">NormalEnemy</a> &gt; &amp;, std::list&lt; <a class="el" href="class_fly_enemy.html">FlyEnemy</a> &gt; &amp;, std::unique_ptr&lt; <a class="el" href="class_boss.html">Boss</a> &gt; &amp;, std::unique_ptr&lt; <a class="el" href="class_player.html">Player</a> &gt; &amp;, std::list&lt; <a class="el" href="class_bullet_item.html">BulletItem</a> &gt; &amp;)</td></tr>
+<tr class="memdesc:a44d4c9299837322a7eedbb298b6dbda9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲームマップの作成  <a href="#a44d4c9299837322a7eedbb298b6dbda9">[詳解]</a><br /></td></tr>
+<tr class="separator:a44d4c9299837322a7eedbb298b6dbda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cfbf3d52bcaf5384d882c1cf591bf43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_load_map.html#a9cfbf3d52bcaf5384d882c1cf591bf43">TitleSelectLoadingMap</a> (WCHAR *)</td></tr>
+<tr class="memdesc:a9cfbf3d52bcaf5384d882c1cf591bf43"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイトルかセレクトマップの読み込み  <a href="#a9cfbf3d52bcaf5384d882c1cf591bf43">[詳解]</a><br /></td></tr>
+<tr class="separator:a9cfbf3d52bcaf5384d882c1cf591bf43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d69c3ac701f152395a18719c16c881"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_load_map.html#a69d69c3ac701f152395a18719c16c881">TitleSelectMakingMap</a> (std::vector&lt; <a class="el" href="class_map_object.html">MapObject</a> &gt; &amp;, std::unique_ptr&lt; <a class="el" href="class_player.html">Player</a> &gt; &amp;, std::vector&lt; <a class="el" href="class_select_obj.html">SelectObj</a> &gt; &amp;, <a class="el" href="class_static_object.html">StaticObject</a> &amp;)</td></tr>
+<tr class="memdesc:a69d69c3ac701f152395a18719c16c881"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲームマップの作成  <a href="#a69d69c3ac701f152395a18719c16c881">[詳解]</a><br /></td></tr>
+<tr class="separator:a69d69c3ac701f152395a18719c16c881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classsaki_1_1_singleton"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsaki_1_1_singleton')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classsaki_1_1_singleton.html">saki::Singleton&lt; LoadMap &gt;</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a3ff92ba5c83fba36d539cfa16d35599a inherit pub_methods_classsaki_1_1_singleton"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsaki_1_1_singleton.html#a3ff92ba5c83fba36d539cfa16d35599a">~Singleton</a> ()</td></tr>
+<tr class="separator:a3ff92ba5c83fba36d539cfa16d35599a inherit pub_methods_classsaki_1_1_singleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classsaki_1_1_singleton"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classsaki_1_1_singleton')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classsaki_1_1_singleton.html">saki::Singleton&lt; LoadMap &gt;</a> に属する継承静的公開メンバ関数</td></tr>
+<tr class="memitem:a198911b1e5a72914511ffd6f50e4da2f inherit pub_static_methods_classsaki_1_1_singleton"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="class_load_map.html">LoadMap</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsaki_1_1_singleton.html#a198911b1e5a72914511ffd6f50e4da2f">getinstance</a> ()</td></tr>
+<tr class="memdesc:a198911b1e5a72914511ffd6f50e4da2f inherit pub_static_methods_classsaki_1_1_singleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">インスタンスを取得  <a href="classsaki_1_1_singleton.html#a198911b1e5a72914511ffd6f50e4da2f">[詳解]</a><br /></td></tr>
+<tr class="separator:a198911b1e5a72914511ffd6f50e4da2f inherit pub_static_methods_classsaki_1_1_singleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classsaki_1_1_singleton"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classsaki_1_1_singleton')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classsaki_1_1_singleton.html">saki::Singleton&lt; LoadMap &gt;</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:a1cd9f69783e3c0c83db851edc061bb7f inherit pro_methods_classsaki_1_1_singleton"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsaki_1_1_singleton.html#a1cd9f69783e3c0c83db851edc061bb7f">Singleton</a> ()</td></tr>
+<tr class="separator:a1cd9f69783e3c0c83db851edc061bb7f inherit pro_methods_classsaki_1_1_singleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>マップロードクラス </p>
+</div><h2 class="groupheader">関数詳解</h2>
+<a id="a534a2ac8151a7549b1fed723759ab2d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a534a2ac8151a7549b1fed723759ab2d0">&#9670;&nbsp;</a></span>GameLoadingMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LoadMap::GameLoadingMap </td>
+          <td>(</td>
+          <td class="paramtype">WCHAR *&#160;</td>
+          <td class="paramname"><em>r_map_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WCHAR *&#160;</td>
+          <td class="paramname"><em>r_fly_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ゲームマップの読み込み </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r_map_path</td><td>読み込むマップcsvのパス </td></tr>
+    <tr><td class="paramname">r_flu_path</td><td>読み込む飛ぶ鳥csvのパス </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a44d4c9299837322a7eedbb298b6dbda9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44d4c9299837322a7eedbb298b6dbda9">&#9670;&nbsp;</a></span>GameMakingMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LoadMap::GameMakingMap </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_map_object.html">MapObject</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::list&lt; <a class="el" href="class_normal_enemy.html">NormalEnemy</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>enemy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::list&lt; <a class="el" href="class_fly_enemy.html">FlyEnemy</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>f_enemy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="class_boss.html">Boss</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>boss</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="class_player.html">Player</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::list&lt; <a class="el" href="class_bullet_item.html">BulletItem</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>bullet_item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ゲームマップの作成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>マップのstd::vector </td></tr>
+    <tr><td class="paramname">enemy</td><td>敵のstd::list </td></tr>
+    <tr><td class="paramname">f_enemy</td><td>飛ぶ敵のstd::list </td></tr>
+    <tr><td class="paramname">boss</td><td>ボスのstd::unique_ptr </td></tr>
+    <tr><td class="paramname">player</td><td>プレイヤーのstd::unique_ptr </td></tr>
+    <tr><td class="paramname">bullet_item</td><td>弾のアイテムのstd::list </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9cfbf3d52bcaf5384d882c1cf591bf43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cfbf3d52bcaf5384d882c1cf591bf43">&#9670;&nbsp;</a></span>TitleSelectLoadingMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LoadMap::TitleSelectLoadingMap </td>
+          <td>(</td>
+          <td class="paramtype">WCHAR *&#160;</td>
+          <td class="paramname"><em>r_map_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>タイトルかセレクトマップの読み込み </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r_map_path</td><td>読み込むマップcsvのパス </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a69d69c3ac701f152395a18719c16c881"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69d69c3ac701f152395a18719c16c881">&#9670;&nbsp;</a></span>TitleSelectMakingMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LoadMap::TitleSelectMakingMap </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_map_object.html">MapObject</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="class_player.html">Player</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_select_obj.html">SelectObj</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>select_obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_static_object.html">StaticObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>sign</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ゲームマップの作成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>マップのstd::vector </td></tr>
+    <tr><td class="paramname">player</td><td>プレイヤーのstd::unique_ptr </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/src/load/map/<a class="el" href="load__map_8h_source.html">load_map.h</a></li>
+<li>C:/Users/tokir/Documents/GitHub/WeaponMerchantAdventure/src/src/load/map/<a class="el" href="load__map_8cpp.html">load_map.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>
