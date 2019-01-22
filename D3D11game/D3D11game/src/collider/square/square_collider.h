@@ -1,0 +1,70 @@
+/**
+* @file square_collider.h
+* @brief 四角形のコライダクラスの宣言
+* @author 石山　悠
+* @date 2018/10/12
+*/
+#pragma once
+#include "../base/collider_base.h"
+#include <saki/transform/transform.h>
+
+
+/**
+* @brief 四角形コライダクラス
+*/
+class SquareCollider :public ColliderBase
+{
+
+	/**
+	* @brief 四角形のコライダのステータス
+	*/
+	struct SquareStatus
+	{
+		Vec3 center_pos;		//位置
+		float width, height;	//幅、高さ
+		/**
+		* @brief 初期化
+		* @param pos 位置
+		* @param w,h 幅、高さ
+		* @param _rot 回転
+		*/
+		void Init(const Vec3& _pos, const float w, const float h)
+		{
+			center_pos = _pos, width = w, height = h;
+		}
+		/**
+		* @brief コピー代入演算子
+		*/
+		SquareStatus& operator=(const SquareStatus& other)
+		{
+			if (this != &other)
+			{
+				this->center_pos = other.center_pos;
+				this->width = other.width;
+				this->height = other.height;
+			}
+			return *this;
+		}
+	};
+	//四角形のステータス
+	SquareStatus status;
+	//静的かどうか
+	bool is_static;
+public:
+	//コンストラクタ
+	SquareCollider(ObjectBase*, bool = false, bool = false);
+	//ステータスをセットする
+	void SetStatus(const Vec3& pos, const float w, const float h, const Vec3& scale);
+	//当たったときの押し出し
+	void CollisionExtrusion(const Vec2&);
+	/**
+	* @brief 当たり判定のステータスを返す
+	* @return const SquareStatus& ステータス
+	*/
+	const SquareStatus& GetStatus()const { return status; }
+	//破棄
+	void Destroy();
+	//コピーコンストラクタ
+	SquareCollider& operator=(const SquareCollider& other);
+
+};
