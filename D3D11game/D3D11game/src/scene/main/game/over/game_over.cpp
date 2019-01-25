@@ -46,8 +46,9 @@ void GameOver::Update(std::shared_ptr<Scene>& scene_ptr, std::shared_ptr<Scene>&
 	{
 		current_blood_time = 0;
 		blood_time = saki::random(10, 30);
-		blood_pos.push_back(blood_status());
-		(std::end(blood_pos) - 1)->pos = { saki::random<float>(0.0f,WINDOW_WIDTH),WINDOW_HEIGHT / 2 + 100,0 };
+		blood_pos.push_back(blood_status{});
+		(std::end(blood_pos) - 1)->pos = { 
+			saki::random<float>(-WINDOW_WIDTH / 2,WINDOW_WIDTH / 2),WINDOW_HEIGHT / 2 + 100,0 };
 		(std::end(blood_pos) - 1)->scale = saki::random(0.1f, 0.5f);
 	}
 	//フェイドイン
@@ -168,7 +169,7 @@ void GameOver::Render()
 	{
 		blood.Render(Transform(itr->pos, { 0,0,0 }, { itr->scale,itr->scale,1 }), false);
 		itr->pos.y -= 10;
-		if (itr->pos.y > WINDOW_HEIGHT / 2 - 300)
+		if (itr->pos.y < -WINDOW_HEIGHT / 2 - 300)
 		{
 			itr = blood_pos.erase(itr);
 		}

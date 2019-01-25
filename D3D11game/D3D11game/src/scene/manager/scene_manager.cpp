@@ -39,7 +39,7 @@ void SceneManager::Init()
 #ifndef _DEBUG
 	scene_ptr = std::make_shared<TitleScene>();
 #else //デバッグ用にどこのシーンからでもスタートできる
-	scene_ptr = std::make_shared<TitleScene>();
+	scene_ptr = std::make_shared<GameSceneHard>();
 #endif
 	scene_ptr->Init();
 }

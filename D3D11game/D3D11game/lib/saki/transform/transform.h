@@ -24,7 +24,7 @@ namespace saki
 		//回転
 		saki::Vector3<T> rotation;
 		//拡縮
-		saki::Vector3<T> scale;
+		saki::Vector3<T> scale = saki::Vector3<T>{ 1,1,1 };
 	public:
 		/**
 		* @brief 引数なしコンストラクタ
